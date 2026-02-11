@@ -1,6 +1,9 @@
 # Public Longitudinal Archive
 
 This repository contains curated public reports, experiment summaries, and anonymized snapshots from a longitudinal self-experiment tracking endurance, strength, recovery, autonomic function, and longevity biomarkers.
+## Current State
+
+→ [Latest Snapshot](LATEST.md)
 
 ## What this is
 - Versioned weekly reports (high-level)
