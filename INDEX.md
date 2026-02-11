@@ -1,39 +1,46 @@
-# Daniel Longitudinal Study — Public Index
+# Daniel Longitudinal Study — Hybrid Archive
 
-This repository contains structured public snapshots from an ongoing longitudinal self-experiment.
+This repository is a structured public archive of an ongoing longitudinal experiment in biological optimization.
 
-The aim is not performance display.
-It is documentation of long-arc biological change under controlled protocol.
+It documents performance capacity, body composition, biomarkers, and protocol evolution under controlled constraints.
 
-All files are versioned and time-stamped.
+This is not a coaching product.
+It is not a fitness journal.
+It is a versioned archive.
 
----
-
-## Start Here (5 Minutes)
-
-• [WHY_PUBLIC.md] — Intent and constraints  
-• Latest Snapshot (see bottom of this file)  
-• [ROADMAP.md] — Long arc direction  
+All entries are time-stamped and minimally interpreted.
 
 ---
 
-## Deep Dive (30–60 Minutes)
+## Orientation
 
-• /methodology — Protocol structure and guardrails  
-• /experiments — Structured intervention logs  
-• /schemas — Data definitions and measurement rules  
-• /reports — Narrative summaries and interpretations  
+If you are new:
+
+• Read [WHY_PUBLIC.md] for intent and boundaries  
+• Review [ROADMAP.md] for long-arc direction  
+• Open the most recent snapshot in the section below  
+
+---
+
+## System Architecture
+
+• /methodology — Guardrails and protocol logic  
+• /experiments — Intervention logs  
+• /schemas — Data definitions  
+• /dashboards — Public metric summaries  
+• /reports — Structured interpretation  
+• /snapshots — Raw capture files  
 
 ---
 
 ## Snapshot Archive
 
-Chronological list of public biomarker captures.
+Chronological public biomarker captures.
 
 ### 2025-11
 
+- DEXA — Body composition  
 - DEXA — Visceral fat  
 - DEXA — Bone density  
-- DEXA — Body composition  
 
-(Additional months will be appended below.)
+(Future captures appended below.)
