@@ -27,5 +27,11 @@ Personally identifying details are removed. Only aggregated or anonymized output
 - Methodology: `/methodology/`
 - Metric definitions: `/schemas/`
 
+## Scope & time horizon
+This is a multi-year longitudinal project. Updates are additive; historical records are never rewritten, only superseded by newer versions.
+
+## Contact & attribution
+This archive is maintained by the subject of the experiment. For research, clinical, or collaboration inquiries, contact details may be added in future releases.
+
 ## License
 See `LICENSE`.
