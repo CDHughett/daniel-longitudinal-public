@@ -1,7 +1,8 @@
 # Public Snapshots
 
-This directory contains anonymized point-in-time biomarker captures used for longitudinal comparison across years.
+This directory contains anonymized, point-in-time biomarker captures used for longitudinal comparison.
 
-Personally identifying fields are removed prior to upload.
+All personally identifying information has been removed prior to publication.
 
-Each snapshot is referenced by date and modality.
+Files are named using:
+YYYY-MM-modality-measurement.png
