@@ -9,59 +9,32 @@ No theatrical protocol shifts.
 
 ---
 
-## February 2026 — Pre-Phase Transition
+## February 2026 — Phase 2 Activation Window
 
-Status: Controlled recomposition phase  
-Testing Window: DEXA + Bod Pod (fasted)  
+Status: Transition from Controlled Recomposition → Load Integration
 
-Primary Focus:
-• Endurance base (B1 incline volume)
-• Structural locomotion (B3/B4 circuits)
-• Metabolic flexibility
-• Tissue preservation under volume
+Testing Window:
+- DEXA (fasted)
+- BodPod (fasted)
 
----
-
-## Current Bodyweight
-
-220.0 lb (fasted morning reading)
-
-Trend:
-Downward drift without strength loss.
-No aggressive caloric restriction.
-No stimulant dependence.
+Context:
+- Autophagy-integrated recomposition cycle complete
+- Endurance volume tapered
+- Structured load reintroduction beginning
+- No acute stress manipulation prior to scan
 
 ---
 
-## Nervous System State
+## Phase State
 
-Tone: Calm, smooth.
-No sympathetic volatility.
-Sleep stable.
-HRV trending upward relative to prior baseline.
-
----
-
-## Structural Objective (Near-Term)
-
-• Preserve lean mass ≥ prior DEXA baseline (187 lb)
-• Reduce central adiposity
-• Maintain output capacity ≥ 120 min mixed workload
-• Sustain repeatability without recovery debt
+Phase 1 — Repair + Purification + Stability (Completed)
+Phase 2 — Load Integration + Structural Density + Performance Ceiling Expansion (Active)
+Phase 3 — Public Capability Demonstration (Projected)
 
 ---
 
-## Long Arc Direction
+## Governance Note
 
-This phase is not aesthetic driven.
+This repository documents structured, timestamped biological and performance data across defined phases.
 
-It is engine installation.
-Fat loss is secondary.
-Capacity is primary.
-
----
-
-Next confirmed update:
-Post-scan interpretation (February 2026)
-
-Transitioned from contraction phase (−18 lbs) to controlled expansion phase. Strength reintegration + calorie tiering initiated.
+Snapshots represent epoch markers, not marketing events.
