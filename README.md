@@ -16,6 +16,16 @@ This repository contains curated public reports, experiment summaries, and anony
 - A complete raw dataset dump
 - A replacement for professional care
 
+- This repository documents a structured, single-subject longitudinal case study.
+
+It contains version-controlled records of physiological, behavioral, and environmental experiments conducted by one individual over time.
+
+This archive is not intended as medical advice, performance guidance, instruction, or prescriptive protocol.
+
+No claims are made regarding efficacy, replicability, or generalizability.
+
+All data and documentation reflect one subject under specific conditions and should be interpreted as observational records only.
+
 ## Update cadence
 - Weekly reports: posted weekly or biweekly
 - Major testing snapshots: posted when collected (e.g., bloodwork, body comp, DunedinPACE)
