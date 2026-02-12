@@ -1,7 +1,10 @@
-# Public Longitudinal Archive
-Public longitudinal measurement snapshots documenting controlled recomposition, endurance development, and biological age optimization across structured phases.
+# Daniel Longitudinal Study — Public Archive
 
-Current Phase: Phase 2 (Load Reintroduction + Structural Consolidation)
+Structured biological and performance snapshots documenting phased development across controlled training and recovery cycles.
+
+Current Phase: Phase 2 — Load Integration + Structural Density
+
+This repository contains confirmed measurement artifacts and governance documentation only.
 
 This repository contains curated public reports, experiment summaries, and anonymized snapshots from a longitudinal self-experiment tracking endurance, strength, recovery, autonomic function, and longevity biomarkers.
 ## Current State
