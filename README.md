@@ -16,7 +16,7 @@ This repository contains curated public reports, experiment summaries, and anony
 - A complete raw dataset dump
 - A replacement for professional care
 
-- This repository documents a structured, single-subject longitudinal case study.
+## This repository documents a structured, single-subject longitudinal case study.
 
 It contains version-controlled records of physiological, behavioral, and environmental experiments conducted by one individual over time.
 
