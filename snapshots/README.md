@@ -1,10 +1,23 @@
 # Snapshots
 
-This folder contains immutable capture artifacts tied to a date (e.g., DEXA, BodPod, labs).
+This folder contains primary measurement artifacts.
 
-Naming convention (recommended):
-- `/snapshots/YYYY-MM/` for each capture window
-- files inside use `YYYY-MM-DD__artifact__provider.pdf` (or similar)
+Snapshots represent confirmed data captures under controlled conditions.
 
-Example:
-- `/snapshots/2026-02/2026-02-12__dexa__site-a.pdf`
+---
+
+## What a Snapshot Is
+
+A snapshot is:
+
+* A confirmed measurement event
+* Captured under normal conditions
+* Logged without dehydration or manipulation
+* Date-stamped
+* Immutable once committed
+
+---
+
+## Folder Structure
+
+Each month receives its own subfolder:
