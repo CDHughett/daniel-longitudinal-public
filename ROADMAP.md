@@ -1,24 +1,30 @@
 # Public Research Roadmap
 
-This repository will be updated weekly with:
+This repository is updated with:
+- high-level training volume summaries
+- experiment results (public-safe)
+- biomarker snapshots
+- protocol change notes
+- testing cycles (when captured)
 
-- High-level training volume summaries
-- Experiment results
-- Biomarker snapshots
-- Protocol changes
-- Testing cycles
+---
 
-Planned 2026 releases:
-
-## February
+## 2026 planned releases (public)
+### February 2026
 - DEXA scan
-- Blood biomarkers
-- Epigenetic testing
-- VO₂ testing
+- BodPod
+- Blood biomarkers (if posted)
+- Epigenetic testing / DunedinPACE (if posted)
+- (Optional) VO₂ test (if captured)
 
-## April
-- Phase-2 training shift
-- Endurance ceiling recalibration
+### April 2026
+- Phase 2 training shift summary
+- Endurance ceiling recalibration notes (public-safe)
 
-## August
-- Amphibious endurance benchmark block
+### August 2026
+- Amphibious endurance benchmark block (public summary + artifacts)
+
+---
+
+## Definition of “release”
+A “release” is a dated snapshot folder in `/snapshots/` plus an associated report in `/reports/`.
