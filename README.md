@@ -1,51 +1,59 @@
 # Daniel Longitudinal Study — Public Archive
 
-Structured biological and performance snapshots documenting phased development across controlled training and recovery cycles.
+Structured biological and performance snapshots documenting phased development
+across controlled training and recovery cycles.
 
-**Current Phase:** Phase 2 — Load Integration + Structural Density
+## Current State
 
-This repository contains confirmed measurement artifacts and governance documentation only.
+→ **[Latest Snapshot](LATEST.md)**
 
 ---
 
-## Start here
-- **Current status:** [LATEST.md](LATEST.md)
-- **Navigation index:** [INDEX.md](INDEX.md)
-- **Governance constraints:** [GOVERNANCE.md](GOVERNANCE.md)
-- **Measurement comparability:** [MEASUREMENT_SOURCES.md](MEASUREMENT_SOURCES.md)
+## Overview
+
+This repository contains confirmed measurement artifacts and governance documentation only.
+
+It documents a structured, single-subject longitudinal case study.  
+All tests are recorded under controlled conditions with governance protocols
+defining capture, integrity, and update cadence.
 
 ---
 
 ## What this is
-- Versioned public reports (high-level)
-- Public experiment registry (high-level)
-- Curated anonymized snapshots (PDFs / images / tables)
-- Methodology + definitions + schemas (for comparability over time)
 
-## What this is NOT
-- Medical advice
-- A complete raw dataset dump
-- A replacement for professional care
+* Versioned weekly reports (high-level)
+* Experiment registry (hypotheses + protocols + outcomes)
+* Curated anonymized snapshots
+* Methodology + metric definitions
 
 ---
 
-## Repository map
-- `/snapshots/` — immutable capture artifacts (DEXA, BodPod, labs, etc.)
-- `/reports/` — structured interpretation of one or more snapshots
-- `/experiments/` — intervention summaries (public-safe level)
-- `/methodology/` — guardrails + capture rules
-- `/schemas/` — definitions + naming conventions
-- `/dashboards/` — public-facing summary tables/figures
+## What this is NOT
+
+* Medical advice
+* Performance guidance
+* Prescriptive protocol
+
+---
+
+## Navigation
+
+* **Reports:** `/reports/`
+* **Experiments:** `/experiments/`
+* **Snapshots:** `/snapshots/`
+* **Methodology:** `/methodology/`
+* **Schemas & Definitions:** `/schemas/`
 
 ---
 
 ## Update cadence
-- **Snapshots:** posted upon confirmed capture
-- **Reports:** posted after structured comparison
-- **LATEST.md:** updated weekly or on material change
-- **CHANGELOG.md:** updated with every material commit
+
+* Snapshots logged upon capture
+* Reports added after structured comparison
+* LATEST.md updated weekly
 
 ---
 
 ## License
-See [LICENSE](LICENSE).
+
+This project is licensed MIT (see `LICENSE`).
