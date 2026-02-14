@@ -2,55 +2,50 @@
 
 Structured biological and performance snapshots documenting phased development across controlled training and recovery cycles.
 
-Current Phase: Phase 2 — Load Integration + Structural Density
+**Current Phase:** Phase 2 — Load Integration + Structural Density
 
 This repository contains confirmed measurement artifacts and governance documentation only.
 
-This repository contains curated public reports, experiment summaries, and anonymized snapshots from a longitudinal self-experiment tracking endurance, strength, recovery, autonomic function, and longevity biomarkers.
-## Current State
+---
 
-→ [Latest Snapshot](LATEST.md)
+## Start here
+- **Current status:** [LATEST.md](LATEST.md)
+- **Navigation index:** [INDEX.md](INDEX.md)
+- **Governance constraints:** [GOVERNANCE.md](GOVERNANCE.md)
+- **Measurement comparability:** [MEASUREMENT_SOURCES.md](MEASUREMENT_SOURCES.md)
+
+---
 
 ## What this is
-- Versioned weekly reports (high-level)
-- Experiment registry (hypotheses + protocols + outcomes)
-- Curated anonymized snapshots (charts, tables, screenshots)
-- Methodology + metric definitions
+- Versioned public reports (high-level)
+- Public experiment registry (high-level)
+- Curated anonymized snapshots (PDFs / images / tables)
+- Methodology + definitions + schemas (for comparability over time)
 
 ## What this is NOT
 - Medical advice
 - A complete raw dataset dump
 - A replacement for professional care
 
-## This repository documents a structured, single-subject longitudinal case study.
+---
 
-It contains version-controlled records of physiological, behavioral, and environmental experiments conducted by one individual over time.
+## Repository map
+- `/snapshots/` — immutable capture artifacts (DEXA, BodPod, labs, etc.)
+- `/reports/` — structured interpretation of one or more snapshots
+- `/experiments/` — intervention summaries (public-safe level)
+- `/methodology/` — guardrails + capture rules
+- `/schemas/` — definitions + naming conventions
+- `/dashboards/` — public-facing summary tables/figures
 
-This archive is not intended as medical advice, performance guidance, instruction, or prescriptive protocol.
-
-No claims are made regarding efficacy, replicability, or generalizability.
-
-All data and documentation reflect one subject under specific conditions and should be interpreted as observational records only.
+---
 
 ## Update cadence
-- Weekly reports: posted weekly or biweekly
-- Major testing snapshots: posted when collected (e.g., bloodwork, body comp, DunedinPACE)
+- **Snapshots:** posted upon confirmed capture
+- **Reports:** posted after structured comparison
+- **LATEST.md:** updated weekly or on material change
+- **CHANGELOG.md:** updated with every material commit
 
-## Privacy & anonymization
-Personally identifying details are removed. Only aggregated or anonymized outputs are shared.
-
-## Navigation
-- Reports: `/reports/`
-- Experiments: `/experiments/`
-- Snapshots: `/snapshots/`
-- Methodology: `/methodology/`
-- Metric definitions: `/schemas/`
-
-## Scope & time horizon
-This is a multi-year longitudinal project. Updates are additive; historical records are never rewritten, only superseded by newer versions.
-
-## Contact & attribution
-This archive is maintained by the subject of the experiment. For research, clinical, or collaboration inquiries, contact details may be added in future releases.
+---
 
 ## License
-See `LICENSE`.
+See [LICENSE](LICENSE).
