@@ -86,4 +86,11 @@ It documents one longitudinal system under constraint.
 
 This archive is intended to remain readable and structurally coherent ten years from now.
 
+---
+
+## Artifact Integrity
+
+All binary or non-text snapshot files should be accompanied
+by a `checksums.txt` containing SHA256 hashes for verification.
+
 All additions must satisfy that standard.
