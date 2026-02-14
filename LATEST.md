@@ -2,39 +2,40 @@
 
 This file reflects the most recent confirmed capture within the Daniel Longitudinal Study.
 
-All values are recorded under normal conditions.
-No dehydration.
-No peak manipulation.
-No theatrical protocol shifts.
+**Operating standard:** normal hydration, no dehydration, no peak manipulation, no theatrical protocol shifts.
 
 ---
 
 ## February 2026 — Phase 2 Activation Window
+**Status:** Transition from Controlled Recomposition → Load Integration
 
-Status: Transition from Controlled Recomposition → Load Integration
+**Testing window (fasted):**
+- DEXA
+- BodPod
+- (Optional) Epigenetic / DunedinPACE
 
-Testing Window:
-- DEXA (fasted)
-- BodPod (fasted)
-
-Context:
+**Context:**
 - Autophagy-integrated recomposition cycle complete
 - Endurance volume tapered
 - Structured load reintroduction beginning
-- No acute stress manipulation prior to scan
+- No acute stress manipulation prior to scans
 
 ---
 
-## Phase State
-
-Phase 1 — Repair + Purification + Stability (Completed)
-Phase 2 — Load Integration + Structural Density + Performance Ceiling Expansion (Active)
-Phase 3 — Public Capability Demonstration (Projected)
+## Canonical links (update these paths)
+- Latest snapshot folder: `/snapshots/2026-02/`
+- Latest report: `/reports/2026-02_phase2-activation_report.md`
 
 ---
 
-## Governance Note
+## Phase state
+- **Phase 1 — Repair + Purification + Stability:** Completed
+- **Phase 2 — Load Integration + Structural Density + Performance Ceiling Expansion:** Active
+- **Phase 3 — Public Capability Demonstration:** Projected
 
+---
+
+## Governance note
 This repository documents structured, timestamped biological and performance data across defined phases.
 
-Snapshots represent epoch markers, not marketing events.
+**Snapshots are epoch markers — not marketing events.**
