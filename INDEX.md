@@ -1,46 +1,56 @@
-# Daniel Longitudinal Study — Hybrid Archive
+# Daniel Longitudinal Study — Index
 
-This repository is a structured public archive of an ongoing longitudinal experiment in biological optimization.
-
+This repository is a structured public archive of an ongoing longitudinal self-experiment in biological optimization.
 It documents performance capacity, body composition, biomarkers, and protocol evolution under controlled constraints.
 
-This is not a coaching product.
-It is not a fitness journal.
-It is a versioned archive.
-
-All entries are time-stamped and minimally interpreted.
+**This is not a coaching product. This is not a fitness journal. This is a versioned archive.**
 
 ---
 
-## Orientation
-
-If you are new:
-
-• Read [WHY_PUBLIC.md] for intent and boundaries  
-• Review [ROADMAP.md] for long-arc direction  
-• Open the most recent snapshot in the section below  
+## Orientation (new readers)
+1) Intent + boundaries: **[WHY_PUBLIC.md](WHY_PUBLIC.md)**
+2) Governance constraints: **[GOVERNANCE.md](GOVERNANCE.md)**
+3) Current state: **[LATEST.md](LATEST.md)**
 
 ---
 
-## System Architecture
-
-• /methodology — Guardrails and protocol logic  
-• /experiments — Intervention logs  
-• /schemas — Data definitions  
-• /dashboards — Public metric summaries  
-• /reports — Structured interpretation  
-• /snapshots — Raw capture files  
+## System architecture
+- `/methodology/` — guardrails and protocol logic  
+- `/experiments/` — intervention summaries  
+- `/schemas/` — definitions, naming, conventions  
+- `/dashboards/` — public metric summaries  
+- `/reports/` — structured interpretation  
+- `/snapshots/` — raw capture artifacts  
 
 ---
 
-## Snapshot Archive
+## Snapshot archive (chronological)
+> Add links to the exact files/folders in `/snapshots/`.
 
-Chronological public biomarker captures.
+- **2025-11 — Phase 1 Completion Baseline**
+  - DEXA (PDF)
+  - BodPod (PDF)
+  - Bloodwork (PDF)
 
-### 2025-11
+- **2026-02 — Phase 2 Activation Window**
+  - DEXA (PDF)
+  - BodPod (PDF)
+  - (Optional) Epigenetic / DunedinPACE (PDF)
 
-- DEXA — Body composition  
-- DEXA — Visceral fat  
-- DEXA — Bone density  
+---
 
-(Future captures appended below.)
+## Reports (chronological)
+> Add links to the exact files in `/reports/`.
+
+- **2025-11 — Phase 1 baseline synthesis (public)**
+- **2026-02 — Phase 2 activation synthesis (public)**
+
+---
+
+## Experiment registry (public)
+- [EXPERIMENT_REGISTRY_PUBLIC.md](EXPERIMENT_REGISTRY_PUBLIC.md)
+
+---
+
+## Change history
+- [CHANGELOG.md](CHANGELOG.md)
