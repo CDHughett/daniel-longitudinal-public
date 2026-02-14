@@ -1,8 +1,10 @@
-# Public Snapshots
+# Snapshots
 
-This directory contains anonymized, point-in-time biomarker captures used for longitudinal comparison.
+This folder contains immutable capture artifacts tied to a date (e.g., DEXA, BodPod, labs).
 
-All personally identifying information has been removed prior to publication.
+Naming convention (recommended):
+- `/snapshots/YYYY-MM/` for each capture window
+- files inside use `YYYY-MM-DD__artifact__provider.pdf` (or similar)
 
-Files are named using:
-YYYY-MM-modality-measurement.png
+Example:
+- `/snapshots/2026-02/2026-02-12__dexa__site-a.pdf`
