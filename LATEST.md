@@ -2,6 +2,10 @@
 
 Chronological list of public biomarker captures.
 
+## Canonical artifacts
+* **Body composition:** [2026-02 snapshot](snapshots/2026-02/)
+* (add others as available)
+
 ## Orientation
 * **Start here:** [LATEST.md](LATEST.md)
 * [WHY_PUBLIC](WHY_PUBLIC.md) — Intent and boundaries  
