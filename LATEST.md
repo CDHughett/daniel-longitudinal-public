@@ -7,7 +7,7 @@ Chronological list of public biomarker captures.
 * (add others as available)
 
 ## Orientation
-* **Start here:** [LATEST.md](LATEST.md)
+
 * [WHY_PUBLIC](WHY_PUBLIC.md) — Intent and boundaries  
 * [ROADMAP](ROADMAP.md) — Long-arc direction
 
