@@ -13,15 +13,12 @@ Chronological list of public biomarker captures.
 
 ---
 
-## Snapshot Archive
+## 2026-02 — Phase 2 Transition Snapshot
 
-### 2026-02
-* Bodpod
-* https://github.com/CDHughett/daniel-longitudinal-public/blob/main/snapshots/2026-02-bodpod-cosmed.jpg
+### Body Composition
 
-* DEXA
-* https://github.com/CDHughett/daniel-longitudinal-public/blob/main/snapshots/2026-02-dexa-summary.jpg
-
+- [BodPod — Cosmed Capture](./snapshots/2026-02-bodpod-cosmed.jpg)
+- [DEXA — Summary Capture](./snapshots/2026-02-dexa-summary.jpg)
 ---
 
 ## How to browse
