@@ -2,10 +2,10 @@
 
 Chronological list of public biomarker captures.
 
-## Canonical artifacts
-* **Weekly Summary:** [2026-02 snapshot](snapshots/2026-02/)
-* (add others as available)
+## Canonical Artifacts
 
+- [Weekly Summary — 2026-02 Snapshot](./snapshots/2026-02-weekly-summary.md)
+- 
 ## Orientation
 
 * [WHY_PUBLIC](WHY_PUBLIC.md) — Intent and boundaries  
