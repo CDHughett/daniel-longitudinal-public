@@ -3,7 +3,7 @@
 Chronological list of public biomarker captures.
 
 ## Canonical artifacts
-* **Body composition:** [2026-02 snapshot](snapshots/2026-02/)
+* **Weekly Summary:** [2026-02 snapshot](snapshots/2026-02/)
 * (add others as available)
 
 ## Orientation
@@ -15,10 +15,9 @@ Chronological list of public biomarker captures.
 
 ## Snapshot Archive
 
-### 2025-11
-* [DEXA — Body composition](snapshots/2025-11/)
-* [DEXA — Visceral fat](snapshots/2025-11/)
-* [DEXA — Bone density](snapshots/2025-11/)
+### 2026-02
+* [2026-02-dexa-summary]([2026-02-dexa-summary.jpg)
+* [2026-02-bodpod-cosmed](2026-02-bodpod-cosmed.jpg)
 
 ---
 
