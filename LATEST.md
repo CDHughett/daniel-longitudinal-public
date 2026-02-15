@@ -16,8 +16,11 @@ Chronological list of public biomarker captures.
 ## Snapshot Archive
 
 ### 2026-02
-* [2026-02-dexa-summary]([2026-02-dexa-summary.jpg)
-* [2026-02-bodpod-cosmed](2026-02-bodpod-cosmed.jpg)
+* Bodpod
+* https://github.com/CDHughett/daniel-longitudinal-public/blob/main/snapshots/2026-02-bodpod-cosmed.jpg
+
+* DEXA
+* https://github.com/CDHughett/daniel-longitudinal-public/blob/main/snapshots/2026-02-dexa-summary.jpg
 
 ---
 
