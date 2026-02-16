@@ -1,59 +1,92 @@
-# Daniel Longitudinal Study — Public Archive
-
-Structured biological and performance snapshots documenting phased development
-across controlled training and recovery cycles.
-
-## Current State
-
-→ **[Latest Snapshot](LATEST.md)**
+# Daniel Longitudinal Study  
+_A Single-Subject Structured Human Performance Dataset_
 
 ---
 
 ## Overview
 
-This repository contains confirmed measurement artifacts and governance documentation only.
+This repository documents a structured, artifact-verified human performance system.
 
-It documents a structured, single-subject longitudinal case study.  
-All tests are recorded under controlled conditions with governance protocols
-defining capture, integrity, and update cadence.
+It contains:
 
----
+- Confirmed body composition snapshots
+- Bloodwork data
+- Training architecture evolution
+- Phase-based structural shifts
+- Governance documentation
 
-## What this is
-
-* Versioned weekly reports (high-level)
-* Experiment registry (hypotheses + protocols + outcomes)
-* Curated anonymized snapshots
-* Methodology + metric definitions
+This is not a motivational archive.
+It is a structured longitudinal dataset.
 
 ---
 
-## What this is NOT
+## Repository Structure
 
-* Medical advice
-* Performance guidance
-* Prescriptive protocol
-
----
-
-## Navigation
-
-* **Reports:** `/reports/`
-* **Experiments:** `/experiments/`
-* **Snapshots:** `/snapshots/`
-* **Methodology:** `/methodology/`
-* **Schemas & Definitions:** `/schemas/`
-
----
-
-## Update cadence
-
-* Snapshots logged upon capture
-* Reports added after structured comparison
-* LATEST.md updated weekly
+```
+Root
+│
+├── snapshots/              # Confirmed measurement captures
+├── reports/                # Structured summaries (no new raw data)
+├── PHASE_INDEX.md
+├── EPOCH_MAP.md
+├── STRUCTURAL_PRINCIPLES.md
+├── PHASE_DECLARATION_CRITERIA.md
+├── SYSTEM_CONSTRAINTS.md
+├── RISK_MANAGEMENT.md
+├── RECOVERY_MONITORING_FRAMEWORK.md
+└── GOVERNANCE.md
+```
 
 ---
 
-## License
+## Architectural Layers
 
-This project is licensed MIT (see `LICENSE`).
+Raw Logs → Snapshots → Reports → Phase Summaries → Governance
+
+Each layer increases abstraction while remaining artifact-bound.
+
+---
+
+## Current Phase
+
+**Phase 2 — Load Integration**
+
+Focus:
+- Strength ceiling exploration
+- Neuromuscular density
+- Recovery-aware progression
+- Biomarker stability preservation
+
+---
+
+## Governance
+
+Structural changes follow documented criteria:
+
+- Phase declarations are retrospective
+- Load increases are recovery-gated
+- Claims require snapshot confirmation
+- System constraints guide progression
+
+See:
+- STRUCTURAL_PRINCIPLES.md
+- PHASE_DECLARATION_CRITERIA.md
+- RISK_MANAGEMENT.md
+- RECOVERY_MONITORING_FRAMEWORK.md
+
+---
+
+## Intent
+
+This dataset exists to demonstrate:
+
+- Structured adaptation
+- Conservative escalation
+- Artifact-based governance
+- Durability over velocity
+
+No claims extend beyond verified artifacts.
+
+---
+
+_Last updated via confirmed structural review._
