@@ -1,29 +1,16 @@
 # Reports
 
-This folder contains structured summary reports derived from confirmed snapshot captures.
+Reports are structured summary documents derived from one or more snapshot events.
 
-Reports are comparative documents.
-They do not introduce new raw data.
-
----
-
-## Purpose
-
-Reports synthesize:
-
-* Confirmed snapshot measurements
-* Observed directional trends
-* Phase alignment notes
-* Structural training context
+They **interpret** data but do not contain new raw captures.
 
 ---
 
-## What belongs here
+## Contents
 
-* Phase summaries
-* Weekly reports (high-level)
-* Comparison analyses (DEXA vs Bod Pod, etc.)
-* Trend commentary based strictly on logged artifacts
+* Summaries of observed trends
+* Phase comparison notes
+* High‑level insights
 
 ---
 
@@ -31,15 +18,4 @@ Reports synthesize:
 
 * Raw measurement files
 * Screenshots
-* Experimental speculation
-* Forward-looking projections without captured data
-
----
-
-## Relationship to other folders
-
-* Raw capture artifacts → `/snapshots/`
-* Method definitions → `/methodology/`
-* Definitions → `DATA_DICTIONARY.md`
-
-Reports are interpretive layers, not primary data.
+* Unverified speculation
