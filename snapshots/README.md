@@ -22,3 +22,33 @@ A snapshot is:
 ## Folder Structure
 
 Each month receives its own subdirectory:
+
+Each subdirectory may contain:
+
+* `README.md` — context for that capture window
+* Image or PDF artifacts
+* `checksums.txt` — SHA256 hashes for verification
+
+---
+
+## Naming Convention
+
+Artifacts must follow:
+
+YYYY-MM-DD_measurement-type.ext
+
+Examples:
+
+* 2026-02-12_dexa_body-comp.png
+* 2026-02-12_bodpod_results.pdf
+
+Lowercase. Hyphen-separated. Date first.
+
+---
+
+## Integrity Policy
+
+* Artifacts are never overwritten.
+* Corrections require new commits.
+* Hashes must match logged checksums.
+* Deviations from capture protocol must be documented.
