@@ -1,5 +1,15 @@
-# Daniel Longitudinal Study  
+# Daniel Longitudinal Study
 _A Single-Subject Structured Human Performance Dataset_
+
+[![Release](https://img.shields.io/badge/release-v0.1-111111)](https://github.com/CDHughett/daniel-longitudinal-public/releases/tag/v0.1)
+
+**Pinned release state:** `v0.1` (governed baseline)
+- Release notes: https://github.com/CDHughett/daniel-longitudinal-public/releases/tag/v0.1
+- Repo at tag: https://github.com/CDHughett/daniel-longitudinal-public/tree/v0.1
+
+**Living state (moves):**
+- Current snapshot: `LATEST.md`
+- Snapshot index: `INDEX.md`
 
 <p align="center">
 
