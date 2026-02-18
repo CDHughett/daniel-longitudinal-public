@@ -1,6 +1,9 @@
 # Daniel Longitudinal Study  
 _A Single-Subject Structured Human Performance Dataset_
 
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](#contributing)
+[![X](https://img.shields.io/badge/X-@CDHughett-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/CDHughett)
+
 ---
 
 ## Overview
