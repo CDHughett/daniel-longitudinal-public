@@ -3,7 +3,7 @@ _A Single-Subject Structured Human Performance Dataset_
 
 <p align="center">
 
-<a href="https://x.com/cd.hughett">
+<a href="https://x.com/CDHughett">
   <img src="https://img.shields.io/badge/X-CDHughett-black?logo=x&logoColor=white" />
 </a>
 
