@@ -16,7 +16,7 @@ _A Single-Subject Structured Human Performance Dataset_
 </p>
 
 <p align="center">
-Phase 0 ░░░░░░░░░░ Completed  
+Phase 0 ██████████ Completed  
 Phase 1 ██████████ Completed  
 Phase 2 ████░░░░░░ Load Integration  
 Phase 3 ░░░░░░░░░░ Future
