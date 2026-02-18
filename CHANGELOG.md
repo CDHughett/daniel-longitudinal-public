@@ -8,7 +8,25 @@ Format:
 
 ---
 
-## 2026-02-14
+## [Unreleased]
+- (Reserved for changes after the latest tagged release.)
+
+---
+
+## [v0.1] — 2026-02-18
+Initial governed archive structure release.
+
+### Added
 - Normalized core docs (README/INDEX/LATEST/ROADMAP/SNAPSHOT_LOG/PHASE_MAP)
-- Added reader routing and canonical links
+- Reader routing and canonical links
 - Initialized CHANGELOG for longitudinal traceability
+- Governance + versioning + dictionary + measurement source foundations
+- Structured `/reports` and `/snapshots` architecture
+
+### Notes
+- This release represents **architectural maturity**, not performance claims.
+
+---
+
+[Unreleased]: https://github.com/CDHughett/daniel-longitudinal-public/compare/v0.1...HEAD
+[v0.1]: https://github.com/CDHughett/daniel-longitudinal-public/releases/tag/v0.1
