@@ -17,12 +17,12 @@ _A Single-Subject Structured Human Performance Dataset_
 
 ---
 
-### Phase Architecture
+## Phase Architecture
 
-Phase 0  | ██████████ | Completed  
-Phase 1  | ██████████ | Completed  
-Phase 2  | ███░░░░░░░ | Load Integration (Active)  
-Phase 3  | ░░░░░░░░░░ | Locked  
+Phase 0 | ██████████ | Completed  
+Phase 1 | ██████████ | Completed  
+Phase 2 | ████░░░░░░ | Load Integration (Active)  
+Phase 3 | ░░░░░░░░░░ | Locked  
 
 System progression is versioned and artifact-verified.
 
