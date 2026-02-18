@@ -13,8 +13,6 @@ _A Single-Subject Structured Human Performance Dataset_
 
 <img src="https://img.shields.io/badge/Weekly_Reports-Active-2ea043" />
 
-<img src="https://img.shields.io/github/commit-activity/y/CDHughett/daniel-longitudinal-public?label=Commits_2026&color=0969da" />
-
 </p>
 
 ---
