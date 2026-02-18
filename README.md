@@ -24,6 +24,8 @@ Phase 1  | ██████████ | Completed
 Phase 2  | ███░░░░░░░ | Load Integration (Active)  
 Phase 3  | ░░░░░░░░░░ | Locked  
 
+System progression is versioned and artifact-verified.
+
 ---
 
 ## Overview
