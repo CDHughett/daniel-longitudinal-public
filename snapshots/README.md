@@ -27,7 +27,6 @@ Each subdirectory may contain:
 
 * `README.md` — context for that capture window
 * Image or PDF artifacts
-* `checksums.txt` — SHA256 hashes for verification
 
 ---
 
@@ -35,12 +34,12 @@ Each subdirectory may contain:
 
 Artifacts must follow:
 
-YYYY-MM-DD_measurement-type.ext
+YYYY-MM_measurement-type.ext
 
 Examples:
 
-* 2026-02-12_dexa_body-comp.png
-* 2026-02-12_bodpod_results.pdf
+* 2026-02_dexa_body-comp.png
+* 2026-02_bodpod_results.pdf
 
 Lowercase. Hyphen-separated. Date first.
 
