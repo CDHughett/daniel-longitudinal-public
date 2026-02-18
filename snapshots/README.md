@@ -1,12 +1,24 @@
 # Snapshots
 
-This folder holds *primary measurement captures*.
+This directory contains primary measurement artifacts.
 
-Snapshots represent confirmed data captured under controlled conditions.
-These are immutable once committed.
+Snapshots represent confirmed capture events under controlled operating conditions.
+
+Once committed, snapshot artifacts are never modified.
 
 ---
 
-## Folder organization
+## Definition of a Snapshot
 
-Each month gets its own directory:
+A snapshot is:
+
+* A date-stamped measurement event
+* Captured under normal operating constraints
+* Logged without dehydration or artificial manipulation
+* Archived with integrity controls
+
+---
+
+## Folder Structure
+
+Each month receives its own subdirectory:
