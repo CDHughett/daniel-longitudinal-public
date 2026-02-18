@@ -1,7 +1,21 @@
 # Daniel Longitudinal Study  
 _A Single-Subject Structured Human Performance Dataset_
 
-[![(Twitter)](https://img.shields.io/badge/X-@CDHughett-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/CDHughett)
+<p align="center">
+
+<a href="https://x.com/cd.hughett">
+  <img src="https://img.shields.io/badge/X-CDHughett-black?logo=x&logoColor=white" />
+</a>
+
+<img src="https://img.shields.io/badge/Phase-2_Load_Integration-1f6feb" />
+
+<img src="https://img.shields.io/badge/Archive-Live-2ea043" />
+
+<img src="https://img.shields.io/badge/Weekly_Reports-Active-2ea043" />
+
+<img src="https://img.shields.io/github/commit-activity/y/CDHughett/daniel-longitudinal-public?label=Commits_2026&color=0969da" />
+
+</p>
 
 ---
 
