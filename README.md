@@ -36,6 +36,8 @@ Phase 3 | ░░░░░░░░░░ | Locked
 
 System progression is versioned and artifact-verified.
 
+Phase transitions are declared retrospectively following sustained system stability.
+
 ---
 
 ## Overview
@@ -52,6 +54,18 @@ It contains:
 
 This is not a motivational archive.
 It is a structured longitudinal dataset.
+
+---
+
+## How to Navigate
+
+Recommended entry points:
+
+1. `LATEST.md` — Current operational system state  
+2. `INDEX.md` — Chronological artifact access  
+3. `PHASE_INDEX.md` — Phase architecture and progression logic  
+
+Artifacts should be interpreted chronologically.
 
 ---
 
@@ -111,6 +125,14 @@ See:
 
 ---
 
+## Scope
+
+This repository documents a single-subject system and does not constitute medical or performance advice.
+
+All observations are context-bound to the documented subject.
+
+---
+
 ## Intent
 
 This dataset exists to demonstrate:
@@ -124,4 +146,8 @@ No claims extend beyond verified artifacts.
 
 ---
 
-_Last updated via confirmed structural review._
+_Repository state reflects only confirmed artifacts and governed interpretation._
+
+---
+
+Public longitudinal archive initiated 2026.
