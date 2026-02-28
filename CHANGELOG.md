@@ -10,7 +10,6 @@ Format:
 
 ## [Unreleased]
 - (Reserved for changes after the latest tagged release.)
-- ## [Unreleased]
 
 ### Added
 - METHODOLOGY_AND_CONTROLS.md defining longitudinal study framework and stabilization controls
