@@ -2,6 +2,8 @@
 
 ## Overview
 
+This repository prioritizes longitudinal stability and control discipline over rapid optimization or intervention novelty.
+
 This repository documents an ongoing longitudinal N=1 human performance and longevity experiment.
 
 The objective is not rapid optimization or short-term intervention outcomes, but the observation and documentation of long-duration biological adaptation under controlled lifestyle conditions.
