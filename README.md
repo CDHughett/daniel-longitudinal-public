@@ -88,6 +88,14 @@ Root
 
 ---
 
+## Methodology
+
+Project methodology, experimental controls, and reproducibility assumptions are documented in:
+
+→ [METHODOLOGY_AND_CONTROLS.md](./METHODOLOGY_AND_CONTROLS.md)
+
+---
+
 ## Architectural Layers
 
 Raw Logs → Snapshots → Reports → Phase Summaries → Governance
