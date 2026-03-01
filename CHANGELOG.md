@@ -13,6 +13,8 @@ Format:
 
 ### Added
 - METHODOLOGY_AND_CONTROLS.md defining longitudinal study framework and stabilization controls
+- Weekly Summary: 2026-W08 consolidation under elevated recovery signaling
+- Initialized 2026-W09 persistence verification template
 
 ---
 
