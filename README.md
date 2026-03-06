@@ -88,6 +88,10 @@ Root
 
 ---
 
+## Project assumptions and Scope constraints
+
+- [ASSUMPTIONS_AND_BOUNDARIES.md](./ASSUMPTIONS_AND_BOUNDARIES.md) — governing limits on interpretation, causality, and project scope
+
 ## Methodology
 
 Project methodology, experimental controls, and reproducibility assumptions are documented in:
