@@ -12,6 +12,7 @@ Format:
 - (Reserved for changes after the latest tagged release.)
 
 ### Added
+- ASSUMPTIONS_AND_BOUNDARIES.md establishing interpretive limits, observational assumptions, and scope constraints governing the longitudinal archive
 - METHODOLOGY_AND_CONTROLS.md defining longitudinal study framework and stabilization controls
 - Weekly Summary: 2026-W08 consolidation under elevated recovery signaling
 - Initialized 2026-W09 persistence verification template
