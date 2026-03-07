@@ -1,104 +1,150 @@
-System Overview
+# System Overview
 
-Daniel Longitudinal Study
+Daniel Longitudinal Study  
 Single-Subject Structured Adaptation System
 
 ---
 
-Purpose
+# Purpose
 
-This repository documents a governed longitudinal observation of human performance adaptation under controlled environmental, training, and recovery constraints.
+This repository documents a governed longitudinal observation of human performance adaptation operating under controlled environmental, training, and recovery constraints.
 
-The objective is durability of signal across time rather than short-term performance optimization.
+The objective of the system is **durability of signal across time**, rather than short-term performance optimization.
+
+The archive prioritizes:
+
+• longitudinal consistency  
+• artifact verification  
+• interpretive discipline  
+
+All interpretation occurs after measurement artifacts are confirmed.
 
 ---
 
-System Model
+# System Model
 
+The system can be described as a constrained observation pipeline.
+
+```
 Inputs
-Training Load
-Recovery Environment
-Nutrition
-Sleep
-Behavioral Constraints
-
-↓
-
+│
+├─ Training Load
+├─ Recovery Environment
+├─ Nutrition
+├─ Sleep
+└─ Behavioral Constraints
+      ↓
 Physiological Response
-
-↓
-
-Verified Artifacts
-(Snapshots, Reports, Biomarkers)
-
-↓
-
+      ↓
+Measurement Artifacts
+(Snapshots, Biomarkers, Reports)
+      ↓
 Phase Interpretation
-(Retrospective)
+(Retrospective Only)
+```
+
+Interpretation follows measurement confirmation and does not precede artifact verification.
 
 ---
 
-Observation Principles
+# Observation Principles
 
-- No forward performance claims
-- Phase declarations occur retrospectively
-- Interpretation follows artifact confirmation
-- Structural consistency prioritized over novelty
+The system operates under the following observation rules:
+
+• No forward performance claims  
+• Phase declarations occur retrospectively  
+• Interpretation follows artifact confirmation  
+• Structural consistency is prioritized over novelty  
+• Measurements reflect normal operating conditions  
+
+These principles maintain signal integrity across long time horizons.
 
 ---
 
-Data Abstraction Layers
+# Data Abstraction Layers
 
+The repository is organized into progressive abstraction layers.
+
+```
 Raw Logs
-→ Snapshots
-→ Weekly Reports
-→ Phase Summaries
-→ Governance
+↓
+Snapshots
+↓
+Weekly Reports
+↓
+Phase Summaries
+↓
+Governance
+```
 
-Each layer reduces noise while preserving traceability.
+Each layer reduces noise while preserving traceability to primary measurement artifacts.
+
+This structure allows interpretation without modifying the underlying observations.
 
 ---
 
-Repository Artifact Map
+# Repository Artifact Map
 
-Key structural documents within the system:
+Key structural documents define how the system operates.
 
-LATEST.md
-Executive summary of current system state.
+**LATEST.md**  
+Executive summary of the current system state.
 
-STATE_TRANSITIONS.md
+**INDEX.md**  
+Navigation index for archive artifacts.
+
+**STATE_TRANSITIONS.md**  
 Chronological record of structural phase changes.
 
-METHODOLOGY_AND_CONTROLS.md
-Experimental observation design and system constraints.
+**METHODOLOGY_AND_CONTROLS.md**  
+Experimental observation framework and operational controls.
 
-ASSUMPTIONS_AND_BOUNDARIES.md
-Declared system limitations and interpretive boundaries.
+**ASSUMPTIONS_AND_BOUNDARIES.md**  
+Declared interpretive limits and scope constraints.
 
-DATASET
-Structured observational records.
+**DATA_DICTIONARY.md**  
+Definitions for dataset variables and terminology.
 
-REPORTS
-Weekly interpretive summaries.
+**MEASUREMENT_SOURCES.md**  
+Devices, facilities, and measurement capture conditions.
+
+**/reports**  
+Weekly interpretive summaries derived from artifacts.
+
+**/snapshots**  
+Primary measurement artifacts (DEXA, BodPod, lab reports, etc).
 
 ---
 
-System Boundaries
+# System Boundaries
 
-This repository documents a single-subject observational system.
+This repository documents a **single-subject observational system**.
 
-It does not claim population-level conclusions.
+The archive does not claim population-level conclusions.
 
 Findings represent structured observation within a controlled personal environment and should be interpreted accordingly.
 
+Causal inference is intentionally limited.
+
+Interpretation is governed by the constraints defined in:
+
+- `ASSUMPTIONS_AND_BOUNDARIES.md`
+- `METHODOLOGY_AND_CONTROLS.md`
+
 ---
 
-Operational Constraint
+# Operational Constraint
 
 The system operates continuously.
 
 Behavioral execution precedes interpretation.
 
+Artifacts accumulate over time, and interpretation is applied retrospectively as longitudinal patterns become observable.
+
 ---
 
-This document describes system structure only.
+# Document Scope
+
+This document describes **system architecture only**.
+
+Operational details are documented in the associated governance and methodology files.
