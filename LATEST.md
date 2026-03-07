@@ -1,210 +1,164 @@
-LATEST — Executive System State
+# LATEST — Executive System State
 
-Daniel Longitudinal Study
+Daniel Longitudinal Study  
 Public Archive Status Dashboard
 
-Last Updated: 2026-02-W07 Closeout
-Repository State: Active Longitudinal Observation
+**Last Updated:** 2026-W08  
+**Repository State:** Active Longitudinal Observation  
+**Archive Mode:** Public, governed, versioned
 
 ---
 
-Key System Metrics (Recent Trend)
+## Purpose
 
-Metric| Current State| Direction
-Bodyweight Range| ~224–228 lb| Stable
-HRV Baseline| Elevated| Improving
-Resting Heart Rate| Low| Stable
-Aerobic Capacity (B1)| Preserved| Stable
-Strength Integration| Reintroduced| Stable
-Sleep Duration / Integrity| Consistent| Stable
-Training Frequency| 5–6 sessions/week| Stable
+This document provides a concise overview of the archive’s current public state.
 
-These signals summarize the current physiological operating state.
-Detailed raw measurements are archived in the dataset.
+It is not a weekly report, phase declaration, or performance summary.  
+Its role is to orient a new reader to:
 
----
+- current operating status
+- current phase context
+- active training structure
+- archive navigation
+- upcoming public updates
 
-Current Phase
-
-Phase 2 — Load Integration (Lock-In Confirmed)
-
-The system has transitioned from initial physiological “firmware installation” into stable mechanical load integration.
-
-Training stress now operates inside recovery capacity without destabilizing systemic markers.
-
-Execution behavior increasingly automatic.
+Detailed interpretation belongs in `/reports`.  
+Primary artifacts belong in `/snapshots`.
 
 ---
 
-Current Status — 2026-W08
+## Current Archive State
 
-Phase-2 load integration remains stable under repeated exposure.
-
-Recovery bandwidth remains preserved with elevated HRV signaling and stable sleep integrity.
-
-No workload escalation introduced during this observation window.
-
-Operational posture remains consolidation-first until persistence confirms full Phase-2 lock-in.
-
----
-
-Current System Status
-
-Domain| Status
-Aerobic Base| Preserved
-Strength Reintroduction| Stable
-Recovery Capacity| High
-Bodyweight Stability| Confirmed
-Sleep Integrity| Stable
-Inflammation| None observed
-Psychological Tone| Calm execution
-Adaptation State| Consolidating
-
-Signal quality remains clean.
-No volatility detected.
+| Domain | Current Public Status |
+|---|---|
+| Repository Activity | Active |
+| Observation Model | Continuous longitudinal tracking |
+| Interpretation Mode | Retrospective, artifact-bound |
+| Phase Context | Phase 2 — Load Integration |
+| Training Structure | Stable |
+| Recovery Signals | Stable |
+| Sleep Integrity | Stable |
+| Bodyweight Band | Stable within recent range |
+| Archive Integrity | Maintained |
 
 ---
 
-Weekly Operational Summary
+## Current Phase Context
 
-Recent weeks confirm:
+**Phase 2 — Load Integration**
 
-- Preservation of Phase-1 aerobic firmware
-- Progressive strength exposure tolerated without systemic fatigue
-- Stable HRV following lift sessions
-- Bodyweight stability during modality transition
-- Reduced perceived effort at equivalent workload
+The system is currently operating inside a Phase-2 load integration window.
 
-These signals indicate early Phase-2 structural lock-in.
+This means:
 
----
+- aerobic base remains in active preservation
+- mechanical loading has been reintroduced
+- recovery remains compatible with training frequency
+- interpretation remains consolidation-first
 
-Observable Transition Markers
-
-Behavioral shifts have emerged consistent with Phase-2 consolidation:
-
-- Training increasingly routine rather than effort-driven
-- Reduced urgency despite expanding capability
-- Recovery no longer limiting training availability
-- Consistency replacing motivation dependence
-
-Historically these patterns often precede visible recomposition.
+Phase language is descriptive, not promotional.  
+Any future phase advancement must remain artifact-confirmed and retrospective.
 
 ---
 
-Body Composition Context
+## Current Operating Posture
 
-Bodyweight currently stabilizing within:
+The archive is currently documenting:
 
-~224–228 lbs
+- stable repeated training exposure
+- preserved recovery bandwidth
+- consistent sleep and execution patterns
+- consolidation before escalation
 
-Stability occurring during:
-
-- Reduced endurance dominance
-- Increased mechanical loading
-- Maintained aerobic frequency
-
-Recomposition signals are expected to appear visually before scale movement.
-
-Upcoming DEXA and BodPod measurements will serve as objective confirmation checkpoints.
+No peaking behavior is assumed.  
+No forward performance claims are made here.
 
 ---
 
-Active Training Structure
+## Active Training Structure
 
-B1 — Aerobic Base
-
+### B1 — Aerobic Base
 - Incline treadmill walking
 - Nasal breathing preserved
 - Minimum effective dose maintained
 
-Strength Integration
-
-- Trap Bar Deadlift (3×5)
+### Strength Integration
+- Trap Bar Deadlift
 - Split Squats
 - Pull-Ups
-- Controlled progression model
+- Controlled loading exposure
 
-Load quality prioritized over intensity escalation.
-
----
-
-Risk Posture
-
-Primary Risk:
-
-Premature escalation following perceived ease.
-
-Mitigation Strategy:
-
-- Maintain structural consistency
-- Avoid novelty introduction
-- Respect connective tissue adaptation lag
-- Progress only when recovery signals remain preserved
-
-Durability prioritized over performance display.
+Training structure may evolve over time, but the current public posture remains:
+**preserve system stability before expanding load or complexity.**
 
 ---
 
-Forward Outlook (Next 4–8 Weeks)
+## Risk Posture
 
-Primary objective:
+**Primary risk:** premature escalation during perceived ease
 
-Structural consolidation prior to capability expansion.
+**Current mitigation posture:**
+- preserve structural consistency
+- avoid novelty for its own sake
+- respect connective tissue adaptation lag
+- progress only when recovery remains compatible with exposure
 
-Expected developments:
-
-- Increasing load tolerance
-- Improved movement efficiency
-- Early recomposition signals
-- Rising work capacity without recovery penalty
-
-No peaking behavior planned.
+Durability remains higher priority than display.
 
 ---
 
-Archive Position
+## Archive Position
 
-The project has entered continuous longitudinal operation.
+The repository is now operating as a continuous public archive rather than a one-off project log.
 
-Data collection now transitions from descriptive tracking toward early predictive modeling capability.
+The system remains organized around:
 
-Interpretation will increasingly rely on weekly continuity rather than isolated performance events.
+raw artifacts  
+→ snapshots  
+→ reports  
+→ phase interpretation  
+→ governance
 
----
-
-Public Orientation
-
-This repository documents process rather than performance.
-
-Progress is evaluated through durability, reproducibility, and system stability across time.
+The archive is intended to remain readable across time, not only in the current week.
 
 ---
 
-Navigation
+## Public Orientation
 
-Weekly Reports
-→ "/reports"
+This repository documents process rather than performance theater.
 
-Dataset Versions
-→ "/data"
+Progress is evaluated through:
 
-Snapshots
-→ "/snapshots"
-
-Methodology
-→ "/METHODOLOGY_AND_CONTROLS.md"
+- continuity
+- durability
+- traceability
+- reproducibility posture
+- stability across time
 
 ---
 
-Next Scheduled Updates
+## Navigation
 
-- Weekly Report — 2026-W08
-- Snapshot additions as captures occur
-- Quarterly biomarker alignment
+- **Index:** [INDEX.md](INDEX.md)
+- **Why Public:** [WHY_PUBLIC.md](WHY_PUBLIC.md)
+- **Governance:** [GOVERNANCE.md](GOVERNANCE.md)
+- **Reports:** [/reports](reports)
+- **Snapshots:** [/snapshots](snapshots)
+- **Methodology and Controls:** [METHODOLOGY_AND_CONTROLS.md](METHODOLOGY_AND_CONTROLS.md)
+- **Data Dictionary:** [DATA_DICTIONARY.md](DATA_DICTIONARY.md)
+- **Measurement Sources:** [MEASUREMENT_SOURCES.md](MEASUREMENT_SOURCES.md)
+- **Changelog:** [CHANGELOG.md](CHANGELOG.md)
 
 ---
 
-System State: Stable
-Trajectory: Positive
-Operational Mode: Execute
+## Next Scheduled Public Updates
+
+- next weekly report
+- snapshot additions as capture events occur
+- future quarterly biomarker alignment when available
+
+---
+
+**System State:** Stable  
+**Trajectory Posture:** Positive  
+**Operational Mode:** Execute
