@@ -3,13 +3,13 @@ _A Single-Subject Structured Human Performance Dataset_
 
 [![Release](https://img.shields.io/badge/release-v0.1-111111)](https://github.com/CDHughett/daniel-longitudinal-public/releases/tag/v0.1)
 
-**Pinned release state:** `v0.1` (governed baseline)
-- Release notes: https://github.com/CDHughett/daniel-longitudinal-public/releases/tag/v0.1
-- Repo at tag: https://github.com/CDHughett/daniel-longitudinal-public/tree/v0.1
+**Pinned release state:** `v0.1` (governed baseline)  
+- Release notes: https://github.com/CDHughett/daniel-longitudinal-public/releases/tag/v0.1  
+- Repo at tag: https://github.com/CDHughett/daniel-longitudinal-public/tree/v0.1  
 
-**Living state (moves):**
-- Current snapshot: `LATEST.md`
-- Snapshot index: `INDEX.md`
+**Living archive state (moves):**
+- Current system status → `LATEST.md`
+- Archive navigation → `INDEX.md`
 
 <p align="center">
 
@@ -27,7 +27,7 @@ _A Single-Subject Structured Human Performance Dataset_
 
 ---
 
-## Phase Architecture
+# Phase Architecture
 
 Phase 0 | ██████████ | Completed  
 Phase 1 | ██████████ | Completed  
@@ -36,130 +36,39 @@ Phase 3 | ░░░░░░░░░░ | Locked
 
 System progression is versioned and artifact-verified.
 
-Phase transitions are declared retrospectively following sustained system stability.
+Phase transitions are declared **retrospectively** following sustained system stability.
 
 ---
 
-## Overview
+# Overview
 
-This repository documents a structured, artifact-verified human performance system.
+This repository documents a structured longitudinal observation of a human performance system operating under defined constraints.
 
-It contains:
+The archive includes:
 
-- Confirmed body composition snapshots
-- Bloodwork data
-- Training architecture evolution
-- Phase-based structural shifts
-- Governance documentation
+- body composition snapshots
+- bloodwork captures
+- training architecture evolution
+- phase progression
+- governance and methodological controls
 
-This is not a motivational archive.
-It is a structured longitudinal dataset.
+This is **not a motivational archive**.
+
+It is a **structured longitudinal dataset**.
 
 ---
 
-## How to Navigate
+# How to Navigate
 
 Recommended entry points:
 
-1. `LATEST.md` — Current operational system state  
-2. `INDEX.md` — Chronological artifact access  
-3. `PHASE_INDEX.md` — Phase architecture and progression logic  
+1. `LATEST.md` — current operational system state  
+2. `INDEX.md` — archive navigation and artifact routing  
+3. `/reports` — chronological interpretation summaries  
+4. `/snapshots` — primary measurement artifacts  
 
-Artifacts should be interpreted chronologically.
-
----
-
-## Repository Structure
-
-```
-Root
-│
-├── snapshots/              # Confirmed measurement captures
-├── reports/                # Structured summaries (no new raw data)
-├── PHASE_INDEX.md
-├── EPOCH_MAP.md
-├── STRUCTURAL_PRINCIPLES.md
-├── PHASE_DECLARATION_CRITERIA.md
-├── SYSTEM_CONSTRAINTS.md
-├── RISK_MANAGEMENT.md
-├── RECOVERY_MONITORING_FRAMEWORK.md
-└── GOVERNANCE.md
-```
+Artifacts should always be interpreted chronologically.
 
 ---
 
-## Project assumptions and Scope constraints
-
-- [ASSUMPTIONS_AND_BOUNDARIES.md](./ASSUMPTIONS_AND_BOUNDARIES.md) — governing limits on interpretation, causality, and project scope
-
-## Methodology
-
-Project methodology, experimental controls, and reproducibility assumptions are documented in:
-
-→ [METHODOLOGY_AND_CONTROLS.md](./METHODOLOGY_AND_CONTROLS.md)
-
----
-
-## Architectural Layers
-
-Raw Logs → Snapshots → Reports → Phase Summaries → Governance
-
-Each layer increases abstraction while remaining artifact-bound.
-
----
-
-## Current Phase
-
-**Phase 2 — Load Integration**
-
-Focus:
-- Strength ceiling exploration
-- Neuromuscular density
-- Recovery-aware progression
-- Biomarker stability preservation
-
----
-
-## Governance
-
-Structural changes follow documented criteria:
-
-- Phase declarations are retrospective
-- Load increases are recovery-gated
-- Claims require snapshot confirmation
-- System constraints guide progression
-
-See:
-- STRUCTURAL_PRINCIPLES.md
-- PHASE_DECLARATION_CRITERIA.md
-- RISK_MANAGEMENT.md
-- RECOVERY_MONITORING_FRAMEWORK.md
-
----
-
-## Scope
-
-This repository documents a single-subject system and does not constitute medical or performance advice.
-
-All observations are context-bound to the documented subject.
-
----
-
-## Intent
-
-This dataset exists to demonstrate:
-
-- Structured adaptation
-- Conservative escalation
-- Artifact-based governance
-- Durability over velocity
-
-No claims extend beyond verified artifacts.
-
----
-
-_Repository state reflects only confirmed artifacts and governed interpretation._
-
----
-
-Public longitudinal archive initiated 2026.
+# Repository Structure
