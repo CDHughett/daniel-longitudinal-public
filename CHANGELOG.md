@@ -2,35 +2,59 @@
 
 All notable changes to this public archive are documented here.
 
+This changelog records **material public-facing archive changes** such as:
+
+- structural documentation updates
+- governance additions or revisions
+- methodology changes
+- new public reports
+- new public archive surfaces
+
+It does **not** attempt to log every individual commit.
+
 Format:
 - `YYYY-MM-DD` — summary of what changed and why
-- Snapshots are immutable once committed.
+- snapshot artifacts remain immutable once committed
 
 ---
 
 ## [Unreleased]
-- (Reserved for changes after the latest tagged release.)
 
 ### Added
-- ASSUMPTIONS_AND_BOUNDARIES.md establishing interpretive limits, observational assumptions, and scope constraints governing the longitudinal archive
-- METHODOLOGY_AND_CONTROLS.md defining longitudinal study framework and stabilization controls
-- Weekly Summary: 2026-W08 consolidation under elevated recovery signaling
-- Initialized 2026-W09 persistence verification template
+- `ASSUMPTIONS_AND_BOUNDARIES.md` establishing interpretive limits, observational assumptions, and public scope constraints for the longitudinal archive
+- `METHODOLOGY_AND_CONTROLS.md` defining the observational framework, control posture, and methodological guardrails for public interpretation
+- public weekly report for `2026-W08`, documenting consolidation conditions under elevated recovery signaling
+- initialized public reporting scaffold for `2026-W09` persistence verification
+
+### Changed
+- strengthened public archive governance posture by clarifying methodological and interpretive boundaries
+- extended report continuity beyond initial archive release to preserve longitudinal readability
+
+### Notes
+- Unreleased changes reflect **archive hardening and continuity maintenance**, not forward performance claims.
 
 ---
 
 ## [v0.1] — 2026-02-18
-Initial governed archive structure release.
+
+Initial governed public archive release.
 
 ### Added
-- Normalized core docs (README/INDEX/LATEST/ROADMAP/SNAPSHOT_LOG/PHASE_MAP)
-- Reader routing and canonical links
-- Initialized CHANGELOG for longitudinal traceability
-- Governance + versioning + dictionary + measurement source foundations
-- Structured `/reports` and `/snapshots` architecture
+- normalized core public routing documents:
+  - `README.md`
+  - `INDEX.md`
+  - `LATEST.md`
+  - `ROADMAP.md`
+  - `SNAPSHOT_LOG.md`
+  - `PHASE_MAP.md`
+- canonical reader routing and baseline public archive navigation
+- initialized `CHANGELOG.md` for public traceability
+- governance, versioning, data dictionary, and measurement-source foundations
+- structured public `/reports` and `/snapshots` architecture
 
 ### Notes
 - This release represents **architectural maturity**, not performance claims.
+- Archive interpretation remains retrospective and artifact-bound.
 
 ---
 
