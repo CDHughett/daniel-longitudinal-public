@@ -27,6 +27,10 @@ Format:
 - initialized public reporting scaffold for `2026-W09` persistence verification
 
 ### Changed
+- completed `INDEX.md` as a true public navigation spine and removed placeholder scaffolding
+- rewrote `LATEST.md` as an executive system-state front door rather than a mini-report
+- reconciled `snapshots/README.md` naming and storage language with visible archive practice
+- normalized `CHANGELOG.md` to track material public archive changes more cleanly
 - strengthened public archive governance posture by clarifying methodological and interpretive boundaries
 - extended report continuity beyond initial archive release to preserve longitudinal readability
 
