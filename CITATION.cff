@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+title: "Daniel Longitudinal Study"
+message: >
+  If you use or reference this repository, please cite it using the
+  metadata below. This archive documents a continuous single-subject
+  longitudinal observation of training adaptation, recovery signals,
+  and behavioral execution patterns.
+
+type: dataset
+
+authors:
+  - family-names: Hughett
+    given-names: Christopher Daniel
+    alias: CDHughett
+
+repository-code: https://github.com/CDHughett/daniel-longitudinal-study
+
+abstract: >
+  The Daniel Longitudinal Study is a governed public archive documenting
+  a continuous single-subject observation of training exposure, recovery
+  dynamics, and system-level physiological adaptation over time.
+
+keywords:
+  - longitudinal observation
+  - self quantification
+  - training adaptation
+  - recovery monitoring
+  - human performance
+
+license: MIT
