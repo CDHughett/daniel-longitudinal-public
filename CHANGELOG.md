@@ -1,66 +1,53 @@
 # Changelog
 
-All notable changes to this public archive are documented here.
+All notable changes to the Daniel Longitudinal Study public archive
+are documented in this file.
 
-This changelog records **material public-facing archive changes** such as:
+The format follows a simplified Keep-a-Changelog structure adapted
+for a longitudinal dataset archive.
 
-- structural documentation updates
-- governance additions or revisions
-- methodology changes
-- new public reports
-- new public archive surfaces
-
-It does **not** attempt to log every individual commit.
-
-Format:
-- `YYYY-MM-DD` — summary of what changed and why
-- snapshot artifacts remain immutable once committed
+This changelog records **repository artifacts and structural updates**.
+Biological interpretation belongs in `/reports`.
 
 ---
 
 ## [Unreleased]
 
 ### Added
-- `ASSUMPTIONS_AND_BOUNDARIES.md` establishing interpretive limits, observational assumptions, and public scope constraints for the longitudinal archive
-- `METHODOLOGY_AND_CONTROLS.md` defining the observational framework, control posture, and methodological guardrails for public interpretation
-- public weekly report for `2026-W08`, documenting consolidation conditions under elevated recovery signaling
-- initialized public reporting scaffold for `2026-W09` persistence verification
+- Weekly report for **2026-W09** documenting continued training stability under repeated exposure architecture.
 
-### Changed
-- completed `INDEX.md` as a true public navigation spine and removed placeholder scaffolding
-- rewrote `LATEST.md` as an executive system-state front door rather than a mini-report
-- reconciled `snapshots/README.md` naming and storage language with visible archive practice
-- normalized `CHANGELOG.md` to track material public archive changes more cleanly
-- strengthened public archive governance posture by clarifying methodological and interpretive boundaries
-- extended report continuity beyond initial archive release to preserve longitudinal readability
+### Updated
+- **LATEST.md** executive system dashboard refreshed to reflect Week 09 archive status.
+- Bodyweight observation band updated to reflect current range (~230–231 lb).
 
-### Notes
-- Unreleased changes reflect **archive hardening and continuity maintenance**, not forward performance claims.
+### Observations
+- Training architecture remains unchanged under Phase 2 load integration monitoring.
+- Recovery signals remain stable during repeated load exposure.
 
 ---
 
-## [v0.1] — 2026-02-18
-
-Initial governed public archive release.
+## [0.1] – Initial Public Archive Release
 
 ### Added
-- normalized core public routing documents:
-  - `README.md`
-  - `INDEX.md`
-  - `LATEST.md`
-  - `ROADMAP.md`
-  - `SNAPSHOT_LOG.md`
-  - `PHASE_MAP.md`
-- canonical reader routing and baseline public archive navigation
-- initialized `CHANGELOG.md` for public traceability
-- governance, versioning, data dictionary, and measurement-source foundations
-- structured public `/reports` and `/snapshots` architecture
+- Initial public repository structure.
+- Core governance documentation.
+- System overview and archive orientation.
+- Initial reports and snapshot artifacts.
+- Measurement source documentation.
+- Data dictionary.
 
-### Notes
-- This release represents **architectural maturity**, not performance claims.
-- Archive interpretation remains retrospective and artifact-bound.
+### Governance
+- Archive established as a **continuous longitudinal observation system**.
+- Interpretation constrained to artifact-confirmed observations.
 
 ---
 
-[Unreleased]: https://github.com/CDHughett/daniel-longitudinal-public/compare/v0.1...HEAD
-[v0.1]: https://github.com/CDHughett/daniel-longitudinal-public/releases/tag/v0.1
+## Versioning Notes
+
+This repository does not represent a software product release cycle.
+
+Version tags mark **structural milestones in the archive**, not
+performance achievements.
+
+Most changes occur within the **Unreleased** section until a major
+archive structure update occurs.
