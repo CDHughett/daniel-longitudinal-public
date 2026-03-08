@@ -3,7 +3,7 @@
 Daniel Longitudinal Study  
 Public Archive Status Dashboard
 
-**Last Updated:** 2026-W08  
+**Last Updated:** 2026-W09  
 **Repository State:** Active Longitudinal Observation  
 **Archive Mode:** Public, governed, versioned
 
@@ -38,7 +38,7 @@ Primary artifacts belong in `/snapshots`.
 | Training Structure | Stable |
 | Recovery Signals | Stable |
 | Sleep Integrity | Stable |
-| Bodyweight Band | Stable within recent range |
+| Bodyweight Band | ~230–231 lb range |
 | Archive Integrity | Maintained |
 
 ---
@@ -89,6 +89,7 @@ No forward performance claims are made here.
 - Controlled loading exposure
 
 Training structure may evolve over time, but the current public posture remains:
+
 **preserve system stability before expanding load or complexity.**
 
 ---
