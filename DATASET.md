@@ -1,136 +1,153 @@
-Dataset Description
+# Dataset Overview
 
-Daniel Longitudinal Study
-Public Longitudinal Observation Archive
-
----
-
-Dataset Purpose
-
-This repository contains a continuous single-subject longitudinal observation of training exposure, recovery dynamics, and behavioral execution patterns.
-
-The archive prioritizes durability of signal across time rather than short-term performance outcomes.
-
-Observations are recorded under stable environmental and behavioral constraints in order to preserve interpretability across months and years of data accumulation.
-
-The repository functions as a public dataset archive, not a performance showcase.
+## Daniel Longitudinal Study
+**Public Longitudinal Observation Archive**
 
 ---
 
-Observation Model
+## Dataset Purpose
 
-The dataset follows a structured observation model:
+This repository contains a **continuous single-subject longitudinal observation archive** documenting:
 
-Training Exposure
-+
-Recovery Environment
-+
-Behavioral Execution
-↓
-Physiological Response
-↓
-Artifact Capture
-↓
-Retrospective Interpretation
+- training exposure
+- recovery dynamics
+- behavioral execution patterns
 
-Artifacts are recorded first.
-Interpretation occurs only after sufficient evidence accumulates.
+The dataset prioritizes **durability of signal across time** rather than short-term performance outcomes.
 
-This preserves traceability between observation and interpretation.
+Observations are recorded under relatively stable environmental and behavioral conditions in order to preserve interpretability across **months and years of accumulated data**.
+
+This repository functions as a **public dataset archive**, not a performance showcase.
 
 ---
 
-Dataset Structure
+## Observation Model
 
-The repository organizes information across several layers:
+The dataset follows a structured observation flow:
 
-Raw Observations
-→ Snapshot Artifacts
-→ Weekly Reports
-→ Phase Context
-→ Governance
+    Training Exposure
+    +
+    Recovery Environment
+    +
+    Behavioral Execution
+    ↓
+    Physiological Response
+    ↓
+    Artifact Capture
+    ↓
+    Retrospective Interpretation
 
-Each layer reduces noise while preserving historical continuity.
+**Artifacts are recorded before interpretation.**
+
+Interpretation occurs only after sufficient evidence accumulates over time.  
+This approach preserves traceability between observation and interpretation.
 
 ---
 
-Primary Dataset Components
+## Dataset Architecture
 
-Reports
+The archive organizes information into layered components:
 
-Location: "/reports"
+    Raw Observations
+    ↓
+    Snapshot Artifacts
+    ↓
+    Weekly Reports
+    ↓
+    Phase Context
+    ↓
+    Governance Framework
 
-Weekly observational summaries documenting system state during each observation period.
+Each layer reduces noise while preserving the **historical continuity of the system**.
 
-Reports describe:
+---
+
+## Primary Dataset Components
+
+### Reports
+
+**Location:** `/reports`
+
+Weekly observational summaries describing the system state during each observation period.
+
+Reports typically include:
 
 - training architecture
 - recovery signals
 - bodyweight observation ranges
 - operational posture of the system
 
-Reports remain strictly observational and avoid forward performance claims.
+Reports remain **strictly observational** and avoid forward performance claims.
 
 ---
 
-Snapshots
+### Snapshots
 
-Location: "/snapshots"
+**Location:** `/snapshots`
 
-Snapshot artifacts provide concise state captures of the system during a given observation window.
+Snapshot artifacts provide concise state captures of the system at specific observation windows.
 
-Snapshots function as quick reference points across the timeline of the archive.
+Snapshots act as **quick reference checkpoints across the archive timeline**.
 
-They summarize:
+Typical snapshot summaries include:
 
 - bodyweight observation bands
-- training exposure
-- recovery signals
-- structural stability
+- training exposure structure
+- recovery signal stability
+- system execution consistency
 
 ---
 
-Governance Documents
+## Governance Documents
 
-Several documents define the structure and interpretation constraints of the dataset:
+Several documents define the structural and interpretive framework of the dataset.
 
-- "SYSTEM_OVERVIEW.md"
-- "METHODOLOGY_AND_CONTROLS.md"
-- "ASSUMPTIONS_AND_BOUNDARIES.md"
-- "GOVERNANCE.md"
-- "DATA_DICTIONARY.md"
-- "MEASUREMENT_SOURCES.md"
+These include:
 
-These files describe how observations are recorded, constrained, and interpreted.
+- `SYSTEM_OVERVIEW.md`
+- `METHODOLOGY_AND_CONTROLS.md`
+- `ASSUMPTIONS_AND_BOUNDARIES.md`
+- `GOVERNANCE.md`
+- `DATA_DICTIONARY.md`
+- `MEASUREMENT_SOURCES.md`
+
+Together these files describe **how observations are recorded, constrained, and interpreted**.
 
 ---
 
-Time Structure
+## Time Structure
 
-The archive operates on a weekly observation cycle.
+The archive operates on a **weekly observation cycle**.
 
 Typical workflow:
 
-Daily observations
-→ weekly report generation
-→ snapshot artifact capture
-→ repository status update ("LATEST.md")
+    Daily Observations
+    ↓
+    Weekly Report Generation
+    ↓
+    Snapshot Artifact Capture
+    ↓
+    Repository Status Update (LATEST.md)
 
-This cycle provides continuity while limiting short-term interpretive noise.
-
----
-
-Phase Context
-
-The archive currently uses descriptive phase language to describe broad system states.
-
-Phase labels are retrospective and descriptive, not predictive.
-
-They exist to organize long-term observation patterns rather than to signal milestones or performance claims.
+This structure provides **continuity of observation while minimizing short-term interpretive noise**.
 
 ---
 
-Domains Observed
+## Phase Context
+
+The archive uses **descriptive phase language** to organize broad system states.
+
+Phase labels are:
+
+- retrospective
+- descriptive
+- artifact-confirmed
+
+They are **not predictive milestones** and are not used to signal performance claims.
+
+---
+
+## Domains Observed
 
 The dataset currently tracks several interacting domains:
 
@@ -144,7 +161,7 @@ Additional physiological layers (such as biomarker alignment) may be incorporate
 
 ---
 
-Dataset Integrity
+## Dataset Integrity
 
 The archive emphasizes several guiding principles:
 
@@ -154,17 +171,17 @@ The archive emphasizes several guiding principles:
 - structural consistency of training exposure
 - minimal disruption to the observation environment
 
-The goal is to allow meaningful patterns to emerge naturally from long-term data accumulation.
+The objective is to allow meaningful patterns to **emerge naturally through long-term accumulation of observations**.
 
 ---
 
-Longevity of the Archive
+## Longevity of the Archive
 
-This repository is designed to function as a long-duration public archive.
+This repository is designed to function as a **long-duration public archive**.
 
-Rather than representing a single experiment or project, the dataset is intended to accumulate observations across extended time horizons.
+Rather than representing a single experiment or short-term project, the dataset is intended to accumulate observations across extended time horizons.
 
-Interpretation of the dataset therefore prioritizes:
+Interpretation therefore prioritizes:
 
 - stability
 - repeatability
