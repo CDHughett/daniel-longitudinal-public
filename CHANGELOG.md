@@ -19,7 +19,8 @@ Biological interpretation belongs in `/reports`.
 ### Updated
 - **LATEST.md** executive system dashboard refreshed to reflect Week 09 archive status.
 - Bodyweight observation band updated to reflect current range (~230–231 lb).
-
+- ASSUMPTIONS_AND_BOUNDARIES.md refined to finalize interpretive limits, falsifiability conditions, and operational boundaries.
+  
 ### Observations
 - Training architecture remains unchanged under Phase 2 load integration monitoring.
 - Recovery signals remain stable during repeated load exposure.
