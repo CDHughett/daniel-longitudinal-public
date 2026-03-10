@@ -173,10 +173,65 @@ These factors must be considered whenever patterns appear unusually clear or unu
 
 ---
 
+## Falsifiability Conditions
+
+The framework underlying this repository would require reevaluation if the following patterns emerged despite continued structural adherence:
+
+- Persistent degradation of sleep architecture
+- Progressive decline in recovery capacity under stable workload
+- Biomarker deterioration independent of external disruption
+- Increasing injury frequency despite stable training structure
+- Loss of behavioral execution consistency across phases
+
+These outcomes would challenge the working assumptions that structured consistency, controlled behavioral inputs, and delayed interpretation improve signal quality in longitudinal self-observation.
+
+The project therefore treats its assumptions as provisional and subject to revision if longitudinal artifacts contradict them.
+
+---
+
 ## Operational Boundaries
 
 ### 1. The system is observational first
 
-The repository exists primarily to document, preserve, organize, and interpret.
+The repository exists primarily to document, preserve, organize, and interpret longitudinal artifacts.
 
-It does not exist to produce
+It does not exist to produce performance claims, guarantee outcomes, or demonstrate optimization narratives.
+
+Training, recovery, and behavioral execution occur independently of the documentation layer.
+The repository records these processes but does not serve as their driving mechanism.
+
+---
+
+### 2. Structural continuity takes priority over novelty
+
+The system favors repeatable structure over rapid experimentation.
+
+Protocol adjustments may occur over time, but continuity of observation remains the governing priority.
+
+When tradeoffs arise between experimentation and long-term signal preservation, signal preservation is favored.
+
+---
+
+### 3. Interpretation is subordinate to artifacts
+
+Narrative explanations, phase language, and higher-order summaries remain provisional.
+
+Artifacts — logs, datasets, snapshots, and reports — represent the authoritative record.
+
+Interpretation must remain consistent with the available artifacts and may be revised if later evidence contradicts earlier conclusions.
+
+---
+
+## Closing Intent
+
+The purpose of defining assumptions, boundaries, and falsifiability conditions is to protect the integrity of the observation system.
+
+Explicit limits reduce interpretive drift, discourage overclaiming, and preserve the usefulness of the dataset for future review.
+
+This repository therefore prioritizes:
+
+- durability of signal
+- transparency of structure
+- disciplined restraint in interpretation
+
+over novelty, speed, or narrative appeal.
