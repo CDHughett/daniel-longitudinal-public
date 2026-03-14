@@ -1,64 +1,36 @@
 # Daniel Longitudinal Study
-_A Single-Subject Structured Human Performance Dataset_
+*A Single-Subject Structured Human Performance Dataset*
 
+[![Dataset Status](https://img.shields.io/badge/status-active_observation-blue)]()
+[![Observation Type](https://img.shields.io/badge/model-longitudinal_archive-purple)]()
+[![Subjects](https://img.shields.io/badge/subjects-n%3D1-lightgrey)]()
+[![Artifact Model](https://img.shields.io/badge/data-artifact_first-green)]()
+[![Archive Version](https://img.shields.io/badge/archive-v0.1-black)]()
 [![Release](https://img.shields.io/badge/release-v0.1-111111)](https://github.com/CDHughett/daniel-longitudinal-public/releases/tag/v0.1)
 
-**Pinned release state:** `v0.1` (governed baseline)  
-- Release notes: https://github.com/CDHughett/daniel-longitudinal-public/releases/tag/v0.1  
-- Repo at tag: https://github.com/CDHughett/daniel-longitudinal-public/tree/v0.1  
-
-**Living archive state (moves):**
-- Current system state → `LATEST.md`
-- Archive navigation → `INDEX.md`
-
-<p align="center">
-
-<a href="https://x.com/CDHughett">
-  <img src="https://img.shields.io/badge/X-CDHughett-black?logo=x&logoColor=white" />
-</a>
-
-<img src="https://img.shields.io/badge/Phase-2_Load_Integration-1f6feb" />
-
-<img src="https://img.shields.io/badge/Archive-Live-2ea043" />
-
-<img src="https://img.shields.io/badge/Weekly_Reports-Active-2ea043" />
-
-</p>
+Continuous longitudinal observational archive documenting biological system adaptation under sustained protocol conditions.
 
 ---
 
-# Phase Architecture
+## Dataset Orientation
 
-Phase 0 | ██████████ | Completed  
-Phase 1 | ██████████ | Completed  
-Phase 2 | ████░░░░░░ | Load Integration (Active)  
-Phase 3 | ░░░░░░░░░░ | Locked  
+This repository documents a structured **longitudinal observation of a human performance system** operating under defined constraints.
 
-System progression is versioned and artifact-verified.
+The archive preserves artifact continuity across time including:
 
-Phase transitions are declared **retrospectively** following sustained system stability.
+- body composition measurements
+- bloodwork captures
+- training architecture evolution
+- phase-based system progression
+- governance documentation
 
----
-
-# Overview
-
-This repository documents a structured longitudinal observation of a human performance system operating under defined constraints.
-
-The archive contains:
-
-- body composition snapshots  
-- bloodwork captures  
-- training architecture evolution  
-- phase-based structural progression  
-- governance documentation  
-
-This is **not a motivational archive**.
+This repository is **not a motivational archive**.
 
 It is a **structured longitudinal dataset**.
 
 ---
 
-# How to Navigate
+## How to Navigate
 
 Recommended entry points:
 
@@ -83,22 +55,51 @@ Where uncertainty exists:
 - observations remain provisional
 - conclusions require repeated evidence across time
 
-This archive documents **one subject under constrained conditions**.  
+This archive documents **one subject under constrained conditions**.
+
 It is not intended to establish universal claims or general prescriptions.
 
 ---
 
-# Repository Structure
+## Current Phase
+
+**Phase 2 — Load Integration**
+
+Focus areas:
+
+- strength exposure within recovery limits  
+- neuromuscular density development  
+- preservation of aerobic capacity  
+- biomarker stability  
+
+Phase transitions are declared **retrospectively** after sustained system stability.
+
+---
+
+## Phase Architecture
+
+```
+Phase 0 | ██████████ | Completed
+Phase 1 | ██████████ | Completed
+Phase 2 | ████░░░░░░ | Load Integration (Active)
+Phase 3 | ░░░░░░░░░░ | Locked
+```
+
+System progression is versioned and artifact-verified.
+
+---
+
+## Repository Structure
 
 ```
 Root
 │
-├── reports/                     # Structured summaries and weekly reports
-├── snapshots/                   # Measurement artifacts and capture events
-├── experiments/                 # Public intervention summaries
-├── schemas/                     # Naming conventions and archive definitions
-├── methodology/                 # Methodological reference material
-├── dashboards/                  # Public metric summaries
+├── reports/            # Structured summaries and weekly reports
+├── snapshots/          # Measurement artifacts and capture events
+├── experiments/        # Public intervention summaries
+├── schemas/            # Naming conventions and archive definitions
+├── methodology/        # Methodological reference material
+├── dashboards/         # Public metric summaries
 │
 ├── README.md
 ├── INDEX.md
@@ -121,33 +122,7 @@ The archive is organized to preserve **traceability across time**.
 
 ---
 
-# Project Assumptions and Scope Constraints
-
-Interpretive boundaries governing this archive are defined in:
-
-→ `ASSUMPTIONS_AND_BOUNDARIES.md`
-
-This document establishes:
-
-- causal interpretation limits  
-- scope constraints  
-- observational boundaries  
-
-These constraints maintain **interpretive discipline**.
-
----
-
-# Methodology
-
-Project methodology, observational framework, and stabilization controls are documented in:
-
-→ `METHODOLOGY_AND_CONTROLS.md`
-
-These documents define the rules governing public interpretation.
-
----
-
-# Architectural Layers
+## Architectural Layers
 
 ```
 Raw Logs
@@ -161,22 +136,17 @@ Each layer increases abstraction while remaining **artifact-bound**.
 
 ---
 
-# Current Phase
+## Methodology
 
-**Phase 2 — Load Integration**
+Project methodology and stabilization controls are documented in:
 
-Focus:
+`METHODOLOGY_AND_CONTROLS.md`
 
-- strength exposure within recovery limits  
-- neuromuscular density development  
-- preservation of aerobic capacity  
-- biomarker stability  
-
-Interpretation remains conservative and artifact-verified.
+These documents define the rules governing interpretation of artifacts.
 
 ---
 
-# Governance
+## Governance
 
 Structural interpretation follows documented criteria:
 
@@ -185,18 +155,18 @@ Structural interpretation follows documented criteria:
 - claims require artifact confirmation  
 - system constraints guide progression  
 
-See:
+Reference documents:
 
-- `STRUCTURAL_PRINCIPLES.md`  
-- `PHASE_DECLARATION_CRITERIA.md`  
-- `RISK_MANAGEMENT.md`  
-- `RECOVERY_MONITORING_FRAMEWORK.md`  
+- `STRUCTURAL_PRINCIPLES.md`
+- `PHASE_DECLARATION_CRITERIA.md`
+- `RISK_MANAGEMENT.md`
+- `RECOVERY_MONITORING_FRAMEWORK.md`
 
 ---
 
-# Scope
+## Scope
 
-This repository documents a **single-subject observation system**.
+This repository documents a **single-subject observational system**.
 
 It does not constitute medical, training, or performance advice.
 
@@ -204,19 +174,17 @@ All observations remain context-bound to the documented subject.
 
 ---
 
-# Intent
+## Intent
 
 This dataset exists to demonstrate:
 
-- structured adaptation  
-- conservative escalation  
-- artifact-verified governance  
-- durability across time  
+- structured adaptation
+- conservative escalation
+- artifact-verified governance
+- durability across time
 
 No claims extend beyond confirmed artifacts.
 
 ---
 
-_Repository state reflects only confirmed artifacts and governed interpretation._
-
-Public longitudinal archive initiated 2026.
+_Public longitudinal archive initiated 2026._
