@@ -67,7 +67,24 @@ Recommended entry points:
 3. `/reports` — chronological interpretation summaries  
 4. `/snapshots` — primary measurement artifacts  
 
-Artifacts should always be interpreted **chronologically**.
+---
+
+## Archive Posture
+
+This repository is maintained as a **longitudinal observational archive**.
+
+The primary purpose of the archive is to preserve artifact continuity and document system behavior under sustained protocol conditions.
+
+Interpretation is intentionally conservative.
+
+Where uncertainty exists:
+
+- artifacts take precedence over narrative
+- observations remain provisional
+- conclusions require repeated evidence across time
+
+This archive documents **one subject under constrained conditions**.  
+It is not intended to establish universal claims or general prescriptions..
 
 ---
 
