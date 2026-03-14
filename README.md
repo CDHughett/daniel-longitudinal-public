@@ -174,6 +174,23 @@ All observations remain context-bound to the documented subject.
 
 ---
 
+## Citation
+
+If referencing this dataset, please cite the repository:
+
+```
+Hughett, C. D. (2026).  
+Daniel Longitudinal Study — Structured Human Performance Dataset.  
+GitHub Repository.  
+https://github.com/CDHughett/daniel-longitudinal-public
+```
+
+Machine-readable citation metadata is available in:
+
+`CITATION.cff`
+
+---
+
 ## License
 
 This repository is released under the Creative Commons Attribution–NonCommercial–NoDerivatives 4.0 International License.
