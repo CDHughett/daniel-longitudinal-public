@@ -84,7 +84,7 @@ Where uncertainty exists:
 - conclusions require repeated evidence across time
 
 This archive documents **one subject under constrained conditions**.  
-It is not intended to establish universal claims or general prescriptions..
+It is not intended to establish universal claims or general prescriptions.
 
 ---
 
