@@ -174,6 +174,14 @@ All observations remain context-bound to the documented subject.
 
 ---
 
+## License
+
+This repository is released under the Creative Commons Attribution–NonCommercial–NoDerivatives 4.0 International License.
+
+See `LICENSE` for details.
+
+---
+
 ## Intent
 
 This dataset exists to demonstrate:
