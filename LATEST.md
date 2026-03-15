@@ -3,7 +3,7 @@
 Daniel Longitudinal Study  
 Public Archive Status Dashboard
 
-**Last Updated:** 2026-W09  
+**Last Updated:** 2026-W10  
 **Repository State:** Active Longitudinal Observation  
 **Archive Mode:** Public, governed, versioned
 
@@ -37,8 +37,8 @@ Primary artifacts belong in `/snapshots`.
 | Phase Context | Phase 2 — Load Integration |
 | Training Structure | Stable |
 | Recovery Signals | Stable |
-| Sleep Integrity | Stable |
-| Bodyweight Band | ~230–231 lb range |
+| Sleep Integrity | Stable with minor environmental interruptions |
+| Bodyweight Band | ~229–232 lb range |
 | Archive Integrity | Maintained |
 
 ---
@@ -67,7 +67,7 @@ The archive is currently documenting:
 
 - stable repeated training exposure
 - preserved recovery bandwidth
-- consistent sleep and execution patterns
+- consistent execution patterns
 - consolidation before escalation
 
 No peaking behavior is assumed.  
@@ -96,7 +96,7 @@ Training structure may evolve over time, but the current public posture remains:
 
 ## Risk Posture
 
-**Primary risk:** premature escalation during perceived ease
+**Primary risk:** premature escalation during periods of perceived ease
 
 **Current mitigation posture:**
 - preserve structural consistency
