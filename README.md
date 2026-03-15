@@ -1,14 +1,19 @@
 # Daniel Longitudinal Study
 *A Single-Subject Structured Human Performance Dataset*
 
+Continuous longitudinal observational archive documenting biological system adaptation under sustained protocol conditions.
+
+**Archive Type:** Longitudinal dataset  
+**Subject Model:** n = 1 observational system  
+**Observation Mode:** Artifact-first, retrospective interpretation  
+**Archive Status:** Active observation (2026–present)
+
 [![Dataset Status](https://img.shields.io/badge/status-active_observation-blue)]()
 [![Observation Type](https://img.shields.io/badge/model-longitudinal_archive-purple)]()
 [![Subjects](https://img.shields.io/badge/subjects-n%3D1-lightgrey)]()
 [![Artifact Model](https://img.shields.io/badge/data-artifact_first-green)]()
 [![Archive Version](https://img.shields.io/badge/archive-v0.1-black)]()
 [![Release](https://img.shields.io/badge/release-v0.1-111111)](https://github.com/CDHughett/daniel-longitudinal-public/releases/tag/v0.1)
-
-Continuous longitudinal observational archive documenting biological system adaptation under sustained protocol conditions.
 
 ---
 
