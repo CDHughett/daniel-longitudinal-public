@@ -14,6 +14,23 @@ Biological interpretation belongs in `/reports`.
 ## [Unreleased]
 
 ### Added
+- Weekly report for **2026-W10** documenting continued consolidation under repeated exposure conditions.
+- Initialized **2026-W11** observation template to maintain forward archive continuity.
+
+### Updated
+- **LATEST.md** executive system dashboard refreshed to reflect Week 10 archive status.
+- Bodyweight observation band updated to reflect current range (~229–232 lb).
+
+### Observations
+- Training architecture remains unchanged under Phase 2 load integration monitoring.
+- Recovery signals remain compatible with repeated exposure structure.
+- Archive continuity maintained with prospective weekly report initialization.
+
+---
+
+### Previous Unreleased Entries
+
+### Added
 - Weekly report for **2026-W09** documenting continued training stability under repeated exposure architecture.
 
 ### Updated
