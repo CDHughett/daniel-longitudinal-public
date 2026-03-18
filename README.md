@@ -19,9 +19,9 @@ Continuous longitudinal observational archive documenting biological system adap
 
 ## Dataset Orientation
 
-This repository documents a structured **longitudinal observation of a human performance system** operating under defined constraints.
+This repository documents a structured longitudinal observation of a human performance system operating under defined constraints.
 
-The archive preserves artifact continuity across time including:
+The archive preserves continuity across time, including:
 
 - body composition measurements
 - bloodwork captures
@@ -29,15 +29,15 @@ The archive preserves artifact continuity across time including:
 - phase-based system progression
 - governance documentation
 
-This repository is **not a motivational archive**.
+This repository is not a motivational archive.
 
-It is a **structured longitudinal dataset**.
+It is a structured longitudinal dataset.
 
 ---
 
-## How to Navigate
+## Recommended Entry Points
 
-Recommended entry points:
+For new readers:
 
 1. `LATEST.md` — current operational system state  
 2. `INDEX.md` — archive navigation and artifact routing  
@@ -48,9 +48,9 @@ Recommended entry points:
 
 ## Archive Posture
 
-This repository is maintained as a **longitudinal observational archive**.
+This repository is maintained as a longitudinal observational archive.
 
-The primary purpose of the archive is to preserve artifact continuity and document system behavior under sustained protocol conditions.
+Its purpose is to preserve artifact continuity and document system behavior under sustained protocol conditions.
 
 Interpretation is intentionally conservative.
 
@@ -60,35 +60,35 @@ Where uncertainty exists:
 - observations remain provisional
 - conclusions require repeated evidence across time
 
-This archive documents **one subject under constrained conditions**.
+This archive documents one subject under constrained conditions.
 
 It is not intended to establish universal claims or general prescriptions.
 
 ---
 
-## Current Phase
+## Current Phase Context
 
 **Phase 2 — Load Integration**
 
-Focus areas:
+Current focus areas include:
 
-- strength exposure within recovery limits  
-- neuromuscular density development  
-- preservation of aerobic capacity  
-- biomarker stability  
+- strength exposure within recovery limits
+- neuromuscular density development
+- preservation of aerobic capacity
+- biomarker stability
 
-Phase transitions are declared **retrospectively** after sustained system stability.
+Phase transitions are declared retrospectively after sustained system stability.
 
 ---
 
 ## Phase Architecture
 
-```
+~~~text
 Phase 0 | ██████████ | Completed
 Phase 1 | ██████████ | Completed
 Phase 2 | ████░░░░░░ | Load Integration (Active)
 Phase 3 | ░░░░░░░░░░ | Locked
-```
+~~~
 
 System progression is versioned and artifact-verified.
 
@@ -96,15 +96,15 @@ System progression is versioned and artifact-verified.
 
 ## Repository Structure
 
-```
+~~~text
 Root
 │
-├── reports/            # Structured summaries and weekly reports
-├── snapshots/          # Measurement artifacts and capture events
-├── experiments/        # Public intervention summaries
-├── schemas/            # Naming conventions and archive definitions
-├── methodology/        # Methodological reference material
-├── dashboards/         # Public metric summaries
+├── reports/                          # Structured summaries and weekly reports
+├── snapshots/                        # Measurement artifacts and capture events
+├── experiments/                      # Public intervention summaries
+├── schemas/                          # Naming conventions and archive definitions
+├── methodology/                      # Methodological reference material
+├── dashboards/                       # Public metric summaries
 │
 ├── README.md
 ├── INDEX.md
@@ -121,23 +121,23 @@ Root
 ├── MEASUREMENT_SOURCES.md
 ├── METHODOLOGY_AND_CONTROLS.md
 └── ASSUMPTIONS_AND_BOUNDARIES.md
-```
+~~~
 
-The archive is organized to preserve **traceability across time**.
+The archive is organized to preserve traceability across time.
 
 ---
 
 ## Architectural Layers
 
-```
+~~~text
 Raw Logs
 → Snapshots
 → Reports
 → Phase Summaries
 → Governance
-```
+~~~
 
-Each layer increases abstraction while remaining **artifact-bound**.
+Each layer increases abstraction while remaining artifact-bound.
 
 ---
 
@@ -147,7 +147,7 @@ Project methodology and stabilization controls are documented in:
 
 `METHODOLOGY_AND_CONTROLS.md`
 
-These documents define the rules governing interpretation of artifacts.
+These materials define the rules governing interpretation of artifacts.
 
 ---
 
@@ -155,10 +155,10 @@ These documents define the rules governing interpretation of artifacts.
 
 Structural interpretation follows documented criteria:
 
-- phase declarations are retrospective  
-- load increases are recovery-gated  
-- claims require artifact confirmation  
-- system constraints guide progression  
+- phase declarations are retrospective
+- load increases are recovery-gated
+- claims require artifact confirmation
+- system constraints guide progression
 
 Reference documents:
 
@@ -171,7 +171,7 @@ Reference documents:
 
 ## Scope
 
-This repository documents a **single-subject observational system**.
+This repository documents a single-subject observational system.
 
 It does not constitute medical, training, or performance advice.
 
@@ -183,12 +183,12 @@ All observations remain context-bound to the documented subject.
 
 If referencing this dataset, please cite the repository:
 
-```
-Hughett, C. D. (2026).  
-Daniel Longitudinal Study — Structured Human Performance Dataset.  
-GitHub Repository.  
+~~~text
+Hughett, C. D. (2026).
+Daniel Longitudinal Study — Structured Human Performance Dataset.
+GitHub Repository.
 https://github.com/CDHughett/daniel-longitudinal-public
-```
+~~~
 
 Machine-readable citation metadata is available in:
 
@@ -214,6 +214,20 @@ This dataset exists to demonstrate:
 - durability across time
 
 No claims extend beyond confirmed artifacts.
+
+---
+
+## Current State
+
+See [`LATEST.md`](./LATEST.md) for the current public system state.
+
+## Weekly Reports
+
+See [`/reports`](./reports/) for structured weekly observations.
+
+## Historical Snapshots
+
+See [`/snapshots`](./snapshots/) for archived measurement artifacts.
 
 ---
 
