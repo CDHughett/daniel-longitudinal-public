@@ -3,6 +3,22 @@
 
 Continuous longitudinal observational archive documenting biological system adaptation under sustained protocol conditions.
 
+---
+
+## What This Is
+
+A multi-year, single-subject longitudinal dataset tracking human performance, recovery, and adaptation under controlled conditions.
+
+## Why It Exists
+
+To document how stable inputs produce measurable biological change over time.
+
+## What Makes It Different
+
+Artifact-first. No speculation. No performance claims—only recorded outcomes.
+
+---
+
 **Archive Type:** Longitudinal dataset  
 **Subject Model:** n = 1 observational system  
 **Observation Mode:** Artifact-first, retrospective interpretation  
@@ -14,6 +30,16 @@ Continuous longitudinal observational archive documenting biological system adap
 [![Artifact Model](https://img.shields.io/badge/data-artifact_first-green)]()
 [![Archive Version](https://img.shields.io/badge/archive-v0.1-black)]()
 [![Release](https://img.shields.io/badge/release-v0.1-111111)](https://github.com/CDHughett/daniel-longitudinal-public/releases/tag/v0.1)
+
+---
+
+## Start Here
+
+If you are new to the repository:
+
+1. Read `LATEST.md` (current system state — ~60 seconds)  
+2. Open the most recent report in `/reports`  
+3. Review `/snapshots` for supporting artifacts  
 
 ---
 
@@ -35,14 +61,15 @@ It is a structured longitudinal dataset.
 
 ---
 
-## Recommended Entry Points
+## Why This Matters
 
-For new readers:
+Most human performance data is fragmented, short-term, or anecdotal.
 
-1. `LATEST.md` — current operational system state  
-2. `INDEX.md` — archive navigation and artifact routing  
-3. `/reports` — chronological interpretation summaries  
-4. `/snapshots` — primary measurement artifacts  
+This archive documents a continuous system under consistent conditions, allowing:
+
+- observation of long-term adaptation patterns  
+- evaluation of stability vs. intensity strategies  
+- traceable relationships between inputs and biological response  
 
 ---
 
@@ -56,9 +83,9 @@ Interpretation is intentionally conservative.
 
 Where uncertainty exists:
 
-- artifacts take precedence over narrative
-- observations remain provisional
-- conclusions require repeated evidence across time
+- artifacts take precedence over narrative  
+- observations remain provisional  
+- conclusions require repeated evidence across time  
 
 This archive documents one subject under constrained conditions.
 
@@ -70,12 +97,18 @@ It is not intended to establish universal claims or general prescriptions.
 
 **Phase 2 — Load Integration**
 
+In practical terms, this phase involves:
+
+- maintaining aerobic base capacity  
+- reintroducing strength loading under recovery constraints  
+- monitoring system stability under repeated exposure  
+
 Current focus areas include:
 
-- strength exposure within recovery limits
-- neuromuscular density development
-- preservation of aerobic capacity
-- biomarker stability
+- strength exposure within recovery limits  
+- neuromuscular density development  
+- preservation of aerobic capacity  
+- biomarker stability  
 
 Phase transitions are declared retrospectively after sustained system stability.
 
@@ -155,17 +188,17 @@ These materials define the rules governing interpretation of artifacts.
 
 Structural interpretation follows documented criteria:
 
-- phase declarations are retrospective
-- load increases are recovery-gated
-- claims require artifact confirmation
-- system constraints guide progression
+- phase declarations are retrospective  
+- load increases are recovery-gated  
+- claims require artifact confirmation  
+- system constraints guide progression  
 
 Reference documents:
 
-- `STRUCTURAL_PRINCIPLES.md`
-- `PHASE_DECLARATION_CRITERIA.md`
-- `RISK_MANAGEMENT.md`
-- `RECOVERY_MONITORING_FRAMEWORK.md`
+- `STRUCTURAL_PRINCIPLES.md`  
+- `PHASE_DECLARATION_CRITERIA.md`  
+- `RISK_MANAGEMENT.md`  
+- `RECOVERY_MONITORING_FRAMEWORK.md`  
 
 ---
 
@@ -208,10 +241,10 @@ See `LICENSE` for details.
 
 This dataset exists to demonstrate:
 
-- structured adaptation
-- conservative escalation
-- artifact-verified governance
-- durability across time
+- structured adaptation  
+- conservative escalation  
+- artifact-verified governance  
+- durability across time  
 
 No claims extend beyond confirmed artifacts.
 
