@@ -6,7 +6,7 @@ are documented in this file.
 The format follows a simplified Keep-a-Changelog structure adapted
 for a longitudinal dataset archive.
 
-This changelog records **repository artifacts and structural updates**.
+This changelog records **repository artifacts and structural updates**.  
 Biological interpretation belongs in `/reports`.
 
 ---
@@ -15,32 +15,24 @@ Biological interpretation belongs in `/reports`.
 
 ### Added
 - Weekly report for **2026-W10** documenting continued consolidation under repeated exposure conditions.
-- Initialized **2026-W11** observation template to maintain forward archive continuity.
+- Initialized **2026-W11** report to maintain forward archive continuity.
 
 ### Updated
-- **LATEST.md** executive system dashboard refreshed to reflect Week 10 archive status.
-- Bodyweight observation band updated to reflect current range (~229–232 lb).
+- **LATEST.md** executive system dashboard aligned to current archive state (Week 11).
+- Bodyweight observation band updated to reflect current range (~229–233 lb).
+
+### Refined
+- README.md updated to reduce onboarding friction and improve initial repository orientation.
+  - Added “What This Is / Why It Exists / What Makes It Different” entry block
+  - Introduced guided “Start Here” navigation
+  - Added “Why This Matters” context layer
+  - Clarified practical interpretation of Phase 2 (Load Integration)
+  - Improved readability for first-time external readers
 
 ### Observations
-- Training architecture remains unchanged under Phase 2 load integration monitoring.
+- Training architecture remains stable under Phase 2 load integration monitoring.
 - Recovery signals remain compatible with repeated exposure structure.
-- Archive continuity maintained with prospective weekly report initialization.
-
----
-
-### Previous Unreleased Entries
-
-### Added
-- Weekly report for **2026-W09** documenting continued training stability under repeated exposure architecture.
-
-### Updated
-- **LATEST.md** executive system dashboard refreshed to reflect Week 09 archive status.
-- Bodyweight observation band updated to reflect current range (~230–231 lb).
-- ASSUMPTIONS_AND_BOUNDARIES.md refined to finalize interpretive limits, falsifiability conditions, and operational boundaries.
-  
-### Observations
-- Training architecture remains unchanged under Phase 2 load integration monitoring.
-- Recovery signals remain stable during repeated load exposure.
+- Archive continuity maintained through ongoing weekly report initialization.
 
 ---
 
@@ -62,10 +54,8 @@ Biological interpretation belongs in `/reports`.
 
 ## Versioning Notes
 
-This repository does not represent a software product release cycle.
+This repository does not follow a traditional software release cycle.
 
-Version tags mark **structural milestones in the archive**, not
-performance achievements.
+Version tags represent **structural milestones in the archive**, not performance outcomes.
 
-Most changes occur within the **Unreleased** section until a major
-archive structure update occurs.
+Most changes remain in the **Unreleased** section until a major structural transition occurs.
