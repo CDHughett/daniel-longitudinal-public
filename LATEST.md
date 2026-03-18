@@ -3,7 +3,7 @@
 Daniel Longitudinal Study  
 Public Archive Status Dashboard
 
-**Last Updated:** 2026-W10  
+**Last Updated:** 2026-W11  
 **Repository State:** Active Longitudinal Observation  
 **Archive Mode:** Public, governed, versioned
 
@@ -14,7 +14,7 @@ Public Archive Status Dashboard
 This document provides a concise overview of the archive’s current public state.
 
 It is not a weekly report, phase declaration, or performance summary.  
-Its role is to orient a new reader to:
+Its purpose is to orient new readers to:
 
 - current operating status
 - current phase context
@@ -37,8 +37,8 @@ Primary artifacts belong in `/snapshots`.
 | Phase Context | Phase 2 — Load Integration |
 | Training Structure | Stable |
 | Recovery Signals | Stable |
-| Sleep Integrity | Stable with minor environmental interruptions |
-| Bodyweight Band | ~229–232 lb range |
+| Sleep Integrity | Stable with minor environmental interruption sensitivity |
+| Bodyweight Band | ~229–233 lb |
 | Archive Integrity | Maintained |
 
 ---
@@ -47,17 +47,17 @@ Primary artifacts belong in `/snapshots`.
 
 **Phase 2 — Load Integration**
 
-The system is currently operating inside a Phase-2 load integration window.
+The system is currently operating within a Phase 2 load-integration window.
 
 This means:
 
 - aerobic base remains in active preservation
 - mechanical loading has been reintroduced
-- recovery remains compatible with training frequency
+- recovery remains compatible with exposure frequency
 - interpretation remains consolidation-first
 
 Phase language is descriptive, not promotional.  
-Any future phase advancement must remain artifact-confirmed and retrospective.
+Any future phase advancement should remain artifact-confirmed and retrospective.
 
 ---
 
@@ -90,7 +90,7 @@ No forward performance claims are made here.
 
 Training structure may evolve over time, but the current public posture remains:
 
-**preserve system stability before expanding load or complexity.**
+**preserve system stability before expanding load or complexity**
 
 ---
 
@@ -110,7 +110,7 @@ Durability remains higher priority than display.
 
 ## Archive Position
 
-The repository is now operating as a continuous public archive rather than a one-off project log.
+The repository is operating as a continuous public archive rather than a one-off project log.
 
 The system remains organized around:
 
@@ -120,7 +120,7 @@ raw artifacts
 → phase interpretation  
 → governance
 
-The archive is intended to remain readable across time, not only in the current week.
+The archive is intended to remain readable across time, not only within the current week.
 
 ---
 
