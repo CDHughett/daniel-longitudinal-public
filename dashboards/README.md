@@ -1,45 +1,39 @@
 # Dashboards
 
-This directory contains public summary views of selected metrics derived from the Daniel Longitudinal Study archive.
+This directory contains **derived visualization surfaces** built from the Daniel Longitudinal Study archive.
 
-Dashboards are **derived artifacts**, not primary evidence.
+Dashboards are **not primary evidence**.  
+They are interpretive summaries of underlying artifacts.
 
-All dashboard summaries must be traceable to underlying artifacts stored in `/snapshots` and interpreted through structured documents in `/reports`.
+All dashboard outputs must be traceable to `/snapshots` and aligned with structured interpretation in `/reports`.
 
 ---
 
 ## Purpose
 
-Dashboards exist to provide:
+Dashboards provide:
 
-- high-level system visibility
-- simplified metric summaries
-- public interpretive surfaces
+- high-level system visibility  
+- simplified views of longitudinal metrics  
+- public-facing signal summaries  
 
-They are not intended to replace primary artifacts or structured reports.
+They do not replace source data or formal analysis.
 
 ---
 
 ## Data Hierarchy
 
-The archive follows a strict evidence hierarchy:
+The archive operates under a strict evidence hierarchy:
 
-1. **Snapshots** (`/snapshots`)
-   - primary measurement artifacts
-   - DEXA scans
-   - BodPod outputs
-   - biomarker captures
-   - other date-bound evidence
+1. **Snapshots** (`/snapshots`)  
+   Primary artifacts: raw, date-bound measurements  
+   (DEXA, BodPod, biomarkers, and other captured signals)
 
-2. **Reports** (`/reports`)
-   - structured interpretation
-   - weekly summaries
-   - phase synthesis documents
+2. **Reports** (`/reports`)  
+   Structured interpretation: weekly summaries, phase analysis, synthesis documents  
 
-3. **Dashboards** (`/dashboards`)
-   - derived metric summaries
-   - visualization surfaces
-   - simplified public monitoring views
+3. **Dashboards** (`/dashboards`)  
+   Derived outputs: visual summaries and monitoring surfaces  
 
 Dashboards summarize signals.  
 They do not generate them.
@@ -48,31 +42,41 @@ They do not generate them.
 
 ## Design Constraints
 
-Dashboards in this archive must:
+All dashboards must:
 
-- remain traceable to artifact sources
-- avoid speculative interpretation
-- preserve longitudinal continuity
-- prioritize clarity over visual complexity
+- maintain traceability to source artifacts  
+- avoid speculative or narrative-driven interpretation  
+- preserve longitudinal continuity  
+- prioritize clarity over visual complexity  
 
-If a metric cannot be traced to artifact continuity, it should not appear here.
+If a metric cannot be traced to artifact continuity, it does not belong here.
 
 ---
 
 ## Current Status
 
-As of the current archive state, dashboard surfaces remain minimal.
+Dashboard development is intentionally minimal.
 
-The archive prioritizes **artifact continuity and structured reporting** before introducing derived visualization layers.
+The archive prioritizes:
 
-Future dashboards may include:
+- artifact continuity  
+- measurement integrity  
+- structured reporting  
 
-- recovery signal summaries
-- training exposure aggregates
-- phase progression indicators
-- longitudinal trend surfaces
+Visualization layers are introduced only after sufficient data stability exists.
 
-These will be introduced only when sufficient artifact continuity exists.
+---
+
+## Forward Surfaces
+
+As the archive matures, dashboards may include:
+
+- recovery signal trends (HRV, sleep architecture)  
+- training exposure aggregates  
+- phase progression indicators  
+- longitudinal system stability views  
+
+All additions will follow the established hierarchy and traceability constraints.
 
 ---
 
