@@ -35,28 +35,25 @@ Artifact-first. No speculation. No performance claims—only recorded outcomes.
 
 ## Start Here
 
-If you are new to the repository:
-
 1. Read `LATEST.md` (current system state — ~60 seconds)  
-2. Open the most recent report in `/reports`  
-3. Review `/snapshots` for supporting artifacts  
+2. Review the most recent report in `/reports`  
+3. Inspect supporting artifacts in `/snapshots`  
 
 ---
 
 ## Dataset Orientation
 
-This repository documents a structured longitudinal observation of a human performance system operating under defined constraints.
+This repository documents a longitudinal observation of a human performance system operating under defined constraints.
 
-The archive preserves continuity across time, including:
+The archive preserves continuity across:
 
-- body composition measurements
-- bloodwork captures
-- training architecture evolution
-- phase-based system progression
-- governance documentation
+- body composition measurements  
+- bloodwork captures  
+- training architecture evolution  
+- phase-based system progression  
+- governance and constraint frameworks  
 
-This repository is not a motivational archive.
-
+This is not a motivational archive.  
 It is a structured longitudinal dataset.
 
 ---
@@ -65,7 +62,7 @@ It is a structured longitudinal dataset.
 
 Most human performance data is fragmented, short-term, or anecdotal.
 
-This archive documents a continuous system under consistent conditions, allowing:
+This archive documents a continuous system under consistent conditions, enabling:
 
 - observation of long-term adaptation patterns  
 - evaluation of stability vs. intensity strategies  
@@ -77,19 +74,14 @@ This archive documents a continuous system under consistent conditions, allowing
 
 This repository is maintained as a longitudinal observational archive.
 
-Its purpose is to preserve artifact continuity and document system behavior under sustained protocol conditions.
-
-Interpretation is intentionally conservative.
-
-Where uncertainty exists:
+Interpretation remains intentionally conservative:
 
 - artifacts take precedence over narrative  
 - observations remain provisional  
 - conclusions require repeated evidence across time  
 
-This archive documents one subject under constrained conditions.
-
-It is not intended to establish universal claims or general prescriptions.
+This archive documents one subject under constrained conditions.  
+No claims extend beyond the recorded system.
 
 ---
 
@@ -97,20 +89,20 @@ It is not intended to establish universal claims or general prescriptions.
 
 **Phase 2 — Load Integration**
 
-In practical terms, this phase involves:
+Current focus:
 
 - maintaining aerobic base capacity  
-- reintroducing strength loading under recovery constraints  
-- monitoring system stability under repeated exposure  
+- reintroducing strength under recovery constraints  
+- monitoring stability under repeated exposure  
 
-Current focus areas include:
+Key tracking areas:
 
 - strength exposure within recovery limits  
 - neuromuscular density development  
 - preservation of aerobic capacity  
 - biomarker stability  
 
-Phase transitions are declared retrospectively after sustained system stability.
+Phase transitions are declared retrospectively following sustained system stability.
 
 ---
 
@@ -123,7 +115,7 @@ Phase 2 | ████░░░░░░ | Load Integration (Active)
 Phase 3 | ░░░░░░░░░░ | Locked
 ~~~
 
-System progression is versioned and artifact-verified.
+System progression is artifact-verified and versioned.
 
 ---
 
@@ -132,12 +124,13 @@ System progression is versioned and artifact-verified.
 ~~~text
 Root
 │
-├── reports/                          # Structured summaries and weekly reports
-├── snapshots/                        # Measurement artifacts and capture events
-├── experiments/                      # Public intervention summaries
-├── schemas/                          # Naming conventions and archive definitions
+├── snapshots/                        # Primary measurement artifacts
+├── reports/                          # Structured interpretation
+├── dashboards/                       # Derived visualization surfaces
+│
+├── experiments/                      # Intervention summaries
+├── schemas/                          # Naming conventions and definitions
 ├── methodology/                      # Methodological reference material
-├── dashboards/                       # Public metric summaries
 │
 ├── README.md
 ├── INDEX.md
@@ -166,7 +159,7 @@ The archive is organized to preserve traceability across time.
 Raw Logs
 → Snapshots
 → Reports
-→ Phase Summaries
+→ Dashboards
 → Governance
 ~~~
 
@@ -176,24 +169,24 @@ Each layer increases abstraction while remaining artifact-bound.
 
 ## Methodology
 
-Project methodology and stabilization controls are documented in:
+See:
 
 `METHODOLOGY_AND_CONTROLS.md`
 
-These materials define the rules governing interpretation of artifacts.
+This defines the rules governing measurement, stabilization, and interpretation.
 
 ---
 
 ## Governance
 
-Structural interpretation follows documented criteria:
+All structural interpretation follows defined criteria:
 
 - phase declarations are retrospective  
 - load increases are recovery-gated  
 - claims require artifact confirmation  
-- system constraints guide progression  
+- system constraints govern progression  
 
-Reference documents:
+Reference:
 
 - `STRUCTURAL_PRINCIPLES.md`  
 - `PHASE_DECLARATION_CRITERIA.md`  
@@ -206,15 +199,12 @@ Reference documents:
 
 This repository documents a single-subject observational system.
 
-It does not constitute medical, training, or performance advice.
-
-All observations remain context-bound to the documented subject.
+It does not constitute medical, training, or performance advice.  
+All observations remain context-bound.
 
 ---
 
 ## Citation
-
-If referencing this dataset, please cite the repository:
 
 ~~~text
 Hughett, C. D. (2026).
@@ -223,7 +213,7 @@ GitHub Repository.
 https://github.com/CDHughett/daniel-longitudinal-public
 ~~~
 
-Machine-readable citation metadata is available in:
+Machine-readable metadata:
 
 `CITATION.cff`
 
@@ -231,9 +221,8 @@ Machine-readable citation metadata is available in:
 
 ## License
 
-This repository is released under the Creative Commons Attribution–NonCommercial–NoDerivatives 4.0 International License.
-
-See `LICENSE` for details.
+Creative Commons Attribution–NonCommercial–NoDerivatives 4.0 International.  
+See `LICENSE`.
 
 ---
 
@@ -246,21 +235,15 @@ This dataset exists to demonstrate:
 - artifact-verified governance  
 - durability across time  
 
-No claims extend beyond confirmed artifacts.
+All conclusions remain bound to recorded evidence.
 
 ---
 
-## Current State
+## Navigation
 
-See [`LATEST.md`](./LATEST.md) for the current public system state.
-
-## Weekly Reports
-
-See [`/reports`](./reports/) for structured weekly observations.
-
-## Historical Snapshots
-
-See [`/snapshots`](./snapshots/) for archived measurement artifacts.
+- Current state → [`LATEST.md`](./LATEST.md)  
+- Weekly reports → [`/reports`](./reports/)  
+- Artifact history → [`/snapshots`](./snapshots/)  
 
 ---
 
