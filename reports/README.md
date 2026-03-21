@@ -1,56 +1,83 @@
 # Reports
 
-This directory contains structured interpretive summaries derived from confirmed snapshot captures.
+This directory contains **structured interpretive summaries** derived from confirmed snapshot artifacts.
 
-Reports do not introduce new raw data.
+Reports do not introduce new raw data.  
+They operate strictly on existing measurements.
 
 ---
 
 ## Purpose
 
-Reports exist to:
+Reports are designed to:
 
-* Compare confirmed measurement events
-* Document directional changes
-* Contextualize within defined phases
-* Maintain longitudinal continuity
+- compare confirmed measurement events  
+- document directional changes over time  
+- contextualize signals within defined phases  
+- preserve longitudinal continuity  
 
 ---
 
 ## Relationship to Snapshots
 
-Snapshots (primary data) are stored in `/snapshots/`.
+Primary artifacts are stored in `/snapshots/`.
 
-Reports reference snapshots but do not replace them.
+Reports reference these artifacts but do not replace them.
 
-Snapshots are immutable.
-Reports may evolve with additional comparative context.
-
----
-
-## What Belongs Here
-
-* Monthly body composition summaries
-* Cross-capture comparison reports
-* Phase transition confirmations
-* Structured analysis documents
+- Snapshots are immutable  
+- Reports remain updateable as additional comparative context becomes available  
 
 ---
 
-## What Does Not Belong Here
+## Data Position
 
-* Raw PDFs or images
-* Screenshots
-* Experimental speculation
-* Forward-looking projections without data
+Within the archive hierarchy:
+
+- **Snapshots** → source of truth  
+- **Reports** → structured interpretation  
+- **Dashboards** → derived visualization  
+
+Reports translate artifacts into interpretable form without altering the underlying data.
+
+---
+
+## Inclusion Criteria
+
+The following belong in this directory:
+
+- body composition summaries (monthly or cross-capture)  
+- comparative analysis across measurement events  
+- phase transition confirmations  
+- structured synthesis documents  
+
+---
+
+## Exclusion Criteria
+
+The following do not belong in this directory:
+
+- raw PDFs, images, or source files  
+- screenshots or unstructured captures  
+- speculative or narrative-driven interpretation  
+- forward-looking projections without artifact support  
 
 ---
 
 ## Integrity Standard
 
-All interpretation must:
+All reports must:
 
-* Reference confirmed snapshot artifacts
-* Avoid narrative framing
-* Maintain numerical precision
-* Align with VERSIONING.md and GOVERNANCE.md
+- reference confirmed snapshot artifacts  
+- maintain numerical precision  
+- avoid narrative or interpretive drift  
+- preserve consistency across time  
+
+All report outputs must remain aligned with `VERSIONING.md` and `GOVERNANCE.md`.
+
+---
+
+## Archive Principle
+
+Artifacts define reality.  
+Reports interpret reality.  
+Nothing supersedes the source.
