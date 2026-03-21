@@ -3,7 +3,7 @@
 This directory contains **derived visualization surfaces** built from the Daniel Longitudinal Study archive.
 
 Dashboards are **not primary evidence**.  
-They are interpretive summaries of underlying artifacts.
+They are constrained summaries of underlying artifacts.
 
 All dashboard outputs must be traceable to `/snapshots` and aligned with structured interpretation in `/reports`.
 
@@ -11,7 +11,7 @@ All dashboard outputs must be traceable to `/snapshots` and aligned with structu
 
 ## Purpose
 
-Dashboards provide:
+Dashboards are designed to provide:
 
 - high-level system visibility  
 - simplified views of longitudinal metrics  
@@ -63,7 +63,7 @@ The archive prioritizes:
 - measurement integrity  
 - structured reporting  
 
-Visualization layers are introduced only after sufficient data stability exists.
+Visualization layers are introduced only after sufficient data continuity and stability are established.
 
 ---
 
@@ -76,7 +76,7 @@ As the archive matures, dashboards may include:
 - phase progression indicators  
 - longitudinal system stability views  
 
-All additions will follow the established hierarchy and traceability constraints.
+All additions follow the established hierarchy and traceability constraints.
 
 ---
 
