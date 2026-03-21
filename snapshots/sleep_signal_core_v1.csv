@@ -42,6 +42,3 @@ date,total_sleep_min,deep_sleep_min,hrv_ms,restfulness_score
 2026-03-20,475,120,57,8
 2026-03-21,342,55,71,8
 EOF
-
-git add snapshots/sleep_signal_core_v1.csv
-git commit -m "Add core public sleep signal dataset (clean, interpretable variables only)"
