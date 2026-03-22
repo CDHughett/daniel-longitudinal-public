@@ -14,11 +14,11 @@ Biological interpretation belongs in `/reports`.
 ## [Unreleased]
 
 ### Added
-- Weekly report for **2026-W10** documenting continued consolidation under repeated exposure conditions.
-- Initialized **2026-W11** report to maintain forward archive continuity.
+- Weekly report for **2026-W11** documenting continued consolidation under repeated exposure conditions.
+- Initialized **2026-W12** report to maintain forward archive continuity.
 
 ### Updated
-- **LATEST.md** executive system dashboard aligned to current archive state (Week 11).
+- **LATEST.md** executive system dashboard updated to reflect W11 closed system state.
 - Bodyweight observation band updated to reflect current range (~229–233 lb).
 
 ### Refined
