@@ -37,7 +37,7 @@ Primary artifacts belong in `/snapshots`.
 | Phase Context | Phase 2 — Load Integration |
 | Training Structure | Stable |
 | Recovery Signals | Stable |
-| Sleep Integrity | Stable with minor environmental interruption sensitivity |
+| Sleep Integrity | Stable with variability driven by duration |
 | Bodyweight Band | ~229–233 lb |
 | Archive Integrity | Maintained |
 
@@ -52,7 +52,7 @@ The system is currently operating within a Phase 2 load-integration window.
 This means:
 
 - aerobic base remains in active preservation
-- mechanical loading has been reintroduced
+- mechanical loading is present under repeated exposure
 - recovery remains compatible with exposure frequency
 - interpretation remains consolidation-first
 
@@ -84,7 +84,6 @@ No forward performance claims are made here.
 
 ### Strength Integration
 - Trap Bar Deadlift
-- Split Squats
 - Pull-Ups
 - Controlled loading exposure
 
