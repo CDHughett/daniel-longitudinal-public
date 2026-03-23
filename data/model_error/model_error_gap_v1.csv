@@ -1,0 +1,4 @@
+record_id,date,domain,model_version,prediction_value,actual_value,error_absolute,error_direction,error_pct,model_type,calibration_state,flag,notes
+001,2026-03-10,HRV,gpt4-base,65,74,9,under,13.8%,gen_pop,pre,inferred,"week 4 stabilization"
+002,2026-03-12,sleep,gpt4-base,390,438,48,under,12.3%,gen_pop,pre,reconstructed,"sleep duration exceeded trajectory expectation"
+003,2026-03-15,performance,gpt4-base,1.00,1.18,0.18,under,18.0%,gen_pop,pre,inferred,"work capacity exceeded expected adaptation pace"
