@@ -1,0 +1,3 @@
+window_end_date,window_days,total_rows,completed_rows,under_count,over_count,neutral_count,udi_value,primary_count,inferred_count,reconstructed_count,calibration_state,notes
+2026-03-20,all,12,12,12,0,0,20.9,0,4,8,pre,"Initial reconstructed baseline snapshot"
+2026-03-23,7,0,0,0,0,0,,4,0,0,post,"Open primary predictions initiated; no closed post-calibration comparisons yet"
