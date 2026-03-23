@@ -16,6 +16,17 @@ Biological interpretation belongs in `/reports`.
 ### Added
 - Weekly report for **2026-W11** documenting continued consolidation under repeated exposure conditions.
 - Initialized **2026-W12** report to maintain forward archive continuity.
+- Introduced **model error tracking layer** for structured comparison of AI predictions vs observed outcomes.
+  - Added `/data/model_error/` directory with primary schema `model_error_gap_v1.csv`
+  - Added `/docs/methodology/UDI_framework_v1.md` defining Unobstructed Delta Index (UDI)
+  - Added `/docs/methodology/annotation_protocol.md` for prediction capture and data integrity rules
+  - Added calibration event logging structure for tracking model interpretation shifts
+
+- Added supporting README documentation for new measurement layer:
+  - `data/model_error/README.md`
+  - `docs/methodology/README.md`
+
+- Established forward capture protocol for logging model predictions at time of generation
 
 ### Updated
 - **LATEST.md** executive system dashboard updated to reflect W11 closed system state.
