@@ -1,156 +1,143 @@
-Model Error Data Layer
-
-This directory contains structured records of AI-predicted vs observed outcomes across multiple domains within the Daniel Longitudinal Study.
+# Model Error Data Layer
 
 ---
 
-Purpose
+## The Core Idea
 
-To preserve forward-looking model predictions and compare them against observed outcomes over time.
-
-This enables direct measurement of:
-
-- directional model error
-- magnitude of deviation between prediction and reality
-- changes in model accuracy under longitudinal conditions
+> **This layer measures the gap between expectation and reality.**
 
 ---
 
-System Overview
+## Why This Exists
 
-This layer introduces a comparative measurement structure:
+Most datasets record outcomes.
 
-Prediction → Timestamp → Observed Outcome → Error Calculation
+This layer records **expectations vs outcomes** — and measures the difference.
 
-Unlike standard tracking systems, this layer captures expected vs actual system behavior, not just outcomes.
-
----
-
-Primary Dataset
-
-"model_error_gap_v1.csv"
-
-Core dataset containing individual prediction records.
-
-Each row represents a single prediction-to-outcome comparison.
-
-Fields include:
-
-- prediction value
-- observed value
-- error magnitude
-- error direction (under / over / neutral)
-- model type ("population_calibrated" vs "subject_calibrated")
-- calibration state ("pre" / "post")
-- data quality ("primary", "inferred", "reconstructed")
+**That difference is the signal.**
 
 ---
 
-Calibration Layer
+## What This Tests
 
-"calibration_events_log.md"
+Not just what happened.
 
-Documents transition points where model behavior shifts.
+But whether the model describing what *should* happen was correct.
 
-Example:
-
-- population-based interpretation → subject-specific interpretation
-
-These events define pre- and post-calibration regimes used in analysis.
+- Was it directionally accurate?  
+- Did it systematically under- or overestimate?  
+- Did accuracy change after calibration?  
 
 ---
 
-Rolling Error Monitoring
+## System Structure
 
-"udi_rolling_tracker.csv"
+**Prediction → Timestamp → Outcome → Error**
 
-Tracks aggregate model error over time using a rolling window.
-
-Purpose:
-
-- monitor directional bias (underestimation vs overestimation)
-- observe calibration effects
-- track signal stability across time windows
-
-Metric:
-
-- UDI (Unobstructed Delta Index) = average directional error across completed rows
-
-Only completed prediction rows are used in UDI calculation.
+Each prediction is captured **before** the outcome exists.  
+Each outcome is later matched and scored.
 
 ---
 
-Prediction Capture Workflow
+## Primary Dataset
 
-1. Prediction Generated
+### `model_error_gap_v1.csv`
 
-- Logged immediately in "model_error_gap_v1.csv"
-- Marked as "primary" where applicable
-- Outcome fields left blank
+Each row represents a single prediction compared to reality.
 
-2. Observation Occurs
+Includes:
 
-- Row is completed with:
-  - actual value
-  - error magnitude
-  - direction
-
-3. Rolling Update
-
-- Completed rows are incorporated into "udi_rolling_tracker.csv"
-- Typically updated on scheduled review days (Wednesday / Saturday / Sunday)
+- predicted value  
+- observed value  
+- error magnitude  
+- error direction (under / over / neutral)  
+- model type (population vs subject-calibrated)  
+- calibration state (pre / post)  
+- data quality (primary / inferred / reconstructed)  
 
 ---
 
-Data Characteristics
+## Calibration Boundary
 
-- Open predictions are expected and tracked
-- Rows are completed asynchronously as outcomes occur
-- Data quality is explicitly labeled:
-  - "primary" → forward-logged prediction
-  - "inferred" → reconstructed from context
-  - "reconstructed" → backfilled historical estimate
+### `calibration_events_log.md`
+
+Models change.
+
+At some point, predictions stop behaving like:
+
+> general population assumptions
+
+and start behaving like:
+
+> subject-specific behavior
+
+This boundary is logged and used to separate:
+
+- pre-calibration  
+- post-calibration  
 
 ---
 
-System Role
+## Rolling Error Tracking
 
-This layer functions as measurement infrastructure, not interpretation.
+### `udi_rolling_tracker.csv`
+
+Tracks how model error behaves over time.
+
+Focus:
+
+- directional bias  
+- magnitude of error  
+- calibration effects  
+
+**UDI (Unobstructed Delta Index)** = average directional error across completed predictions.
+
+---
+
+## Data Flow
+
+### 1. Prediction
+Logged immediately  
+→ outcome fields empty  
+→ marked as `primary`  
+
+### 2. Outcome
+Row is completed when observed  
+→ error calculated  
+
+### 3. Aggregation
+Completed rows contribute to rolling UDI tracking  
+
+---
+
+## Data Integrity
+
+- Predictions are timestamped before outcomes  
+- Open predictions are preserved  
+- Reconstructed data is explicitly labeled  
+- Primary data has highest weight  
+
+---
+
+## System Role
+
+This layer is **measurement infrastructure**.
 
 It enables:
 
-- validation of predictive models
-- detection of calibration shifts
-- quantification of model reliability
+- validation of model behavior  
+- detection of calibration shifts  
+- quantification of prediction accuracy  
 
-No conclusions are generated within this layer.
-
-All interpretation occurs downstream in reports.
+It does not generate conclusions.
 
 ---
 
-Status
+## Status
 
-Active instrumentation layer.
+- Baseline reconstructed  
+- Calibration boundary defined (provisional)  
+- Primary prediction capture active  
+- Rolling tracking initialized  
 
-Transitioned from reconstructed baseline → primary prediction capture.
-
-Signal quality and reliability will increase as:
-
-- primary prediction density increases
-- post-calibration data accumulates
-- rolling UDI tracking stabilizes
-
----
-
-Notes
-
-This system is designed for longitudinal integrity.
-
-All entries are:
-
-- timestamped
-- version-controlled
-- non-retroactive (for primary predictions)
-
-The goal is not prediction accuracy in isolation, but measurable alignment between model expectation and observed system behavior over time.
+Signal quality increases as primary data accumulates.
