@@ -177,6 +177,37 @@ This defines the rules governing measurement, stabilization, and interpretation.
 
 ---
 
+## Experimental Model Error Layer
+
+This repository includes an experimental instrumentation layer for tracking the difference between AI-predicted and observed outcomes across multiple domains.
+
+This layer operates alongside the primary dataset and does not replace artifact-first observation.
+
+### Purpose
+
+- preserve forward-looking model predictions in structured form  
+- compare predicted vs. observed outcomes across time  
+- quantify directional model error under longitudinal conditions  
+
+### Context
+
+Most model-based interpretations of human performance are derived from population-calibrated assumptions.
+
+This layer introduces a structured method to evaluate how those assumptions behave when applied to a single-subject system operating under sustained, controlled conditions.
+
+### Status
+
+Early-stage measurement layer under active development.
+
+Interpretation remains provisional and subject to data density over time.
+
+### Reference
+
+- `data/model_error/model_error_gap_v1.csv`  
+- `docs/methodology/UDI_framework_v1.md`
+
+---
+
 ## Governance
 
 All structural interpretation follows defined criteria:
