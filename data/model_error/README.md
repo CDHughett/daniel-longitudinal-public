@@ -1,65 +1,156 @@
-# Model Error Data Layer
+Model Error Data Layer
 
 This directory contains structured records of AI-predicted vs observed outcomes across multiple domains within the Daniel Longitudinal Study.
 
 ---
 
-## Purpose
+Purpose
 
 To preserve forward-looking model predictions and compare them against observed outcomes over time.
 
-This enables measurement of directional model error under longitudinal conditions.
+This enables direct measurement of:
+
+- directional model error
+- magnitude of deviation between prediction and reality
+- changes in model accuracy under longitudinal conditions
 
 ---
 
-## Primary File
+System Overview
 
-- `model_error_gap_v1.csv`
+This layer introduces a comparative measurement structure:
 
-This dataset records:
+Prediction → Timestamp → Observed Outcome → Error Calculation
 
-- predicted values  
-- observed outcomes  
-- error magnitude and direction  
-- model type (population vs subject-calibrated)  
-- calibration state  
-- data quality flags  
+Unlike standard tracking systems, this layer captures expected vs actual system behavior, not just outcomes.
 
 ---
 
-## Supporting Files
+Primary Dataset
 
-- `calibration_events_log.md`  
-  Documents transitions in model interpretation (e.g., population-calibrated → subject-specific)
+"model_error_gap_v1.csv"
 
-- `prediction_holding_note.md`  
-  Temporary capture location for predictions that cannot be logged immediately
+Core dataset containing individual prediction records.
+
+Each row represents a single prediction-to-outcome comparison.
+
+Fields include:
+
+- prediction value
+- observed value
+- error magnitude
+- error direction (under / over / neutral)
+- model type ("population_calibrated" vs "subject_calibrated")
+- calibration state ("pre" / "post")
+- data quality ("primary", "inferred", "reconstructed")
 
 ---
 
-## Data Characteristics
+Calibration Layer
 
-- Predictions may be logged before outcomes exist  
-- Open rows are completed once corresponding observations are available  
+"calibration_events_log.md"
+
+Documents transition points where model behavior shifts.
+
+Example:
+
+- population-based interpretation → subject-specific interpretation
+
+These events define pre- and post-calibration regimes used in analysis.
+
+---
+
+Rolling Error Monitoring
+
+"udi_rolling_tracker.csv"
+
+Tracks aggregate model error over time using a rolling window.
+
+Purpose:
+
+- monitor directional bias (underestimation vs overestimation)
+- observe calibration effects
+- track signal stability across time windows
+
+Metric:
+
+- UDI (Unobstructed Delta Index) = average directional error across completed rows
+
+Only completed prediction rows are used in UDI calculation.
+
+---
+
+Prediction Capture Workflow
+
+1. Prediction Generated
+
+- Logged immediately in "model_error_gap_v1.csv"
+- Marked as "primary" where applicable
+- Outcome fields left blank
+
+2. Observation Occurs
+
+- Row is completed with:
+  - actual value
+  - error magnitude
+  - direction
+
+3. Rolling Update
+
+- Completed rows are incorporated into "udi_rolling_tracker.csv"
+- Typically updated on scheduled review days (Wednesday / Saturday / Sunday)
+
+---
+
+Data Characteristics
+
+- Open predictions are expected and tracked
+- Rows are completed asynchronously as outcomes occur
 - Data quality is explicitly labeled:
-  - `primary`
-  - `inferred`
-  - `reconstructed`
+  - "primary" → forward-logged prediction
+  - "inferred" → reconstructed from context
+  - "reconstructed" → backfilled historical estimate
 
 ---
 
-## Role in Archive
+System Role
 
-This layer functions as measurement infrastructure.
+This layer functions as measurement infrastructure, not interpretation.
 
-It does not generate conclusions or interpretations.
+It enables:
 
-It preserves prediction-to-outcome relationships as structured artifacts for later analysis.
+- validation of predictive models
+- detection of calibration shifts
+- quantification of model reliability
+
+No conclusions are generated within this layer.
+
+All interpretation occurs downstream in reports.
 
 ---
 
-## Status
+Status
 
-Early-stage instrumentation layer.
+Active instrumentation layer.
 
-Data density and signal strength will increase over time through consistent capture.
+Transitioned from reconstructed baseline → primary prediction capture.
+
+Signal quality and reliability will increase as:
+
+- primary prediction density increases
+- post-calibration data accumulates
+- rolling UDI tracking stabilizes
+
+---
+
+Notes
+
+This system is designed for longitudinal integrity.
+
+All entries are:
+
+- timestamped
+- version-controlled
+- non-retroactive (for primary predictions)
+
+The goal is not prediction accuracy in isolation, but measurable alignment between model expectation and observed system behavior over time.
