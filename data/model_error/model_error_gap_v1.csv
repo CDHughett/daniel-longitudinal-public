@@ -11,3 +11,10 @@ record_id,date,domain,model_version,prediction_value,actual_value,error_absolute
 010,2026-03-15,body_comp,gpt4-base,0.5,0.8,0.3,under,60.0%,gen_pop,pre,reconstructed,"rate of recomposition exceeded population curve"
 011,2026-03-18,performance,gpt4-base,1.00,1.20,0.20,under,20.0%,gen_pop,pre,inferred,"strength + endurance coexistence exceeded expected interference model"
 012,2026-03-20,recovery_rate,gpt4-base,60,42,18,under,30.0%,gen_pop,pre,reconstructed,"recovery window shorter than predicted under repeated exposure"
+013,2026-03-23,HRV,gpt-5.4,75,,,,,subject_calibrated,post,primary,"Predicted HRV to remain elevated or reach ~75 within the current stabilization window if training architecture and recovery inputs remain unchanged"
+014,2026-03-23,sleep,gpt-5.4,430,,,,,subject_calibrated,post,primary,"Predicted total sleep to remain in roughly the low- to mid-400 minute range across the next several nights if evening disruption remains limited"
+015,2026-03-23,recovery_rate,gpt-5.4,1,,,,,subject_calibrated,post,primary,"Predicted continued compatibility between repeated exposure and recovery over the next 7 days, with no major destabilization event if current structure is maintained"
+016,2026-03-23,performance,gpt-5.4,1,,,,,subject_calibrated,post,primary,"Predicted maintained training completion and throughput compatibility across the next 7-day block without requiring structural deload"
+
+
+
