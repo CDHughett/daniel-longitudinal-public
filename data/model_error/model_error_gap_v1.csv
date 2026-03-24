@@ -15,6 +15,8 @@ record_id,date,domain,model_version,prediction_value,actual_value,error_absolute
 014,2026-03-23,sleep,gpt-5.4,430,,,,,subject_calibrated,post,primary,"Predicted total sleep to remain in roughly the low- to mid-400 minute range across the next several nights if evening disruption remains limited"
 015,2026-03-23,recovery_rate,gpt-5.4,1,,,,,subject_calibrated,post,primary,"Predicted continued compatibility between repeated exposure and recovery over the next 7 days, with no major destabilization event if current structure is maintained"
 016,2026-03-23,performance,gpt-5.4,1,,,,,subject_calibrated,post,primary,"Predicted maintained training completion and throughput compatibility across the next 7-day block without requiring structural deload"
-
+017,2026-03-24,system_state,gpt-5.4,1,,,,,subject_calibrated,post,primary,"Predicted continued movement toward lock-in / ambient execution state within the next 3-10 days if architecture and recovery inputs remain stable"
+018,2026-03-24,nervous_system,gpt-5.4,1,,,,,subject_calibrated,post,primary,"Predicted THC removal window to produce higher alertness, intermittent sympathetic spikes, and reduced compulsive behavior across the next 3-7 days"
+019,2026-03-24,sleep,gpt-5.4,430,,,,,subject_calibrated,post,primary,"Predicted restorative sleep quality to improve without requiring immediate extension to 8-hour total sleep if system stability continues"
 
 
