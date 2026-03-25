@@ -22,7 +22,8 @@ Artifact-first. No speculation. No performance claims—only recorded outcomes.
 **Archive Type:** Longitudinal dataset  
 **Subject Model:** n = 1 observational system  
 **Observation Mode:** Artifact-first, retrospective interpretation  
-**Archive Status:** Active observation (2026–present)
+**Observation Window:** 2025–present  
+**Public Archive:** Active (2026–present)
 
 [![Dataset Status](https://img.shields.io/badge/status-active_observation-blue)]()
 [![Observation Type](https://img.shields.io/badge/model-longitudinal_archive-purple)]()
@@ -35,9 +36,9 @@ Artifact-first. No speculation. No performance claims—only recorded outcomes.
 
 ## Start Here
 
-1. Read `LATEST.md` (current system state — ~60 seconds)  
-2. Review the most recent report in `/reports`  
-3. Inspect supporting artifacts in `/snapshots`  
+1. Read [`LATEST.md`](./LATEST.md) (current system state — ~60 seconds)  
+2. Review the most recent report in [`/reports`](./reports/)  
+3. Inspect supporting artifacts in [`/snapshots`](./snapshots/)  
 
 ---
 
@@ -48,10 +49,12 @@ This repository documents a longitudinal observation of a human performance syst
 The archive preserves continuity across:
 
 - body composition measurements  
-- bloodwork captures  
 - training architecture evolution  
 - phase-based system progression  
 - governance and constraint frameworks  
+- select biomarker data (where publicly included)  
+
+**Note:** Some biomarker data (e.g., bloodwork) may be referenced in reports but not included in the public archive.
 
 This is not a motivational archive.  
 It is a structured longitudinal dataset.
@@ -124,8 +127,8 @@ System progression is artifact-verified and versioned.
 ~~~text
 Root
 │
-├── snapshots/                        # Primary measurement artifacts
-├── reports/                          # Structured interpretation
+├── snapshots/                        # Primary measurement artifacts (source of truth)
+├── reports/                          # Structured retrospective interpretation
 ├── dashboards/                       # Derived visualization surfaces
 │
 ├── experiments/                      # Intervention summaries
@@ -149,18 +152,16 @@ Root
 └── ASSUMPTIONS_AND_BOUNDARIES.md
 ~~~
 
-The archive is organized to preserve traceability across time.
-
 ---
 
 ## Architectural Layers
 
 ~~~text
-Raw Logs
-→ Snapshots
-→ Reports
-→ Dashboards
-→ Governance
+Raw Logs  
+→ Snapshots (immutable evidence)  
+→ Reports (retrospective interpretation)  
+→ Dashboards (derived views)  
+→ Governance (constraints and boundaries)
 ~~~
 
 Each layer increases abstraction while remaining artifact-bound.
@@ -171,15 +172,20 @@ Each layer increases abstraction while remaining artifact-bound.
 
 See:
 
-`METHODOLOGY_AND_CONTROLS.md`
+[`METHODOLOGY_AND_CONTROLS.md`](./METHODOLOGY_AND_CONTROLS.md)
 
-This document defines the rules governing measurement, stabilization, and interpretation.
+This document defines:
+
+- measurement rules  
+- stabilization criteria  
+- interpretation constraints  
+- system boundaries  
 
 ---
 
 ## Experimental Model Error Layer
 
-This repository includes an experimental instrumentation layer for tracking the difference between AI-predicted and observed outcomes across multiple domains.
+This repository includes an experimental instrumentation layer for tracking the difference between AI-predicted and observed outcomes.
 
 This layer operates alongside the primary dataset and does not replace artifact-first observation.
 
@@ -191,20 +197,19 @@ This layer operates alongside the primary dataset and does not replace artifact-
 
 ### Context
 
-Most model-based interpretations of human performance are derived from population-calibrated assumptions.
+Most model-based interpretations of human performance rely on population-calibrated assumptions.
 
-This layer introduces a structured method to evaluate how those assumptions behave when applied to a single-subject system operating under sustained, controlled conditions.
+This layer evaluates how those assumptions behave when applied to a single-subject system operating under controlled conditions.
 
 ### Status
 
-Early-stage measurement layer under active development.
-
-Interpretation remains provisional and subject to increased data density over time.
+Early-stage measurement layer under active development.  
+Interpretation remains provisional.
 
 ### Reference
 
-- `data/model_error/model_error_gap_v1.csv`  
-- `docs/methodology/UDI_framework_v1.md`
+- [`data/model_error/model_error_gap_v1.csv`](./data/model_error/model_error_gap_v1.csv)  
+- [`docs/methodology/prediction_to_outcome_pipeline.md`](./docs/methodology/prediction_to_outcome_pipeline.md)  
 
 ---
 
@@ -219,10 +224,10 @@ All structural interpretation follows defined criteria:
 
 Reference:
 
-- `STRUCTURAL_PRINCIPLES.md`  
-- `PHASE_DECLARATION_CRITERIA.md`  
-- `RISK_MANAGEMENT.md`  
-- `RECOVERY_MONITORING_FRAMEWORK.md`  
+- [`STRUCTURAL_PRINCIPLES.md`](./STRUCTURAL_PRINCIPLES.md)  
+- [`PHASE_DECLARATION_CRITERIA.md`](./PHASE_DECLARATION_CRITERIA.md)  
+- [`RISK_MANAGEMENT.md`](./RISK_MANAGEMENT.md)  
+- [`RECOVERY_MONITORING_FRAMEWORK.md`](./RECOVERY_MONITORING_FRAMEWORK.md)  
 
 ---
 
@@ -256,20 +261,7 @@ This repository and all included materials are licensed under:
 
 **Creative Commons Attribution–NonCommercial–NoDerivatives 4.0 International (CC BY-NC-ND 4.0)**
 
-This license applies to:
-- all datasets  
-- all documentation  
-- all artifacts (including images and derived files)  
-
-You may:
-- share and redistribute the material in any medium or format  
-
-Under the following conditions:
-- **Attribution** — appropriate credit must be given  
-- **NonCommercial** — no commercial use permitted  
-- **NoDerivatives** — no modifications or remixes allowed  
-
-Full license text available in `LICENSE`.
+Full license text available in `LICENSE.md`.
 
 ---
 
