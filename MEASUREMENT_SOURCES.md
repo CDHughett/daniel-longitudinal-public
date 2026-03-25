@@ -38,13 +38,13 @@ The objective is **representative physiological state**, not peak display.
 ## DEXA
 
 Provider (public alias)  
-`DEXA_SITE_A`
+DexaFit 
 
 Machine model  
-`TODO` (if available)
+Unknown 
 
 Software version  
-`TODO`
+Unknown 
 
 Reporting format
 
@@ -70,10 +70,10 @@ Known considerations
 ## BodPod
 
 Provider (public alias)  
-`BODPOD_SITE_A`
+Military base
 
 Machine model  
-COSMED Bod Pod (if confirmed)
+COSMED Bod Pod
 
 Capture conditions
 
@@ -95,10 +95,11 @@ Known considerations
 ## Primary wearable
 
 Device  
-`TODO` (example: WHOOP / Garmin / Oura)
+Ringconn Gen 2
 
-Software ecosystem  
-`TODO`
+Software version
+3.15.0
+
 
 Metrics utilized
 
@@ -123,7 +124,10 @@ Considerations
 # Laboratory Testing
 
 Provider (public alias)  
-`LAB_SITE_A`
+Military base
+VA
+Labcorp
+TruDiagnostic 
 
 Reporting method
 
