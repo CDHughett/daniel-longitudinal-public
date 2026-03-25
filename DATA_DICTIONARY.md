@@ -155,17 +155,44 @@ Internal naming convention for training modules. Logged as executed.
 ## Files and Naming
 
 ### Snapshots
-- Location: `/snapshots/YYYY-MM/`
-- Naming: `YYYY-MM-DD_<capture>_<source>.md` (or `.pdf/.jpg` as applicable)
+- Location: `/snapshots/`
+- Structure:
+  - May include both flat files and subdirectories
+  - Legacy formats are preserved for historical continuity
+
+- Preferred Naming:
+  `YYYY-MM-DD_<capture>_<source>.<ext>`
+
 - Examples:
   - `2026-02-12_dexa_summary.pdf`
   - `2026-02-12_bodpod_results.jpg`
 
+Note:
+Snapshot structure has evolved over time.  
+The repository preserves historical formats rather than enforcing retroactive restructuring.
+
+---
+
 ### Reports
+
+The repository supports two report classes:
+
+#### 1. Weekly Reports (Primary)
+- Location: `/reports/`
+- Naming: `YYYY-W##.md`
+- Example:
+  - `2026-W11.md`
+
+#### 2. Capture Reports (Event-Specific)
 - Location: `/reports/`
 - Naming: `YYYY-MM_<capture>-report.md`
 - Example:
-  - `2026-02_dexa-report.md`
+  - `2025-11_dexa-report.md`
+
+Weekly reports are the dominant and expected format.  
+Capture reports are used selectively for discrete measurement events.
+
+---
 
 ### Current State
 - File: `LATEST.md`
