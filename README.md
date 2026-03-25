@@ -173,7 +173,7 @@ See:
 
 `METHODOLOGY_AND_CONTROLS.md`
 
-This defines the rules governing measurement, stabilization, and interpretation.
+This document defines the rules governing measurement, stabilization, and interpretation.
 
 ---
 
@@ -199,7 +199,7 @@ This layer introduces a structured method to evaluate how those assumptions beha
 
 Early-stage measurement layer under active development.
 
-Interpretation remains provisional and subject to data density over time.
+Interpretation remains provisional and subject to increased data density over time.
 
 ### Reference
 
@@ -252,8 +252,24 @@ Machine-readable metadata:
 
 ## License
 
-Creative Commons Attribution–NonCommercial–NoDerivatives 4.0 International.  
-See `LICENSE`.
+This repository and all included materials are licensed under:
+
+**Creative Commons Attribution–NonCommercial–NoDerivatives 4.0 International (CC BY-NC-ND 4.0)**
+
+This license applies to:
+- all datasets  
+- all documentation  
+- all artifacts (including images and derived files)  
+
+You may:
+- share and redistribute the material in any medium or format  
+
+Under the following conditions:
+- **Attribution** — appropriate credit must be given  
+- **NonCommercial** — no commercial use permitted  
+- **NoDerivatives** — no modifications or remixes allowed  
+
+Full license text available in `LICENSE`.
 
 ---
 
