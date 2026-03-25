@@ -16,6 +16,7 @@ Biological interpretation belongs in `/reports`.
 ### Added
 - Weekly report for **2026-W11** documenting continued consolidation under repeated exposure conditions.
 - Initialized **2026-W12** report to maintain forward archive continuity.
+
 - Introduced **model error tracking layer** for structured comparison of AI predictions vs observed outcomes.
   - Added `/data/model_error/` directory with primary schema `model_error_gap_v1.csv`
   - Added `/docs/methodology/UDI_framework_v1.md` defining Unobstructed Delta Index (UDI)
@@ -28,9 +29,22 @@ Biological interpretation belongs in `/reports`.
 
 - Established forward capture protocol for logging model predictions at time of generation
 
+- Closed early THC transition predictions in UDI dataset (018, 020, 023) based on observed alignment with predicted nervous system and cognitive responses
+- Added GI instability event (025) with attribution to pre-training fueling timing mismatch rather than systemic failure
+- Added performance resilience signal (026) capturing maintained execution capacity under sympathetic activation and GI disturbance
+
+---
+
 ### Updated
-- **LATEST.md** executive system dashboard updated to reflect W11 closed system state.
-- Bodyweight observation band updated to reflect current range (~229–233 lb).
+- **LATEST.md** executive system dashboard updated to reflect:
+  - active THC removal window (Day 2–3)
+  - observed sympathetic activation and increased behavioral awareness
+  - transient GI instability with corrected attribution (timing mismatch)
+  - confirmed performance stability under regulatory disturbance
+
+- Bodyweight observation band updated to reflect current range (~221–233 lb)
+
+---
 
 ### Refined
 - README.md updated to reduce onboarding friction and improve initial repository orientation.
@@ -40,26 +54,32 @@ Biological interpretation belongs in `/reports`.
   - Clarified practical interpretation of Phase 2 (Load Integration)
   - Improved readability for first-time external readers
 
+---
+
 ### Observations
-- Training architecture remains stable under Phase 2 load integration monitoring.
-- Recovery signals remain compatible with repeated exposure structure.
-- Archive continuity maintained through ongoing weekly report initialization.
+- Training architecture remains stable under Phase 2 load integration monitoring
+- Recovery signals remain compatible with repeated exposure structure
+- System demonstrates performance stability under transient regulatory disturbance
+- GI instability event classified as input-timing mismatch, not systemic degradation
+- Archive continuity maintained through ongoing weekly report initialization
 
 ---
 
 ## [0.1] – Initial Public Archive Release
 
 ### Added
-- Initial public repository structure.
-- Core governance documentation.
-- System overview and archive orientation.
-- Initial reports and snapshot artifacts.
-- Measurement source documentation.
-- Data dictionary.
+- Initial public repository structure
+- Core governance documentation
+- System overview and archive orientation
+- Initial reports and snapshot artifacts
+- Measurement source documentation
+- Data dictionary
+
+---
 
 ### Governance
-- Archive established as a **continuous longitudinal observation system**.
-- Interpretation constrained to artifact-confirmed observations.
+- Archive established as a **continuous longitudinal observation system**
+- Interpretation constrained to artifact-confirmed observations
 
 ---
 
