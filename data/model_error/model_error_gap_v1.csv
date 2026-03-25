@@ -18,5 +18,9 @@ record_id,date,domain,model_version,prediction_value,actual_value,error_absolute
 017,2026-03-24,system_state,gpt-5.4,1,,,,,subject_calibrated,post,primary,"Predicted continued movement toward lock-in / ambient execution state within the next 3-10 days if architecture and recovery inputs remain stable"
 018,2026-03-24,nervous_system,gpt-5.4,1,,,,,subject_calibrated,post,primary,"Predicted THC removal window to produce higher alertness, intermittent sympathetic spikes, and reduced compulsive behavior across the next 3-7 days"
 019,2026-03-24,sleep,gpt-5.4,430,,,,,subject_calibrated,post,primary,"Predicted restorative sleep quality to improve without requiring immediate extension to 8-hour total sleep if system stability continues"
-
+020,2026-03-24,nervous_system,gpt-5.4,1,,,,,subject_calibrated,post,primary,"Predicted Days 1–3 of THC cessation to produce increased sympathetic cognitive activity (intrusive scenario generation), reduced appetite, and expanded subjective time perception without HRV suppression, sleep degradation, or training disruption"
+021,2026-03-24,behavioral_regulation,gpt-5.4,1,,,,,subject_calibrated,post,primary,"Predicted Days 3–5 of THC cessation to show reduction in sympathetic spike frequency with increased baseline clarity, improved task initiation, and decreased reliance on habitual behavior loops"
+022,2026-03-24,appetite_regulation,gpt-5.4,1,,,,,subject_calibrated,post,primary,"Predicted temporary appetite suppression during initial THC removal phase (Days 1–3) followed by normalization by Days 4–5 without compensatory overeating behavior"
+023,2026-03-24,cognitive_state,gpt-5.4,1,,,,,subject_calibrated,post,primary,"Predicted increase in behavioral awareness and detection of previously automated THC-linked routines within 72 hours of cessation"
+024,2026-03-24,system_resilience,gpt-5.4,1,,,,,subject_calibrated,post,primary,"Predicted system to maintain physiological stability (HRV, sleep, GI, training execution) despite concurrent THC removal and psychological/environmental load, indicating non-fragile stabilization"
 
