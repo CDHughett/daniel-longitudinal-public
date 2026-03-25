@@ -32,12 +32,12 @@ Primary artifacts belong in `/snapshots`.
 | Domain | Current Public Status |
 |---|---|
 | Repository Activity | Active |
-| Observation Model | Continuous longitudinal tracking |
-| Interpretation Mode | Retrospective, artifact-bound |
+| Observation Model | Continuous, artifact-first longitudinal tracking |
+| Interpretation Mode | Strictly retrospective, artifact-bound (no forward claims) |
 | Phase Context | Phase 2 — Load Integration |
-| Training Structure | Stable |
-| Recovery Signals | Stable |
-| Sleep Integrity | Stable with variability driven by duration |
+| Training Structure | Stable, repeatable exposure architecture |
+| Recovery Signals | Stable, non-limiting relative to exposure |
+| Sleep Integrity | Stable; variability primarily duration-driven |
 | Bodyweight Band | ~229–233 lb |
 | Archive Integrity | Maintained |
 
@@ -68,7 +68,7 @@ The archive is currently documenting:
 - stable repeated training exposure
 - preserved recovery bandwidth
 - consistent execution patterns
-- consolidation before escalation
+- consolidation prioritized over escalation
 
 No peaking behavior is assumed.  
 No forward performance claims are made here.
@@ -114,10 +114,10 @@ The repository is operating as a continuous public archive rather than a one-off
 The system remains organized around:
 
 raw artifacts  
-→ snapshots  
-→ reports  
-→ phase interpretation  
-→ governance
+→ snapshots (immutable evidence)  
+→ reports (retrospective interpretation)  
+→ phase context (descriptive only)  
+→ governance (constraints and boundaries)
 
 The archive is intended to remain readable across time, not only within the current week.
 
@@ -161,4 +161,4 @@ Progress is evaluated through:
 
 **System State:** Stable  
 **Trajectory Posture:** Positive  
-**Operational Mode:** Execute
+**Operational Mode:** Execute without negotiation
