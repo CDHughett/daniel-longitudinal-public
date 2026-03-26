@@ -25,3 +25,8 @@ record_id,date,domain,model_version,prediction_value,actual_value,error_absolute
 024,2026-03-24,system_resilience,gpt5.4,1,,,,,subject_calibrated,post,primary,state,open,"Predicted system to maintain physiological stability despite concurrent THC removal and load; partial validation with maintained performance but GI instability present"
 025,2026-03-25,GI_stability,gpt5.4,1,0,1,under,100%,subject_calibrated,post,secondary,state,closed,"GI instability observed (nausea/vomiting) during early THC removal phase; attributed to pre-training food timing mismatch rather than systemic failure"
 026,2026-03-25,performance,gpt5.4,1,1,0,none,0%,subject_calibrated,post,secondary,state,closed,"Full B1 and crawl execution maintained with high activity output despite sympathetic activation and GI disturbance"
+027,2026-03-25,HRV,gpt5.3,68-78,,,,,subject_calibrated,post,primary,range,open,"3-5 day rebound expected following clearinghouse activation and THC removal"
+028,2026-03-25,sleep_duration,gpt5.3,400-460,,,,,subject_calibrated,post,primary,range,open,"sleep consolidation phase expected with improved REM stability and reduced fragmentation"
+029,2026-03-25,weight,gpt5.3,220-224,,,,,subject_calibrated,post,primary,range,open,"continued normalization from glycogen/water shifts; stabilization expected within 3-5 days"
+030,2026-03-25,subjective_state,gpt5.3,1,,,,,subject_calibrated,post,primary,state,open,"transition toward stable calm baseline with reduced intrusive internal dialogue"
+031,2026-03-25,performance,gpt5.3,1.00-1.10,,,,,subject_calibrated,post,primary,range,open,"efficiency-driven output maintenance or slight increase despite reduced perceived energy"
