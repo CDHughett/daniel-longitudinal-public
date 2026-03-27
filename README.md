@@ -42,6 +42,14 @@ Artifact-first. No speculation. No performance claims—only recorded outcomes.
 
 ---
 
+## External Observers
+
+If you're evaluating the system structure directly:
+
+→ [`FOR_OBSERVERS.md`](./FOR_OBSERVERS.md)
+
+---
+
 ## Dataset Orientation
 
 This repository documents a longitudinal observation of a human performance system operating under defined constraints.
