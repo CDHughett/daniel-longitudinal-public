@@ -23,6 +23,285 @@ All definitions prioritize repeatability and longitudinal comparability.
 - Incline: percent (%)
 - Temperature: Fahrenheit (°F)
 - Distance: miles (mi) unless otherwise noted
+- Energy expenditure: kilocalories per day (kcal/day)
+- Biological age outputs: years
+- Percentile-based scores: percentile (0-100)
+- Pace-of-aging outputs: ratio
+
+---
+
+## biomarker_snapshot.csv fields
+
+### date
+- Snapshot month in `YYYY-MM` format.
+- Example: `2026-02`
+
+### source
+- Indicates the row is a fused snapshot compiled from multiple artifacts.
+- Expected value: `integrated`
+
+### dexa_date
+- Date of the DEXA artifact used for this snapshot.
+- Format: `YYYY-MM-DD`
+
+### bodpod_date
+- Date of the BodPod artifact used for this snapshot.
+- Format: `YYYY-MM-DD`
+
+### chronological_age
+- Calendar age at time of testing.
+- Unit: years
+
+### omicm_age
+- TruAge OMICm biological age output.
+- Unit: years
+
+### omicm_age_delta_years
+- Difference between `omicm_age` and `chronological_age`.
+- Unit: years
+- Negative values indicate OMICm age below chronological age.
+
+### dunedin_pace
+- DunedinPACE rate-of-aging output.
+- Unit: ratio
+- Interpretation: `1.0` = aging one biological year per chronological year; values below `1.0` indicate slower aging pace.
+
+### symphony_age
+- Composite SYMPHONY organ-system age output.
+- Unit: years
+
+### blood_age
+- SYMPHONY blood system age.
+- Unit: years
+
+### brain_age
+- SYMPHONY brain system age.
+- Unit: years
+
+### inflammation_age
+- SYMPHONY inflammation system age.
+- Unit: years
+
+### heart_age
+- SYMPHONY heart system age.
+- Unit: years
+
+### hormone_age
+- SYMPHONY hormone system age.
+- Unit: years
+
+### immune_age
+- SYMPHONY immune system age.
+- Unit: years
+
+### kidney_age
+- SYMPHONY kidney system age.
+- Unit: years
+
+### liver_age
+- SYMPHONY liver system age.
+- Unit: years
+
+### metabolic_age
+- SYMPHONY metabolic system age.
+- Unit: years
+
+### lung_age
+- SYMPHONY lung system age.
+- Unit: years
+
+### musculoskeletal_age
+- SYMPHONY musculoskeletal system age.
+- Unit: years
+
+### body_score
+- DEXA summary body score grade.
+- Unit: categorical
+- Example: `A`
+
+### total_mass_lbs
+- Total body mass from DEXA.
+- Unit: pounds
+
+### body_fat_pct_dexa
+- Body fat percentage from DEXA.
+- Unit: percent
+
+### fat_mass_lbs_dexa
+- Fat mass from DEXA.
+- Unit: pounds
+
+### lean_mass_lbs_dexa
+- Lean mass from DEXA.
+- Unit: pounds
+
+### visceral_fat_lbs
+- Visceral fat estimate from DEXA.
+- Unit: pounds
+
+### t_score
+- Bone density T-score from DEXA.
+- Unit: score
+
+### bodpod_body_fat_pct
+- Body fat percentage from BodPod.
+- Unit: percent
+
+### bodpod_fat_mass_lbs
+- Fat mass from BodPod.
+- Unit: pounds
+
+### bodpod_ffm_lbs
+- Fat-free mass from BodPod.
+- Unit: pounds
+
+### bodpod_body_mass_lbs
+- Body mass from BodPod.
+- Unit: pounds
+
+### bodpod_ree_kcal_day
+- Resting energy expenditure from BodPod/COSMED output.
+- Unit: kcal/day
+
+### bodpod_tee_kcal_day
+- Total energy expenditure from BodPod/COSMED output.
+- Unit: kcal/day
+
+### truhealth_vitamins_score
+- TruHealth nutrition domain percentile for vitamins.
+- Unit: percentile (0-100)
+
+### truhealth_amino_acids_score
+- TruHealth nutrition domain percentile for amino acids.
+- Unit: percentile (0-100)
+
+### truhealth_antioxidants_score
+- TruHealth nutrition domain percentile for antioxidants.
+- Unit: percentile (0-100)
+
+### truhealth_fats_membranes_score
+- TruHealth nutrition domain percentile for fats and cellular membranes.
+- Unit: percentile (0-100)
+
+### truhealth_lipid_peroxidation_score
+- TruHealth general health domain percentile for lipid peroxidation.
+- Unit: percentile (0-100)
+
+### truhealth_serum_lipids_score
+- TruHealth general health domain percentile for serum lipids.
+- Unit: percentile (0-100)
+
+### truhealth_blood_pressure_score
+- TruHealth general health domain percentile for blood pressure-related markers.
+- Unit: percentile (0-100)
+
+### truhealth_metabolic_score
+- TruHealth general health domain percentile for metabolic markers.
+- Unit: percentile (0-100)
+
+### truhealth_immune_score
+- TruHealth general health domain percentile for immune markers.
+- Unit: percentile (0-100)
+
+### truhealth_neurocognitive_score
+- TruHealth general health domain percentile for neurocognitive markers.
+- Unit: percentile (0-100)
+
+### truhealth_inflammation_score
+- TruHealth general health domain percentile for inflammation markers.
+- Unit: percentile (0-100)
+
+### truhealth_stress_score
+- TruHealth general health domain percentile for stress markers.
+- Unit: percentile (0-100)
+
+### truhealth_toxins_score
+- TruHealth general health domain percentile for toxins-related markers.
+- Unit: percentile (0-100)
+
+### truhealth_uric_acid_pathway_score
+- TruHealth general health domain percentile for uric acid pathway markers.
+- Unit: percentile (0-100)
+
+### truhealth_mitochondrial_function_score
+- TruHealth general health domain percentile for mitochondrial function.
+- Unit: percentile (0-100)
+
+### truhealth_oxidative_defense_score
+- TruHealth general health domain percentile for oxidative defense.
+- Unit: percentile (0-100)
+
+### truhealth_nad_metabolism_score
+- TruHealth general health domain percentile for NAD+ metabolism.
+- Unit: percentile (0-100)
+
+### truhealth_ketones_score
+- TruHealth general health domain percentile for ketone-related markers.
+- Unit: percentile (0-100)
+
+### truhealth_supplements_score
+- TruHealth general health domain percentile for supplement-related biomarker patterning.
+- Unit: percentile (0-100)
+
+### notes
+- Free-text context for the snapshot row.
+- Used to identify source scope, caveats, or integration notes.
+
+---
+
+## epigenetic_longitudinal.csv fields
+
+### date
+- Capture date of the epigenetic test result.
+- Format: `YYYY-MM-DD`
+
+### domain
+- Broad grouping of the result.
+- Examples:
+  - `aging`
+  - `organ_age`
+  - `truhealth_domain`
+  - `truhealth_marker`
+
+### biomarker
+- Machine-readable biomarker or output name.
+- Examples:
+  - `omicm_age`
+  - `dunedin_pace`
+  - `blood_age`
+  - `ldl_c`
+  - `pfos`
+
+### value
+- Numeric result value as reported or derived from source artifact.
+- Unit depends on field context.
+
+### unit
+- Measurement unit for the value.
+- Examples:
+  - `years`
+  - `ratio`
+  - `percentile`
+
+### status
+- Interpretation category associated with the value.
+- Examples:
+  - `normal`
+  - `suboptimal`
+  - `high`
+  - `high_warning`
+  - `low`
+  - `reference`
+
+### source
+- Report source used for the row.
+- Expected values:
+  - `TruAge`
+  - `Advanced_TruAge`
+  - `TruHealth`
+
+### notes
+- Free-text context, caveats, or interpretation notes for the row.
 
 ---
 
@@ -171,8 +450,6 @@ Note:
 Snapshot structure has evolved over time.  
 The repository preserves historical formats rather than enforcing retroactive restructuring.
 
----
-
 ### Reports
 
 The repository supports two report classes:
@@ -191,8 +468,6 @@ The repository supports two report classes:
 
 Weekly reports are the dominant and expected format.  
 Capture reports are used selectively for discrete measurement events.
-
----
 
 ### Current State
 - File: `LATEST.md`
