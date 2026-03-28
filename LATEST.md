@@ -3,7 +3,7 @@
 Daniel Longitudinal Study  
 Public Archive Status Dashboard
 
-**Last Updated:** 2026-W11  
+**Last Updated:** 2026-W12  
 **Repository State:** Active Longitudinal Observation  
 **Archive Mode:** Public, governed, versioned
 
@@ -39,6 +39,7 @@ Primary artifacts belong in `/snapshots`.
 | Recovery Signals | Stable, non-limiting relative to exposure |
 | Sleep Integrity | Stable; variability primarily duration-driven |
 | Bodyweight Band | ~221–233 lb |
+| Biomarker Coverage | Expanded — Feb 2026 multi-domain snapshot integrated |
 | Archive Integrity | Maintained |
 
 ---
@@ -78,9 +79,9 @@ No forward performance claims are made here.
 
 ## Nervous System State
 
-- THC removal window active (Day 2–3)  
-- Sympathetic activation observed (rumination, elevated alertness)  
-- Increased behavioral awareness (reduction in automated routines)  
+- THC removal window active  
+- Sympathetic activation observed (elevated alertness, internal dialogue)  
+- Increased behavioral awareness  
 - No degradation in execution capacity  
 
 ---
@@ -146,7 +147,20 @@ raw artifacts
 → phase context (descriptive only)  
 → governance (constraints and boundaries)  
 
-The archive is intended to remain readable across time, not only within the current week.
+---
+
+## Recent Structural Additions
+
+- Integrated February 2026 biomarker snapshot (DEXA, BodPod, TruAge, TruHealth)  
+- Introduced `biomarker_snapshot.csv` (monthly fused state layer)  
+- Introduced `epigenetic_longitudinal.csv` (time-series biological aging layer)  
+- Expanded `DATA_DICTIONARY.md` to support multi-domain tracking  
+
+These additions expand the archive beyond body composition into:
+
+- biological aging  
+- system-level health scoring  
+- cross-domain physiological state tracking  
 
 ---
 
@@ -180,10 +194,10 @@ Progress is evaluated through:
 
 ## Next Scheduled Public Updates
 
-- next weekly report  
-- snapshot additions as capture events occur  
-- continued UDI dataset expansion (prediction vs outcome tracking)  
-- future quarterly biomarker alignment when available  
+- weekly report closeout (2026-W12)  
+- continued snapshot ingestion as events occur  
+- expansion of longitudinal biomarker datasets  
+- continued UDI dataset development  
 
 ---
 
