@@ -15,28 +15,21 @@ Biological interpretation belongs in `/reports`.
 
 ### Added
 
-- Weekly report for **2026-W11** documenting continued consolidation under repeated exposure conditions.
-- Initialized **2026-W12** report to maintain forward archive continuity.
+- Weekly report for **2026-W12** finalized to document the completed observation window under continued Phase 2 load integration conditions.
+- Weekly report for **2026-W13** initialized to maintain forward archive continuity under the active observation model.
 
-- Introduced **model error tracking layer** for structured comparison of AI predictions vs observed outcomes.
-  - Added `/data/model_error/` directory with primary schema `model_error_gap_v1.csv`
-  - Added `/docs/methodology/UDI_framework_v1.md` defining Unobstructed Delta Index (UDI)
-  - Added `/docs/methodology/annotation_protocol.md` for prediction capture and data integrity rules
-  - Added calibration event logging structure for tracking model interpretation shifts
+- Introduced **model error tracking layer** for structured comparison of predictions vs observed outcomes.
+  - Added `/data/model_error/` directory
+  - Added primary dataset `model_error_gap_v1.csv`
+  - Added rolling summary file `udi_tracker.csv`
+  - Added `data/model_error/README.md` for layer orientation and handling rules
+  - Added `methodology/prediction_evaluation.md` defining evaluation rules for point, range, and state predictions
 
-- Added supporting README documentation for new measurement layer:
-  - `data/model_error/README.md`
-  - `docs/methodology/README.md`
-
-- Established forward capture protocol for logging model predictions at time of generation
-
-- Closed early THC transition predictions in UDI dataset (018, 020, 023) based on observed alignment with predicted nervous system and cognitive responses
-- Added GI instability event (025) with attribution to pre-training fueling timing mismatch rather than systemic failure
-- Added performance resilience signal (026) capturing maintained execution capacity under sympathetic activation and GI disturbance
-
----
-
-### Added (Biomarker Expansion — Feb 2026)
+- Expanded prediction logging and closure coverage within the model error layer:
+  - closed early THC transition predictions where sufficient evidence existed
+  - added GI instability event with explicit attribution context
+  - added performance-resilience closures under transient sympathetic / GI disturbance
+  - preserved open predictions where observation windows remain active or methodologically incomplete
 
 - Integrated **February 2026 biomarker snapshot artifacts**:
   - DEXA scan  
@@ -45,59 +38,58 @@ Biological interpretation belongs in `/reports`.
   - TruHealth system report  
 
 - Introduced `biomarker_snapshot.csv`
-  - Monthly fused biomarker layer combining body composition, epigenetic age, and system health domains  
+  - monthly fused biomarker layer combining body composition, epigenetic age, and system health domains  
 
 - Introduced `epigenetic_longitudinal.csv`
-  - Time-series tracking of biological aging metrics (OMICm age, DunedinPACE, SYMPHONY age)  
-
-- Expanded `DATA_DICTIONARY.md`
-  - Added definitions for all new biomarker and epigenetic variables  
+  - time-series tracking of biological aging metrics (OMICm age, DunedinPACE, SYMPHONY age)  
 
 ---
 
-### Updated
+### Changed
 
 - **LATEST.md** executive system dashboard updated to reflect:
-  - active THC removal window
-  - observed sympathetic activation and increased behavioral awareness
-  - transient GI instability with corrected attribution (timing mismatch)
-  - confirmed performance stability under regulatory disturbance
+  - W12 closeout status
+  - W13 active observation state
+  - recent transient regulatory disturbance without structural drift
+  - active model error and prediction-evaluation layers
+  - current archive posture as consolidation-first rather than escalation-oriented
 
-- Bodyweight observation band updated to reflect current range (~221–233 lb)
+- `DATA_DICTIONARY.md` expanded to support biomarker and epigenetic fields introduced during the February 2026 snapshot expansion.
 
-- Snapshot layer expanded from single-domain (body composition) to **multi-domain biological state representation**
+- `sleep_signal_core_v1.csv` refined:
+  - removed static subjective field that was not changing
+  - preserved only changing sleep / HRV signal columns
+  - extended observations through the current window
+
+- `udi_tracker.csv` updated to reflect mixed post-calibration closure blocks and to withhold UDI where mixed prediction types reduce comparability.
+
+- Model error layer documentation aligned with current methodology and open-prediction handling.
 
 ---
 
 ### Refined
 
-- README.md updated to reduce onboarding friction and improve initial repository orientation:
-  - Added “What This Is / Why It Exists / What Makes It Different” entry block
-  - Introduced guided “Start Here” navigation
-  - Added “Why This Matters” context layer
-  - Clarified practical interpretation of Phase 2 (Load Integration)
-  - Improved readability for first-time external readers
+- Repository language further tightened to preserve conservative, artifact-first tone under increasing structural complexity.
 
-- Reinforced separation between:
-  - snapshot layer (derived, fused state)  
-  - longitudinal datasets (granular, time-series tracking)  
+- Separation reinforced between:
+  - snapshot artifacts (immutable evidence)  
+  - reports (retrospective interpretation)  
+  - longitudinal datasets (time-series tracking)  
+  - model error layer (prediction vs observed outcome)  
+  - methodology layer (evaluation rules and closure standards)  
 
----
-
-### Observations
-
-- Training architecture remains stable under Phase 2 load integration monitoring
-- Recovery signals remain compatible with repeated exposure structure
-- System demonstrates performance stability under transient regulatory disturbance
-- GI instability event classified as input-timing mismatch, not systemic degradation
-- Archive continuity maintained through ongoing weekly report initialization
+- Archive posture clarified around disturbance handling:
+  - transient regulatory disruption is logged without overstating systemic meaning
+  - continuity and recovery compatibility remain primary interpretation anchors
 
 ---
 
 ### Notes
 
-- Detailed TruHealth marker-level data intentionally not expanded into longitudinal dataset at this stage  
-- Current architecture prioritizes clarity, separation of concerns, and auditability  
+- Detailed marker-level TruHealth expansion remains intentionally limited at this stage.
+- UDI remains selectively applied; mixed prediction-type blocks may be logged without a populated UDI value when methodological comparability is not yet sufficient.
+- Legacy `trajectory` prediction entries may remain open in the model error dataset until a formal evaluation standard is defined for that prediction type.
+- Current architecture prioritizes clarity, separation of concerns, and auditability over premature abstraction.
 
 ---
 
