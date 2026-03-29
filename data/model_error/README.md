@@ -60,40 +60,56 @@ Fields include:
 - `prediction_value`
 - `actual_value`
 - `error_absolute`
-- `error_direction` (under / over / neutral)
+- `error_direction` (under / over / none)
 - `error_pct`
 - `model_type` (gen_pop / subject_calibrated)
 - `calibration_state` (pre / post)
 - `flag` (primary / inferred / reconstructed)
+- `prediction_type` (point / range / state)
+- `status` (open / closed)
 - `notes`
 
 ---
 
 ## Prediction Types
 
-All predictions are classified into one of four types.
-
-Type determines how the prediction is evaluated and when it can be closed.
+Predictions are classified into three evaluation-safe categories.
 
 ### 1. POINT
 - Predicts a specific numeric outcome  
 - Example: HRV = 75  
-- Closure: when value is observed or window expires  
+- Evaluated using absolute and percent error  
+
+---
 
 ### 2. RANGE
 - Predicts a bounded interval  
 - Example: Sleep = 400–450 minutes  
-- Closure: after 2–3 observations within window  
+- Evaluated based on whether observed values fall inside or outside the interval  
+
+---
 
 ### 3. STATE
 - Binary or condition-based  
-- Example: Sympathetic spikes without physiological disruption  
-- Closure: when condition is clearly confirmed or falsified  
+- Example: GI stability maintained  
+- Evaluated as correct (0 error) or incorrect (100% error equivalent)  
 
-### 4. TRAJECTORY
-- Directional or system-level change over time  
-- Example: movement toward lock-in  
-- Closure: after full observation window or decisive signal  
+---
+
+## Evaluation Standard
+
+All prediction scoring rules are defined in:
+
+> `/methodology/PREDICTION_EVALUATION.md`
+
+This includes:
+
+- error calculation rules  
+- range handling  
+- state evaluation  
+- multi-day window handling  
+
+This file does **not duplicate those rules**.
 
 ---
 
@@ -126,20 +142,32 @@ Invalid predictions are not logged.
 
 ---
 
-## Prediction Closure Rule
+## Prediction Closure Rules
 
 A prediction may be closed ONLY when:
 
-1. The full observation window has elapsed  
+1. The defined observation window has elapsed  
 AND  
-2. Sufficient data exists to evaluate the outcome without ambiguity  
+2. Sufficient data exists to evaluate outcome without ambiguity  
 
-All predictions must resolve as:
+---
 
-- `CLOSED_SUCCESS`  
-- `CLOSED_FAIL`  
+### Status Encoding
 
-Early closure is not permitted unless failure is definitive.
+- `open` → prediction still active or insufficient data  
+- `closed` → prediction fully evaluated  
+
+---
+
+### Outcome Classification
+
+Outcome success/failure is determined from:
+
+- error magnitude  
+- direction  
+- or state match  
+
+No separate `success/fail` column is required.
 
 ---
 
@@ -147,18 +175,25 @@ Early closure is not permitted unless failure is definitive.
 
 ### 1. Prediction
 - Logged immediately  
-- Outcome fields empty  
-- Marked as `primary`  
+- Marked as `primary`, `inferred`, or `reconstructed`  
+- `status = open`
+
+---
 
 ### 2. Observation
 - Data collected during defined window  
 
+---
+
 ### 3. Resolution
-- Prediction evaluated against observed data  
-- Error calculated  
+- Prediction evaluated  
+- Error fields populated  
+- `status = closed`
+
+---
 
 ### 4. Aggregation
-- Completed rows contribute to rolling metrics  
+- Closed predictions contribute to rolling metrics  
 
 ---
 
@@ -181,15 +216,18 @@ This boundary separates:
 
 ## Rolling Error Tracking
 
-### `udi_rolling_tracker.csv`
+### `udi_tracker.csv`
 
-Tracks how model error behaves over time.
+Tracks grouped prediction performance over defined windows.
 
-Focus areas:
+Fields include:
 
-- directional bias (under vs over)  
-- magnitude of error  
-- calibration improvement  
+- directional counts (under / over / none)  
+- completion counts  
+- prediction type composition  
+- UDI (when applicable)  
+
+---
 
 ### UDI (Unobstructed Delta Index)
 
@@ -198,18 +236,40 @@ Focus areas:
 Used to quantify:
 
 - model alignment  
-- deviation from expected human baselines  
+- deviation from expected baselines  
 - convergence toward subject-specific accuracy  
+
+---
+
+### UDI Calculation Constraint
+
+UDI is only calculated when:
+
+- the closure block is primarily quantitative (point + range)  
+- prediction types are comparable  
+
+---
+
+### UDI Withholding Rule
+
+UDI is intentionally left blank when:
+
+- the closure block is dominated by state predictions  
+- prediction types are mixed without weighting  
+- comparison would reduce interpretability  
+
+This is **by design**, not missing data.
 
 ---
 
 ## Data Integrity Rules
 
 - Predictions must be timestamped before outcomes  
-- Open predictions are preserved (no silent deletion)  
+- Open predictions are preserved (no deletion)  
 - Reconstructed data is explicitly labeled  
-- Primary data carries highest weight  
+- Primary predictions carry highest weight  
 - Closure follows strict window + evidence rules  
+- Evaluation rules are applied consistently across all entries  
 
 ---
 
@@ -221,7 +281,8 @@ It enables:
 
 - model validation  
 - calibration tracking  
-- causal signal detection (e.g., interventions like THC removal)  
+- detection of systematic bias  
+- identification of model failure conditions  
 
 It does not generate conclusions.
 
@@ -232,14 +293,14 @@ It does not generate conclusions.
 - Baseline reconstructed  
 - Calibration boundary defined (provisional)  
 - Subject-calibrated predictions active  
-- Intervention-based predictions introduced  
-- Rolling tracking initialized  
+- Mixed prediction types present  
+- UDI selectively applied based on methodological validity  
 
 ---
 
 ## Trajectory
 
-As primary data accumulates, this layer transitions from:
+As primary prediction volume increases, this layer transitions from:
 
 - observational error tracking  
 
@@ -247,6 +308,14 @@ to:
 
 - **controlled prediction testing system**
 
-Long-term role:
+---
+
+## Long-Term Role
 
 > Quantifying the difference between population-based expectation and unobstructed system behavior.
+
+This layer becomes the foundation for:
+
+- model calibration validation  
+- subject-specific prediction systems  
+- reproducible performance forecasting
