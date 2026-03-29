@@ -9,9 +9,13 @@ Continuous longitudinal observational archive documenting biological system adap
 
 A multi-year, single-subject longitudinal dataset tracking human performance, recovery, and adaptation under controlled conditions.
 
+---
+
 ## Why It Exists
 
 To document how stable inputs produce measurable biological change over time.
+
+---
 
 ## What Makes It Different
 
@@ -60,9 +64,10 @@ The archive preserves continuity across:
 - training architecture evolution  
 - phase-based system progression  
 - governance and constraint frameworks  
-- select biomarker data (where publicly included)  
+- biomarker and system health snapshots (where publicly included)  
+- prediction vs. observed outcome tracking (experimental layer)  
 
-**Note:** Some biomarker data (e.g., bloodwork) may be referenced in reports but not included in the public archive.
+**Note:** Some biomarker data (e.g., detailed bloodwork) may be referenced in reports but not included in the public archive.
 
 This is not a motivational archive.  
 It is a structured longitudinal dataset.
@@ -139,9 +144,12 @@ Root
 ├── reports/                          # Structured retrospective interpretation
 ├── dashboards/                       # Derived visualization surfaces
 │
+├── data/                             # Structured datasets (longitudinal + model error)
+│   └── model_error/                  # Prediction vs outcome tracking layer
+│
 ├── experiments/                      # Intervention summaries
 ├── schemas/                          # Naming conventions and definitions
-├── methodology/                      # Methodological reference material
+├── methodology/                      # Evaluation and measurement rules
 │
 ├── README.md
 ├── INDEX.md
@@ -168,7 +176,7 @@ Root
 Raw Logs  
 → Snapshots (immutable evidence)  
 → Reports (retrospective interpretation)  
-→ Dashboards (derived views)  
+→ Datasets (structured tracking layers)  
 → Governance (constraints and boundaries)
 ~~~
 
@@ -180,44 +188,48 @@ Each layer increases abstraction while remaining artifact-bound.
 
 See:
 
-[`METHODOLOGY_AND_CONTROLS.md`](./METHODOLOGY_AND_CONTROLS.md)
+[`METHODOLOGY_AND_CONTROLS.md`](./METHODOLOGY_AND_CONTROLS.md)  
+[`methodology/prediction_evaluation.md`](./methodology/prediction_evaluation.md)
 
-This document defines:
+These documents define:
 
 - measurement rules  
 - stabilization criteria  
 - interpretation constraints  
 - system boundaries  
+- prediction evaluation and error calculation rules  
 
 ---
 
-## Experimental Model Error Layer
+## Model Error Layer (Experimental)
 
-This repository includes an experimental instrumentation layer for tracking the difference between AI-predicted and observed outcomes.
+This repository includes a structured measurement layer for tracking the difference between predicted and observed outcomes.
 
 This layer operates alongside the primary dataset and does not replace artifact-first observation.
 
 ### Purpose
 
-- preserve forward-looking model predictions in structured form  
-- compare predicted vs. observed outcomes across time  
-- quantify directional model error under longitudinal conditions  
+- preserve forward-looking predictions in structured form  
+- compare predicted vs. observed outcomes  
+- quantify directional and magnitude error  
+- evaluate model calibration over time  
 
 ### Context
 
-Most model-based interpretations of human performance rely on population-calibrated assumptions.
+Most performance models rely on population-based assumptions.
 
-This layer evaluates how those assumptions behave when applied to a single-subject system operating under controlled conditions.
+This layer evaluates how those assumptions behave when applied to a single-subject system under controlled conditions.
 
 ### Status
 
-Early-stage measurement layer under active development.  
-Interpretation remains provisional.
+Active and expanding measurement layer.  
+Evaluation methodology defined; interpretation remains conservative.
 
 ### Reference
 
 - [`data/model_error/model_error_gap_v1.csv`](./data/model_error/model_error_gap_v1.csv)  
-- [`docs/methodology/prediction_to_outcome_pipeline.md`](./docs/methodology/prediction_to_outcome_pipeline.md)  
+- [`data/model_error/README.md`](./data/model_error/README.md)  
+- [`methodology/prediction_evaluation.md`](./methodology/prediction_evaluation.md)  
 
 ---
 
