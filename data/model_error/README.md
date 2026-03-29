@@ -100,7 +100,7 @@ Predictions are classified into three evaluation-safe categories.
 
 All prediction scoring rules are defined in:
 
-> `/methodology/PREDICTION_EVALUATION.md`
+> `/methodology/prediction_evaluation.md`
 
 This includes:
 
