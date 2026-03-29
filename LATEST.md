@@ -36,10 +36,11 @@ Primary artifacts belong in `/snapshots`.
 | Interpretation Mode | Strictly retrospective, artifact-bound (no forward claims) |
 | Phase Context | Phase 2 — Load Integration |
 | Training Structure | Stable, repeatable exposure architecture |
-| Recovery Signals | Stable, non-limiting relative to exposure |
-| Sleep Integrity | Stable; variability primarily duration-driven |
+| Recovery Signals | Broadly compatible with exposure; transient disturbance absorbed without structural change |
+| Sleep Integrity | Variable; recent instability driven primarily by duration compression rather than total recovery failure |
 | Bodyweight Band | ~221–233 lb |
 | Biomarker Coverage | Expanded — Feb 2026 multi-domain snapshot integrated |
+| Prediction Layer | Active — model error tracking and rolling closure logic now introduced |
 | Archive Integrity | Maintained |
 
 ---
@@ -54,7 +55,7 @@ This means:
 
 - aerobic base remains in active preservation  
 - mechanical loading is present under repeated exposure  
-- recovery remains compatible with exposure frequency  
+- recovery remains broadly compatible with exposure frequency  
 - interpretation remains consolidation-first  
 
 Phase language is descriptive, not promotional.  
@@ -66,40 +67,61 @@ Any future phase advancement should remain artifact-confirmed and retrospective.
 
 The archive is currently documenting:
 
-- stable repeated training exposure  
-- preserved recovery bandwidth  
-- consistent execution patterns  
+- repeated training exposure under stable structure  
+- preserved aerobic base during continued load integration  
+- generally compatible recovery relative to exposure  
 - consolidation prioritized over escalation  
-- performance stability under transient regulatory disturbance  
+- disturbance tolerance without structural drift  
 
 No peaking behavior is assumed.  
 No forward performance claims are made here.
 
 ---
 
+## Recent Recovery / Regulation Context
+
+Recent observations include a short regulatory disturbance window associated with:
+
+- THC removal  
+- sympathetic activation  
+- transient GI instability  
+- one controlled downregulation event  
+
+These observations did not require structural redesign of the training architecture.
+
+Current public posture remains:
+
+- observe  
+- document  
+- avoid overreaction  
+- preserve continuity
+
+---
+
 ## Nervous System State
 
-- THC removal window active  
-- Sympathetic activation observed (elevated alertness, internal dialogue)  
-- Increased behavioral awareness  
-- No degradation in execution capacity  
+- THC removal window recently active  
+- Sympathetic activation observed (elevated alertness, internal dialogue, dream intensity, sweating)  
+- Increased behavioral awareness noted during the transition window  
+- No evidence of structural nervous system instability  
 
 ---
 
 ## GI / Fueling State
 
-- Temporary instability observed (nausea / vomiting event)  
-- Root cause attributed to pre-training food timing mismatch  
-- Not indicative of systemic instability  
-- Fuel timing protocol adjusted  
+- Temporary instability observed (nausea / vomiting event, reduced appetite tolerance)  
+- Event attribution remains most consistent with timing / regulation mismatch rather than systemic breakdown  
+- Fuel timing and recovery pacing adjusted conservatively  
+- GI stability remains an active observation area rather than a resolved non-issue  
 
 ---
 
 ## Performance Integrity
 
-- Full B1 + crawl execution maintained  
-- High activity output preserved under disturbance  
-- Confirms non-fragile system during regulatory transition  
+- Core training continuity preserved across the observation window  
+- One controlled downregulation day occurred without broader protocol drift  
+- Performance capacity remained broadly intact despite transient disturbance  
+- Current evidence supports system resilience rather than fragility  
 
 ---
 
@@ -108,12 +130,13 @@ No forward performance claims are made here.
 ### B1 — Aerobic Base
 - Incline treadmill walking  
 - Nasal breathing preserved  
-- Minimum effective dose maintained  
+- Minimum effective dose / anchor role maintained  
 
 ### Strength Integration
 - Trap Bar Deadlift  
 - Pull-Ups  
 - Controlled loading exposure  
+- Repeated exposure prioritized over novelty  
 
 Training structure may evolve over time, but the current public posture remains:
 
@@ -123,12 +146,12 @@ Training structure may evolve over time, but the current public posture remains:
 
 ## Risk Posture
 
-**Primary risk:** premature escalation during periods of perceived ease  
+**Primary risk:** premature escalation during periods of perceived ease or rebound confidence  
 
 **Current mitigation posture:**
 - preserve structural consistency  
 - avoid novelty for its own sake  
-- respect connective tissue adaptation lag  
+- respect connective tissue and recovery lag  
 - progress only when recovery remains compatible with exposure  
 
 Durability remains higher priority than display.
@@ -146,6 +169,7 @@ raw artifacts
 → reports (retrospective interpretation)  
 → phase context (descriptive only)  
 → governance (constraints and boundaries)  
+→ measurement layers (longitudinal tracking and model error comparison)
 
 ---
 
@@ -155,12 +179,17 @@ raw artifacts
 - Introduced `biomarker_snapshot.csv` (monthly fused state layer)  
 - Introduced `epigenetic_longitudinal.csv` (time-series biological aging layer)  
 - Expanded `DATA_DICTIONARY.md` to support multi-domain tracking  
+- Introduced `data/model_error/` as a structured prediction-comparison layer  
+- Added `model_error_gap_v1.csv` and `udi_tracker.csv`  
+- Added prediction evaluation methodology for point / range / state closure logic  
+- Refined `sleep_signal_core_v1.csv` to remove static subjective noise and preserve only changing signal fields  
 
 These additions expand the archive beyond body composition into:
 
 - biological aging  
 - system-level health scoring  
 - cross-domain physiological state tracking  
+- prediction calibration and model error measurement  
 
 ---
 
@@ -175,6 +204,7 @@ Progress is evaluated through:
 - traceability  
 - reproducibility posture  
 - stability across time  
+- coherence between prediction, artifact, and retrospective interpretation  
 
 ---
 
@@ -186,6 +216,7 @@ Progress is evaluated through:
 - **Reports:** [/reports](reports)  
 - **Snapshots:** [/snapshots](snapshots)  
 - **Methodology and Controls:** [METHODOLOGY_AND_CONTROLS.md](METHODOLOGY_AND_CONTROLS.md)  
+- **Prediction Evaluation:** [/methodology/prediction_evaluation.md](methodology/prediction_evaluation.md)  
 - **Data Dictionary:** [DATA_DICTIONARY.md](DATA_DICTIONARY.md)  
 - **Measurement Sources:** [MEASUREMENT_SOURCES.md](MEASUREMENT_SOURCES.md)  
 - **Changelog:** [CHANGELOG.md](CHANGELOG.md)  
@@ -194,13 +225,13 @@ Progress is evaluated through:
 
 ## Next Scheduled Public Updates
 
-- weekly report closeout (2026-W12)  
+- weekly report initialization and observation capture for **2026-W13**  
 - continued snapshot ingestion as events occur  
-- expansion of longitudinal biomarker datasets  
-- continued UDI dataset development  
+- continued expansion of longitudinal biomarker datasets as artifacts accumulate  
+- continued model error closure and UDI layer refinement as prediction windows mature  
 
 ---
 
-**System State:** Stable  
-**Trajectory Posture:** Positive  
-**Operational Mode:** Execute without negotiation
+**System State:** Stable with recent transient disturbance observed  
+**Trajectory Posture:** Consolidation-first  
+**Operational Mode:** Execute, observe, and close retrospectively
