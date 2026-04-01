@@ -41,6 +41,21 @@ New readers should begin here:
 
 ---
 
+## Methodology Structure
+
+Methodology is intentionally split across two layers:
+
+- `/methodology/` → Core observational framework, controls, and system constraints
+- `/docs/methodology/` → Extended models (prediction logging, UDI, calibration systems)
+
+This separation distinguishes:
+- baseline observational integrity
+- experimental and modeling layers built on top of it
+
+Both layers are active components of the system.
+
+---
+
 ## Archive Structure
 
 - [/reports](reports) — structured public interpretation and weekly summaries
