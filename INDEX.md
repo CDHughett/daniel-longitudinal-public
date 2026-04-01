@@ -20,24 +20,24 @@ New readers should begin here:
 
 ## Core Archive Documents
 
-- [README.md](README.md) — repository overview and public framing
-- [SYSTEM_OVERVIEW.md](SYSTEM_OVERVIEW.md) — system model and abstraction layers
-- [GOVERNANCE.md](GOVERNANCE.md) — archive rules and interpretive constraints
-- [STRUCTURAL_PRINCIPLES.md](STRUCTURAL_PRINCIPLES.md) — design logic for the archive
-- [RISK_MANAGEMENT.md](RISK_MANAGEMENT.md) — known public archive risks and mitigation posture
-- [PHASE_DECLARATION_CRITERIA.md](PHASE_DECLARATION_CRITERIA.md) — rules for phase advancement language
-- [WHY_PUBLIC.md](WHY_PUBLIC.md) — rationale for public visibility
-- [CHANGELOG.md](CHANGELOG.md) — material archive changes
+- [README.md](README.md) — repository overview and public framing  
+- [SYSTEM_OVERVIEW.md](SYSTEM_OVERVIEW.md) — system model and abstraction layers  
+- [GOVERNANCE.md](GOVERNANCE.md) — archive rules and interpretive constraints  
+- [STRUCTURAL_PRINCIPLES.md](STRUCTURAL_PRINCIPLES.md) — design logic for the archive  
+- [RISK_MANAGEMENT.md](RISK_MANAGEMENT.md) — known public archive risks and mitigation posture  
+- [PHASE_DECLARATION_CRITERIA.md](PHASE_DECLARATION_CRITERIA.md) — rules for phase advancement language  
+- [WHY_PUBLIC.md](WHY_PUBLIC.md) — rationale for public visibility  
+- [CHANGELOG.md](CHANGELOG.md) — material archive changes  
 
 ---
 
 ## Measurement + Methodology
 
-- [METHODOLOGY_AND_CONTROLS.md](METHODOLOGY_AND_CONTROLS.md)
-- [DATA_DICTIONARY.md](DATA_DICTIONARY.md)
-- [MEASUREMENT_SOURCES.md](MEASUREMENT_SOURCES.md)
-- [RECOVERY_MONITORING_FRAMEWORK.md](RECOVERY_MONITORING_FRAMEWORK.md)
-- [CITATION.cff](CITATION.cff) — repository citation metadata
+- [METHODOLOGY_AND_CONTROLS.md](METHODOLOGY_AND_CONTROLS.md)  
+- [DATA_DICTIONARY.md](DATA_DICTIONARY.md)  
+- [MEASUREMENT_SOURCES.md](MEASUREMENT_SOURCES.md)  
+- [RECOVERY_MONITORING_FRAMEWORK.md](RECOVERY_MONITORING_FRAMEWORK.md)  
+- [CITATION.cff](CITATION.cff) — repository citation metadata  
 
 ---
 
@@ -45,25 +45,26 @@ New readers should begin here:
 
 Methodology is intentionally split across two layers:
 
-- `/methodology/` → Core observational framework, controls, and system constraints
-- `/docs/methodology/` → Extended models (prediction logging, UDI, calibration systems)
+- `/methodology/` → core observational framework, controls, and system constraints  
+- `/docs/methodology/` → extended modeling layers (prediction logging, UDI, calibration systems)  
 
 This separation distinguishes:
-- baseline observational integrity
-- experimental and modeling layers built on top of it
 
-Both layers are active components of the system.
+- baseline observational integrity  
+- experimental and modeling layers built on top of it  
+
+Both layers are active components of the system and should be interpreted together.
 
 ---
 
 ## Archive Structure
 
-- [/reports](reports) — structured public interpretation and weekly summaries
-- [/snapshots](snapshots) — primary artifact archive
-- [/experiments](experiments) — intervention-specific public experiment files
-- [/schemas](schemas) — naming rules, structure definitions, and archive conventions
-- [/methodology](methodology) — supplemental methodology files
-- [/dashboards](dashboards) — public metric summaries and future dashboard surfaces
+- [/reports](reports) — structured retrospective interpretation and weekly summaries  
+- [/snapshots](snapshots) — primary artifact archive (immutable evidence)  
+- [/experiments](experiments) — intervention-specific public experiment files  
+- [/schemas](schemas) — naming rules, structure definitions, and archive conventions  
+- [/methodology](methodology) — core methodological framework and constraints  
+- [/dashboards](dashboards) — derived metric summaries (non-primary artifacts)  
 
 ---
 
@@ -73,10 +74,10 @@ Use `/reports` for structured interpretation.
 
 This directory contains:
 
-- weekly reports
-- phase summaries
-- closeout synthesis documents
-- public interpretive summaries tied to artifact continuity
+- weekly reports  
+- phase summaries  
+- closeout synthesis documents  
+- public interpretive summaries tied to artifact continuity  
 
 Begin with the most recent weekly report available in `/reports`.
 
@@ -88,10 +89,10 @@ Use `/snapshots` for primary measurement artifacts and capture events.
 
 This directory contains public archival materials such as:
 
-- DEXA outputs
-- BodPod outputs
-- bloodwork or biomarker captures
-- other date-bound measurement artifacts
+- DEXA outputs  
+- BodPod outputs  
+- bloodwork or biomarker captures  
+- other date-bound measurement artifacts  
 
 Snapshots are primary evidence.  
 Reports interpret them later.
@@ -106,6 +107,23 @@ Use this file to review the current public intervention registry and experiment 
 
 ---
 
+## Additional System Documents
+
+The following documents support system interpretation, structure, and boundary definition:
+
+- ASSUMPTIONS_AND_BOUNDARIES.md  
+- VERSIONING.md  
+- SYSTEM_CONSTRAINTS.md  
+- DATASET.md / DATASET_OVERVIEW.md  
+- PHASE_MAP.md / PHASE_INDEX.md  
+- STATE_TRANSITIONS.md / TRANSITION_MAP.md  
+- ROADMAP.md  
+
+These documents define system limits, structural relationships, and long-horizon trajectory.  
+They are supportive layers, not primary entry points.
+
+---
+
 ## Reading Order for Serious Reviewers
 
 For a fast but accurate understanding of the archive:
@@ -115,7 +133,7 @@ For a fast but accurate understanding of the archive:
 3. [GOVERNANCE.md](GOVERNANCE.md)  
 4. [METHODOLOGY_AND_CONTROLS.md](METHODOLOGY_AND_CONTROLS.md)  
 5. [/reports](reports)  
-6. [/snapshots](snapshots)
+6. [/snapshots](snapshots)  
 
 This sequence preserves context before interpretation.
 
@@ -125,9 +143,9 @@ This sequence preserves context before interpretation.
 
 This public repository is organized to preserve:
 
-- continuity
-- traceability
-- interpretive restraint
-- longitudinal readability
+- continuity  
+- traceability  
+- interpretive restraint  
+- longitudinal readability  
 
 Where uncertainty exists, artifacts take precedence over narrative.
