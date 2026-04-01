@@ -3,9 +3,22 @@
 Daniel Longitudinal Study  
 Public Archive Status Dashboard
 
-**Last Updated:** 2026-W12  
+---
+
+## System State — 2026-W13 (Active Observation)
+
+**Last Updated:** 2026-W13  
 **Repository State:** Active Longitudinal Observation  
-**Archive Mode:** Public, governed, versioned
+**Archive Mode:** Public, governed, versioned  
+
+Week 12 closed under stable conditions.  
+Week 13 opened with no protocol changes.  
+
+System behavior remains consistent under repeated exposure.  
+
+No adjustments.  
+No negotiation.  
+No drift.  
 
 ---
 
@@ -94,7 +107,7 @@ Current public posture remains:
 - observe  
 - document  
 - avoid overreaction  
-- preserve continuity
+- preserve continuity  
 
 ---
 
@@ -225,7 +238,7 @@ Progress is evaluated through:
 
 ## Next Scheduled Public Updates
 
-- weekly report initialization and observation capture for **2026-W13**  
+- continued observation capture for **2026-W13 (active)**  
 - continued snapshot ingestion as events occur  
 - continued expansion of longitudinal biomarker datasets as artifacts accumulate  
 - continued model error closure and UDI layer refinement as prediction windows mature  
