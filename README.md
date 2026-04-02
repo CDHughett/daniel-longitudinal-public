@@ -21,6 +21,8 @@ To document how stable inputs produce measurable biological change over time.
 
 Artifact-first. No forward claims about system outcomes—only recorded observations and retrospective interpretation.
 
+Prediction tracking exists only as a retrospective comparison layer and does not drive system behavior.
+
 ---
 
 **Archive Type:** Longitudinal dataset  
@@ -65,7 +67,7 @@ The archive preserves continuity across:
 - phase-based system progression  
 - governance and constraint frameworks  
 - biomarker and system health snapshots (where publicly included)  
-- prediction vs. observed outcome tracking (experimental layer)  
+- prediction vs. observed outcome tracking (auxiliary review layer)  
 
 **Note:** Some biomarker data (e.g., detailed bloodwork) may be referenced in reports but not included in the public archive.
 
@@ -145,11 +147,11 @@ Root
 ├── dashboards/                       # Derived visualization surfaces
 │
 ├── data/                             # Structured datasets (longitudinal + model error)
-│   └── model_error/                  # Prediction vs outcome tracking layer
+│   └── model_error/                  # Prediction vs outcome review layer
 │
 ├── experiments/                      # Intervention summaries
 ├── schemas/                          # Naming conventions and definitions
-├── methodology/                      # Evaluation and measurement rules
+├── methodology/                      # Core methodological rules and constraints
 │
 ├── README.md
 ├── INDEX.md
@@ -197,33 +199,33 @@ These documents define:
 - stabilization criteria  
 - interpretation constraints  
 - system boundaries  
-- prediction evaluation and error calculation rules  
+- prediction evaluation rules (post-outcome only)  
 
 ---
 
-## Model Error Layer (Experimental)
+## Model Error Layer
 
-This repository includes a structured measurement layer for tracking the difference between predicted and observed outcomes.
+This repository includes a structured review layer for tracking the difference between predicted and observed outcomes.
 
 This layer operates alongside the primary dataset and does not replace artifact-first observation.
 
 ### Purpose
 
-- preserve forward-looking predictions in structured form  
-- compare predicted vs. observed outcomes  
+- preserve prediction records in structured form  
+- compare predicted vs. observed outcomes after closure  
 - quantify directional and magnitude error  
-- evaluate model calibration over time  
+- review error patterns across eligible closed records  
 
 ### Context
 
 Most performance models rely on population-based assumptions.
 
-This layer evaluates how those assumptions behave when applied to a single-subject system under controlled conditions.
+This layer preserves a narrow record of how those assumptions compare with observed outcomes in a single-subject archive under controlled conditions.
 
 ### Status
 
-Active and expanding measurement layer.  
-Evaluation methodology defined; interpretation remains conservative.
+Active auxiliary review layer.  
+Evaluation methodology is defined; interpretation remains retrospective and conservative.
 
 ### Reference
 
