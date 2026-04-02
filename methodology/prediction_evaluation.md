@@ -20,7 +20,7 @@ This methodology primarily applies to:
 
 - `data/model_error/model_error_gap_v1.csv`
 
-It may also be referenced when annotating retrospective baseline records, but those records should not be treated as equivalent calibration evidence.
+It may also be referenced when annotating retrospective baseline records, but those records should not be treated as equivalent evaluation evidence.
 
 ---
 
@@ -100,7 +100,7 @@ Range predictions should preserve the actual observed value used for closure.
 
 ## 3. State Predictions
 
-State predictions describe whether a condition or system state holds.
+State predictions describe whether a stated condition held across the defined observation window.
 
 ### Example
 - recovery compatibility preserved
@@ -118,7 +118,7 @@ If the predicted state is explicitly negative rather than positive, the closure 
 
 ## 4. Trajectory Predictions
 
-Trajectory predictions describe directional change across a defined period.
+Trajectory predictions describe whether a stated directional change materially occurred across a defined period.
 
 ### Example
 - movement toward lock-in
@@ -169,9 +169,9 @@ Notes should clarify context, not rescue failed predictions.
 
 ---
 
-## Calibration Use
+## Review Use
 
-Primary calibration judgments should be based on:
+Primary review judgments should be based on:
 
 - forward-logged records
 - closed records
