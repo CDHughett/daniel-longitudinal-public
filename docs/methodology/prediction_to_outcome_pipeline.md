@@ -1,14 +1,14 @@
-# Prediction → Outcome → Calibration Pipeline
+# Prediction → Outcome Review Pipeline
 
 ---
 
 ## Purpose
 
-This document defines how predictions enter the archive, remain fixed, resolve against observed outcomes, and contribute to calibration.
+This document defines how predictions enter the archive, remain fixed, resolve against observed outcomes, and become eligible for post-outcome review.
 
 Its purpose is to protect temporal integrity.
 
-The pipeline exists so that forward expectations can be evaluated against reality without retroactive adjustment.
+The pipeline exists so that recorded predictions can be reviewed against observed reality without retroactive adjustment.
 
 ---
 
@@ -24,7 +24,7 @@ It does **not** govern retrospective baseline reconstruction, which is preserved
 
 - `data/model_error/model_error_gap_reconstructed.csv`
 
-Those reconstructed records may be useful for archive transparency, but they are not methodologically equivalent to forward-logged predictions.
+Those reconstructed records may support archive transparency, but they are not methodologically equivalent to forward-logged predictions.
 
 ---
 
@@ -40,14 +40,14 @@ The archive does not treat retroactive prediction-writing as equivalent to forwa
 
 ## Pipeline Overview
 
-The forward pipeline operates as:
+The forward review pipeline operates as:
 
 prediction creation  
 → holding state  
 → outcome capture  
 → error calculation  
 → closure  
-→ calibration use
+→ post-outcome review
 
 Each stage should be traceable through the archive.
 
@@ -77,7 +77,7 @@ After logging, the prediction enters a fixed holding state.
 During this phase:
 
 - the prediction is not rewritten
-- the value/range/state is not adjusted
+- the value, range, or state is not adjusted
 - the observation window remains fixed
 - outcome knowledge does not alter the original record
 
@@ -112,7 +112,7 @@ Standard fields may include:
 - `error_direction`
 - `error_pct`
 
-These fields express the gap between expected and observed results.
+These fields express the gap between predicted and observed results.
 
 ---
 
@@ -129,17 +129,17 @@ The archive should prefer delayed closure over premature closure.
 
 ---
 
-## Stage 6 — Calibration Use
+## Stage 6 — Post-Outcome Review
 
-Only properly forward-logged and closed records should inform calibration judgments.
+Only properly forward-logged and closed records should inform post-outcome review.
 
 This includes:
 
 - directional error review
 - repeated bias detection
-- refinement of future subject-calibrated expectations
+- review of differences between subject-calibrated and generic assumptions
 
-Retrospective baseline records may inform historical understanding, but they should not be treated as equivalent calibration evidence.
+Retrospective baseline records may support historical understanding, but they should not be treated as equivalent evaluation evidence.
 
 ---
 
@@ -164,7 +164,7 @@ They serve different purposes and should not be blended into one evaluation data
 This pipeline enforces the following:
 
 - forward statements are not treated as truth
-- all eligible predictions must resolve against reality
+- all eligible predictions must resolve against observed outcomes
 - retroactive reconstruction is not treated as forward evidence
 - interpretation cannot override observable outcome
 - historical records remain preserved once logged
@@ -173,7 +173,7 @@ This pipeline enforces the following:
 
 ## Summary
 
-The prediction pipeline exists to make error review possible without weakening archive integrity.
+The prediction review pipeline exists to make error review possible without weakening archive integrity.
 
 Its value depends on one rule above all others:
 
