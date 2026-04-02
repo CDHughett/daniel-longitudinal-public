@@ -90,6 +90,9 @@ Biological interpretation belongs in `/reports`.
 - UDI remains selectively applied; mixed prediction-type blocks may be logged without a populated UDI value when methodological comparability is not yet sufficient.
 - Legacy `trajectory` prediction entries may remain open in the model error dataset until a formal evaluation standard is defined for that prediction type.
 - Current architecture prioritizes clarity, separation of concerns, and auditability over premature abstraction.
+- Portions of repository development and commit activity were performed via a mobile-based workflow.
+- As a result, some commits may appear more granular or repetitive than a typical desktop-based development pattern.
+- Changes are grouped conceptually within this changelog to preserve clarity of intent.
 
 ---
 
