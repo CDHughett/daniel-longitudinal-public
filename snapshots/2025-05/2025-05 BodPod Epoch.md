@@ -1,55 +1,38 @@
 # SNAPSHOT — 2025-05 BodPod Epoch  
-## Phase 0: Amphibious Conditioning
+## Capture Window Context
+
+### Window
+
+May 2025 BodPod capture.
 
 ### Context
 
-This period marks the beginning of deliberate physical exposure — 
-not formal strength building.
+This window occurred during an early conditioning period before formal architectural training was established.
 
-Summer 2025 was dominated by:
+Training patterns around this period were characterized by:
 
-- Water treading
-- Heat exposure experimentation
-- Breath control under fatigue
-- Minimal structured load
-- Sparse strength sessions
+- water treading
+- heat exposure experimentation
+- breath control under fatigue
+- limited structured strength work
 
-There was no hypertrophy phase.
-No defined physique objective.
-No load progression model.
+### Operating Conditions
 
-### Training Pattern
+- no formal hypertrophy block
+- no defined progression model
+- no short-term physique manipulation for the scan
 
-Primary stimulus:
-- Extended treading sessions (time-under-tension in water)
-- Isometric shoulder and hip endurance
-- Core stabilization through buoyancy resistance
+### Archive Purpose
 
-Secondary stimulus:
-- Sauna sessions (exploratory frequency)
+This file provides context for the attached BodPod artifact only.
 
-Strength work:
-- Infrequent
-- Low structure
-- No progression model
+Interpretation of this window belongs in:
 
-### Intent
+- reports
+- phase summaries
+- longitudinal datasets
+- methodology and synthesis documents
 
-The goal was:
-Environmental resilience.
+### Included Artifacts
 
-Build tolerance.
-Build patience.
-Build breath discipline.
-
-Not build form.
-
-### State at BodPod
-
-- Body composition not yet reorganized
-- Muscle mass stable but undeveloped
-- Fat mass elevated relative to long-term arc
-- Nervous system stabilizing
-
-This epoch represents:
-Capacity exposure without architectural build.
+- `2025-05-bodpod-cosmed.jpg`
