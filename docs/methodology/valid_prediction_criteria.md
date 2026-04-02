@@ -1,193 +1,107 @@
-# Valid Prediction Criteria (v1.0)
-
-Daniel Longitudinal Study  
-Model Error Tracking Layer
+# Valid Prediction Criteria
 
 ---
 
 ## Purpose
 
-This document defines the minimum criteria required for a prediction to be:
+This document defines the minimum standard a prediction must meet to qualify for the archive's primary evaluation layer.
 
-- recorded  
-- evaluated  
-- closed  
+Its purpose is to keep the model error dataset narrow, testable, and methodologically defensible.
 
-within the UDI (Unobstructed Delta Index) dataset.
+These criteria apply to records intended for:
 
-The goal is to preserve:
+- `data/model_error/model_error_gap_v1.csv`
 
-- dataset integrity  
-- decision consistency  
-- auditability  
-
-This document is intentionally minimal.
-
-It is not a comprehensive framework.  
-It is an enforcement layer.
+They do not automatically apply to retrospective historical reconstructions, which should be stored separately if retained.
 
 ---
 
-## Core Principle
+## Primary Rule
 
-Predictions are only closed when **observable reality resolves the prediction without ambiguity**.
+A prediction is only valid for the primary evaluation layer if it is recorded before the outcome is known.
 
-If resolution requires interpretation, projection, or additional time → the prediction remains **open**.
+If that condition is not met, the record does not qualify for the forward evaluation file.
 
----
-
-## Valid Prediction Requirements
-
-A prediction is considered valid if it meets all of the following:
-
-### 1. Observable Domain
-The prediction must refer to a domain that can be directly observed or measured:
-
-- physiological (HRV, sleep, performance, GI, etc.)
-- behavioral (execution, task initiation, routine awareness)
-- system state (stability, compatibility, disruption)
-
-Predictions about abstract or non-observable outcomes are not valid.
+It may still be archived separately as historical context, but it is not a valid forward-test artifact.
 
 ---
 
-### 2. Time-Bound or State-Resolvable
-The prediction must resolve via:
+## Required Criteria
 
-- a defined time window  
-**or**
-- a clearly observable state transition  
+A valid prediction must satisfy all of the following:
 
-Examples:
-- “within 3–5 days”  
-- “during early THC removal window”  
-- “no training disruption under current structure”  
+### 1. Forward-Looking
+The prediction is recorded before the outcome is known.
 
----
+### 2. Time-Bounded
+The prediction includes a defined observation window or resolution horizon.
 
-### 3. Falsifiability
-The prediction must be capable of being proven wrong.
+### 3. Observable
+The outcome can be evaluated using available archive evidence.
 
-If no realistic observation could invalidate it → it should not be recorded.
+### 4. Falsifiable
+There is a realistic condition under which the prediction could be shown to be wrong.
 
----
+### 5. Domain-Specific
+The prediction is assigned to a defined system or measurement area.
 
-### 4. Single-Event or Cohesive State
-Each prediction should map to:
+### 6. Independently Resolvable
+The record can be evaluated without depending on another unresolved prediction.
 
-- a single observable outcome  
-**or**
-- a tightly coupled state cluster  
+### 7. Sufficiently Specific
+The prediction is concrete enough to produce a meaningful closure decision.
 
-Avoid combining unrelated outcomes into a single prediction.
+### 8. Context-Aware
+Major known confounders are noted when relevant.
 
 ---
 
-## Closure Criteria
+## Invalid Prediction Examples
 
-A prediction may be marked **closed** only when:
+A prediction should be excluded from the primary evaluation layer if it is:
 
-### 1. Direct Observation Exists
-There is a clear observed outcome corresponding to the prediction.
-
----
-
-### 2. Outcome Matches or Deviates Clearly
-
-Closure types:
-
-- **closed (success)** → observed outcome aligns with prediction  
-- **closed (failure)** → observed outcome contradicts prediction  
-
-Ambiguous or partial matches should remain **open**.
+- written after the outcome is already known
+- too vague to resolve
+- missing a usable time window
+- dependent on unresolved future interpretation
+- impossible to falsify
+- unsupported by available archive evidence
 
 ---
 
-### 3. No Additional Time Dependency
+## Retrospective Reconstruction
 
-If the prediction depends on:
+The archive may preserve reconstructed or inferred historical records for transparency.
 
-- future stabilization  
-- multi-day trends  
-- unresolved transitions  
+When it does:
 
-→ it must remain **open**
+- those records must be segregated from the primary evaluation dataset
+- they must be labeled clearly
+- they must not be presented as equivalent to forward-logged predictions
 
----
+Historical reconstruction can support context.
 
-## Non-Closure Rules
-
-A prediction must remain **open** if any of the following are true:
-
-- the defined time window has not elapsed  
-- the system is still in transition  
-- the observed outcome is incomplete  
-- resolution requires interpretation rather than observation  
-
----
-
-## Attribution Rules
-
-Real-world events may include confounding factors.
-
-When an outcome is influenced by a **known external or input-driven variable**:
-
-- the event may still be used for closure  
-- attribution must be explicitly noted  
-
-Example:
-- GI instability caused by food timing mismatch  
-→ does not invalidate system stability prediction  
-→ must be annotated as input-related, not systemic  
-
----
-
-## Prediction Types
-
-Predictions are categorized as:
-
-### Point
-A specific value or discrete outcome  
-(e.g., HRV = 75)
-
----
-
-### Range
-An expected band of values  
-(e.g., sleep 400–450 minutes)
-
----
-
-### State
-A system condition or behavior  
-(e.g., “no training disruption”)
-
----
-
-### Trajectory
-A directional shift over time  
-(e.g., “movement toward lock-in”)
-
-Trajectory predictions require extended observation and should remain open longer.
+It cannot substitute for forward logging.
 
 ---
 
 ## Closure Discipline
 
-When in doubt:
+Meeting the validity criteria does not guarantee immediate closure.
 
-> **do not close**
+A valid prediction should remain open until:
 
-Premature closure is more damaging than delayed closure.
-
-Dataset integrity is prioritized over completeness.
+- the observation window has elapsed, and
+- enough evidence exists to resolve the outcome cleanly
 
 ---
 
-## Version Notes
+## Archive Posture
 
-v1.0 establishes baseline closure discipline using observed events from early UDI dataset integration.
+The archive should prefer:
 
-Future versions may expand scope only if justified by repeated edge cases.
+- fewer valid predictions
+- clearer prediction structure
+- stronger temporal integrity
 
-This document should remain minimal and enforceable.
+A prediction layer gains credibility from exclusion discipline, not from volume.
