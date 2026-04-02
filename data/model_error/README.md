@@ -6,7 +6,7 @@
 
 This layer measures the gap between prediction and observed outcome.
 
-It exists to make forward expectations testable, traceable, and auditable inside the archive.
+It exists to record prediction → outcome relationships as an auxiliary analytical layer within the archive.
 
 The goal is not to prove correctness.
 The goal is to preserve prediction → outcome → error as a reviewable structure.
