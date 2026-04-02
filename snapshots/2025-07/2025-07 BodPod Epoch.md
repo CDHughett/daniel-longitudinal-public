@@ -1,52 +1,37 @@
 # SNAPSHOT — 2025-07 BodPod Epoch  
-## Phase 0: Heat & Water Adaptation Continuation
+## Capture Window Context
+
+### Window
+
+July 2025 BodPod capture window.
 
 ### Context
 
-This was peak summer conditioning.
+This period continued the summer conditioning pattern centered around:
 
-Training was still predominantly:
+- water treading
+- sauna exposure
+- aerobic movement
+- low structure on land-based loading
 
-- Treading water
-- Sauna exposure
-- Aerobic movement
-- Low structured load
+### Operating Conditions
 
-No formal hypertrophy block.
-No systematic strength progression.
+- no formal hypertrophy phase
+- no systematic strength progression
+- no intentional manipulation for scan outcome
 
-### Training Characteristics
+### Archive Purpose
 
-Water:
-- Sustained tread duration
-- Shoulder endurance adaptation
-- Deep core fatigue resistance
+This file provides capture-window context for the July 2025 snapshot artifacts.
 
-Heat:
-- Sauna frequency increasing
-- Discovery of recovery rhythm
-- Improved sweat response
-- Improved thermal tolerance
+Interpretation belongs in:
 
-Land Work:
-- Incline treadmill moderate
-- Turf circuits sporadic
-- Load days rare and unstructured
+- reports
+- phase documents
+- longitudinal datasets
+- synthesis layers
 
-### Observations
+### Included Artifacts
 
-- Improved recovery speed
-- Increased breath tolerance
-- Reduced emotional volatility
-- Higher stress ceiling
-
-Body composition:
-- Minor recomposition effects from consistency
-- No deliberate muscle-building strategy
-- No aggressive fat loss strategy
-
-This epoch built:
-
-Durability substrate.
-
-Not visible form.
+- `2025-07-bodpod-cosmed.jpg`
+- `2025-07-full-blood-panel.pdf`
