@@ -19,7 +19,7 @@ To document how stable inputs produce measurable biological change over time.
 
 ## What Makes It Different
 
-Artifact-first. No speculation. No performance claims—only recorded outcomes.
+Artifact-first. No forward claims about system outcomes—only recorded observations and retrospective interpretation.
 
 ---
 
