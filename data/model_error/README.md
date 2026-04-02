@@ -2,320 +2,167 @@
 
 ---
 
-## The Core Idea
+## Purpose
 
-> **This layer measures the gap between expectation and reality.**
+This layer measures the gap between prediction and observed outcome.
 
-Not just what happened —  
-but whether the model describing what *should* happen was correct.
+It exists to make forward expectations testable, traceable, and auditable inside the archive.
 
-**The error is the signal.**
-
----
-
-## Why This Exists
-
-Most datasets record outcomes.
-
-This layer records:
-
-> **Prediction → Outcome → Error**
-
-This enables:
-
-- validation of model behavior  
-- detection of systematic bias (under / over)  
-- measurement of calibration quality over time  
-- identification of when general models fail and subject-specific models emerge  
+The goal is not to prove correctness.
+The goal is to preserve prediction → outcome → error as a reviewable structure.
 
 ---
 
-## What This Tests
+## Data Structure
 
-- Was the prediction correct?  
-- Was it directionally accurate?  
-- Did it under- or overestimate?  
-- Did accuracy improve after calibration?  
-
----
-
-## System Structure
-
-Each prediction follows a strict lifecycle:
-
-**Prediction (timestamped) → Observation → Resolution → Error calculation**
-
-Predictions are always recorded **before outcomes exist**.
-
----
-
-## Primary Dataset
+The model error layer is split into two distinct datasets:
 
 ### `model_error_gap_v1.csv`
+Forward-logged prediction records only.
 
-Each row represents a single prediction compared to reality.
+This file is the primary evaluation dataset and is the only file used for ongoing calibration analysis inside the archive.
 
-Fields include:
+### `model_error_gap_reconstructed.csv`
+Retrospective baseline records.
+
+These entries were reconstructed after outcomes were already known in order to document an early baseline error profile before the forward-logging layer was fully established.
+
+These records are retained for historical context only.
+
+They are **not** treated as forward-test artifacts and should **not** be used as evidence of predictive integrity or calibration quality.
+
+---
+
+## Core Principle
+
+Only predictions logged before outcomes are known qualify for the primary evaluation layer.
+
+This distinction matters.
+
+The archive preserves reconstructed baseline records for transparency, but forward-logged records and retrospective records are not methodologically equivalent.
+
+---
+
+## What This Layer Tests
+
+For eligible forward-logged predictions, this layer tracks:
+
+- whether the prediction resolved cleanly
+- whether the prediction under- or overestimated observed reality
+- whether error magnitude improved over time
+- whether subject-calibrated expectations outperform generic assumptions
+
+---
+
+## Primary Fields
+
+Each row may include:
 
 - `prediction_value`
 - `actual_value`
 - `error_absolute`
-- `error_direction` (under / over / none)
+- `error_direction`
 - `error_pct`
-- `model_type` (gen_pop / subject_calibrated)
-- `calibration_state` (pre / post)
-- `flag` (primary / inferred / reconstructed)
-- `prediction_type` (point / range / state)
-- `status` (open / closed)
+- `model_type`
+- `calibration_state`
+- `flag`
+- `prediction_type`
+- `status`
 - `notes`
+
+---
+
+## Flag Definitions
+
+### `primary`
+A forward-logged prediction entered before the outcome was known.
+
+### `secondary`
+A forward-logged prediction that is still valid but not treated as a primary calibration anchor.
+
+### `reconstructed`
+A retrospective record created after the outcome was already known.
+
+### `inferred`
+A retrospective record created from prior reasoning or archived discussion after the outcome was already known.
+
+`reconstructed` and `inferred` records belong in the reconstructed baseline file, not the primary evaluation file.
 
 ---
 
 ## Prediction Types
 
-Predictions are classified into three evaluation-safe categories.
+### `point`
+A specific numerical estimate.
 
-### 1. POINT
-- Predicts a specific numeric outcome  
-- Example: HRV = 75  
-- Evaluated using absolute and percent error  
+### `range`
+A bounded expected interval.
 
----
+### `state`
+A binary or condition-based expectation.
 
-### 2. RANGE
-- Predicts a bounded interval  
-- Example: Sleep = 400–450 minutes  
-- Evaluated based on whether observed values fall inside or outside the interval  
+### `trajectory`
+A directional prediction expected to resolve across a longer observation window.
 
 ---
 
-### 3. STATE
-- Binary or condition-based  
-- Example: GI stability maintained  
-- Evaluated as correct (0 error) or incorrect (100% error equivalent)  
+## Inclusion Standard for `model_error_gap_v1.csv`
+
+A prediction belongs in the primary file only if it is:
+
+1. forward-logged before outcome is known
+2. time-bounded
+3. observable using archive data
+4. falsifiable
+5. assigned to a defined domain
+6. independently resolvable
+7. sufficiently documented to support closure
+
+If any of these conditions are not met, the record does not belong in the primary evaluation file.
+
+---
+
+## Closure Rules
+
+A prediction may be closed only when:
+
+1. the observation window has elapsed, and
+2. enough evidence exists to evaluate the outcome without forced interpretation
+
+Status values:
+
+- `open`
+- `closed`
+
+When ambiguity remains, the prediction should stay open.
 
 ---
 
 ## Evaluation Standard
 
-All prediction scoring rules are defined in:
+Scoring and closure logic are defined in:
 
-> `/methodology/prediction_evaluation.md`
+- `/methodology/prediction_evaluation.md`
+- `/docs/methodology/prediction_to_outcome_pipeline.md`
+- `/docs/methodology/valid_prediction_criteria.md`
 
-This includes:
-
-- error calculation rules  
-- range handling  
-- state evaluation  
-- multi-day window handling  
-
-This file does **not duplicate those rules**.
-
----
-
-## Valid Prediction Criteria
-
-A prediction is eligible for inclusion only if it meets ALL of the following:
-
-1. **Forward-Looking**
-   - Logged before outcome is known  
-
-2. **Time-Bounded**
-   - Includes a defined observation window  
-
-3. **Observable**
-   - Maps to measurable or clearly observable signals  
-
-4. **Falsifiable**
-   - Can be proven wrong  
-
-5. **Domain-Specific**
-   - Assigned to a defined system (HRV, sleep, performance, etc.)  
-
-6. **Independent**
-   - Does not rely on another prediction to resolve  
-
-7. **Context-Aware**
-   - Major confounders are noted if present  
-
-Invalid predictions are not logged.
-
----
-
-## Prediction Closure Rules
-
-A prediction may be closed ONLY when:
-
-1. The defined observation window has elapsed  
-AND  
-2. Sufficient data exists to evaluate outcome without ambiguity  
-
----
-
-### Status Encoding
-
-- `open` → prediction still active or insufficient data  
-- `closed` → prediction fully evaluated  
-
----
-
-### Outcome Classification
-
-Outcome success/failure is determined from:
-
-- error magnitude  
-- direction  
-- or state match  
-
-No separate `success/fail` column is required.
-
----
-
-## Data Flow
-
-### 1. Prediction
-- Logged immediately  
-- Marked as `primary`, `inferred`, or `reconstructed`  
-- `status = open`
-
----
-
-### 2. Observation
-- Data collected during defined window  
-
----
-
-### 3. Resolution
-- Prediction evaluated  
-- Error fields populated  
-- `status = closed`
-
----
-
-### 4. Aggregation
-- Closed predictions contribute to rolling metrics  
+This README does not duplicate those rules.
 
 ---
 
 ## Calibration Boundary
 
-### `calibration_events_log.md`
+`calibration_events_log.md` documents major shifts in how prediction behavior should be interpreted across time.
 
-Tracks transition from:
+This supports distinction between:
 
-- **gen_pop models** → general population assumptions  
-to  
-- **subject_calibrated models** → individualized prediction behavior  
-
-This boundary separates:
-
-- pre-calibration performance  
-- post-calibration accuracy  
+- general-population assumptions
+- subject-calibrated expectations
 
 ---
 
-## Rolling Error Tracking
+## Archive Posture
 
-### `udi_tracker.csv`
+This layer is strongest when it remains narrow, explicit, and honest.
 
-Tracks grouped prediction performance over defined windows.
-
-Fields include:
-
-- directional counts (under / over / none)  
-- completion counts  
-- prediction type composition  
-- UDI (when applicable)  
-
----
-
-### UDI (Unobstructed Delta Index)
-
-> Average directional error across completed predictions
-
-Used to quantify:
-
-- model alignment  
-- deviation from expected baselines  
-- convergence toward subject-specific accuracy  
-
----
-
-### UDI Calculation Constraint
-
-UDI is only calculated when:
-
-- the closure block is primarily quantitative (point + range)  
-- prediction types are comparable  
-
----
-
-### UDI Withholding Rule
-
-UDI is intentionally left blank when:
-
-- the closure block is dominated by state predictions  
-- prediction types are mixed without weighting  
-- comparison would reduce interpretability  
-
-This is **by design**, not missing data.
-
----
-
-## Data Integrity Rules
-
-- Predictions must be timestamped before outcomes  
-- Open predictions are preserved (no deletion)  
-- Reconstructed data is explicitly labeled  
-- Primary predictions carry highest weight  
-- Closure follows strict window + evidence rules  
-- Evaluation rules are applied consistently across all entries  
-
----
-
-## System Role
-
-This layer is **measurement infrastructure**, not interpretation.
-
-It enables:
-
-- model validation  
-- calibration tracking  
-- detection of systematic bias  
-- identification of model failure conditions  
-
-It does not generate conclusions.
-
----
-
-## Current State
-
-- Baseline reconstructed  
-- Calibration boundary defined (provisional)  
-- Subject-calibrated predictions active  
-- Mixed prediction types present  
-- UDI selectively applied based on methodological validity  
-
----
-
-## Trajectory
-
-As primary prediction volume increases, this layer transitions from:
-
-- observational error tracking  
-
-to:
-
-- **controlled prediction testing system**
-
----
-
-## Long-Term Role
-
-> Quantifying the difference between population-based expectation and unobstructed system behavior.
-
-This layer becomes the foundation for:
-
-- model calibration validation  
-- subject-specific prediction systems  
-- reproducible performance forecasting
+A smaller forward-logged dataset with clean temporal integrity is more valuable than a larger dataset with mixed methodological status.
