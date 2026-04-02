@@ -4,236 +4,177 @@
 
 ## Purpose
 
-This document defines the internal workflow used to generate, evaluate, and refine predictions within the Daniel Longitudinal Study.
+This document defines how predictions enter the archive, remain fixed, resolve against observed outcomes, and contribute to calibration.
 
-It exists to ensure that:
+Its purpose is to protect temporal integrity.
 
-- predictions are consistently structured
-- outcomes are objectively recorded
-- model error is measurable
-- calibration is traceable across time
+The pipeline exists so that forward expectations can be evaluated against reality without retroactive adjustment.
 
-This pipeline is **mechanical, not interpretive**.  
-It governs how predictions interact with reality inside the archive.
+---
+
+## Scope
+
+This document applies to the **forward-logged prediction layer**.
+
+It governs records intended for inclusion in:
+
+- `data/model_error/model_error_gap_v1.csv`
+
+It does **not** govern retrospective baseline reconstruction, which is preserved separately for historical context in:
+
+- `data/model_error/model_error_gap_reconstructed.csv`
+
+Those reconstructed records may be useful for archive transparency, but they are not methodologically equivalent to forward-logged predictions.
 
 ---
 
 ## Core Principle
 
-Predictions are not claims.
+A valid prediction enters the primary evaluation layer only if it is recorded before the outcome is known.
 
-They are **testable artifacts** that must resolve into one of two states:
+That record then remains fixed until the observation window closes.
 
-- **Closed (validated or invalidated)**
-- **Invalid (excluded based on criteria)**
-
-No prediction remains permanently open.
+The archive does not treat retroactive prediction-writing as equivalent to forward logging.
 
 ---
 
 ## Pipeline Overview
 
-The system operates through the following sequence:
+The forward pipeline operates as:
 
-prediction (forward artifact)  
-→ outcome (observed reality)  
-→ error measurement  
-→ calibration update  
-→ future prediction refinement  
+prediction creation  
+→ holding state  
+→ outcome capture  
+→ error calculation  
+→ closure  
+→ calibration use
 
-Each stage is versioned and traceable.
+Each stage should be traceable through the archive.
 
 ---
 
 ## Stage 1 — Prediction Creation
 
-Predictions are generated under controlled structure.
+A valid forward prediction must include:
 
-Each prediction must include:
-
-- timestamp
-- domain (sleep, HRV, performance, etc.)
-- predicted value or range
+- prediction date
+- domain
+- predicted value, range, or state
 - defined observation window
-- classification type (e.g. inferred, reconstructed, direct)
+- prediction type
+- enough context to support later closure
 
-Predictions must be:
+At creation time, the outcome must still be unknown.
 
-- falsifiable
-- time-bound
-- measurable within the dataset
+If the outcome is already known, the record may be preserved separately as retrospective context, but it does not qualify for the primary evaluation layer.
 
 ---
 
 ## Stage 2 — Holding State
 
-After creation, predictions enter a **holding state**.
+After logging, the prediction enters a fixed holding state.
 
 During this phase:
 
-- no modification is allowed
-- no retroactive adjustment is permitted
-- prediction remains fixed until outcome is available
+- the prediction is not rewritten
+- the value/range/state is not adjusted
+- the observation window remains fixed
+- outcome knowledge does not alter the original record
 
-This preserves dataset integrity.
+This protects temporal integrity.
 
 ---
 
-## Stage 3 — Outcome Recording
+## Stage 3 — Outcome Capture
 
-Once the observation window is complete:
+Once the observation window has elapsed:
 
-- actual observed value is recorded
-- source must be traceable (device, dataset, snapshot)
+- the actual outcome is recorded
+- the source must be traceable
+- closure must rely on observable archive evidence
 
-Outcomes must be:
+Outcome sources may include:
 
-- objective
-- timestamp-aligned
-- consistent with measurement definitions
+- device data
+- logs
+- snapshots
+- structured reports tied to underlying artifacts
 
 ---
 
 ## Stage 4 — Error Calculation
 
-Error is calculated as the difference between prediction and outcome.
+After outcome capture, error may be calculated using the prediction type.
 
-Standard fields include:
+Standard fields may include:
 
-- absolute error
-- directional error (over / under)
-- percentage error (when applicable)
+- `error_absolute`
+- `error_direction`
+- `error_pct`
 
-This creates a measurable gap between:
-
-**model expectation vs observed reality**
+These fields express the gap between expected and observed results.
 
 ---
 
-## Stage 5 — Prediction Closure
+## Stage 5 — Closure
 
-Every prediction must resolve into one of the following:
+Each forward-logged prediction should resolve to one of the following archive states:
 
-### Closed — Valid
-- prediction met acceptable error bounds
+- `closed`
+- `open`
 
-### Closed — Invalid
-- prediction failed to meet acceptable bounds
+A prediction should remain open if the observation window is incomplete, the outcome evidence is insufficient, or resolution would require forced interpretation.
 
-### Excluded
-- prediction removed due to invalid structure or missing data
-
-Closure is mandatory.  
-No prediction remains indefinitely open.
+The archive should prefer delayed closure over premature closure.
 
 ---
 
-## Stage 6 — Calibration Layer
+## Stage 6 — Calibration Use
 
-Closed predictions feed into calibration.
+Only properly forward-logged and closed records should inform calibration judgments.
 
-Calibration operates by:
+This includes:
 
-- identifying systematic bias (over/under trends)
-- adjusting expectation ranges
-- refining future prediction inputs
+- directional error review
+- repeated bias detection
+- refinement of future subject-calibrated expectations
 
-Calibration is:
-
-- incremental
-- evidence-based
-- version-aware
+Retrospective baseline records may inform historical understanding, but they should not be treated as equivalent calibration evidence.
 
 ---
 
-## Stage 7 — Dataset Integration
+## Stage 7 — Historical Preservation
 
-All predictions, outcomes, and errors are stored in:
+The model error layer may preserve two different classes of records:
 
-`/data/model_error/`
+### Forward evaluation records
+Stored in `model_error_gap_v1.csv`
 
-This creates a growing record of:
+### Reconstructed baseline records
+Stored in `model_error_gap_reconstructed.csv`
 
-- prediction accuracy
-- model drift
-- system-specific behavior
+These two classes must remain segregated.
 
-The dataset is:
-
-- append-only
-- machine-readable
-- historically preserved
+They serve different purposes and should not be blended into one evaluation dataset.
 
 ---
 
-## Valid Prediction Criteria
-
-For a prediction to be included in the dataset, it must:
-
-- be time-bound
-- be measurable using available data
-- include a defined outcome window
-- be recorded before outcome is known
-- remain unmodified during holding state
-
-Predictions that fail these criteria are excluded.
-
----
-
-## Calibration Discipline
-
-Calibration is not immediate.
-
-The system avoids:
-
-- overfitting to single outcomes
-- reactive adjustment
-- short-term bias correction
-
-Instead, calibration requires:
-
-- repeated evidence across multiple predictions
-- consistent directional error patterns
-- stability across time
-
----
-
-## System Constraints
+## Constraints
 
 This pipeline enforces the following:
 
-- no forward claims are treated as truth
-- all predictions must resolve against reality
-- interpretation cannot override data
-- historical records remain unchanged
-
----
-
-## Archive Role
-
-This pipeline transforms the archive from:
-
-**documentation → evaluation system**
-
-It enables:
-
-- measurable accuracy tracking
-- subject-specific model refinement
-- reproducible prediction frameworks
+- forward statements are not treated as truth
+- all eligible predictions must resolve against reality
+- retroactive reconstruction is not treated as forward evidence
+- interpretation cannot override observable outcome
+- historical records remain preserved once logged
 
 ---
 
 ## Summary
 
-The prediction → outcome → calibration pipeline ensures that:
+The prediction pipeline exists to make error review possible without weakening archive integrity.
 
-- all forward statements are testable
-- all results are recorded objectively
-- all errors are measurable
-- all improvements are evidence-based
+Its value depends on one rule above all others:
 
-This maintains:
-
-- dataset integrity
-- methodological clarity
-- long-term credibility of the archive
+**forward-logged records and retrospective records are not the same thing**
