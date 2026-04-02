@@ -4,12 +4,16 @@
 
 ## Purpose
 
-This layer measures the gap between prediction and observed outcome.
+This layer records the gap between prediction and observed outcome.
 
-It exists to record prediction → outcome relationships as an auxiliary analytical layer within the archive.
+It exists to preserve prediction → outcome relationships as an auxiliary analytical layer within the archive.
 
-The goal is not to prove correctness.
-The goal is to preserve prediction → outcome → error as a reviewable structure.
+The goal is to preserve prediction → outcome → error as a reviewable historical structure.
+
+This layer is subordinate to the artifact-first system.
+
+It does not influence training decisions or system behavior.
+It exists only as a recorded comparison between predicted and observed outcomes.
 
 ---
 
@@ -20,7 +24,7 @@ The model error layer is split into two distinct datasets:
 ### `model_error_gap_v1.csv`
 Forward-logged prediction records only.
 
-This file is the primary evaluation dataset and is the only file used for ongoing calibration analysis inside the archive.
+This file is the primary evaluation dataset for reviewing prediction accuracy after outcomes are known.
 
 ### `model_error_gap_reconstructed.csv`
 Retrospective baseline records.
@@ -43,9 +47,9 @@ The archive preserves reconstructed baseline records for transparency, but forwa
 
 ---
 
-## What This Layer Tests
+## What This Layer Records
 
-For eligible forward-logged predictions, this layer tracks:
+For eligible forward-logged predictions, this layer records:
 
 - whether the prediction resolved cleanly
 - whether the prediction under- or overestimated observed reality
@@ -158,6 +162,8 @@ This supports distinction between:
 
 - general-population assumptions
 - subject-calibrated expectations
+
+Calibration review occurs only after outcomes are known and records are eligible for evaluation.
 
 ---
 
