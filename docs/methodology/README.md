@@ -1,8 +1,8 @@
 # Methodology — Extended Systems
 
-This directory contains methodological extensions to the core longitudinal dataset.
+This directory contains analytical extensions to the core longitudinal dataset.
 
-These documents define experimental frameworks and protocols used to expand the analytical capabilities of the archive.
+These documents define structured overlays used to record and review patterns within the archive.
 
 ---
 
@@ -16,6 +16,7 @@ All outputs remain:
 
 - artifact-bound  
 - versioned  
+- retrospective  
 - subject to revision  
 
 ---
@@ -26,7 +27,7 @@ All outputs remain:
 
 - `UDI_framework_v1.md`
 
-Defines the Unobstructed Delta Index (UDI), a metric used to quantify directional model error between predicted and observed outcomes.
+Defines the Unobstructed Delta Index (UDI), a metric used to describe directional error between predicted and observed outcomes.
 
 ---
 
@@ -34,14 +35,14 @@ Defines the Unobstructed Delta Index (UDI), a metric used to quantify directiona
 
 - `annotation_protocol.md`
 
-Defines rules for capturing, logging, and maintaining prediction data integrity.
+Defines rules for capturing and maintaining prediction data integrity.
 
 Includes:
 
-- live prediction capture  
+- prediction capture timing  
 - data quality flags  
 - evidence hierarchy  
-- handling of incomplete (open) predictions  
+- handling of open predictions  
 
 ---
 
@@ -49,7 +50,7 @@ Includes:
 
 - `hypothesis_note.md`
 
-Documents internal working interpretations related to model behavior.
+Documents working interpretations related to model behavior.
 
 Maintained as a provisional layer and not treated as a confirmed conclusion.
 
@@ -65,7 +66,7 @@ Raw Logs
 → Dashboards
 ~~~
 
-This directory sits alongside core methodological documents and extends measurement capability without altering system structure.
+This layer operates after artifact collection and does not influence system behavior.
 
 ---
 
@@ -73,12 +74,4 @@ This directory sits alongside core methodological documents and extends measurem
 
 Measurement precedes interpretation.
 
-All frameworks in this directory exist to support structured observation, not to assert conclusions.
-
----
-
-## Status
-
-Active development.
-
-Frameworks may evolve as data density increases and system requirements become clearer.
+All frameworks in this directory exist to support structured observation after outcomes are recorded.
