@@ -7,29 +7,43 @@ Prediction Evaluation Standard
 
 ## Purpose
 
-This document defines how predictions are evaluated within the archive.
+This document defines how eligible predictions are evaluated once their observation windows close.
 
 Its purpose is to ensure that:
 
 - prediction closure is repeatable
 - error assignment is auditable
-- model comparisons remain structurally consistent
-- qualitative and quantitative predictions are not conflated
+- prediction types are evaluated consistently
+- forward-logged records are distinguished from retrospective baseline records
 
-This methodology applies to all entries in:
+This methodology primarily applies to:
 
-- `model_error_gap_v1.csv`
-- `udi_tracker.csv`
+- `data/model_error/model_error_gap_v1.csv`
+
+It may also be referenced when annotating retrospective baseline records, but those records should not be treated as equivalent calibration evidence.
+
+---
+
+## Evaluation Eligibility
+
+A record is eligible for primary evaluation only if it was:
+
+- logged before the outcome was known
+- assigned a defined observation window
+- structured clearly enough to resolve against observed data
+
+If a record was reconstructed after the outcome was already known, it may still be preserved historically, but it does not carry the same evidentiary weight as a forward-logged prediction.
 
 ---
 
 ## Prediction Types
 
-Predictions are classified into one of three categories:
+Predictions are classified into one of four categories:
 
-1. **Point**
-2. **Range**
-3. **State**
+1. `point`
+2. `range`
+3. `state`
+4. `trajectory`
 
 Each type is evaluated differently.
 
@@ -42,7 +56,7 @@ Point predictions specify a single expected value.
 ### Example
 - HRV = 75
 - recovery_rate = 48
-- performance = 1.00
+- VO2 = 49.5
 
 ### Closure Rule
 
@@ -60,194 +74,130 @@ For point predictions:
 
 - `error_pct = error_absolute / prediction_value`
 
-Express as a percentage.
-
-### Notes
-
-Point predictions are best used when:
-- the target variable is stable
-- the observation window is narrow
-- the prediction is numerically specific
+Express as a percentage when appropriate.
 
 ---
 
 ## 2. Range Predictions
 
-Range predictions specify an acceptable interval rather than a single target.
+Range predictions specify an expected interval.
 
 ### Example
-- sleep_duration = 400-460
-- HRV = 68-78
-- weight = 220-224
-- performance = 1.00-1.10
-
-### Definitions
-
-For any range:
-
-- `lower_bound = L`
-- `upper_bound = U`
-- `range_center = (L + U) / 2`
+- sleep = 400–460 minutes
+- weight = 220–224
 
 ### Closure Rule
 
-#### If observed value is inside the range:
-- `error_absolute = 0`
-- `error_direction = none`
-- `error_pct = 0%`
+If the actual value falls:
 
-#### If observed value is below the range:
-- `error_absolute = L - actual_value`
-- `error_direction = under`
+- within range → `error_absolute = 0`, `error_direction = none`, `error_pct = 0%`
+- above upper bound → `error_absolute = actual - upper_bound`, `error_direction = under`
+- below lower bound → `error_absolute = lower_bound - actual`, `error_direction = over`
 
-#### If observed value is above the range:
-- `error_absolute = actual_value - U`
-- `error_direction = over`
-
-### Error Percent
-
-For range predictions outside the interval:
-
-- `error_pct = error_absolute / range_center`
-
-Express as a percentage.
-
-### Evaluation Window Rule
-
-If the prediction applies across multiple days:
-
-- use the **mean observed value across the prediction window**
-- do not score from a single outlier unless the prediction explicitly refers to a single-day event
-
-### Notes
-
-Range predictions are preferred when:
-- the system is expected to vary within normal bounds
-- exact point precision would overstate confidence
-- the variable has known daily oscillation
+Range predictions should preserve the actual observed value used for closure.
 
 ---
 
 ## 3. State Predictions
 
-State predictions describe whether a condition is present, absent, or maintained.
+State predictions describe whether a condition or system state holds.
 
 ### Example
-- recovery compatibility maintained = 1
-- nervous system activation present = 1
-- GI stability maintained = 1
-- system resilience preserved = 1
-
-### Encoding
-
-Use binary encoding:
-
-- `1 = prediction present / expected condition occurs`
-- `0 = prediction absent / expected condition does not occur`
+- recovery compatibility preserved
+- GI instability emerges
+- training continuity maintained
 
 ### Closure Rule
 
-- if `actual_value == prediction_value`
-  - `error_absolute = 0`
-  - `error_direction = none`
-  - `error_pct = 0%`
+- condition holds → `actual_value = 1`, `error_absolute = 0`, `error_direction = none`, `error_pct = 0%`
+- condition fails → `actual_value = 0`, `error_absolute = 1`, `error_direction = under`, `error_pct = 100%`
 
-- if `actual_value != prediction_value`
-  - `error_absolute = 1`
-  - `error_direction = under` by default when expected condition fails
-  - `error_pct = 100%`
-
-### Notes
-
-State predictions should be used for:
-- behavioral continuity
-- physiological compatibility
-- disturbance presence/absence
-- operational stability calls
-
-State predictions should not be merged directly with quantitative percent-error summaries unless explicitly separated.
+If the predicted state is explicitly negative rather than positive, the closure note should make that logic clear.
 
 ---
 
-## Window Handling Rules
+## 4. Trajectory Predictions
 
-Prediction windows must be evaluated according to the structure of the original prediction.
+Trajectory predictions describe directional change across a defined period.
 
-### Single-Day Predictions
-Use the observed value from that day.
+### Example
+- movement toward lock-in
+- stabilization across 3–10 days
+- improved baseline clarity across a withdrawal window
 
-### Multi-Day Predictions
-Use the mean value across the full stated window unless the prediction explicitly references:
-- maximum
-- minimum
-- rebound high
-- first occurrence
-- threshold crossing
+### Closure Rule
 
-### Incomplete Windows
-Do not close the prediction until the stated window has matured.
+Trajectory predictions should remain open until:
 
----
+- the stated window has elapsed, and
+- there is enough observed evidence to determine whether the directional claim materially held
 
-## Status Rules
+Trajectory closure should be conservative.
 
-### Open
-Prediction window still active or insufficient evidence available.
-
-### Closed
-Prediction window matured and enough evidence exists to evaluate.
+If evidence is partial, the record should remain open.
 
 ---
 
-## Direction Rules
+## Closure Standard
 
-Use direction labels as follows:
+A prediction may be closed only when:
 
-- `under` = observed result fell below required prediction boundary or expected state failed
-- `over` = observed result exceeded upper prediction boundary
-- `none` = observed result matched prediction or remained inside predicted range
+1. the full observation window has elapsed, and
+2. the archive contains enough evidence to resolve the record without forced interpretation
 
----
+If either condition is missing, the prediction remains open.
 
-## UDI Handling Rules
+When uncertainty persists:
 
-UDI should not be forced across mixed prediction types.
-
-### Allowed
-UDI may be calculated when the closure block is primarily:
-- point predictions
-- range predictions
-- or another internally consistent quantitative set
-
-### Not Recommended
-UDI should be withheld when the closure block is dominated by:
-- binary state predictions
-- mixed state + range + point closures without weighting rules
-
-In these cases:
-- leave `udi_value` blank
-- explain why in the tracker notes
+**do not close**
 
 ---
 
-## Methodological Priority
+## Attribution Notes
 
-When in doubt, prefer:
+Observed outcomes may include confounders.
 
-1. structural consistency
-2. reproducibility
-3. conservative interpretation
+When a confounder is known and materially relevant:
 
-Do not optimize for favorable outcomes.
+- closure may still occur
+- the confounder should be documented in `notes`
+- the evaluator should distinguish between systemic failure and input-driven disturbance where the evidence supports that distinction
 
-Optimize for auditability.
+This should be done cautiously.
+
+Notes should clarify context, not rescue failed predictions.
 
 ---
 
-## Archive Principle
+## Calibration Use
 
-Prediction evaluation is retrospective.
+Primary calibration judgments should be based on:
 
-Predictions are not evidence by themselves.
+- forward-logged records
+- closed records
+- repeated patterns across domains and time
 
-Only closed predictions contribute to model comparison.
+Reconstructed or inferred retrospective records may be retained for transparency, but they should not be blended into the same evidentiary tier.
+
+---
+
+## Archive Discipline
+
+This methodology favors:
+
+- delayed closure over forced closure
+- traceability over density
+- clean record classes over mixed-status aggregation
+
+A smaller clean file is methodologically stronger than a larger mixed one.
+
+---
+
+## Version Note
+
+This version formalizes the separation between:
+
+- forward evaluation records
+- retrospective reconstructed baseline records
+
+That distinction is necessary to preserve credibility in the model error layer.
