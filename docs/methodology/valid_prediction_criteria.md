@@ -22,7 +22,7 @@ A prediction is only valid for the primary evaluation layer if it is recorded be
 
 If that condition is not met, the record does not qualify for the forward evaluation file.
 
-It may still be archived separately as historical context, but it is not a valid forward-test artifact.
+It may still be archived separately as historical context, but it is not methodologically equivalent to a forward-logged prediction.
 
 ---
 
@@ -30,7 +30,7 @@ It may still be archived separately as historical context, but it is not a valid
 
 A valid prediction must satisfy all of the following:
 
-### 1. Forward-Looking
+### 1. Forward-Logged
 The prediction is recorded before the outcome is known.
 
 ### 2. Time-Bounded
