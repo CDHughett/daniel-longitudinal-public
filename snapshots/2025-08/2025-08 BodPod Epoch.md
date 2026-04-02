@@ -1,41 +1,33 @@
 # SNAPSHOT — 2025-08 BodPod Epoch  
-## Phase 0: Capacity Maturation
+## Capture Window Context
+
+### Window
+
+August 2025 BodPod capture.
 
 ### Context
 
-Late summer shows increased physical tolerance,
-but still no formal architectural training phase.
+Late-summer conditioning remained the dominant training pattern in this window.
 
-Dominant modalities:
+Primary exposures included:
 
-- Water treading
-- Sauna exposure
-- Minimal load days
+- water treading
+- sauna exposure
+- endurance-oriented work
+- limited load-based structure
 
-### Structural Reality
+### Operating Conditions
 
-Physique changes were subtle.
-Muscle density not yet consolidated.
-Strength markers inconsistent.
+- endurance capacity was being built more than formal body-composition targeting
+- strength work remained inconsistent
+- no deliberate short-term manipulation for the scan
 
-There was effort —
-but not yet form.
+### Archive Purpose
 
-### Training State
+This file exists to describe the operating context of the August 2025 BodPod artifact.
 
-- High endurance base
-- Good joint tolerance
-- Shoulder stamina elevated
-- Core endurance strong
+Interpretation belongs elsewhere in the archive.
 
-### Psychological Shift
+### Included Artifacts
 
-Identity stabilizing.
-Discipline forming.
-Cathedral language emerging.
-
-But still pre-Phase 1.
-
-This was:
-
-Environmental conditioning without structural intent.
+- `2025-08-bodpod-cosmed.jpg`
