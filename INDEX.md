@@ -37,7 +37,7 @@ New readers should begin here:
 - [DATA_DICTIONARY.md](DATA_DICTIONARY.md)  
 - [MEASUREMENT_SOURCES.md](MEASUREMENT_SOURCES.md)  
 - [RECOVERY_MONITORING_FRAMEWORK.md](RECOVERY_MONITORING_FRAMEWORK.md)  
-- [CITATION.cff](CITATION.cff) — repository citation metadata  
+- [CITATION.cff](CITATION.cff)
 
 ---
 
@@ -45,15 +45,15 @@ New readers should begin here:
 
 Methodology is intentionally split across two layers:
 
-- `/methodology/` → core observational framework, controls, and system constraints  
-- `/docs/methodology/` → extended modeling layers (prediction logging, UDI, calibration systems)  
+- `/methodology/` → core observational rules, constraints, and evaluation boundaries  
+- `/docs/methodology/` → analytical overlays applied after artifact collection  
 
 This separation distinguishes:
 
-- baseline observational integrity  
-- experimental and modeling layers built on top of it  
+- what governs the system  
+- what is used to interpret recorded outcomes  
 
-Both layers are active components of the system and should be interpreted together.
+Extended methodology does not modify system behavior and remains subordinate to the core observational layer.
 
 ---
 
@@ -63,7 +63,7 @@ Both layers are active components of the system and should be interpreted togeth
 - [/snapshots](snapshots) — primary artifact archive (immutable evidence)  
 - [/experiments](experiments) — intervention-specific public experiment files  
 - [/schemas](schemas) — naming rules, structure definitions, and archive conventions  
-- [/methodology](methodology) — core methodological framework and constraints  
+- [/methodology](methodology) — core methodological rules and constraints  
 - [/dashboards](dashboards) — derived metric summaries (non-primary artifacts)  
 
 ---
@@ -72,70 +72,14 @@ Both layers are active components of the system and should be interpreted togeth
 
 Use `/reports` for structured interpretation.
 
-This directory contains:
-
-- weekly reports  
-- phase summaries  
-- closeout synthesis documents  
-- public interpretive summaries tied to artifact continuity  
-
-Begin with the most recent weekly report available in `/reports`.
-
 ---
 
 ## Snapshot Archive
 
-Use `/snapshots` for primary measurement artifacts and capture events.
-
-This directory contains public archival materials such as:
-
-- DEXA outputs  
-- BodPod outputs  
-- bloodwork or biomarker captures  
-- other date-bound measurement artifacts  
+Use `/snapshots` for primary measurement artifacts.
 
 Snapshots are primary evidence.  
 Reports interpret them later.
-
----
-
-## Experiment Registry
-
-- [EXPERIMENT_REGISTRY_PUBLIC.md](EXPERIMENT_REGISTRY_PUBLIC.md)
-
-Use this file to review the current public intervention registry and experiment status.
-
----
-
-## Additional System Documents
-
-The following documents support system interpretation, structure, and boundary definition:
-
-- ASSUMPTIONS_AND_BOUNDARIES.md  
-- VERSIONING.md  
-- SYSTEM_CONSTRAINTS.md  
-- DATASET.md / DATASET_OVERVIEW.md  
-- PHASE_MAP.md / PHASE_INDEX.md  
-- STATE_TRANSITIONS.md / TRANSITION_MAP.md  
-- ROADMAP.md  
-
-These documents define system limits, structural relationships, and long-horizon trajectory.  
-They are supportive layers, not primary entry points.
-
----
-
-## Reading Order for Serious Reviewers
-
-For a fast but accurate understanding of the archive:
-
-1. [README.md](README.md)  
-2. [LATEST.md](LATEST.md)  
-3. [GOVERNANCE.md](GOVERNANCE.md)  
-4. [METHODOLOGY_AND_CONTROLS.md](METHODOLOGY_AND_CONTROLS.md)  
-5. [/reports](reports)  
-6. [/snapshots](snapshots)  
-
-This sequence preserves context before interpretation.
 
 ---
 
