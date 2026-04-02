@@ -1,85 +1,32 @@
 # SNAPSHOT — 2025-09 BodPod Epoch  
-## Phase 1: Firmware Installation (B1–B7 System Introduced)
+## Capture Window Context
+
+### Window
+
+September 2025 BodPod capture.
 
 ### Context
 
-Late summer marked a forced transition.
+This window occurred during the transition away from summer exposure-dominant training and into a more structured system.
 
-The pool closed.  
-Amphibious volume ended.  
-Environmental exposure dominance stopped.
+Around this time, training organization was changing from largely environmental conditioning toward named and repeatable categories of work.
 
-Water + sauna had built tolerance —  
-but visible structural progress had plateaued.
+### Operating Conditions
 
-The next BodPod and DEXA were expected to confirm:
-Capacity without architectural change.
+- transition period rather than a fully mature structure
+- prior endurance and heat exposure still shaped the baseline
+- no attempt to manipulate the capture for presentation
 
-A system was required.
+### Archive Purpose
 
-Phase 1 began here.
+This file documents the context of the September 2025 BodPod capture window.
 
----
+Interpretive judgments about phase transition belong in:
 
-### The Firmware Update
+- phase documents
+- reports
+- synthesis layers
 
-The B1–B7 framework was introduced to replace environmental randomness with architectural intent.
+### Included Artifacts
 
-**B1** — Incline treadmill (10%, nasal breathing, aerobic density anchor)  
-**B2** — Back extention / sissy squat / leg raises  
-**B3** — Speed rope / Goblet squats 
-**B4** — Turf locomotion
-**B5** — Sled work 
-**B6** — Carries 
-**B7** — Sauna protocol structured and intentional  
-
-Training was no longer exposure-based.
-
-It became categorized.
-
-Logged.  
-Defined.  
-Repeatable.
-
----
-
-### Strategic Shift
-
-From:
-
-Environmental stress conditioning.
-
-To:
-
-Deliberate structural installation.
-
-Endurance base retained (B1).
-Sauna retained (B7).
-But now organized within a system.
-
----
-
-### Body Composition Status at Time
-
-- Endurance-adapted frame
-- Lean mass stable but not yet increasing meaningfully
-- Fat mass plateauing
-- Durability high
-- Form not yet consolidated
-
-This BodPod reflects:
-
-The end of Phase 0 physiology.
-
-Phase 1 architecture had just begun —
-but results were not yet visible.
-
----
-
-### Epoch Characterization
-
-This was not load integration.
-
-This was system installation.
-
-The firmware update.
+- `2025-09-bodpod-cosmed.jpg`
