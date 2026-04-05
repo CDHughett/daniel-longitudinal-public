@@ -1,18 +1,18 @@
 # LATEST — Executive System State
 
 Daniel Longitudinal Study  
-Public Archive Status Dashboard
+Public Archive Status Dashboard  
 
 ---
 
-## System State — 2026-W13 (Active Observation)
+## System State — 2026-W14 (Active Observation)
 
-**Last Updated:** 2026-W13  
+**Last Updated:** 2026-W14  
 **Repository State:** Active Longitudinal Observation  
 **Archive Mode:** Public, governed, versioned  
 
-Week 12 closed under stable conditions.  
-Week 13 opened with no protocol changes.  
+Week 13 closed under stable conditions.  
+Week 14 opened with no protocol changes.  
 
 System behavior remains consistent under repeated exposure.  
 
@@ -49,11 +49,11 @@ Primary artifacts belong in `/snapshots`.
 | Interpretation Mode | Strictly retrospective, artifact-bound (no forward claims) |
 | Phase Context | Phase 2 — Load Integration |
 | Training Structure | Stable, repeatable exposure architecture |
-| Recovery Signals | Broadly compatible with exposure; transient disturbance absorbed without structural change |
-| Sleep Integrity | Variable; recent instability driven primarily by duration compression rather than total recovery failure |
-| Bodyweight Band | ~221–233 lb |
+| Recovery Signals | Stable; prior disturbance resolved without structural change |
+| Sleep Integrity | Variable duration; improving structural coherence observed |
+| Bodyweight Band | ~220–224 lb |
 | Biomarker Coverage | Expanded — Feb 2026 multi-domain snapshot integrated |
-| Prediction Layer | Active — model error tracking and rolling closure logic now introduced |
+| Prediction Layer | Active — model error tracking and rolling closure logic |
 | Archive Integrity | Maintained |
 
 ---
@@ -82,9 +82,9 @@ The archive is currently documenting:
 
 - repeated training exposure under stable structure  
 - preserved aerobic base during continued load integration  
-- generally compatible recovery relative to exposure  
+- recovery compatibility restored following prior disturbance  
 - consolidation prioritized over escalation  
-- disturbance tolerance without structural drift  
+- early passive adaptation signals emerging  
 
 No peaking behavior is assumed.  
 No forward performance claims are made here.
@@ -93,16 +93,20 @@ No forward performance claims are made here.
 
 ## Recent Recovery / Regulation Context
 
-Recent observations include a short regulatory disturbance window associated with:
+A transient disturbance window occurred during the prior observation period associated with:
 
 - THC removal  
 - sympathetic activation  
 - transient GI instability  
 - one controlled downregulation event  
 
-These observations did not require structural redesign of the training architecture.
+Current status:
 
-Current public posture remains:
+- disturbance resolved without structural change  
+- recovery behavior returned to baseline  
+- no additional intervention required  
+
+Public posture remains:
 
 - observe  
 - document  
@@ -113,28 +117,31 @@ Current public posture remains:
 
 ## Nervous System State
 
-- THC removal window recently active  
-- Sympathetic activation observed (elevated alertness, internal dialogue, dream intensity, sweating)  
-- Increased behavioral awareness noted during the transition window  
-- No evidence of structural nervous system instability  
+- Prior sympathetic activation window observed  
+- Current state stable with reduced volatility  
+- Dream intensity and coherence increased  
+- No evidence of structural instability  
 
 ---
 
 ## GI / Fueling State
 
-- Temporary instability observed (nausea / vomiting event, reduced appetite tolerance)  
-- Event attribution remains most consistent with timing / regulation mismatch rather than systemic breakdown  
-- Fuel timing and recovery pacing adjusted conservatively  
-- GI stability remains an active observation area rather than a resolved non-issue  
+- Prior instability resolved  
+- Intake tolerance normalized  
+- No active GI disruption observed  
+
+This domain is no longer a limiting factor under current conditions.
 
 ---
 
 ## Performance Integrity
 
-- Core training continuity preserved across the observation window  
-- One controlled downregulation day occurred without broader protocol drift  
-- Performance capacity remained broadly intact despite transient disturbance  
-- Current evidence supports system resilience rather than fragility  
+- Training continuity preserved across the full observation window  
+- No additional downregulation events required  
+- Performance capacity stable under repeated exposure  
+- Early signs of improved bar interaction and movement efficiency observed  
+
+System behavior indicates resilience and integration rather than compensation.
 
 ---
 
@@ -143,29 +150,29 @@ Current public posture remains:
 ### B1 — Aerobic Base
 - Incline treadmill walking  
 - Nasal breathing preserved  
-- Minimum effective dose / anchor role maintained  
+- Anchor role unchanged  
 
 ### Strength Integration
 - Trap Bar Deadlift  
 - Pull-Ups  
-- Controlled loading exposure  
+- Dead hangs / bar exposure  
 - Repeated exposure prioritized over novelty  
 
-Training structure may evolve over time, but the current public posture remains:
+Training posture remains:
 
-**preserve system stability before expanding load or complexity**
+**preserve stability before expanding load or complexity**
 
 ---
 
 ## Risk Posture
 
-**Primary risk:** premature escalation during periods of perceived ease or rebound confidence  
+**Primary risk:** premature escalation during visible adaptation  
 
 **Current mitigation posture:**
 - preserve structural consistency  
-- avoid novelty for its own sake  
-- respect connective tissue and recovery lag  
-- progress only when recovery remains compatible with exposure  
+- avoid unnecessary variation  
+- allow adaptation to emerge without forcing signal  
+- maintain recovery compatibility  
 
 Durability remains higher priority than display.
 
@@ -173,9 +180,9 @@ Durability remains higher priority than display.
 
 ## Archive Position
 
-The repository is operating as a continuous public archive rather than a one-off project log.
+The repository continues to operate as a continuous public archive.
 
-The system remains organized around:
+System structure remains:
 
 raw artifacts  
 → snapshots (immutable evidence)  
@@ -191,24 +198,24 @@ raw artifacts
 - Integrated February 2026 biomarker snapshot (DEXA, BodPod, TruAge, TruHealth)  
 - Introduced `biomarker_snapshot.csv` (monthly fused state layer)  
 - Introduced `epigenetic_longitudinal.csv` (time-series biological aging layer)  
-- Expanded `DATA_DICTIONARY.md` to support multi-domain tracking  
-- Introduced `data/model_error/` as a structured prediction-comparison layer  
+- Expanded `DATA_DICTIONARY.md` for multi-domain tracking  
+- Introduced `data/model_error/` as prediction-comparison layer  
 - Added `model_error_gap_v1.csv` and `udi_tracker.csv`  
-- Added prediction evaluation methodology for point / range / state closure logic  
-- Refined `sleep_signal_core_v1.csv` to remove static subjective noise and preserve only changing signal fields  
+- Refined prediction evaluation methodology (point / range / state closure logic)  
+- Refined `sleep_signal_core_v1.csv` to preserve only dynamic signal fields  
 
-These additions expand the archive beyond body composition into:
+These additions extend the archive into:
 
 - biological aging  
 - system-level health scoring  
-- cross-domain physiological state tracking  
+- cross-domain physiological tracking  
 - prediction calibration and model error measurement  
 
 ---
 
 ## Public Orientation
 
-This repository documents process rather than performance theater.
+This repository documents process rather than performance display.
 
 Progress is evaluated through:
 
@@ -238,13 +245,13 @@ Progress is evaluated through:
 
 ## Next Scheduled Public Updates
 
-- continued observation capture for **2026-W13 (active)**  
+- continued observation capture for **2026-W14 (active)**  
 - continued snapshot ingestion as events occur  
-- continued expansion of longitudinal biomarker datasets as artifacts accumulate  
-- continued model error closure and UDI layer refinement as prediction windows mature  
+- introduction of expanded sleep longitudinal dataset  
+- continued model error closure and UDI refinement  
 
 ---
 
-**System State:** Stable with recent transient disturbance observed  
-**Trajectory Posture:** Consolidation-first  
+**System State:** Stable  
+**Trajectory Posture:** Consolidation with emerging passive adaptation  
 **Operational Mode:** Execute, observe, and close retrospectively
