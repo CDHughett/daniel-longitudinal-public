@@ -15,8 +15,8 @@ Biological interpretation belongs in `/reports`.
 
 ### Added
 
-- Weekly report for **2026-W12** finalized to document the completed observation window under continued Phase 2 load integration conditions.
-- Weekly report for **2026-W13** initialized to maintain forward archive continuity under the active observation model.
+- Weekly report for **2026-W13** finalized to document the completed observation window under continued Phase 2 load integration conditions.
+- Weekly report for **2026-W14** initialized to maintain forward archive continuity under the active observation window model.
 
 - Introduced **model error tracking layer** for structured comparison of predictions vs observed outcomes.
   - Added `/data/model_error/` directory
@@ -48,8 +48,8 @@ Biological interpretation belongs in `/reports`.
 ### Changed
 
 - **LATEST.md** executive system dashboard updated to reflect:
-  - W12 closeout status
-  - W13 active observation state
+  - W13 closeout status
+  - W14 active observation window
   - recent transient regulatory disturbance without structural drift
   - active model error and prediction-evaluation layers
   - current archive posture as consolidation-first rather than escalation-oriented
@@ -61,6 +61,12 @@ Biological interpretation belongs in `/reports`.
   - preserved only changing sleep / HRV signal columns
   - extended observations through the current window
 
+- `sleep_longitudinal_v1.csv` introduced and aligned:
+  - unified prior sleep records into a single longitudinal structure
+  - corrected column alignment inconsistencies
+  - preserved historical rows without reinterpretation
+  - standardized schema for forward compatibility
+
 - `udi_tracker.csv` updated to reflect mixed post-calibration closure blocks and to withhold UDI where mixed prediction types reduce comparability.
 
 - Model error layer documentation aligned with current methodology and open-prediction handling.
@@ -69,7 +75,7 @@ Biological interpretation belongs in `/reports`.
 
 ### Refined
 
-- Repository language further tightened to preserve conservative, artifact-first tone under increasing structural complexity.
+- Repository language further tightened to preserve a conservative, artifact-first tone under increasing structural complexity.
 
 - Separation reinforced between:
   - snapshot artifacts (immutable evidence)  
