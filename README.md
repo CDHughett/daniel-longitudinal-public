@@ -1,27 +1,76 @@
 # Daniel Longitudinal Study
-*A Single-Subject Structured Human Performance Dataset*
+*A structured, real-time human system dataset*
 
-Continuous longitudinal observational archive documenting biological system adaptation under sustained protocol conditions.
+This repository tracks how a single human system adapts over time under controlled inputs.
 
----
-
-## What This Is
-
-A multi-year, single-subject longitudinal dataset tracking human performance, recovery, and adaptation under controlled conditions.
-
----
-
-## Why It Exists
-
-To document how stable inputs produce measurable biological change over time.
+It contains:
+- longitudinal biomarker and sleep data
+- weekly system state reports
+- a prediction vs. observed outcome review layer
+- structured methodology, governance, and constraints
 
 ---
 
-## What Makes It Different
+## What makes this different
 
-Artifact-first. No forward claims about system outcomes—only recorded observations and retrospective interpretation.
+This is not a blog, protocol, or theory thread.
 
-Prediction tracking exists only as a retrospective comparison layer and does not drive system behavior.
+Everything here is:
+- measured
+- logged
+- versioned
+- auditable
+
+No forward claims.  
+Only recorded system behavior and retrospective interpretation.
+
+---
+
+## Current State
+
+→ [`LATEST.md`](./LATEST.md)
+
+This is the fastest way to understand what the system is doing right now.
+
+---
+
+## Start Here
+
+- [`LATEST.md`](./LATEST.md) — current system state  
+- [`docs/START_HERE.md`](./docs/START_HERE.md) — guided repository orientation  
+- [`reports`](./reports/) — structured retrospective interpretation  
+- [`snapshots`](./snapshots/) — primary artifacts and source evidence  
+- [`data`](./data/) — structured longitudinal datasets  
+
+---
+
+## System Flow
+
+~~~text
+Protocol Inputs
+      ↓
+Biological System
+      ↓
+Measurement Layer
+(sleep, HRV, body composition, biomarkers)
+      ↓
+Dataset Layer
+(versioned tracking)
+      ↓
+Reports + Snapshots
+(retrospective interpretation + source evidence)
+      ↓
+Model Error Layer
+(predicted vs. observed outcome review)
+~~~
+
+---
+
+## What you're looking at
+
+A live longitudinal system:
+
+Inputs → Biological response → Measurement → Interpretation → Iteration
 
 ---
 
@@ -37,14 +86,6 @@ Prediction tracking exists only as a retrospective comparison layer and does not
 [![Artifact Model](https://img.shields.io/badge/data-artifact_first-green)]()
 [![Archive Version](https://img.shields.io/badge/archive-v0.1-black)]()
 [![Release](https://img.shields.io/badge/release-v0.1-111111)](https://github.com/CDHughett/daniel-longitudinal-public/releases/tag/v0.1)
-
----
-
-## Start Here
-
-1. Read [`LATEST.md`](./LATEST.md) (current system state — ~60 seconds)  
-2. Review the most recent report in [`/reports`](./reports/)  
-3. Inspect supporting artifacts in [`/snapshots`](./snapshots/)  
 
 ---
 
@@ -152,6 +193,7 @@ Root
 ├── experiments/                      # Intervention summaries
 ├── schemas/                          # Naming conventions and definitions
 ├── methodology/                      # Core methodological rules and constraints
+├── docs/                             # Guided orientation and extended methodology
 │
 ├── README.md
 ├── INDEX.md
@@ -175,10 +217,10 @@ Root
 ## Architectural Layers
 
 ~~~text
-Raw Logs  
-→ Snapshots (immutable evidence)  
-→ Reports (retrospective interpretation)  
-→ Datasets (structured tracking layers)  
+Raw Logs
+→ Snapshots (immutable evidence)
+→ Reports (retrospective interpretation)
+→ Datasets (structured tracking layers)
 → Governance (constraints and boundaries)
 ~~~
 
@@ -191,7 +233,8 @@ Each layer increases abstraction while remaining artifact-bound.
 See:
 
 [`METHODOLOGY_AND_CONTROLS.md`](./METHODOLOGY_AND_CONTROLS.md)  
-[`methodology/prediction_evaluation.md`](./methodology/prediction_evaluation.md)
+[`methodology/prediction_evaluation.md`](./methodology/prediction_evaluation.md)  
+[`docs/START_HERE.md`](./docs/START_HERE.md)
 
 These documents define:
 
@@ -303,8 +346,9 @@ All conclusions remain bound to recorded evidence.
 ## Navigation
 
 - Current state → [`LATEST.md`](./LATEST.md)  
-- Weekly reports → [`/reports`](./reports/)  
-- Artifact history → [`/snapshots`](./snapshots/)  
+- Guided orientation → [`docs/START_HERE.md`](./docs/START_HERE.md)  
+- Weekly reports → [`reports`](./reports/)  
+- Artifact history → [`snapshots`](./snapshots/)  
 
 ---
 
