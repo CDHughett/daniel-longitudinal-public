@@ -43,6 +43,8 @@ Biological interpretation belongs in `/reports`.
 - Introduced `epigenetic_longitudinal.csv`
   - time-series tracking of biological aging metrics (OMICm age, DunedinPACE, SYMPHONY age)  
 
+- Added SHA256 `checksums.txt` files across snapshot directories to establish binary artifact verification and improve auditability.
+  
 ---
 
 ### Changed
