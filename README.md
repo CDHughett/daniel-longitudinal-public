@@ -115,6 +115,8 @@ The archive preserves continuity across:
 This is not a motivational archive.  
 It is a structured longitudinal dataset.
 
+This archive includes SHA256 verification for binary artifacts within snapshot directories, supporting public auditability of recorded states.
+
 ---
 
 ## Why This Matters
