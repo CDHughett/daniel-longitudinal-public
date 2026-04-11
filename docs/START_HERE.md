@@ -1,6 +1,6 @@
 # START HERE
 
-This page is the fastest way to understand the repository without reading the full archive structure first.
+This is the fastest way to understand the repository without reading the full archive structure.
 
 The archive is governed, versioned, and artifact-first.
 
@@ -11,16 +11,16 @@ It is not a coaching product, fitness journal, or theory thread.
 ## Fastest path (under 2 minutes)
 
 1. Read [`../LATEST.md`](../LATEST.md)  
-   Current public system state, phase context, and archive posture.
+   Current system state, phase context, and archive posture.
 
 2. Read [`../README.md`](../README.md)  
-   Repository overview, system flow, and core navigation.
+   Repository overview, system structure, and navigation.
 
-3. Review [`../reports`](../reports/)  
-   Structured retrospective interpretation by week and phase.
+3. Inspect [`../snapshots`](../snapshots/)  
+   Primary artifacts and source evidence (what actually happened).
 
-4. Inspect [`../snapshots`](../snapshots/)  
-   Primary artifacts and source evidence.
+4. Review [`../reports`](../reports/)  
+   Structured retrospective interpretation (what it means).
 
 ---
 
@@ -29,57 +29,62 @@ It is not a coaching product, fitness journal, or theory thread.
 - longitudinal biological and recovery tracking  
 - weekly system-state reporting  
 - structured methodology and governance  
-- phase-based archive progression  
-- prediction-vs-outcome review as an auxiliary layer  
+- phase-based system progression  
+- prediction vs. observed outcome review (auxiliary layer)  
 
 ---
 
 ## Recommended navigation by intent
 
-### If you want the current state
+### Current system state
 - [`../LATEST.md`](../LATEST.md)
 
-### If you want the core repository overview
+### Repository overview
 - [`../README.md`](../README.md)
 
-### If you want the system model
+### System model and structure
 - [`../SYSTEM_OVERVIEW.md`](../SYSTEM_OVERVIEW.md)
 
-### If you want governance and boundaries
+### Phase progression and timeline
+- [`../PHASE_MAP.md`](../PHASE_MAP.md)  
+- [`../EPOCH_MAP.md`](../EPOCH_MAP.md)  
+- [`../SNAPSHOT_LOG.md`](../SNAPSHOT_LOG.md)
+
+### Governance and boundaries
 - [`../GOVERNANCE.md`](../GOVERNANCE.md)  
 - [`../ASSUMPTIONS_AND_BOUNDARIES.md`](../ASSUMPTIONS_AND_BOUNDARIES.md)  
 - [`../SYSTEM_CONSTRAINTS.md`](../SYSTEM_CONSTRAINTS.md)
 
-### If you want methodology
+### Methodology
 - [`../METHODOLOGY_AND_CONTROLS.md`](../METHODOLOGY_AND_CONTROLS.md)  
 - [`../methodology`](../methodology/)  
 - [`./methodology`](./methodology/)
 
-### If you want the data layers
+### Data layers
 - [`../data`](../data/)  
 - [`../data/model_error`](../data/model_error/)
 
-### If you want reports and artifacts
+### Reports and artifacts
 - [`../reports`](../reports/)  
 - [`../snapshots`](../snapshots/)
 
-### If you want archive structure and logic
+### Archive structure and logic
 - [`../INDEX.md`](../INDEX.md)  
 - [`../STRUCTURAL_PRINCIPLES.md`](../STRUCTURAL_PRINCIPLES.md)
 
 ---
 
-## Reading posture
+## How to read this archive
 
-Use this archive in the following order:
+Use this order:
 
 artifacts  
 → reports  
 → datasets  
 → governance  
-→ retrospective interpretation
+→ interpretation
 
-Where uncertainty exists, artifacts take precedence over narrative.
+Artifacts precede interpretation.
 
 ---
 
@@ -89,7 +94,7 @@ This is a live, constrained observational archive.
 
 No forward claims are required to understand it.
 
-The archive is intended to be:
+The archive is designed to be:
 
 - traceable  
 - conservative  
