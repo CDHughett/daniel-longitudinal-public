@@ -2,58 +2,62 @@
 
 Some snapshot windows include an accompanying `Epoch.md` file.
 
-These files are **context-only capture notes**, not interpretive reports.
+These files capture **context only**.  
+They do not perform interpretation.
 
-Their purpose is to document:
+### Purpose
 
-- what the capture window was
-- what operating conditions were present
-- what broad training context surrounded the measurement
-- which primary artifacts belong to that window
+`Epoch.md` documents:
 
-`Epoch.md` files should **not** function as:
+- the capture window  
+- operating conditions at the time of measurement  
+- surrounding training context  
+- which artifacts belong to that window  
 
-- phase declarations
-- retrospective verdicts
-- performance claims
-- synthesis documents
+### Boundaries
 
-Interpretation belongs in:
+`Epoch.md` files do **not** function as:
 
-- `/reports/`
-- phase documents
-- methodology and synthesis layers
-- longitudinal datasets where applicable
+- phase declarations  
+- retrospective verdicts  
+- performance claims  
+- synthesis or interpretation  
 
-In practice:
+### Separation of roles
 
-- **snapshots** preserve evidence and capture-window context
-- **reports** interpret what happened
-- **phase documents** define retrospective meaning at the system level
+- **snapshots** → preserve evidence and capture-window context  
+- **reports** → interpret what occurred  
+- **phase documents** → define retrospective system-level meaning  
 
 ---
 
 ## Checksum Standard
 
-Where a snapshot folder contains binary or non-text artifacts
-(e.g. `.jpg`, `.png`, `.pdf`), that folder should include a
-`checksums.txt` file containing SHA256 hashes for verification.
+Snapshot folders containing binary or non-text artifacts  
+(e.g. `.jpg`, `.png`, `.pdf`) should include a `checksums.txt` file.
 
-Checksum files are used only for artifact integrity.
+This file contains SHA256 hashes for artifact verification.
+
+### Purpose
+
+Checksums exist solely to verify **artifact integrity**.
 
 They do not replace:
 
-- the underlying source artifact
-- the epoch/context file
-- the report layer
-- the archive’s interpretive constraints
+- the underlying source artifact  
+- the `Epoch.md` context file  
+- the report layer  
+- the archive’s interpretive constraints  
 
-In practice:
+### Structure
 
-- one `checksums.txt` per snapshot folder
-- one SHA256 entry per binary artifact
-- filenames recorded relative to that folder
-- hashes regenerated only when a binary artifact is added or replaced
+- one `checksums.txt` per snapshot folder  
+- one SHA256 entry per binary artifact  
+- filenames recorded relative to that folder  
 
-This preserves a lightweight verification layer without changing
-the archive’s artifact-first posture.
+### Maintenance
+
+- hashes are generated when a binary artifact is added  
+- hashes are updated only if that artifact changes  
+
+This maintains a lightweight verification layer while preserving the archive’s artifact-first structure.
