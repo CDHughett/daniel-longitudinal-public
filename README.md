@@ -38,8 +38,8 @@ This is the fastest way to understand what the system is doing right now.
 
 - [`LATEST.md`](./LATEST.md) — current system state  
 - [`docs/START_HERE.md`](./docs/START_HERE.md) — guided repository orientation  
-- [`reports`](./reports/) — structured retrospective interpretation  
 - [`snapshots`](./snapshots/) — primary artifacts and source evidence  
+- [`reports`](./reports/) — structured retrospective interpretation  
 - [`data`](./data/) — structured longitudinal datasets  
 
 ---
@@ -80,11 +80,11 @@ Inputs → Biological response → Measurement → Interpretation → Iteration
 **Observation Window:** 2025–present  
 **Public Archive:** Active (2026–present)
 
-[![Dataset Status](https://img.shields.io/badge/status-active_observation-blue)]()
-[![Observation Type](https://img.shields.io/badge/model-longitudinal_archive-purple)]()
-[![Subjects](https://img.shields.io/badge/subjects-n%3D1-lightgrey)]()
-[![Artifact Model](https://img.shields.io/badge/data-artifact_first-green)]()
-[![Archive Version](https://img.shields.io/badge/archive-v0.1-black)]()
+![Dataset Status](https://img.shields.io/badge/status-active_observation-blue)
+![Observation Type](https://img.shields.io/badge/model-longitudinal_archive-purple)
+![Subjects](https://img.shields.io/badge/subjects-n%3D1-lightgrey)
+![Artifact Model](https://img.shields.io/badge/data-artifact_first-green)
+![Archive Version](https://img.shields.io/badge/archive-v0.1-black)
 [![Release](https://img.shields.io/badge/release-v0.1-111111)](https://github.com/CDHughett/daniel-longitudinal-public/releases/tag/v0.1)
 
 ---
@@ -93,7 +93,7 @@ Inputs → Biological response → Measurement → Interpretation → Iteration
 
 If you're evaluating the system structure directly:
 
-→ [`FOR_OBSERVERS.md`](./FOR_OBSERVERS.md)
+→ [`docs/FOR_OBSERVERS.md`](./docs/FOR_OBSERVERS.md)
 
 ---
 
@@ -164,6 +164,8 @@ Key tracking areas:
 - biomarker stability  
 
 Phase transitions are declared retrospectively following sustained system stability.
+
+→ [`PHASE_MAP.md`](./PHASE_MAP.md)
 
 ---
 
@@ -351,6 +353,9 @@ All conclusions remain bound to recorded evidence.
 - Guided orientation → [`docs/START_HERE.md`](./docs/START_HERE.md)  
 - Weekly reports → [`reports`](./reports/)  
 - Artifact history → [`snapshots`](./snapshots/)  
+- Epoch tracking → [`EPOCH_MAP.md`](./EPOCH_MAP.md)  
+- Snapshot log → [`SNAPSHOT_LOG.md`](./SNAPSHOT_LOG.md)  
+- Versioning → [`VERSIONING.md`](./VERSIONING.md)  
 
 ---
 
