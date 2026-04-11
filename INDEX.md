@@ -8,26 +8,39 @@ This repository is a structured public archive of an ongoing longitudinal self-o
 
 ---
 
-## Orientation
+## Primary Entry Points
 
-New readers should begin here:
+If you are new to the archive, start here:
 
-1. **Intent + boundaries** — [WHY_PUBLIC.md](WHY_PUBLIC.md)  
-2. **Governance constraints** — [GOVERNANCE.md](GOVERNANCE.md)  
-3. **Current public state** — [LATEST.md](LATEST.md)
+1. **Current system state** → [LATEST.md](LATEST.md)  
+2. **Guided orientation** → [docs/START_HERE.md](docs/START_HERE.md)  
+3. **Intent + boundaries** → [WHY_PUBLIC.md](WHY_PUBLIC.md)  
+4. **Governance constraints** → [GOVERNANCE.md](GOVERNANCE.md)  
 
 ---
 
 ## Core Archive Documents
 
+These define the structure and rules of the system:
+
 - [README.md](README.md) — repository overview and public framing  
 - [SYSTEM_OVERVIEW.md](SYSTEM_OVERVIEW.md) — system model and abstraction layers  
 - [GOVERNANCE.md](GOVERNANCE.md) — archive rules and interpretive constraints  
 - [STRUCTURAL_PRINCIPLES.md](STRUCTURAL_PRINCIPLES.md) — design logic for the archive  
-- [RISK_MANAGEMENT.md](RISK_MANAGEMENT.md) — known public archive risks and mitigation posture  
+- [RISK_MANAGEMENT.md](RISK_MANAGEMENT.md) — known risks and mitigation posture  
 - [PHASE_DECLARATION_CRITERIA.md](PHASE_DECLARATION_CRITERIA.md) — rules for phase advancement language  
 - [WHY_PUBLIC.md](WHY_PUBLIC.md) — rationale for public visibility  
 - [CHANGELOG.md](CHANGELOG.md) — material archive changes  
+
+---
+
+## System State + Progression
+
+- [LATEST.md](LATEST.md) — current system state  
+- [PHASE_MAP.md](PHASE_MAP.md) — phase architecture and progression model  
+- [EPOCH_MAP.md](EPOCH_MAP.md) — snapshot epoch structure  
+- [SNAPSHOT_LOG.md](SNAPSHOT_LOG.md) — chronological artifact record  
+- [VERSIONING.md](VERSIONING.md) — release and archive versioning rules  
 
 ---
 
@@ -37,6 +50,7 @@ New readers should begin here:
 - [DATA_DICTIONARY.md](DATA_DICTIONARY.md)  
 - [MEASUREMENT_SOURCES.md](MEASUREMENT_SOURCES.md)  
 - [RECOVERY_MONITORING_FRAMEWORK.md](RECOVERY_MONITORING_FRAMEWORK.md)  
+- [methodology/prediction_evaluation.md](methodology/prediction_evaluation.md)  
 - [CITATION.cff](CITATION.cff)
 
 ---
@@ -57,29 +71,31 @@ Extended methodology does not modify system behavior and remains subordinate to 
 
 ---
 
+## Data + Evaluation Layer
+
+- [/data](data) — structured longitudinal datasets  
+- [/data/model_error](data/model_error) — prediction vs observed outcome review layer  
+
+---
+
 ## Archive Structure
 
-- [/reports](reports) — structured retrospective interpretation and weekly summaries  
 - [/snapshots](snapshots) — primary artifact archive (immutable evidence)  
-- [/experiments](experiments) — intervention-specific public experiment files  
-- [/schemas](schemas) — naming rules, structure definitions, and archive conventions  
-- [/methodology](methodology) — core methodological rules and constraints  
+- [/reports](reports) — structured retrospective interpretation  
+- [/experiments](experiments) — intervention-specific experiment files  
+- [/schemas](schemas) — naming rules and structure definitions  
+- [/methodology](methodology) — core methodological rules  
 - [/dashboards](dashboards) — derived metric summaries (non-primary artifacts)  
 
 ---
 
-## Reports
+## Reading the Archive
 
-Use `/reports` for structured interpretation.
+- Use `/snapshots` for **primary evidence**  
+- Use `/reports` for **retrospective interpretation**  
+- Use `/data` for **structured longitudinal tracking**  
 
----
-
-## Snapshot Archive
-
-Use `/snapshots` for primary measurement artifacts.
-
-Snapshots are primary evidence.  
-Reports interpret them later.
+Artifacts precede interpretation.
 
 ---
 
