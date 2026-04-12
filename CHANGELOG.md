@@ -66,16 +66,13 @@ Biological interpretation belongs in /reports.
 
 - DATA_DICTIONARY.md expanded to support biomarker and epigenetic fields introduced during the February 2026 snapshot expansion.
 
-- sleep_signal_core_v1.csv refined:
-  - removed static subjective field that was not changing
-  - preserved only changing sleep / HRV signal columns
-  - extended observations through the current window
-
-- sleep_longitudinal_v1.csv introduced and aligned:
+- sleep_longitudinal_v1.csv refined and aligned:
   - unified prior sleep records into a single longitudinal structure
   - corrected column alignment inconsistencies
+  - removed stale references to superseded sleep-file naming
   - preserved historical rows without reinterpretation
   - standardized schema for forward compatibility
+  - extended observations through the current window
 
 - udi_tracker.csv updated to reflect mixed post-calibration closure blocks and to withhold UDI where mixed prediction types reduce comparability.
 
