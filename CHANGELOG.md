@@ -15,8 +15,15 @@ Biological interpretation belongs in /reports.
 
 ### Added
 
-- Weekly report for 2026-W13 finalized to document the completed observation window under continued Phase 2 load integration conditions.
-- Weekly report for 2026-W14 initialized to maintain forward archive continuity under the active observation window model.
+- Weekly report for 2026-W14 finalized to document the completed observation window under continued consolidation conditions.
+- Weekly report for 2026-W15 initialized to maintain forward archive continuity under the active observation window model.
+
+- Added missing sleep dataset entry for 2026-03-22 using direct wearable-derived values.
+
+- Updated sleep dataset to include 2026-W14 entries:
+  - appended week-level rows using verified sheet-based values
+  - corrected prior invalid append (removed inferred data)
+  - preserved schema integrity and historical continuity
 
 - Introduced model error tracking layer for structured comparison of predictions vs observed outcomes.
   - Added /data/model_error/ directory
@@ -52,11 +59,10 @@ Biological interpretation belongs in /reports.
 ### Changed
 
 - LATEST.md executive system dashboard updated to reflect:
-  - W13 closeout status
-  - W14 active observation window
-  - recent transient regulatory disturbance without structural drift
-  - active model error and prediction-evaluation layers
-  - current archive posture as consolidation-first rather than escalation-oriented
+  - W14 closeout status
+  - W15 active observation window
+  - continued stability under repeated exposure
+  - consolidation-first posture with emerging passive adaptation
 
 - DATA_DICTIONARY.md expanded to support biomarker and epigenetic fields introduced during the February 2026 snapshot expansion.
 
