@@ -5,14 +5,14 @@ Public Archive Status Dashboard
 
 ---
 
-## System State — 2026-W14 (Active Observation)
+## System State — 2026-W15 (Active Observation)
 
-**Last Updated:** 2026-W14  
+**Last Updated:** 2026-W15  
 **Repository State:** Active longitudinal observation  
 **Archive Mode:** Public, governed, versioned  
 
-Week 13 closed under stable conditions.  
-Week 14 opened with no protocol changes.  
+Week 14 closed under stable conditions.  
+Week 15 opened with no protocol changes.  
 
 System behavior remains consistent under repeated exposure.  
 
@@ -49,9 +49,9 @@ Primary artifacts belong in `/snapshots`.
 | Interpretation Mode | Strictly retrospective, artifact-bound |
 | Phase Context | Phase 2 — Load Integration |
 | Training Structure | Stable, repeatable exposure architecture |
-| Recovery Signals | Stable; prior disturbance resolved |
+| Recovery Signals | Stable; no intervention required |
 | Sleep Integrity | Variable duration; structural coherence improving |
-| Bodyweight Band | ~220–224 lb |
+| Bodyweight Band | ~217–222 lb |
 | Biomarker Coverage | Feb 2026 multi-domain snapshot integrated |
 | Prediction Layer | Active — model error tracking and closure logic |
 | Archive Integrity | Maintained |
@@ -80,7 +80,7 @@ The archive is documenting:
 
 - repeated training exposure under stable structure  
 - preserved aerobic base during load integration  
-- recovery compatibility following prior disturbance  
+- recovery compatibility under sustained exposure  
 - consolidation over escalation  
 
 No peaking behavior is assumed.  
@@ -90,7 +90,7 @@ No forward performance claims are made.
 
 ## Recent Recovery Context
 
-A transient disturbance window occurred during the prior observation period associated with:
+A transient disturbance window occurred during a prior observation period associated with:
 
 - THC removal  
 - sympathetic activation  
@@ -132,10 +132,10 @@ No longer a limiting factor under current conditions.
 
 ## Performance Integrity
 
-- training continuity preserved across the observation window  
+- training continuity preserved across observation windows  
 - no additional downregulation events required  
 - performance capacity stable under repeated exposure  
-- early improvements in movement efficiency observed  
+- movement efficiency improving under identical loading  
 
 System behavior reflects integration, not compensation.
 
@@ -241,7 +241,7 @@ Evaluation is based on:
 
 ## Update Flow
 
-- ongoing observation capture for **2026-W14 (active)**  
+- ongoing observation capture for **2026-W15 (active)**  
 - snapshot ingestion as events occur  
 - continued model error closure and refinement  
 
