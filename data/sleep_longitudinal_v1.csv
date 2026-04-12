@@ -54,3 +54,10 @@ date,total_sleep_min,deep_sleep_min,light_sleep_min,rem_sleep_min,awake_min,awak
 2026-04-03,452,122,310,20,34,4,,27.0,4.4,68.6,60,51,Calm,Stable,Maintain,"deep_dominant, stable_hrv",wearable+operator_log
 2026-04-04,495,58,387,50,39,5,,11.7,10.1,78.2,67,58,Calm,Stable,Maintain,"good_duration, high_efficiency",wearable+operator_log
 2026-04-05,530,85,355,90,33,5,,16.0,17.0,67.0,73,49,Calm,Stable,Maintain,"vivid_lucid_narrative, rem_structured",wearable+operator_log
+2026-04-06,375,70,250,55,40,4,,18.7,14.7,66.6,65,50,Calm,Stable,Maintain,"rem_structured, stable",wearable+operator_log
+2026-04-07,402,95,260,47,35,5,,23.6,11.7,64.7,68,52,Calm,Stable,Maintain,"deep_dominant, stable_hrv",wearable+operator_log
+2026-04-08,388,80,255,53,38,4,,20.6,13.6,65.7,66,51,Calm,Stable,Maintain,"rem_structured, vivid",wearable+operator_log
+2026-04-09,365,75,240,50,42,5,,20.5,13.7,65.8,64,53,Calm,Stable,Maintain,"integration_load, stable",wearable+operator_log
+2026-04-10,410,90,265,55,36,4,,22.0,13.4,64.6,67,50,Calm,Stable,Maintain,"rem_structured, stable_hrv",wearable+operator_log
+2026-04-11,395,85,250,60,38,5,,21.5,15.2,63.3,69,49,Calm,Stable,Maintain,"vivid, rem_structured",wearable+operator_log
+2026-04-12,420,100,260,60,34,4,,23.8,14.3,61.9,70,48,Calm,Stable,Maintain,"deep_dominant, rem_structured",wearable+operator_log
