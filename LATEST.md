@@ -198,7 +198,7 @@ raw artifacts
 - `data/model_error/` layer introduced  
 - `model_error_gap_v1.csv` and `udi_tracker.csv` added  
 - refined prediction evaluation methodology  
-- refined `sleep_signal_core_v1.csv`  
+- refined `sleep_longitudinal_v1.csv` (canonical longitudinal sleep dataset)  
 
 These extend the archive into:
 
