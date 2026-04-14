@@ -7,9 +7,12 @@ Where present, an accompanying epoch file serves as the temporal anchor record f
 
 ---
 
-## 2025-05 — Early Conditioning Baseline
+## [2025-05 — Early Conditioning Baseline](./snapshots/2025-05/)
 **Artifacts:**
 - BodPod
+
+**Links:**
+- Epoch file: [`2025-05 Epoch.md`](./snapshots/2025-05/2025-05%20Epoch.md)
 
 **Notes:**
 - Pre-structure conditioning period
@@ -18,10 +21,13 @@ Where present, an accompanying epoch file serves as the temporal anchor record f
 
 ---
 
-## 2025-07 — Continued Conditioning Phase
+## [2025-07 — Continued Conditioning Phase](./snapshots/2025-07/)
 **Artifacts:**
 - BodPod
 - Bloodwork
+
+**Links:**
+- Epoch file: [`2025-07 Epoch.md`](./snapshots/2025-07/2025-07%20Epoch.md)
 
 **Notes:**
 - Sustained endurance and heat exposure pattern
@@ -30,9 +36,12 @@ Where present, an accompanying epoch file serves as the temporal anchor record f
 
 ---
 
-## 2025-08 — Late Conditioning Window
+## [2025-08 — Late Conditioning Window](./snapshots/2025-08/)
 **Artifacts:**
 - BodPod
+
+**Links:**
+- Epoch file: [`2025-08 Epoch.md`](./snapshots/2025-08/2025-08%20Epoch.md)
 
 **Notes:**
 - Continued endurance-dominant training
@@ -41,9 +50,12 @@ Where present, an accompanying epoch file serves as the temporal anchor record f
 
 ---
 
-## 2025-09 — Transition Toward Structure
+## [2025-09 — Transition Toward Structure](./snapshots/2025-09/)
 **Artifacts:**
 - BodPod
+
+**Links:**
+- Epoch file: [`2025-09 Epoch.md`](./snapshots/2025-09/2025-09%20Epoch.md)
 
 **Notes:**
 - Shift begins from environmental conditioning to structured training
@@ -52,10 +64,13 @@ Where present, an accompanying epoch file serves as the temporal anchor record f
 
 ---
 
-## 2025-10 — Early Structured Training Phase
+## [2025-10 — Early Structured Training Phase](./snapshots/2025-10/)
 **Artifacts:**
 - Bloodwork
 - Plasma panels
+
+**Links:**
+- Epoch file: [`2025-10 Epoch.md`](./snapshots/2025-10/2025-10%20Epoch.md)
 
 **Notes:**
 - Introduction of repeatable training categories
@@ -64,11 +79,14 @@ Where present, an accompanying epoch file serves as the temporal anchor record f
 
 ---
 
-## 2025-11 — Phase 1 Completion Baseline
+## [2025-11 — Phase 1 Completion Baseline](./snapshots/2025-11/)
 **Artifacts:**
 - DEXA
 - BodPod
 - Bloodwork
+
+**Links:**
+- Epoch file: [`2025-11 Epoch.md`](./snapshots/2025-11/2025-11%20Epoch.md)
 
 **Notes:**
 - Stabilized metabolic state
@@ -77,12 +95,15 @@ Where present, an accompanying epoch file serves as the temporal anchor record f
 
 ---
 
-## 2026-02 — Phase 2 Activation
+## [2026-02 — Phase 2 Activation](./snapshots/2026-02/)
 **Artifacts (fasted):**
 - DEXA
 - BodPod
 - Epigenetic panels (DunedinPACE, SYMPHONY)
 - TruHealth system report
+
+**Links:**
+- Epoch file: [`2026-02 Epoch.md`](./snapshots/2026-02/2026-02%20Epoch.md)
 
 **Notes:**
 - Endurance taper into controlled load reintroduction
