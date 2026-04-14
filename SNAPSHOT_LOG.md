@@ -3,6 +3,8 @@
 Structured measurement epochs within the Daniel Longitudinal Study.  
 Each entry maps to a folder under `/snapshots/YYYY-MM/`.
 
+Where present, an accompanying epoch file serves as the temporal anchor record for that snapshot window.
+
 ---
 
 ## 2025-05 — Early Conditioning Baseline
@@ -83,9 +85,9 @@ Each entry maps to a folder under `/snapshots/YYYY-MM/`.
 - TruHealth system report
 
 **Notes:**
-- Endurance taper → load reintroduction cycle
+- Endurance taper into controlled load reintroduction
 - Multi-domain biomarker integration begins
-- Structural density phase initiated under controlled conditions
+- Early structural density phase captured under controlled conditions
 
 ---
 
