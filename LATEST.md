@@ -225,6 +225,9 @@ Evaluation is based on:
 
 ## Navigation
 
+- **Current State:** [LATEST.md](LATEST.md)  
+- **Temporal Index:** [EPOCH_INDEX.md](EPOCH_INDEX.md)  
+- **Snapshot Log:** [SNAPSHOT_LOG.md](SNAPSHOT_LOG.md)  
 - **Index:** [INDEX.md](INDEX.md)  
 - **Start Here:** [docs/START_HERE.md](docs/START_HERE.md)  
 - **Why Public:** [WHY_PUBLIC.md](WHY_PUBLIC.md)  
