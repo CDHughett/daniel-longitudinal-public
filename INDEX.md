@@ -34,11 +34,11 @@ These define the structure and rules of the system:
 
 ---
 
-## System State + Progression
+## System State + Temporal Structure
 
 - [LATEST.md](LATEST.md) — current system state  
 - [PHASE_MAP.md](PHASE_MAP.md) — phase architecture and progression model  
-- [EPOCH_MAP.md](EPOCH_MAP.md) — snapshot epoch structure  
+- [EPOCH_INDEX.md](EPOCH_INDEX.md) — temporal index of snapshot epochs  
 - [SNAPSHOT_LOG.md](SNAPSHOT_LOG.md) — chronological artifact record  
 - [VERSIONING.md](VERSIONING.md) — release and archive versioning rules  
 
@@ -94,6 +94,13 @@ Extended methodology does not modify system behavior and remains subordinate to 
 - Use `/snapshots` for **primary evidence**  
 - Use `/reports` for **retrospective interpretation**  
 - Use `/data` for **structured longitudinal tracking**  
+
+Recommended navigation flow:
+
+`LATEST.md`  
+→ `EPOCH_INDEX.md`  
+→ `SNAPSHOT_LOG.md`  
+→ `/snapshots/YYYY-MM/`
 
 Artifacts precede interpretation.
 
