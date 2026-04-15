@@ -110,10 +110,7 @@ The archive preserves continuity across:
 - biomarker and system health snapshots (where publicly included)  
 - prediction vs. observed outcome tracking (auxiliary review layer)  
 
-**Note:** Some biomarker data (e.g., detailed bloodwork) may be referenced in reports but not included in the public archive.
-
-This is not a motivational archive.  
-It is a structured longitudinal dataset.
+**Note:** Some biomarker data may be referenced in reports but not included in the public archive.
 
 This archive includes SHA256 verification for binary artifacts within snapshot directories, supporting public auditability of recorded states.
 
@@ -150,35 +147,22 @@ No claims extend beyond the recorded system.
 
 **Phase 2 — Load Integration**
 
-Current focus:
-
-- maintaining aerobic base capacity  
-- reintroducing strength under recovery constraints  
-- monitoring stability under repeated exposure  
-
-Key tracking areas:
-
-- strength exposure within recovery limits  
-- neuromuscular density development  
-- preservation of aerobic capacity  
-- biomarker stability  
-
-Phase transitions are declared retrospectively following sustained system stability.
-
 → [`PHASE_MAP.md`](./PHASE_MAP.md)
 
 ---
 
-## Phase Architecture
+## Temporal Navigation
 
-~~~text
-Phase 0 | ██████████ | Completed
-Phase 1 | ██████████ | Completed
-Phase 2 | ████░░░░░░ | Load Integration (Active)
-Phase 3 | ░░░░░░░░░░ | Locked
-~~~
+- [`EPOCH_INDEX.md`](./EPOCH_INDEX.md) — temporal index of snapshot epochs  
+- [`SNAPSHOT_LOG.md`](./SNAPSHOT_LOG.md) — chronological artifact record  
+- [`snapshots`](./snapshots/) — primary artifact windows  
 
-System progression is artifact-verified and versioned.
+Recommended flow:
+
+`LATEST.md`  
+→ `EPOCH_INDEX.md`  
+→ `SNAPSHOT_LOG.md`  
+→ `/snapshots/YYYY-MM/`
 
 ---
 
@@ -187,163 +171,44 @@ System progression is artifact-verified and versioned.
 ~~~text
 Root
 │
-├── snapshots/                        # Primary measurement artifacts (source of truth)
-├── reports/                          # Structured retrospective interpretation
-├── dashboards/                       # Derived visualization surfaces
+├── snapshots/
+├── reports/
+├── dashboards/
 │
-├── data/                             # Structured datasets (longitudinal + model error)
-│   └── model_error/                  # Prediction vs outcome review layer
+├── data/
+│   └── model_error/
 │
-├── experiments/                      # Intervention summaries
-├── schemas/                          # Naming conventions and definitions
-├── methodology/                      # Core methodological rules and constraints
-├── docs/                             # Guided orientation and extended methodology
+├── experiments/
+├── schemas/
+├── methodology/
+├── docs/
 │
 ├── README.md
 ├── INDEX.md
 ├── LATEST.md
 ├── CHANGELOG.md
-│
-├── GOVERNANCE.md
-├── STRUCTURAL_PRINCIPLES.md
-├── PHASE_DECLARATION_CRITERIA.md
-├── RISK_MANAGEMENT.md
-├── RECOVERY_MONITORING_FRAMEWORK.md
-│
-├── DATA_DICTIONARY.md
-├── MEASUREMENT_SOURCES.md
-├── METHODOLOGY_AND_CONTROLS.md
-└── ASSUMPTIONS_AND_BOUNDARIES.md
 ~~~
-
----
-
-## Architectural Layers
-
-~~~text
-Raw Logs
-→ Snapshots (immutable evidence)
-→ Reports (retrospective interpretation)
-→ Datasets (structured tracking layers)
-→ Governance (constraints and boundaries)
-~~~
-
-Each layer increases abstraction while remaining artifact-bound.
-
----
-
-## Methodology
-
-See:
-
-[`METHODOLOGY_AND_CONTROLS.md`](./METHODOLOGY_AND_CONTROLS.md)  
-[`methodology/prediction_evaluation.md`](./methodology/prediction_evaluation.md)  
-[`docs/START_HERE.md`](./docs/START_HERE.md)
-
-These documents define:
-
-- measurement rules  
-- stabilization criteria  
-- interpretation constraints  
-- system boundaries  
-- prediction evaluation rules (post-outcome only)  
-
----
-
-## Model Error Layer
-
-This repository includes a structured review layer for tracking the difference between predicted and observed outcomes.
-
-This layer operates alongside the primary dataset and does not replace artifact-first observation.
-
-### Purpose
-
-- preserve prediction records in structured form  
-- compare predicted vs. observed outcomes after closure  
-- quantify directional and magnitude error  
-- review error patterns across eligible closed records  
-
-### Context
-
-Most performance models rely on population-based assumptions.
-
-This layer preserves a narrow record of how those assumptions compare with observed outcomes in a single-subject archive under controlled conditions.
-
-### Status
-
-Active auxiliary review layer.  
-Evaluation methodology is defined; interpretation remains retrospective and conservative.
-
-### Reference
-
-- [`data/model_error/model_error_gap_v1.csv`](./data/model_error/model_error_gap_v1.csv)  
-- [`data/model_error/README.md`](./data/model_error/README.md)  
-- [`methodology/prediction_evaluation.md`](./methodology/prediction_evaluation.md)  
 
 ---
 
 ## Governance
 
-All structural interpretation follows defined criteria:
-
-- phase declarations are retrospective  
-- load increases are recovery-gated  
-- claims require artifact confirmation  
-- system constraints govern progression  
-
-Reference:
-
 - [`STRUCTURAL_PRINCIPLES.md`](./STRUCTURAL_PRINCIPLES.md)  
 - [`PHASE_DECLARATION_CRITERIA.md`](./PHASE_DECLARATION_CRITERIA.md)  
 - [`RISK_MANAGEMENT.md`](./RISK_MANAGEMENT.md)  
-- [`RECOVERY_MONITORING_FRAMEWORK.md`](./RECOVERY_MONITORING_FRAMEWORK.md)  
 
 ---
 
 ## Scope
 
-This repository documents a single-subject observational system.
-
-It does not constitute medical, training, or performance advice.  
-All observations remain context-bound.
-
----
-
-## Citation
-
-~~~text
-Hughett, C. D. (2026).
-Daniel Longitudinal Study — Structured Human Performance Dataset.
-GitHub Repository.
-https://github.com/CDHughett/daniel-longitudinal-public
-~~~
-
-Machine-readable metadata:
-
-`CITATION.cff`
+Single-subject observational system.  
+No external claims.
 
 ---
 
 ## License
 
-This repository and all included materials are licensed under:
-
-**Creative Commons Attribution–NonCommercial–NoDerivatives 4.0 International (CC BY-NC-ND 4.0)**
-
-Full license text available in `LICENSE.md`.
-
----
-
-## Intent
-
-This dataset exists to demonstrate:
-
-- structured adaptation  
-- conservative escalation  
-- artifact-verified governance  
-- durability across time  
-
-All conclusions remain bound to recorded evidence.
+CC BY-NC-ND 4.0
 
 ---
 
@@ -351,10 +216,11 @@ All conclusions remain bound to recorded evidence.
 
 - Current state → [`LATEST.md`](./LATEST.md)  
 - Guided orientation → [`docs/START_HERE.md`](./docs/START_HERE.md)  
-- Weekly reports → [`reports`](./reports/)  
-- Artifact history → [`snapshots`](./snapshots/)  
-- Epoch tracking → [`EPOCH_MAP.md`](./EPOCH_MAP.md)  
+- Index → [`INDEX.md`](./INDEX.md)  
+- Epoch tracking → [`EPOCH_INDEX.md`](./EPOCH_INDEX.md)  
 - Snapshot log → [`SNAPSHOT_LOG.md`](./SNAPSHOT_LOG.md)  
+- Artifact history → [`snapshots`](./snapshots/)  
+- Weekly reports → [`reports`](./reports/)  
 - Versioning → [`VERSIONING.md`](./VERSIONING.md)  
 
 ---
