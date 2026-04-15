@@ -83,7 +83,6 @@ Where present, an accompanying epoch file serves as the temporal anchor record f
 **Artifacts:**
 - DEXA
 - BodPod
-- Bloodwork
 
 **Links:**
 - Epoch file: [`2025-11 Epoch.md`](./snapshots/2025-11/2025-11%20Epoch.md)
