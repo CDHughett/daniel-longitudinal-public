@@ -14,11 +14,9 @@ Public Archive Status Dashboard
 Week 14 closed under stable conditions.  
 Week 15 opened with no protocol changes.  
 
-System behavior remains consistent under repeated exposure.  
+Observed system behavior remains consistent under repeated exposure.  
 
-No adjustments.  
-No negotiation.  
-No drift.  
+No protocol changes recorded during the current observation window.
 
 ---
 
@@ -137,7 +135,7 @@ No longer a limiting factor under current conditions.
 - performance capacity stable under repeated exposure  
 - movement efficiency improving under identical loading  
 
-System behavior reflects integration, not compensation.
+Observed movement and performance patterns remain consistent with prior integration phases.
 
 ---
 
@@ -192,7 +190,7 @@ raw artifacts
 ## Recent Structural Additions
 
 - February 2026 biomarker snapshot integrated (DEXA, BodPod, TruAge, TruHealth)  
-- `biomarker_snapshot.csv` (monthly fused state layer)  
+- `biomarker_snapshot.csv` (monthly biomarker aggregation)  
 - `epigenetic_longitudinal.csv` (biological aging time-series)  
 - expanded `DATA_DICTIONARY.md`  
 - `data/model_error/` layer introduced  
@@ -251,5 +249,5 @@ Evaluation is based on:
 ---
 
 **System State:** Stable  
-**Trajectory Posture:** Consolidation with emerging passive adaptation  
+**Trajectory Posture:** Consolidation under stable conditions  
 **Operational Mode:** Execute → observe → close retrospectively
