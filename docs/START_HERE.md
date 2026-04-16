@@ -8,38 +8,41 @@ It is not a coaching product, fitness journal, or theory thread.
 
 ---
 
-## Fastest path (under 2 minutes)
+## 2-Minute Orientation
 
-1. Read [`../LATEST.md`](../LATEST.md)  
-2. Read [`../README.md`](../README.md)  
-3. Inspect [`../snapshots`](../snapshots/)  
-4. Review [`../reports`](../reports/)  
+1. [README.md](../README.md)  
+2. [LATEST.md](../LATEST.md)  
+3. [EPOCH_INDEX.md](../EPOCH_INDEX.md)  
+4. [/snapshots](../snapshots/)  
+5. [/reports](../reports/)  
+
+- This sequence is sufficient to understand the current system state, temporal structure, and supporting evidence.
 
 ---
 
 ## Recommended navigation by intent
 
 ### Current system state
-- [`../LATEST.md`](../LATEST.md)
+- [LATEST.md](../LATEST.md)
 
 ### Repository overview
-- [`../README.md`](../README.md)
+- [README.md](../README.md)
 
 ### System model and structure
-- [`../SYSTEM_OVERVIEW.md`](../SYSTEM_OVERVIEW.md)
+- [SYSTEM_OVERVIEW.md](../SYSTEM_OVERVIEW.md)
 
 ### Phase + temporal structure
-- [`../PHASE_MAP.md`](../PHASE_MAP.md)  
-- [`../EPOCH_INDEX.md`](../EPOCH_INDEX.md)  
-- [`../SNAPSHOT_LOG.md`](../SNAPSHOT_LOG.md)
+- [PHASE_MAP.md](../PHASE_MAP.md)  
+- [EPOCH_INDEX.md](../EPOCH_INDEX.md)  
+- [SNAPSHOT_LOG.md](../SNAPSHOT_LOG.md)
 
 ### Governance
-- [`../GOVERNANCE.md`](../GOVERNANCE.md)
+- [GOVERNANCE.md](../GOVERNANCE.md)
 
 ### Data + artifacts
-- [`../data`](../data/)  
-- [`../reports`](../reports/)  
-- [`../snapshots`](../snapshots/)
+- [/data](../data/)  
+- [/reports](../reports/)  
+- [/snapshots](../snapshots/)
 
 ---
 
