@@ -1,9 +1,9 @@
 # Changelog
 
-All notable changes to the Daniel Longitudinal Study public archive
+All notable changes to the Daniel Longitudinal Study public archive  
 are documented in this file.
 
-The format follows a simplified Keep-a-Changelog structure adapted
+The format follows a simplified Keep-a-Changelog structure adapted  
 for a longitudinal dataset archive.
 
 This changelog records **repository artifacts and structural updates**.  
@@ -54,6 +54,10 @@ Biological interpretation belongs in /reports.
 
 - Added VERIFICATION.md guide for external checksum validation of snapshot artifacts.
 
+- Introduced DATA_COVERAGE.md:
+  - defines dataset scope, completeness, and known limitations
+  - establishes explicit boundary between tracked, partially tracked, and untracked domains
+
 ---
 
 ### Changed
@@ -63,6 +67,7 @@ Biological interpretation belongs in /reports.
   - W15 active observation window
   - continued stability under repeated exposure
   - consolidation-first posture with emerging passive adaptation
+  - removal of narrative drift and alignment with observational standard
 
 - DATA_DICTIONARY.md expanded to support biomarker and epigenetic fields introduced during the February 2026 snapshot expansion.
 
@@ -80,6 +85,33 @@ Biological interpretation belongs in /reports.
 
 - PDFs moved out of Git LFS and re-tracked as standard Git objects to restore full artifact integrity and prevent pointer file corruption.
 
+- Enforced strict separation between forward-logged and reconstructed prediction records:
+  - moved reconstructed dataset to `data/model_error/historical/`
+  - removed reconstructed records from evaluative pathways
+  - clarified non-equivalence between forward and retrospective entries
+
+- Updated prediction review pipeline to reflect correct dataset paths and enforce evaluation boundaries:
+  - aligned `prediction_to_outcome_pipeline.md` with current directory structure
+  - restricted evaluative logic to forward-logged records only
+
+- Reclassified early UDI snapshot as historical exploratory artifact:
+  - removed from reports layer
+  - relocated to historical archive
+  - explicitly excluded from evaluative interpretation and UDI computation
+
+- Completed temporal index layer:
+  - replaced EPOCH_MAP with EPOCH_INDEX across repository
+  - aligned all epoch records to index structure
+  - improved chronological navigation and external readability
+
+- Corrected repository-wide path inconsistencies and reference mismatches:
+  - ensured internal links reflect current directory structure
+  - removed stale or orphaned references
+
+- Corrected ROADMAP.md chronology:
+  - aligned release ordering with actual temporal sequence
+  - clarified definition of “release” in relation to snapshots and reports
+
 ---
 
 ### Refined
@@ -96,6 +128,14 @@ Biological interpretation belongs in /reports.
 - Archive posture clarified around disturbance handling:
   - transient regulatory disruption is logged without overstating systemic meaning
   - continuity and recovery compatibility remain primary interpretation anchors
+
+- GOVERNANCE.md updated to clarify interpretation constraints:
+  - replaced exclusion of “narrative framing” with requirement for artifact-bound interpretation
+  - aligned governance language with actual repository behavior
+
+- README.md refined for consistency with governance and methodology layers:
+  - removed residual narrative tone
+  - strengthened alignment with artifact-first and retrospective interpretation model
 
 ---
 
