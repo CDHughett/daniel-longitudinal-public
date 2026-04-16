@@ -24,7 +24,7 @@ It does **not** govern retrospective baseline reconstruction, which is preserved
 
 - `data/model_error/model_error_gap_reconstructed.csv`
 
-Those reconstructed records may support archive transparency, but they are not methodologically equivalent to forward-logged predictions.
+Those reconstructed records may support archive transparency, but they are not methodologically equivalent to forward-logged predictions and are not used for evaluative metrics or UDI computation.
 
 ---
 
@@ -139,7 +139,7 @@ This includes:
 - repeated bias detection
 - review of differences between subject-calibrated and generic assumptions
 
-Retrospective baseline records may support historical understanding, but they should not be treated as equivalent evaluation evidence.
+Retrospective baseline records may support historical understanding, but they are not used for evaluation metrics or UDI computation.
 
 ---
 
@@ -155,7 +155,7 @@ Stored in `model_error_gap_reconstructed.csv`
 
 These two classes must remain segregated.
 
-They serve different purposes and should not be blended into one evaluation dataset.
+They serve different purposes and must not be blended into one evaluation dataset or used interchangeably.
 
 ---
 
@@ -166,6 +166,7 @@ This pipeline enforces the following:
 - forward statements are not treated as truth
 - all eligible predictions must resolve against observed outcomes
 - retroactive reconstruction is not treated as forward evidence
+- reconstructed records are excluded from evaluative metrics and UDI computation
 - interpretation cannot override observable outcome
 - historical records remain preserved once logged
 
