@@ -22,7 +22,7 @@ It governs records intended for inclusion in:
 
 It does **not** govern retrospective baseline reconstruction, which is preserved separately for historical context in:
 
-- `data/model_error/model_error_gap_reconstructed.csv`
+- `data/model_error/historical/model_error_gap_reconstructed.csv`
 
 Those reconstructed records may support archive transparency, but they are not methodologically equivalent to forward-logged predictions and are not used for evaluative metrics or UDI computation.
 
@@ -145,17 +145,22 @@ Retrospective baseline records may support historical understanding, but they ar
 
 ## Stage 7 — Historical Preservation
 
-The model error layer may preserve two different classes of records:
+The model error layer preserves two distinct classes of records:
 
-### Forward evaluation records
-Stored in `model_error_gap_v1.csv`
+### Forward evaluation records  
+Stored in:  
+`data/model_error/model_error_gap_v1.csv`
 
-### Reconstructed baseline records
-Stored in `model_error_gap_reconstructed.csv`
+### Reconstructed baseline records  
+Stored in:  
+`data/model_error/historical/model_error_gap_reconstructed.csv`
 
-These two classes must remain segregated.
+These records:
 
-They serve different purposes and must not be blended into one evaluation dataset or used interchangeably.
+- are preserved for transparency only  
+- are excluded from all evaluative metrics  
+- are excluded from UDI computation  
+- must not be used interchangeably with forward-logged records  
 
 ---
 
@@ -163,12 +168,12 @@ They serve different purposes and must not be blended into one evaluation datase
 
 This pipeline enforces the following:
 
-- forward statements are not treated as truth
-- all eligible predictions must resolve against observed outcomes
-- retroactive reconstruction is not treated as forward evidence
-- reconstructed records are excluded from evaluative metrics and UDI computation
-- interpretation cannot override observable outcome
-- historical records remain preserved once logged
+- forward statements are not treated as truth  
+- all eligible predictions must resolve against observed outcomes  
+- retroactive reconstruction is not treated as forward evidence  
+- reconstructed records are excluded from evaluative metrics and UDI computation  
+- interpretation cannot override observable outcome  
+- historical records remain preserved once logged  
 
 ---
 
@@ -178,4 +183,4 @@ The prediction review pipeline exists to make error review possible without weak
 
 Its value depends on one rule above all others:
 
-**forward-logged records and retrospective records are not the same thing**
+**forward-logged records and retrospective records are not equivalent and are not evaluated together**
