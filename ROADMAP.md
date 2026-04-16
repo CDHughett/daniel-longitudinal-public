@@ -25,6 +25,12 @@ See:
 
 ## Upcoming Releases (2026)
 
+### April 2026
+- Phase 2 training shift summary
+- Endurance ceiling recalibration notes (public-safe)
+
+---
+
 ### May 2026
 - VO₂ testing
 - DEXA scan
@@ -38,12 +44,6 @@ Notes:
 
 ---
 
-### April 2026
-- Phase 2 training shift summary
-- Endurance ceiling recalibration notes (public-safe)
-
----
-
 ### August 2026
 - Amphibious endurance benchmark block (public summary + artifacts)
 
@@ -52,3 +52,6 @@ Notes:
 ## Definition of “release”
 
 A “release” is a dated snapshot folder in `/snapshots/` plus an associated report in `/reports/`.
+
+Releases are descriptive, not promotional.  
+They reflect captured artifacts, not planned outcomes.
