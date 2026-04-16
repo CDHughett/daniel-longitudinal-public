@@ -8,29 +8,41 @@ This repository is a structured public archive of an ongoing longitudinal self-o
 
 ---
 
-## Primary Entry Points
+## Tier 1 — Start Here
 
-If you are new to the archive, start here:
+These files are sufficient for initial understanding of the system:
 
-1. **Current system state** → [LATEST.md](LATEST.md)  
-2. **Guided orientation** → [docs/START_HERE.md](docs/START_HERE.md)  
-3. **Intent + boundaries** → [WHY_PUBLIC.md](WHY_PUBLIC.md)  
-4. **Governance constraints** → [GOVERNANCE.md](GOVERNANCE.md)  
+- [README.md](README.md)
+- [LATEST.md](LATEST.md)
+- [docs/START_HERE.md](docs/START_HERE.md)
+- [EPOCH_INDEX.md](EPOCH_INDEX.md)
 
 ---
 
-## Core Archive Documents
+## Tier 2 — Core System Understanding
 
-These define the structure and rules of the system:
+These define how the system operates:
 
-- [README.md](README.md) — repository overview and public framing  
-- [SYSTEM_OVERVIEW.md](SYSTEM_OVERVIEW.md) — system model and abstraction layers  
-- [GOVERNANCE.md](GOVERNANCE.md) — archive rules and interpretive constraints  
-- [STRUCTURAL_PRINCIPLES.md](STRUCTURAL_PRINCIPLES.md) — design logic for the archive  
-- [RISK_MANAGEMENT.md](RISK_MANAGEMENT.md) — known risks and mitigation posture  
-- [PHASE_DECLARATION_CRITERIA.md](PHASE_DECLARATION_CRITERIA.md) — rules for phase advancement language  
-- [WHY_PUBLIC.md](WHY_PUBLIC.md) — rationale for public visibility  
-- [CHANGELOG.md](CHANGELOG.md) — material archive changes  
+- [SYSTEM_OVERVIEW.md](SYSTEM_OVERVIEW.md)
+- [GOVERNANCE.md](GOVERNANCE.md)
+- [METHODOLOGY_AND_CONTROLS.md](METHODOLOGY_AND_CONTROLS.md)
+- [DATA_DICTIONARY.md](DATA_DICTIONARY.md)
+- [MEASUREMENT_SOURCES.md](MEASUREMENT_SOURCES.md)
+
+---
+
+## Tier 3 — Reference and Extended Context
+
+These provide additional structure, context, and supporting detail:
+
+- [WHY_PUBLIC.md](WHY_PUBLIC.md)
+- [STRUCTURAL_PRINCIPLES.md](STRUCTURAL_PRINCIPLES.md)
+- [RISK_MANAGEMENT.md](RISK_MANAGEMENT.md)
+- [PHASE_DECLARATION_CRITERIA.md](PHASE_DECLARATION_CRITERIA.md)
+- [RECOVERY_MONITORING_FRAMEWORK.md](RECOVERY_MONITORING_FRAMEWORK.md)
+- [STATE_TRANSITIONS.md](STATE_TRANSITIONS.md)
+- [TRANSITION_MAP.md](TRANSITION_MAP.md)
+- [PHASE_2_READINESS_CHECKLIST.md](PHASE_2_READINESS_CHECKLIST.md)
 
 ---
 
