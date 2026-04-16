@@ -17,23 +17,40 @@ It exists only as a recorded comparison between predicted and observed outcomes.
 
 ---
 
-## Data Structure
+## Dataset Structure
 
 The model error layer is split into two distinct datasets:
 
 ### `model_error_gap_v1.csv`
 Forward-logged prediction records only.
 
-This file is the primary evaluation dataset for reviewing prediction accuracy after outcomes are known.
+This file is the primary evaluation dataset.
 
-### `model_error_gap_reconstructed.csv`
+It is used for:
+
+- prediction → outcome review
+- error analysis
+- UDI computation
+- calibration review
+
+Only forward-logged predictions are admissible in this file.
+
+---
+
+### `historical/model_error_gap_reconstructed.csv`
 Retrospective baseline records.
 
 These entries were reconstructed after outcomes were already known in order to document an early baseline error profile before the forward-logging layer was fully established.
 
 These records are retained for historical context only.
 
-They are **not** treated as forward-test artifacts and should **not** be used as evidence of predictive integrity or calibration quality.
+They are:
+
+- not used for evaluation metrics
+- not used for UDI computation
+- not used for calibration analysis
+- not treated as forward-test artifacts
+- not methodologically equivalent to forward-logged predictions
 
 ---
 
@@ -43,7 +60,7 @@ Only predictions logged before outcomes are known qualify for the primary evalua
 
 This distinction matters.
 
-The archive preserves reconstructed baseline records for transparency, but forward-logged records and retrospective records are not methodologically equivalent.
+The archive preserves reconstructed baseline records for transparency, but forward-logged records and retrospective records are not methodologically equivalent and are not used interchangeably.
 
 ---
 
@@ -90,7 +107,7 @@ A retrospective record created after the outcome was already known.
 ### `inferred`
 A retrospective record created from prior reasoning or archived discussion after the outcome was already known.
 
-`reconstructed` and `inferred` records belong in the reconstructed baseline file, not the primary evaluation file.
+`reconstructed` and `inferred` records belong in the historical dataset, not the primary evaluation file.
 
 ---
 
