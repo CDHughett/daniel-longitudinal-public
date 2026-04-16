@@ -9,7 +9,8 @@ This repository is updated with:
 
 ---
 
-## 2026 planned releases (public)
+## Archived Releases
+
 ### February 2026
 - DEXA scan
 - BodPod
@@ -17,9 +18,31 @@ This repository is updated with:
 - Epigenetic testing / DunedinPACE (if posted)
 - (Optional) VO₂ test (if captured)
 
+See:
+- [2026-02-testing-plan.md](roadmap/archive/2026-02-testing-plan.md)
+
+---
+
+## Upcoming Releases (2026)
+
+### May 2026
+- VO₂ testing
+- DEXA scan
+- BodPod
+- TruAge / TruHealth (TruDiagnostic)
+
+Notes:
+- TruDiagnostic sample collected May 12, 2026
+- Expected result turnaround: ~5 weeks
+- Results will be added as a new snapshot and referenced in associated reports
+
+---
+
 ### April 2026
 - Phase 2 training shift summary
 - Endurance ceiling recalibration notes (public-safe)
+
+---
 
 ### August 2026
 - Amphibious endurance benchmark block (public summary + artifacts)
@@ -27,4 +50,5 @@ This repository is updated with:
 ---
 
 ## Definition of “release”
+
 A “release” is a dated snapshot folder in `/snapshots/` plus an associated report in `/reports/`.
