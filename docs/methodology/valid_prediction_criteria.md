@@ -78,6 +78,8 @@ When it does:
 - those records must be segregated from the primary evaluation dataset
 - they must be labeled clearly
 - they must not be presented as equivalent to forward-logged predictions
+- they are not admissible for evaluative metrics
+- they are not admissible for UDI computation
 
 Historical reconstruction can support context.
 
