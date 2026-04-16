@@ -1,13 +1,13 @@
 # Daniel Longitudinal Study
 *A structured, real-time human system dataset*
 
-This repository tracks how a single human system adapts over time under controlled inputs.
+This repository documents how a single human system adapts over time under controlled and repeatable conditions.
 
 It contains:
-- longitudinal biomarker and sleep data
-- weekly system state reports
-- a prediction vs. observed outcome review layer
-- structured methodology, governance, and constraints
+- longitudinal biomarker and sleep data  
+- weekly system state reports  
+- a prediction vs. observed outcome review layer  
+- structured methodology, governance, and constraints  
 
 ---
 
@@ -16,10 +16,10 @@ It contains:
 This is not a blog, protocol, or theory thread.
 
 Everything here is:
-- measured
-- logged
-- versioned
-- auditable
+- measured  
+- logged  
+- versioned  
+- auditable  
 
 No forward claims.  
 Only recorded system behavior and retrospective interpretation.
@@ -30,7 +30,7 @@ Only recorded system behavior and retrospective interpretation.
 
 → [`LATEST.md`](./LATEST.md)
 
-This is the fastest way to understand what the system is doing right now.
+This is the fastest way to understand the system’s current observed state.
 
 ---
 
@@ -57,43 +57,13 @@ Measurement Layer
 Dataset Layer
 (versioned tracking)
       ↓
-Reports + Snapshots
-(retrospective interpretation + source evidence)
+Snapshots (artifacts)
+      ↓
+Reports (retrospective interpretation)
       ↓
 Model Error Layer
 (predicted vs. observed outcome review)
 ~~~
-
----
-
-## What you're looking at
-
-A live longitudinal system:
-
-Inputs → Biological response → Measurement → Interpretation → Iteration
-
----
-
-**Archive Type:** Longitudinal dataset  
-**Subject Model:** n = 1 observational system  
-**Observation Mode:** Artifact-first, retrospective interpretation  
-**Observation Window:** 2025–present  
-**Public Archive:** Active (2026–present)
-
-![Dataset Status](https://img.shields.io/badge/status-active_observation-blue)
-![Observation Type](https://img.shields.io/badge/model-longitudinal_archive-purple)
-![Subjects](https://img.shields.io/badge/subjects-n%3D1-lightgrey)
-![Artifact Model](https://img.shields.io/badge/data-artifact_first-green)
-![Archive Version](https://img.shields.io/badge/archive-v0.1-black)
-[![Release](https://img.shields.io/badge/release-v0.1-111111)](https://github.com/CDHughett/daniel-longitudinal-public/releases/tag/v0.1)
-
----
-
-## External Observers
-
-If you're evaluating the system structure directly:
-
-→ [`docs/FOR_OBSERVERS.md`](./docs/FOR_OBSERVERS.md)
 
 ---
 
@@ -110,21 +80,20 @@ The archive preserves continuity across:
 - biomarker and system health snapshots (where publicly included)  
 - prediction vs. observed outcome tracking (auxiliary review layer)  
 
+**Data scope and limitations:**
+→ [`data/DATA_COVERAGE.md`](./data/DATA_COVERAGE.md)
+
 **Note:** Some biomarker data may be referenced in reports but not included in the public archive.
 
-This archive includes SHA256 verification for binary artifacts within snapshot directories, supporting public auditability of recorded states.
+SHA256 verification is provided for binary snapshot artifacts where applicable.
 
 ---
 
-## Why This Matters
+## External Observers
 
-Most human performance data is fragmented, short-term, or anecdotal.
+If you are evaluating the system structure directly:
 
-This archive documents a continuous system under consistent conditions, enabling:
-
-- observation of long-term adaptation patterns  
-- evaluation of stability vs. intensity strategies  
-- traceable relationships between inputs and biological response  
+→ [`docs/FOR_OBSERVERS.md`](./docs/FOR_OBSERVERS.md)
 
 ---
 
@@ -132,9 +101,9 @@ This archive documents a continuous system under consistent conditions, enabling
 
 This repository is maintained as a longitudinal observational archive.
 
-Interpretation remains intentionally conservative:
+Interpretation remains intentionally constrained:
 
-- artifacts take precedence over narrative  
+- artifacts take precedence over language  
 - observations remain provisional  
 - conclusions require repeated evidence across time  
 
@@ -193,6 +162,7 @@ Root
 
 ## Governance
 
+- [`GOVERNANCE.md`](./GOVERNANCE.md)  
 - [`STRUCTURAL_PRINCIPLES.md`](./STRUCTURAL_PRINCIPLES.md)  
 - [`PHASE_DECLARATION_CRITERIA.md`](./PHASE_DECLARATION_CRITERIA.md)  
 - [`RISK_MANAGEMENT.md`](./RISK_MANAGEMENT.md)  
