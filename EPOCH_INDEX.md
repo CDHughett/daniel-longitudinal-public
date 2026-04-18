@@ -27,13 +27,13 @@ It provides:
 
 | Epoch | Folder | Anchor Record | Archive Role |
 |-------|--------|---------------|--------------|
-| 2025-05 | [`snapshots/2025-05/`](./snapshots/2025-05/) | [`2025-05 Epoch.md`](./snapshots/2025-05/2025-05%20Epoch.md) | early structured archive baseline |
-| 2025-07 | [`snapshots/2025-07/`](./snapshots/2025-07/) | [`2025-07 Epoch.md`](./snapshots/2025-07/2025-07%20Epoch.md) | mid-Phase 1 artifact window |
-| 2025-08 | [`snapshots/2025-08/`](./snapshots/2025-08/) | [`2025-08 Epoch.md`](./snapshots/2025-08/2025-08%20Epoch.md) | continued Phase 1 stabilization window |
-| 2025-09 | [`snapshots/2025-09/`](./snapshots/2025-09/) | [`2025-09 Epoch.md`](./snapshots/2025-09/2025-09%20Epoch.md) | late Phase 1 progression window |
-| 2025-10 | [`snapshots/2025-10/`](./snapshots/2025-10/) | [`2025-10 Epoch.md`](./snapshots/2025-10/2025-10%20Epoch.md) | pre-closeout consolidation window |
-| 2025-11 | [`snapshots/2025-11/`](./snapshots/2025-11/) | [`2025-11 Epoch.md`](./snapshots/2025-11/2025-11%20Epoch.md) | Phase 1 completion baseline |
-| 2026-02 | [`snapshots/2026-02/`](./snapshots/2026-02/) | [`2026-02 Epoch.md`](./snapshots/2026-02/2026-02%20Epoch.md) | Phase 2 early load-integration window |
+| 2025-05 | [`snapshots/2025-05/`](./snapshots/2025-05/) | [`2025-05 Epoch.md`](./snapshots/2025-05/2025-05 Epoch.md) | early structured archive baseline |
+| 2025-07 | [`snapshots/2025-07/`](./snapshots/2025-07/) | [`2025-07 Epoch.md`](./snapshots/2025-07/2025-07 Epoch.md) | mid-Phase 1 artifact window |
+| 2025-08 | [`snapshots/2025-08/`](./snapshots/2025-08/) | [`2025-08 Epoch.md`](./snapshots/2025-08/2025-08 Epoch.md) | continued Phase 1 stabilization window |
+| 2025-09 | [`snapshots/2025-09/`](./snapshots/2025-09/) | [`2025-09 Epoch.md`](./snapshots/2025-09/2025-09 Epoch.md) | late Phase 1 progression window |
+| 2025-10 | [`snapshots/2025-10/`](./snapshots/2025-10/) | [`2025-10 Epoch.md`](./snapshots/2025-10/2025-10 Epoch.md) | pre-closeout consolidation window |
+| 2025-11 | [`snapshots/2025-11/`](./snapshots/2025-11/) | [`2025-11 Epoch.md`](./snapshots/2025-11/2025-11 Epoch.md) | Phase 1 completion baseline |
+| 2026-02 | [`snapshots/2026-02/`](./snapshots/2026-02/) | [`2026-02 Epoch.md`](./snapshots/2026-02/2026-02 Epoch.md) | Phase 2 early load-integration window |
 
 ---
 
@@ -43,9 +43,9 @@ It provides:
 
 Recommended navigation flow:
 
-`LATEST.md`  
-→ `EPOCH_INDEX.md`  
-→ `SNAPSHOT_LOG.md`  
+LATEST.md  
+→ EPOCH_INDEX.md  
+→ SNAPSHOT_LOG.md  
 → specific epoch folders and anchor records
 
 ---
