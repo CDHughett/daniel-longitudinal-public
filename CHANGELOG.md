@@ -58,6 +58,15 @@ Biological interpretation belongs in /reports.
   - defines dataset scope, completeness, and known limitations
   - establishes explicit boundary between tracked, partially tracked, and untracked domains
 
+- Introduced subject baseline context document:
+  - Added `docs/methodology/subject_baseline_context.md`
+  - defines pre-observation environmental and physiological conditions
+  - establishes interpretation boundaries for biomarker and epigenetic data
+
+- Linked subject baseline context across methodology layer:
+  - referenced in `ASSUMPTIONS_AND_BOUNDARIES.md`
+  - referenced in `DATA_COVERAGE.md` for epigenetic and biomarker interpretation context
+
 ---
 
 ### Changed
@@ -117,7 +126,10 @@ Biological interpretation belongs in /reports.
   - aligned reports description with active observation + retrospective reporting model  
   - tightened Tier 3 reference layer to include only durable, non-redundant documents  
 
-- Repository structure simplified to remove overlapping conceptual layers and improve first-read navigation clarity.
+- Repository structure simplified:
+  - removed redundant conceptual layers (phase index, transition map, roadmap)
+  - consolidated phase logic into `PHASE_MAP.md` and `STATE_TRANSITIONS.md`
+  - reduced top-level document duplication to improve navigation clarity
 
 ---
 
@@ -173,6 +185,14 @@ Biological interpretation belongs in /reports.
 - Portions of repository development and commit activity were performed via a mobile-based workflow.
 - As a result, some commits may appear more granular or repetitive than a typical desktop-based development pattern.
 - Changes are grouped conceptually within this changelog to preserve clarity of intent.
+
+---
+
+## Audit Status
+
+- Saturday audit pass completed
+- Structural pruning, navigation alignment, and methodology layering validated
+- Repository considered structurally consistent for external read-through
 
 ---
 
