@@ -12,7 +12,7 @@ Where present, an accompanying epoch file serves as the temporal anchor record f
 - BodPod
 
 **Links:**
-- Epoch file: [`2025-05 Epoch.md`](./snapshots/2025-05/2025-05%20Epoch.md)
+- Epoch file: [`2025-05 Epoch.md`](./snapshots/2025-05/2025-05 Epoch.md)
 
 **Notes:**
 - Pre-structure conditioning period
@@ -27,7 +27,7 @@ Where present, an accompanying epoch file serves as the temporal anchor record f
 - Bloodwork
 
 **Links:**
-- Epoch file: [`2025-07 Epoch.md`](./snapshots/2025-07/2025-07%20Epoch.md)
+- Epoch file: [`2025-07 Epoch.md`](./snapshots/2025-07/2025-07 Epoch.md)
 
 **Notes:**
 - Sustained endurance and heat exposure pattern
@@ -41,7 +41,7 @@ Where present, an accompanying epoch file serves as the temporal anchor record f
 - BodPod
 
 **Links:**
-- Epoch file: [`2025-08 Epoch.md`](./snapshots/2025-08/2025-08%20Epoch.md)
+- Epoch file: [`2025-08 Epoch.md`](./snapshots/2025-08/2025-08 Epoch.md)
 
 **Notes:**
 - Continued endurance-dominant training
@@ -55,7 +55,7 @@ Where present, an accompanying epoch file serves as the temporal anchor record f
 - BodPod
 
 **Links:**
-- Epoch file: [`2025-09 Epoch.md`](./snapshots/2025-09/2025-09%20Epoch.md)
+- Epoch file: [`2025-09 Epoch.md`](./snapshots/2025-09/2025-09 Epoch.md)
 
 **Notes:**
 - Shift begins from environmental conditioning to structured training
@@ -70,7 +70,7 @@ Where present, an accompanying epoch file serves as the temporal anchor record f
 - Plasma panels
 
 **Links:**
-- Epoch file: [`2025-10 Epoch.md`](./snapshots/2025-10/2025-10%20Epoch.md)
+- Epoch file: [`2025-10 Epoch.md`](./snapshots/2025-10/2025-10 Epoch.md)
 
 **Notes:**
 - Introduction of repeatable training categories
@@ -85,7 +85,7 @@ Where present, an accompanying epoch file serves as the temporal anchor record f
 - BodPod
 
 **Links:**
-- Epoch file: [`2025-11 Epoch.md`](./snapshots/2025-11/2025-11%20Epoch.md)
+- Epoch file: [`2025-11 Epoch.md`](./snapshots/2025-11/2025-11 Epoch.md)
 
 **Notes:**
 - Stabilized metabolic state
@@ -102,7 +102,7 @@ Where present, an accompanying epoch file serves as the temporal anchor record f
 - TruHealth system report
 
 **Links:**
-- Epoch file: [`2026-02 Epoch.md`](./snapshots/2026-02/2026-02%20Epoch.md)
+- Epoch file: [`2026-02 Epoch.md`](./snapshots/2026-02/2026-02 Epoch.md)
 
 **Notes:**
 - Endurance taper into controlled load reintroduction
