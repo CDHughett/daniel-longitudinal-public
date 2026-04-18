@@ -173,6 +173,16 @@ These factors must be considered whenever patterns appear unusually clear or unu
 
 ---
 
+## Subject Starting Conditions
+
+Baseline subject context, including pre-observation exposures and medication state, is defined in:
+
+`docs/methodology/subject_baseline_context.md`
+
+This context informs interpretation boundaries but does not assign causality or override artifact-based observation.
+
+---
+
 ## Falsifiability Conditions
 
 The framework underlying this repository would require reevaluation if the following patterns emerged despite continued structural adherence:
