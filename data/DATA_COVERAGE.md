@@ -44,9 +44,45 @@ This is a **coverage declaration**, not an interpretation layer.
 
 ## Temporal Coverage
 
+The dataset operates under a continuous observational model, with staged public data exposure.
+
+### Observation Continuity
+
 - Continuous observation: 2026-W01 → present  
-- Partial historical backfill: 2025 selected epochs  
-- Snapshot-based anchor points define longitudinal structure  
+
+This reflects the start of stable training exposure, recovery control, and behavioral execution.
+
+Not all early observations are represented as structured public artifacts.
+
+---
+
+### Structured Archive Coverage
+
+- Structured reporting layer: 2026-W06 → present  
+
+From this point forward, reports, snapshots, and supporting datasets are consistently represented in the archive.
+
+---
+
+### Dataset-Specific Coverage
+
+Individual datasets begin when stable measurement conditions were achieved.
+
+Examples:
+
+- Sleep longitudinal dataset: begins 2026-02-09  
+- Weekly reports: begin 2026-W06  
+- Snapshot artifacts: increase in frequency over time  
+
+Datasets are introduced only when signal stability is sufficient for reliable inclusion.
+
+---
+
+### Notes
+
+- Absence of early structured data does not indicate absence of observation  
+- Data layers are added progressively as stability improves  
+- The archive prioritizes **data integrity over backfilled completeness**
 
 ---
 
