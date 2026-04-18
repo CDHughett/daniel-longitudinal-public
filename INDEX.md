@@ -41,8 +41,6 @@ These provide additional structure, context, and supporting detail:
 - [PHASE_DECLARATION_CRITERIA.md](PHASE_DECLARATION_CRITERIA.md)
 - [RECOVERY_MONITORING_FRAMEWORK.md](RECOVERY_MONITORING_FRAMEWORK.md)
 - [STATE_TRANSITIONS.md](STATE_TRANSITIONS.md)
-- [TRANSITION_MAP.md](TRANSITION_MAP.md)
-- [PHASE_2_READINESS_CHECKLIST.md](PHASE_2_READINESS_CHECKLIST.md)
 
 ---
 
@@ -93,7 +91,7 @@ Extended methodology does not modify system behavior and remains subordinate to 
 ## Archive Structure
 
 - [/snapshots](snapshots) — primary artifact archive (immutable evidence)  
-- [/reports](reports) — structured retrospective interpretation  
+- [/reports](reports) — active observation logs and retrospective interpretation  
 - [/experiments](experiments) — intervention-specific experiment files  
 - [/schemas](schemas) — naming rules and structure definitions  
 - [/methodology](methodology) — core methodological rules  
@@ -104,15 +102,15 @@ Extended methodology does not modify system behavior and remains subordinate to 
 ## Reading the Archive
 
 - Use `/snapshots` for **primary evidence**  
-- Use `/reports` for **retrospective interpretation**  
+- Use `/reports` for **system behavior across time**  
 - Use `/data` for **structured longitudinal tracking**  
 
 Recommended navigation flow:
 
-`LATEST.md`  
-→ `EPOCH_INDEX.md`  
-→ `SNAPSHOT_LOG.md`  
-→ `/snapshots/YYYY-MM/`
+LATEST.md  
+→ EPOCH_INDEX.md  
+→ SNAPSHOT_LOG.md  
+→ /snapshots/YYYY-MM/
 
 Artifacts precede interpretation.
 
