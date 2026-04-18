@@ -108,9 +108,34 @@ Biological interpretation belongs in /reports.
   - ensured internal links reflect current directory structure
   - removed stale or orphaned references
 
-- Corrected ROADMAP.md chronology:
-  - aligned release ordering with actual temporal sequence
-  - clarified definition of “release” in relation to snapshots and reports
+---
+
+### Changed (Structural Alignment)
+
+- `INDEX.md` fully updated to reflect current archive structure after document pruning:
+  - removed references to deprecated phase and transition documents  
+  - aligned reports description with active observation + retrospective reporting model  
+  - tightened Tier 3 reference layer to include only durable, non-redundant documents  
+
+- Repository structure simplified to remove overlapping conceptual layers and improve first-read navigation clarity.
+
+---
+
+### Removed
+
+- `PHASE_INDEX.md` to eliminate redundant phase-layer framing after consolidation around `PHASE_MAP.md`.
+
+- `ROADMAP.md` to remove future-facing narrative and keep archive state grounded in current artifacts and observable system behavior.
+
+- `SYSTEM_CONSTRAINTS.md` to remove tactical, phase-local constraint framing and retain constraint visibility within `LATEST.md`, `RISK_MANAGEMENT.md`, and phase criteria.
+
+- `EXPERIMENT_REGISTRY_PUBLIC.md` after consolidating protocol-shift visibility into reports, snapshots, and current-state documentation.
+
+- `PHASE_2_READINESS_CHECKLIST.md` after consolidating phase gating into permanent criteria defined in `PHASE_DECLARATION_CRITERIA.md`.
+
+- `TRANSITION_MAP.md` after consolidating transition logic into `PHASE_MAP.md` and `STATE_TRANSITIONS.md`.
+
+- `DISCLAIMER.md` after retaining interpretation boundaries within `ASSUMPTIONS_AND_BOUNDARIES.md` and governance documents.
 
 ---
 
@@ -120,7 +145,7 @@ Biological interpretation belongs in /reports.
 
 - Separation reinforced between:
   - snapshot artifacts (immutable evidence)  
-  - reports (retrospective interpretation)  
+  - reports (active observation and retrospective interpretation)  
   - longitudinal datasets (time-series tracking)  
   - model error layer (prediction vs observed outcome)  
   - methodology layer (evaluation rules and closure standards)  
