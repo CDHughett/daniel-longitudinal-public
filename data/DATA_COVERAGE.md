@@ -42,6 +42,16 @@ This is a **coverage declaration**, not an interpretation layer.
 
 ---
 
+## Baseline Context Reference
+
+Interpretation of biomarker and epigenetic data should consider documented pre-observation conditions:
+
+`docs/methodology/subject_baseline_context.md`
+
+This file defines known starting conditions but does not assign causal interpretation to observed values.
+
+---
+
 ## Temporal Coverage
 
 The dataset operates under a continuous observational model, with staged public data exposure.
