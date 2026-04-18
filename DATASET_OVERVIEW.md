@@ -17,13 +17,33 @@ The primary objective is to preserve **artifact continuity** and enable retrospe
 ## Dataset Scope
 
 | Attribute | Description |
-|----------|-------------|
+|-----------|-------------|
 | Subject count | 1 |
 | Observation type | Longitudinal |
 | Archive model | Artifact-first observational system |
 | Primary domains | Training exposure, recovery signals, biological measurement, behavioral adherence |
 
 The dataset records **chronological artifact continuity**, allowing system behavior to be interpreted across extended time horizons.
+
+---
+
+## Observation Flow
+
+The dataset follows a consistent observational pipeline:
+
+Training Exposure  
++  
+Recovery Environment  
++  
+Behavioral Execution  
+↓  
+Physiological Response  
+↓  
+Artifact Capture  
+↓  
+Retrospective Interpretation  
+
+Artifacts are recorded prior to interpretation to preserve traceability between observation and outcome.
 
 ---
 
@@ -44,9 +64,7 @@ Examples include:
 
 Location:
 
-```
 /snapshots
-```
 
 Snapshots represent **raw observational evidence**.
 
@@ -64,9 +82,7 @@ Reports may include:
 
 Location:
 
-```
 /reports
-```
 
 Reports **interpret artifacts**, but never replace them.
 
@@ -84,9 +100,7 @@ Examples include:
 
 Location:
 
-```
 /snapshots/milestones
-```
 
 Milestones provide **historical context**, not biological evidence.
 
@@ -110,9 +124,7 @@ The longitudinal system evolves through operational phases.
 
 Phase definitions are documented in:
 
-```
 PHASE_MAP.md
-```
 
 Phases describe **system state transitions**, not personal narrative.
 
@@ -122,15 +134,13 @@ Phases describe **system state transitions**, not personal narrative.
 
 Artifact continuity is preserved through:
 
-- chronological storage
-- version-controlled history
-- explicit governance constraints
+- chronological storage  
+- version-controlled history  
+- explicit governance constraints  
 
 Dataset changes are documented in:
 
-```
 CHANGELOG.md
-```
 
 ---
 
@@ -138,9 +148,9 @@ CHANGELOG.md
 
 This repository is published to:
 
-- document long-term biological adaptation
-- preserve artifact continuity for future analysis
-- provide transparency for observational self-experimentation
+- document long-term biological adaptation  
+- preserve artifact continuity for future analysis  
+- provide transparency for observational self-experimentation  
 
 The archive may also serve as a reference point for future longitudinal human performance studies.
 
