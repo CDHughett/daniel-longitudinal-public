@@ -1,20 +1,44 @@
 # Reports
 
-This directory contains **structured interpretive summaries** derived from confirmed snapshot artifacts.
+This directory contains structured observational summaries of system state across defined time windows.
 
-Reports do not introduce new raw data.  
-They operate strictly on existing measurements.
+Reports operate as the **primary interpretation layer**, built on top of recorded artifacts and ongoing observation.
 
 ---
 
-## Purpose
+## Report Modes
 
-Reports are designed to:
+The archive contains two report types:
 
-- compare confirmed measurement events  
-- document directional changes over time  
-- contextualize signals within defined phases  
-- preserve longitudinal continuity  
+### 1. Active Observation Reports
+
+These are **in-progress weekly observation logs**.
+
+They reflect:
+
+- current training exposure  
+- recovery signals  
+- behavioral execution patterns  
+- system stability within the active window  
+
+Active reports are updated during the observation period and represent **real-time system state without forward claims**.
+
+They may include observational context that has not yet been formalized into snapshot artifacts.
+
+---
+
+### 2. Retrospective Reports
+
+These are **post-observation summaries** created after sufficient data has accumulated.
+
+They include:
+
+- comparative analysis across measurement events  
+- body composition summaries  
+- phase transition confirmations  
+- cross-period synthesis  
+
+Retrospective reports operate strictly on **confirmed artifacts and stabilized data**.
 
 ---
 
@@ -22,10 +46,12 @@ Reports are designed to:
 
 Primary artifacts are stored in `/snapshots/`.
 
-Reports reference these artifacts but do not replace them.
+- **Snapshots** → source of truth  
+- **Reports** → structured interpretation  
+- **Dashboards** → derived visualization  
 
-- Snapshots are immutable  
-- Reports remain updateable as additional comparative context becomes available  
+Reports do not replace artifacts.  
+They organize and interpret them.
 
 ---
 
@@ -33,11 +59,9 @@ Reports reference these artifacts but do not replace them.
 
 Within the archive hierarchy:
 
-- **Snapshots** → source of truth  
-- **Reports** → structured interpretation  
-- **Dashboards** → derived visualization  
-
-Reports translate artifacts into interpretable form without altering the underlying data.
+- Snapshots define recorded reality  
+- Reports describe system behavior across time  
+- Dashboards present derived views  
 
 ---
 
@@ -45,7 +69,7 @@ Reports translate artifacts into interpretable form without altering the underly
 
 The following belong in this directory:
 
-- body composition summaries (monthly or cross-capture)  
+- active weekly observation logs  
 - comparative analysis across measurement events  
 - phase transition confirmations  
 - structured synthesis documents  
@@ -63,21 +87,34 @@ The following do not belong in this directory:
 
 ---
 
-## Integrity Standard
+## Constraints
 
 All reports must:
 
-- reference confirmed snapshot artifacts  
-- maintain numerical precision  
-- avoid narrative or interpretive drift  
-- preserve consistency across time  
+- avoid forward performance claims  
+- remain grounded in observed data  
+- maintain numerical and contextual consistency  
+- align with `METHODOLOGY_AND_CONTROLS.md`  
 
-All report outputs must remain aligned with `VERSIONING.md` and `GOVERNANCE.md`.
+Retrospective reports must additionally:
+
+- reference confirmed snapshot artifacts  
+- avoid interpretation beyond available evidence  
+
+---
+
+## Purpose
+
+The reports layer exists to:
+
+- describe system state across time  
+- track stability under controlled conditions  
+- provide context for artifact interpretation  
 
 ---
 
 ## Archive Principle
 
 Artifacts define reality.  
-Reports interpret reality.  
+Reports describe reality across time.  
 Nothing supersedes the source.
