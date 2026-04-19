@@ -1,7 +1,7 @@
 # LATEST — Executive System State
 
 Daniel Longitudinal Study  
-Public Archive Status Dashboard
+Public Archive Status Dashboard  
 
 ---
 
@@ -9,12 +9,12 @@ Public Archive Status Dashboard
 
 **Last Updated:** 2026-W16  
 **Repository State:** Active longitudinal observation  
-**Archive Mode:** Public, governed, versioned
+**Archive Mode:** Public, governed, versioned  
 
 Week 15 closed under stable conditions.  
-Week 16 opened with no protocol changes.
+Week 16 opened with no protocol changes.  
 
-Observed system behavior remains consistent under repeated exposure, with stable tolerance to unchanged training density.
+Observed system behavior remains consistent under repeated exposure, with stable tolerance to unchanged training density and increasingly coherent recovery patterns.
 
 No protocol changes are recorded during the current observation window.
 
@@ -24,7 +24,7 @@ No protocol changes are recorded during the current observation window.
 
 This document provides a concise overview of the archive’s current public state.
 
-It is not a weekly report, phase declaration, or performance summary.
+It is not a weekly report, phase declaration, or performance summary.  
 
 Its purpose is to orient readers to:
 
@@ -32,7 +32,7 @@ Its purpose is to orient readers to:
 - current phase context  
 - active training structure  
 - current constraints  
-- archive navigation
+- archive navigation  
 
 Detailed interpretation belongs in `/reports`.  
 Primary artifacts belong in `/snapshots`.
@@ -48,8 +48,8 @@ Primary artifacts belong in `/snapshots`.
 | Interpretation Mode | Strictly retrospective, artifact-bound |
 | Phase Context | Phase 2 — Load Integration |
 | Training Structure | Stable, repeatable exposure architecture |
-| Recovery Signals | Stable; no intervention required |
-| Sleep Integrity | Variable duration; structural coherence improving |
+| Recovery Signals | Stable; coherent across repeated nights |
+| Sleep Integrity | Adequate duration with improving structural consistency |
 | Bodyweight Band | ~217–222 lb |
 | Biomarker Coverage | February 2026 multi-domain snapshot integrated |
 | Prediction Layer | Active — model error tracking and closure logic |
@@ -92,7 +92,7 @@ No forward performance claims are made.
 
 Active constraints remain present but non-disruptive:
 
-- sleep duration variability despite improving structure  
+- sleep duration variability across nights (within stable functional range)  
 - autonomic sensitivity under compounded stress conditions  
 - interpretation risk during visible adaptation  
 - edge-condition behavior not yet treated as invariant  
@@ -109,7 +109,7 @@ No current constraint requires intervention.
 - movement efficiency improving under identical loading  
 - exposure density tolerated without confirmed structural cost  
 
-Observed movement and performance patterns remain consistent with continued integration under fixed conditions.
+Observed patterns now include **consistent recovery alignment across consecutive days** under load.
 
 ---
 
@@ -134,7 +134,7 @@ Training posture:
 
 ## Risk Posture
 
-**Primary risk:** premature escalation during visible adaptation
+**Primary risk:** premature escalation during visible adaptation  
 
 **Mitigation:**
 - preserve structural consistency  
