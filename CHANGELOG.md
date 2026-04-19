@@ -15,22 +15,27 @@ Biological interpretation belongs in /reports.
 
 ### Added
 
-- Weekly report for 2026-W14 finalized to document the completed observation window under continued consolidation conditions.
-- Weekly report for 2026-W15 initialized to maintain forward archive continuity under the active observation window model.
+- Weekly report for 2026-W15 finalized to document the completed observation window under stable conditions.
+- Weekly report for 2026-W16 initialized to maintain forward archive continuity under the active observation window model.
 
 - Added missing sleep dataset entry for 2026-03-22 using direct wearable-derived values.
 
-- Updated sleep dataset to include 2026-W14 entries:
-  - appended week-level rows using verified sheet-based values
+- Updated sleep dataset to include current observation-window entries:
+  - appended rows using verified sheet-based values
   - corrected prior invalid append (removed inferred data)
   - preserved schema integrity and historical continuity
 
+- Added sleep log entries for 2026-04-13 through 2026-04-19:
+  - exact crossover from validated source dataset
+  - aligned with the canonical longitudinal sleep schema
+  - no inferred or backfilled values included
+
 - Introduced model error tracking layer for structured comparison of predictions vs observed outcomes.
-  - Added /data/model_error/ directory
-  - Added primary dataset model_error_gap_v1.csv
-  - Added rolling summary file udi_tracker.csv
-  - Added data/model_error/README.md for layer orientation and handling rules
-  - Added methodology/prediction_evaluation.md defining evaluation rules for point, range, and state predictions
+  - Added `/data/model_error/` directory
+  - Added primary dataset `model_error_gap_v1.csv`
+  - Added rolling summary file `udi_tracker.csv`
+  - Added `data/model_error/README.md` for layer orientation and handling rules
+  - Added `methodology/prediction_evaluation.md` defining evaluation rules for point, range, and state predictions
 
 - Expanded prediction logging and closure coverage within the model error layer:
   - closed early THC transition predictions where sufficient evidence existed
@@ -44,22 +49,22 @@ Biological interpretation belongs in /reports.
   - TruAge and Advanced TruAge reports  
   - TruHealth system report  
 
-- Introduced biomarker_snapshot.csv
+- Introduced `biomarker_snapshot.csv`
   - monthly fused biomarker layer combining body composition, epigenetic age, and system health domains  
 
-- Introduced epigenetic_longitudinal.csv
+- Introduced `epigenetic_longitudinal.csv`
   - time-series tracking of biological aging metrics (OMICm age, DunedinPACE, SYMPHONY age)  
 
-- Added SHA256 checksums.txt files across snapshot directories to establish binary artifact verification and improve auditability.
+- Added `SHA256 checksums.txt` files across snapshot directories to establish binary artifact verification and improve auditability.
 
-- Added VERIFICATION.md guide for external checksum validation of snapshot artifacts.
+- Added `VERIFICATION.md` guide for external checksum validation of snapshot artifacts.
 
-- Introduced DATA_COVERAGE.md:
+- Introduced `DATA_COVERAGE.md`:
   - defines dataset scope, completeness, and known limitations
   - establishes explicit boundary between tracked, partially tracked, and untracked domains
 
 - Introduced subject baseline context document:
-  - Added `docs/methodology/subject_baseline_context.md`
+  - added `docs/methodology/subject_baseline_context.md`
   - defines pre-observation environmental and physiological conditions
   - establishes interpretation boundaries for biomarker and epigenetic data
 
@@ -71,16 +76,18 @@ Biological interpretation belongs in /reports.
 
 ### Changed
 
-- LATEST.md executive system dashboard updated to reflect:
-  - W14 closeout status
-  - W15 active observation window
+- `LATEST.md` executive system dashboard updated to reflect:
+  - W15 closed observation window
+  - W16 active observation window
   - continued stability under repeated exposure
   - consolidation-first posture with emerging passive adaptation
+  - stable tolerance to unchanged training density
+  - increasingly coherent recovery patterns
   - removal of narrative drift and alignment with observational standard
 
-- DATA_DICTIONARY.md expanded to support biomarker and epigenetic fields introduced during the February 2026 snapshot expansion.
+- `DATA_DICTIONARY.md` expanded to support biomarker and epigenetic fields introduced during the February 2026 snapshot expansion.
 
-- sleep_longitudinal_v1.csv refined and aligned:
+- `sleep_longitudinal_v1.csv` refined and aligned:
   - unified prior sleep records into a single longitudinal structure
   - corrected column alignment inconsistencies
   - removed stale references to superseded sleep-file naming
@@ -88,7 +95,7 @@ Biological interpretation belongs in /reports.
   - standardized schema for forward compatibility
   - extended observations through the current window
 
-- udi_tracker.csv updated to reflect mixed post-calibration closure blocks and to withhold UDI where mixed prediction types reduce comparability.
+- `udi_tracker.csv` updated to reflect mixed post-calibration closure blocks and to withhold UDI where mixed prediction types reduce comparability.
 
 - Model error layer documentation aligned with current methodology and open-prediction handling.
 
@@ -109,7 +116,7 @@ Biological interpretation belongs in /reports.
   - explicitly excluded from evaluative interpretation and UDI computation
 
 - Completed temporal index layer:
-  - replaced EPOCH_MAP with EPOCH_INDEX across repository
+  - replaced `EPOCH_MAP` with `EPOCH_INDEX` across repository
   - aligned all epoch records to index structure
   - improved chronological navigation and external readability
 
@@ -166,11 +173,11 @@ Biological interpretation belongs in /reports.
   - transient regulatory disruption is logged without overstating systemic meaning
   - continuity and recovery compatibility remain primary interpretation anchors
 
-- GOVERNANCE.md updated to clarify interpretation constraints:
+- `GOVERNANCE.md` updated to clarify interpretation constraints:
   - replaced exclusion of “narrative framing” with requirement for artifact-bound interpretation
   - aligned governance language with actual repository behavior
 
-- README.md refined for consistency with governance and methodology layers:
+- `README.md` refined for consistency with governance and methodology layers:
   - removed residual narrative tone
   - strengthened alignment with artifact-first and retrospective interpretation model
 
@@ -191,7 +198,9 @@ Biological interpretation belongs in /reports.
 ## Audit Status
 
 - Saturday audit pass completed
-- Structural pruning, navigation alignment, and methodology layering validated
+- Sunday weekly closeout completed
+- W15 formally closed
+- W16 initialized as active observation window
 - Repository considered structurally consistent for external read-through
 
 ---
