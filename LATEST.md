@@ -1,22 +1,22 @@
 # LATEST — Executive System State
 
 Daniel Longitudinal Study  
-Public Archive Status Dashboard  
+Public Archive Status Dashboard
 
 ---
 
-## System State — 2026-W15 (Active Observation)
+## System State — 2026-W16 (Active Observation)
 
-**Last Updated:** 2026-W15  
+**Last Updated:** 2026-W16  
 **Repository State:** Active longitudinal observation  
-**Archive Mode:** Public, governed, versioned  
+**Archive Mode:** Public, governed, versioned
 
-Week 14 closed under stable conditions.  
-Week 15 opened with no protocol changes.  
+Week 15 closed under stable conditions.  
+Week 16 opened with no protocol changes.
 
-Observed system behavior remains consistent under repeated exposure.  
+Observed system behavior remains consistent under repeated exposure, with stable tolerance to unchanged training density.
 
-No protocol changes recorded during the current observation window.
+No protocol changes are recorded during the current observation window.
 
 ---
 
@@ -24,14 +24,15 @@ No protocol changes recorded during the current observation window.
 
 This document provides a concise overview of the archive’s current public state.
 
-It is not a weekly report, phase declaration, or performance summary.  
+It is not a weekly report, phase declaration, or performance summary.
 
 Its purpose is to orient readers to:
 
 - current operating status  
 - current phase context  
 - active training structure  
-- archive navigation  
+- current constraints  
+- archive navigation
 
 Detailed interpretation belongs in `/reports`.  
 Primary artifacts belong in `/snapshots`.
@@ -50,7 +51,7 @@ Primary artifacts belong in `/snapshots`.
 | Recovery Signals | Stable; no intervention required |
 | Sleep Integrity | Variable duration; structural coherence improving |
 | Bodyweight Band | ~217–222 lb |
-| Biomarker Coverage | Feb 2026 multi-domain snapshot integrated |
+| Biomarker Coverage | February 2026 multi-domain snapshot integrated |
 | Prediction Layer | Active — model error tracking and closure logic |
 | Archive Integrity | Maintained |
 
@@ -60,12 +61,12 @@ Primary artifacts belong in `/snapshots`.
 
 **Phase 2 — Load Integration**
 
-The system is operating within a load-integration window:
+The system is operating within a load-integration window characterized by:
 
-- aerobic base preserved  
-- mechanical loading present under repeated exposure  
-- recovery compatible with exposure frequency  
-- interpretation remains consolidation-first  
+- preserved aerobic base  
+- repeated mechanical loading  
+- recovery compatibility under sustained exposure  
+- consolidation-first interpretation  
 
 Phase language is descriptive, not promotional.  
 Advancement requires sustained, artifact-confirmed stability.
@@ -78,53 +79,25 @@ The archive is documenting:
 
 - repeated training exposure under stable structure  
 - preserved aerobic base during load integration  
-- recovery compatibility under sustained exposure  
+- stable recovery under repeated exposure  
 - consolidation over escalation  
+- unchanged architecture across observation windows  
 
 No peaking behavior is assumed.  
 No forward performance claims are made.
 
 ---
 
-## Recent Recovery Context
+## Current Constraints
 
-A transient disturbance window occurred during a prior observation period associated with:
+Active constraints remain present but non-disruptive:
 
-- THC removal  
-- sympathetic activation  
-- transient GI instability  
-- one controlled downregulation event  
+- sleep duration variability despite improving structure  
+- autonomic sensitivity under compounded stress conditions  
+- interpretation risk during visible adaptation  
+- edge-condition behavior not yet treated as invariant  
 
-Current status:
-
-- disturbance resolved without structural change  
-- recovery returned to baseline  
-- no additional intervention required  
-
-Posture remains:
-
-- observe  
-- document  
-- preserve continuity  
-
----
-
-## Nervous System State
-
-- prior sympathetic activation observed  
-- current state stable with reduced volatility  
-- dream intensity and coherence increased  
-- no structural instability observed  
-
----
-
-## GI / Fueling State
-
-- prior instability resolved  
-- intake tolerance normalized  
-- no active disruption observed  
-
-No longer a limiting factor under current conditions.
+No current constraint requires intervention.
 
 ---
 
@@ -134,8 +107,9 @@ No longer a limiting factor under current conditions.
 - no additional downregulation events required  
 - performance capacity stable under repeated exposure  
 - movement efficiency improving under identical loading  
+- exposure density tolerated without confirmed structural cost  
 
-Observed movement and performance patterns remain consistent with prior integration phases.
+Observed movement and performance patterns remain consistent with continued integration under fixed conditions.
 
 ---
 
@@ -160,7 +134,7 @@ Training posture:
 
 ## Risk Posture
 
-**Primary risk:** premature escalation during visible adaptation  
+**Primary risk:** premature escalation during visible adaptation
 
 **Mitigation:**
 - preserve structural consistency  
@@ -190,15 +164,15 @@ raw artifacts
 ## Recent Structural Additions
 
 - February 2026 biomarker snapshot integrated (DEXA, BodPod, TruAge, TruHealth)  
-- `biomarker_snapshot.csv` (monthly biomarker aggregation)  
-- `epigenetic_longitudinal.csv` (biological aging time-series)  
-- expanded `DATA_DICTIONARY.md`  
+- `biomarker_snapshot.csv` added for monthly biomarker aggregation  
+- `epigenetic_longitudinal.csv` added for biological aging time-series  
+- `DATA_DICTIONARY.md` expanded  
 - `data/model_error/` layer introduced  
 - `model_error_gap_v1.csv` and `udi_tracker.csv` added  
-- refined prediction evaluation methodology  
-- refined `sleep_longitudinal_v1.csv` (canonical longitudinal sleep dataset)  
+- prediction evaluation methodology refined  
+- `sleep_longitudinal_v1.csv` refined as the canonical longitudinal sleep dataset  
 
-These extend the archive into:
+These additions extend the archive into:
 
 - biological aging  
 - system-level health scoring  
@@ -242,7 +216,7 @@ Evaluation is based on:
 
 ## Update Flow
 
-- ongoing observation capture for **2026-W15 (active)**  
+- ongoing observation capture for current active week (**2026-W16**)  
 - snapshot ingestion as events occur  
 - continued model error closure and refinement  
 
