@@ -20,6 +20,23 @@ No protocol changes are recorded during the current observation window.
 
 ---
 
+## Artifact — Stable Input / Rising Output (2026-04-23)
+
+A checkpoint demonstrating observable output divergence under fixed protocol conditions.
+
+Training structure remained unchanged. No protocol adjustments were introduced.  
+Sleep and recovery continued stabilizing across repeated exposure.
+
+The attached public artifact reflects increasing execution ease under identical loading conditions.
+
+This is not a peak performance event.  
+It is a non-event under stable inputs.
+
+Public artifact:  
+https://x.com/i/status/2047315930158604600
+
+---
+
 ## Purpose
 
 This document provides a concise overview of the archive’s current public state.
