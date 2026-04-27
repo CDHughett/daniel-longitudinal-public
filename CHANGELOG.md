@@ -15,8 +15,8 @@ Biological interpretation belongs in /reports.
 
 ### Added
 
-- Weekly report for 2026-W15 finalized to document the completed observation window under stable conditions.
-- Weekly report for 2026-W16 initialized to maintain forward archive continuity under the active observation window model.
+- Weekly report for 2026-W16 finalized to document the completed observation window under high-density execution and non-standard environmental disruption.
+- Weekly report for 2026-W17 initialized to maintain forward archive continuity under the active observation window model.
 
 - Added missing sleep dataset entry for 2026-03-22 using direct wearable-derived values.
 
@@ -77,13 +77,12 @@ Biological interpretation belongs in /reports.
 ### Changed
 
 - `LATEST.md` executive system dashboard updated to reflect:
-  - W15 closed observation window
-  - W16 active observation window
-  - continued stability under repeated exposure
-  - consolidation-first posture with emerging passive adaptation
-  - stable tolerance to unchanged training density
-  - increasingly coherent recovery patterns
-  - removal of narrative drift and alignment with observational standard
+  - W16 closed observation window
+  - W17 active observation window
+  - removal of multi-week historical stacking
+  - validated stability under both repeated exposure and environmental disruption
+  - consolidation-first posture with demonstrated robustness
+  - alignment with strict current-state observational standard
 
 - `DATA_DICTIONARY.md` expanded to support biomarker and epigenetic fields introduced during the February 2026 snapshot expansion.
 
@@ -199,8 +198,8 @@ Biological interpretation belongs in /reports.
 
 - Saturday audit pass completed
 - Sunday weekly closeout completed
-- W15 formally closed
-- W16 initialized as active observation window
+- W16 formally closed
+- W17 initialized as active observation window
 - Repository considered structurally consistent for external read-through
 
 ---
