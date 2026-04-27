@@ -5,18 +5,17 @@ Public Archive Status Dashboard
 
 ---
 
-## System State — 2026-W16 (Active Observation)
+## System State — 2026-W17 (Active Observation)
 
-**Last Updated:** 2026-W16  
+**Last Updated:** 2026-W17  
 **Repository State:** Active longitudinal observation  
 **Archive Mode:** Public, governed, versioned  
 
-Week 15 closed under stable conditions.  
-Week 16 opened with no protocol changes.  
+Week 16 closed following a high-density training block and a non-standard environmental disruption window.
 
-Observed system behavior remains consistent under repeated exposure, with stable tolerance to unchanged training density and increasingly coherent recovery patterns.
+System behavior remained stable under repeated exposure and did not regress under disrupted conditions (sleep, food, environment, logistics).
 
-No protocol changes are recorded during the current observation window.
+No protocol changes are recorded entering the current observation window.
 
 ---
 
@@ -65,9 +64,9 @@ Primary artifacts belong in `/snapshots`.
 | Interpretation Mode | Strictly retrospective, artifact-bound |
 | Phase Context | Phase 2 — Load Integration |
 | Training Structure | Stable, repeatable exposure architecture |
-| Recovery Signals | Stable; coherent across repeated nights |
-| Sleep Integrity | Adequate duration with improving structural consistency |
-| Bodyweight Band | ~217–222 lb |
+| Recovery Signals | Stable; resilient under non-standard conditions |
+| Sleep Integrity | Structurally stable; environment-dependent variability observed |
+| Bodyweight Band | ~222–224 lb |
 | Biomarker Coverage | February 2026 multi-domain snapshot integrated |
 | Prediction Layer | Active — model error tracking and closure logic |
 | Archive Integrity | Maintained |
@@ -83,6 +82,7 @@ The system is operating within a load-integration window characterized by:
 - preserved aerobic base  
 - repeated mechanical loading  
 - recovery compatibility under sustained exposure  
+- demonstrated stability under both controlled and disrupted conditions  
 - consolidation-first interpretation  
 
 Phase language is descriptive, not promotional.  
@@ -97,6 +97,7 @@ The archive is documenting:
 - repeated training exposure under stable structure  
 - preserved aerobic base during load integration  
 - stable recovery under repeated exposure  
+- validated stability under environmental disruption  
 - consolidation over escalation  
 - unchanged architecture across observation windows  
 
@@ -109,7 +110,7 @@ No forward performance claims are made.
 
 Active constraints remain present but non-disruptive:
 
-- sleep duration variability across nights (within stable functional range)  
+- sleep duration variability across environments  
 - autonomic sensitivity under compounded stress conditions  
 - interpretation risk during visible adaptation  
 - edge-condition behavior not yet treated as invariant  
@@ -125,8 +126,11 @@ No current constraint requires intervention.
 - performance capacity stable under repeated exposure  
 - movement efficiency improving under identical loading  
 - exposure density tolerated without confirmed structural cost  
+- stability preserved under non-standard environmental conditions  
 
-Observed patterns now include **consistent recovery alignment across consecutive days** under load.
+Observed patterns now include:
+- **consistent recovery alignment under controlled conditions**  
+- **non-regression under disrupted conditions**
 
 ---
 
@@ -233,12 +237,12 @@ Evaluation is based on:
 
 ## Update Flow
 
-- ongoing observation capture for current active week (**2026-W16**)  
+- ongoing observation capture for current active week (**2026-W17**)  
 - snapshot ingestion as events occur  
 - continued model error closure and refinement  
 
 ---
 
 **System State:** Stable  
-**Trajectory Posture:** Consolidation under stable conditions  
+**Trajectory Posture:** Consolidation with validated robustness  
 **Operational Mode:** Execute → observe → close retrospectively
