@@ -49,6 +49,12 @@ Biological interpretation belongs in `/reports`.
   - Added `data/model_error/README.md` for layer orientation and handling rules
   - Added `methodology/prediction_evaluation.md` defining evaluation rules for point, range, and state predictions
 
+- Introduced first forward-locked, pre-registered predictions in model error layer:
+  - bodyweight stability prediction (5-day binary window)
+  - pull-up repeatability prediction (5-session binary window)
+  - marked with `calibration_state = pre`
+  - no post-hoc adjustment or exemption permitted
+
 - Integrated February 2026 biomarker snapshot artifacts:
   - DEXA scan  
   - BodPod composition  
@@ -108,6 +114,11 @@ Biological interpretation belongs in `/reports`.
 
 - Model error layer documentation aligned with current methodology and open-prediction handling.
 
+- `data/model_error/README.md` updated to clarify `calibration_state` semantics:
+  - explicitly distinguishes `pre` (forward-locked) vs `post` (subject-calibrated)
+  - resolves ambiguity between post-calibration and post-outcome interpretation
+  - improves external legibility of evaluation layer
+
 - PDFs moved out of Git LFS and re-tracked as standard Git objects to restore full artifact integrity and prevent pointer file corruption.
 
 - Enforced strict separation between forward-logged and reconstructed prediction records:
@@ -148,8 +159,6 @@ Biological interpretation belongs in `/reports`.
 - `PHASE_2_READINESS_CHECKLIST.md`
 - `TRANSITION_MAP.md`
 - `DISCLAIMER.md`
-
-These removals reduced redundant framing and consolidated durable logic into governance, methodology, reports, and phase criteria documents.
 
 ---
 
