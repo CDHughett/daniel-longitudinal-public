@@ -41,6 +41,7 @@ These provide additional structure, context, and supporting detail:
 - [PHASE_DECLARATION_CRITERIA.md](PHASE_DECLARATION_CRITERIA.md)
 - [RECOVERY_MONITORING_FRAMEWORK.md](RECOVERY_MONITORING_FRAMEWORK.md)
 - [STATE_TRANSITIONS.md](STATE_TRANSITIONS.md)
+- [docs/WEEK_INDEXING.md](docs/WEEK_INDEXING.md) — explains internal reporting week labels and calendar-week offset
 
 ---
 
