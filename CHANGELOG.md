@@ -69,6 +69,11 @@ Biological interpretation belongs in `/reports`.
 
 - Linked subject baseline context across methodology and coverage documentation.
 
+- Introduced internal week indexing convention:
+  - added `docs/WEEK_INDEXING.md`
+  - clarified reporting week offset relative to calendar weeks
+  - linked indexing convention from `LATEST.md` and `INDEX.md`
+
 ---
 
 ### Changed
@@ -80,6 +85,14 @@ Biological interpretation belongs in `/reports`.
   - observed stability under repeated exposure and environmental disruption
   - consolidation-first posture
   - alignment with strict current-state observational standard
+  - explicit week indexing clarification added
+
+- `CHANGELOG.md` restructured:
+  - converted to active rolling window model
+  - moved historical entries to `docs/archive/CHANGELOG_ARCHIVE.md`
+
+- `INDEX.md` updated:
+  - added navigation reference to week indexing convention
 
 - `DATA_DICTIONARY.md` expanded to support biomarker and epigenetic fields introduced during the February 2026 snapshot expansion.
 
