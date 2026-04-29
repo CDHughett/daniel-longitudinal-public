@@ -10,7 +10,7 @@ It is a working system under continuous observation.
 A longitudinal self-tracking system built around three intentionally separated layers:
 
 - **snapshots** → raw data and primary evidence  
-- **reports** → retrospective interpretation  
+- **reports** → active observation logs and retrospective interpretation  
 - **dashboards** → derived views (non-primary)  
 
 Each layer is structurally isolated.
@@ -26,8 +26,9 @@ Each layer is structurally isolated.
 [ SYSTEM RULES ]
 
 - no forward claims  
-- no real-time interpretation  
-- only retrospective validation  
+- no real-time conclusions  
+- active observations remain provisional  
+- validation is applied only retrospectively to completed observation windows  
 
 ---
 
