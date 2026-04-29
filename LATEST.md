@@ -3,6 +3,8 @@
 Daniel Longitudinal Study  
 Public Archive Status Dashboard  
 
+> Note: Week labels follow the repository’s internal reporting index rather than strict ISO calendar weeks. See [`docs/WEEK_INDEXING.md`](docs/WEEK_INDEXING.md).
+
 ---
 
 ## System State — 2026-W17 (Active Observation)
@@ -97,7 +99,7 @@ The archive is documenting:
 - repeated training exposure under stable structure  
 - preserved aerobic base during load integration  
 - stable recovery under repeated exposure  
-- validated stability under environmental disruption  
+- observed stability under environmental disruption  
 - consolidation over escalation  
 - unchanged architecture across observation windows  
 
@@ -244,5 +246,5 @@ Evaluation is based on:
 ---
 
 **System State:** Stable  
-**Trajectory Posture:** Consolidation with validated robustness  
+**Trajectory Posture:** Consolidation with observed robustness  
 **Operational Mode:** Execute → observe → close retrospectively
