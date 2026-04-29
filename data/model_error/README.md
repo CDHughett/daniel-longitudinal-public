@@ -93,6 +93,39 @@ Each row may include:
 
 ---
 
+## Calibration State
+
+`calibration_state` describes the relationship between the prediction and prior subject-specific information.
+
+It does **not** indicate whether the prediction was evaluated before or after the outcome.
+
+Values:
+
+- `pre`
+  - Prediction was **pre-registered and forward-locked**
+  - Defined before outcome was known
+  - No post-hoc modification allowed
+  - Represents a clean forward test
+
+- `post`
+  - Prediction was generated using a **subject-calibrated model**
+  - Model had prior exposure to subject data or interaction history
+  - May incorporate previously observed patterns
+  - Not considered an independent or pre-registered prediction
+
+## Important Distinction
+
+`post` does **not** mean post-outcome evaluation.
+
+It indicates that the prediction was made **after model calibration to the subject**, not after the outcome occurred.
+
+## Interpretation Guidance
+
+- Only `pre` entries should be treated as **externally evaluable forward tests**
+- `post` entries represent **calibrated or exploratory predictions**
+
+---
+
 ## Flag Definitions
 
 ### `primary`
