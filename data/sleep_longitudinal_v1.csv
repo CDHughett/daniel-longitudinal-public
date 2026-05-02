@@ -69,6 +69,38 @@ date,total_sleep_min,deep_sleep_min,light_sleep_min,rem_sleep_min,awake_min,awak
 2026-04-17,467,101,312,54,23,3,94,21.6,11.6,66.8,64,53,Calm,Processing,High,"sleep_efficiency_high, deep_high, rem_low, sleep_continuity_high, low_awake_time, parasympathetic_dominant, hrv_stable, sleep_hr_slightly_elevated, dream_vivid, dream_multi_narrative, lucid_fragments, emotional_processing, rem_density_high_low_duration",wearable+operator_log
 2026-04-18,498,100,348,50,17,3,95,20.1,10.0,69.9,52,58,Calm,Processing,High,"sleep_efficiency_high, deep_high, rem_low_reported, rem_underreported_likely, sleep_continuity_high, low_awake_time, hr_elevated, hrv_suppressed, parasympathetic_with_load, dream_vivid, dream_multi_narrative, lucid_fragments, emotional_processing, rem_activation_spike, integration_night",wearable+operator_log
 2026-04-19,447,95,264,88,29,4,92,21.3,19.7,59.1,78,48,Calm,Processing,High,"sleep_efficiency_high, deep_high, rem_stable, sleep_continuity_high, low_awake_time, parasympathetic_dominant, hrv_elevated, sleep_hr_low, dream_vivid, dream_multi_narrative, semi_lucid, dream_interactive, emotional_processing, integration_under_control, rem_stabilization_phase",wearable+operator_log
+2026-04-20,482,140,254,88,18,3,94,29.0,18.3,52.7,74,49,Calm,Optimal,High,"sleep_efficiency_high, rem_moderate, sleep_continuity_high, low_awake_time, parasympathetic_dominant, hrv_elevated, sleep_hr_low, dream_vivid, dream_multi_narrative, lucid_fragments, physical_recovery_allocation, rem_subjective_mismatch_moderate, integration_under_load",wearable+operator_log
+2026-04-21,483,115,328,40,22,4,95,23.8,8.3,67.9,55,57,Calm,Optimal,High,"sleep_efficiency_high, deep_high, rem_fragmented, sleep_continuity_moderate, low_awake_time, sympathetic_carryover, elevated_sleep_hr, hrv_suppressed, dream_vivid, dream_multi_narrative, fragmented_rem, physical_recovery_allocation, integration_under_load",wearable+operator_log
+2026-04-22,463,110,278,75,11,3,94,23.8,16.2,60.0,68,50,Calm,Optimal,High,"sleep_efficiency_high, deep_high, rem_stable, sleep_continuity_high, low_awake_time, parasympathetic_dominant, hrv_stable, sleep_hr_low, dream_vivid, multi_narrative, rem_density_high, physical_recovery_allocation, system_stable_under_load",wearable+operator_log
+2026-04-23,462,75,317,70,21,4,94,16.2,15.2,68.6,59,50,Calm,Optimal,High,"sleep_efficiency_high, deep_stable, rem_fragmented_moderate, sleep_continuity_high, low_awake_time, parasympathetic_dominant, hrv_stable, sleep_hr_low, dream_vivid, fragmented_rem, physical_recovery_allocation, stable_under_load, rem_reorganization_phase",wearable+operator_log
+2026-04-24,458,120,253,85,11,4,94,26.2,18.6,55.2,50,53,Calm,Optimal,High,"sleep_efficiency_high, deep_high, rem_adequate, sleep_continuity_high, low_awake_time, parasympathetic_dominant_with_load, hrv_suppressed, sleep_hr_slightly_elevated, physical_recovery_priority, repair_intact, integration_under_load, approaching_lock_in_threshold",wearable+operator_log
+2026-04-25,466,90,290,86,21,4,94,19.3,18.5,62.2,62,51,Calm,Optimal,High,"sleep_efficiency_high, deep_high, rem_slightly_suppressed, sleep_continuity_high, low_awake_time, parasympathetic_dominant_with_load, hrv_stable, sleep_hr_low, recovery_compression_phase, physical_repair_intact, system_stable_under_load",wearable+operator_log
+2026-04-26,427,126,283,18,135,4,72,29.5,4.2,66.3,59,53,Calm,Optimal,Low/Contextual,"environmental_disruption, travel_sleep, sailboat_sleep, low_sleep_efficiency, high_awake_time, rem_suppressed, deep_sleep_preserved, hrv_stable, spo2_normal, temp_normal, respiration_normal, core_recovery_preserved, non_baseline_condition",wearable+operator_log
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
