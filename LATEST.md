@@ -7,15 +7,15 @@ Public Archive Status Dashboard
 
 ---
 
-## System State — 2026-W17 (Active Observation)
+## System State — 2026-W18 (Active Observation)
 
-**Last Updated:** 2026-W17  
+**Last Updated:** 2026-W18  
 **Repository State:** Active longitudinal observation  
 **Archive Mode:** Public, governed, versioned  
 
-Week 16 closed following a high-density training block and a non-standard environmental disruption window.
+Week 17 closed under restored baseline conditions following prior environmental disruption.
 
-System behavior remained stable under repeated exposure and did not regress under disrupted conditions (sleep, food, environment, logistics).
+System behavior remained stable under repeated exposure, with increased repeatability across load integration and no regression observed.
 
 No protocol changes are recorded entering the current observation window.
 
@@ -66,8 +66,8 @@ Primary artifacts belong in `/snapshots`.
 | Interpretation Mode | Strictly retrospective, artifact-bound |
 | Phase Context | Phase 2 — Load Integration |
 | Training Structure | Stable, repeatable exposure architecture |
-| Recovery Signals | Stable; resilient under non-standard conditions |
-| Sleep Integrity | Structurally stable; environment-dependent variability observed |
+| Recovery Signals | Stable; repeatable under controlled conditions |
+| Sleep Integrity | Structurally stable; minor variability observed |
 | Bodyweight Band | ~222–224 lb |
 | Biomarker Coverage | February 2026 multi-domain snapshot integrated |
 | Prediction Layer | Active — model error tracking and closure logic |
@@ -99,7 +99,7 @@ The archive is documenting:
 - repeated training exposure under stable structure  
 - preserved aerobic base during load integration  
 - stable recovery under repeated exposure  
-- observed stability under environmental disruption  
+- increasing repeatability of execution  
 - consolidation over escalation  
 - unchanged architecture across observation windows  
 
@@ -112,10 +112,10 @@ No forward performance claims are made.
 
 Active constraints remain present but non-disruptive:
 
-- sleep duration variability across environments  
-- autonomic sensitivity under compounded stress conditions  
+- sleep variability within normal range  
+- autonomic sensitivity under repeated exposure  
 - interpretation risk during visible adaptation  
-- edge-condition behavior not yet treated as invariant  
+- environmental factors (air quality) affecting flow onset without degrading output  
 
 No current constraint requires intervention.
 
@@ -128,11 +128,11 @@ No current constraint requires intervention.
 - performance capacity stable under repeated exposure  
 - movement efficiency improving under identical loading  
 - exposure density tolerated without confirmed structural cost  
-- stability preserved under non-standard environmental conditions  
+- stability preserved under both controlled and previously disrupted conditions  
 
 Observed patterns now include:
 - **consistent recovery alignment under controlled conditions**  
-- **non-regression under disrupted conditions**
+- **increasing repeatability of load integration execution**
 
 ---
 
@@ -195,13 +195,6 @@ raw artifacts
 - prediction evaluation methodology refined  
 - `sleep_longitudinal_v1.csv` refined as the canonical longitudinal sleep dataset  
 
-These additions extend the archive into:
-
-- biological aging  
-- system-level health scoring  
-- cross-domain physiological tracking  
-- prediction calibration  
-
 ---
 
 ## Public Orientation
@@ -239,12 +232,12 @@ Evaluation is based on:
 
 ## Update Flow
 
-- ongoing observation capture for current active week (**2026-W17**)  
+- ongoing observation capture for current active week (**2026-W18**)  
 - snapshot ingestion as events occur  
 - continued model error closure and refinement  
 
 ---
 
 **System State:** Stable  
-**Trajectory Posture:** Consolidation with observed robustness  
+**Trajectory Posture:** Consolidation with increasing repeatability  
 **Operational Mode:** Execute → observe → close retrospectively
