@@ -27,20 +27,14 @@ Biological interpretation belongs in `/reports`.
 
 ### Added
 
-- Weekly report for 2026-W16 finalized to document the completed observation window under high-density execution and non-standard environmental disruption.
-- Weekly report for 2026-W17 initialized to maintain forward archive continuity under the active observation window model.
+- Weekly report for 2026-W17 finalized to document the completed observation window under restored baseline conditions and stabilized load integration.
 
-- Added missing sleep dataset entry for 2026-03-22 using direct wearable-derived values.
+- Weekly report for 2026-W18 initialized to maintain forward archive continuity under the active observation window model.
 
-- Updated sleep dataset to include current observation-window entries:
-  - appended rows using verified sheet-based values
-  - corrected prior invalid append (removed inferred data)
-  - preserved schema integrity and historical continuity
-
-- Added sleep log entries for 2026-04-13 through 2026-04-19:
-  - exact crossover from source dataset
-  - aligned with the canonical longitudinal sleep schema
-  - no inferred or backfilled values included
+- Appended sleep dataset entries for 2026-W17 (2026-04-27 through 2026-05-03):
+  - direct crossover from source dataset  
+  - no inferred or reconstructed values included  
+  - schema consistency verified against longitudinal structure  
 
 - Introduced model error tracking layer for structured comparison of predictions vs observed outcomes.
   - Added `/data/model_error/` directory
@@ -85,13 +79,11 @@ Biological interpretation belongs in `/reports`.
 ### Changed
 
 - `LATEST.md` executive system dashboard updated to reflect:
-  - W16 closed observation window
-  - W17 active observation window
-  - removal of multi-week historical stacking
-  - observed stability under repeated exposure and environmental disruption
-  - consolidation-first posture
-  - alignment with strict current-state observational standard
-  - explicit week indexing clarification added
+  - W17 closed observation window
+  - W18 active observation window
+  - transition from disruption-resilience → repeatability under control
+  - alignment with current consolidation-phase signal
+  - explicit week indexing clarification retained
 
 - `CHANGELOG.md` restructured:
   - converted to active rolling window model
@@ -195,6 +187,6 @@ Biological interpretation belongs in `/reports`.
 
 - Saturday audit pass completed
 - Sunday weekly closeout completed
-- W16 formally closed
-- W17 initialized as active observation window
+- W17 formally closed
+- W18 initialized as active observation window
 - Repository considered structurally consistent for external read-through
