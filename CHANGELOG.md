@@ -84,6 +84,13 @@ Biological interpretation belongs in `/reports`.
   - transition from disruption-resilience → repeatability under control
   - alignment with current consolidation-phase signal
   - explicit week indexing clarification retained
+  - added Prediction Layer Update reflecting closure of model error records 035 (FAIL) and 036 (PASS)
+
+- `data/model_error/model_error_gap_v1.csv` updated:
+  - closed 035 (bodyweight range) as FAIL using first out-of-range violation (224.6 lb)
+  - classified failure conditions into input-driven deviation and stable-input biological variance
+  - closed 036 (pull-up repeatability) as PASS across all prescribed sessions (S1–S5) without structural breakdown
+  - no schema changes; evaluation structure preserved
 
 - `CHANGELOG.md` restructured:
   - converted to active rolling window model
