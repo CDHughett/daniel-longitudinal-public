@@ -54,6 +54,7 @@ Each type is evaluated differently.
 Point predictions specify a single expected value.
 
 ### Example
+
 - HRV = 75
 - recovery_rate = 48
 - VO2 = 49.5
@@ -64,8 +65,8 @@ When observed data are available:
 
 - `error_absolute = abs(prediction_value - actual_value)`
 - `error_direction =`
-  - `under` if actual exceeds predicted value
-  - `over` if actual falls below predicted value
+  - `over` if actual exceeds predicted value
+  - `under` if actual falls below predicted value
   - `none` if exact match
 
 ### Error Percent
@@ -83,6 +84,7 @@ Express as a percentage when appropriate.
 Range predictions specify an expected interval.
 
 ### Example
+
 - sleep = 400–460 minutes
 - weight = 220–224
 
@@ -103,6 +105,7 @@ Range predictions should preserve the actual observed value used for closure.
 State predictions describe whether a stated condition held across the defined observation window.
 
 ### Example
+
 - recovery compatibility preserved
 - GI instability emerges
 - training continuity maintained
@@ -111,6 +114,8 @@ State predictions describe whether a stated condition held across the defined ob
 
 - condition holds → `actual_value = 1`, `error_absolute = 0`, `error_direction = none`, `error_pct = 0%`
 - condition fails → `actual_value = 0`, `error_absolute = 1`, `error_direction = under`, `error_pct = 100%`
+
+For state predictions, `under` indicates that the predicted condition did not materialize.
 
 If the predicted state is explicitly negative rather than positive, the closure note should make that logic clear.
 
@@ -121,6 +126,7 @@ If the predicted state is explicitly negative rather than positive, the closure 
 Trajectory predictions describe whether a stated directional change materially occurred across a defined period.
 
 ### Example
+
 - movement toward lock-in
 - stabilization across 3–10 days
 - improved baseline clarity across a withdrawal window
