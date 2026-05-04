@@ -136,6 +136,22 @@ Observed patterns now include:
 
 ---
 
+## Prediction Layer Update
+
+Recent model error closures:
+
+- **035 (bodyweight range)** closed as **FAIL** using first out-of-range violation under mixed conditions  
+- **036 (pull-up repeatability)** closed as **PASS** across all prescribed sessions without structural breakdown  
+
+These closures reinforce current system characteristics:
+
+- strength output remains **repeatable under fixed inputs**  
+- bodyweight behavior exhibits **bounded variability under stable conditions**  
+
+No structural changes to prediction methodology.
+
+---
+
 ## Active Training Structure
 
 ### B1 — Aerobic Base
