@@ -92,6 +92,12 @@ Biological interpretation belongs in `/reports`.
   - closed 036 (pull-up repeatability) as PASS across all prescribed sessions (S1–S5) without structural breakdown
   - no schema changes; evaluation structure preserved
 
+- `methodology/prediction_evaluation.md` updated:
+  - aligned range prediction `error_direction` with dataset convention
+  - values above upper bound marked as `over`
+  - values below lower bound marked as `under`
+  - no changes to schema or existing records
+
 - `CHANGELOG.md` restructured:
   - converted to active rolling window model
   - moved historical entries to `docs/archive/CHANGELOG_ARCHIVE.md`
