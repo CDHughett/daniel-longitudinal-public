@@ -93,9 +93,10 @@ Biological interpretation belongs in `/reports`.
   - no schema changes; evaluation structure preserved
 
 - `methodology/prediction_evaluation.md` updated:
-  - aligned range prediction `error_direction` with dataset convention
-  - values above upper bound marked as `over`
-  - values below lower bound marked as `under`
+  - aligned point and range prediction `error_direction` with dataset convention
+  - values above prediction or upper bound marked as `over`
+  - values below prediction or lower bound marked as `under`
+  - clarified state prediction handling where `under` indicates the predicted condition did not materialize
   - no changes to schema or existing records
 
 - `CHANGELOG.md` restructured:
