@@ -91,8 +91,8 @@ Range predictions specify an expected interval.
 If the actual value falls:
 
 - within range → `error_absolute = 0`, `error_direction = none`, `error_pct = 0%`
-- above upper bound → `error_absolute = actual - upper_bound`, `error_direction = under`
-- below lower bound → `error_absolute = lower_bound - actual`, `error_direction = over`
+- above upper bound → `error_absolute = actual - upper_bound`, `error_direction = over`
+- below lower bound → `error_absolute = lower_bound - actual`, `error_direction = under`
 
 Range predictions should preserve the actual observed value used for closure.
 
