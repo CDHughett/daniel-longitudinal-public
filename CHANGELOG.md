@@ -59,7 +59,7 @@ Biological interpretation belongs in `/reports`.
 
 - Introduced `epigenetic_longitudinal.csv` for biological aging time-series tracking.
 
-- Added `SHA256 checksums.txt` files across snapshot directories to establish binary artifact verification and improve auditability.
+- Added `checksums.txt` files across snapshot directories to establish SHA256 binary artifact verification and improve auditability.
 
 - Added `VERIFICATION.md` guide for external checksum validation of snapshot artifacts.
 
@@ -73,6 +73,13 @@ Biological interpretation belongs in `/reports`.
   - added `docs/WEEK_INDEXING.md`
   - clarified reporting week offset relative to calendar weeks
   - linked indexing convention from `LATEST.md` and `INDEX.md`
+
+- Added `docs/audits/2026-05-06-wednesday-audit.md` documenting:
+  - repository coherence review
+  - dataset maintenance targets
+  - verification continuity
+  - model-error layer assessment
+  - structural stability observations during active operation
 
 ---
 
@@ -143,6 +150,12 @@ Biological interpretation belongs in `/reports`.
 
 - Corrected repository-wide path inconsistencies and reference mismatches.
 
+- Trimmed trailing blank rows from:
+  - `sleep_longitudinal_v1.csv`
+  - `model_error_gap_v1.csv`
+  - `bloodwork_longitudinal.csv`
+  - `epigenetic_longitudinal.csv`
+
 ---
 
 ### Changed — Structural Alignment
@@ -199,6 +212,7 @@ Biological interpretation belongs in `/reports`.
 
 ## Audit Status
 
+- Wednesday audit pass completed
 - Saturday audit pass completed
 - Sunday weekly closeout completed
 - W17 formally closed
