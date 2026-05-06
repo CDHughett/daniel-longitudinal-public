@@ -1,16 +1,13 @@
 date,domain,biomarker,value,unit,status,source,notes
-
 2025-10-29,glycemic,glucose,80,mg/dL,normal,Lab,"fasting glucose"
 2025-10-29,renal,urea_nitrogen,14,mg/dL,normal,Lab,"BUN"
 2025-10-29,renal,creatinine,1.2,mg/dL,upper_normal,Lab,"upper end of range"
 2025-10-29,renal,egfr,78,mL/min,normal,Lab,"CKD-EPI 2021"
-
 2025-10-29,electrolytes,sodium,139,mmol/L,normal,Lab,""
 2025-10-29,electrolytes,potassium,4.9,mmol/L,normal,Lab,"high-normal"
 2025-10-29,electrolytes,chloride,103,mmol/L,normal,Lab,""
 2025-10-29,electrolytes,co2,24,mmol/L,normal,Lab,""
 2025-10-29,electrolytes,anion_gap,12,mmol/L,normal,Lab,""
-
 2025-10-29,metabolic,calcium,9.4,mg/dL,normal,Lab,""
 2025-10-29,metabolic,total_protein,7.9,g/dL,normal,Lab,""
 2025-10-29,metabolic,albumin,4.8,g/dL,normal,Lab,""
@@ -18,12 +15,10 @@ date,domain,biomarker,value,unit,status,source,notes
 2025-10-29,liver,alkaline_phosphatase,79,U/L,normal,Lab,""
 2025-10-29,liver,ast,33,U/L,normal,Lab,""
 2025-10-29,liver,alt,26,U/L,normal,Lab,""
-
 2025-10-29,lipids,total_cholesterol,155,mg/dL,normal,Lab,""
 2025-10-29,lipids,triglycerides,56,mg/dL,optimal,Lab,""
 2025-10-29,lipids,hdl_c,47,mg/dL,normal,Lab,""
 2025-10-29,lipids,ldl_c,97,mg/dL,optimal,Lab,""
-
 2025-10-29,cbc,wbc,5.45,k/cmm,normal,Lab,""
 2025-10-29,cbc,rbc,5.22,M/cmm,normal,Lab,""
 2025-10-29,cbc,hemoglobin,16.0,g/dL,normal,Lab,""
@@ -35,24 +30,20 @@ date,domain,biomarker,value,unit,status,source,notes
 2025-10-29,cbc,rdw_sd,44.9,fL,normal,Lab,""
 2025-10-29,cbc,rdw,13.3,%,normal,Lab,""
 2025-10-29,cbc,mpv,10.9,um3,high,Lab,"slightly elevated"
-
 2025-10-29,cbc,neutrophils_abs,3.15,k/cmm,normal,Lab,""
 2025-10-29,cbc,lymphocytes_abs,1.40,k/cmm,normal,Lab,""
 2025-10-29,cbc,monocytes_abs,0.45,k/cmm,normal,Lab,""
 2025-10-29,cbc,eosinophils_abs,0.39,k/cmm,high,Lab,"elevated"
 2025-10-29,cbc,basophils_abs,0.05,k/cmm,normal,Lab,""
 2025-10-29,cbc,immature_granulocytes_abs,0.01,k/cmm,normal,Lab,""
-
 2025-10-29,cbc,neutrophils_pct,57.7,%,normal,Lab,""
 2025-10-29,cbc,lymphocytes_pct,25.7,%,normal,Lab,""
 2025-10-29,cbc,monocytes_pct,8.3,%,high,Lab,""
 2025-10-29,cbc,eosinophils_pct,7.2,%,high,Lab,""
 2025-10-29,cbc,basophils_pct,0.9,%,normal,Lab,""
 2025-10-29,cbc,immature_granulocytes_pct,0.2,%,normal,Lab,""
-
 2025-10-29,cbc,nrbc,0.0,k/cmm,normal,Lab,""
 2025-10-29,cbc,nucleated_rbc_per_100wbc,0.0,ratio,normal,Lab,""
-
 2026-02-10,lipids,ldl_c,97,percentile,high,TruHealth,"atherogenic signal"
 2026-02-10,lipids,apob,48,percentile,normal,TruHealth,"particle count proxy"
 2026-02-10,lipids,hdl_c,70,percentile,normal,TruHealth,"protective lipid"
@@ -60,65 +51,51 @@ date,domain,biomarker,value,unit,status,source,notes
 2026-02-10,lipids,remnant_cholesterol,14,percentile,optimal,TruHealth,"low remnant load"
 2026-02-10,lipids,apoa1,80,percentile,normal,TruHealth,"HDL-related apolipoprotein"
 2026-02-10,lipids,pcsk9,20,percentile,normal,TruHealth,"LDL receptor regulation"
-
 2026-02-10,vascular,sdma_adma_ratio,94,percentile,high,TruHealth,"nitric oxide / endothelial function signal"
 2026-02-10,vascular,phenylacetylglutamine,90,percentile,high,TruHealth,"microbiome / vascular interaction"
 2026-02-10,vascular,vanillactic_acid,65,percentile,normal,TruHealth,"catecholamine metabolism"
-
 2026-02-10,glycemic,hba1c,18,percentile,optimal,TruHealth,"long-term glucose control"
 2026-02-10,glycemic,glucose,33,percentile,normal,TruHealth,"fasting glucose proxy"
 2026-02-10,glycemic,leptin,94,percentile,high,TruHealth,"satiety / energy signaling"
 2026-02-10,glycemic,igf_1,20,percentile,normal,TruHealth,"growth signaling"
 2026-02-10,glycemic,adiponectin,85,percentile,normal,TruHealth,"insulin sensitivity marker"
-
 2026-02-10,inflammation,crp,35,percentile,normal,TruHealth,"systemic inflammation"
 2026-02-10,inflammation,il_6,56,percentile,normal,TruHealth,"cytokine signal"
 2026-02-10,inflammation,serum_amyloid_a1,27,percentile,normal,TruHealth,"acute-phase protein"
 2026-02-10,inflammation,glycoprotein_acetyls,34,percentile,normal,TruHealth,"chronic inflammation marker"
 2026-02-10,inflammation,methionine_sulfone,24,percentile,normal,TruHealth,"oxidative stress marker"
-
 2026-02-10,immune,white_blood_cell_count,58,percentile,normal,TruHealth,"immune baseline"
 2026-02-10,immune,neutrophil_count,42,percentile,normal,TruHealth,"innate immunity"
 2026-02-10,immune,lymphocyte_count,72,percentile,normal,TruHealth,"adaptive immunity"
 2026-02-10,immune,nlr,30,percentile,normal,TruHealth,"neutrophil-lymphocyte ratio"
 2026-02-10,immune,sii,28,percentile,normal,TruHealth,"systemic immune index"
 2026-02-10,immune,cd4_cd8_ratio,35,percentile,normal,TruHealth,"immune aging proxy"
-
 2026-02-10,renal,cystatin_c,81,percentile,normal,TruHealth,"kidney filtration marker"
 2026-02-10,renal,urate,29,percentile,normal,TruHealth,"uric acid metabolism"
-
 2026-02-10,metabolic,palmitoylcarnitine,67,percentile,normal,TruHealth,"fat oxidation marker"
 2026-02-10,metabolic,erythritol,43,percentile,normal,TruHealth,"metabolic processing"
 2026-02-10,metabolic,homocitrulline,70,percentile,normal,TruHealth,"protein metabolism"
-
 2026-02-10,neuro,neurogranin,91,percentile,high,TruHealth,"memory-related protein"
 2026-02-10,neuro,quinolinate,29,percentile,normal,TruHealth,"neuroinflammation marker"
 2026-02-10,neuro,dopamine_3_o_sulfate,98,percentile,high,TruHealth,"dopamine turnover"
-
 2026-02-10,stress,kynurenine,71,percentile,normal,TruHealth,"stress pathway"
 2026-02-10,stress,vanilmandelic_acid_vma,84,percentile,high,TruHealth,"adrenal output"
 2026-02-10,stress,dhea_sulfate,23,percentile,normal,TruHealth,"hormonal resilience"
-
 2026-02-10,toxins,pfos,99,percentile,high_warning,TruHealth,"PFAS exposure"
 2026-02-10,toxins,pfoa,78,percentile,normal,TruHealth,"PFAS exposure"
 2026-02-10,toxins,hpma,52,percentile,normal,TruHealth,"pollution marker"
 2026-02-10,toxins,hydroxyfluorene_sulfate,94,percentile,high,TruHealth,"PAH exposure"
 2026-02-10,toxins,glyphosate,71,percentile,normal,TruHealth,"pesticide exposure"
 2026-02-10,toxins,bone_lead_predictor,64,percentile,normal,TruHealth,"lead exposure proxy"
-
 2026-02-10,mitochondrial,drp1,90,percentile,normal,TruHealth,"mitochondrial dynamics"
 2026-02-10,mitochondrial,atp5b,58,percentile,normal,TruHealth,"ATP production"
 2026-02-10,mitochondrial,g6pd,73,percentile,normal,TruHealth,"redox balance"
-
 2026-02-10,oxidative,myeloperoxidase_mpo,69,percentile,normal,TruHealth,"oxidative enzyme"
 2026-02-10,oxidative,dimethyllysine,97,percentile,high,TruHealth,"protein oxidation"
 2026-02-10,oxidative,hsp90_alpha,36,percentile,normal,TruHealth,"cellular stress"
-
 2026-02-10,nad_metabolism,nicotinamide_riboside,85,percentile,normal,TruHealth,"NAD precursor"
 2026-02-10,nad_metabolism,nicotinamide,39,percentile,normal,TruHealth,"NAD pool"
 2026-02-10,nad_metabolism,2py,32,percentile,normal,TruHealth,"NAD turnover"
-
 2026-02-10,ketones,beta_hydroxybutyrate_bhba,75,percentile,normal,TruHealth,"ketone availability"
-
 2026-02-10,supplement_signals,alpha_ketoglutarate,8,percentile,low,TruHealth,"low supplementation signal"
 2026-02-10,supplement_signals,spermidine,51,percentile,normal,TruHealth,"autophagy-related signal"
