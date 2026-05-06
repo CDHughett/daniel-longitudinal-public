@@ -83,35 +83,3 @@ date,total_sleep_min,deep_sleep_min,light_sleep_min,rem_sleep_min,awake_min,awak
 2026-05-01,444,95,319,30,35,4,93,21.4,6.8,71.8,57,55,Calm,Aligned,High,"stable_sleep, high_efficiency, deep_sleep_preserved, rem_suppressed, autonomic_load_present, elevated_sleep_hr, hrv_slightly_suppressed, gi_disturbance_pre_sleep, late_input_effect, recovery_partially_constrained, vivid_dreaming_late_cycle, system_coherence_preserved",wearable+operator_log
 2026-05-02,482,112,295,75,29,4,94,23.2,15.6,61.2,57,58,Calm,Clear / Non-agreeable,High,"stable_sleep, high_efficiency, deep_sleep_preserved, rem_slightly_suppressed, elevated_sleep_hr, hrv_suppressed, sympathetic_carryover, cognitive_boundary_shift, vivid_dreaming, late_cycle_rem, system_coherence_preserved",wearable+operator_log
 2026-05-03,439,115,243,81,72,3,86,26.2,18.5,55.4,74,53,Calm,Clear / Non-agreeable,High,"stable_sleep, high_efficiency, deep_sleep_preserved, rem_slightly_suppressed, parasympathetic_dominant, recovery_intact, vivid_dreaming, emotional_processing, autonomic_shift_present, system_stability",wearable+operator_log
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
