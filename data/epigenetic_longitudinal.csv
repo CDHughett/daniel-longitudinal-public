@@ -4,7 +4,6 @@ date,domain,biomarker,value,unit,status,source,notes
 2026-02-10,aging,omicm_age_delta,-1.1,years,normal,TruAge,"OMICm age below chronological age"
 2026-02-10,aging,dunedin_pace,0.88,ratio,normal,TruAge,"slower than 1.0 baseline"
 2026-02-10,aging,symphony_age,51.2,years,high,Advanced_TruAge,"composite organ-system age"
-
 2026-02-10,organ_age,blood_age,45.0,years,high,Advanced_TruAge,""
 2026-02-10,organ_age,brain_age,43.3,years,high,Advanced_TruAge,""
 2026-02-10,organ_age,inflammation_age,47.7,years,high,Advanced_TruAge,""
@@ -16,12 +15,10 @@ date,domain,biomarker,value,unit,status,source,notes
 2026-02-10,organ_age,metabolic_age,42.9,years,high,Advanced_TruAge,""
 2026-02-10,organ_age,lung_age,37.1,years,high,Advanced_TruAge,"closest to chronological age"
 2026-02-10,organ_age,musculoskeletal_age,42.8,years,high,Advanced_TruAge,""
-
 2026-02-10,truhealth_domain,vitamins_score,79,percentile,normal,TruHealth,"nutrition domain"
 2026-02-10,truhealth_domain,amino_acids_score,58,percentile,normal,TruHealth,"nutrition domain"
 2026-02-10,truhealth_domain,antioxidants_score,68,percentile,normal,TruHealth,"nutrition domain"
 2026-02-10,truhealth_domain,fats_membranes_score,68,percentile,normal,TruHealth,"nutrition domain"
-
 2026-02-10,truhealth_domain,lipid_peroxidation_score,69,percentile,normal,TruHealth,"general health domain"
 2026-02-10,truhealth_domain,serum_lipids_score,63,percentile,normal,TruHealth,"general health domain"
 2026-02-10,truhealth_domain,blood_pressure_score,29,percentile,suboptimal,TruHealth,"general health domain"
@@ -37,7 +34,6 @@ date,domain,biomarker,value,unit,status,source,notes
 2026-02-10,truhealth_domain,nad_metabolism_score,59,percentile,normal,TruHealth,"general health domain"
 2026-02-10,truhealth_domain,ketones_score,49,percentile,normal,TruHealth,"general health domain"
 2026-02-10,truhealth_domain,supplements_score,34,percentile,suboptimal,TruHealth,"general health domain"
-
 2026-02-10,truhealth_marker,ldl_c,97,percentile,high,TruHealth,"serum lipids section"
 2026-02-10,truhealth_marker,apob,48,percentile,normal,TruHealth,"serum lipids section"
 2026-02-10,truhealth_marker,ldl_particle_size,78,percentile,normal,TruHealth,"serum lipids section"
@@ -51,11 +47,9 @@ date,domain,biomarker,value,unit,status,source,notes
 2026-02-10,truhealth_marker,apoc_ii,53,percentile,normal,TruHealth,"serum lipids section"
 2026-02-10,truhealth_marker,apoe,12,percentile,normal,TruHealth,"serum lipids section"
 2026-02-10,truhealth_marker,pcsk9,20,percentile,normal,TruHealth,"serum lipids section"
-
 2026-02-10,truhealth_marker,phenylacetylglutamine,90,percentile,high,TruHealth,"blood pressure / dysbiosis signal"
 2026-02-10,truhealth_marker,dimethylarginine_sdma_adma,94,percentile,high,TruHealth,"blood pressure / vascular tone signal"
 2026-02-10,truhealth_marker,vanillactic_acid,65,percentile,normal,TruHealth,"blood pressure section"
-
 2026-02-10,truhealth_marker,hba1c,18,percentile,normal,TruHealth,"metabolic markers"
 2026-02-10,truhealth_marker,glucose,33,percentile,normal,TruHealth,"metabolic markers"
 2026-02-10,truhealth_marker,palmitoylcarnitine,67,percentile,normal,TruHealth,"fat burning marker"
@@ -65,7 +59,6 @@ date,domain,biomarker,value,unit,status,source,notes
 2026-02-10,truhealth_marker,cystatin_c,81,percentile,normal,TruHealth,"metabolic markers"
 2026-02-10,truhealth_marker,erythritol,43,percentile,normal,TruHealth,"metabolic markers"
 2026-02-10,truhealth_marker,homocitrulline,70,percentile,normal,TruHealth,"metabolic markers"
-
 2026-02-10,truhealth_marker,white_blood_cell_count,58,percentile,normal,TruHealth,"immune markers"
 2026-02-10,truhealth_marker,neutrophil_count,42,percentile,normal,TruHealth,"immune markers"
 2026-02-10,truhealth_marker,lymphocyte_count,72,percentile,normal,TruHealth,"immune markers"
@@ -73,11 +66,9 @@ date,domain,biomarker,value,unit,status,source,notes
 2026-02-10,truhealth_marker,nlr,30,percentile,normal,TruHealth,"neutrophil-to-lymphocyte ratio"
 2026-02-10,truhealth_marker,sii,28,percentile,normal,TruHealth,"systemic immune-inflammation index"
 2026-02-10,truhealth_marker,cd4_cd8_ratio,35,percentile,normal,TruHealth,"immune markers"
-
 2026-02-10,truhealth_marker,neurogranin,91,percentile,high,TruHealth,"memory health protein"
 2026-02-10,truhealth_marker,quinolinate,29,percentile,normal,TruHealth,"brain inflammation marker"
 2026-02-10,truhealth_marker,dopamine_3_o_sulfate,98,percentile,high,TruHealth,"dopamine metabolites"
-
 2026-02-10,truhealth_marker,tgf_beta,42,percentile,normal,TruHealth,"cell repair marker"
 2026-02-10,truhealth_marker,progranulin,23,percentile,normal,TruHealth,"brain anti-inflammatory protein"
 2026-02-10,truhealth_marker,vgf,56,percentile,normal,TruHealth,"neurosecretory protein"
@@ -85,29 +76,24 @@ date,domain,biomarker,value,unit,status,source,notes
 2026-02-10,truhealth_marker,methionine_sulfone,24,percentile,normal,TruHealth,"oxidative stress marker"
 2026-02-10,truhealth_marker,serum_amyloid_a1,27,percentile,normal,TruHealth,"inflammation markers"
 2026-02-10,truhealth_marker,glycoprotein_acetyls,34,percentile,normal,TruHealth,"inflammation markers"
-
 2026-02-10,truhealth_marker,kynurenine,71,percentile,normal,TruHealth,"chronic stress marker"
 2026-02-10,truhealth_marker,vanilmandelic_acid_vma,84,percentile,high,TruHealth,"adrenal activity marker"
 2026-02-10,truhealth_marker,dhea_sulfate,23,percentile,normal,TruHealth,"long-term adrenal androgen availability"
-
 2026-02-10,truhealth_marker,pfos,99,percentile,high_warning,TruHealth,"PFAS forever-chemical signal"
 2026-02-10,truhealth_marker,pfoa,78,percentile,normal,TruHealth,"PFAS forever-chemical signal"
 2026-02-10,truhealth_marker,hpma,52,percentile,normal,TruHealth,"acrolein pollution / smoking marker"
 2026-02-10,truhealth_marker,hydroxyfluorene_sulfate,94,percentile,high,TruHealth,"PAH / air pollution exposure marker"
 2026-02-10,truhealth_marker,glyphosate,71,percentile,normal,TruHealth,"pesticide marker"
 2026-02-10,truhealth_marker,bone_lead_predictor,64,percentile,normal,TruHealth,"lead exposure marker"
-
 2026-02-10,truhealth_marker,urate,29,percentile,normal,TruHealth,"uric acid pathway"
 2026-02-10,truhealth_marker,xanthine,11,percentile,normal,TruHealth,"uric acid pathway"
 2026-02-10,truhealth_marker,allantoin,37,percentile,normal,TruHealth,"oxidative / uric acid pathway"
-
 2026-02-10,truhealth_marker,drp1,90,percentile,normal,TruHealth,"energy balance marker"
 2026-02-10,truhealth_marker,atp5b,58,percentile,normal,TruHealth,"ATP synthase subunit beta"
 2026-02-10,truhealth_marker,myeloperoxidase_mpo,69,percentile,normal,TruHealth,"oxidative defense marker"
 2026-02-10,truhealth_marker,dimethyllysine,97,percentile,high,TruHealth,"protein damage / oxidative defense"
 2026-02-10,truhealth_marker,hsp90_alpha,36,percentile,normal,TruHealth,"protein folding stress"
 2026-02-10,truhealth_marker,g6pd,73,percentile,normal,TruHealth,"oxidative defense marker"
-
 2026-02-10,truhealth_marker,n1_methyl_2_pyridone_5_carboxamide_2py,32,percentile,normal,TruHealth,"NAD recycling byproduct marker"
 2026-02-10,truhealth_marker,nicotinamide_riboside,85,percentile,normal,TruHealth,"NAD precursor signal"
 2026-02-10,truhealth_marker,nicotinamide,39,percentile,normal,TruHealth,"NAD precursor signal"
