@@ -23,39 +23,3 @@ record_id,date,domain,model_version,prediction_value,actual_value,error_absolute
 034,2026-03-30,vo2_max,gpt5.4-subject-calibrated,"VO2=49.5",,,,,subject_calibrated,post,primary,point,open,"Projected VO2 max (~May 2026) based on sustained B1 aerobic base, body composition, and recovery trends. Estimate reflects moderate confidence due to proxy-based inference without direct HR or lactate data."
 035,2026-04-29,bodyweight,gpt5.4-subject-calibrated,222.0-224.5,224.6,0.1,over,0.04%,subject_calibrated,pre,primary,range,closed,"Prediction failed across evaluation window. Two distinct failure classes observed: (A) Input-driven deviation — controlled variation in meal timing/composition produced transient weight elevation via GI retention, water retention, and delayed metabolic clearance; (B) Stable-input variance — failure also occurred under fully controlled conditions with no protocol deviation, attributed to internal biological variability including glycogen-associated water shifts, recovery-related fluid retention, and autonomic fluid distribution effects. System integrity remained intact (sleep architecture preserved, no inflammatory or systemic disruption). Conclusion: failure represents boundary condition identification, not model breakdown. Confirms non-linear, cluster-based weight dynamics (retention to release) rather than strictly linear predictability."
 036,2026-04-29,pullup_repeatability,gpt5.4-subject-calibrated,4x4,4x4,0,none,0%,subject_calibrated,pre,primary,state,closed,"Prediction met across all 5 sessions with no grip failure, missed reps, or structural breakdown. Execution remained stable across all exposures and progressed into ambient-integrated output: positional control, tempo, and structure maintained under conversational and social load without reliance on sympathetic activation. No degradation observed under distributed fatigue or environmental constraint. Conclusion: pull-up repeatability confirmed as stable system output under fixed inputs; execution transitioned from effort-dependent to ambient-integrated performance."
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
