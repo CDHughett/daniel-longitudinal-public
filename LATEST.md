@@ -127,6 +127,11 @@ No current constraint requires intervention.
 - no additional downregulation events required  
 - performance capacity stable under repeated exposure  
 - movement efficiency improving under identical loading  
+
+Supplementary movement artifact documenting controlled-tempo pull-up execution under unchanged loading conditions:
+
+https://x.com/i/status/2052810691690807540
+
 - exposure density tolerated without confirmed structural cost  
 - stability preserved under both controlled and previously disrupted conditions  
 
