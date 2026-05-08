@@ -81,6 +81,8 @@ Biological interpretation belongs in `/reports`.
   - model-error layer assessment
   - structural stability observations during active operation
 
+- Added supplementary public movement artifact documenting controlled-tempo pull-up execution under unchanged loading conditions.
+
 ---
 
 ### Changed
@@ -92,6 +94,7 @@ Biological interpretation belongs in `/reports`.
   - alignment with current consolidation-phase signal
   - explicit week indexing clarification retained
   - added Prediction Layer Update reflecting closure of model error records 035 (FAIL) and 036 (PASS)
+  - added supplementary movement artifact documenting controlled-tempo pull-up execution under unchanged loading conditions
 
 - `data/model_error/model_error_gap_v1.csv` updated:
   - closed 035 (bodyweight range) as FAIL using first out-of-range violation (224.6 lb)
