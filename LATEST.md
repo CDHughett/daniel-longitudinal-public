@@ -46,11 +46,11 @@ It is not a weekly report, phase declaration, or performance summary.
 
 Its purpose is to orient readers to:
 
-- current operating status  
-- current phase context  
-- active training structure  
-- current constraints  
-- archive navigation  
+- current operating status
+- current phase context
+- active training structure
+- current constraints
+- archive navigation
 
 Detailed interpretation belongs in `/reports`.  
 Primary artifacts belong in `/snapshots`.
@@ -81,11 +81,11 @@ Primary artifacts belong in `/snapshots`.
 
 The system is operating within a load-integration window characterized by:
 
-- preserved aerobic base  
-- repeated mechanical loading  
-- recovery compatibility under sustained exposure  
-- demonstrated stability under both controlled and disrupted conditions  
-- consolidation-first interpretation  
+- preserved aerobic base
+- repeated mechanical loading
+- recovery compatibility under sustained exposure
+- demonstrated stability under both controlled and disrupted conditions
+- consolidation-first interpretation
 
 Phase language is descriptive, not promotional.  
 Advancement requires sustained, artifact-confirmed stability.
@@ -96,12 +96,12 @@ Advancement requires sustained, artifact-confirmed stability.
 
 The archive is documenting:
 
-- repeated training exposure under stable structure  
-- preserved aerobic base during load integration  
-- stable recovery under repeated exposure  
-- increasing repeatability of execution  
-- consolidation over escalation  
-- unchanged architecture across observation windows  
+- repeated training exposure under stable structure
+- preserved aerobic base during load integration
+- stable recovery under repeated exposure
+- increasing repeatability of execution
+- consolidation over escalation
+- unchanged architecture across observation windows
 
 No peaking behavior is assumed.  
 No forward performance claims are made.
@@ -112,10 +112,10 @@ No forward performance claims are made.
 
 Active constraints remain present but non-disruptive:
 
-- sleep variability within normal range  
-- autonomic sensitivity under repeated exposure  
-- interpretation risk during visible adaptation  
-- environmental factors (air quality) affecting flow onset without degrading output  
+- sleep variability within normal range
+- autonomic sensitivity under repeated exposure
+- interpretation risk during visible adaptation
+- environmental factors (air quality) affecting flow onset without degrading output
 
 No current constraint requires intervention.
 
@@ -123,20 +123,21 @@ No current constraint requires intervention.
 
 ## Performance Integrity
 
-- training continuity preserved across observation windows  
-- no additional downregulation events required  
-- performance capacity stable under repeated exposure  
-- movement efficiency improving under identical loading  
+- training continuity preserved across observation windows
+- no additional downregulation events required
+- performance capacity stable under repeated exposure
+- movement efficiency improving under identical loading
 
 Supplementary movement artifact documenting controlled-tempo pull-up execution under unchanged loading conditions:
 
 https://x.com/i/status/2052810691690807540
 
-- exposure density tolerated without confirmed structural cost  
-- stability preserved under both controlled and previously disrupted conditions  
+- exposure density tolerated without confirmed structural cost
+- stability preserved under both controlled and previously disrupted conditions
 
 Observed patterns now include:
-- **consistent recovery alignment under controlled conditions**  
+
+- **consistent recovery alignment under controlled conditions**
 - **increasing repeatability of load integration execution**
 
 ---
@@ -145,13 +146,13 @@ Observed patterns now include:
 
 Recent model error closures:
 
-- **035 (bodyweight range)** closed as **FAIL** using first out-of-range violation under mixed conditions  
-- **036 (pull-up repeatability)** closed as **PASS** across all prescribed sessions without structural breakdown  
+- **035 (bodyweight range)** closed as **FAIL** using first out-of-range violation under mixed conditions
+- **036 (pull-up repeatability)** closed as **PASS** across all prescribed sessions without structural breakdown
 
 These closures reinforce current system characteristics:
 
-- strength output remains **repeatable under fixed inputs**  
-- bodyweight behavior exhibits **bounded variability under stable conditions**  
+- strength output remains **repeatable under fixed inputs**
+- bodyweight behavior exhibits **bounded variability under stable conditions**
 
 No structural changes to prediction methodology.
 
@@ -160,15 +161,17 @@ No structural changes to prediction methodology.
 ## Active Training Structure
 
 ### B1 — Aerobic Base
-- incline treadmill walking  
-- nasal breathing preserved  
-- anchor role unchanged  
+
+- incline treadmill walking
+- nasal breathing preserved
+- anchor role unchanged
 
 ### Strength Integration
-- trap bar deadlift  
-- pull-ups  
-- dead hangs / bar exposure  
-- repeated exposure prioritized  
+
+- trap bar deadlift
+- pull-ups
+- dead hangs / bar exposure
+- repeated exposure prioritized
 
 Training posture:
 
@@ -181,10 +184,11 @@ Training posture:
 **Primary risk:** premature escalation during visible adaptation  
 
 **Mitigation:**
-- preserve structural consistency  
-- avoid unnecessary variation  
-- allow adaptation without forcing signal  
-- maintain recovery compatibility  
+
+- preserve structural consistency
+- avoid unnecessary variation
+- allow adaptation without forcing signal
+- maintain recovery compatibility
 
 Durability remains the priority.
 
@@ -207,14 +211,16 @@ raw artifacts
 
 ## Recent Structural Additions
 
-- February 2026 biomarker snapshot integrated (DEXA, BodPod, TruAge, TruHealth)  
-- `biomarker_snapshot.csv` added for monthly biomarker aggregation  
-- `epigenetic_longitudinal.csv` added for biological aging time-series  
-- `DATA_DICTIONARY.md` expanded  
-- `data/model_error/` layer introduced  
-- `model_error_gap_v1.csv` and `udi_tracker.csv` added  
-- prediction evaluation methodology refined  
-- `sleep_longitudinal_v1.csv` refined as the canonical longitudinal sleep dataset  
+- February 2026 biomarker snapshot integrated (DEXA, BodPod, TruAge, TruHealth)
+- `biomarker_snapshot.csv` added for monthly biomarker aggregation
+- `epigenetic_longitudinal.csv` added for biological aging time-series
+- `DATA_DICTIONARY.md` expanded
+- `data/model_error/` layer introduced
+- `model_error_gap_v1.csv` and `udi_tracker.csv` added
+- prediction evaluation methodology refined
+- `sleep_longitudinal_v1.csv` refined as the canonical longitudinal sleep dataset
+- `docs/audits/` updated with May 9 Saturday audit record documenting pre-snapshot structural stabilization
+- `PHASE_MAP.md` refined to reserve Phase 3 as a future structural category rather than a projected outcome
 
 ---
 
@@ -224,38 +230,38 @@ This repository documents process, not performance display.
 
 Evaluation is based on:
 
-- continuity  
-- durability  
-- traceability  
-- stability across time  
-- coherence between artifact and interpretation  
+- continuity
+- durability
+- traceability
+- stability across time
+- coherence between artifact and interpretation
 
 ---
 
 ## Navigation
 
-- **Current State:** [LATEST.md](LATEST.md)  
-- **Temporal Index:** [EPOCH_INDEX.md](EPOCH_INDEX.md)  
-- **Snapshot Log:** [SNAPSHOT_LOG.md](SNAPSHOT_LOG.md)  
-- **Index:** [INDEX.md](INDEX.md)  
-- **Start Here:** [docs/START_HERE.md](docs/START_HERE.md)  
-- **Why Public:** [WHY_PUBLIC.md](WHY_PUBLIC.md)  
-- **Governance:** [GOVERNANCE.md](GOVERNANCE.md)  
-- **Reports:** [/reports](reports)  
-- **Snapshots:** [/snapshots](snapshots)  
-- **Methodology:** [METHODOLOGY_AND_CONTROLS.md](METHODOLOGY_AND_CONTROLS.md)  
-- **Prediction Evaluation:** [/methodology/prediction_evaluation.md](methodology/prediction_evaluation.md)  
-- **Data Dictionary:** [DATA_DICTIONARY.md](DATA_DICTIONARY.md)  
-- **Measurement Sources:** [MEASUREMENT_SOURCES.md](MEASUREMENT_SOURCES.md)  
-- **Changelog:** [CHANGELOG.md](CHANGELOG.md)  
+- **Current State:** [LATEST.md](LATEST.md)
+- **Temporal Index:** [EPOCH_INDEX.md](EPOCH_INDEX.md)
+- **Snapshot Log:** [SNAPSHOT_LOG.md](SNAPSHOT_LOG.md)
+- **Index:** [INDEX.md](INDEX.md)
+- **Start Here:** [docs/START_HERE.md](docs/START_HERE.md)
+- **Why Public:** [WHY_PUBLIC.md](WHY_PUBLIC.md)
+- **Governance:** [GOVERNANCE.md](GOVERNANCE.md)
+- **Reports:** [/reports](reports)
+- **Snapshots:** [/snapshots](snapshots)
+- **Methodology:** [METHODOLOGY_AND_CONTROLS.md](METHODOLOGY_AND_CONTROLS.md)
+- **Prediction Evaluation:** [/methodology/prediction_evaluation.md](methodology/prediction_evaluation.md)
+- **Data Dictionary:** [DATA_DICTIONARY.md](DATA_DICTIONARY.md)
+- **Measurement Sources:** [MEASUREMENT_SOURCES.md](MEASUREMENT_SOURCES.md)
+- **Changelog:** [CHANGELOG.md](CHANGELOG.md)
 
 ---
 
 ## Update Flow
 
-- ongoing observation capture for current active week (**2026-W18**)  
-- snapshot ingestion as events occur  
-- continued model error closure and refinement  
+- ongoing observation capture for current active week (**2026-W18**)
+- snapshot ingestion as events occur
+- continued model error closure and refinement
 
 ---
 
