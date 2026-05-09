@@ -64,18 +64,20 @@ Phase 2 focuses on **building structural capacity without destabilizing recovery
 
 ---
 
-# Phase 3 — External Capability Demonstration (Projected)
+# Phase 3 — External Capability Demonstration (Reserved)
 
-Primary objective: translate internal system capacity into externally observable performance.
+Primary objective: translate internally stabilized capacity into externally observable outputs only if prior phase criteria are retrospectively satisfied.
 
-Characteristics:
+Potential characteristics:
 
 - public capability demonstrations
 - expanded output environments
 - external observation and measurement
 - continued artifact capture
 
-This phase represents the **interface between internal system development and public performance**.
+This phase is not active.
+
+It is preserved as a future structural category, not a prediction or declared outcome.
 
 ---
 
