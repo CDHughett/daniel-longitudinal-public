@@ -104,6 +104,8 @@ Biological interpretation belongs in `/reports`.
   - added Prediction Layer Update reflecting closure of model error records 035 (FAIL) and 036 (PASS)
   - added supplementary movement artifact documenting controlled-tempo pull-up execution under unchanged loading conditions
 
+- `LATEST.md` updated to include May 9 audit stabilization and reserved Phase 3 structural language in Recent Structural Additions.
+
 - `data/model_error/model_error_gap_v1.csv` updated:
   - closed 035 (bodyweight range) as FAIL using first out-of-range violation (224.6 lb)
   - classified failure conditions into input-driven deviation and stable-input biological variance
