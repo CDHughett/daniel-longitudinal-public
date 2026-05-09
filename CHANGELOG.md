@@ -14,10 +14,10 @@ Historical entries are preserved in:
 
 This changelog records:
 
-- repository artifacts and structural updates  
-- dataset modifications  
-- methodology changes  
-- archive integrity adjustments  
+- repository artifacts and structural updates
+- dataset modifications
+- methodology changes
+- archive integrity adjustments
 
 Biological interpretation belongs in `/reports`.
 
@@ -32,9 +32,9 @@ Biological interpretation belongs in `/reports`.
 - Weekly report for 2026-W18 initialized to maintain forward archive continuity under the active observation window model.
 
 - Appended sleep dataset entries for 2026-W17 (2026-04-27 through 2026-05-03):
-  - direct crossover from source dataset  
-  - no inferred or reconstructed values included  
-  - schema consistency verified against longitudinal structure  
+  - direct crossover from source dataset
+  - no inferred or reconstructed values included
+  - schema consistency verified against longitudinal structure
 
 - Introduced model error tracking layer for structured comparison of predictions vs observed outcomes.
   - Added `/data/model_error/` directory
@@ -50,10 +50,10 @@ Biological interpretation belongs in `/reports`.
   - no post-hoc adjustment or exemption permitted
 
 - Integrated February 2026 biomarker snapshot artifacts:
-  - DEXA scan  
-  - BodPod composition  
-  - TruAge and Advanced TruAge reports  
-  - TruHealth system report  
+  - DEXA scan
+  - BodPod composition
+  - TruAge and Advanced TruAge reports
+  - TruHealth system report
 
 - Introduced `biomarker_snapshot.csv` for monthly fused biomarker aggregation.
 
@@ -82,6 +82,14 @@ Biological interpretation belongs in `/reports`.
   - structural stability observations during active operation
 
 - Added supplementary public movement artifact documenting controlled-tempo pull-up execution under unchanged loading conditions.
+
+- Added `docs/audits/2026-05-09-saturday-audit.md` documenting:
+  - post-Wednesday structural review
+  - dataset hygiene confirmation
+  - checksum verification
+  - model-error separation
+  - weekly continuity
+  - pre-snapshot archive stabilization
 
 ---
 
@@ -159,6 +167,10 @@ Biological interpretation belongs in `/reports`.
   - `bloodwork_longitudinal.csv`
   - `epigenetic_longitudinal.csv`
 
+- Clarified `/docs/audits/README.md` to support selective audit records by type rather than Saturday-only audit inclusion.
+
+- Updated `PHASE_MAP.md` to describe Phase 3 as a reserved future structural category rather than a projected outcome, preserving retrospective phase-governance language.
+
 ---
 
 ### Changed — Structural Alignment
@@ -189,11 +201,11 @@ Biological interpretation belongs in `/reports`.
 - Repository language tightened to preserve a conservative, artifact-first tone.
 
 - Separation reinforced between:
-  - snapshot artifacts  
-  - reports  
-  - longitudinal datasets  
-  - model error layer  
-  - methodology layer  
+  - snapshot artifacts
+  - reports
+  - longitudinal datasets
+  - model error layer
+  - methodology layer
 
 - Archive posture clarified around disturbance handling.
 
@@ -221,3 +233,4 @@ Biological interpretation belongs in `/reports`.
 - W17 formally closed
 - W18 initialized as active observation window
 - Repository considered structurally consistent for external read-through
+- May 9 Saturday audit recorded as pre-snapshot stabilization checkpoint
