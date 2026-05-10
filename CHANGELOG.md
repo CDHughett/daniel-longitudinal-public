@@ -102,6 +102,8 @@ Biological interpretation belongs in `/reports`.
   - late-W18 autonomic strengthening under reduced Load Integration density
   - continued no-forward-claims posture ahead of May artifact ingestion
 
+- `reports/2026-W19.md` refined to remove repository/public-activity language and preserve weekly report scope around training, recovery, testing-window conditions, and documentation continuity.
+
 - `data/sleep_longitudinal_v1.csv` extended through 2026-05-10 to preserve weekly continuity across the W18 observation window.
 
 - `data/model_error/model_error_gap_v1.csv` updated:
