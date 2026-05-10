@@ -27,14 +27,14 @@ Biological interpretation belongs in `/reports`.
 
 ### Added
 
-- Weekly report for 2026-W17 finalized to document the completed observation window under restored baseline conditions and stabilized load integration.
+- Weekly report for 2026-W18 finalized to document the completed observation window under stable Phase 2C consolidation and testing-window preservation.
 
-- Weekly report for 2026-W18 initialized to maintain forward archive continuity under the active observation window model.
+- Weekly report for 2026-W19 initialized to maintain forward archive continuity during the May testing-window observation period.
 
-- Appended sleep dataset entries for 2026-W17 (2026-04-27 through 2026-05-03):
+- Appended sleep dataset entries for 2026-W18 (2026-05-04 through 2026-05-10):
   - direct crossover from source dataset
   - no inferred or reconstructed values included
-  - schema consistency verified against longitudinal structure
+  - schema consistency preserved against longitudinal sleep structure
 
 - Introduced model error tracking layer for structured comparison of predictions vs observed outcomes.
   - Added `/data/model_error/` directory
@@ -44,8 +44,8 @@ Biological interpretation belongs in `/reports`.
   - Added `methodology/prediction_evaluation.md` defining evaluation rules for point, range, and state predictions
 
 - Introduced first forward-locked, pre-registered predictions in model error layer:
-  - bodyweight stability prediction (5-day binary window)
-  - pull-up repeatability prediction (5-session binary window)
+  - bodyweight stability prediction
+  - pull-up repeatability prediction
   - marked with `calibration_state = pre`
   - no post-hoc adjustment or exemption permitted
 
@@ -96,26 +96,21 @@ Biological interpretation belongs in `/reports`.
 ### Changed
 
 - `LATEST.md` executive system dashboard updated to reflect:
-  - W17 closed observation window
-  - W18 active observation window
-  - transition from disruption-resilience → repeatability under control
-  - alignment with current consolidation-phase signal
-  - explicit week indexing clarification retained
-  - added Prediction Layer Update reflecting closure of model error records 035 (FAIL) and 036 (PASS)
-  - added supplementary movement artifact documenting controlled-tempo pull-up execution under unchanged loading conditions
+  - W18 closed observation window
+  - W19 active observation window
+  - transition from active load confirmation into testing-window preservation
+  - late-W18 autonomic strengthening under reduced Load Integration density
+  - continued no-forward-claims posture ahead of May artifact ingestion
 
-- `LATEST.md` updated to include May 9 audit stabilization and reserved Phase 3 structural language in Recent Structural Additions.
+- `data/sleep_longitudinal_v1.csv` extended through 2026-05-10 to preserve weekly continuity across the W18 observation window.
 
 - `data/model_error/model_error_gap_v1.csv` updated:
-  - closed 035 (bodyweight range) as FAIL using first out-of-range violation (224.6 lb)
-  - classified failure conditions into input-driven deviation and stable-input biological variance
-  - closed 036 (pull-up repeatability) as PASS across all prescribed sessions (S1–S5) without structural breakdown
+  - closed 035 as FAIL using first out-of-range violation
+  - closed 036 as PASS across all prescribed sessions without structural breakdown
   - no schema changes; evaluation structure preserved
 
 - `methodology/prediction_evaluation.md` updated:
   - aligned point and range prediction `error_direction` with dataset convention
-  - values above prediction or upper bound marked as `over`
-  - values below prediction or lower bound marked as `under`
   - clarified state prediction handling where `under` indicates the predicted condition did not materialize
   - no changes to schema or existing records
 
@@ -134,14 +129,14 @@ Biological interpretation belongs in `/reports`.
   - removed stale references to superseded sleep-file naming
   - preserved historical rows without reinterpretation
   - standardized schema for forward compatibility
-  - extended observations through the current window
+  - extended observations through 2026-W18
 
 - `udi_tracker.csv` updated to reflect mixed post-calibration closure blocks and to withhold UDI where mixed prediction types reduce comparability.
 
 - Model error layer documentation aligned with current methodology and open-prediction handling.
 
 - `data/model_error/README.md` updated to clarify `calibration_state` semantics:
-  - explicitly distinguishes `pre` (forward-locked) vs `post` (subject-calibrated)
+  - explicitly distinguishes `pre` from `post`
   - resolves ambiguity between post-calibration and post-outcome interpretation
   - improves external legibility of evaluation layer
 
@@ -223,7 +218,7 @@ Biological interpretation belongs in `/reports`.
 - UDI remains selectively applied where methodological comparability is sufficient.
 - Legacy trajectory prediction entries may remain open until a formal evaluation standard is defined.
 - Current architecture prioritizes clarity, separation of concerns, and auditability over premature abstraction.
-- Portions of repository development and commit activity were performed via a mobile-based workflow.
+- May testing artifacts are not yet integrated in this changelog window.
 
 ---
 
@@ -232,7 +227,7 @@ Biological interpretation belongs in `/reports`.
 - Wednesday audit pass completed
 - Saturday audit pass completed
 - Sunday weekly closeout completed
-- W17 formally closed
-- W18 initialized as active observation window
+- W18 formally closed
+- W19 initialized as active observation window
 - Repository considered structurally consistent for external read-through
 - May 9 Saturday audit recorded as pre-snapshot stabilization checkpoint
