@@ -7,17 +7,17 @@ Public Archive Status Dashboard
 
 ---
 
-## System State — 2026-W18 (Active Observation)
+## System State — 2026-W19 (Active Observation)
 
-**Last Updated:** 2026-W18  
+**Last Updated:** 2026-W19  
 **Repository State:** Active longitudinal observation  
 **Archive Mode:** Public, governed, versioned  
 
-Week 17 closed under restored baseline conditions following prior environmental disruption.
+Week 18 closed under stable Phase 2C consolidation conditions.
 
-System behavior remained stable under repeated exposure, with increased repeatability across load integration and no regression observed.
+System behavior remained stable across repeated B1 exposure, repeated Load Integration exposure, public artifact activity, and late-week pre-testing preservation.
 
-No protocol changes are recorded entering the current observation window.
+No protocol escalation is recorded entering the current observation window.
 
 ---
 
@@ -42,7 +42,7 @@ https://x.com/i/status/2047315930158604600
 
 This document provides a concise overview of the archive’s current public state.
 
-It is not a weekly report, phase declaration, or performance summary.  
+It is not a weekly report, phase declaration, or performance summary.
 
 Its purpose is to orient readers to:
 
@@ -65,10 +65,12 @@ Primary artifacts belong in `/snapshots`.
 | Observation Model | Continuous, artifact-first longitudinal tracking |
 | Interpretation Mode | Strictly retrospective, artifact-bound |
 | Phase Context | Phase 2 — Load Integration |
-| Training Structure | Stable, repeatable exposure architecture |
-| Recovery Signals | Stable; repeatable under controlled conditions |
-| Sleep Integrity | Structurally stable; minor variability observed |
-| Bodyweight Band | ~222–224 lb |
+| Current Window | 2026-W19 active observation |
+| Prior Window | 2026-W18 closed |
+| Training Structure | Stable exposure architecture; testing-window preservation active |
+| Recovery Signals | Stable; late-W18 autonomic profile strengthened |
+| Sleep Integrity | Structurally stable; W18 sleep observations appended |
+| Bodyweight Band | ~223–227 lb |
 | Biomarker Coverage | February 2026 multi-domain snapshot integrated |
 | Prediction Layer | Active — model error tracking and closure logic |
 | Archive Integrity | Maintained |
@@ -87,6 +89,8 @@ The system is operating within a load-integration window characterized by:
 - demonstrated stability under both controlled and disrupted conditions
 - consolidation-first interpretation
 
+Week 19 is additionally a testing-window observation period.
+
 Phase language is descriptive, not promotional.  
 Advancement requires sustained, artifact-confirmed stability.
 
@@ -101,9 +105,11 @@ The archive is documenting:
 - stable recovery under repeated exposure
 - increasing repeatability of execution
 - consolidation over escalation
+- testing-window preservation without forward claims
 - unchanged architecture across observation windows
 
 No peaking behavior is assumed.  
+No testing outcome is interpreted before artifacts are available.  
 No forward performance claims are made.
 
 ---
@@ -115,7 +121,9 @@ Active constraints remain present but non-disruptive:
 - sleep variability within normal range
 - autonomic sensitivity under repeated exposure
 - interpretation risk during visible adaptation
-- environmental factors (air quality) affecting flow onset without degrading output
+- environmental factors affecting flow onset without degrading output
+- testing-window logistics
+- minor grip / shoulder feedback from optional bar-play variability
 
 No current constraint requires intervention.
 
@@ -124,6 +132,8 @@ No current constraint requires intervention.
 ## Performance Integrity
 
 - training continuity preserved across observation windows
+- B1 aerobic anchor maintained
+- Load Integration remained stable before planned late-W18 pause
 - no additional downregulation events required
 - performance capacity stable under repeated exposure
 - movement efficiency improving under identical loading
@@ -132,13 +142,11 @@ Supplementary movement artifact documenting controlled-tempo pull-up execution u
 
 https://x.com/i/status/2052810691690807540
 
-- exposure density tolerated without confirmed structural cost
-- stability preserved under both controlled and previously disrupted conditions
-
 Observed patterns now include:
 
 - **consistent recovery alignment under controlled conditions**
 - **increasing repeatability of load integration execution**
+- **pre-testing preservation without structural drift**
 
 ---
 
@@ -173,22 +181,26 @@ No structural changes to prediction methodology.
 - dead hangs / bar exposure
 - repeated exposure prioritized
 
-Training posture:
+Current posture:
 
 **preserve stability before expanding load or complexity**
+
+During Week 19, Load Integration is temporarily reduced around testing-window logistics and scheduled to resume only if recovery remains stable.
 
 ---
 
 ## Risk Posture
 
-**Primary risk:** premature escalation during visible adaptation  
+**Primary risk:** premature escalation during visible adaptation and testing-window anticipation
 
 **Mitigation:**
 
 - preserve structural consistency
 - avoid unnecessary variation
-- allow adaptation without forcing signal
+- avoid last-minute input changes
+- allow testing artifacts to define the record
 - maintain recovery compatibility
+- interpret only after artifacts are available
 
 Durability remains the priority.
 
@@ -221,6 +233,9 @@ raw artifacts
 - `sleep_longitudinal_v1.csv` refined as the canonical longitudinal sleep dataset
 - `docs/audits/` updated with May 9 Saturday audit record documenting pre-snapshot structural stabilization
 - `PHASE_MAP.md` refined to reserve Phase 3 as a future structural category rather than a projected outcome
+- 2026-W18 sleep observations appended to canonical sleep dataset
+- 2026-W18 weekly report closed
+- 2026-W19 weekly report initialized
 
 ---
 
@@ -259,12 +274,13 @@ Evaluation is based on:
 
 ## Update Flow
 
-- ongoing observation capture for current active week (**2026-W18**)
-- snapshot ingestion as events occur
+- ongoing observation capture for current active week (**2026-W19**)
+- May testing artifacts to be integrated only after available
 - continued model error closure and refinement
+- continued archive stabilization without forward claims
 
 ---
 
 **System State:** Stable  
-**Trajectory Posture:** Consolidation with increasing repeatability  
-**Operational Mode:** Execute → observe → close retrospectively
+**Trajectory Posture:** Consolidation with testing-window preservation  
+**Operational Mode:** Execute → observe → record artifacts → close retrospectively
