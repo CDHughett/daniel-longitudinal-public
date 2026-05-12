@@ -41,7 +41,7 @@ Biological interpretation belongs in `/reports`.
   - Added primary dataset `model_error_gap_v1.csv`
   - Added rolling summary file `udi_tracker.csv`
   - Added `data/model_error/README.md` for layer orientation and handling rules
-  - Added `methodology/prediction_evaluation.md` defining evaluation rules for point, range, and state predictions
+  - Added `docs/methodology/prediction_evaluation.md` defining evaluation rules for point, range, and state predictions
 
 - Introduced first forward-locked, pre-registered predictions in model error layer:
   - bodyweight stability prediction
@@ -91,6 +91,21 @@ Biological interpretation belongs in `/reports`.
   - weekly continuity
   - pre-snapshot archive stabilization
 
+- Added May 2026 snapshot artifacts and verification layer:
+  - DEXA body composition artifact
+  - DEXA summary artifact
+  - BodPod / COSMED artifact
+  - VO2 summary artifact
+  - SHA256 checksum verification file
+  - May 2026 epoch anchor
+  - snapshot log integration
+  - epoch index integration
+
+- Added May 2026 prediction closures tied to observed testing outcomes:
+  - closed DEXA prediction records
+  - closed VO2 prediction records
+  - updated latest prediction layer state for May closures
+
 ---
 
 ### Changed
@@ -101,6 +116,8 @@ Biological interpretation belongs in `/reports`.
   - transition from active load confirmation into testing-window preservation
   - late-W18 autonomic strengthening under reduced Load Integration density
   - continued no-forward-claims posture ahead of May artifact ingestion
+  - May 2026 snapshot artifact integration
+  - active TruDiagnostic pending state
 
 - `reports/2026-W19.md` refined to remove repository/public-activity language and preserve weekly report scope around training, recovery, testing-window conditions, and documentation continuity.
 
@@ -109,7 +126,8 @@ Biological interpretation belongs in `/reports`.
 - `data/model_error/model_error_gap_v1.csv` updated:
   - closed 035 as FAIL using first out-of-range violation
   - closed 036 as PASS across all prescribed sessions without structural breakdown
-  - no schema changes; evaluation structure preserved
+  - closed May 2026 DEXA and VO2 prediction records
+  - preserved forward-locked evaluation structure
 
 - `methodology/prediction_evaluation.md` updated:
   - aligned point and range prediction `error_direction` with dataset convention
@@ -122,6 +140,7 @@ Biological interpretation belongs in `/reports`.
 
 - `INDEX.md` updated:
   - added navigation reference to week indexing convention
+  - aligned snapshot navigation with May 2026 epoch integration
 
 - `DATA_DICTIONARY.md` expanded to support biomarker and epigenetic fields introduced during the February 2026 snapshot expansion.
 
@@ -169,6 +188,8 @@ Biological interpretation belongs in `/reports`.
 - Clarified `/docs/audits/README.md` to support selective audit records by type rather than Saturday-only audit inclusion.
 
 - Updated `PHASE_MAP.md` to describe Phase 3 as a reserved future structural category rather than a projected outcome, preserving retrospective phase-governance language.
+
+- Normalized May 2026 snapshot checksum formatting for consistency with repository-wide verification conventions.
 
 ---
 
@@ -220,7 +241,7 @@ Biological interpretation belongs in `/reports`.
 - UDI remains selectively applied where methodological comparability is sufficient.
 - Legacy trajectory prediction entries may remain open until a formal evaluation standard is defined.
 - Current architecture prioritizes clarity, separation of concerns, and auditability over premature abstraction.
-- May testing artifacts are not yet integrated in this changelog window.
+- TruDiagnostic May 2026 results remain pending and are not yet integrated into the snapshot layer.
 
 ---
 
@@ -233,3 +254,6 @@ Biological interpretation belongs in `/reports`.
 - W19 initialized as active observation window
 - Repository considered structurally consistent for external read-through
 - May 9 Saturday audit recorded as pre-snapshot stabilization checkpoint
+- May 2026 snapshot artifact integration completed
+- May 2026 checksum verification layer normalized
+- May 2026 prediction closure pass completed
