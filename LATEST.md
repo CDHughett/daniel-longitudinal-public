@@ -17,6 +17,8 @@ Week 18 closed under stable Phase 2C consolidation conditions.
 
 System behavior remained stable across repeated B1 exposure, repeated Load Integration exposure, public artifact activity, and late-week pre-testing preservation.
 
+May 2026 DEXA, BodPod / COSMED, and VO2 artifacts have now been added to the snapshot layer. TruDiagnostic testing was collected and mailed separately, with results pending.
+
 No protocol escalation is recorded entering the current observation window.
 
 ---
@@ -71,7 +73,7 @@ Primary artifacts belong in `/snapshots`.
 | Recovery Signals | Stable; late-W18 autonomic profile strengthened |
 | Sleep Integrity | Structurally stable; W18 sleep observations appended |
 | Bodyweight Band | ~223–227 lb |
-| Biomarker Coverage | February 2026 multi-domain snapshot integrated |
+| Biomarker Coverage | February 2026 multi-domain snapshot integrated; May 2026 DEXA/BodPod/VO2 artifacts added with TruDiagnostic pending |
 | Prediction Layer | Active — model error tracking and closure logic |
 | Archive Integrity | Maintained |
 
@@ -107,9 +109,10 @@ The archive is documenting:
 - consolidation over escalation
 - testing-window preservation without forward claims
 - unchanged architecture across observation windows
+- May 2026 artifact capture without immediate interpretive overreach
 
 No peaking behavior is assumed.  
-No testing outcome is interpreted before artifacts are available.  
+No pending testing outcome is interpreted before artifacts are available.  
 No forward performance claims are made.
 
 ---
@@ -124,6 +127,7 @@ Active constraints remain present but non-disruptive:
 - environmental factors affecting flow onset without degrading output
 - testing-window logistics
 - minor grip / shoulder feedback from optional bar-play variability
+- delayed return window for TruDiagnostic results
 
 No current constraint requires intervention.
 
@@ -156,6 +160,10 @@ Recent model error closures:
 
 - **035 (bodyweight range)** closed as **FAIL** using first out-of-range violation under mixed conditions
 - **036 (pull-up repeatability)** closed as **PASS** across all prescribed sessions without structural breakdown
+
+Open testing-related prediction records remain subject to exact artifact transcription and closure rules.
+
+TruDiagnostic-related prediction records remain open until results return.
 
 These closures reinforce current system characteristics:
 
@@ -200,7 +208,8 @@ During Week 19, Load Integration is temporarily reduced around testing-window lo
 - avoid last-minute input changes
 - allow testing artifacts to define the record
 - maintain recovery compatibility
-- interpret only after artifacts are available
+- separate artifact capture from interpretation
+- leave pending TruDiagnostic outcomes unclosed until results return
 
 Durability remains the priority.
 
@@ -224,6 +233,14 @@ raw artifacts
 ## Recent Structural Additions
 
 - February 2026 biomarker snapshot integrated (DEXA, BodPod, TruAge, TruHealth)
+- May 2026 testing-window snapshot artifacts added:
+  - DEXA body composition
+  - DEXA summary
+  - BodPod / COSMED
+  - VO2 summary
+  - folder-level SHA256 checksums
+  - 2026-05 epoch anchor record
+- TruDiagnostic May 2026 sample collected and mailed; results pending and not yet integrated
 - `biomarker_snapshot.csv` added for monthly biomarker aggregation
 - `epigenetic_longitudinal.csv` added for biological aging time-series
 - `DATA_DICTIONARY.md` expanded
@@ -275,7 +292,8 @@ Evaluation is based on:
 ## Update Flow
 
 - ongoing observation capture for current active week (**2026-W19**)
-- May testing artifacts to be integrated only after available
+- May DEXA/BodPod/VO2 artifacts integrated; TruDiagnostic results pending
+- exact testing values to be transcribed before dataset or prediction closure updates
 - continued model error closure and refinement
 - continued archive stabilization without forward claims
 
