@@ -158,17 +158,21 @@ Observed patterns now include:
 
 Recent model error closures:
 
+- **033 (body composition DEXA)** closed against the May 2026 DEXA artifact
+- **034 (VO2 max)** closed against the May 2026 VO2 artifact
 - **035 (bodyweight range)** closed as **FAIL** using first out-of-range violation under mixed conditions
 - **036 (pull-up repeatability)** closed as **PASS** across all prescribed sessions without structural breakdown
 
-Open testing-related prediction records remain subject to exact artifact transcription and closure rules.
+Open testing-related prediction records:
 
-TruDiagnostic-related prediction records remain open until results return.
+- **032 (epigenetic aging)** remains open pending delayed TruDiagnostic result return
 
 These closures reinforce current system characteristics:
 
 - strength output remains **repeatable under fixed inputs**
 - bodyweight behavior exhibits **bounded variability under stable conditions**
+- body composition and VO2 predictions are now artifact-closed against the May 2026 testing window
+- epigenetic aging evaluation remains incomplete until TruDiagnostic results return
 
 No structural changes to prediction methodology.
 
@@ -293,7 +297,7 @@ Evaluation is based on:
 
 - ongoing observation capture for current active week (**2026-W19**)
 - May DEXA/BodPod/VO2 artifacts integrated; TruDiagnostic results pending
-- exact testing values to be transcribed before dataset or prediction closure updates
+- DEXA and VO2 prediction records closed; TruDiagnostic prediction remains open pending result return
 - continued model error closure and refinement
 - continued archive stabilization without forward claims
 
