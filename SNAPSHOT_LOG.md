@@ -111,6 +111,25 @@ Where present, an accompanying epoch file serves as the temporal anchor record f
 
 ---
 
+## [2026-05 — Phase 2 Testing Window Capture](./snapshots/2026-05/)
+**Artifacts:**
+- DEXA
+- BodPod / COSMED
+- VO2 summary
+
+**Links:**
+- Epoch file: [`2026-05 Epoch.md`](./snapshots/2026-05/2026-05%20Epoch.md)
+
+**Notes:**
+- Captured during the May 2026 testing-window observation period
+- Entered from stable Phase 2C consolidation and testing-preservation conditions
+- B1 aerobic anchor remained preserved entering the testing window
+- Load Integration was reduced or paused around testing logistics to preserve signal quality
+- TruDiagnostic sample collected and mailed separately; results pending and not yet included in this artifact set
+- Interpretation remains deferred to report and dataset layers
+
+---
+
 ## Future
 
 Future snapshots will be appended chronologically.
