@@ -39,7 +39,7 @@ A prediction is only suitable for this layer when it is:
 
 Additional criteria are defined in:
 
-[`docs/methodology/VALID_PREDICTION_CRITERIA.md`](../../docs/methodology/VALID_PREDICTION_CRITERIA.md)
+[`docs/methodology/valid_prediction_criteria.md`](../../docs/methodology/valid_prediction_criteria.md)
 
 ## Model Version Field
 
@@ -80,7 +80,7 @@ The model-error layer is auxiliary. It exists to make prediction quality visible
 ## Related Documents
 
 - [`model_error_gap_v1.csv`](model_error_gap_v1.csv)
-- [`docs/methodology/VALID_PREDICTION_CRITERIA.md`](../../docs/methodology/VALID_PREDICTION_CRITERIA.md)
+- [`docs/methodology/valid_prediction_criteria.md`](../../docs/methodology/valid_prediction_criteria.md)
 - [`docs/methodology/prediction_to_outcome_pipeline.md`](../../docs/methodology/prediction_to_outcome_pipeline.md)
-- [`docs/methodology/PREDICTION_EVALUATION_METHOD.md`](../../docs/methodology/PREDICTION_EVALUATION_METHOD.md)
+- [`methodology/prediction_evaluation.md`](../../methodology/prediction_evaluation.md)
 - [`GOVERNANCE.md`](../../GOVERNANCE.md)
