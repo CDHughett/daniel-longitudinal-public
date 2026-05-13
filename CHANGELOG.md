@@ -36,6 +36,10 @@ Biological interpretation belongs in `/reports`.
   - no inferred or reconstructed values included
   - schema consistency preserved against longitudinal sleep structure
 
+- Added `TELEMETRY.md` to define the relationship between the governed archive and the parallel real-time public subjective telemetry layer.
+
+- Added `data/model_error/WHAT_THIS_LAYER_IS.md` to clarify the purpose, constraints, and calibration role of the model-error tracking layer.
+
 - Introduced model error tracking layer for structured comparison of predictions vs observed outcomes.
   - Added `/data/model_error/` directory
   - Added primary dataset `model_error_gap_v1.csv`
@@ -121,6 +125,18 @@ Biological interpretation belongs in `/reports`.
 ---
 
 ### Changed
+
+- `README.md` updated to include:
+  - `TELEMETRY.md` navigation
+  - model-error layer context
+  - subjective telemetry context
+  - clearer distinction between governed records and informal subjective telemetry
+
+- `WHY_PUBLIC.md` clarified to define the public archive as the governed observation layer rather than the full lived experience.
+
+- `DATA_DICTIONARY.md` updated to clarify that some subjective or qualitative context may intentionally remain outside structured dataset fields and may be externally represented through the public telemetry layer.
+
+- `data/model_error/WHAT_THIS_LAYER_IS.md` link paths corrected to align with existing methodology file names and locations.
 
 - `LATEST.md` executive system dashboard updated to reflect:
   - W18 closed observation window
@@ -240,6 +256,7 @@ Biological interpretation belongs in `/reports`.
   - longitudinal datasets
   - model error layer
   - methodology layer
+  - telemetry layer
 
 - Archive posture clarified around disturbance handling.
 
