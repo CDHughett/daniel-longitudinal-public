@@ -106,6 +106,13 @@ Biological interpretation belongs in `/reports`.
   - closed VO2 prediction records
   - updated latest prediction layer state for May closures
 
+- Added `docs/audits/2026-05-13-wednesday-audit.md` documenting:
+  - post-snapshot repository coherence review
+  - Markdown link integrity
+  - checksum verification continuity
+  - model-error direction normalization
+  - W19 audit readiness after May artifact integration
+
 ---
 
 ### Changed
@@ -128,6 +135,8 @@ Biological interpretation belongs in `/reports`.
   - closed 036 as PASS across all prescribed sessions without structural breakdown
   - closed May 2026 DEXA and VO2 prediction records
   - preserved forward-locked evaluation structure
+
+- `data/model_error/model_error_gap_v1.csv` normalized historical `error_direction` labels for closed model-error records to align with the active prediction-versus-actual convention. No prediction values, actual values, error magnitudes, statuses, or notes were changed.
 
 - `methodology/prediction_evaluation.md` updated:
   - aligned point and range prediction `error_direction` with dataset convention
@@ -257,3 +266,4 @@ Biological interpretation belongs in `/reports`.
 - May 2026 snapshot artifact integration completed
 - May 2026 checksum verification layer normalized
 - May 2026 prediction closure pass completed
+- May 13 Wednesday audit completed after post-snapshot model-error direction normalization
