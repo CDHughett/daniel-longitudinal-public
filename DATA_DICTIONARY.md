@@ -305,6 +305,27 @@ All definitions prioritize repeatability and longitudinal comparability.
 
 ---
 
+## Subjective State Context
+
+Some subjective or qualitative context may be intentionally absent from structured dataset fields.
+
+The repository prioritizes governed, retrospective, artifact-first documentation. Real-time subjective observations, informal state notes, and public-facing commentary are not always backfilled into structured tables.
+
+When relevant, the accompanying X account may serve as an external subjective telemetry reference:
+
+[@CDHughett](https://x.com/CDHughett)
+
+This account is not a replacement for structured data, formal reports, or governed archive entries. It is a complementary real-time layer that may provide additional context around subjective state, training texture, recovery observations, and public execution cadence.
+
+Empty or sparsely populated subjective fields should therefore not automatically be interpreted as missing data. In some cases, they reflect an intentional separation between the governed archive layer and the informal human telemetry layer.
+
+See also:
+
+- [`TELEMETRY.md`](TELEMETRY.md)
+- [`GOVERNANCE.md`](GOVERNANCE.md)
+
+---
+
 ## Capture States
 
 ### Fasted
