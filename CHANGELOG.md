@@ -45,7 +45,7 @@ Biological interpretation belongs in `/reports`.
   - Added primary dataset `model_error_gap_v1.csv`
   - Added rolling summary file `udi_tracker.csv`
   - Added `data/model_error/README.md` for layer orientation and handling rules
-  - Added `docs/methodology/prediction_evaluation.md` defining evaluation rules for point, range, and state predictions
+  - Added `methodology/prediction_evaluation.md` defining evaluation rules for point, range, and state predictions
 
 - Introduced first forward-locked, pre-registered predictions in model error layer:
   - bodyweight stability prediction
