@@ -113,6 +113,11 @@ Biological interpretation belongs in `/reports`.
   - model-error direction normalization
   - W19 audit readiness after May artifact integration
 
+- Added post-snapshot forward-locked model-error predictions:
+  - push-up repeatability under Load Integration expansion
+  - recovery stability during resumed Load Integration density
+  - both marked with `calibration_state = pre`
+
 ---
 
 ### Changed
