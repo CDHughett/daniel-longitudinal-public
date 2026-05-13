@@ -11,6 +11,38 @@ It is signal.
 
 ---
 
+## Project Altitude
+
+This repository is not intended to function only as a fitness log, health journal, or personal archive.
+
+Those elements are present because they provide observable surfaces.
+
+The broader purpose is to document how a single human system changes over time under stable constraints, structured feedback, repeated observation, and retrospective review.
+
+The archive emphasizes what can be inspected:
+
+- artifacts
+- measurements
+- reports
+- methodology
+- version history
+- prediction closure
+- longitudinal change
+
+This constraint is intentional.
+
+The project may contain subjective, behavioral, physiological, and identity-level dimensions, but the repository only formalizes what can be preserved with enough structure to remain reviewable by outside observers.
+
+In that sense, the public archive is the governed observation layer, not the full lived experience.
+
+Real-time subjective context is maintained separately through the project’s public telemetry layer:
+
+[`TELEMETRY.md`](TELEMETRY.md)
+
+This separation allows the repository to remain artifact-first while still acknowledging that some useful context exists outside the governed archive.
+
+---
+
 ## What I’m Actually Studying
 
 This project tracks:
