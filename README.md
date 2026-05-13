@@ -8,6 +8,7 @@ It contains:
 - weekly system state reports  
 - a prediction vs. observed outcome review layer  
 - structured methodology, governance, and constraints  
+- a defined relationship between governed archive records and real-time subjective telemetry  
 
 ---
 
@@ -41,6 +42,7 @@ This is the fastest way to understand the system’s current observed state.
 - [`snapshots`](./snapshots/) — primary artifacts and source evidence  
 - [`reports`](./reports/) — structured retrospective interpretation  
 - [`data`](./data/) — structured longitudinal datasets  
+- [`TELEMETRY.md`](./TELEMETRY.md) — relationship between the governed archive and real-time public subjective telemetry  
 
 ---
 
@@ -79,9 +81,16 @@ The archive preserves continuity across:
 - governance and constraint frameworks  
 - biomarker and system health snapshots (where publicly included)  
 - prediction vs. observed outcome tracking (auxiliary review layer)  
+- separation between governed records and informal subjective telemetry  
 
 **Data scope and limitations:**
 → [`data/DATA_COVERAGE.md`](./data/DATA_COVERAGE.md)
+
+**Model-error layer context:**
+→ [`data/model_error/WHAT_THIS_LAYER_IS.md`](./data/model_error/WHAT_THIS_LAYER_IS.md)
+
+**Subjective telemetry context:**
+→ [`TELEMETRY.md`](./TELEMETRY.md)
 
 **Note:** Some biomarker data may be referenced in reports but not included in the public archive.
 
@@ -106,6 +115,7 @@ Interpretation remains intentionally constrained:
 - artifacts take precedence over language  
 - observations remain provisional  
 - conclusions require repeated evidence across time  
+- subjective context is separated from governed archive records unless formally incorporated  
 
 This archive documents one subject under constrained conditions.  
 No claims extend beyond the recorded system.
@@ -155,6 +165,7 @@ Root
 ├── README.md
 ├── INDEX.md
 ├── LATEST.md
+├── TELEMETRY.md
 ├── CHANGELOG.md
 ~~~
 
@@ -166,6 +177,7 @@ Root
 - [`STRUCTURAL_PRINCIPLES.md`](./STRUCTURAL_PRINCIPLES.md)  
 - [`PHASE_DECLARATION_CRITERIA.md`](./PHASE_DECLARATION_CRITERIA.md)  
 - [`RISK_MANAGEMENT.md`](./RISK_MANAGEMENT.md)  
+- [`TELEMETRY.md`](./TELEMETRY.md)  
 
 ---
 
@@ -191,6 +203,9 @@ CC BY-NC-ND 4.0
 - Snapshot log → [`SNAPSHOT_LOG.md`](./SNAPSHOT_LOG.md)  
 - Artifact history → [`snapshots`](./snapshots/)  
 - Weekly reports → [`reports`](./reports/)  
+- Data coverage → [`data/DATA_COVERAGE.md`](./data/DATA_COVERAGE.md)  
+- Model-error layer → [`data/model_error/WHAT_THIS_LAYER_IS.md`](./data/model_error/WHAT_THIS_LAYER_IS.md)  
+- Telemetry layer → [`TELEMETRY.md`](./TELEMETRY.md)  
 - Versioning → [`VERSIONING.md`](./VERSIONING.md)  
 
 ---
