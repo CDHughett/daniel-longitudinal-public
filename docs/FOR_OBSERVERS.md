@@ -28,7 +28,7 @@ Each layer is structurally isolated.
 - no forward claims  
 - no real-time conclusions  
 - active observations remain provisional  
-- validation is applied only retrospectively to completed observation windows  
+- evaluation is applied only retrospectively to completed observation windows  
 
 ---
 
@@ -38,7 +38,7 @@ Most self-tracking systems collapse these layers.
 
 When that happens, data becomes narrative, and narrative becomes bias.
 
-This system is designed to prevent that.
+This system is designed to reduce that risk.
 
 ---
 
