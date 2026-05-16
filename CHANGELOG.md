@@ -122,6 +122,14 @@ Biological interpretation belongs in `/reports`.
   - recovery stability during resumed Load Integration density
   - both marked with `calibration_state = pre`
 
+- Added `docs/audits/2026-05-16-saturday-audit.md` documenting:
+  - post-May structural stabilization review
+  - governance consistency assessment
+  - observer-legibility review
+  - checksum continuity verification
+  - repository navigation confirmation
+  - restraint and anti-overpolish posture assessment
+
 ---
 
 ### Changed
@@ -289,3 +297,4 @@ Biological interpretation belongs in `/reports`.
 - May 2026 checksum verification layer normalized
 - May 2026 prediction closure pass completed
 - May 13 Wednesday audit completed after post-snapshot model-error direction normalization
+- May 16 Saturday audit completed after post-snapshot stabilization and observer-legibility review
