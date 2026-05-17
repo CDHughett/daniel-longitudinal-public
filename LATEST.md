@@ -7,19 +7,19 @@ Public Archive Status Dashboard
 
 ---
 
-## System State — 2026-W19 (Active Observation)
+## System State — 2026-W20 (Active Observation)
 
-**Last Updated:** 2026-W19  
+**Last Updated:** 2026-W20  
 **Repository State:** Active longitudinal observation  
 **Archive Mode:** Public, governed, versioned  
 
-Week 18 closed under stable Phase 2C consolidation conditions.
+Week 19 closed under stable Phase 2C consolidation conditions with early Phase 2D characteristics emerging.
 
-System behavior remained stable across repeated B1 exposure, repeated Load Integration exposure, public artifact activity, and late-week pre-testing preservation.
+System behavior remained stable across May testing-window exposure, B1 aerobic anchor continuity, resumed Load Integration, controlled push-up introduction, emotional variability, schedule disruption, and weekly archive stewardship.
 
-May 2026 DEXA, BodPod / COSMED, and VO2 artifacts have now been added to the snapshot layer. TruDiagnostic testing was collected and mailed separately, with results pending.
+May 2026 DEXA, BodPod / COSMED, and VO2 artifacts have been added to the snapshot layer. TruDiagnostic testing was collected and mailed separately, with results pending.
 
-No protocol escalation is recorded entering the current observation window.
+No uncontrolled protocol escalation is recorded entering the current observation window.
 
 ---
 
@@ -67,12 +67,12 @@ Primary artifacts belong in `/snapshots`.
 | Observation Model | Continuous, artifact-first longitudinal tracking |
 | Interpretation Mode | Strictly retrospective, artifact-bound |
 | Phase Context | Phase 2 — Load Integration |
-| Current Window | 2026-W19 active observation |
-| Prior Window | 2026-W18 closed |
-| Training Structure | Stable exposure architecture; testing-window preservation active |
-| Recovery Signals | Stable; late-W18 autonomic profile strengthened |
-| Sleep Integrity | Structurally stable; W18 sleep observations appended |
-| Bodyweight Band | ~223–227 lb |
+| Current Window | 2026-W20 active observation |
+| Prior Window | 2026-W19 closed |
+| Training Structure | Stable B1 anchor; Load Integration active under controlled expansion monitoring |
+| Recovery Signals | Stable; W19 recovery remained compatible with testing-window re-entry and added upper-body exposure |
+| Sleep Integrity | Structurally stable; W19 sleep observations appended |
+| Bodyweight Band | ~227–231 lb |
 | Biomarker Coverage | February 2026 multi-domain snapshot integrated; May 2026 DEXA/BodPod/VO2 artifacts added with TruDiagnostic pending |
 | Prediction Layer | Active — model error tracking and closure logic |
 | Archive Integrity | Maintained |
@@ -90,8 +90,9 @@ The system is operating within a load-integration window characterized by:
 - recovery compatibility under sustained exposure
 - demonstrated stability under both controlled and disrupted conditions
 - consolidation-first interpretation
+- controlled expansion of upper-body integration demands
 
-Week 19 is additionally a testing-window observation period.
+Week 20 is a controlled expansion monitoring period following Week 19 testing-window re-entry.
 
 Phase language is descriptive, not promotional.  
 Advancement requires sustained, artifact-confirmed stability.
@@ -107,9 +108,10 @@ The archive is documenting:
 - stable recovery under repeated exposure
 - increasing repeatability of execution
 - consolidation over escalation
-- testing-window preservation without forward claims
+- controlled post-testing re-entry without forward claims
 - unchanged architecture across observation windows
 - May 2026 artifact capture without immediate interpretive overreach
+- push-up integration under recovery-compatible conditions
 
 No peaking behavior is assumed.  
 No pending testing outcome is interpreted before artifacts are available.  
@@ -125,8 +127,9 @@ Active constraints remain present but non-disruptive:
 - autonomic sensitivity under repeated exposure
 - interpretation risk during visible adaptation
 - environmental factors affecting flow onset without degrading output
-- testing-window logistics
-- minor grip / shoulder feedback from optional bar-play variability
+- minor elbow / shoulder / grip feedback during pull-up exposure
+- push-up novelty and local muscular fatigue
+- schedule variability from relational and real-world demands
 - delayed return window for TruDiagnostic results
 
 No current constraint requires intervention.
@@ -137,7 +140,9 @@ No current constraint requires intervention.
 
 - training continuity preserved across observation windows
 - B1 aerobic anchor maintained
-- Load Integration remained stable before planned late-W18 pause
+- Load Integration resumed successfully after testing-window exposure
+- pull-up 4×4 structure remained stable and progressed closer to ambient execution
+- push-up exposure introduced without observed recovery collapse
 - no additional downregulation events required
 - performance capacity stable under repeated exposure
 - movement efficiency improving under identical loading
@@ -150,7 +155,8 @@ Observed patterns now include:
 
 - **consistent recovery alignment under controlled conditions**
 - **increasing repeatability of load integration execution**
-- **pre-testing preservation without structural drift**
+- **controlled upper-body expansion without recovery collapse**
+- **emotional regulation preserved under relational variability**
 
 ---
 
@@ -190,30 +196,32 @@ No structural changes to prediction methodology.
 
 - trap bar deadlift
 - pull-ups
+- push-ups
 - dead hangs / bar exposure
 - repeated exposure prioritized
 
 Current posture:
 
-**preserve stability before expanding load or complexity**
+**preserve stability while monitoring controlled expansion**
 
-During Week 19, Load Integration is temporarily reduced around testing-window logistics and scheduled to resume only if recovery remains stable.
+During Week 20, Load Integration remains active under controlled expansion monitoring. No load, density, or movement escalation is assumed beyond the currently integrated structure.
 
 ---
 
 ## Risk Posture
 
-**Primary risk:** premature escalation during visible adaptation and testing-window anticipation
+**Primary risk:** premature escalation during visible adaptation and post-testing confidence
 
 **Mitigation:**
 
 - preserve structural consistency
 - avoid unnecessary variation
-- avoid last-minute input changes
+- avoid reactive optimization
 - allow testing artifacts to define the record
 - maintain recovery compatibility
 - separate artifact capture from interpretation
 - leave pending TruDiagnostic outcomes unclosed until results return
+- stabilize push-up integration before adding further complexity
 
 Durability remains the priority.
 
@@ -252,11 +260,11 @@ raw artifacts
 - `model_error_gap_v1.csv` and `udi_tracker.csv` added
 - prediction evaluation methodology refined
 - `sleep_longitudinal_v1.csv` refined as the canonical longitudinal sleep dataset
-- `docs/audits/` updated with May 9 Saturday audit record documenting pre-snapshot structural stabilization
+- `docs/audits/` updated with May audit records documenting snapshot and structural stabilization activity
 - `PHASE_MAP.md` refined to reserve Phase 3 as a future structural category rather than a projected outcome
-- 2026-W18 sleep observations appended to canonical sleep dataset
-- 2026-W18 weekly report closed
-- 2026-W19 weekly report initialized
+- 2026-W19 sleep observations appended to canonical sleep dataset
+- 2026-W19 weekly report closed
+- 2026-W20 weekly report initialized
 
 ---
 
@@ -295,14 +303,15 @@ Evaluation is based on:
 
 ## Update Flow
 
-- ongoing observation capture for current active week (**2026-W19**)
+- ongoing observation capture for current active week (**2026-W20**)
 - May DEXA/BodPod/VO2 artifacts integrated; TruDiagnostic results pending
 - DEXA and VO2 prediction records closed; TruDiagnostic prediction remains open pending result return
 - continued model error closure and refinement
 - continued archive stabilization without forward claims
+- continued Load Integration monitoring under controlled expansion conditions
 
 ---
 
 **System State:** Stable  
-**Trajectory Posture:** Consolidation with testing-window preservation  
+**Trajectory Posture:** Consolidation with controlled expansion monitoring  
 **Operational Mode:** Execute → observe → record artifacts → close retrospectively
