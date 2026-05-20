@@ -162,11 +162,11 @@ Biological interpretation belongs in `/reports`.
   - continued no-forward-claims posture while TruDiagnostic results remain pending
   - continued consolidation-first operational posture
 
-- `reports/weekly/2026-W19.md` refined to remove repository/public-activity language and preserve weekly report scope around training, recovery, testing-window conditions, and documentation continuity.
+- `reports/2026-W19.md` refined to remove repository/public-activity language and preserve weekly report scope around training, recovery, testing-window conditions, and documentation continuity.
 
-- `reports/weekly/2026-W19.md` finalized to reflect the completed testing-window observation period, successful Load Integration re-entry, controlled push-up integration, and preserved recovery behavior under expanded upper-body demand.
+- `reports/2026-W19.md` finalized to reflect the completed testing-window observation period, successful Load Integration re-entry, controlled push-up integration, and preserved recovery behavior under expanded upper-body demand.
 
-- `reports/weekly/2026-W20.md` initialized to maintain forward continuity during controlled expansion monitoring conditions.
+- `reports/2026-W20.md` initialized to maintain forward continuity during controlled expansion monitoring conditions.
 
 - `DATA_COVERAGE.md` updated:
   - clarified May 2026 structured biomarker integration status
