@@ -130,6 +130,14 @@ Biological interpretation belongs in `/reports`.
   - repository navigation confirmation
   - restraint and anti-overpolish posture assessment
 
+- Added `docs/audits/2026-05-20-wednesday-audit.md` documenting:
+  - mid-week repository coherence review
+  - Markdown link integrity verification
+  - checksum continuity verification
+  - W19/W20 state alignment confirmation
+  - observer-facing language refinement review
+  - May biomarker integration clarification pass
+
 ---
 
 ### Changed
@@ -154,11 +162,16 @@ Biological interpretation belongs in `/reports`.
   - continued no-forward-claims posture while TruDiagnostic results remain pending
   - continued consolidation-first operational posture
 
-- `reports/2026-W19.md` refined to remove repository/public-activity language and preserve weekly report scope around training, recovery, testing-window conditions, and documentation continuity.
+- `reports/weekly/2026-W19.md` refined to remove repository/public-activity language and preserve weekly report scope around training, recovery, testing-window conditions, and documentation continuity.
 
-- `reports/2026-W19.md` finalized to reflect the completed testing-window observation period, successful Load Integration re-entry, controlled push-up integration, and preserved recovery behavior under expanded upper-body demand.
+- `reports/weekly/2026-W19.md` finalized to reflect the completed testing-window observation period, successful Load Integration re-entry, controlled push-up integration, and preserved recovery behavior under expanded upper-body demand.
 
-- `reports/2026-W20.md` initialized to maintain forward continuity during controlled expansion monitoring conditions.
+- `reports/weekly/2026-W20.md` initialized to maintain forward continuity during controlled expansion monitoring conditions.
+
+- `DATA_COVERAGE.md` updated:
+  - clarified May 2026 structured biomarker integration status
+  - explicitly constrained interpretation of pending TruDiagnostic-linked testing artifacts
+  - reinforced distinction between archived source artifacts and completed structured biomarker fusion
 
 - `data/sleep_longitudinal_v1.csv` extended through 2026-05-17 to preserve weekly continuity across the W19 observation window.
 
@@ -301,3 +314,4 @@ Biological interpretation belongs in `/reports`.
 - May 2026 prediction closure pass completed
 - May 13 Wednesday audit completed after post-snapshot model-error direction normalization
 - May 16 Saturday audit completed after post-snapshot stabilization and observer-legibility review
+- May 20 Wednesday audit completed after mid-week coherence, verification, and observer-facing refinement review
