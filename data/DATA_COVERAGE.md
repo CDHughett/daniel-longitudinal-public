@@ -88,6 +88,16 @@ Datasets are introduced only when signal stability is sufficient for reliable in
 
 ---
 
+### May 2026 Structured Biomarker Integration
+
+May 2026 physical testing artifacts are present in the archive snapshot layer.
+
+Structured biomarker fusion for the May 2026 testing window remains pending until the TruDiagnostic result set is returned and can be integrated with the DEXA, BodPod, and VO₂ outputs as a complete observation package.
+
+Until then, May 2026 testing artifacts should be read as archived source materials, not as a completed structured biomarker row.
+
+---
+
 ### Notes
 
 - Absence of early structured data does not indicate absence of observation  
@@ -102,6 +112,7 @@ Datasets are introduced only when signal stability is sufficient for reliable in
 - No continuous VO₂ tracking  
 - No full environmental standardization  
 - Early prediction dataset contains reconstructed entries (segregated)  
+- May 2026 structured biomarker fusion remains pending TruDiagnostic result return  
 
 ---
 
@@ -112,6 +123,7 @@ Coverage limitations must be considered when evaluating:
 - performance trends  
 - recovery dynamics  
 - model calibration quality  
+- May 2026 testing-window outcomes prior to complete structured integration  
 
 No conclusions should be drawn outside the bounds of available data.
 
