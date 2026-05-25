@@ -7,36 +7,19 @@ Public Archive Status Dashboard
 
 ---
 
-## System State — 2026-W20 (Active Observation)
+## System State — 2026-W21 (Active Observation)
 
-**Last Updated:** 2026-W20  
+**Last Updated:** 2026-W21  
 **Repository State:** Active longitudinal observation  
 **Archive Mode:** Public, governed, versioned  
 
-Week 19 closed under stable Phase 2C consolidation conditions with early Phase 2D characteristics emerging.
+Week 20 closed under stable Phase 2 consolidation conditions with increased evidence of portability under real-world variability.
 
-System behavior remained stable across May testing-window exposure, B1 aerobic anchor continuity, resumed Load Integration, controlled push-up introduction, emotional variability, schedule disruption, and weekly archive stewardship.
+System behavior remained stable across B1 aerobic anchor continuity, Load Integration consolidation, push-up integration, pull-up execution refinement, travel disruption, temporary fluid retention, reduced locomotion exposure, schedule variability, and weekly archive stewardship.
 
 May 2026 DEXA, BodPod / COSMED, and VO2 artifacts have been added to the snapshot layer. TruDiagnostic testing was collected and mailed separately, with results pending.
 
 No uncontrolled protocol escalation is recorded entering the current observation window.
-
----
-
-## Artifact — Stable Input / Rising Output (2026-04-23)
-
-A checkpoint demonstrating observable output divergence under fixed protocol conditions.
-
-Training structure remained unchanged. No protocol adjustments were introduced.  
-Sleep and recovery continued stabilizing across repeated exposure.
-
-The attached public artifact reflects increasing execution ease under identical loading conditions.
-
-This is not a peak performance event.  
-It is a non-event under stable inputs.
-
-Public artifact:  
-https://x.com/i/status/2047315930158604600
 
 ---
 
@@ -45,14 +28,6 @@ https://x.com/i/status/2047315930158604600
 This document provides a concise overview of the archive’s current public state.
 
 It is not a weekly report, phase declaration, or performance summary.
-
-Its purpose is to orient readers to:
-
-- current operating status
-- current phase context
-- active training structure
-- current constraints
-- archive navigation
 
 Detailed interpretation belongs in `/reports`.  
 Primary artifacts belong in `/snapshots`.
@@ -67,12 +42,12 @@ Primary artifacts belong in `/snapshots`.
 | Observation Model | Continuous, artifact-first longitudinal tracking |
 | Interpretation Mode | Strictly retrospective, artifact-bound |
 | Phase Context | Phase 2 — Load Integration |
-| Current Window | 2026-W20 active observation |
-| Prior Window | 2026-W19 closed |
-| Training Structure | Stable B1 anchor; Load Integration active under controlled expansion monitoring |
-| Recovery Signals | Stable; W19 recovery remained compatible with testing-window re-entry and added upper-body exposure |
-| Sleep Integrity | Structurally stable; W19 sleep observations appended |
-| Bodyweight Band | ~227–231 lb |
+| Current Window | 2026-W21 active observation |
+| Prior Window | 2026-W20 closed |
+| Training Structure | Stable B1 anchor; Load Integration active under reintegration / portability consolidation |
+| Recovery Signals | Stable; W20 recovery remained broadly preserved during travel variability |
+| Sleep Integrity | Structurally stable; W20 sleep observations appended |
+| Bodyweight Band | ~227–231 lb with travel-related fluid variability observed |
 | Biomarker Coverage | February 2026 multi-domain snapshot integrated; May 2026 DEXA/BodPod/VO2 artifacts added with TruDiagnostic pending |
 | Prediction Layer | Active — model error tracking and closure logic |
 | Archive Integrity | Maintained |
@@ -90,9 +65,10 @@ The system is operating within a load-integration window characterized by:
 - recovery compatibility under sustained exposure
 - demonstrated stability under both controlled and disrupted conditions
 - consolidation-first interpretation
-- controlled expansion of upper-body integration demands
+- controlled upper-body integration
+- increasing portability outside ideal routine conditions
 
-Week 20 is a controlled expansion monitoring period following Week 19 testing-window re-entry.
+Week 21 is a reintegration and portability consolidation period following Week 20 travel variability exposure.
 
 Phase language is descriptive, not promotional.  
 Advancement requires sustained, artifact-confirmed stability.
@@ -112,6 +88,7 @@ The archive is documenting:
 - unchanged architecture across observation windows
 - May 2026 artifact capture without immediate interpretive overreach
 - push-up integration under recovery-compatible conditions
+- real-world portability during travel and schedule variability
 
 No peaking behavior is assumed.  
 No pending testing outcome is interpreted before artifacts are available.  
@@ -123,13 +100,13 @@ No forward performance claims are made.
 
 Active constraints remain present but non-disruptive:
 
-- sleep variability within normal range
+- residual travel-related recovery variability
+- sleep timing normalization after environmental disruption
 - autonomic sensitivity under repeated exposure
 - interpretation risk during visible adaptation
-- environmental factors affecting flow onset without degrading output
 - minor elbow / shoulder / grip feedback during pull-up exposure
-- push-up novelty and local muscular fatigue
-- schedule variability from relational and real-world demands
+- push-up pacing awareness during fatigue accumulation
+- hydration and glycogen variability during reintegration
 - delayed return window for TruDiagnostic results
 
 No current constraint requires intervention.
@@ -140,23 +117,21 @@ No current constraint requires intervention.
 
 - training continuity preserved across observation windows
 - B1 aerobic anchor maintained
-- Load Integration resumed successfully after testing-window exposure
+- Load Integration remained stable before travel exposure
 - pull-up 4×4 structure remained stable and progressed closer to ambient execution
-- push-up exposure introduced without observed recovery collapse
-- no additional downregulation events required
+- push-up exposure continued without observed recovery collapse
+- travel disruption produced temporary edema / fluid retention without systemic destabilization
+- reduced movement exposure did not produce visible detraining
 - performance capacity stable under repeated exposure
 - movement efficiency improving under identical loading
-
-Supplementary movement artifact documenting controlled-tempo pull-up execution under unchanged loading conditions:
-
-https://x.com/i/status/2052810691690807540
 
 Observed patterns now include:
 
 - **consistent recovery alignment under controlled conditions**
 - **increasing repeatability of load integration execution**
 - **controlled upper-body expansion without recovery collapse**
-- **emotional regulation preserved under relational variability**
+- **emotional regulation preserved under relational and travel variability**
+- **real-world portability emerging under reduced environmental control**
 
 ---
 
@@ -168,6 +143,8 @@ Recent model error closures:
 - **034 (VO2 max)** closed against the May 2026 VO2 artifact
 - **035 (bodyweight range)** closed as **FAIL** using first out-of-range violation under mixed conditions
 - **036 (pull-up repeatability)** closed as **PASS** across all prescribed sessions without structural breakdown
+- **037 (push-up repeatability)** closed as **PASS** after 3×10 push-up integration completed without structural regression or recovery destabilization
+- **038 (recovery stability)** closed as **FAIL** due to evaluation-boundary invalidation from controlled travel-associated recovery / reduced structured exposure, not biological destabilization
 
 Open testing-related prediction records:
 
@@ -176,8 +153,10 @@ Open testing-related prediction records:
 These closures reinforce current system characteristics:
 
 - strength output remains **repeatable under fixed inputs**
-- bodyweight behavior exhibits **bounded variability under stable conditions**
+- push-up integration entered the Load Integration structure without systemic disruption
+- bodyweight behavior exhibits **bounded variability under stable and disrupted conditions**
 - body composition and VO2 predictions are now artifact-closed against the May 2026 testing window
+- recovery-stability prediction closure distinguished operational governance from biological collapse
 - epigenetic aging evaluation remains incomplete until TruDiagnostic results return
 
 No structural changes to prediction methodology.
@@ -202,15 +181,15 @@ No structural changes to prediction methodology.
 
 Current posture:
 
-**preserve stability while monitoring controlled expansion**
+**restore rhythm while preserving portability and recovery compatibility**
 
-During Week 20, Load Integration remains active under controlled expansion monitoring. No load, density, or movement escalation is assumed beyond the currently integrated structure.
+During Week 21, Load Integration remains active under reintegration and portability consolidation. No load, density, or movement escalation is assumed beyond the currently integrated structure.
 
 ---
 
 ## Risk Posture
 
-**Primary risk:** premature escalation during visible adaptation and post-testing confidence
+**Primary risk:** reactive compensation after travel-related reduction in structured movement
 
 **Mitigation:**
 
@@ -222,6 +201,7 @@ During Week 20, Load Integration remains active under controlled expansion monit
 - separate artifact capture from interpretation
 - leave pending TruDiagnostic outcomes unclosed until results return
 - stabilize push-up integration before adding further complexity
+- normalize hydration, sleep timing, and locomotion before considering progression
 
 Durability remains the priority.
 
@@ -244,7 +224,7 @@ raw artifacts
 
 ## Recent Structural Additions
 
-- February 2026 biomarker snapshot integrated (DEXA, BodPod, TruAge, TruHealth)
+- February 2026 biomarker snapshot integrated
 - May 2026 testing-window snapshot artifacts added:
   - DEXA body composition
   - DEXA summary
@@ -262,9 +242,10 @@ raw artifacts
 - `sleep_longitudinal_v1.csv` refined as the canonical longitudinal sleep dataset
 - `docs/audits/` updated with May audit records documenting snapshot and structural stabilization activity
 - `PHASE_MAP.md` refined to reserve Phase 3 as a future structural category rather than a projected outcome
-- 2026-W19 sleep observations appended to canonical sleep dataset
-- 2026-W19 weekly report closed
-- 2026-W20 weekly report initialized
+- 2026-W20 sleep observations appended to canonical sleep dataset
+- 2026-W20 weekly report closed
+- 2026-W21 weekly report initialized
+- Model-error entries 037 and 038 closed
 
 ---
 
@@ -303,15 +284,15 @@ Evaluation is based on:
 
 ## Update Flow
 
-- ongoing observation capture for current active week (**2026-W20**)
+- ongoing observation capture for current active week (**2026-W21**)
 - May DEXA/BodPod/VO2 artifacts integrated; TruDiagnostic results pending
-- DEXA and VO2 prediction records closed; TruDiagnostic prediction remains open pending result return
+- DEXA, VO2, push-up repeatability, and recovery-stability prediction records closed; TruDiagnostic prediction remains open pending result return
 - continued model error closure and refinement
 - continued archive stabilization without forward claims
-- continued Load Integration monitoring under controlled expansion conditions
+- continued Load Integration monitoring under reintegration and portability consolidation conditions
 
 ---
 
 **System State:** Stable  
-**Trajectory Posture:** Consolidation with controlled expansion monitoring  
+**Trajectory Posture:** Reintegration with portability consolidation  
 **Operational Mode:** Execute → observe → record artifacts → close retrospectively
