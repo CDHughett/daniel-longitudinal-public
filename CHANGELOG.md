@@ -27,11 +27,11 @@ Biological interpretation belongs in `/reports`.
 
 ### Added
 
-- Weekly report for 2026-W19 finalized to document the completed observation window under stable Phase 2C consolidation and controlled Load Integration re-entry.
+- Weekly report for 2026-W20 finalized to document the completed observation window under stable Phase 2 consolidation, controlled Load Integration continuity, and real-world travel variability exposure.
 
-- Weekly report for 2026-W20 initialized to maintain forward archive continuity during controlled expansion monitoring conditions.
+- Weekly report for 2026-W21 initialized to maintain forward archive continuity during reintegration and portability consolidation conditions.
 
-- Appended sleep dataset entries for 2026-W19 (2026-05-11 through 2026-05-17):
+- Appended sleep dataset entries for 2026-W20 (2026-05-18 through 2026-05-24):
   - direct crossover from source dataset
   - no inferred or reconstructed values included
   - schema consistency preserved against longitudinal sleep structure
@@ -122,6 +122,10 @@ Biological interpretation belongs in `/reports`.
   - recovery stability during resumed Load Integration density
   - both marked with `calibration_state = pre`
 
+- Closed model-error entries 037 and 038:
+  - 037 push-up repeatability closed as pass
+  - 038 recovery stability closed as fail due to evaluation-boundary invalidation rather than biological destabilization
+
 - Added `docs/audits/2026-05-16-saturday-audit.md` documenting:
   - post-May structural stabilization review
   - governance consistency assessment
@@ -155,30 +159,33 @@ Biological interpretation belongs in `/reports`.
 - `data/model_error/WHAT_THIS_LAYER_IS.md` link paths corrected to align with existing methodology file names and locations.
 
 - `LATEST.md` executive system dashboard updated to reflect:
-  - W19 closed observation window
-  - W20 active observation window
-  - successful post-testing Load Integration re-entry
-  - controlled push-up integration
+  - W20 closed observation window
+  - W21 active observation window
+  - successful travel-variability absorption
+  - reintegration and portability consolidation posture
+  - updated prediction layer state after 037 and 038 closures
   - continued no-forward-claims posture while TruDiagnostic results remain pending
-  - continued consolidation-first operational posture
 
 - `reports/2026-W19.md` refined to remove repository/public-activity language and preserve weekly report scope around training, recovery, testing-window conditions, and documentation continuity.
 
-- `reports/2026-W19.md` finalized to reflect the completed testing-window observation period, successful Load Integration re-entry, controlled push-up integration, and preserved recovery behavior under expanded upper-body demand.
+- `reports/2026-W20.md` finalized to reflect the completed observation window, stable Load Integration continuity, transient travel-related fluid retention, preserved recovery behavior, and portability under reduced environmental control.
 
-- `reports/2026-W20.md` initialized to maintain forward continuity during controlled expansion monitoring conditions.
+- `reports/2026-W21.md` initialized to maintain forward continuity during post-travel reintegration and recovery normalization monitoring.
 
 - `DATA_COVERAGE.md` updated:
   - clarified May 2026 structured biomarker integration status
   - explicitly constrained interpretation of pending TruDiagnostic-linked testing artifacts
   - reinforced distinction between archived source artifacts and completed structured biomarker fusion
 
-- `data/sleep_longitudinal_v1.csv` extended through 2026-05-17 to preserve weekly continuity across the W19 observation window.
+- `data/sleep_longitudinal_v1.csv` extended through 2026-05-24 to preserve weekly continuity across the W20 observation window.
 
 - `data/model_error/model_error_gap_v1.csv` updated:
   - closed 035 as FAIL using first out-of-range violation
   - closed 036 as PASS across all prescribed sessions without structural breakdown
   - closed May 2026 DEXA and VO2 prediction records
+  - closed 037 as PASS after push-up integration completed without structural regression or recovery destabilization
+  - closed 038 as FAIL due to evaluation-boundary invalidation from controlled travel-associated recovery / reduced structured exposure
+  - preserved distinction between failed prediction criteria and biological destabilization
   - preserved forward-locked evaluation structure
 
 - `data/model_error/model_error_gap_v1.csv` normalized historical `error_direction` labels for closed model-error records to align with the active prediction-versus-actual convention. No prediction values, actual values, error magnitudes, statuses, or notes were changed.
@@ -204,7 +211,7 @@ Biological interpretation belongs in `/reports`.
   - removed stale references to superseded sleep-file naming
   - preserved historical rows without reinterpretation
   - standardized schema for forward compatibility
-  - extended observations through 2026-W19
+  - extended observations through 2026-W20
 
 - `udi_tracker.csv` updated to reflect mixed post-calibration closure blocks and to withhold UDI where mixed prediction types reduce comparability.
 
@@ -305,8 +312,11 @@ Biological interpretation belongs in `/reports`.
 - Wednesday audit pass completed
 - Saturday audit pass completed
 - Sunday weekly closeout completed
-- W19 formally closed
-- W20 initialized as active observation window
+- W20 formally closed
+- W21 initialized as active observation window
+- W20 sleep dataset entries appended
+- Model-error entries 037 and 038 closed
+- `LATEST.md` updated for W21 active state
 - Repository considered structurally consistent for external read-through
 - May 9 Saturday audit recorded as pre-snapshot stabilization checkpoint
 - May 2026 snapshot artifact integration completed
