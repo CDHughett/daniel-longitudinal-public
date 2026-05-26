@@ -126,6 +126,12 @@ Biological interpretation belongs in `/reports`.
   - 037 push-up repeatability closed as pass
   - 038 recovery stability closed as fail due to evaluation-boundary invalidation rather than biological destabilization
 
+- Added post-travel forward-locked model-error predictions:
+  - 039 travel reintegration following travel block
+  - 040 recovery-floor preservation during post-travel reintegration
+  - both marked with `calibration_state = pre`
+  - evaluation window begins with reintegration exposures on 2026-05-28
+
 - Added `docs/audits/2026-05-16-saturday-audit.md` documenting:
   - post-May structural stabilization review
   - governance consistency assessment
@@ -185,8 +191,10 @@ Biological interpretation belongs in `/reports`.
   - closed May 2026 DEXA and VO2 prediction records
   - closed 037 as PASS after push-up integration completed without structural regression or recovery destabilization
   - closed 038 as FAIL due to evaluation-boundary invalidation from controlled travel-associated recovery / reduced structured exposure
+  - added open prediction 039 for post-travel B1 and Load Integration reintegration
+  - added open prediction 040 for recovery-floor preservation during post-travel reintegration
   - preserved distinction between failed prediction criteria and biological destabilization
-  - preserved forward-locked evaluation structure
+  - preserved forward-locked evaluation structure before reintegration exposure begins
 
 - `data/model_error/model_error_gap_v1.csv` normalized historical `error_direction` labels for closed model-error records to align with the active prediction-versus-actual convention. No prediction values, actual values, error magnitudes, statuses, or notes were changed.
 
@@ -316,6 +324,7 @@ Biological interpretation belongs in `/reports`.
 - W21 initialized as active observation window
 - W20 sleep dataset entries appended
 - Model-error entries 037 and 038 closed
+- Model-error entries 039 and 040 opened for post-travel reintegration monitoring
 - `LATEST.md` updated for W21 active state
 - Repository considered structurally consistent for external read-through
 - May 9 Saturday audit recorded as pre-snapshot stabilization checkpoint
