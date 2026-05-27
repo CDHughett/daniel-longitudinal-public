@@ -148,6 +148,14 @@ Biological interpretation belongs in `/reports`.
   - observer-facing language refinement review
   - May biomarker integration clarification pass
 
+- Added `docs/audits/2026-05-27-wednesday-audit.md` documenting:
+  - W20/W21 continuity review
+  - Markdown link integrity verification
+  - dataset parse integrity confirmation
+  - model-error layer consistency review
+  - observer-facing wording refinement recommendations
+  - continued governance posture alignment
+
 ---
 
 ### Changed
@@ -177,6 +185,10 @@ Biological interpretation belongs in `/reports`.
 - `reports/2026-W20.md` finalized to reflect the completed observation window, stable Load Integration continuity, transient travel-related fluid retention, preserved recovery behavior, and portability under reduced environmental control.
 
 - `reports/2026-W21.md` initialized to maintain forward continuity during post-travel reintegration and recovery normalization monitoring.
+
+- `reports/2026-W21.md` refined to replace active-window portability validation language with portability observation language.
+
+- `reports/2026-W16.md` refined to replace stronger validation language with retrospective stability evaluation language.
 
 - `DATA_COVERAGE.md` updated:
   - clarified May 2026 structured biomarker integration status
@@ -334,3 +346,4 @@ Biological interpretation belongs in `/reports`.
 - May 13 Wednesday audit completed after post-snapshot model-error direction normalization
 - May 16 Saturday audit completed after post-snapshot stabilization and observer-legibility review
 - May 20 Wednesday audit completed after mid-week coherence, verification, and observer-facing refinement review
+- May 27 Wednesday audit completed after W20/W21 continuity review and observer-facing wording refinement
