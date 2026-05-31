@@ -227,17 +227,16 @@ raw artifacts
 
 ---
 
-## Recent Structural Additions
+## Current Observation Window
 
-Current update set:
+Current archive maintenance completed:
 
-- 2026-W21 weekly report closed
-- 2026-W22 weekly report initialized
-- 2026-W21 sleep observations appended to `sleep_longitudinal_v1.csv`
-- `LATEST.md` advanced to 2026-W22 active observation
-- current dashboard trimmed to current-state orientation rather than historical changelog function
+- 2026-W21 closed
+- 2026-W22 active
+- sleep dataset current through 2026-05-31
+- TruDiagnostic pending
 
-Historical structural additions are maintained in `CHANGELOG.md`.
+Historical repository activity is maintained in `CHANGELOG.md`.
 
 ---
 
