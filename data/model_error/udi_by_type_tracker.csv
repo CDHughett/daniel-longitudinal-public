@@ -1,0 +1,5 @@
+window_end_date,prediction_type,eligible_closed_primary_count,under_count,over_count,neutral_count,udi_value,concordance_rate,notes
+2026-06-01,point,2,1,1,0,withheld,,"Clean non-compound primary point records: 013 and 034. Compound point records 032 and 033 excluded pending split or declared-average resolution."
+2026-06-01,range,6,2,3,1,withheld,,"Eligible closed primary range records: 014, 027, 028, 029, 031, 035. UDI_range withheld pending final direction audit."
+2026-06-01,state,12,0,2,10,excluded,0.83,"Eligible closed primary state records: 015, 016, 018, 019, 020, 021, 022, 023, 024, 030, 036, 037. State_concordance = 10/12 = 0.83. State predictions excluded from magnitude UDI."
+2026-06-01,trajectory,1,0,0,1,excluded,1.00,"Eligible closed primary trajectory record: 017. Trajectory_concordance = 1/1 = 1.00. Trajectory predictions excluded from magnitude UDI."
