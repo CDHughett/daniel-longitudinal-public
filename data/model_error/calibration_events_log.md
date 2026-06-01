@@ -16,3 +16,18 @@ By this point, forward-looking model interpretations had begun shifting away fro
 
 **Notes:**  
 This boundary is currently treated as the primary working anchor for post-calibration interpretation and may be refined later if an earlier or more precise boundary becomes defensible from dated primary records.
+
+---
+
+## Event 002 — May 2026 Snapshot Closure Integration
+
+**Date:** 2026-06-01  
+**Type:** Post-calibration closure update following May 2026 artifact completion  
+**Domains affected:** epigenetic aging, body composition, VO2 max, recovery, performance, UDI governance  
+**Model state:** post  
+
+**Description:**  
+The May 2026 snapshot artifact set was completed with DEXA, BodPod/COSMED, VO2 summary, TruAge, Advanced TruAge, and TruHealth reports. Model error records 032 through 038 were closed or incorporated into the active closure inventory, including epigenetic aging, DEXA body composition, VO2 max, push-up repeatability, and recovery-stability predictions.
+
+**Notes:**  
+The May closure block materially expanded the post-calibration prediction ledger. UDI remains intentionally withheld because the closure inventory contains mixed prediction classes, including point, range, trajectory, and binary-state outcomes, without an approved weighting methodology. Directional counts are retained in `udi_tracker.csv` for transparency while aggregate UDI scoring remains governance-locked.
