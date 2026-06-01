@@ -1,7 +1,7 @@
 # LATEST — Executive System State
 
 Daniel Longitudinal Study  
-Public Archive Status Dashboard  
+Public Archive Status Dashboard
 
 > Note: Week labels follow the repository’s internal reporting index rather than strict ISO calendar weeks. See [`docs/WEEK_INDEXING.md`](docs/WEEK_INDEXING.md).
 
@@ -11,7 +11,7 @@ Public Archive Status Dashboard
 
 **Last Updated:** 2026-W22  
 **Repository State:** Active longitudinal observation  
-**Archive Mode:** Public, governed, versioned  
+**Archive Mode:** Public, governed, versioned
 
 Week 21 closed under stable Phase 2 reintegration conditions following Week 20 real-world travel variability exposure.
 
@@ -21,8 +21,9 @@ Current archive state reflects:
 - 2026-W22 weekly report initialized
 - 2026-W21 sleep observations appended to the canonical longitudinal sleep dataset
 - LATEST dashboard advanced to the current W22 observation window
-- May 2026 DEXA, BodPod / COSMED, and VO2 artifacts integrated
-- TruDiagnostic May 2026 result still pending and not yet interpreted
+- May 2026 DEXA, BodPod / COSMED, VO2, TruAge, Advanced TruAge, and TruHealth artifacts integrated
+- May 2026 structured biomarker fusion completed
+- Model Error 032 closed against May 2026 TruDiagnostic results
 
 No uncontrolled protocol escalation is recorded entering the current observation window.
 
@@ -54,8 +55,8 @@ Historical structural changes belong in `CHANGELOG.md`.
 | Recovery Signals | Stable; W21 recovery normalized following travel reintegration |
 | Sleep Integrity | Structurally stable; W21 sleep observations appended |
 | Bodyweight Band | ~227–231 lb with post-travel normalization observed |
-| Biomarker Coverage | February 2026 multi-domain snapshot integrated; May 2026 DEXA/BodPod/VO2 artifacts added with TruDiagnostic pending |
-| Prediction Layer | Active — model error tracking and closure logic |
+| Biomarker Coverage | February 2026 and May 2026 integrated multi-domain snapshots available |
+| Prediction Layer | Active — model error tracking, closure logic, and governance layer |
 | Archive Integrity | Maintained |
 
 ---
@@ -78,7 +79,8 @@ The system is operating within a load-integration window characterized by:
 
 Week 22 is a normal-life variability monitoring and ambient execution consolidation period following Week 21 reintegration closeout.
 
-Phase language is descriptive, not promotional.  
+Phase language is descriptive, not promotional.
+
 Advancement requires sustained, artifact-confirmed stability.
 
 ---
@@ -94,14 +96,14 @@ The archive is documenting:
 - consolidation over escalation
 - controlled post-testing re-entry without forward claims
 - unchanged architecture across observation windows
-- May 2026 artifact capture without immediate interpretive overreach
+- completed May 2026 integrated testing window
 - push-up integration under recovery-compatible conditions
 - pull-up sequencing refinement with reduced joint signaling
 - real-world portability during travel and schedule variability
 - reintegration normalization after disrupted conditions
 
-No peaking behavior is assumed.  
-No pending testing outcome is interpreted before artifacts are available.  
+No peaking behavior is assumed.
+
 No forward performance claims are made.
 
 ---
@@ -116,7 +118,6 @@ Active constraints remain present but non-disruptive:
 - minor elbow / shoulder / grip feedback during pull-up exposure
 - push-up pacing awareness during fatigue accumulation
 - hydration and glycogen variability under continued training exposure
-- delayed return window for TruDiagnostic results
 - wearable telemetry limitations following RingConn UI changes
 
 No current constraint requires intervention.
@@ -150,18 +151,28 @@ Observed patterns now include:
 
 ## Prediction Layer Update
 
-Recent model error closures remain current through the May 2026 testing and Load Integration window.
+Recent model error closures remain current through the completed May 2026 testing window.
 
-Open testing-related prediction records:
+Recent closures include:
 
-- **032 (epigenetic aging)** remains open pending delayed TruDiagnostic result return
+- epigenetic aging (032)
+- DEXA body composition (033)
+- VO2 max (034)
+- push-up repeatability (037)
+- recovery-stability governance evaluation (038)
 
 Current prediction posture:
 
-- completed DEXA and VO2 predictions are artifact-closed
-- pull-up and push-up repeatability are artifact-closed
-- recovery-stability evaluation remains governed by boundary logic rather than narrative reinterpretation
-- TruDiagnostic interpretation remains deferred until results return
+- May 2026 testing predictions are closed
+- DEXA and VO2 projections are artifact-closed
+- TruDiagnostic projections are artifact-closed
+- repeatability evaluations are artifact-closed
+- UDI remains intentionally withheld pending approval of a mixed-prediction weighting methodology
+
+Open prediction records:
+
+- 039 — travel reintegration
+- 040 — recovery floor preservation
 
 No structural changes to prediction methodology.
 
@@ -187,7 +198,9 @@ Current posture:
 
 **preserve ambient execution while monitoring normal-life variability and recovery compatibility**
 
-During Week 22, Load Integration remains active under normal-life variability monitoring and ambient execution consolidation. No load, density, or movement escalation is assumed beyond the currently integrated structure.
+During Week 22, Load Integration remains active under normal-life variability monitoring and ambient execution consolidation.
+
+No load, density, or movement escalation is assumed beyond the currently integrated structure.
 
 ---
 
@@ -200,10 +213,8 @@ During Week 22, Load Integration remains active under normal-life variability mo
 - preserve structural consistency
 - avoid unnecessary variation
 - avoid reactive optimization
-- allow testing artifacts to define the record
 - maintain recovery compatibility
 - separate artifact capture from interpretation
-- leave pending TruDiagnostic outcomes unclosed until results return
 - stabilize push-up and pull-up integration before adding further complexity
 - distinguish ordinary variability from regression
 - prioritize ambient execution and repeatability over escalation
@@ -234,7 +245,8 @@ Current archive maintenance completed:
 - 2026-W21 closed
 - 2026-W22 active
 - sleep dataset current through 2026-05-31
-- TruDiagnostic pending
+- May 2026 integrated biomarker fusion completed
+- May 2026 prediction closures completed
 
 Historical repository activity is maintained in `CHANGELOG.md`.
 
@@ -276,7 +288,7 @@ Evaluation is based on:
 ## Update Flow
 
 - ongoing observation capture for current active week (**2026-W22**)
-- May DEXA/BodPod/VO2 artifacts integrated; TruDiagnostic results pending
+- May 2026 integrated snapshot completed
 - continued model error closure and refinement
 - continued archive stabilization without forward claims
 - continued Load Integration monitoring under normal-life variability and ambient execution consolidation conditions
