@@ -65,9 +65,14 @@ When observed data are available:
 
 - `error_absolute = abs(prediction_value - actual_value)`
 - `error_direction =`
-  - `over` if actual exceeds predicted value
-  - `under` if actual falls below predicted value
+  - `under` if actual exceeds predicted value
+  - `over` if actual falls below predicted value
   - `none` if exact match
+
+Interpretation:
+
+- `under` = model underestimated observed outcome
+- `over` = model overestimated observed outcome
 
 ### Error Percent
 
@@ -93,10 +98,15 @@ Range predictions specify an expected interval.
 If the actual value falls:
 
 - within range → `error_absolute = 0`, `error_direction = none`, `error_pct = 0%`
-- above upper bound → `error_absolute = actual - upper_bound`, `error_direction = over`
-- below lower bound → `error_absolute = lower_bound - actual`, `error_direction = under`
+- above upper bound → `error_absolute = actual - upper_bound`, `error_direction = under`
+- below lower bound → `error_absolute = lower_bound - actual`, `error_direction = over`
 
 Range predictions should preserve the actual observed value used for closure.
+
+Interpretation:
+
+- `under` = model underestimated observed outcome
+- `over` = model overestimated observed outcome
 
 ---
 
@@ -199,6 +209,23 @@ A smaller clean file is methodologically stronger than a larger mixed one.
 
 ---
 
+## UDI v1.1 Alignment Note
+
+Prediction closure methodology must remain consistent with
+the directional definitions established in
+`docs/methodology/UDI_framework_v1.md`.
+
+For all eligible prediction types:
+
+- `under` = model underestimated observed outcome
+- `over` = model overestimated observed outcome
+
+These directional definitions are repository-wide and should
+remain consistent across prediction evaluation, model-error
+tracking, and future UDI calculations.
+
+---
+
 ## Version Note
 
 This version formalizes the separation between:
@@ -207,3 +234,6 @@ This version formalizes the separation between:
 - retrospective reconstructed baseline records
 
 That distinction is necessary to preserve credibility in the model error layer.
+
+This revision also aligns point and range prediction closure
+logic with repository-wide UDI v1.1 directional definitions.
