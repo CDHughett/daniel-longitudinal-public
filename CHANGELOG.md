@@ -177,6 +177,20 @@ Biological interpretation belongs in `/reports`.
   - model-error layer consistency review
   - observer-facing wording refinement recommendations
   - continued governance posture alignment
+ 
+- Added UDI v1.1 stratified reporting framework to formalize prediction-evaluation governance while composite UDI remains intentionally withheld.
+
+- Added `data/model_error/udi_by_type_tracker.csv` to separate point, range, state, and trajectory prediction evaluation pathways and prevent mixed-type aggregation artifacts.
+
+- Corrected prediction direction definitions in `methodology/prediction_evaluation.md` to align documented closure logic with repository model-error tracking conventions.
+
+- Amended `docs/methodology/UDI_framework_v1.md` to define stratified UDI reporting, document exclusion of state and trajectory predictions from magnitude-based UDI calculations, and establish future publication criteria for composite UDI.
+
+- Updated UDI governance records to reflect v1.1 approval status and continued withholding of composite UDI pending compound-record resolution and further methodological development.
+
+- Updated UDI framework definition language to align the core UDI definition with v1.1 stratified reporting methodology and continued composite withholding.
+
+- Clarified that UDI applies only to eligible magnitude-based prediction classes, while state and trajectory predictions are tracked separately through concordance measures.
 
 ---
 
@@ -364,6 +378,8 @@ Biological interpretation belongs in `/reports`.
   - toxin exposure markers
   - mitochondrial markers
   - NAD metabolism markers
+ 
+- `methodology/prediction_evaluation.md` updated to correct point and range prediction direction logic and align closure rules with repository-wide UDI v1.1 directional definitions.
 
 ---
 
