@@ -27,14 +27,15 @@ Biological interpretation belongs in `/reports`.
 
 ### Added
 
-- Weekly report for 2026-W20 finalized to document the completed observation window under stable Phase 2 consolidation, controlled Load Integration continuity, and real-world travel variability exposure.
+- Weekly report for 2026-W21 finalized to document the completed post-travel reintegration window under stable Phase 2 Load Integration conditions.
 
-- Weekly report for 2026-W21 initialized to maintain forward archive continuity during reintegration and portability consolidation conditions.
+- Weekly report for 2026-W22 initialized to maintain forward archive continuity during normal-life variability monitoring and ambient execution consolidation.
 
-- Appended sleep dataset entries for 2026-W20 (2026-05-18 through 2026-05-24):
+- Appended sleep dataset entries for 2026-W21 (2026-05-25 through 2026-05-31):
   - direct crossover from source dataset
   - no inferred or reconstructed values included
   - schema consistency preserved against longitudinal sleep structure
+  - canonical sleep dataset extended through 2026-05-31
 
 - Added `TELEMETRY.md` to define the relationship between the governed archive and the parallel real-time public subjective telemetry layer.
 
@@ -173,20 +174,29 @@ Biological interpretation belongs in `/reports`.
 - `data/model_error/WHAT_THIS_LAYER_IS.md` link paths corrected to align with existing methodology file names and locations.
 
 - `LATEST.md` executive system dashboard updated to reflect:
-  - W20 closed observation window
-  - W21 active observation window
-  - successful travel-variability absorption
-  - reintegration and portability consolidation posture
-  - updated prediction layer state after 037 and 038 closures
+  - W21 closed observation window
+  - W22 active observation window
+  - W21 sleep observations appended
+  - normal-life variability monitoring posture
+  - ambient execution consolidation posture
   - continued no-forward-claims posture while TruDiagnostic results remain pending
 
 - `reports/2026-W19.md` refined to remove repository/public-activity language and preserve weekly report scope around training, recovery, testing-window conditions, and documentation continuity.
 
-- `reports/2026-W20.md` finalized to reflect the completed observation window, stable Load Integration continuity, transient travel-related fluid retention, preserved recovery behavior, and portability under reduced environmental control.
+- `reports/2026-W21.md` finalized to reflect:
+  - completed post-travel recovery normalization
+  - preserved B1 aerobic anchor continuity
+  - resumed Load Integration compatibility
+  - pull-up sequencing refinement
+  - push-up integration stability
+  - stable sleep and autonomic behavior
+  - continued archive stewardship without recovery collapse or behavioral destabilization
 
-- `reports/2026-W21.md` initialized to maintain forward continuity during post-travel reintegration and recovery normalization monitoring.
-
-- `reports/2026-W21.md` refined to replace active-window portability validation language with portability observation language.
+- `reports/2026-W22.md` initialized to reflect:
+  - active W22 observation window
+  - normal-life variability monitoring
+  - ambient execution consolidation
+  - continued Load Integration without escalation assumptions
 
 - `reports/2026-W16.md` refined to replace stronger validation language with retrospective stability evaluation language.
 
@@ -195,7 +205,7 @@ Biological interpretation belongs in `/reports`.
   - explicitly constrained interpretation of pending TruDiagnostic-linked testing artifacts
   - reinforced distinction between archived source artifacts and completed structured biomarker fusion
 
-- `data/sleep_longitudinal_v1.csv` extended through 2026-05-24 to preserve weekly continuity across the W20 observation window.
+- `data/sleep_longitudinal_v1.csv` extended through 2026-05-31 to preserve weekly continuity across the W21 observation window.
 
 - `data/model_error/model_error_gap_v1.csv` updated:
   - closed 035 as FAIL using first out-of-range violation
@@ -332,12 +342,8 @@ Biological interpretation belongs in `/reports`.
 - Wednesday audit pass completed
 - Saturday audit pass completed
 - Sunday weekly closeout completed
-- W20 formally closed
-- W21 initialized as active observation window
-- W20 sleep dataset entries appended
 - Model-error entries 037 and 038 closed
 - Model-error entries 039 and 040 opened for post-travel reintegration monitoring
-- `LATEST.md` updated for W21 active state
 - Repository considered structurally consistent for external read-through
 - May 9 Saturday audit recorded as pre-snapshot stabilization checkpoint
 - May 2026 snapshot artifact integration completed
@@ -347,3 +353,7 @@ Biological interpretation belongs in `/reports`.
 - May 16 Saturday audit completed after post-snapshot stabilization and observer-legibility review
 - May 20 Wednesday audit completed after mid-week coherence, verification, and observer-facing refinement review
 - May 27 Wednesday audit completed after W20/W21 continuity review and observer-facing wording refinement
+- W21 formally closed
+- W22 initialized as active observation window
+- W21 sleep dataset entries appended
+- `LATEST.md` updated for W22 active state
