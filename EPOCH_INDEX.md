@@ -66,4 +66,4 @@ Interpretation remains subordinate to artifacts and belongs in [`reports/`](./re
 
 ---
 
-_Last updated as part of temporal anchor standardization._
+_Last reviewed during May 2026 snapshot completion._
