@@ -110,6 +110,27 @@ Biological interpretation belongs in `/reports`.
   - closed DEXA prediction records
   - closed VO2 prediction records
   - updated latest prediction layer state for May closures
+ 
+- Added May 2026 TruDiagnostic snapshot artifacts:
+  - `2026-05-advanced-truage.pdf`
+  - `2026-05-truage.pdf`
+  - `2026-05-truhealth.pdf`
+  - integrated into snapshot verification coverage
+  - incorporated into the May 2026 epoch record
+
+- Added May 2026 integrated biomarker fusion:
+  - appended May snapshot row to `biomarker_snapshot.csv`
+  - appended May epigenetic aging data to `epigenetic_longitudinal.csv`
+  - appended May TruHealth marker set to `bloodwork_longitudinal.csv`
+
+- Added May 2026 calibration event:
+  - documented snapshot closure integration
+  - documented expansion of post-calibration prediction inventory
+  - documented continued UDI governance posture
+
+- Added May 2026 UDI tracker update:
+  - incorporated all currently closed May prediction records
+  - retained governance-locked UDI status pending approved weighting methodology
 
 - Added `docs/audits/2026-05-13-wednesday-audit.md` documenting:
   - post-snapshot repository coherence review
@@ -282,6 +303,68 @@ Biological interpretation belongs in `/reports`.
 
 - Normalized May 2026 snapshot checksum formatting for consistency with repository-wide verification conventions.
 
+- `snapshots/2026-05/2026-05 Epoch.md` updated:
+  - removed pending TruDiagnostic language
+  - added TruAge references
+  - added Advanced TruAge references
+  - added TruHealth references
+  - updated snapshot completeness status
+
+- `SNAPSHOT_LOG.md` updated:
+  - May 2026 snapshot revised from partial testing window to completed integrated testing window
+  - added TruDiagnostic artifact references
+
+- `EPOCH_INDEX.md` updated:
+  - aligned May 2026 entry with completed integrated snapshot state
+
+- `LATEST.md` updated:
+  - May 2026 integrated snapshot marked complete
+  - TruDiagnostic results no longer pending
+  - model-error record 032 closed
+  - prediction-layer status updated
+  - archive state aligned with completed May integration cycle
+
+- `DATA_COVERAGE.md` updated:
+  - May 2026 structured biomarker fusion marked complete
+  - added bloodwork longitudinal dataset reference
+  - added UDI tracker dataset reference
+  - removed pending TruDiagnostic dependency language
+
+- `data/model_error/model_error_gap_v1.csv` updated:
+  - closed 032 against observed May TruDiagnostic outcomes
+  - recorded DunedinPACE and SymphonyAge comparison results
+  - preserved artifact-bound closure methodology
+
+- `data/model_error/udi_tracker.csv` updated:
+  - added May 2026 closure inventory summary
+  - retained governance-locked UDI status
+
+- `data/model_error/calibration_events_log.md` updated:
+  - added May 2026 snapshot closure integration event
+
+- `biomarker_snapshot.csv` expanded to include:
+  - integrated May 2026 DEXA
+  - BodPod / COSMED
+  - TruAge
+  - Advanced TruAge
+  - TruHealth data
+
+- `epigenetic_longitudinal.csv` expanded with:
+  - May 2026 OMICm age
+  - May 2026 DunedinPACE
+  - May 2026 SymphonyAge
+  - May 2026 organ-system age domains
+
+- `bloodwork_longitudinal.csv` expanded with:
+  - May 2026 TruHealth marker set
+  - vascular markers
+  - inflammation markers
+  - immune markers
+  - neurocognitive markers
+  - toxin exposure markers
+  - mitochondrial markers
+  - NAD metabolism markers
+
 ---
 
 ### Changed — Structural Alignment
@@ -333,7 +416,7 @@ Biological interpretation belongs in `/reports`.
 - UDI remains selectively applied where methodological comparability is sufficient.
 - Legacy trajectory prediction entries may remain open until a formal evaluation standard is defined.
 - Current architecture prioritizes clarity, separation of concerns, and auditability over premature abstraction.
-- TruDiagnostic May 2026 results remain pending and are not yet integrated into the snapshot layer.
+- May 2026 TruDiagnostic results have been integrated into the snapshot, dataset, and model-error layers. Interpretation remains governed by artifact-first methodology and retrospective reporting boundaries.
 
 ---
 
@@ -357,3 +440,11 @@ Biological interpretation belongs in `/reports`.
 - W22 initialized as active observation window
 - W21 sleep dataset entries appended
 - `LATEST.md` updated for W22 active state
+- May 2026 TruDiagnostic reports integrated
+- May 2026 structured biomarker fusion completed
+- May 2026 epigenetic longitudinal dataset updated
+- May 2026 bloodwork longitudinal dataset updated
+- Model-error record 032 closed against observed TruDiagnostic outcomes
+- UDI tracker updated through May 2026 closure inventory
+- Calibration events log updated for May 2026 snapshot completion
+- Data coverage layer updated to reflect completed May integration
