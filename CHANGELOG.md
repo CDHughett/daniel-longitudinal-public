@@ -192,6 +192,14 @@ Biological interpretation belongs in `/reports`.
 
 - Clarified that UDI applies only to eligible magnitude-based prediction classes, while state and trajectory predictions are tracked separately through concordance measures.
 
+- Added `data/model_error/udi_reconciliation_032_033.md` to resolve compound-record eligibility issues for model error records 032 and 033 under the UDI v1.1 framework.
+
+- Updated `udi_by_type_tracker.csv` to reflect component-level reconciliation of records 032 and 033.
+  - eligible point-record count updated from 2 to 7
+  - UDI_point remains withheld pending separate calculation and audit review
+
+- Clarified governance pathway for compound prediction records through documented component-level resolution methodology.
+
 ---
 
 ### Changed
