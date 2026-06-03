@@ -71,8 +71,8 @@ State and trajectory predictions are excluded from
 magnitude-based UDI calculations because they do not
 contain continuous error magnitudes.
 
-Composite UDI remains withheld pending resolution of
-compound-record handling and future methodological review.
+Composite UDI remains withheld pending future
+methodological review.
 
 ## Intended Use
 
@@ -95,6 +95,16 @@ Calibration events are logged in:
 These events define the comparison boundary between
 pre-calibration and post-calibration interpretation.
 
+## Related Methodology
+
+Additional evaluation methods are defined in:
+
+`docs/methodology/concordance_metrics.md`
+
+This document governs state and trajectory prediction
+evaluation through concordance metrics and operates
+alongside the UDI framework.
+
 ## UDI v1.1 Stratified Reporting Amendment
 
 Composite UDI remains withheld.
@@ -115,22 +125,17 @@ magnitude-based error averages.
 Composite UDI will remain withheld until a locked weighting
 methodology is approved before computation.
 
-Compound prediction records must be resolved before inclusion
-in `UDI_point`.
+Compound prediction records are governed through the
+methodology documented in:
 
-Preferred resolution path:
-- split compound records into sub-records when component outcomes
-  are independently measurable
+`data/model_error/udi_reconciliation_032_033.md`
 
-Alternative resolution path:
-- declare an averaging rule before computation
+Records 032 and 033 have been reconciled using a
+component-level resolution approach and are eligible
+for inclusion under the UDI v1.1 framework.
 
-Known compound records requiring resolution:
-- `032`
-- `033`
-
-Until these records are resolved, `UDI_point` remains withheld
-even if other point predictions are eligible.
+UDI_point remains unpublished pending completion of
+the current evaluation cycle and formal audit review.
 
 ## Caution
 
