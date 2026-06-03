@@ -207,6 +207,12 @@ Biological interpretation belongs in `/reports`.
   - UDI naming consistency review
   - observer-facing documentation review
   - post-May integration governance assessment
+ 
+- Added `docs/methodology/concordance_metrics.md` to define:
+  - State Concordance methodology
+  - Trajectory Concordance methodology
+  - evaluation boundaries for non-magnitude prediction classes
+  - relationship between concordance metrics and UDI v1.1
 
 ---
 
@@ -407,6 +413,11 @@ Biological interpretation belongs in `/reports`.
 - `CHANGELOG.md` updated:
   - resolved remaining active-document references to legacy UDI tracker naming
   - removed stale language implying TruDiagnostic results were pending after May 2026 integration
+ 
+- `docs/methodology/UDI_framework_v1.md` updated:
+  - linked concordance metrics methodology
+  - aligned compound-record language with completed reconciliation of records 032 and 033
+  - clarified that UDI publication remains pending audit review rather than unresolved record eligibility
 
 ---
 
@@ -492,3 +503,4 @@ Biological interpretation belongs in `/reports`.
 - Calibration events log updated for May 2026 snapshot completion
 - Data coverage layer updated to reflect completed May integration
 - June 3 Wednesday audit completed after UDI naming consistency review and observer-facing documentation cleanup
+- Concordance metrics methodology added and UDI framework aligned with reconciled compound-record status
