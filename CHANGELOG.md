@@ -44,7 +44,7 @@ Biological interpretation belongs in `/reports`.
 - Introduced model error tracking layer for structured comparison of predictions vs observed outcomes.
   - Added `/data/model_error/` directory
   - Added primary dataset `model_error_gap_v1.csv`
-  - Added rolling summary file `udi_tracker.csv`
+  - Added rolling summary file `udi_by_type_tracker.csv`
   - Added `data/model_error/README.md` for layer orientation and handling rules
   - Added `methodology/prediction_evaluation.md` defining evaluation rules for point, range, and state predictions
 
@@ -200,6 +200,14 @@ Biological interpretation belongs in `/reports`.
 
 - Clarified governance pathway for compound prediction records through documented component-level resolution methodology.
 
+- Added `docs/audits/2026-06-03-wednesday-audit.md` documenting:
+  - repository coherence review
+  - dataset integrity verification
+  - checksum continuity verification
+  - UDI naming consistency review
+  - observer-facing documentation review
+  - post-May integration governance assessment
+
 ---
 
 ### Changed
@@ -222,7 +230,7 @@ Biological interpretation belongs in `/reports`.
   - W21 sleep observations appended
   - normal-life variability monitoring posture
   - ambient execution consolidation posture
-  - continued no-forward-claims posture while TruDiagnostic results remain pending
+  - continued no-forward-claims posture after TruDiagnostic artifact integration
 
 - `reports/2026-W19.md` refined to remove repository/public-activity language and preserve weekly report scope around training, recovery, testing-window conditions, and documentation continuity.
 
@@ -286,7 +294,7 @@ Biological interpretation belongs in `/reports`.
   - standardized schema for forward compatibility
   - extended observations through 2026-W20
 
-- `udi_tracker.csv` updated to reflect mixed post-calibration closure blocks and to withhold UDI where mixed prediction types reduce comparability.
+- `udi_by_type_tracker.csv` updated to reflect mixed post-calibration closure blocks and to withhold UDI where mixed prediction types reduce comparability.
 
 - Model error layer documentation aligned with current methodology and open-prediction handling.
 
@@ -357,7 +365,7 @@ Biological interpretation belongs in `/reports`.
   - recorded DunedinPACE and SymphonyAge comparison results
   - preserved artifact-bound closure methodology
 
-- `data/model_error/udi_tracker.csv` updated:
+- `data/model_error/udi_by_type_tracker.csv` updated:
   - added May 2026 closure inventory summary
   - retained governance-locked UDI status
 
@@ -388,6 +396,17 @@ Biological interpretation belongs in `/reports`.
   - NAD metabolism markers
  
 - `methodology/prediction_evaluation.md` updated to correct point and range prediction direction logic and align closure rules with repository-wide UDI v1.1 directional definitions.
+
+- `DATA_COVERAGE.md` updated:
+  - aligned UDI dataset reference with active stratified tracker naming
+  - replaced legacy `udi_tracker.csv` reference with `udi_by_type_tracker.csv`
+
+- `data/model_error/calibration_events_log.md` updated:
+  - aligned UDI tracker reference with active stratified tracker naming
+
+- `CHANGELOG.md` updated:
+  - resolved remaining active-document references to legacy UDI tracker naming
+  - removed stale language implying TruDiagnostic results were pending after May 2026 integration
 
 ---
 
@@ -469,6 +488,7 @@ Biological interpretation belongs in `/reports`.
 - May 2026 epigenetic longitudinal dataset updated
 - May 2026 bloodwork longitudinal dataset updated
 - Model-error record 032 closed against observed TruDiagnostic outcomes
-- UDI tracker updated through May 2026 closure inventory
+- UDI by-type tracker updated through May 2026 closure inventory
 - Calibration events log updated for May 2026 snapshot completion
 - Data coverage layer updated to reflect completed May integration
+- June 3 Wednesday audit completed after UDI naming consistency review and observer-facing documentation cleanup
