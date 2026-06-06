@@ -212,7 +212,13 @@ Biological interpretation belongs in `/reports`.
   - State Concordance methodology
   - Trajectory Concordance methodology
   - evaluation boundaries for non-magnitude prediction classes
-  - relationship between concordance metrics and UDI v1.1
+  - relationship between concordance metrics andObservers?
+
+- Published repository release `v0.9.0` as a pre-DOI release candidate.
+  - completed Phase A repository hygiene review
+  - refined repository positioning language
+  - preserved stable archive state through formal version tag
+  - established pre-DOI checkpoint for future Zenodo archival release
 
 ---
 
@@ -418,6 +424,11 @@ Biological interpretation belongs in `/reports`.
   - linked concordance metrics methodology
   - aligned compound-record language with completed reconciliation of records 032 and 033
   - clarified that UDI publication remains pending audit review rather than unresolved record eligibility
+
+- `README.md` refined:
+  - repositioned archive description around longitudinal observational governance
+  - clarified archive-first posture
+  - improved observer-facing repository framing
 
 ---
 
