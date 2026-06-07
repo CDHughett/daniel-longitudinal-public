@@ -27,15 +27,18 @@ Biological interpretation belongs in `/reports`.
 
 ### Added
 
-- Weekly report for 2026-W21 finalized to document the completed post-travel reintegration window under stable Phase 2 Load Integration conditions.
+- Weekly report for 2026-W23 initialized to maintain forward archive continuity during continued Phase 2 consolidation, recovery-floor preservation monitoring, and normal-life variability observation.
 
-- Weekly report for 2026-W22 initialized to maintain forward archive continuity during normal-life variability monitoring and ambient execution consolidation.
-
-- Appended sleep dataset entries for 2026-W21 (2026-05-25 through 2026-05-31):
+- Appended sleep dataset entries for 2026-W22 (2026-06-01 through 2026-06-07):
   - direct crossover from source dataset
   - no inferred or reconstructed values included
   - schema consistency preserved against longitudinal sleep structure
-  - canonical sleep dataset extended through 2026-05-31
+  - canonical sleep dataset extended through 2026-06-07
+
+- Closed post-travel model-error records:
+  - 039 travel reintegration closed as pass
+  - 040 recovery-floor preservation closed as pass
+  - failure criteria not triggered during reintegration evaluation window
 
 - Added `TELEMETRY.md` to define the relationship between the governed archive and the parallel real-time public subjective telemetry layer.
 
@@ -212,7 +215,7 @@ Biological interpretation belongs in `/reports`.
   - State Concordance methodology
   - Trajectory Concordance methodology
   - evaluation boundaries for non-magnitude prediction classes
-  - relationship between concordance metrics andObservers?
+  - relationship between concordance metrics and observer-facing prediction reporting
 
 - Published repository release `v0.9.0` as a pre-DOI release candidate.
   - completed Phase A repository hygiene review
@@ -236,30 +239,7 @@ Biological interpretation belongs in `/reports`.
 
 - `data/model_error/WHAT_THIS_LAYER_IS.md` link paths corrected to align with existing methodology file names and locations.
 
-- `LATEST.md` executive system dashboard updated to reflect:
-  - W21 closed observation window
-  - W22 active observation window
-  - W21 sleep observations appended
-  - normal-life variability monitoring posture
-  - ambient execution consolidation posture
-  - continued no-forward-claims posture after TruDiagnostic artifact integration
-
 - `reports/2026-W19.md` refined to remove repository/public-activity language and preserve weekly report scope around training, recovery, testing-window conditions, and documentation continuity.
-
-- `reports/2026-W21.md` finalized to reflect:
-  - completed post-travel recovery normalization
-  - preserved B1 aerobic anchor continuity
-  - resumed Load Integration compatibility
-  - pull-up sequencing refinement
-  - push-up integration stability
-  - stable sleep and autonomic behavior
-  - continued archive stewardship without recovery collapse or behavioral destabilization
-
-- `reports/2026-W22.md` initialized to reflect:
-  - active W22 observation window
-  - normal-life variability monitoring
-  - ambient execution consolidation
-  - continued Load Integration without escalation assumptions
 
 - `reports/2026-W16.md` refined to replace stronger validation language with retrospective stability evaluation language.
 
@@ -429,6 +409,33 @@ Biological interpretation belongs in `/reports`.
   - repositioned archive description around longitudinal observational governance
   - clarified archive-first posture
   - improved observer-facing repository framing
+ 
+- `reports/2026-W22.md` finalized to reflect:
+  - completed normal-life variability monitoring window
+  - preserved ambient B1 execution
+  - stable Load Integration under ordinary-life demands
+  - successful pool reintegration exposure
+  - preserved recovery floor following post-travel reintegration
+  - closure of Model Error 039 and 040 without failure criteria
+
+- `reports/2026-W23.md` initialized to reflect:
+  - active W23 observation window
+  - recovery-floor preservation monitoring
+  - continued ambient execution observation
+  - normal-life variability exposure under Phase 2 consolidation conditions
+
+- `LATEST.md` executive system dashboard updated to reflect:
+  - W22 closed observation window
+  - W23 active observation window
+  - W22 sleep observations appended through 2026-06-07
+  - Model Error 039 and 040 closure
+  - continued Phase 2 consolidation posture
+
+- `data/sleep_longitudinal_v1.csv` extended through 2026-06-07 to preserve weekly continuity across the W22 observation window.
+
+- `data/model_error/model_error_gap_v1.csv` updated:
+  - closed 039 as PASS after post-travel B1 and Load Integration reintegration completed without recovery collapse, inflammatory rebound, multi-day autonomic destabilization, workload intolerance, or behavioral disruption
+  - closed 040 as PASS after recovery floor remained preserved through post-travel reintegration without recovery collapse, inflammatory escalation, movement-pattern intolerance, multi-day sleep destabilization, or meaningful autonomic suppression
 
 ---
 
@@ -491,7 +498,6 @@ Biological interpretation belongs in `/reports`.
 - Saturday audit pass completed
 - Sunday weekly closeout completed
 - Model-error entries 037 and 038 closed
-- Model-error entries 039 and 040 opened for post-travel reintegration monitoring
 - Repository considered structurally consistent for external read-through
 - May 9 Saturday audit recorded as pre-snapshot stabilization checkpoint
 - May 2026 snapshot artifact integration completed
@@ -501,10 +507,6 @@ Biological interpretation belongs in `/reports`.
 - May 16 Saturday audit completed after post-snapshot stabilization and observer-legibility review
 - May 20 Wednesday audit completed after mid-week coherence, verification, and observer-facing refinement review
 - May 27 Wednesday audit completed after W20/W21 continuity review and observer-facing wording refinement
-- W21 formally closed
-- W22 initialized as active observation window
-- W21 sleep dataset entries appended
-- `LATEST.md` updated for W22 active state
 - May 2026 TruDiagnostic reports integrated
 - May 2026 structured biomarker fusion completed
 - May 2026 epigenetic longitudinal dataset updated
@@ -515,3 +517,9 @@ Biological interpretation belongs in `/reports`.
 - Data coverage layer updated to reflect completed May integration
 - June 3 Wednesday audit completed after UDI naming consistency review and observer-facing documentation cleanup
 - Concordance metrics methodology added and UDI framework aligned with reconciled compound-record status
+- W22 formally closed
+- W23 initialized as active observation window
+- W22 sleep dataset entries appended through 2026-06-07
+- `LATEST.md` updated for W23 active state
+- Model-error entries 039 and 040 closed as pass
+- Post-travel reintegration evaluation window completed without failure criteria
