@@ -1,5 +1,5 @@
 window_end_date,prediction_type,eligible_closed_primary_count,under_count,over_count,neutral_count,udi_value,concordance_rate,notes
-2026-06-01,point,7,4,3,0,withheld,,"Compound point records 032 and 033 reconciled via component-level split in data/model_error/udi_reconciliation_032_033.md. Eligible point components: 013, 032-A, 032-B, 033-A, 033-B, 033-C, 034. UDI_point remains withheld pending separate calculation/audit commit."
-2026-06-01,range,6,2,3,1,withheld,,"Eligible closed primary range records: 014, 027, 028, 029, 031, 035. UDI_range withheld pending final direction audit."
-2026-06-01,state,12,0,2,10,excluded,0.83,"Eligible closed primary state records: 015, 016, 018, 019, 020, 021, 022, 023, 024, 030, 036, 037. State_concordance = 10/12 = 0.83. State predictions excluded from magnitude UDI."
-2026-06-01,trajectory,1,0,0,1,excluded,1.00,"Eligible closed primary trajectory record: 017. Trajectory_concordance = 1/1 = 1.00. Trajectory predictions excluded from magnitude UDI."
+2026-06-09,point,7,4,3,0,-3.43,,"Compound point records 032 and 033 reconciled via component-level split in data/model_error/udi_reconciliation_032_033.md. Eligible point components: 013, 032-A, 032-B, 033-A, 033-B, 033-C, 034. UDI_point = -3.43."
+2026-06-09,range,6,2,3,1,-9.54,,"Eligible closed primary range records: 014, 027, 028, 029, 031, 035. UDI_range = -9.54."
+2026-06-09,state,13,0,2,11,excluded,0.85,"Eligible closed primary state records: 015, 016, 018, 019, 020, 021, 022, 023, 024, 030, 036, 037, 039. State_concordance = 11/13 = 0.85. State predictions excluded from magnitude UDI."
+2026-06-09,trajectory,1,0,0,1,excluded,1.00,"Eligible closed primary trajectory record: 017. Trajectory_concordance = 1/1 = 1.00. Trajectory predictions excluded from magnitude UDI."
