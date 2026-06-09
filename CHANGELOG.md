@@ -414,7 +414,7 @@ Biological interpretation belongs in `/reports`.
 - `docs/methodology/UDI_framework_v1.md` updated:
   - linked concordance metrics methodology
   - aligned compound-record language with completed reconciliation of records 032 and 033
-  - clarified that UDI publication remains pending audit review rather than unresolved record eligibility
+  - documented stratified UDI publication and composite UDI release governance criteria
 
 - `README.md` refined:
   - repositioned archive description around longitudinal observational governance
@@ -448,6 +448,14 @@ Biological interpretation belongs in `/reports`.
   - closed 039 as PASS after post-travel B1 and Load Integration reintegration completed without recovery collapse, inflammatory rebound, multi-day autonomic destabilization, workload intolerance, or behavioral disruption
   - closed 040 as PASS after recovery floor remained preserved through post-travel reintegration without recovery collapse, inflammatory escalation, movement-pattern intolerance, multi-day sleep destabilization, or meaningful autonomic suppression
 
+- `DATA_COVERAGE.md` updated:
+  - aligned UDI coverage language with published stratified UDI reporting
+  - clarified composite UDI withholding under documented release criteria
+
+- `LATEST.md` updated:
+  - aligned prediction-layer status with published UDI v1.1 reporting
+  - clarified distinction between stratified UDI publication and composite UDI withholding
+  
 ---
 
 ### Changed — Structural Alignment
