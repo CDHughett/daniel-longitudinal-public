@@ -122,8 +122,25 @@ they do not carry continuous magnitude information. They may
 support directional calibration review but are not included in
 magnitude-based error averages.
 
-Composite UDI will remain withheld until a locked weighting
-methodology is approved before computation.
+Composite UDI will remain withheld until predefined release
+criteria are satisfied and a weighting methodology is locked
+prior to computation.
+
+Composite UDI release criteria:
+
+- minimum 15 eligible primary point predictions
+- minimum 15 eligible primary range predictions
+- minimum 15 eligible primary state predictions
+- minimum 10 eligible primary trajectory predictions
+
+or
+
+- minimum 50 eligible primary closed predictions overall
+
+whichever threshold occurs later.
+
+Until these criteria are satisfied, stratified reporting
+remains the canonical UDI representation.
 
 Compound prediction records are governed through the
 methodology documented in:
@@ -133,9 +150,6 @@ methodology documented in:
 Records 032 and 033 have been reconciled using a
 component-level resolution approach and are eligible
 for inclusion under the UDI v1.1 framework.
-
-UDI_point remains unpublished pending completion of
-the current evaluation cycle and formal audit review.
 
 ## Caution
 
