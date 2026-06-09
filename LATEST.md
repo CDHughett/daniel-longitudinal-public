@@ -180,7 +180,8 @@ Current prediction posture:
 - TruDiagnostic projections are artifact-closed
 - repeatability evaluations are artifact-closed
 - post-travel reintegration evaluations are artifact-closed
-- UDI remains intentionally withheld pending approval of a mixed-prediction weighting methodology
+- stratified UDI values have been published under UDI v1.1 governance
+- composite UDI remains intentionally withheld under documented release criteria
 
 No currently open prediction records require immediate closure evaluation.
 
