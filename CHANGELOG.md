@@ -189,7 +189,7 @@ Biological interpretation belongs in `/reports`.
 
 - Amended `docs/methodology/UDI_framework_v1.md` to define stratified UDI reporting, document exclusion of state and trajectory predictions from magnitude-based UDI calculations, and establish future publication criteria for composite UDI.
 
-- Updated UDI governance records to reflect v1.1 approval status and continued withholding of composite UDI pending compound-record resolution and further methodological development.
+- Updated UDI governance records to reflect v1.1 approval status, completion of compound-record reconciliation, and continued withholding of composite UDI under documented release criteria.
 
 - Updated UDI framework definition language to align the core UDI definition with v1.1 stratified reporting methodology and continued composite withholding.
 
@@ -199,7 +199,7 @@ Biological interpretation belongs in `/reports`.
 
 - Updated `udi_by_type_tracker.csv` to reflect component-level reconciliation of records 032 and 033.
   - eligible point-record count updated from 2 to 7
-  - UDI_point remains withheld pending separate calculation and audit review
+  - stratified UDI publication enabled following reconciliation
 
 - Clarified governance pathway for compound prediction records through documented component-level resolution methodology.
 
@@ -223,6 +223,17 @@ Biological interpretation belongs in `/reports`.
   - preserved stable archive state through formal version tag
   - established pre-DOI checkpoint for future Zenodo archival release
 
+- Computed initial stratified UDI values under the UDI v1.1 framework:
+  - UDI_point = -3.43 across 7 eligible point components
+  - UDI_range = -9.54 across 6 eligible range records
+  - State_concordance = 0.85 across 13 eligible primary state predictions
+  - Trajectory_concordance = 1.00 across 1 eligible primary trajectory prediction
+
+- Added composite UDI governance criteria to UDI Framework v1:
+  - composite UDI remains withheld
+  - stratified reporting remains canonical until release thresholds are satisfied
+  - release criteria formally documented within methodology
+  
 ---
 
 ### Changed
@@ -523,3 +534,5 @@ Biological interpretation belongs in `/reports`.
 - `LATEST.md` updated for W23 active state
 - Model-error entries 039 and 040 closed as pass
 - Post-travel reintegration evaluation window completed without failure criteria
+- Initial stratified UDI values published under UDI v1.1 governance
+- Composite UDI release criteria formally documented
