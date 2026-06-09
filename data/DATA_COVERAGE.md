@@ -125,7 +125,8 @@ Associated model-error closures derived from the May artifact set have also been
 - No continuous VO₂ tracking
 - No full environmental standardization
 - Early prediction dataset contains reconstructed entries (segregated)
-- UDI remains intentionally withheld pending approval of a weighting methodology for mixed prediction classes
+- Composite UDI remains intentionally withheld under documented UDI v1.1 release criteria
+- Stratified UDI reporting is active for eligible magnitude-based prediction classes
 
 ---
 
