@@ -19,6 +19,18 @@ No biological interpretation was performed.
 
 ---
 
+## Supersession Note
+
+This audit references `data/model_error/udi_tracker.csv`.
+
+That file has since been superseded by:
+
+- `data/model_error/udi_by_type_tracker.csv`
+
+The historical audit conclusion is preserved as written, but the current UDI tracker file is now `udi_by_type_tracker.csv`.
+
+---
+
 ## Mechanical Integrity
 
 ### Internal Links
