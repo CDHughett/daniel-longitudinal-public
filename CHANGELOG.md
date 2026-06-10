@@ -233,7 +233,21 @@ Biological interpretation belongs in `/reports`.
   - composite UDI remains withheld
   - stratified reporting remains canonical until release thresholds are satisfied
   - release criteria formally documented within methodology
-  
+ 
+
+- Added `docs/audits/2026-06-10-release-candidate-audit.md` documenting:
+  - repository-wide release-candidate integrity review
+  - checksum verification continuity
+  - prediction-layer closure verification
+  - snapshot presence validation
+  - release-candidate readiness assessment
+
+- Added historical supersession notes to:
+  - `docs/audits/2026-05-09-saturday-audit.md`
+  - `docs/audits/2026-06-03-wednesday-audit.md`
+  - preserved historical audit conclusions while documenting transition from `udi_tracker.csv` to `udi_by_type_tracker.csv`
+ 
+
 ---
 
 ### Changed
@@ -455,7 +469,15 @@ Biological interpretation belongs in `/reports`.
 - `LATEST.md` updated:
   - aligned prediction-layer status with published UDI v1.1 reporting
   - clarified distinction between stratified UDI publication and composite UDI withholding
-  
+
+- `CODEMETA.json` updated:
+  - version advanced to `1.0.0-rc1`
+  - added repository identifier metadata
+  - added maintainer metadata
+  - added README reference
+  - added issue tracker reference
+  - aligned metadata with release-candidate state
+
 ---
 
 ### Changed — Structural Alignment
@@ -544,3 +566,4 @@ Biological interpretation belongs in `/reports`.
 - Post-travel reintegration evaluation window completed without failure criteria
 - Initial stratified UDI values published under UDI v1.1 governance
 - Composite UDI release criteria formally documented
+- Release-candidate audit completed and repository marked `1.0.0-rc1` in `CODEMETA.json`
