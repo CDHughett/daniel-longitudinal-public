@@ -8,6 +8,11 @@
     "givenName": "Christopher Daniel",
     "familyName": "Hughett"
   },
+  "maintainer": {
+    "@type": "Person",
+    "givenName": "Christopher Daniel",
+    "familyName": "Hughett"
+  },
   "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
   "keywords": [
     "longitudinal dataset",
@@ -17,7 +22,11 @@
     "recovery monitoring",
     "human performance"
   ],
+  "identifier": "daniel-longitudinal-public",
   "dateCreated": "2026",
-  "version": "0.1",
-  "codeRepository": "https://github.com/CDHughett/daniel-longitudinal-public"
+  "dateModified": "2026-06-10",
+  "version": "1.0.0-rc1",
+  "codeRepository": "https://github.com/CDHughett/daniel-longitudinal-public",
+  "readme": "https://github.com/CDHughett/daniel-longitudinal-public/blob/main/README.md",
+  "issueTracker": "https://github.com/CDHughett/daniel-longitudinal-public/issues"
 }
