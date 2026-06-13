@@ -43,6 +43,8 @@ This is the fastest way to understand the system's current observed state.
 
 ## Start Here
 
+- [`docs/NEWCOMER_PATH.md`](./docs/NEWCOMER_PATH.md) — recommended reading order for first-time visitors
+- [`docs/CONCEPTS.md`](./docs/CONCEPTS.md) — glossary of recurring archive concepts
 - [`LATEST.md`](./LATEST.md) — current system state
 - [`docs/START_HERE.md`](./docs/START_HERE.md) — guided repository orientation
 - [`snapshots`](./snapshots/) — primary artifacts and source evidence
