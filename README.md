@@ -2,6 +2,8 @@
 
 *A governed longitudinal observational archive*
 
+This archive began as a personal health project, evolved into a longitudinal observational archive, and now documents an ongoing effort to learn from reality through repeated measurement, prediction auditing, and error correction.
+
 This repository documents the behavior of a single human system across time under defined constraints.
 
 It contains:
