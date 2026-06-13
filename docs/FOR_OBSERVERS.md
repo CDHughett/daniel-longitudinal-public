@@ -115,6 +115,11 @@ Higher concordance suggests the model is describing reality more accurately.
 
 Lower concordance suggests revision may be required.
 
+
+For definitions of recurring archive terminology:
+
+→ [`CONCEPTS.md`](./CONCEPTS.md)
+
 ---
 
 The archive does not attempt to eliminate error.
