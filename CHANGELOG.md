@@ -247,6 +247,15 @@ Biological interpretation belongs in `/reports`.
   - `docs/audits/2026-06-03-wednesday-audit.md`
   - preserved historical audit conclusions while documenting transition from `udi_tracker.csv` to `udi_by_type_tracker.csv`
  
+- Added `docs/audits/2026-06-13_saturday_audit.md` documenting:
+  - repository structural integrity review
+  - external-feedback-derived discoverability assessment
+  - newcomer orientation gaps
+  - future documentation targets for UDI, model-error, prediction-audit, and archive-layer concepts
+
+- Added `docs/CONCEPTS.md` to define recurring archive terminology for first-time readers.
+
+- Added `docs/NEWCOMER_PATH.md` to provide a guided reading order for new observers.
 
 ---
 
@@ -477,6 +486,14 @@ Biological interpretation belongs in `/reports`.
   - added README reference
   - added issue tracker reference
   - aligned metadata with release-candidate state
+ 
+- `README.md` updated:
+  - clarified archive purpose and developmental trajectory
+  - added discoverability links for newcomer reading path and concept definitions
+
+- `docs/FOR_OBSERVERS.md` expanded:
+  - added verification-oriented guidance for readers asking how the archive evaluates its interpretations
+  - linked recurring terminology definitions through `docs/CONCEPTS.md`
 
 ---
 
@@ -567,3 +584,6 @@ Biological interpretation belongs in `/reports`.
 - Initial stratified UDI values published under UDI v1.1 governance
 - Composite UDI release criteria formally documented
 - Release-candidate audit completed and repository marked `1.0.0-rc1` in `CODEMETA.json`
+- June 13 Saturday audit completed after external-feedback discoverability review
+- Newcomer documentation layer added and linked from README
+- Observer-facing verification guidance expanded
