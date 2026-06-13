@@ -2,7 +2,7 @@
 
 This repository is not a product, guide, or completed framework.
 
-It is a working system under continuous observation..
+It is a working system under continuous observation.
 
 ---
 
