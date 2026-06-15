@@ -27,13 +27,13 @@ Biological interpretation belongs in `/reports`.
 
 ### Added
 
-- Weekly report for 2026-W23 initialized to maintain forward archive continuity during continued Phase 2 consolidation, recovery-floor preservation monitoring, and normal-life variability observation.
+- Weekly report for 2026-W24 initialized to maintain forward archive continuity during post-travel reintegration observation, recovery-floor durability monitoring, and continued Phase 2 consolidation.
 
-- Appended sleep dataset entries for 2026-W22 (2026-06-01 through 2026-06-07):
+- Appended sleep dataset entries for 2026-W23 (2026-06-08 through 2026-06-14):
   - direct crossover from source dataset
   - no inferred or reconstructed values included
   - schema consistency preserved against longitudinal sleep structure
-  - canonical sleep dataset extended through 2026-06-07
+  - canonical sleep dataset extended through 2026-06-14
 
 - Closed post-travel model-error records:
   - 039 travel reintegration closed as pass
@@ -443,29 +443,30 @@ Biological interpretation belongs in `/reports`.
   - repositioned archive description around longitudinal observational governance
   - clarified archive-first posture
   - improved observer-facing repository framing
- 
-- `reports/2026-W22.md` finalized to reflect:
-  - completed normal-life variability monitoring window
-  - preserved ambient B1 execution
-  - stable Load Integration under ordinary-life demands
-  - successful pool reintegration exposure
-  - preserved recovery floor following post-travel reintegration
-  - closure of Model Error 039 and 040 without failure criteria
 
-- `reports/2026-W23.md` initialized to reflect:
-  - active W23 observation window
-  - recovery-floor preservation monitoring
+- `reports/2026-W23.md` finalized to reflect:
+  - completed travel variability exposure window
+  - preserved ambient B1 execution
+  - stable Load Integration under travel and environmental variability
+  - successful recreational movement absorption
+  - preserved recovery floor despite environmental sleep disruption and meaningful life stress exposure
+  - recovery-floor portability confirmation under reduced environmental control
+
+- `reports/2026-W24.md` initialized to reflect:
+  - active W24 observation window
+  - post-travel reintegration monitoring
+  - recovery-floor durability observation
   - continued ambient execution observation
-  - normal-life variability exposure under Phase 2 consolidation conditions
+  - restored home-environment variability monitoring under Phase 2 consolidation conditions
 
 - `LATEST.md` executive system dashboard updated to reflect:
-  - W22 closed observation window
-  - W23 active observation window
-  - W22 sleep observations appended through 2026-06-07
-  - Model Error 039 and 040 closure
+  - W23 closed observation window
+  - W24 active observation window
+  - W23 sleep observations appended through 2026-06-14
   - continued Phase 2 consolidation posture
+  - post-travel reintegration observation following W23 travel variability exposure
 
-- `data/sleep_longitudinal_v1.csv` extended through 2026-06-07 to preserve weekly continuity across the W22 observation window.
+- `data/sleep_longitudinal_v1.csv` extended through 2026-06-14 to preserve weekly continuity across the W23 observation window.
 
 - `data/model_error/model_error_gap_v1.csv` updated:
   - closed 039 as PASS after post-travel B1 and Load Integration reintegration completed without recovery collapse, inflammatory rebound, multi-day autonomic destabilization, workload intolerance, or behavioral disruption
@@ -575,10 +576,6 @@ Biological interpretation belongs in `/reports`.
 - Data coverage layer updated to reflect completed May integration
 - June 3 Wednesday audit completed after UDI naming consistency review and observer-facing documentation cleanup
 - Concordance metrics methodology added and UDI framework aligned with reconciled compound-record status
-- W22 formally closed
-- W23 initialized as active observation window
-- W22 sleep dataset entries appended through 2026-06-07
-- `LATEST.md` updated for W23 active state
 - Model-error entries 039 and 040 closed as pass
 - Post-travel reintegration evaluation window completed without failure criteria
 - Initial stratified UDI values published under UDI v1.1 governance
@@ -587,3 +584,9 @@ Biological interpretation belongs in `/reports`.
 - June 13 Saturday audit completed after external-feedback discoverability review
 - Newcomer documentation layer added and linked from README
 - Observer-facing verification guidance expanded
+- W23 formally closed
+- W24 initialized as active observation window
+- W23 sleep dataset entries appended through 2026-06-14
+- `LATEST.md` updated for W24 active state
+- Travel variability exposure window completed without recovery-floor compromise
+- Post-travel reintegration observation initiated
