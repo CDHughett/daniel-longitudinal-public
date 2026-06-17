@@ -38,7 +38,8 @@ It is not a weekly report, phase declaration, changelog, or performance summary.
 
 Detailed interpretation belongs in `/reports`.  
 Primary artifacts belong in `/snapshots`.  
-Historical structural changes belong in `CHANGELOG.md`.
+Recent structural changes belong in `CHANGELOG.md`.  
+Historical structural changes are preserved in `docs/archive/CHANGELOG_ARCHIVE.md`.
 
 ---
 
@@ -269,7 +270,8 @@ Current archive maintenance completed:
 - May 2026 prediction closures completed
 - post-travel reintegration prediction closures completed
 
-Historical repository activity is maintained in `CHANGELOG.md`.
+Recent repository activity is maintained in `CHANGELOG.md`.  
+Historical repository activity is preserved in `docs/archive/CHANGELOG_ARCHIVE.md`.
 
 ---
 
