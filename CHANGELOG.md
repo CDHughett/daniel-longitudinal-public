@@ -75,3 +75,8 @@ Biological interpretation belongs in `/reports`.
   - migrated historical entries to `docs/archive/CHANGELOG_ARCHIVE.md`
   - reduced active changelog scope
   - improved repository legibility ahead of DOI release
+
+- `LATEST.md` updated:
+  - aligned repository activity references with changelog archive structure
+  - distinguished recent repository activity from historical archived activity
+  - clarified relationship between `CHANGELOG.md` and `docs/archive/CHANGELOG_ARCHIVE.md`
