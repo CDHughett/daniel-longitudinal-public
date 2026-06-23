@@ -206,6 +206,14 @@ CC BY-NC-ND 4.0
 
 ---
 
+## Citation 
+
+If you use or reference this archive, please cite:
+
+Hughett, C. D. (2026). Daniel Longitudinal Study (v1.0.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.20815612
+
+---
+
 ## Navigation
 
 - Current state → [`LATEST.md`](./LATEST.md)
