@@ -1,32 +1,32 @@
 {
-  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
-  "@type": "Dataset",
-  "name": "Daniel Longitudinal Study",
-  "description": "A governed, single-subject longitudinal dataset documenting training exposure, recovery dynamics, and system-level physiological adaptation over time. The archive follows an artifact-first model with retrospective interpretation and explicit structural governance.",
-  "author": {
-    "@type": "Person",
-    "givenName": "Christopher Daniel",
-    "familyName": "Hughett"
-  },
-  "maintainer": {
-    "@type": "Person",
-    "givenName": "Christopher Daniel",
-    "familyName": "Hughett"
-  },
-  "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
-  "keywords": [
-    "longitudinal dataset",
-    "single subject study",
-    "self quantification",
-    "training adaptation",
-    "recovery monitoring",
-    "human performance"
-  ],
-  "identifier": "daniel-longitudinal-public",
-  "dateCreated": "2026",
-  "dateModified": "2026-06-17",
-  "version": "1.0.0-rc2",
-  "codeRepository": "https://github.com/CDHughett/daniel-longitudinal-public",
-  "readme": "https://github.com/CDHughett/daniel-longitudinal-public/blob/main/README.md",
-  "issueTracker": "https://github.com/CDHughett/daniel-longitudinal-public/issues"
+"@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+"@type": "Dataset",
+"name": "Daniel Longitudinal Study",
+"description": "A governed, single-subject longitudinal dataset documenting training exposure, recovery dynamics, and system-level physiological adaptation over time. The archive follows an artifact-first model with retrospective interpretation and explicit structural governance.",
+"author": {
+"@type": "Person",
+"givenName": "Christopher Daniel",
+"familyName": "Hughett"
+},
+"maintainer": {
+"@type": "Person",
+"givenName": "Christopher Daniel",
+"familyName": "Hughett"
+},
+"license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+"keywords": [
+"longitudinal dataset",
+"single subject study",
+"self quantification",
+"training adaptation",
+"recovery monitoring",
+"human performance"
+],
+"identifier": "daniel-longitudinal-public",
+"dateCreated": "2026",
+"dateModified": "2026-06-23",
+"version": "1.0.0",
+"codeRepository": "https://github.com/CDHughett/daniel-longitudinal-public",
+"readme": "https://github.com/CDHughett/daniel-longitudinal-public/blob/main/README.md",
+"issueTracker": "https://github.com/CDHughett/daniel-longitudinal-public/issues"
 }
