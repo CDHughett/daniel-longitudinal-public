@@ -3,6 +3,8 @@
 Daniel Longitudinal Study  
 Public Archive Status Dashboard
 
+Archive DOI: https://doi.org/10.5281/zenodo.20815612
+
 > Note: Week labels follow the repository’s internal reporting index rather than strict ISO calendar weeks. See [`docs/WEEK_INDEXING.md`](docs/WEEK_INDEXING.md).
 
 ---
