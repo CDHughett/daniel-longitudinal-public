@@ -46,6 +46,11 @@ _No unreleased changes._
   - `CODEMETA.json` `dateModified` advanced to `2026-06-23`
   - `CITATION.cff` version set to `1.0.0`
   - `CITATION.cff` `date-released` set to `2026-06-23`
+ 
+- Zenodo DOI minted for Daniel Longitudinal Study:
+  - DOI: 10.5281/zenodo.20815612
+- Version v1.0.0 archived and preserved through Zenodo.
+- Repository transitioned to a citable scholarly dataset with permanent archival preservation.
 
 ---
 
