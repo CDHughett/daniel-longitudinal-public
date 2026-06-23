@@ -1,39 +1,27 @@
-cff-version: 1.2.0
-
+cff-version: "1.2.0"
 title: "Daniel Longitudinal Study"
-
-message: >
-If you use or reference this repository, please cite it using the
-metadata below. This archive documents a governed, single-subject
-longitudinal observation of training exposure, recovery dynamics,
-and system-level physiological adaptation.
-
+message: "If you use or reference this repository, please cite it using the metadata below. This archive documents a governed, single-subject longitudinal observation of training exposure, recovery dynamics, and system-level physiological adaptation."
 type: dataset
 
 authors:
 
-- family-names: Hughett
-  given-names: Christopher Daniel
-  alias: CDHughett
+- family-names: "Hughett"
+  given-names: "Christopher Daniel"
+  alias: "CDHughett"
 
-repository-code: https://github.com/CDHughett/daniel-longitudinal-public
+repository-code: "https://github.com/CDHughett/daniel-longitudinal-public"
 
-abstract: >
-The Daniel Longitudinal Study is a governed public archive documenting
-continuous single-subject observation across training, recovery,
-and behavioral execution. The archive follows an artifact-first model
-with retrospective interpretation and explicit structural governance.
+abstract: "The Daniel Longitudinal Study is a governed public archive documenting continuous single-subject observation across training, recovery, and behavioral execution. The archive follows an artifact-first model with retrospective interpretation and explicit structural governance."
 
 keywords:
 
-- longitudinal dataset
-- single subject study
-- self quantification
-- training adaptation
-- recovery monitoring
-- human performance
+- "longitudinal dataset"
+- "single subject study"
+- "self quantification"
+- "training adaptation"
+- "recovery monitoring"
+- "human performance"
 
-license: CC-BY-NC-ND-4.0
-
+license: "CC-BY-NC-ND-4.0"
 version: "1.0.0"
 date-released: "2026-06-23"
