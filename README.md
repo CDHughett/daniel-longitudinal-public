@@ -2,6 +2,8 @@
 
 *A governed longitudinal observational archive*
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20815612.svg)](https://doi.org/10.5281/zenodo.20815612)
+
 This archive began as a personal health project, evolved into a longitudinal observational archive, and now documents an ongoing effort to learn from reality through repeated measurement, prediction auditing, and error correction.
 
 This repository documents the behavior of a single human system across time under defined constraints.
