@@ -25,6 +25,12 @@ Biological interpretation belongs in `/reports`.
 
 ## [Unreleased]
 
+_No unreleased changes._
+
+---
+
+## [1.0.0] - 2026-06-23
+
 ### Added
 
 - Weekly report for 2026-W25 initialized to maintain forward archive continuity during continued Phase 2 consolidation, recovery-floor durability monitoring, lower-back mechanical-resolution observation, and trait-level work-capacity monitoring.
@@ -34,6 +40,12 @@ Biological interpretation belongs in `/reports`.
   - no inferred or reconstructed values included
   - schema consistency preserved against longitudinal sleep structure
   - canonical sleep dataset extended through 2026-06-21
+
+- Release metadata locked for the initial DOI-bearing archival release:
+  - `CODEMETA.json` version set to `1.0.0`
+  - `CODEMETA.json` `dateModified` advanced to `2026-06-23`
+  - `CITATION.cff` version set to `1.0.0`
+  - `CITATION.cff` `date-released` set to `2026-06-23`
 
 ---
 
@@ -67,8 +79,13 @@ Biological interpretation belongs in `/reports`.
 - `data/sleep_longitudinal_v1.csv` extended through 2026-06-21 to preserve weekly continuity across the W24 observation window.
 
 - `CODEMETA.json` updated:
-  - `dateModified` advanced to `2026-06-17`
-  - version advanced to `1.0.0-rc2`
+  - `dateModified` advanced to `2026-06-23`
+  - version advanced to `1.0.0`
+
+- `CITATION.cff` updated:
+  - version advanced to `1.0.0`
+  - release date set to `2026-06-23`
+  - DOI intentionally omitted pending Zenodo DOI issuance
 
 - Audit filename conventions normalized:
   - renamed `2026-06-13_saturday_audit.md`
