@@ -10,6 +10,7 @@ authors:
   alias: "CDHughett"
 
 repository-code: "https://github.com/CDHughett/daniel-longitudinal-public"
+doi: "10.5281/zenodo.20815612"
 
 abstract: "The Daniel Longitudinal Study is a governed public archive documenting continuous single-subject observation across training, recovery, and behavioral execution. The archive follows an artifact-first model with retrospective interpretation and explicit structural governance."
 
