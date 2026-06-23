@@ -18,6 +18,18 @@ It contains:
 
 ---
 
+## DOI and Versioning Note
+
+The Zenodo DOI points to the archived `v1.0.0` release snapshot.
+
+The `main` branch may include post-publication documentation updates, including DOI badges, citation text, metadata cleanup, and navigation improvements.
+
+For citation, use the Zenodo DOI-linked release record:
+
+Hughett, C. D. (2026). *Daniel Longitudinal Study (v1.0.0)* [Data set]. Zenodo. https://doi.org/10.5281/zenodo.20815612
+
+---
+
 ## What Makes This Different
 
 This is not a blog, protocol, intervention program, or theory thread.
@@ -206,11 +218,11 @@ CC BY-NC-ND 4.0
 
 ---
 
-## Citation 
+## Citation
 
 If you use or reference this archive, please cite:
 
-Hughett, C. D. (2026). Daniel Longitudinal Study (v1.0.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.20815612
+Hughett, C. D. (2026). *Daniel Longitudinal Study (v1.0.0)* [Data set]. Zenodo. https://doi.org/10.5281/zenodo.20815612
 
 ---
 
