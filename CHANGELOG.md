@@ -25,7 +25,18 @@ Biological interpretation belongs in `/reports`.
 
 ## [Unreleased]
 
-_No unreleased changes._
+### Added
+
+- Added Zenodo DOI badge to `README.md`:
+  - DOI: `10.5281/zenodo.20815612`
+
+- Added citation section to `README.md` using the Zenodo-generated citation for `v1.0.0`.
+
+- Added archive DOI reference to `LATEST.md`.
+
+- Added Zenodo DOI to `CITATION.cff` following DOI issuance.
+
+- Updated active repository documentation to reflect Zenodo archival publication and post-release DOI availability.
 
 ---
 
@@ -46,10 +57,12 @@ _No unreleased changes._
   - `CODEMETA.json` `dateModified` advanced to `2026-06-23`
   - `CITATION.cff` version set to `1.0.0`
   - `CITATION.cff` `date-released` set to `2026-06-23`
- 
+
 - Zenodo DOI minted for Daniel Longitudinal Study:
-  - DOI: 10.5281/zenodo.20815612
-- Version v1.0.0 archived and preserved through Zenodo.
+  - DOI: `10.5281/zenodo.20815612`
+
+- Version `v1.0.0` archived and preserved through Zenodo.
+
 - Repository transitioned to a citable scholarly dataset with permanent archival preservation.
 
 ---
@@ -90,7 +103,7 @@ _No unreleased changes._
 - `CITATION.cff` updated:
   - version advanced to `1.0.0`
   - release date set to `2026-06-23`
-  - DOI intentionally omitted pending Zenodo DOI issuance
+  - DOI left unset until Zenodo DOI issuance
 
 - Audit filename conventions normalized:
   - renamed `2026-06-13_saturday_audit.md`
