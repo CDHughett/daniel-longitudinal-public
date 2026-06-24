@@ -322,6 +322,7 @@ Evaluation is based on:
 
 - **Current State:** [LATEST.md](LATEST.md)
 - **Start Here:** [docs/START_HERE.md](docs/START_HERE.md)
+- **Observer Quickstart:** [docs/OBSERVER_QUICKSTART.md](docs/OBSERVER_QUICKSTART.md)
 - **Observer Evaluation:** [docs/FOR_OBSERVERS.md](docs/FOR_OBSERVERS.md)
 - **Data Coverage:** [data/DATA_COVERAGE.md](data/DATA_COVERAGE.md)
 - **Concepts:** [docs/CONCEPTS.md](docs/CONCEPTS.md)
