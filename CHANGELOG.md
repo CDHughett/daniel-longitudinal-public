@@ -77,7 +77,13 @@ Biological interpretation belongs in `/reports`.
   - clarified relationship between `OBSERVER_QUICKSTART.md`, `FOR_OBSERVERS.md`, `NEWCOMER_PATH.md`, and `INDEX.md`
   - reinforced evidence-first evaluation boundaries
 
-- Routed primary observer-facing documents toward `docs/OBSERVER_QUICKSTART.md` to prevent the new quickstart from becoming an orphaned file.
+- Updated `INDEX.md`:
+  - added `docs/OBSERVER_QUICKSTART.md` to the complete repository map
+  - added an observer evaluation layer
+  - clarified first-contact, observer-evaluation, temporal, and full-reading flows
+  - aligned the index with the post-DOI observer navigation structure
+
+- Routed primary observer-facing documents and the complete repository index toward `docs/OBSERVER_QUICKSTART.md` to prevent the new quickstart from becoming an orphaned file.
 
 ---
 
