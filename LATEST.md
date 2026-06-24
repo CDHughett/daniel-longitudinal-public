@@ -9,6 +9,16 @@ Archive DOI: https://doi.org/10.5281/zenodo.20815612
 
 ---
 
+## Quick Current-State Summary
+
+- Current phase: Phase 2 — Load Integration
+- Current window: 2026-W25 active observation
+- Prior window: 2026-W24 closed
+- Archive posture: public, governed, DOI-preserved, versioned, retrospective
+- Current emphasis: recovery-floor durability, ordinary-life workload absorption, lower-back mechanical-resolution monitoring, and post-DOI observer-pathway documentation cleanup
+
+---
+
 ## System State — 2026-W25 (Active Observation)
 
 **Last Updated:** 2026-W25  
@@ -63,6 +73,7 @@ Historical structural changes are preserved in `docs/archive/CHANGELOG_ARCHIVE.m
 | Biomarker Coverage | February 2026 and May 2026 integrated multi-domain snapshots available |
 | Prediction Layer | Active — model error tracking, closure logic, and governance layer |
 | Archive Integrity | Maintained |
+| Documentation Posture | Post-DOI observer-pathway navigation cleanup active |
 
 ---
 
@@ -116,6 +127,7 @@ The archive is documenting:
 - ambient execution under household, repository, and administrative demands
 - localized lower-back mechanical signaling contained without protocol retreat
 - training, recovery, archive stewardship, and daily life functioning increasingly as a unified operating system
+- post-DOI archive navigation cleanup without changing evidence, datasets, or interpretation rules
 
 No peaking behavior is assumed.
 
@@ -136,7 +148,7 @@ Active constraints remain present but non-disruptive:
 - conservative recreational movement / pool reintegration management
 - wearable telemetry limitations following RingConn UI changes
 - lower-back mechanical-resolution monitoring following localized trap-bar related signaling
-- administrative and repository workload management during final pre-DOI maintenance
+- administrative and repository workload management during post-DOI documentation maintenance
 - continued need to distinguish localized mechanical feedback from system-wide recovery concern
 
 No current constraint requires intervention.
@@ -253,7 +265,7 @@ No load, density, or movement escalation is assumed beyond the currently integra
 - prioritize ambient execution and repeatability over escalation
 - avoid converting recreational movement or pool exposure into performance testing
 - observe lower-back mechanical resolution without forcing compensation
-- preserve repository governance without allowing final pre-DOI maintenance to become training or recovery pressure
+- preserve repository governance without allowing post-DOI documentation maintenance to become training or recovery pressure
 
 Durability remains the priority.
 
@@ -285,6 +297,7 @@ Current archive maintenance completed:
 - May 2026 prediction closures completed
 - post-travel reintegration prediction closures completed
 - recovery-floor durability observation carried forward into W25
+- post-DOI observer-pathway documentation cleanup initiated
 
 Recent repository activity is maintained in `CHANGELOG.md`.  
 Historical repository activity is preserved in `docs/archive/CHANGELOG_ARCHIVE.md`.
@@ -308,10 +321,13 @@ Evaluation is based on:
 ## Navigation
 
 - **Current State:** [LATEST.md](LATEST.md)
+- **Start Here:** [docs/START_HERE.md](docs/START_HERE.md)
+- **Observer Evaluation:** [docs/FOR_OBSERVERS.md](docs/FOR_OBSERVERS.md)
+- **Data Coverage:** [data/DATA_COVERAGE.md](data/DATA_COVERAGE.md)
+- **Concepts:** [docs/CONCEPTS.md](docs/CONCEPTS.md)
 - **Temporal Index:** [EPOCH_INDEX.md](EPOCH_INDEX.md)
 - **Snapshot Log:** [SNAPSHOT_LOG.md](SNAPSHOT_LOG.md)
 - **Index:** [INDEX.md](INDEX.md)
-- **Start Here:** [docs/START_HERE.md](docs/START_HERE.md)
 - **Why Public:** [WHY_PUBLIC.md](WHY_PUBLIC.md)
 - **Governance:** [GOVERNANCE.md](GOVERNANCE.md)
 - **Reports:** [/reports](reports)
@@ -333,7 +349,7 @@ Evaluation is based on:
 - continued Load Integration monitoring under Phase 2 consolidation conditions
 - continued recovery-floor durability monitoring following W24 closeout
 - continued lower-back mechanical-resolution monitoring without protocol escalation
-- continued final pre-DOI repository maintenance
+- continued post-DOI documentation and navigation maintenance
 
 ---
 
