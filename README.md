@@ -36,15 +36,17 @@ If this is your first visit, read in this order:
 
 1. [`docs/START_HERE.md`](./docs/START_HERE.md) — 5-minute orientation
 2. [`LATEST.md`](./LATEST.md) — current system state
-3. [`docs/FOR_OBSERVERS.md`](./docs/FOR_OBSERVERS.md) — how to evaluate the archive
-4. [`data/DATA_COVERAGE.md`](./data/DATA_COVERAGE.md) — what data is and is not included
-5. [`docs/CONCEPTS.md`](./docs/CONCEPTS.md) — recurring terms
+3. [`docs/OBSERVER_QUICKSTART.md`](./docs/OBSERVER_QUICKSTART.md) — compact technical inspection route
+4. [`docs/FOR_OBSERVERS.md`](./docs/FOR_OBSERVERS.md) — broader observer evaluation path
+5. [`data/DATA_COVERAGE.md`](./data/DATA_COVERAGE.md) — what data is and is not included
+6. [`docs/CONCEPTS.md`](./docs/CONCEPTS.md) — recurring terms
 
 This path is enough to understand what the archive is, what it claims, what it does not claim, and where the evidence lives.
 
 Use these based on depth:
 
 - [`docs/START_HERE.md`](./docs/START_HERE.md) — first 5 minutes
+- [`docs/OBSERVER_QUICKSTART.md`](./docs/OBSERVER_QUICKSTART.md) — compact technical inspection route
 - [`docs/NEWCOMER_PATH.md`](./docs/NEWCOMER_PATH.md) — first full reading pass
 - [`INDEX.md`](./INDEX.md) — complete repository map
 
@@ -82,13 +84,16 @@ Use `/reports` for retrospective interpretation.
 Use `/data` for structured longitudinal datasets.  
 Use `/data/model_error` for prediction versus observed outcome review.
 
-For a skeptical or technical review path, see [`docs/FOR_OBSERVERS.md`](./docs/FOR_OBSERVERS.md).
+For a compact inspection route, see [`docs/OBSERVER_QUICKSTART.md`](./docs/OBSERVER_QUICKSTART.md).
+
+For the broader skeptical or technical review path, see [`docs/FOR_OBSERVERS.md`](./docs/FOR_OBSERVERS.md).
 
 ---
 
 ## Start Here
 
 - [`docs/START_HERE.md`](./docs/START_HERE.md) — first-contact orientation
+- [`docs/OBSERVER_QUICKSTART.md`](./docs/OBSERVER_QUICKSTART.md) — compact technical inspection route
 - [`docs/NEWCOMER_PATH.md`](./docs/NEWCOMER_PATH.md) — extended reading path for first-time visitors
 - [`docs/CONCEPTS.md`](./docs/CONCEPTS.md) — glossary of recurring archive concepts
 - [`LATEST.md`](./LATEST.md) — current system state
@@ -154,6 +159,10 @@ SHA256 verification is provided for binary snapshot artifacts where applicable.
 ## External Observers
 
 If you are evaluating the system structure directly:
+
+→ [`docs/OBSERVER_QUICKSTART.md`](./docs/OBSERVER_QUICKSTART.md)
+
+For the broader observer review path:
 
 → [`docs/FOR_OBSERVERS.md`](./docs/FOR_OBSERVERS.md)
 
@@ -261,6 +270,7 @@ Hughett, C. D. (2026). *Daniel Longitudinal Study (v1.0.0)* [Data set]. Zenodo. 
 
 - First 5 minutes → [`docs/START_HERE.md`](./docs/START_HERE.md)
 - Current state → [`LATEST.md`](./LATEST.md)
+- Observer quickstart → [`docs/OBSERVER_QUICKSTART.md`](./docs/OBSERVER_QUICKSTART.md)
 - Observer evaluation → [`docs/FOR_OBSERVERS.md`](./docs/FOR_OBSERVERS.md)
 - Data coverage → [`data/DATA_COVERAGE.md`](./data/DATA_COVERAGE.md)
 - Recurring terms → [`docs/CONCEPTS.md`](./docs/CONCEPTS.md)
