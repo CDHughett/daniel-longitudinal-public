@@ -36,7 +36,48 @@ Biological interpretation belongs in `/reports`.
 
 - Added Zenodo DOI to `CITATION.cff` following DOI issuance.
 
+- Added 2026-06-24 Wednesday audit:
+  - documents post-DOI repository integrity review
+  - records passing checks for structure, links, CSV parsing, sleep continuity, report continuity, snapshot checksum verification, model-error continuity, and metadata presence
+  - identifies observer-entry friction as the next documentation improvement layer
+
+- Added `docs/OBSERVER_QUICKSTART.md`:
+  - compact technical inspection route for researchers, skeptical readers, and outside observers
+  - routes readers through archive posture, current state, data coverage, one report, one snapshot, model-error review, and governance boundaries
+
+### Changed
+
 - Updated active repository documentation to reflect Zenodo archival publication and post-release DOI availability.
+
+- Improved `README.md` observer entry path:
+  - added `First 5 Minutes` reading path
+  - added `How to Evaluate This Archive` bridge
+  - clarified depth-based routing through `START_HERE.md`, `OBSERVER_QUICKSTART.md`, `NEWCOMER_PATH.md`, and `INDEX.md`
+  - routed external observers toward both compact and broader observer review paths
+
+- Rewrote `docs/START_HERE.md` as a true 5-minute observer guide:
+  - clarifies what the archive is and is not
+  - identifies where evidence lives
+  - explains how claims are limited
+  - routes readers toward `OBSERVER_QUICKSTART.md`, `FOR_OBSERVERS.md`, `NEWCOMER_PATH.md`, and `INDEX.md`
+
+- Updated `docs/NEWCOMER_PATH.md`:
+  - clarified its role as the first 30–60 minute reading path
+  - reduced overlap with `START_HERE.md`
+  - reordered reading progression from simple orientation toward technical evaluation
+
+- Updated `LATEST.md`:
+  - added quick current-state summary
+  - added post-DOI observer-pathway documentation posture
+  - replaced residual pre-DOI maintenance language with post-DOI documentation-maintenance language
+  - routed navigation to `docs/OBSERVER_QUICKSTART.md`
+
+- Updated `docs/FOR_OBSERVERS.md`:
+  - routed readers toward the new compact observer quickstart
+  - clarified relationship between `OBSERVER_QUICKSTART.md`, `FOR_OBSERVERS.md`, `NEWCOMER_PATH.md`, and `INDEX.md`
+  - reinforced evidence-first evaluation boundaries
+
+- Routed primary observer-facing documents toward `docs/OBSERVER_QUICKSTART.md` to prevent the new quickstart from becoming an orphaned file.
 
 ---
 
