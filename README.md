@@ -30,6 +30,26 @@ Hughett, C. D. (2026). *Daniel Longitudinal Study (v1.0.0)* [Data set]. Zenodo. 
 
 ---
 
+## First 5 Minutes
+
+If this is your first visit, read in this order:
+
+1. [`docs/START_HERE.md`](./docs/START_HERE.md) — 5-minute orientation
+2. [`LATEST.md`](./LATEST.md) — current system state
+3. [`docs/FOR_OBSERVERS.md`](./docs/FOR_OBSERVERS.md) — how to evaluate the archive
+4. [`data/DATA_COVERAGE.md`](./data/DATA_COVERAGE.md) — what data is and is not included
+5. [`docs/CONCEPTS.md`](./docs/CONCEPTS.md) — recurring terms
+
+This path is enough to understand what the archive is, what it claims, what it does not claim, and where the evidence lives.
+
+Use these based on depth:
+
+- [`docs/START_HERE.md`](./docs/START_HERE.md) — first 5 minutes
+- [`docs/NEWCOMER_PATH.md`](./docs/NEWCOMER_PATH.md) — first full reading pass
+- [`INDEX.md`](./INDEX.md) — complete repository map
+
+---
+
 ## What Makes This Different
 
 This is not a blog, protocol, intervention program, or theory thread.
@@ -55,12 +75,23 @@ This is the fastest way to understand the system's current observed state.
 
 ---
 
+## How to Evaluate This Archive
+
+Use `/snapshots` for primary evidence.  
+Use `/reports` for retrospective interpretation.  
+Use `/data` for structured longitudinal datasets.  
+Use `/data/model_error` for prediction versus observed outcome review.
+
+For a skeptical or technical review path, see [`docs/FOR_OBSERVERS.md`](./docs/FOR_OBSERVERS.md).
+
+---
+
 ## Start Here
 
-- [`docs/NEWCOMER_PATH.md`](./docs/NEWCOMER_PATH.md) — recommended reading order for first-time visitors
+- [`docs/START_HERE.md`](./docs/START_HERE.md) — first-contact orientation
+- [`docs/NEWCOMER_PATH.md`](./docs/NEWCOMER_PATH.md) — extended reading path for first-time visitors
 - [`docs/CONCEPTS.md`](./docs/CONCEPTS.md) — glossary of recurring archive concepts
 - [`LATEST.md`](./LATEST.md) — current system state
-- [`docs/START_HERE.md`](./docs/START_HERE.md) — guided repository orientation
 - [`snapshots`](./snapshots/) — primary artifacts and source evidence
 - [`reports`](./reports/) — structured retrospective interpretation
 - [`data`](./data/) — structured longitudinal datasets
@@ -101,8 +132,8 @@ The archive preserves continuity across:
 - training architecture evolution
 - phase-based system progression
 - governance and constraint frameworks
-- biomarker and system health snapshots (where publicly included)
-- prediction vs. observed outcome tracking (auxiliary review layer)
+- biomarker and system health snapshots where publicly included
+- prediction vs. observed outcome tracking as an auxiliary review layer
 - separation between governed records and informal subjective telemetry
 
 **Data scope and limitations:**  
@@ -228,14 +259,17 @@ Hughett, C. D. (2026). *Daniel Longitudinal Study (v1.0.0)* [Data set]. Zenodo. 
 
 ## Navigation
 
+- First 5 minutes → [`docs/START_HERE.md`](./docs/START_HERE.md)
 - Current state → [`LATEST.md`](./LATEST.md)
-- Guided orientation → [`docs/START_HERE.md`](./docs/START_HERE.md)
+- Observer evaluation → [`docs/FOR_OBSERVERS.md`](./docs/FOR_OBSERVERS.md)
+- Data coverage → [`data/DATA_COVERAGE.md`](./data/DATA_COVERAGE.md)
+- Recurring terms → [`docs/CONCEPTS.md`](./docs/CONCEPTS.md)
+- Guided orientation → [`docs/NEWCOMER_PATH.md`](./docs/NEWCOMER_PATH.md)
 - Index → [`INDEX.md`](./INDEX.md)
 - Epoch tracking → [`EPOCH_INDEX.md`](./EPOCH_INDEX.md)
 - Snapshot log → [`SNAPSHOT_LOG.md`](./SNAPSHOT_LOG.md)
 - Artifact history → [`snapshots`](./snapshots/)
 - Weekly reports → [`reports`](./reports/)
-- Data coverage → [`data/DATA_COVERAGE.md`](./data/DATA_COVERAGE.md)
 - Model-error layer → [`data/model_error/WHAT_THIS_LAYER_IS.md`](./data/model_error/WHAT_THIS_LAYER_IS.md)
 - Telemetry layer → [`TELEMETRY.md`](./TELEMETRY.md)
 - Versioning → [`VERSIONING.md`](./VERSIONING.md)
