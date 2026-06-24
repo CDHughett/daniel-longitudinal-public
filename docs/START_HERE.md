@@ -1,65 +1,129 @@
 # START HERE
 
-This is the fastest way to understand the repository without reading the full archive structure.
+This is the 5-minute orientation for the Daniel Longitudinal Study.
 
-The archive is governed, versioned, and artifact-first.
-
-It is not a coaching product, fitness journal, or theory thread.
+It is the fastest way to understand what this repository is, what it is not, where the evidence lives, and how claims are limited.
 
 ---
 
-## 2-Minute Orientation
+## In One Sentence
 
-1. [README.md](../README.md)  
-2. [LATEST.md](../LATEST.md)  
-3. [EPOCH_INDEX.md](../EPOCH_INDEX.md)  
-4. [/snapshots](../snapshots/)  
-5. [/reports](../reports/)  
-
-- This sequence is sufficient to understand the current system state, temporal structure, and supporting evidence.
+This is a governed, DOI-preserved, single-subject longitudinal observational archive documenting one human system across time under defined constraints.
 
 ---
 
-## Recommended navigation by intent
+## What This Is
 
-### Current system state
-- [LATEST.md](../LATEST.md)
-
-### Repository overview
-- [README.md](../README.md)
-
-### System model and structure
-- [SYSTEM_OVERVIEW.md](../SYSTEM_OVERVIEW.md)
-
-### Phase + temporal structure
-- [PHASE_MAP.md](../PHASE_MAP.md)  
-- [EPOCH_INDEX.md](../EPOCH_INDEX.md)  
-- [SNAPSHOT_LOG.md](../SNAPSHOT_LOG.md)
-
-### Governance
-- [GOVERNANCE.md](../GOVERNANCE.md)
-
-### Data + artifacts
-- [/data](../data/)  
-- [/reports](../reports/)  
-- [/snapshots](../snapshots/)
+- a public longitudinal archive
+- a single-subject observational record
+- a versioned evidence structure
+- a retrospective interpretation system
+- a prediction-audit and calibration record
+- a governed archive of repeated measurement, observation, and review
 
 ---
 
-## How to read this archive
+## What This Is Not
 
-artifacts  
-→ reports  
-→ datasets  
-→ governance  
+- not a protocol recommendation
+- not a coaching product
+- not a clinical study
+- not a universal longevity claim
+- not a real-time performance diary
+- not a theory-first archive
+
+---
+
+## What To Read First
+
+If you only have a few minutes, read in this order:
+
+1. [`README.md`](../README.md) — repository overview
+2. [`LATEST.md`](../LATEST.md) — current system state
+3. [`data/DATA_COVERAGE.md`](../data/DATA_COVERAGE.md) — what data is and is not included
+4. [`docs/FOR_OBSERVERS.md`](./FOR_OBSERVERS.md) — how to evaluate the archive
+5. [`docs/CONCEPTS.md`](./CONCEPTS.md) — recurring terms
+
+This sequence is enough to understand what the archive is, what it claims, what it does not claim, and where the evidence lives.
+
+---
+
+## Where The Evidence Lives
+
+Use these areas based on what you are trying to inspect:
+
+- [`snapshots`](../snapshots/) — primary artifacts and source evidence
+- [`reports`](../reports/) — structured retrospective interpretation
+- [`data`](../data/) — structured longitudinal datasets
+- [`data/model_error`](../data/model_error/) — prediction versus observed outcome review
+- [`docs`](./) — methodology, governance, concepts, and observer context
 
 Artifacts precede interpretation.
 
+Reports interpret recorded evidence retrospectively.
+
+Datasets preserve structured longitudinal signals.
+
+The model-error layer records prediction calibration and observed outcomes.
+
+Governance documents define how the archive constrains interpretation.
+
 ---
 
-## Public posture
+## Current System State
+
+The fastest current-state view is:
+
+[`LATEST.md`](../LATEST.md)
+
+Use this to understand the active observation window, current phase, recent archive updates, and present system emphasis.
+
+---
+
+## How Evidence Is Organized
+
+```text
+snapshots
+  ↓
+reports
+  ↓
+data
+  ↓
+model-error layer
+  ↓
+governance
+```
+
+The archive should be read from evidence toward interpretation, not the other way around.
+
+---
+
+## How Claims Are Limited
+
+No claim extends beyond the recorded single-subject archive.
+
+This repository does not claim that observed outcomes generalize to other people.
+
+It documents one human system under constrained conditions across time.
+
+Interpretation remains provisional unless repeatedly supported by recorded evidence.
+
+---
+
+## Recommended Navigation By Depth
+
+Use these based on how much time you have:
+
+- [`docs/START_HERE.md`](./START_HERE.md) — first 5 minutes
+- [`docs/NEWCOMER_PATH.md`](./NEWCOMER_PATH.md) — first full reading pass
+- [`INDEX.md`](../INDEX.md) — complete repository map
+
+---
+
+## Public Posture
 
 Traceable.  
 Conservative.  
 Auditable.  
-Longitudinal.
+Longitudinal.  
+Artifact-first.
