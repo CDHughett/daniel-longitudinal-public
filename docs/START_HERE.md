@@ -40,11 +40,12 @@ If you only have a few minutes, read in this order:
 
 1. [`README.md`](../README.md) — repository overview
 2. [`LATEST.md`](../LATEST.md) — current system state
-3. [`data/DATA_COVERAGE.md`](../data/DATA_COVERAGE.md) — what data is and is not included
-4. [`docs/FOR_OBSERVERS.md`](./FOR_OBSERVERS.md) — how to evaluate the archive
-5. [`docs/CONCEPTS.md`](./CONCEPTS.md) — recurring terms
+3. [`docs/OBSERVER_QUICKSTART.md`](./OBSERVER_QUICKSTART.md) — compact technical inspection route
+4. [`data/DATA_COVERAGE.md`](../data/DATA_COVERAGE.md) — what data is and is not included
+5. [`docs/FOR_OBSERVERS.md`](./FOR_OBSERVERS.md) — broader observer evaluation path
+6. [`docs/CONCEPTS.md`](./CONCEPTS.md) — recurring terms
 
-This sequence is enough to understand what the archive is, what it claims, what it does not claim, and where the evidence lives.
+This sequence is enough to understand what the archive is, what it claims, what it does not claim, where the evidence lives, and how to inspect it.
 
 ---
 
@@ -77,6 +78,22 @@ The fastest current-state view is:
 [`LATEST.md`](../LATEST.md)
 
 Use this to understand the active observation window, current phase, recent archive updates, and present system emphasis.
+
+---
+
+## Observer Review
+
+For a compact inspection route, use:
+
+[`docs/OBSERVER_QUICKSTART.md`](./OBSERVER_QUICKSTART.md)
+
+For a broader skeptical or technical review path, use:
+
+[`docs/FOR_OBSERVERS.md`](./FOR_OBSERVERS.md)
+
+The quickstart is a shortcut.
+
+The observer guide is the fuller evaluation path.
 
 ---
 
@@ -115,6 +132,7 @@ Interpretation remains provisional unless repeatedly supported by recorded evide
 Use these based on how much time you have:
 
 - [`docs/START_HERE.md`](./START_HERE.md) — first 5 minutes
+- [`docs/OBSERVER_QUICKSTART.md`](./OBSERVER_QUICKSTART.md) — compact technical inspection route
 - [`docs/NEWCOMER_PATH.md`](./NEWCOMER_PATH.md) — first full reading pass
 - [`INDEX.md`](../INDEX.md) — complete repository map
 
