@@ -45,6 +45,12 @@ Biological interpretation belongs in `/reports`.
   - compact technical inspection route for researchers, skeptical readers, and outside observers
   - routes readers through archive posture, current state, data coverage, one report, one snapshot, model-error review, and governance boundaries
 
+- Added open model error records 041–044:
+  - recovery capacity during the July–August observation block
+  - ambient execution plateau testing through the August snapshot window
+  - August 2026 biological snapshot translation
+  - protocol governance preservation through the next full snapshot cycle
+
 ### Changed
 
 - Updated active repository documentation to reflect Zenodo archival publication and post-release DOI availability.
@@ -84,6 +90,12 @@ Biological interpretation belongs in `/reports`.
   - aligned the index with the post-DOI observer navigation structure
 
 - Routed primary observer-facing documents and the complete repository index toward `docs/OBSERVER_QUICKSTART.md` to prevent the new quickstart from becoming an orphaned file.
+
+- Expanded the model error layer from stability confirmation toward boundary-condition testing:
+  - probes recovery reserve under accumulated stable exposure
+  - tests whether ambient execution has reached a current adaptive ceiling
+  - evaluates whether prolonged protocol stability translates into measurable biological change
+  - audits protocol governance as a potential source of model error
 
 ---
 
