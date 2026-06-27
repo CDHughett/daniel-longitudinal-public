@@ -50,6 +50,16 @@ Biological interpretation belongs in `/reports`.
   - ambient execution plateau testing through the August snapshot window
   - August 2026 biological snapshot translation
   - protocol governance preservation through the next full snapshot cycle
+ 
+- Added 2026-06-27 Saturday audit:
+  - documents full-domain post-DOI repository review
+  - records passing checks for structure, Markdown links, CSV parsing, sleep continuity, snapshot checksums, report continuity, model-error continuity, DOI / citation metadata, observer navigation, and governance posture
+  - identifies `LATEST.md` active model-error visibility as the only minor current-state alignment recommendation
+
+- Added Event 003 to `data/model_error/calibration_events_log.md`:
+  - documents initialization of the July–August / August 2026 forward-prediction block
+  - preserves calibration context for open model-error records 041–044
+  - clarifies that the block does not change prediction methodology or UDI governance
 
 ### Changed
 
@@ -96,6 +106,15 @@ Biological interpretation belongs in `/reports`.
   - tests whether ambient execution has reached a current adaptive ceiling
   - evaluates whether prolonged protocol stability translates into measurable biological change
   - audits protocol governance as a potential source of model error
+ 
+- Updated `LATEST.md` to surface active model-error records 041–044:
+  - recovery capacity during the July–August observation block
+  - ambient execution plateau behavior through the August snapshot window
+  - August 2026 biological snapshot translation
+  - protocol-governance preservation through the next full snapshot cycle
+  - aligned executive dashboard state with the model-error dataset and changelog
+
+- Updated Model Error calibration documentation to reflect the post-DOI transition from completed May / W24 closures into the next active prospective observation block.
 
 ---
 
