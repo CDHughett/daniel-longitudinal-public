@@ -15,7 +15,7 @@ Archive DOI: https://doi.org/10.5281/zenodo.20815612
 - Current window: 2026-W25 active observation
 - Prior window: 2026-W24 closed
 - Archive posture: public, governed, DOI-preserved, versioned, retrospective
-- Current emphasis: recovery-floor durability, ordinary-life workload absorption, lower-back mechanical-resolution monitoring, and post-DOI observer-pathway documentation cleanup
+- Current emphasis: recovery-floor durability, ordinary-life workload absorption, lower-back mechanical-resolution monitoring, post-DOI observer-pathway documentation cleanup, and active August-facing model-error observation
 
 ---
 
@@ -37,6 +37,8 @@ Current archive state reflects:
 - May 2026 structured biomarker fusion completed
 - Model Error 039 closed
 - Model Error 040 closed
+- Model Error records 041–044 opened for the July–August / August 2026 observation window
+- active forward-prediction block now monitors recovery capacity, ambient execution plateau behavior, August biological snapshot translation, and protocol-governance preservation
 - Phase 2 recovery-floor preservation remains supported under travel, reintegration, normal-life workload, administrative workload, and localized mechanical variability
 
 No uncontrolled protocol escalation is recorded entering the current observation window.
@@ -71,7 +73,7 @@ Historical structural changes are preserved in `docs/archive/CHANGELOG_ARCHIVE.m
 | Sleep Integrity | Structurally stable; W24 sleep observations appended through 2026-06-21 |
 | Bodyweight Band | ~227–231 lb |
 | Biomarker Coverage | February 2026 and May 2026 integrated multi-domain snapshots available |
-| Prediction Layer | Active — model error tracking, closure logic, and governance layer |
+| Prediction Layer | Active — model error tracking, closure logic, governance layer, and open 041–044 August-facing prediction block |
 | Archive Integrity | Maintained |
 | Documentation Posture | Post-DOI observer-pathway navigation cleanup active |
 
@@ -201,6 +203,13 @@ Recent closures include:
 - travel reintegration (039)
 - recovery floor preservation (040)
 
+Current open prediction records include:
+
+- Model Error 041 — recovery capacity during the July–August observation block
+- Model Error 042 — ambient execution plateau behavior through the August snapshot window
+- Model Error 043 — August 2026 biological snapshot translation
+- Model Error 044 — protocol-governance preservation through the next full snapshot cycle
+
 Current prediction posture:
 
 - May 2026 testing predictions are closed
@@ -208,6 +217,8 @@ Current prediction posture:
 - TruDiagnostic projections are artifact-closed
 - repeatability evaluations are artifact-closed
 - post-travel reintegration evaluations are artifact-closed
+- recovery-floor preservation through Model Error 040 is artifact-closed
+- Model Error records 041–044 remain open and provisional until their defined observation windows close
 - stratified UDI values have been published under UDI v1.1 governance
 - composite UDI remains intentionally withheld under documented release criteria
 - no current prediction record requires immediate closure evaluation entering W25
@@ -298,6 +309,7 @@ Current archive maintenance completed:
 - post-travel reintegration prediction closures completed
 - recovery-floor durability observation carried forward into W25
 - post-DOI observer-pathway documentation cleanup initiated
+- open model-error records 041–044 carried forward into the July–August / August snapshot observation window
 
 Recent repository activity is maintained in `CHANGELOG.md`.  
 Historical repository activity is preserved in `docs/archive/CHANGELOG_ARCHIVE.md`.
@@ -351,6 +363,7 @@ Evaluation is based on:
 - continued recovery-floor durability monitoring following W24 closeout
 - continued lower-back mechanical-resolution monitoring without protocol escalation
 - continued post-DOI documentation and navigation maintenance
+- continued observation of open model-error records 041–044 through the July–August / August snapshot window
 
 ---
 
