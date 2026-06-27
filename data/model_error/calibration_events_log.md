@@ -35,3 +35,24 @@ At the time of this calibration event, the May closure block materially expanded
 Subsequent UDI v1.1 governance updates introduced stratified reporting, published eligible point and range UDI metrics, and retained composite UDI withholding under documented release criteria.
 
 Directional counts are retained in `udi_by_type_tracker.csv` for transparency.
+
+---
+
+## Event 003 — July–August Forward Prediction Block Initialization
+
+**Date:** 2026-06-27  
+**Type:** Post-DOI forward-prediction block initialization  
+**Domains affected:** recovery capacity, ambient execution, biological snapshot translation, protocol governance  
+**Model state:** post  
+
+**Description:**  
+Following DOI issuance, `v1.0.0` archival publication, post-DOI observer-pathway cleanup, and closure of the May 2026 / W24 prediction block, model error records 041 through 044 were opened as an active forward-prediction block for the July–August / August 2026 observation window.
+
+This block extends the post-calibration prediction ledger beyond artifact closure and into prospective observation of recovery capacity, ambient execution plateau behavior, August biological snapshot translation, and protocol-governance preservation through the next full snapshot cycle.
+
+**Notes:**  
+Records 041 through 044 are forward-logged and remain open until their defined observation windows close.
+
+This event does not represent a structural change to prediction methodology. It records a calibration-context transition from post-DOI archive stabilization into the next active prospective observation block.
+
+UDI handling remains governed by UDI v1.1. Closed eligible records may be incorporated into stratified UDI reporting only after closure criteria are met. Composite UDI remains intentionally withheld under documented release criteria.
