@@ -27,6 +27,28 @@ Biological interpretation belongs in `/reports`.
 
 ### Added
 
+- Added weekly report closeout for `reports/2026-W25.md`:
+  - documents continued Phase 2 consolidation
+  - records preserved daily B1 execution across the observation window
+  - records preserved daily Load Integration under normal operating parameters
+  - documents recovery-floor preservation under formal training, ordinary-life workload, household work, repository stewardship, and administrative demand
+  - records lower-back mechanical signaling from W24 as resolved and non-limiting during W25
+  - preserves interpretation that W25 represented repetition without degradation rather than performance expansion
+
+- Added weekly report initialization for `reports/2026-W26.md`:
+  - carries forward continued Phase 2 consolidation
+  - preserves ambient execution monitoring
+  - continues recovery-floor durability observation
+  - continues trait-level work-capacity monitoring
+  - adds holiday / schedule variability as a potential observation layer
+  - maintains no-escalation posture during the July–August model-error observation window
+
+- Appended sleep dataset entries for 2026-W25 (`2026-06-22` through `2026-06-28`) to `data/sleep_longitudinal_v1.csv`:
+  - direct crossover from the current source dataset
+  - no inferred or reconstructed values included
+  - schema consistency preserved against longitudinal sleep structure
+  - canonical sleep dataset extended through `2026-06-28`
+
 - Added Zenodo DOI badge to `README.md`:
   - DOI: `10.5281/zenodo.20815612`
 
@@ -62,6 +84,21 @@ Biological interpretation belongs in `/reports`.
   - clarifies that the block does not change prediction methodology or UDI governance
 
 ### Changed
+
+- Updated `LATEST.md` executive system dashboard to reflect:
+  - `2026-W25` closed observation window
+  - `2026-W26` active observation window
+  - W25 sleep observations appended through `2026-06-28`
+  - continued Phase 2 consolidation posture
+  - recovery-floor durability under daily training and ordinary-life workload
+  - resolved lower-back mechanical signaling from W24
+  - normal weekly post-DOI archive stewardship
+  - ongoing open model-error records 041–044 for the July–August / August 2026 observation window
+
+- Updated current archive posture language from W25 active observation to W26 active observation:
+  - replaced lower-back mechanical-resolution monitoring as a primary current emphasis with ambient execution preservation, ordinary-life workload absorption, holiday / schedule variability observation, and trait-level work-capacity monitoring
+  - preserved recovery-floor durability as the primary reference condition
+  - maintained no forward performance claims or protocol escalation language
 
 - Updated active repository documentation to reflect Zenodo archival publication and post-release DOI availability.
 
@@ -122,14 +159,6 @@ Biological interpretation belongs in `/reports`.
 
 ### Added
 
-- Weekly report for 2026-W25 initialized to maintain forward archive continuity during continued Phase 2 consolidation, recovery-floor durability monitoring, lower-back mechanical-resolution observation, and trait-level work-capacity monitoring.
-
-- Appended sleep dataset entries for 2026-W24 (2026-06-15 through 2026-06-21):
-  - direct crossover from source dataset
-  - no inferred or reconstructed values included
-  - schema consistency preserved against longitudinal sleep structure
-  - canonical sleep dataset extended through 2026-06-21
-
 - Release metadata locked for the initial DOI-bearing archival release:
   - `CODEMETA.json` version set to `1.0.0`
   - `CODEMETA.json` `dateModified` advanced to `2026-06-23`
@@ -146,33 +175,6 @@ Biological interpretation belongs in `/reports`.
 ---
 
 ### Changed
-
-- `reports/2026-W24.md` finalized to reflect:
-  - completed post-travel reintegration window
-  - preserved ambient B1 execution under restored home-environment conditions
-  - stable Load Integration under ordinary-life workload exposure
-  - continued upper-body integration stability
-  - localized lower-back mechanical signaling contained without protocol retreat
-  - preserved recovery floor despite repository, administrative, household, training, and localized mechanical variability
-  - recovery-floor durability confirmation under normal-life workload conditions
-
-- `reports/2026-W25.md` initialized to reflect:
-  - active W25 observation window
-  - continued Phase 2 consolidation posture
-  - recovery-floor durability monitoring
-  - lower-back mechanical-resolution observation
-  - continued ambient execution observation
-  - trait-level work-capacity monitoring under ordinary-life conditions
-
-- `LATEST.md` executive system dashboard updated to reflect:
-  - W24 closed observation window
-  - W25 active observation window
-  - W24 sleep observations appended through 2026-06-21
-  - continued Phase 2 consolidation posture
-  - recovery-floor durability and ordinary-life workload absorption following W24 closeout
-  - lower-back mechanical-resolution monitoring entering W25
-
-- `data/sleep_longitudinal_v1.csv` extended through 2026-06-21 to preserve weekly continuity across the W24 observation window.
 
 - `CODEMETA.json` updated:
   - `dateModified` advanced to `2026-06-23`
