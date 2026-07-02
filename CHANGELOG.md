@@ -83,6 +83,11 @@ Biological interpretation belongs in `/reports`.
   - preserves calibration context for open model-error records 041–044
   - clarifies that the block does not change prediction methodology or UDI governance
 
+- Added minimal `.gitignore`:
+  - prevents accidental commits of operating system files, editor settings, Python cache files, Jupyter checkpoints, virtual environments, and log files
+  - preserves all repository datasets, documentation, reports, and research artifacts
+  - completes standard repository hygiene without changing archive content or methodology
+ 
 ### Changed
 
 - Updated `LATEST.md` executive system dashboard to reflect:
