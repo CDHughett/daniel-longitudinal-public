@@ -87,7 +87,13 @@ Biological interpretation belongs in `/reports`.
   - prevents accidental commits of operating system files, editor settings, Python cache files, Jupyter checkpoints, virtual environments, and log files
   - preserves all repository datasets, documentation, reports, and research artifacts
   - completes standard repository hygiene without changing archive content or methodology
- 
+
+- Added 2026-07-02 delayed Wednesday audit:
+  - documents delayed Wednesday repository integrity review
+  - records passing checks for structure, Markdown links, CSV parsing, sleep continuity, snapshot checksum verification, model-error continuity, DOI / citation metadata, current-state alignment, and `.gitignore` archive safety
+  - confirms repository remains healthy after minimal `.gitignore` addition
+  - preserves normal stewardship cadence following a missed Wednesday audit
+
 ### Changed
 
 - Updated `LATEST.md` executive system dashboard to reflect:
