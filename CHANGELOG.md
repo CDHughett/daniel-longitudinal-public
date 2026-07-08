@@ -27,27 +27,30 @@ Biological interpretation belongs in `/reports`.
 
 ### Added
 
-- Added weekly report closeout for `reports/2026-W25.md`:
-  - documents continued Phase 2 consolidation
-  - records preserved daily B1 execution across the observation window
-  - records preserved daily Load Integration under normal operating parameters
-  - documents recovery-floor preservation under formal training, ordinary-life workload, household work, repository stewardship, and administrative demand
-  - records lower-back mechanical signaling from W24 as resolved and non-limiting during W25
-  - preserves interpretation that W25 represented repetition without degradation rather than performance expansion
+- Added weekly report closeout for `reports/2026-W26.md`:
+  - documents continued Phase 2 consolidation under less controlled travel / holiday conditions
+  - records preserved B1 execution during the available home / pre-travel portion of the week
+  - records preserved Load Integration during the available home / pre-travel portion of the week
+  - documents formal training pause during travel as valid environmental constraint rather than behavioral failure
+  - records recovery-floor preservation despite travel disruption, scale-access loss, transient fluid retention, and repository cadence delay
+  - documents conservative interpretation of bodyweight increase under travel, sodium, hydration timing, GI timing, scale loss, and edema context
+  - preserves interpretation that W26 represented stable system coherence under non-ideal conditions rather than performance expansion
 
-- Added weekly report initialization for `reports/2026-W26.md`:
+- Added weekly report initialization for `reports/2026-W27.md`:
   - carries forward continued Phase 2 consolidation
-  - preserves ambient execution monitoring
+  - initializes post-travel return-to-standard monitoring
+  - preserves ambient B1 and Load Integration monitoring
   - continues recovery-floor durability observation
   - continues trait-level work-capacity monitoring
-  - adds holiday / schedule variability as a potential observation layer
-  - maintains no-escalation posture during the July–August model-error observation window
+  - adds post-travel fluid / bodyweight normalization as an observation layer
+  - maintains no-compensation posture following travel constraint
+  - continues July–August model-error observation without premature closure pressure
 
-- Appended sleep dataset entries for 2026-W25 (`2026-06-22` through `2026-06-28`) to `data/sleep_longitudinal_v1.csv`:
+- Appended sleep dataset entries for 2026-W26 (`2026-06-29` through `2026-07-05`) to `data/sleep_longitudinal_v1.csv`:
   - direct crossover from the current source dataset
   - no inferred or reconstructed values included
   - schema consistency preserved against longitudinal sleep structure
-  - canonical sleep dataset extended through `2026-06-28`
+  - canonical sleep dataset extended through `2026-07-05`
 
 - Added Zenodo DOI badge to `README.md`:
   - DOI: `10.5281/zenodo.20815612`
@@ -97,19 +100,21 @@ Biological interpretation belongs in `/reports`.
 ### Changed
 
 - Updated `LATEST.md` executive system dashboard to reflect:
-  - `2026-W25` closed observation window
-  - `2026-W26` active observation window
-  - W25 sleep observations appended through `2026-06-28`
+  - `2026-W26` closed observation window
+  - `2026-W27` active observation window
+  - W26 sleep observations appended through `2026-07-05`
   - continued Phase 2 consolidation posture
-  - recovery-floor durability under daily training and ordinary-life workload
-  - resolved lower-back mechanical signaling from W24
-  - normal weekly post-DOI archive stewardship
+  - recovery-floor durability under travel disruption and reduced environmental control
+  - post-travel return-to-standard execution monitoring
+  - conservative post-travel bodyweight / fluid normalization monitoring
+  - repository cadence restoration after travel and limited internet access
   - ongoing open model-error records 041–044 for the July–August / August 2026 observation window
 
-- Updated current archive posture language from W25 active observation to W26 active observation:
-  - replaced lower-back mechanical-resolution monitoring as a primary current emphasis with ambient execution preservation, ordinary-life workload absorption, holiday / schedule variability observation, and trait-level work-capacity monitoring
+- Updated current archive posture language from W26 active observation to W27 active observation:
+  - replaced holiday / schedule variability observation as the primary current emphasis with post-travel return-to-standard monitoring
+  - added bodyweight / fluid normalization monitoring after transient W26 edema and travel-related variability
   - preserved recovery-floor durability as the primary reference condition
-  - maintained no forward performance claims or protocol escalation language
+  - maintained no forward performance claims, compensation pressure, or protocol escalation language
 
 - Updated active repository documentation to reflect Zenodo archival publication and post-release DOI availability.
 
