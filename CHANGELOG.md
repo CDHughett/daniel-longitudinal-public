@@ -35,6 +35,9 @@ Biological interpretation belongs in `/reports`.
   - defines a proportionate cleanup sequence while protecting historical evidence and open prediction records
   - preserves records 041–044 unchanged and open
   - distinguishes immediate remediation from deferred architecture work
+  - includes post-cleanup continuity verification after completion of the approved remediation sequence
+  - records final passing checks for repository structure, Markdown links, CSV integrity, checksums, weekly reports, prediction continuity, protocol state, methodology, coverage representation, and release metadata
+  - closes the audit with a final `PASS` while preserving unresolved sleep-source reconciliation and the separately deferred blood-report replacement
 
 - Added `methodology/open_prediction_evaluation_plan_041_044.md`:
   - defines prospective evaluation rules for open model-error records 041–044
@@ -132,6 +135,32 @@ Biological interpretation belongs in `/reports`.
   - confirms no corrective action is required before continued normal W27 operation
 
 ### Changed
+
+- Updated `docs/audits/2026-07-11-saturday-audit.md`:
+  - appended a post-cleanup continuity-verification section while preserving the original pre-remediation findings
+  - records completion of the approved one-file / one-commit cleanup sequence
+  - confirms the post-cleanup repository inventory of 160 files and 113 Markdown documents
+  - records validation of 381 relative Markdown links and anchors with no unresolved references
+  - confirms all 8 CSV datasets remain parseable and unchanged
+  - confirms all 26 checksum-listed artifacts continue matching their SHA-256 manifests
+  - confirms reports remain continuous from W06 through active W27
+  - confirms model-error records 013–044 remain continuous
+  - confirms records 041–044 remain open, unscored, and unchanged in their original prediction fields
+  - confirms release metadata remains aligned to archived version `1.0.0`
+  - closes the targeted-remediation cycle with a final `PASS`
+  - preserves sleep-source reconciliation, blood-report replacement, and later architecture work as explicitly governed open items
+
+- Updated `data/DATA_COVERAGE.md`:
+  - replaced broad completeness labels with defined coverage-status categories
+  - distinguishes structured longitudinal, high narrative, snapshot-based, partial, contextual, not-tracked, and planned coverage
+  - reclassifies training exposure as high narrative coverage rather than complete structured coverage
+  - distinguishes wearable-derived, structured, and narrative recovery evidence
+  - documents the absence of canonical daily training, subjective-biomarker, and perturbation-event exports
+  - clarifies nutrition and supplementation as contextual rather than fully quantified datasets
+  - expands environmental and perturbation coverage boundaries
+  - adds direct navigation to data-quality notes, collection methodology, reports, snapshots, and current prediction-evaluation rules
+  - distinguishes data continuity from field-level confidence
+  - documents planned structured exports without implying that those files currently exist
 
 - Updated `reports/2026-W27.md`:
   - clarified that weekly biological interpretation remains retrospective
