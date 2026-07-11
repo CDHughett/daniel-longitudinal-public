@@ -27,6 +27,33 @@ Biological interpretation belongs in `/reports`.
 
 ### Added
 
+- Added 2026-07-11 Saturday audit:
+  - documents full-spectrum review of repository structure, links, datasets, checksums, reporting continuity, model-error continuity, protocol state, methodology, metadata, and August release readiness
+  - confirms mechanical integrity across Markdown links, CSV parsing, snapshot checksums, weekly reports, and model-error records
+  - identifies targeted semantic data-quality questions in the longitudinal sleep dataset
+  - identifies stale protocol and experiment-status wording requiring correction
+  - defines a proportionate cleanup sequence while protecting historical evidence and open prediction records
+  - preserves records 041–044 unchanged and open
+  - distinguishes immediate remediation from deferred architecture work
+
+- Added `methodology/open_prediction_evaluation_plan_041_044.md`:
+  - defines prospective evaluation rules for open model-error records 041–044
+  - establishes common August snapshot boundaries and evidence hierarchy
+  - defines recovery-capacity evaluation rules for record 041
+  - defines repeated-evidence thresholds for ambient-execution record 042
+  - establishes pre-outcome biological-anchor and magnitude rules for record 043
+  - defines protocol-governance criteria for record 044
+  - preserves all original model-error prediction fields unchanged
+  - prevents outcome-driven reinterpretation after August results are known
+
+- Added `data/DATA_QUALITY_NOTES.md`:
+  - documents the unresolved 2026-05-18 through 2026-05-31 sleep-field duplication question
+  - documents sleep-stage total discrepancies for 2026-03-31 and 2026-04-02
+  - defines source-reconciliation requirements
+  - prohibits inferred correction of unresolved source values
+  - preserves the canonical sleep dataset unchanged pending source verification
+  - establishes status labels and a traceable correction procedure for future data-quality findings
+
 - Added weekly report closeout for `reports/2026-W26.md`:
   - documents continued Phase 2 consolidation under less controlled travel / holiday conditions
   - records preserved B1 execution during the available home / pre-travel portion of the week
@@ -75,7 +102,7 @@ Biological interpretation belongs in `/reports`.
   - ambient execution plateau testing through the August snapshot window
   - August 2026 biological snapshot translation
   - protocol governance preservation through the next full snapshot cycle
- 
+
 - Added 2026-06-27 Saturday audit:
   - documents full-domain post-DOI repository review
   - records passing checks for structure, Markdown links, CSV parsing, sleep continuity, snapshot checksums, report continuity, model-error continuity, DOI / citation metadata, observer navigation, and governance posture
@@ -96,7 +123,7 @@ Biological interpretation belongs in `/reports`.
   - records passing checks for structure, Markdown links, CSV parsing, sleep continuity, snapshot checksum verification, model-error continuity, DOI / citation metadata, current-state alignment, and `.gitignore` archive safety
   - confirms repository remains healthy after minimal `.gitignore` addition
   - preserves normal stewardship cadence following a missed Wednesday audit
- 
+
 - Added 2026-07-08 Wednesday audit:
   - documents repository-wide audit following late W26 weekly closeout
   - records passing checks for repository structure, W26 closeout integrity, W27 initialization, Markdown links, CSV parsing, sleep continuity, snapshot checksum verification, weekly report continuity, model-error continuity, DOI / citation metadata, current-state alignment, changelog alignment, observer navigation, and governance posture
@@ -105,6 +132,56 @@ Biological interpretation belongs in `/reports`.
   - confirms no corrective action is required before continued normal W27 operation
 
 ### Changed
+
+- Updated `reports/2026-W27.md`:
+  - clarified that weekly biological interpretation remains retrospective
+  - confined forward predictions to the formally registered model-error layer
+  - replaced the blanket prohibition on forward claims with a prohibition on unregistered forward claims
+  - added the 2026-07-11 pull-up observation as candidate evidence relevant to record 042
+  - records preserved execution during verbal instruction, divided attention, positional pauses, and social / environmental load
+  - explicitly states that the observation is insufficient to modify, pass, fail, or close record 042
+  - preserves record 042 unchanged and open pending repeated spontaneous evidence
+
+- Updated `experiments/EXP-001-autophagy-endurance.md`:
+  - corrected the active observation window from `January 2026 – present` to January 2026 through April 16, 2026
+  - clarified that the experiment is paused and not an active explanatory variable
+  - distinguished the broader biomarker snapshot from isolated intervention effects
+  - clarified that reactivation is optional and not currently scheduled
+  - added requirements for any future comparable reactivation cycle
+
+- Updated `protocols/hybrid-expansion-phase-v2.md`:
+  - marked the protocol as historical, superseded, and not active
+  - preserved the original 12-week design for provenance
+  - separated historical prescriptions from current Phase 2 Load Integration governance
+  - clarified that historical calorie, training, step, sauna, and autophagy targets should not explain current outcomes without documented exposure
+  - clarified that any future expansion phase would require a new prospective protocol document
+
+- Updated `README.md`:
+  - replaced the inaccurate `No forward claims` statement
+  - clarified that biological interpretation remains retrospective and artifact-bound
+  - documented the governed role of explicitly registered forward predictions
+  - added direct navigation to the open-prediction evaluation plan and data-quality notes
+  - expanded repository structure to include protocols, roadmap, and methodology layers
+  - clarified prediction governance, phase boundaries, public scope, and non-prescriptive posture
+  - aligned archive language with defined protocol constraints and incomplete environmental control
+
+- Updated `DATASET_OVERVIEW.md`:
+  - replaced the claim of tightly constrained environmental variables
+  - describes defined protocol constraints under incomplete real-world environmental control
+  - expanded the archive model to include structured data and the model-error layer
+  - added evidence hierarchy, environmental context, limitations, and correction-aware data-integrity language
+  - clarified that provider-generated reports may be primary archive evidence without constituting raw instrument data
+  - distinguished source artifacts, structured datasets, reports, predictions, and milestone context
+
+- Expanded `methodology/data-collection.md`:
+  - replaced the intentionally minimal placeholder with an active collection methodology
+  - defines primary artifacts, direct exports, manual transcription, contemporaneous notes, and retrospective interpretation
+  - establishes source hierarchy, temporal handling, units, field definitions, and missingness rules
+  - defines manual-entry, screenshot, device-version, derived-value, and inferred-value procedures
+  - defines semantic data-quality review and source-backed correction procedures
+  - separates collection statements from interpretation
+  - defines how candidate model-error evidence enters through the normal collection layer
+  - establishes provenance expectations and requirements for future structured exports
 
 - Updated `LATEST.md` executive system dashboard to reflect:
   - `2026-W26` closed observation window
@@ -166,7 +243,7 @@ Biological interpretation belongs in `/reports`.
   - tests whether ambient execution has reached a current adaptive ceiling
   - evaluates whether prolonged protocol stability translates into measurable biological change
   - audits protocol governance as a potential source of model error
- 
+
 - Updated `LATEST.md` to surface active model-error records 041–044:
   - recovery capacity during the July–August observation block
   - ambient execution plateau behavior through the August snapshot window
