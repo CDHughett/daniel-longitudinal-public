@@ -568,7 +568,7 @@ Broader phase-vocabulary alignment can be handled in a later cleanup pass.
 
 ## Findings
 
-### Finding 1 — Mechanical integrity remains strong
+### Finding 1 — Mechanical Integrity Remains Strong
 
 The repository passed:
 
@@ -587,7 +587,7 @@ It is a maturity and calibration pass.
 
 ---
 
-### Finding 2 — Semantic validation must expand beyond parse validation
+### Finding 2 — Semantic Validation Must Expand Beyond Parse Validation
 
 The sleep dataset demonstrates that a CSV may be structurally valid while still containing conceptually suspicious values.
 
@@ -603,7 +603,7 @@ The current anomaly should be documented before any source-backed correction is 
 
 ---
 
-### Finding 3 — Open predictions require prospective evaluation rules
+### Finding 3 — Open Predictions Require Prospective Evaluation Rules
 
 Records 041–044 are correctly preserved and open.
 
@@ -615,7 +615,7 @@ This is especially important for record 043.
 
 ---
 
-### Finding 4 — Candidate evidence should enter through the collection layer
+### Finding 4 — Candidate Evidence Should Enter Through the Collection Layer
 
 The pull-up observation is relevant to record 042 but does not justify prediction modification.
 
@@ -631,7 +631,7 @@ This protects against hindsight contamination.
 
 ---
 
-### Finding 5 — Historical protocol material needs explicit status
+### Finding 5 — Historical Protocol Material Needs Explicit Status
 
 The hybrid expansion protocol remains useful as provenance.
 
@@ -641,7 +641,7 @@ Deprecation is preferable to deletion.
 
 ---
 
-### Finding 6 — Current documentation understates the role of prediction auditing
+### Finding 6 — Current Documentation Understates the Role of Prediction Auditing
 
 The repository is no longer purely retrospective.
 
@@ -651,7 +651,7 @@ The README should describe that layer directly rather than denying that forward 
 
 ---
 
-### Finding 7 — Coverage claims should describe the evidence actually exported
+### Finding 7 — Coverage Claims Should Describe the Evidence Actually Exported
 
 Narrative training coverage is strong.
 
@@ -669,7 +669,7 @@ This distinction will become increasingly important as structured exports are ad
 
 ---
 
-### Finding 8 — No broad restructuring is required today
+### Finding 8 — No Broad Restructuring Is Required Today
 
 No directory migration, large-scale file relocation, historical report rewrite, model-error alteration, or protocol progression is recommended.
 
@@ -683,7 +683,7 @@ The appropriate cleanup is targeted and sequential.
 
 Proceed one file and one commit at a time in the following order.
 
-#### 1. Add this audit record
+#### 1. Add This Audit Record
 
 Path:
 
@@ -721,7 +721,7 @@ Mark the file:
 - inactive
 - preserved for provenance
 
-#### 5. Add an open-prediction evaluation plan
+#### 5. Add an Open-Prediction Evaluation Plan
 
 Create a companion methodology document defining prospective evaluation rules for records 041–044.
 
@@ -779,7 +779,7 @@ Define:
 - provenance
 - inferred-value restrictions
 
-#### 11. Run a final continuity audit
+#### 11. Run a Final Continuity Audit
 
 After the cleanup sequence, verify:
 
@@ -874,3 +874,428 @@ Today’s work should be a controlled maturity pass:
 - record unresolved data-quality questions
 - improve representation accuracy
 - preserve historical and predictive integrity
+
+---
+
+## Post-Cleanup Continuity Verification
+
+**Verification date:** 2026-07-11  
+**Status:** PASS — TARGETED REMEDIATION COMPLETED
+
+A second repository-wide continuity review was completed after the planned cleanup sequence.
+
+The original audit findings above are preserved as the pre-remediation record. This section documents the resulting repository state after the approved changes were committed.
+
+---
+
+### Cleanup Sequence Completed
+
+The following actions were completed:
+
+- added this full-spectrum Saturday audit
+- recorded the 2026-07-11 pull-up observation in `reports/2026-W27.md`
+- preserved the observation as candidate evidence relevant to record 042
+- preserved record 042 unchanged and open
+- corrected the active observation window and paused status of `EXP-001`
+- marked the hybrid expansion protocol as historical, superseded, and inactive
+- added prospective evaluation rules for records 041–044
+- documented unresolved sleep-data quality questions
+- clarified forward-prediction governance in `README.md`
+- corrected environmental-control language in `DATASET_OVERVIEW.md`
+- expanded `methodology/data-collection.md`
+- calibrated structured and narrative coverage claims in `data/DATA_COVERAGE.md`
+- documented the audit cleanup in `CHANGELOG.md`
+
+No historical biological interpretation, closed prediction outcome, source measurement, or phase declaration was rewritten.
+
+---
+
+### Final Repository Structure
+
+PASS
+
+Post-cleanup repository inventory:
+
+- 160 files
+- 113 Markdown documents
+- 8 CSV datasets
+- 21 JPEG artifacts
+- 6 PDF artifacts
+- 9 checksum manifests
+
+No zero-byte files were identified.
+
+No exact duplicate files were identified.
+
+No unexpected directory-level structural drift was introduced.
+
+The increase from the initial audit inventory reflects the addition of:
+
+- the Saturday audit
+- the open-prediction evaluation plan
+- the data-quality notes document
+
+---
+
+### Final Markdown Link Validation
+
+PASS
+
+Post-cleanup internal link validation completed.
+
+- 381 relative Markdown links and anchors checked
+- 0 broken relative links
+- 0 unresolved internal anchors
+
+New navigation paths resolve correctly for:
+
+- `data/DATA_QUALITY_NOTES.md`
+- `methodology/open_prediction_evaluation_plan_041_044.md`
+- `methodology/data-collection.md`
+- `data/DATA_COVERAGE.md`
+- `DATASET_OVERVIEW.md`
+- `README.md`
+- `reports/2026-W27.md`
+
+No observer-facing navigation regression was introduced.
+
+---
+
+### Final CSV Validation
+
+PASS
+
+All 8 CSV datasets remain syntactically valid and parse successfully.
+
+No CSV file was changed during the cleanup sequence.
+
+No malformed row widths or schema-breaking errors were introduced.
+
+Canonical sleep-data state remains:
+
+- 147 rows
+- date range from 2026-02-09 through 2026-07-05
+- 0 duplicate dates
+- 0 missing dates within the represented interval
+
+The suspected sleep-field and stage-total questions remain documented rather than silently corrected.
+
+---
+
+### Final Snapshot and Checksum Verification
+
+PASS
+
+- 9 checksum manifests checked
+- 26 checksum-listed artifacts verified
+- 0 missing checksum-listed artifacts
+- 0 SHA-256 mismatches
+
+No snapshot artifact or checksum manifest was modified during this cleanup sequence.
+
+The separately deferred blood-report replacement remains outside the scope of this verification.
+
+---
+
+### Final Weekly Report Continuity
+
+PASS
+
+Weekly reports remain continuous from:
+
+- `reports/2026-W06.md`
+
+through:
+
+- `reports/2026-W27.md`
+
+Current reporting state remains:
+
+- `reports/2026-W26.md` — closed
+- `reports/2026-W27.md` — active
+
+The new W27 collection note correctly:
+
+- records the observed pull-up event
+- labels it as candidate evidence
+- identifies its relevance to record 042
+- states that the observation is insufficient for closure
+- preserves continued passive observation as the next action
+
+The weekly report remains open for normal week-close interpretation.
+
+---
+
+### Final Model-Error Continuity
+
+PASS
+
+Primary model-error records remain continuous from:
+
+- record 013
+
+through:
+
+- record 044
+
+Historical reconstructed records 001–012 remain separately preserved.
+
+Records 041–044 remain:
+
+- open
+- unscored
+- unchanged in their original prediction fields
+- protected from premature closure
+
+Direct comparison confirmed that the cleanup sequence did not alter:
+
+- prediction wording
+- prediction dates
+- prediction values
+- model type
+- prediction type
+- calibration state
+- flags
+- status
+- outcome fields
+
+The new evaluation plan constrains later interpretation without rewriting the original records.
+
+---
+
+### Final Protocol and Experiment State
+
+PASS
+
+`experiments/EXP-001-autophagy-endurance.md` now:
+
+- distinguishes the active January 2026 through April 16, 2026 observation window
+- identifies the protocol as paused
+- avoids implying continued active exposure
+- treats future reactivation as optional
+- prevents the intervention from being used as an unsupported current explanatory variable
+
+`protocols/hybrid-expansion-phase-v2.md` now:
+
+- identifies the protocol as historical
+- identifies the protocol as superseded
+- identifies the protocol as inactive
+- preserves the earlier design for provenance
+- separates historical prescriptions from current Phase 2 governance
+- prevents accidental interpretation as an active progression plan
+
+No active training protocol progression was introduced.
+
+---
+
+### Final Methodology State
+
+PASS
+
+The repository now contains prospective evaluation rules for records 041–044 before the August results are known.
+
+The evaluation plan defines:
+
+- observation-window boundaries
+- evidence hierarchy
+- support conditions
+- failure conditions
+- insufficient-evidence conditions
+- record-specific operational definitions
+- biological comparison anchors
+- magnitude-comparison rules
+- protocol-governance thresholds
+- closure procedure
+- phase-boundary protection
+
+The data-collection methodology now defines:
+
+- primary artifacts
+- direct exports
+- manual transcription
+- contemporaneous observations
+- retrospective interpretation
+- source hierarchy
+- missingness
+- derived and inferred values
+- source-backed correction
+- unresolved-value handling
+- provenance
+- semantic quality review
+
+These additions improve future auditability without changing existing biological evidence.
+
+---
+
+### Final Representation and Coverage State
+
+PASS
+
+`README.md` now accurately distinguishes:
+
+- retrospective biological interpretation
+- formally registered forward predictions
+- prediction preservation
+- model-error evaluation
+- bounded archive scope
+- non-prescriptive posture
+
+`DATASET_OVERVIEW.md` now describes:
+
+- defined protocol constraints
+- incomplete environmental control
+- ordinary-life variability
+- source and structured-data hierarchy
+- model-error governance
+- archive limitations
+
+`data/DATA_COVERAGE.md` now distinguishes:
+
+- structured longitudinal coverage
+- high narrative coverage
+- snapshot-based coverage
+- contextual evidence
+- partial coverage
+- planned structured exports
+
+Training exposure is no longer described as a complete structured dataset.
+
+Recovery coverage now distinguishes wearable-derived, structured, and narrative evidence.
+
+---
+
+### Final Metadata Alignment
+
+PASS
+
+Repository release metadata remains aligned to the archived `v1.0.0` release:
+
+- `CITATION.cff` version: `1.0.0`
+- `CITATION.cff` release date: 2026-06-23
+- `CODEMETA.json` version: `1.0.0`
+- `CODEMETA.json` modification date: 2026-06-23
+- Zenodo DOI: `10.5281/zenodo.20815612`
+
+No version increment was introduced for ordinary documentation and methodology cleanup.
+
+The next planned versioned release remains associated with the August artifact cycle.
+
+---
+
+### Final Changelog Alignment
+
+PASS
+
+`CHANGELOG.md` now documents the notable additions and changes from the 2026-07-11 cleanup sequence.
+
+The changelog records:
+
+- the Saturday audit
+- the open-prediction evaluation plan
+- the data-quality notes
+- the W27 candidate evidence
+- the EXP-001 status correction
+- the historical protocol deprecation
+- README governance clarification
+- dataset-overview calibration
+- data-collection methodology expansion
+
+The subsequent `data/DATA_COVERAGE.md` calibration is represented by its commit history and should be included in the next ordinary changelog maintenance pass if additional Unreleased work accumulates.
+
+This does not block closure of the present audit.
+
+---
+
+## Resolved Findings
+
+The following initial findings were resolved during this audit cycle:
+
+- stale hybrid protocol status
+- inaccurate EXP-001 active-duration wording
+- undefined evaluation criteria for records 041–044
+- absence of a formal sleep data-quality note
+- README contradiction regarding forward predictions
+- overstated environmental-control language
+- overstated structured training coverage
+- incomplete data-collection methodology
+- missing changelog coverage for the cleanup sequence
+
+---
+
+## Open but Governed Items
+
+The following items remain open by design.
+
+### Sleep Source Reconciliation
+
+The suspected sleep-field duplication and stage-total discrepancies remain unresolved pending original RingConn source evidence.
+
+No inferred correction is authorized.
+
+### Records 041–044
+
+All four records remain open until their applicable observation windows end and sufficient evidence exists.
+
+### Blood-Report Replacement
+
+The previously identified public blood-report artifact will be handled separately through source-image replacement and appropriate redaction.
+
+It is not treated as completed by this audit.
+
+### Deferred Architecture Work
+
+The following remain deferred:
+
+- full data-dictionary expansion
+- measurement-source version history
+- versioning-policy revision
+- phase-language alignment
+- `INDEX.md` expansion
+- weekly-report template redesign
+- `LATEST.md` compression
+- daily biomarker structured export
+- training-block structured export
+- perturbation-event structured export
+- automated validation
+- GitHub Actions integration
+- recovery-trajectory analysis
+- perturbation-response analysis
+- August versioned release and Zenodo update
+
+Deferral does not represent audit failure.
+
+These items remain queued for evidence-appropriate implementation.
+
+---
+
+## Final Audit Disposition
+
+**Final result: PASS**
+
+The targeted remediation identified by the initial audit was completed without introducing:
+
+- broken links
+- malformed datasets
+- checksum drift
+- reporting discontinuity
+- prediction contamination
+- historical evidence rewriting
+- unsupported source correction
+- protocol escalation
+- premature phase declaration
+- metadata inconsistency
+
+The repository exits the 2026-07-11 audit cycle with:
+
+- stronger prediction governance
+- clearer protocol status
+- improved collection methodology
+- visible data-quality restrictions
+- more accurate coverage claims
+- preserved historical continuity
+- protected open prediction records
+- a cleaner path toward the August artifact cycle
+
+The archive remains suitable for continued Phase 2 consolidation and normal W27 operation.
+
+No additional corrective commit is required to close this audit.
