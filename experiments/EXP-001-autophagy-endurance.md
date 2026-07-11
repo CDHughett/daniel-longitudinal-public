@@ -1,41 +1,74 @@
 # EXP-001 — Autophagy + Endurance Synergy
 
 ## Status
+
 Paused
 
 ## Hypothesis
-Pairing fasted endurance training with periodic autophagy-focused days improves mitochondrial efficiency, fat oxidation, HRV baseline, and metabolic flexibility without impairing strength retention.
+
+Pairing fasted endurance training with periodic autophagy-focused days may improve mitochondrial efficiency, fat oxidation, HRV baseline, and metabolic flexibility without impairing strength retention.
 
 ## Protocol
+
+During active execution, the protocol included:
+
 - 1–2 autophagy-focused days per week
 - Fasted Zone 2 treadmill sessions
 - Sauna exposure post-session
 - Electrolyte-only hydration
-- Protein refeed window in afternoon
+- Protein refeed window in the afternoon
 
-## Metrics tracked
-- HRV (night + waking)
+## Metrics Tracked
+
+- HRV during sleep and upon waking
 - Resting heart rate
-- Body fat %
+- Body fat percentage
 - VO₂ proxy outputs
 - DunedinPACE
-- Training volume tolerance
+- Training-volume tolerance
 - Subjective recovery
 
-## Duration
-January 2026 – present
+## Active Observation Window
 
-## Interim findings
-The first public biomarker snapshot has been integrated into the archive.
+January 2026 through April 16, 2026.
 
-Formal experiment interpretation remains pending future reactivation and comparable snapshot intervals.
+## Interim Findings
 
-## Current state
+The first public biomarker snapshot associated with the broader observation period has been integrated into the archive.
+
+The available evidence does not isolate the effects of the autophagy-focused intervention from concurrent training, nutrition, recovery, cessation, and environmental changes.
+
+Formal experiment interpretation therefore remains unresolved.
+
+## Current State
+
 The protocol is not currently in active execution.
 
-Autophagy-focused days, extended fasting, and sauna exposure were deprioritized during the transition into a stable metabolic clearinghouse phase.
+Autophagy-focused days, extended fasting, and sauna exposure were deprioritized during the transition into a stable metabolic clearinghouse and Load Integration phase.
 
-This shift prioritizes repeatable load integration, recovery stability, and system consistency over intermittent stress-based interventions.
+This shift prioritizes:
 
-## Next evaluation gate
-Reactivation of the protocol alongside a comparable epigenetic and body composition measurement cycle.
+- repeatable daily execution
+- recovery-floor stability
+- load integration
+- system consistency
+- reduced intervention complexity
+
+The pause does not constitute evidence for or against the original hypothesis.
+
+No active protocol exposure should be inferred after April 16, 2026.
+
+## Next Evaluation Gate
+
+Reactivation is optional and is not currently scheduled.
+
+A future evaluation would require:
+
+- a clearly defined reactivation window
+- comparable epigenetic and body-composition measurements
+- stable baseline conditions
+- documented intervention adherence
+- sufficient separation from major concurrent protocol changes
+- prospective evaluation criteria established before results are known
+
+Until those conditions are met, EXP-001 remains paused and should not be treated as an active explanatory variable in current-phase interpretation.
