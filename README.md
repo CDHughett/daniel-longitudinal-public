@@ -11,8 +11,8 @@ This repository documents the behavior of a single human system across time unde
 It contains:
 
 - longitudinal biomarker and sleep data
-- weekly system state reports
-- a prediction vs. observed outcome review layer
+- weekly system-state reports
+- a prediction-versus-observed-outcome review layer
 - structured methodology, governance, and constraints
 - a defined relationship between governed archive records and real-time subjective telemetry
 
@@ -22,7 +22,7 @@ It contains:
 
 The Zenodo DOI points to the archived `v1.0.0` release snapshot.
 
-The `main` branch may include post-publication documentation updates, including DOI badges, citation text, metadata cleanup, and navigation improvements.
+The `main` branch may include post-publication documentation updates, including DOI badges, citation text, metadata cleanup, methodology refinement, and navigation improvements.
 
 For citation, use the Zenodo DOI-linked release record:
 
@@ -56,16 +56,24 @@ Use these based on depth:
 
 This is not a blog, protocol, intervention program, or theory thread.
 
-Everything preserved here is:
+Everything preserved here is intended to be:
 
-- measured
+- measured or contemporaneously observed
 - logged
 - versioned
 - auditable
 
-No forward claims.
+Biological interpretation remains retrospective and artifact-bound.
 
-Only recorded system behavior and retrospective interpretation.
+Forward predictions are permitted only when they are:
+
+- explicitly registered in the model-error layer
+- stated before the relevant outcome is known
+- time-bounded
+- preserved without hindsight revision
+- evaluated against observed outcomes after their windows close
+
+Predictions are calibration instruments, not claims of certainty.
 
 ---
 
@@ -82,11 +90,14 @@ This is the fastest way to understand the system's current observed state.
 Use `/snapshots` for primary evidence.  
 Use `/reports` for retrospective interpretation.  
 Use `/data` for structured longitudinal datasets.  
-Use `/data/model_error` for prediction versus observed outcome review.
+Use `/data/model_error` for prediction-versus-observed-outcome review.  
+Use `/methodology` and `/docs/methodology` for evaluation and governance rules.
 
 For a compact inspection route, see [`docs/OBSERVER_QUICKSTART.md`](./docs/OBSERVER_QUICKSTART.md).
 
 For the broader skeptical or technical review path, see [`docs/FOR_OBSERVERS.md`](./docs/FOR_OBSERVERS.md).
+
+For the prospective evaluation rules governing the current prediction block, see [`methodology/open_prediction_evaluation_plan_041_044.md`](./methodology/open_prediction_evaluation_plan_041_044.md).
 
 ---
 
@@ -117,12 +128,16 @@ Measurement Layer
 Dataset Layer
 (versioned tracking)
       ↓
-Snapshots (artifacts)
+Snapshots
+(primary artifacts)
       ↓
-Reports (retrospective interpretation)
+Reports
+(retrospective interpretation)
       ↓
-Model Error Layer
-(predicted vs. observed outcome review)
+Model-Error Layer
+(registered prediction vs. observed outcome)
+      ↓
+Model Correction
 ```
 
 ---
@@ -133,16 +148,19 @@ This repository documents a longitudinal observation of a human performance syst
 
 The archive preserves continuity across:
 
-- body composition measurements
-- training architecture evolution
+- body-composition measurements
+- training-architecture evolution
 - phase-based system progression
 - governance and constraint frameworks
-- biomarker and system health snapshots where publicly included
-- prediction vs. observed outcome tracking as an auxiliary review layer
+- biomarker and system-health snapshots where publicly included
+- prediction-versus-observed-outcome tracking as an auxiliary calibration layer
 - separation between governed records and informal subjective telemetry
 
 **Data scope and limitations:**  
 → [`data/DATA_COVERAGE.md`](./data/DATA_COVERAGE.md)
+
+**Known structured-data quality questions:**  
+→ [`data/DATA_QUALITY_NOTES.md`](./data/DATA_QUALITY_NOTES.md)
 
 **Model-error layer context:**  
 → [`data/model_error/WHAT_THIS_LAYER_IS.md`](./data/model_error/WHAT_THIS_LAYER_IS.md)
@@ -152,7 +170,7 @@ The archive preserves continuity across:
 
 **Note:** Some biomarker data may be referenced in reports but not included in the public archive.
 
-SHA256 verification is provided for binary snapshot artifacts where applicable.
+SHA-256 verification is provided for binary snapshot artifacts where applicable.
 
 ---
 
@@ -177,11 +195,15 @@ Interpretation remains intentionally constrained:
 - artifacts take precedence over language
 - observations remain provisional
 - conclusions require repeated evidence across time
+- biological interpretation remains retrospective
+- registered predictions remain isolated in the model-error layer
+- prediction wording is preserved until the applicable observation window closes
 - subjective context is separated from governed archive records unless formally incorporated
+- protocol documents describe this subject’s archive and are not generalized prescriptions
 
-This archive documents one subject under constrained conditions.
+This archive documents one subject under defined protocol constraints and incomplete environmental control.
 
-No claims extend beyond the recorded system.
+No claim extends beyond the recorded system without separate evidence.
 
 ---
 
@@ -190,6 +212,10 @@ No claims extend beyond the recorded system.
 **Phase 2 — Load Integration**
 
 → [`PHASE_MAP.md`](./PHASE_MAP.md)
+
+Phase language is retrospective and evidence-earned.
+
+Open prediction outcomes may contribute to a later phase evaluation but do not independently declare a phase transition.
 
 ---
 
@@ -220,10 +246,15 @@ Root
 ├── data/
 │   └── model_error/
 │
+├── protocols/
 ├── experiments/
 ├── schemas/
 ├── methodology/
 ├── docs/
+│   ├── audits/
+│   └── methodology/
+│
+├── roadmap/
 │
 ├── README.md
 ├── INDEX.md
@@ -231,6 +262,31 @@ Root
 ├── TELEMETRY.md
 ├── CHANGELOG.md
 ```
+
+Historical or superseded protocol material may remain in the repository for provenance when its inactive status is clearly identified.
+
+---
+
+## Prediction Governance
+
+The prediction layer exists to test model calibration rather than demonstrate foresight.
+
+Registered predictions must be:
+
+- specific enough to evaluate
+- preserved without outcome-driven rewriting
+- linked to an observation window
+- closed only after sufficient evidence exists
+- scored independently where multiple domains are involved
+- retained when evidence is insufficient rather than forced into a pass or failure
+
+Current open-record evaluation rules:
+
+→ [`methodology/open_prediction_evaluation_plan_041_044.md`](./methodology/open_prediction_evaluation_plan_041_044.md)
+
+Model-error layer:
+
+→ [`data/model_error/WHAT_THIS_LAYER_IS.md`](./data/model_error/WHAT_THIS_LAYER_IS.md)
 
 ---
 
@@ -241,14 +297,23 @@ Root
 - [`PHASE_DECLARATION_CRITERIA.md`](./PHASE_DECLARATION_CRITERIA.md)
 - [`RISK_MANAGEMENT.md`](./RISK_MANAGEMENT.md)
 - [`TELEMETRY.md`](./TELEMETRY.md)
+- [`methodology/open_prediction_evaluation_plan_041_044.md`](./methodology/open_prediction_evaluation_plan_041_044.md)
 
 ---
 
 ## Scope
 
-Single-subject observational archive.
+Single-subject longitudinal observational archive.
 
-No external claims.
+This repository does not establish:
+
+- population-level causality
+- clinical efficacy
+- generalized intervention guidance
+- a protocol suitable for direct replication without independent review
+- certainty from prediction accuracy
+
+Claims remain bounded to the recorded subject, artifacts, methods, and observation windows.
 
 ---
 
@@ -273,6 +338,7 @@ Hughett, C. D. (2026). *Daniel Longitudinal Study (v1.0.0)* [Data set]. Zenodo. 
 - Observer quickstart → [`docs/OBSERVER_QUICKSTART.md`](./docs/OBSERVER_QUICKSTART.md)
 - Observer evaluation → [`docs/FOR_OBSERVERS.md`](./docs/FOR_OBSERVERS.md)
 - Data coverage → [`data/DATA_COVERAGE.md`](./data/DATA_COVERAGE.md)
+- Data-quality notes → [`data/DATA_QUALITY_NOTES.md`](./data/DATA_QUALITY_NOTES.md)
 - Recurring terms → [`docs/CONCEPTS.md`](./docs/CONCEPTS.md)
 - Guided orientation → [`docs/NEWCOMER_PATH.md`](./docs/NEWCOMER_PATH.md)
 - Index → [`INDEX.md`](./INDEX.md)
@@ -281,6 +347,7 @@ Hughett, C. D. (2026). *Daniel Longitudinal Study (v1.0.0)* [Data set]. Zenodo. 
 - Artifact history → [`snapshots`](./snapshots/)
 - Weekly reports → [`reports`](./reports/)
 - Model-error layer → [`data/model_error/WHAT_THIS_LAYER_IS.md`](./data/model_error/WHAT_THIS_LAYER_IS.md)
+- Open-prediction evaluation plan → [`methodology/open_prediction_evaluation_plan_041_044.md`](./methodology/open_prediction_evaluation_plan_041_044.md)
 - Telemetry layer → [`TELEMETRY.md`](./TELEMETRY.md)
 - Versioning → [`VERSIONING.md`](./VERSIONING.md)
 
