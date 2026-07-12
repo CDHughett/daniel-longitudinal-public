@@ -5,291 +5,253 @@ Public Archive Status Dashboard
 
 Archive DOI: https://doi.org/10.5281/zenodo.20815612
 
-> Note: Week labels follow the repository’s internal reporting index rather than strict ISO calendar weeks. See [`docs/WEEK_INDEXING.md`](docs/WEEK_INDEXING.md).
+> Week labels follow the repository’s internal reporting index rather than strict ISO calendar weeks. See [`docs/WEEK_INDEXING.md`](docs/WEEK_INDEXING.md).
 
 ---
 
-## Quick Current-State Summary
+## Current State
 
-- Current phase: Phase 2 — Load Integration
-- Current window: 2026-W27 active observation
-- Prior window: 2026-W26 closed
-- Archive posture: public, governed, DOI-preserved, versioned, retrospective
-- Current emphasis: post-travel return-to-standard execution, recovery-floor durability, ambient execution preservation, fluid / bodyweight normalization monitoring, repository cadence restoration, ordinary-life workload absorption, and active July–August model-error observation
+- **Phase:** Phase 2 — Load Integration
+- **Active window:** 2026-W28
+- **Prior window:** 2026-W27 closed
+- **System state:** Stable
+- **Archive posture:** Public, governed, versioned, retrospective
+- **Sleep dataset current through:** 2026-07-12
+- **Open model-error records:** 041–044
+- **Current emphasis:** standard execution, recovery-floor durability, reduced-overhead movement observation, protocol governance, and preparation for the August biological snapshot
 
----
-
-## System State — 2026-W27 (Active Observation)
-
-**Last Updated:** 2026-W27  
-**Repository State:** Active longitudinal observation  
-**Archive Mode:** Public, governed, versioned
-
-Week 26 closed under continued Phase 2 consolidation, preserved pre-travel B1 exposure, preserved pre-travel Load Integration exposure, travel / holiday variability, partial loss of scale access, environmental disruption, transient fluid retention, repository cadence interruption from limited internet access, and continued monitoring of recovery-floor durability under less controlled real-world conditions.
-
-Current archive state reflects:
-
-- 2026-W26 weekly report closed
-- 2026-W27 weekly report initialized
-- 2026-W26 sleep observations appended to the canonical longitudinal sleep dataset through 2026-07-05
-- LATEST dashboard advanced to the current W27 observation window
-- May 2026 DEXA, BodPod / COSMED, VO2, TruAge, Advanced TruAge, and TruHealth artifacts integrated
-- May 2026 structured biomarker fusion completed
-- Model Error records 041–044 remain open for the July–August / August 2026 observation window
-- active forward-prediction block continues monitoring recovery capacity, ambient execution plateau behavior, August biological snapshot translation, and protocol-governance preservation
-- Phase 2 recovery-floor preservation remains supported under travel, reintegration, normal-life workload, administrative workload, repository stewardship, behavioral automation, and post-travel return-to-standard conditions
-
-No uncontrolled protocol escalation is recorded entering the current observation window.
+No formal Phase 2D transition has been declared.
 
 ---
 
-## Purpose
+## Week 27 Closeout
 
-This document provides a concise overview of the archive’s current public state.
+Week 27 completed as a successful post-travel reintegration window.
 
-It is not a weekly report, phase declaration, changelog, or performance summary.
+Observed:
 
-Detailed interpretation belongs in `/reports`.  
-Primary artifacts belong in `/snapshots`.  
-Recent structural changes belong in `CHANGELOG.md`.  
-Historical structural changes are preserved in `docs/archive/CHANGELOG_ARCHIVE.md`.
+- B1 and Load Integration resumed on the first available home-training day
+- both training blocks were completed on all five available home-training days
+- no graded re-entry, compensatory workload, or protocol repair was required
+- B1 remained low-friction, fasted, nasal-breathing dominant, and recovery-compatible
+- trap-bar work, pull-ups, push-ups, dead hangs, and mobility remained mechanically stable
+- travel-related edema, bloating, and eyelid irritation remained resolved
+- measured bodyweight averaged approximately 232.6 lb across five scale days
+- HRV averaged approximately 61 ms
+- total sleep averaged approximately 7 hours 33 minutes
+- one shortened night and one transient autonomic deviation did not become progressive
+- recreational swimming, treading, and diving remained compatible with formal training
+- repository cadence and audit activity resumed without destabilization
+
+The week also produced candidate evidence of reduced operator overhead:
+
+- instructional pull-up execution with deliberate pauses and continued verbal explanation
+- preserved movement control under divided attention
+- voluntary slow and more explosive movement expression
+- stable execution after accumulated aerobic, strength, household, and aquatic workload
+
+These observations are relevant to Model Error 042 but remain insufficient for scoring or closure.
 
 ---
 
-## Current Archive State
+## Active Observation — 2026-W28
+
+Week 28 is intended to test whether the favorable Week 27 characteristics persist under ordinary repetition rather than travel contrast or deliberate performance emphasis.
+
+Current observation targets:
+
+- continued ambient B1 initiation
+- stable Load Integration mechanics
+- recovery compatibility of same-day B1 and Load Integration
+- normalization of sleeping heart rate and deep-sleep behavior after the higher Week 27 workload
+- spontaneous recurrence of divided-attention movement control
+- voluntary tempo and force modulation without technical degradation
+- continued low operator friction
+- preserved recreational capacity without converting it into required workload
+- stable bodyweight and fluid behavior
+- absence of progressive pain, GI disruption, edema, or systemic fatigue
+- continued model-error and phase-governance discipline
+
+The protocol remains unchanged.
+
+---
+
+## Archive State
 
 | Domain | Current Public Status |
 |---|---|
 | Repository Activity | Active |
 | Observation Model | Continuous, artifact-first longitudinal tracking |
-| Interpretation Mode | Strictly retrospective, artifact-bound |
+| Interpretation Mode | Strictly retrospective and artifact-bound |
 | Phase Context | Phase 2 — Load Integration |
-| Current Window | 2026-W27 active observation |
-| Prior Window | 2026-W26 closed |
-| Training Structure | Stable B1 anchor; Load Integration active under Phase 2 consolidation with post-travel return-to-standard monitoring |
-| Recovery Signals | Stable; W26 recovery continuity preserved under travel disruption, transient fluid variability, repository delay, and reduced environmental control |
-| Sleep Integrity | Structurally stable; W26 sleep observations appended through 2026-07-05 |
-| Bodyweight Band | ~229–235 lb observed across training, travel, fluid, scale-access, and GI-timing contexts |
-| Biomarker Coverage | February 2026 and May 2026 integrated multi-domain snapshots available |
-| Prediction Layer | Active — model error tracking, closure logic, governance layer, and open 041–044 July–August / August-facing prediction block |
+| Current Window | 2026-W28 active |
+| Prior Window | 2026-W27 closed |
+| Training Structure | Stable B1 anchor with active Load Integration |
+| Recovery State | Stable; no confirmed recovery-floor breach |
+| Sleep Coverage | Canonical dataset current through 2026-07-12 |
+| Bodyweight Context | Approximately 229–235 lb across training, travel, fluid, GI-timing, and scale-access conditions |
+| Biomarker Coverage | February and May 2026 integrated multi-domain snapshots |
+| Prediction Layer | Model Error records 041–044 open |
 | Archive Integrity | Maintained |
-| Documentation Posture | Post-DOI observer-pathway navigation stabilized; current work limited to normal weekly stewardship and post-travel cadence restoration |
+| Next Major Artifact | August 2026 biological and performance snapshot |
 
 ---
 
-## Current Phase Context
+## Phase Context
 
-**Phase 2 — Load Integration**
-
-The system is operating within a load-integration window characterized by:
+The current Phase 2 operating pattern includes:
 
 - preserved aerobic base
 - repeated mechanical loading
-- recovery compatibility under sustained exposure
-- demonstrated stability under controlled, disrupted, reintegration, normal-life, travel, and ordinary workload conditions
-- consolidation-first interpretation
-- controlled upper-body integration
-- increasing portability outside ideal routine conditions
-- post-travel reintegration without recovery collapse
-- ambient execution under ordinary-life demands
-- recovery-floor preservation across normal-life and travel variability
-- resolved localized mechanical signaling without system-wide recovery disruption
-- workload absorption under repository, administrative, household, and training demands
-- repeated daily execution without meaningful degradation when environmental conditions support execution
-- preserved interpretation discipline when environmental conditions temporarily constrain execution
+- same-day aerobic and strength compatibility
+- recovery-floor preservation under ordinary and disrupted conditions
+- increasing portability across travel and schedule variation
+- reduced dependence on motivational activation
+- workload absorption across training, household activity, recreation, and repository stewardship
+- conservative interpretation of short-term wearable and bodyweight variability
+- no progression without repeated evidence
 
-Week 27 follows successful completion of Week 26 under preserved pre-travel B1 and Load Integration exposure, travel disruption, scale-access loss, transient fluid retention, limited internet access, and recovery-floor preservation despite non-ideal conditions.
+Week 27 strengthened the case that execution may be becoming more adaptable rather than merely automatic.
 
-The current observation window continues Phase 2 consolidation while monitoring return-to-standard execution, recovery-floor durability, ambient execution preservation, post-travel fluid normalization, trait-level work-capacity expression, and recovery compatibility under ordinary life conditions.
+Possible early Phase 2D-type characteristics include:
 
-Phase language is descriptive, not promotional.
+- reduced conscious stabilization demand
+- spare attentional capacity during movement
+- selectable tempo and force expression
+- cross-context transfer
+- preserved execution after accumulated workload
 
-Advancement requires sustained, artifact-confirmed stability.
+These remain candidate characteristics.
+
+Phase advancement requires repeated cross-context evidence and objective snapshot support.
 
 ---
 
-## Current Operating Posture
+## Training Structure
 
-The archive is documenting:
+### B1 — Aerobic Anchor
 
-- repeated training exposure under stable structure
-- preserved aerobic base during load integration
-- stable recovery under repeated exposure
-- increasing repeatability of execution
-- consolidation over escalation
-- controlled post-testing re-entry without forward claims
-- unchanged architecture across observation windows
-- completed May 2026 integrated testing window
-- push-up integration under recovery-compatible conditions
-- pull-up sequencing refinement with reduced joint signaling
-- real-world portability during travel, environmental disruption, and schedule variability
-- reintegration normalization after disrupted conditions
-- recovery-floor preservation following post-travel reintegration and travel variability exposure
-- recovery-floor durability under ordinary-life workload
-- ambient execution under household, repository, and administrative demands
-- resolved lower-back mechanical signaling without protocol retreat
-- training, recovery, archive stewardship, and daily life functioning increasingly as a unified operating system
-- post-DOI archive stewardship without changing evidence, datasets, or interpretation rules
-- accurate classification of travel constraints without converting valid interruption into behavioral failure
-- conservative interpretation of travel-related bodyweight and fluid variability
+- incline treadmill walking
+- approximately 50–55 minutes
+- approximately 3.1–3.3 mph
+- 10% incline
+- nasal breathing
+- fasted where routine allows
+- no planned escalation
 
-No peaking behavior is assumed.
+### Load Integration
 
-No forward performance claims are made.
+- trap-bar work
+- pull-ups
+- push-ups
+- dead hangs
+- mobility
+- supporting locomotion and preparation work
+- no planned increase in load, volume, density, or complexity
+
+### Recreational Movement
+
+Swimming, treading, diving, walking, and ordinary physical activity remain optional recovery-compatible variability layers.
+
+Recreational activity is not currently part of the required protocol.
+
+---
+
+## Recovery Posture
+
+Current recovery monitoring includes:
+
+- HRV
+- resting and sleeping heart rate
+- total sleep
+- deep-sleep trend
+- subjective morning state
+- bodyweight and fluid behavior
+- GI and stomach status
+- edema
+- pain or mechanical signaling
+- next-day performance following higher-volume days
+
+Wearable sleep-stage estimates remain secondary to system-level interpretation.
+
+No recovery intervention is currently indicated.
+
+---
+
+## Prediction Layer
+
+Recent closed records include:
+
+- 032 — epigenetic aging
+- 033 — DEXA body composition
+- 034 — VO2 max
+- 037 — push-up repeatability
+- 038 — recovery-stability governance evaluation
+- 039 — travel reintegration
+- 040 — recovery-floor preservation
+
+Current open records:
+
+### 041 — Recovery Capacity
+
+Evaluates recovery-floor durability through the July–August observation block.
+
+Status: **Open**
+
+### 042 — Ambient-Execution Plateau
+
+Evaluates whether execution remains stable but flat or develops additional adaptable capacity.
+
+Week 27 produced meaningful candidate counter-evidence through divided-attention pull-up control and voluntary tempo modulation.
+
+Status: **Open**
+
+### 043 — August Biological Snapshot
+
+Evaluates translation of the current operating state into the August biological and performance artifact cycle.
+
+Status: **Open**
+
+### 044 — Protocol Governance
+
+Evaluates whether the protocol remains stable and interpretation remains disciplined through the next snapshot cycle.
+
+Status: **Open**
+
+No open record currently qualifies for closure.
 
 ---
 
 ## Current Constraints
 
-Active constraints remain present but non-disruptive:
+Active but non-disruptive constraints include:
 
-- ordinary schedule variability from normal-life demands
-- autonomic sensitivity under repeated exposure
-- interpretation risk during visible adaptation
-- minor elbow / shoulder / grip feedback during pull-up exposure
-- push-up pacing awareness during fatigue accumulation
-- hydration and glycogen variability under continued training exposure
-- conservative recreational movement / pool reintegration management
-- wearable telemetry limitations following RingConn UI changes
-- administrative and repository workload management during post-DOI stewardship
-- post-travel bodyweight and fluid normalization monitoring
-- continued need to distinguish ordinary variability from regression
-- continued need to distinguish workload absorption from justification for progression testing
-- continued need to distinguish valid environmental constraint from behavioral failure
-- continued need to restore repository cadence without urgency-driven errors
+- ordinary schedule variability
+- transient wearable autonomic deviations
+- sleep-stage estimation limitations
+- shoulder, elbow, grip, and lower-back mechanical ownership
+- bodyweight interpretation under fluid and GI-timing variability
+- administrative and repository workload
+- temptation to convert favorable observations into premature progression
+- need to complete Model Error 043 scoring rules before August outcomes are reviewed
 
-No current constraint requires intervention.
-
----
-
-## Performance Integrity
-
-- training continuity preserved across observation windows where environment supported execution
-- B1 aerobic anchor maintained during the available Week 26 home / pre-travel window
-- Load Integration remained stable during the available Week 26 home / pre-travel window
-- formal training paused during travel due to valid environmental and schedule constraints
-- travel-period training interruption did not produce compensatory behavior, identity-threat response, or protocol repair
-- pull-up structure progressed closer to lower-salience execution through sequencing refinement
-- push-up exposure continued without observed recovery collapse
-- recreational movement exposure remained subordinate to recovery compatibility
-- travel disruption and environmental sleep variability did not produce systemic destabilization
-- post-travel recovery normalized without requiring a compensatory recovery campaign
-- reduced environmental control did not produce visible behavioral collapse
-- performance capacity remained stable under repeated exposure when standard execution was available
-- movement efficiency improving under identical loading
-- recovery floor preserved through Model Error 039 and 040 evaluation windows and subsequent travel variability exposure
-- localized lower-back mechanical signaling remained self-limiting and did not recur as a limiting factor
-- same-day B1 and Load Integration exposure remained compatible with recovery-floor preservation during the available training window
-- ordinary-life workload, repository stewardship, and formal training continued to coexist without measurable recovery compromise when conditions supported execution
-
-Observed patterns now include:
-
-- **consistent recovery alignment under controlled conditions**
-- **increasing repeatability of load integration execution**
-- **controlled upper-body expansion without recovery collapse**
-- **emotional regulation preserved under relational, travel, administrative, and family-system variability**
-- **real-world portability emerging under reduced environmental control**
-- **post-disruption reintegration occurring without systemic rebound**
-- **ambient execution increasingly replacing activation-dependent execution**
-- **recovery-floor preservation under normal-life and travel variability**
-- **localized mechanical feedback contained without recovery-floor compromise**
-- **ordinary-life workload absorption emerging as a durable Phase 2 characteristic**
-- **trait-level work capacity increasingly supported by repeated daily execution without degradation**
-- **interpretation discipline preserved during non-ideal travel, fluid, sleep, scale-access, and repository-cadence conditions**
-
----
-
-## Prediction Layer Update
-
-Recent model error closures remain current through the completed post-travel reintegration and recovery-floor durability evaluation windows.
-
-Recent closures include:
-
-- epigenetic aging (032)
-- DEXA body composition (033)
-- VO2 max (034)
-- push-up repeatability (037)
-- recovery-stability governance evaluation (038)
-- travel reintegration (039)
-- recovery floor preservation (040)
-
-Current open prediction records include:
-
-- Model Error 041 — recovery capacity during the July–August observation block
-- Model Error 042 — ambient execution plateau behavior through the August snapshot window
-- Model Error 043 — August 2026 biological snapshot translation
-- Model Error 044 — protocol-governance preservation through the next full snapshot cycle
-
-Current prediction posture:
-
-- May 2026 testing predictions are closed
-- DEXA and VO2 projections are artifact-closed
-- TruDiagnostic projections are artifact-closed
-- repeatability evaluations are artifact-closed
-- post-travel reintegration evaluations are artifact-closed
-- recovery-floor preservation through Model Error 040 is artifact-closed
-- Model Error records 041–044 remain open and provisional until their defined observation windows close
-- stratified UDI values have been published under UDI v1.1 governance
-- composite UDI remains intentionally withheld under documented release criteria
-- no current prediction record requires immediate closure evaluation entering W27
-
-No structural changes to prediction methodology.
-
----
-
-## Active Training Structure
-
-### B1 — Aerobic Base
-
-- incline treadmill walking
-- nasal breathing preserved
-- anchor role unchanged
-- return-to-standard execution emphasized after travel
-
-### Strength Integration
-
-- trap bar deadlift
-- pull-ups
-- push-ups
-- dead hangs / bar exposure
-- repeated exposure prioritized
-- no compensatory training after travel interruption
-
-### Recreational Movement / Pool Exposure
-
-- conservative reintegration only
-- recovery-compatible variability layer
-- no performance testing assumed
-
-Current posture:
-
-**return to standard execution while monitoring recovery-floor durability, post-travel fluid normalization, normal-life workload absorption, and recovery compatibility**
-
-During Week 27, Load Integration remains active under Phase 2 consolidation conditions.
-
-No load, density, or movement escalation is assumed beyond the currently integrated structure.
+No active constraint requires protocol retreat.
 
 ---
 
 ## Risk Posture
 
-**Primary risk:** unnecessary progression or compensation pressure during a stable post-travel consolidation window
+**Primary risk:** treating increased available capacity as a requirement to increase workload.
 
 **Mitigation:**
 
-- preserve structural consistency
-- avoid unnecessary variation
-- avoid reactive optimization
-- maintain recovery compatibility
-- separate artifact capture from interpretation
-- stabilize push-up and pull-up integration before adding further complexity
-- distinguish ordinary variability from regression
-- prioritize ambient execution and repeatability over escalation
-- avoid converting recreational movement or pool exposure into performance testing
-- preserve repository governance without allowing post-DOI documentation maintenance to become training or recovery pressure
-- allow July–August model-error windows to test the system naturally rather than forcing early confirmation
-- interpret post-travel bodyweight and fluid variability conservatively
-- restore repository cadence without urgency-driven quality loss
+- preserve the current structure
+- allow favorable traits to recur spontaneously
+- avoid compensatory or proof-seeking training
+- interpret isolated metrics in system context
+- keep Model Error records open until their registered windows end
+- complete August scoring rules before viewing outcomes
+- declare phase transitions retrospectively
 
 Durability remains the priority.
 
@@ -297,42 +259,16 @@ Durability remains the priority.
 
 ## Archive Position
 
-The repository operates as a continuous public archive.
-
-System structure:
+The repository operates as a continuous public archive:
 
 raw artifacts  
-→ snapshots (immutable evidence)  
-→ reports (retrospective interpretation)  
-→ phase context (descriptive only)  
-→ governance (constraints and boundaries)  
-→ datasets (longitudinal tracking + model error)
+→ immutable snapshots  
+→ structured datasets  
+→ retrospective reports  
+→ phase context  
+→ prediction and governance evaluation
 
----
-
-## Current Observation Window
-
-Current archive maintenance completed:
-
-- 2026-W26 closed
-- 2026-W27 active
-- sleep dataset current through 2026-07-05
-- May 2026 integrated biomarker fusion completed
-- May 2026 prediction closures completed
-- post-travel reintegration prediction closures completed
-- recovery-floor durability observation carried forward into W27
-- post-travel return-to-standard execution monitoring initiated
-- post-DOI observer-pathway documentation stabilized
-- open model-error records 041–044 carried forward into the July–August / August snapshot observation window
-
-Recent repository activity is maintained in `CHANGELOG.md`.  
-Historical repository activity is preserved in `docs/archive/CHANGELOG_ARCHIVE.md`.
-
----
-
-## Public Orientation
-
-This repository documents process, not performance display.
+This repository documents process rather than performance display.
 
 Evaluation is based on:
 
@@ -340,13 +276,34 @@ Evaluation is based on:
 - durability
 - traceability
 - stability across time
-- coherence between artifact and interpretation
+- agreement between artifact and interpretation
+- explicit treatment of uncertainty and model error
+
+---
+
+## Current Maintenance State
+
+Completed:
+
+- 2026-W27 weekly report closed
+- 2026-W28 weekly report initialized
+- W27 sleep observations appended through 2026-07-12
+- July 11 audit remediation completed
+- May 2026 integrated artifact cycle preserved
+- Model Error records 041–044 carried forward unchanged
+
+Current work:
+
+- ordinary W28 observation
+- preparation of pre-outcome scoring rules for Model Error 043
+- continued monitoring of reduced-overhead and divided-attention movement expression
+- August artifact-cycle preparation
+- routine archive stewardship
 
 ---
 
 ## Navigation
 
-- **Current State:** [LATEST.md](LATEST.md)
 - **Start Here:** [docs/START_HERE.md](docs/START_HERE.md)
 - **Observer Quickstart:** [docs/OBSERVER_QUICKSTART.md](docs/OBSERVER_QUICKSTART.md)
 - **Observer Evaluation:** [docs/FOR_OBSERVERS.md](docs/FOR_OBSERVERS.md)
@@ -357,31 +314,16 @@ Evaluation is based on:
 - **Index:** [INDEX.md](INDEX.md)
 - **Why Public:** [WHY_PUBLIC.md](WHY_PUBLIC.md)
 - **Governance:** [GOVERNANCE.md](GOVERNANCE.md)
-- **Reports:** [/reports](reports)
-- **Snapshots:** [/snapshots](snapshots)
+- **Reports:** [reports](reports)
+- **Snapshots:** [snapshots](snapshots)
 - **Methodology:** [METHODOLOGY_AND_CONTROLS.md](METHODOLOGY_AND_CONTROLS.md)
-- **Prediction Evaluation:** [/methodology/prediction_evaluation.md](methodology/prediction_evaluation.md)
+- **Prediction Evaluation:** [methodology/prediction_evaluation.md](methodology/prediction_evaluation.md)
 - **Data Dictionary:** [DATA_DICTIONARY.md](DATA_DICTIONARY.md)
 - **Measurement Sources:** [MEASUREMENT_SOURCES.md](MEASUREMENT_SOURCES.md)
 - **Changelog:** [CHANGELOG.md](CHANGELOG.md)
 
 ---
 
-## Update Flow
-
-- ongoing observation capture for current active week (**2026-W27**)
-- May 2026 integrated snapshot completed
-- continued model error closure and refinement
-- continued archive stabilization without forward claims
-- continued Load Integration monitoring under Phase 2 consolidation conditions
-- continued recovery-floor durability monitoring following W26 closeout
-- continued ordinary-life workload absorption monitoring without protocol escalation
-- continued post-travel return-to-standard monitoring
-- continued post-DOI documentation and navigation stewardship
-- continued observation of open model-error records 041–044 through the July–August / August snapshot window
-
----
-
 **System State:** Stable  
-**Trajectory Posture:** Phase 2 consolidation under recovery-floor durability, post-travel return-to-standard monitoring, and trait-level work-capacity observation  
-**Operational Mode:** Execute → observe → record artifacts → close retrospectively
+**Trajectory Posture:** Phase 2 consolidation with emerging adaptable-capacity signals  
+**Operational Mode:** Execute → observe → record → close retrospectively
