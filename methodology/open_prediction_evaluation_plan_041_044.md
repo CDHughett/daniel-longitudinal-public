@@ -29,6 +29,43 @@ This document supplements:
 
 ---
 
+## Registration Context
+
+This plan was registered on 2026-07-11 after limited early-window evidence had already been observed.
+
+Known at registration:
+
+- the Washington travel perturbation had occurred
+- formal training had paused during the travel interval
+- standard home execution had resumed after travel
+- the 2026-07-10 instructional pull-up event had occurred
+- that event had been identified as candidate evidence relevant to record 042
+- records 041–044 remained open and unscored
+
+Not known at registration:
+
+- the final July–August recovery trajectory
+- whether the instructional pull-up characteristics would recur
+- whether record 042 would meet its repeated-evidence threshold
+- the August TruDiagnostic results
+- the August DEXA, VO₂, or BodPod results
+- the final outcomes of records 041–044
+- whether Phase 2D criteria would later be satisfied
+
+The plan is therefore:
+
+- prospective relative to the unresolved prediction outcomes
+- prospective relative to all August biological results
+- partially informed by limited early-window contextual evidence
+
+The known 2026-07-10 candidate event did not itself satisfy the record 042 transition threshold because the threshold requires repeated evidence across multiple dates and contexts.
+
+The known Washington perturbation did not determine the outcome of record 041 because the primary standard-input interval had only recently begun and the later accumulated-exposure trajectory remained unresolved.
+
+This disclosure does not modify any prediction or scoring threshold.
+
+---
+
 ## Non-Retroactivity Rule
 
 This document does not modify:
@@ -54,32 +91,135 @@ Any later change to this plan must:
 - preserve the prior version through Git history
 - avoid changing rules merely because emerging evidence favors one outcome
 
+Clarification of collection dates, source availability, or test completion does not authorize changing the existing evaluation thresholds.
+
 ---
 
 ## Common Evaluation Boundary
 
-### August Snapshot Date
+The August artifact cycle may include measurements collected on more than one date.
 
-For this prediction block, the `August snapshot` means the first completed August 2026 biological sample collection intended as the direct follow-up to the May 2026 TruDiagnostic measurement cycle.
+This plan therefore distinguishes:
 
-The biological observation window ends on the collection date, not the date on which results are received.
+1. the **primary biological endpoint**
+2. the **supplemental measurement window**
+3. the **snapshot-cycle completion date**
+
+---
+
+### Primary Biological Endpoint
+
+The primary biological endpoint is the August 2026 TruDiagnostic sample-collection date intended as the direct follow-up to the May 2026 TruDiagnostic measurement cycle.
+
+Planned collection date:
+
+- 2026-08-17
+
+If the collection date changes:
+
+- the actual collection date must be documented
+- the reason for rescheduling must be recorded
+- the new date must not be selected after viewing results
+- the later date must not be substituted silently for the planned outcome
+
+The primary biological endpoint controls:
+
+- the core record 043 epigenetic comparison
+- the endpoint for the biological observation interval
+- the date against which preparation and collection conditions are documented
+
+The observation endpoint is the sample-collection date, not the date on which the laboratory report is received.
+
+---
+
+### Supplemental Measurement Window
+
+The planned supplemental measurement window is:
+
+- 2026-08-17 through 2026-08-18
+
+Planned supplemental tests include:
+
+- DEXA
+- formal VO₂ testing
+- BodPod
+- associated body-composition or performance outputs
+
+These measurements may be collected on different dates from the primary biological endpoint.
+
+Supplemental measurements:
+
+- provide contextual evidence for the August physiological profile
+- must retain their actual collection dates
+- must retain their preparation and testing conditions
+- must not silently replace the primary TruDiagnostic comparison
+- must not alter the predefined core biological-anchor rules
+- must be interpreted separately when methodology or collection conditions differ
+
+If a supplemental test is delayed beyond the planned window:
+
+- the actual date must be documented
+- the delayed test must not be silently represented as contemporaneous
+- comparability must be reviewed before inclusion
+- the result may remain supplemental even if it is excluded from the tightly bounded August snapshot cycle
+
+---
+
+### Snapshot-Cycle Completion Date
+
+The snapshot-cycle completion date is the latest completed planned test date within the documented August supplemental measurement window.
+
+Under the current plan, the expected snapshot-cycle completion date is:
+
+- 2026-08-18
+
+If one or more planned supplemental tests are not completed:
+
+- the last completed planned test date becomes the provisional cycle-completion date
+- the missing test must be documented
+- no uncompleted test may be treated as favorable, adverse, or stable
+- the absence of a supplemental test does not automatically invalidate the core TruDiagnostic comparison
+
+Records 041, 042, and 044 use the snapshot-cycle completion date as their normal observation-window endpoint.
+
+Record 043 uses the primary biological endpoint for its core biological anchors and the supplemental window for contextual profile evidence.
+
+---
+
+### Result Review Boundary
 
 Results may be evaluated only after:
 
-- the reports are received
+- the relevant reports are received
 - source artifacts are archived
+- collection dates are verified
+- preparation and testing conditions are documented
 - measurement comparability is reviewed
 - required structured values are entered
+- transcription is checked
 - artifact verification is complete
 
-If the intended collection is not completed by 2026-08-31:
+No result should be scored from a screenshot preview, partial portal display, verbal summary, or incomplete report set when the missing information could affect interpretation.
+
+---
+
+### Failure to Complete the August Cycle
+
+If the intended primary biological collection is not completed by 2026-08-31:
 
 - no record automatically rolls into a later testing cycle
-- records dependent on the snapshot remain open if evidence is insufficient
+- records dependent on the biological snapshot remain open if evidence is insufficient
 - the missed or delayed outcome must be documented
 - a later test must not be substituted silently for the August outcome
 
-For records 041, 042, and 044, 2026-08-31 is the maximum observation boundary if no August collection occurs.
+If the primary biological endpoint occurs but one or more supplemental tests do not occur:
+
+- record 043 may still be evaluable from the core anchors if comparability requirements are met
+- missing supplemental domains must remain visibly missing
+- records 041, 042, and 044 may close at the documented cycle-completion date when sufficient evidence exists
+- the absence of a supplemental test must not be converted into a favorable or unfavorable outcome
+
+For records 041, 042, and 044, 2026-08-31 is the maximum observation boundary if the planned snapshot cycle is not completed earlier.
 
 ---
 
@@ -160,8 +300,8 @@ Did accumulated B1 and Load Integration exposure remain compatible with recovery
 
 2026-07-01 through:
 
-- the August biological sample-collection date, or
-- 2026-08-31 if no August collection occurs
+- the August snapshot-cycle completion date, or
+- 2026-08-31 if the snapshot cycle is not completed earlier
 
 ### Primary Standard-Input Interval
 
@@ -310,10 +450,12 @@ Did execution quality remain stable without another distinct qualitative transit
 
 2026-06-25 through:
 
-- the August biological sample-collection date, or
-- 2026-08-31 if no August collection occurs
+- the August snapshot-cycle completion date, or
+- 2026-08-31 if the snapshot cycle is not completed earlier
 
 Evidence recorded before the creation of this companion plan remains admissible only when it was contemporaneously documented.
+
+The 2026-07-10 instructional pull-up event was known at registration and remains one candidate observation rather than a completed transition.
 
 ---
 
@@ -417,6 +559,19 @@ Does the August 2026 biological snapshot show measurable overall improvement rel
 
 ---
 
+## Observation Endpoint
+
+The core record 043 comparison is anchored to the primary biological endpoint:
+
+- the August 2026 TruDiagnostic sample-collection date
+- currently planned for 2026-08-17
+
+Supplemental DEXA, VO₂, BodPod, bodyweight, and recovery evidence may be collected during the documented supplemental measurement window.
+
+Supplemental evidence does not change the collection date of the primary biological endpoint.
+
+---
+
 ## Comparison Artifacts
 
 ### February Baseline
@@ -445,12 +600,15 @@ Supporting artifacts:
 
 The August result must be based on:
 
-- the verified August source reports
+- the verified August TruDiagnostic source reports
+- the documented primary biological sample date
 - the August snapshot directory
 - the corresponding structured-data entry
 - directly comparable outputs from the same testing family
 
 Raw source artifacts control when a structured value conflicts with a source report.
+
+Supplemental measurements must retain their separate collection dates and methodologies.
 
 ---
 
@@ -518,19 +676,31 @@ The supporting profile may strengthen or weaken the overall interpretation but m
 
 ## Supplemental Domains
 
-The following may be reported as supporting context when collected comparably:
+The following may be reported as supporting context when collected comparably within the documented supplemental measurement window:
 
 - DEXA body composition
 - BodPod body composition
 - VO₂ or COSMED outputs
 - bodyweight
-- HRV
+- daily biomarker HRV
+- sleep HRV
 - sleep HR
 - recovery telemetry
 
 Supplemental domains cannot rescue failure of the core biological-aging comparison.
 
-They should be interpreted separately when collection dates, devices, preparation conditions, or methodologies differ.
+They should be interpreted separately when:
+
+- collection dates differ
+- devices differ
+- preparation conditions differ
+- methodologies differ
+- comparison artifacts are unavailable
+- the test occurs outside the planned supplemental window
+
+A favorable supplemental test must not be used to relabel a non-improving core epigenetic profile as support for record 043.
+
+A discordant supplemental result must still be reported even when the core anchors support the prediction.
 
 ---
 
@@ -547,6 +717,8 @@ The August profile qualifies as measurable overall improvement only if all of th
 One adverse secondary domain does not automatically invalidate the overall profile.
 
 A broad adverse cluster cannot be ignored because several selected values improved.
+
+Supplemental DEXA, BodPod, and VO₂ outcomes provide context but are not included in the percentage rule unless explicitly represented in a later separately defined analysis layer.
 
 ---
 
@@ -626,10 +798,12 @@ Before evaluation, confirm:
 - matching metric definitions
 - no silent unit changes
 - no known algorithm change that invalidates comparison
-- collection-date documentation
+- primary biological collection-date documentation
+- supplemental test-date documentation
 - collection-condition documentation
 - source-artifact availability
 - structured transcription verification
+- separation of core and supplemental outcome classes
 
 If fewer than two core anchors are directly comparable, record 043 cannot be closed as supported or unsupported.
 
@@ -649,7 +823,7 @@ State
 
 ## Evaluation Question
 
-Was protocol governance preserved through the August snapshot without substantive progression, volume expansion, or protocol modification lacking predefined objective support?
+Was protocol governance preserved through the August snapshot cycle without substantive progression, volume expansion, or protocol modification lacking predefined objective support?
 
 ---
 
@@ -657,8 +831,10 @@ Was protocol governance preserved through the August snapshot without substantiv
 
 2026-06-25 through:
 
-- the August biological sample-collection date, or
-- 2026-08-31 if no August collection occurs
+- the August snapshot-cycle completion date, or
+- 2026-08-31 if the snapshot cycle is not completed earlier
+
+The observation window includes preparation behavior through the final planned supplemental test because snapshot-directed protocol manipulation may occur before any component of the cycle.
 
 ---
 
@@ -776,16 +952,19 @@ One outcome must not be used to rescue the other.
 
 When the observation windows end:
 
-1. confirm the applicable endpoint date
-2. identify all admissible contemporaneous evidence
-3. verify source and structured-data consistency
-4. document material confounders
-5. evaluate each record independently against this plan
-6. prepare a traceable evidence summary
-7. update the model-error CSV only after evaluation is complete
-8. preserve the original prediction fields unchanged
-9. document the closure in the changelog and relevant report
-10. calculate or update UDI only for eligible evaluable records
+1. confirm the primary biological endpoint date
+2. confirm the supplemental measurement dates
+3. confirm the applicable snapshot-cycle completion date
+4. identify all admissible contemporaneous evidence
+5. verify source and structured-data consistency
+6. document material confounders
+7. document missing or delayed tests
+8. evaluate each record independently against this plan
+9. prepare a traceable evidence summary
+10. update the model-error CSV only after evaluation is complete
+11. preserve the original prediction fields unchanged
+12. document the closure in the changelog and relevant report
+13. calculate or update UDI only for eligible evaluable records
 
 The following fields must not be rewritten at closure:
 
@@ -832,5 +1011,22 @@ Prediction outcomes may contribute evidence toward a phase decision, but they ca
 ## Version Note
 
 This plan was registered on 2026-07-11 while records 041–044 remained open and before the August 2026 biological results were known.
+
+At registration:
+
+- the Washington travel perturbation was already known
+- the 2026-07-10 instructional pull-up was already known as one candidate observation
+- the August biological and performance outcomes remained unknown
+- the final trajectories of records 041–044 remained unresolved
+
+This revision documents registration context and clarifies the multi-date August collection boundary.
+
+It does not change:
+
+- any original prediction
+- any scoring threshold
+- any support or failure rule
+- any existing outcome field
+- the open status of records 041–044
 
 Its role is to constrain later interpretation, not to predict additional outcomes.
