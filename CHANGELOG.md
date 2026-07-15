@@ -22,6 +22,7 @@ Biological interpretation belongs in `/reports`.
   - records successful return to standard B1 and Load Integration on all five available home-training days
   - documents post-travel reintegration without graded re-entry, compensatory workload, or protocol repair
   - records divided-attention pull-up control and voluntary tempo modulation as candidate evidence relevant to Model Error 042
+  - distinguishes daily biomarker HRV from sleep HRV
   - preserves records 041–044 as open and unscored
   - retains Phase 2D as a retrospective classification rather than a current declaration
 
@@ -58,6 +59,7 @@ Biological interpretation belongs in `/reports`.
   - establishes repeated-evidence requirements for record 042
   - defines biological-anchor and magnitude rules for record 043
   - protects all records from outcome-driven reinterpretation
+  - preserves the original prediction fields and open status of records 041–044
 
 - Added Event 003 to `data/model_error/calibration_events_log.md`:
   - records initialization of the July–August prospective prediction block
@@ -71,12 +73,24 @@ Biological interpretation belongs in `/reports`.
   - `2026-07-02`
   - `2026-07-08`
   - `2026-07-11`
+  - `2026-07-15`
 
 - The `2026-07-11` Saturday audit:
   - reviews repository structure, links, CSV parsing, checksums, report continuity, prediction continuity, protocol state, methodology, metadata, and release readiness
   - identifies targeted sleep-data, protocol-status, and experiment-wording issues
   - records completion of the approved remediation sequence
   - confirms final passing checks while preserving unresolved source-reconciliation items
+
+- Added `docs/audits/2026-07-15-wednesday-audit.md`:
+  - verifies repository continuity after W27 closeout and W28 initialization
+  - confirms all CSV datasets remain parseable and structurally consistent
+  - confirms canonical sleep continuity through `2026-07-12`
+  - verifies checksum, metadata, weekly-report, and model-error continuity
+  - identifies the need to distinguish daily biomarker HRV from sleep HRV
+  - documents the difference between the July 10 instructional pull-up event and its July 11 repository review
+  - identifies remaining governance-language inconsistencies across legacy documentation
+  - confirms records 041–044 remain open, unscored, and unchanged
+  - records a final passing audit disposition with targeted documentation alignment due
 
 #### Public archive and navigation
 
@@ -100,23 +114,83 @@ Biological interpretation belongs in `/reports`.
   - records W27 as closed
   - advances canonical sleep coverage through `2026-07-12`
   - summarizes successful post-travel reintegration
+  - distinguishes daily biomarker HRV from sleep HRV
   - surfaces candidate reduced-overhead and divided-attention evidence without declaring Phase 2D
   - preserves Model Error records 041–044 as open
+  - records that prospective scoring rules for records 041–044 have been registered
+  - distinguishes retrospective interpretation from the governed prospective prediction layer
+  - adds navigation to data-quality, data-collection, and open-prediction methodology
   - identifies the August 2026 artifact cycle as the next major objective checkpoint
   - reduces repeated weekly-report interpretation and restores an executive-dashboard scope
 
 #### Weekly report governance
 
-- Updated `reports/2026-W27.md` during the observation window:
-  - confined forward prediction to the registered model-error layer
-  - added the instructional pull-up observation as candidate evidence for record 042
-  - documented divided attention, verbal instruction, positional pauses, and preserved control
-  - explicitly preserved record 042 unchanged and open
+- Updated `reports/2026-W27.md` during and after the observation window:
+  - confines forward prediction to the registered model-error layer
+  - adds the instructional pull-up observation as candidate evidence for record 042
+  - documents divided attention, verbal instruction, positional pauses, and preserved control
+  - explicitly preserves record 042 unchanged and open
+  - distinguishes daily biomarker HRV of approximately 61 ms from sleep HRV of approximately 59.4 ms
+  - applies the distinction in the current-state, recovery, and closeout sections
+
+- Expanded `reports/README.md`:
+  - defines active observation reports and retrospective reports as separate operating modes
+  - establishes the weekly report lifecycle from initialization through retrospective closeout
+  - permits clearly labeled contemporaneous observations and candidate model-error evidence
+  - prohibits unregistered forward predictions, premature closure, and prediction rewriting
+  - defines relationships among source artifacts, structured datasets, collection notes, reports, dashboards, and model-error records
+  - adds correction rules for dates, labels, references, and source attribution
+  - aligns report language with incomplete environmental control and source-backed correction governance
+
+#### Prediction-plan registration context
+
+- Updated `methodology/open_prediction_evaluation_plan_041_044.md`:
+  - discloses that the Washington perturbation and July 10 instructional pull-up were already known when the plan was registered
+  - clarifies that final trajectories and all August outcomes remained unknown
+  - confirms that the known pull-up event remained one candidate observation rather than a completed record 042 transition
+  - distinguishes the August TruDiagnostic sample as the primary biological endpoint
+  - defines `2026-08-17` through `2026-08-18` as the planned supplemental measurement window
+  - distinguishes primary epigenetic scoring from supplemental DEXA, VO₂, BodPod, bodyweight, and recovery evidence
+  - defines snapshot-cycle completion and delayed-test handling
+  - preserves all original scoring thresholds, prediction fields, and record statuses
+
+#### Governance alignment
+
+- Expanded `GOVERNANCE.md`:
+  - replaces claims of complete environmental control with defined protocol constraints under incomplete real-world control
+  - prohibits silent, unsupported, and outcome-driven rewriting
+  - permits narrow, traceable, source-backed correction
+  - establishes source and evidence hierarchy
+  - defines prediction governance and candidate-evidence boundaries
+  - defines protocol-change and phase-declaration requirements
+  - adds missingness, public-archive, checksum, and enforcement standards
+  - distinguishes archive maintenance from new biological observation
+  - preserves records, outcomes, protocol exposures, and phase status
+
+- Expanded `METHODOLOGY_AND_CONTROLS.md`:
+  - replaces controlled-lifestyle framing with stabilized inputs under incomplete environmental control
+  - defines biological, body-composition, performance, recovery, and behavioral outcome domains
+  - distinguishes structured datasets from narrative evidence
+  - defines source hierarchy, missingness, source-backed correction, measurement comparability, and derived-value procedures
+  - distinguishes daily biomarker HRV from sleep HRV
+  - adds registered prediction and model-error methodology
+  - defines perturbation handling, phase interpretation, audit scope, and methodological limitations
+  - preserves the single-subject, non-causal, non-prescriptive boundary
+
+- Expanded `SYSTEM_OVERVIEW.md`:
+  - updates the archive from a simple observation pipeline to a longitudinal observation and calibration system
+  - adds source-artifact, structured-data, contemporaneous-note, model-error, and governance layers
+  - replaces the absolute prohibition on forward claims with governed prediction language
+  - defines incomplete environmental control and ordinary-life contextual variability
+  - establishes source-backed correction logic
+  - adds protocol, experiment, data-quality, and prediction-evaluation paths to the artifact map
+  - defines model correction as an explicit system output
+  - preserves retrospective phase and interpretation boundaries
 
 #### Coverage and collection methodology
 
 - Updated `data/DATA_COVERAGE.md`:
-  - replaced broad completeness claims with defined coverage categories
+  - replaces broad completeness claims with defined coverage categories
   - distinguishes structured, narrative, snapshot, contextual, partial, planned, and untracked coverage
   - documents the absence of canonical daily training, subjective-biomarker, and perturbation-event exports
   - distinguishes continuity from field-level confidence
