@@ -15,7 +15,7 @@ Archive DOI: https://doi.org/10.5281/zenodo.20815612
 - **Active window:** 2026-W28
 - **Prior window:** 2026-W27 closed
 - **System state:** Stable
-- **Archive posture:** Public, governed, versioned, retrospective
+- **Archive posture:** Public, governed, versioned, and retrospectively interpreted, with a separately registered prospective prediction layer
 - **Sleep dataset current through:** 2026-07-12
 - **Open model-error records:** 041–044
 - **Current emphasis:** standard execution, recovery-floor durability, reduced-overhead movement observation, protocol governance, and preparation for the August biological snapshot
@@ -37,7 +37,8 @@ Observed:
 - trap-bar work, pull-ups, push-ups, dead hangs, and mobility remained mechanically stable
 - travel-related edema, bloating, and eyelid irritation remained resolved
 - measured bodyweight averaged approximately 232.6 lb across five scale days
-- HRV averaged approximately 61 ms
+- daily biomarker HRV averaged approximately 61 ms
+- sleep HRV averaged approximately 59.4 ms
 - total sleep averaged approximately 7 hours 33 minutes
 - one shortened night and one transient autonomic deviation did not become progressive
 - recreational swimming, treading, and diving remained compatible with formal training
@@ -82,7 +83,7 @@ The protocol remains unchanged.
 |---|---|
 | Repository Activity | Active |
 | Observation Model | Continuous, artifact-first longitudinal tracking |
-| Interpretation Mode | Strictly retrospective and artifact-bound |
+| Interpretation Mode | Retrospective and artifact-bound, with registered predictions isolated in the model-error layer |
 | Phase Context | Phase 2 — Load Integration |
 | Current Window | 2026-W28 active |
 | Prior Window | 2026-W27 closed |
@@ -161,7 +162,8 @@ Recreational activity is not currently part of the required protocol.
 
 Current recovery monitoring includes:
 
-- HRV
+- daily biomarker HRV
+- sleep HRV
 - resting and sleeping heart rate
 - total sleep
 - deep-sleep trend
@@ -184,7 +186,7 @@ Recent closed records include:
 
 - 032 — epigenetic aging
 - 033 — DEXA body composition
-- 034 — VO2 max
+- 034 — VO₂ max
 - 037 — push-up repeatability
 - 038 — recovery-stability governance evaluation
 - 039 — travel reintegration
@@ -210,6 +212,8 @@ Status: **Open**
 
 Evaluates translation of the current operating state into the August biological and performance artifact cycle.
 
+Prospective scoring rules have been registered. Primary and supplemental collection conditions must remain documented before outcome review.
+
 Status: **Open**
 
 ### 044 — Protocol Governance
@@ -233,7 +237,7 @@ Active but non-disruptive constraints include:
 - bodyweight interpretation under fluid and GI-timing variability
 - administrative and repository workload
 - temptation to convert favorable observations into premature progression
-- need to complete Model Error 043 scoring rules before August outcomes are reviewed
+- need to preserve the registered Model Error 043 scoring rules and document August collection conditions before outcome review
 
 No active constraint requires protocol retreat.
 
@@ -250,7 +254,8 @@ No active constraint requires protocol retreat.
 - avoid compensatory or proof-seeking training
 - interpret isolated metrics in system context
 - keep Model Error records open until their registered windows end
-- complete August scoring rules before viewing outcomes
+- preserve registered August scoring rules
+- complete collection-condition documentation before viewing outcomes
 - declare phase transitions retrospectively
 
 Durability remains the priority.
@@ -262,11 +267,12 @@ Durability remains the priority.
 The repository operates as a continuous public archive:
 
 raw artifacts  
-→ immutable snapshots  
+→ governed source preservation  
 → structured datasets  
 → retrospective reports  
 → phase context  
-→ prediction and governance evaluation
+→ registered prediction and governance evaluation  
+→ model correction
 
 This repository documents process rather than performance display.
 
@@ -289,13 +295,16 @@ Completed:
 - 2026-W28 weekly report initialized
 - W27 sleep observations appended through 2026-07-12
 - July 11 audit remediation completed
+- July 15 Wednesday audit initiated
 - May 2026 integrated artifact cycle preserved
+- prospective evaluation rules for Model Error records 041–044 registered
 - Model Error records 041–044 carried forward unchanged
 
 Current work:
 
 - ordinary W28 observation
-- preparation of pre-outcome scoring rules for Model Error 043
+- preservation of the registered Model Error 043 scoring framework
+- documentation of primary and supplemental August collection conditions
 - continued monitoring of reduced-overhead and divided-attention movement expression
 - August artifact-cycle preparation
 - routine archive stewardship
@@ -308,6 +317,7 @@ Current work:
 - **Observer Quickstart:** [docs/OBSERVER_QUICKSTART.md](docs/OBSERVER_QUICKSTART.md)
 - **Observer Evaluation:** [docs/FOR_OBSERVERS.md](docs/FOR_OBSERVERS.md)
 - **Data Coverage:** [data/DATA_COVERAGE.md](data/DATA_COVERAGE.md)
+- **Data-Quality Notes:** [data/DATA_QUALITY_NOTES.md](data/DATA_QUALITY_NOTES.md)
 - **Concepts:** [docs/CONCEPTS.md](docs/CONCEPTS.md)
 - **Temporal Index:** [EPOCH_INDEX.md](EPOCH_INDEX.md)
 - **Snapshot Log:** [SNAPSHOT_LOG.md](SNAPSHOT_LOG.md)
@@ -317,7 +327,9 @@ Current work:
 - **Reports:** [reports](reports)
 - **Snapshots:** [snapshots](snapshots)
 - **Methodology:** [METHODOLOGY_AND_CONTROLS.md](METHODOLOGY_AND_CONTROLS.md)
+- **Data Collection:** [methodology/data-collection.md](methodology/data-collection.md)
 - **Prediction Evaluation:** [methodology/prediction_evaluation.md](methodology/prediction_evaluation.md)
+- **Open Prediction Plan:** [methodology/open_prediction_evaluation_plan_041_044.md](methodology/open_prediction_evaluation_plan_041_044.md)
 - **Data Dictionary:** [DATA_DICTIONARY.md](DATA_DICTIONARY.md)
 - **Measurement Sources:** [MEASUREMENT_SOURCES.md](MEASUREMENT_SOURCES.md)
 - **Changelog:** [CHANGELOG.md](CHANGELOG.md)
