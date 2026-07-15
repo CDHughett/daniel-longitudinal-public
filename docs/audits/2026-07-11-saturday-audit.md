@@ -893,7 +893,7 @@ The original audit findings above are preserved as the pre-remediation record. T
 The following actions were completed:
 
 - added this full-spectrum Saturday audit
-- recorded the 2026-07-11 pull-up observation in `reports/2026-W27.md`
+- recorded the 2026-07-10 instructional pull-up observation in `reports/2026-W27.md` during the 2026-07-11 audit and cleanup cycle
 - preserved the observation as candidate evidence relevant to record 042
 - preserved record 042 unchanged and open
 - corrected the active observation window and paused status of `EXP-001`
