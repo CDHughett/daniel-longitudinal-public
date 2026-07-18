@@ -74,6 +74,7 @@ Biological interpretation belongs in `/reports`.
   - `2026-07-08`
   - `2026-07-11`
   - `2026-07-15`
+  - `2026-07-18`
 
 - The `2026-07-11` Saturday audit:
   - reviews repository structure, links, CSV parsing, checksums, report continuity, prediction continuity, protocol state, methodology, metadata, and release readiness
@@ -91,6 +92,18 @@ Biological interpretation belongs in `/reports`.
   - identifies remaining governance-language inconsistencies across legacy documentation
   - confirms records 041–044 remain open, unscored, and unchanged
   - records a final passing audit disposition with targeted documentation alignment due
+
+- Added `docs/audits/2026-07-18-saturday-audit.md`:
+  - confirms clean integration of the July 15 governance-alignment sequence
+  - verifies repository structure, links, anchors, Markdown fences, CSV parsing, sleep continuity, checksums, artifacts, weekly reports, model-error continuity, and release metadata
+  - confirms the July 10 instructional pull-up date correction was narrow and traceable
+  - identifies one stale record 043 instruction in the active W28 report
+  - identifies remaining assumptions, observer-guidance, index, versioning, measurement-source, data-dictionary, and phase-language work
+  - recognizes increasing administrative overhead as a repository-design consideration
+  - recommends shorter delta-focused audits and weekly reports for future cycles
+  - preserves records 041–044 as open, unscored, and unchanged
+  - records a passing disposition with targeted documentation alignment recommended
+  - excludes the separately governed blood-report privacy replacement
 
 #### Public archive and navigation
 
@@ -133,6 +146,14 @@ Biological interpretation belongs in `/reports`.
   - distinguishes daily biomarker HRV of approximately 61 ms from sleep HRV of approximately 59.4 ms
   - applies the distinction in the current-state, recovery, and closeout sections
 
+- Updated `reports/2026-W28.md`:
+  - replaces the stale instruction to complete record 043 scoring rules
+  - recognizes that prospective scoring rules have already been registered
+  - requires preservation of those rules before outcome review
+  - identifies primary and supplemental August collection-condition documentation as the remaining pre-outcome task
+  - distinguishes daily biomarker HRV from sleep HRV in the recovery-monitoring section
+  - preserves record 043 unchanged and open
+
 - Expanded `reports/README.md`:
   - defines active observation reports and retrospective reports as separate operating modes
   - establishes the weekly report lifecycle from initialization through retrospective closeout
@@ -141,6 +162,19 @@ Biological interpretation belongs in `/reports`.
   - defines relationships among source artifacts, structured datasets, collection notes, reports, dashboards, and model-error records
   - adds correction rules for dates, labels, references, and source attribution
   - aligns report language with incomplete environmental control and source-backed correction governance
+
+#### Weekly reporting architecture
+
+- Expanded `schemas/weekly-report-template.md`:
+  - replaces the intentionally minimal placeholder with a compact governed reporting structure
+  - distinguishes active collection from closed retrospective interpretation
+  - emphasizes material changes rather than repeated standing methodology
+  - separates B1, Load Integration, recreational activity, recovery, and structured metrics
+  - distinguishes daily biomarker HRV from sleep HRV
+  - adds perturbation, candidate model-error evidence, governance, closeout, and carryforward sections
+  - prohibits inferred missing values and unsupported reconstruction
+  - governs future reports without requiring historical report reformatting
+  - reduces future administrative overhead through reusable structure and concise deltas
 
 #### Prediction-plan registration context
 
@@ -187,6 +221,27 @@ Biological interpretation belongs in `/reports`.
   - defines model correction as an explicit system output
   - preserves retrospective phase and interpretation boundaries
 
+- Expanded `ASSUMPTIONS_AND_BOUNDARIES.md`:
+  - replaces the absolute no-forward-claims boundary with a prohibition on unregistered forward physiological claims
+  - distinguishes operational planning from formally registered prediction
+  - defines stabilized inputs under incomplete environmental control
+  - adds prediction-error, perturbation, evidence-hierarchy, missingness, correction, measurement, model-error, public-archive, safety, and archive-readability boundaries
+  - distinguishes source-backed correction from unsupported or outcome-driven rewriting
+  - defines falsifiability conditions for biological assumptions, protocol governance, prediction calibration, and repository architecture
+  - preserves the single-subject, non-causal, non-clinical, and non-generalizable limits
+
+#### Observer guidance
+
+- Expanded `docs/FOR_OBSERVERS.md`:
+  - distinguishes active collection from closed-window retrospective interpretation
+  - distinguishes operational planning from registered physiological prediction
+  - explains candidate evidence without treating it as a resolved outcome
+  - defines source-backed correction and prohibited rewriting
+  - adds environmental-control, snapshot, structured-data, model-error, UDI, concordance, public-archive, and warning-sign guidance
+  - provides separate evaluation criteria for active reports, closed reports, snapshots, structured datasets, and predictions
+  - adds a concise skeptical-observer checklist
+  - aligns observer guidance with the archive’s current evidence hierarchy and governance architecture
+
 #### Coverage and collection methodology
 
 - Updated `data/DATA_COVERAGE.md`:
@@ -215,7 +270,7 @@ Biological interpretation belongs in `/reports`.
   - removes it as an active explanatory variable
   - defines requirements for any future reactivation
 
-#### Repository orientation
+#### Repository orientation and navigation
 
 - Updated `README.md`:
   - clarifies that biological interpretation is retrospective while registered predictions remain prospective and governed
@@ -234,6 +289,15 @@ Biological interpretation belongs in `/reports`.
   - linked `docs/OBSERVER_QUICKSTART.md` from primary orientation documents
   - updated `docs/FOR_OBSERVERS.md` and `INDEX.md` to distinguish quickstart, evaluation, newcomer, and complete-index pathways
 
+- Expanded `INDEX.md`:
+  - replaces controlled-constraint language with defined protocol constraints and incomplete environmental control
+  - adds the archive’s evidence-to-model-correction flow
+  - exposes data-quality notes, collection methodology, prediction-evaluation rules, protocol status, experiment status, schemas, validation, dashboards, roadmap, and correction pathways
+  - distinguishes active, closed, historical, superseded, and paused repository surfaces
+  - adds recommended evidence-inspection, prediction-review, temporal, and full-reading flows
+  - clarifies that mechanical validity does not establish interpretive or biological correctness
+  - improves discoverability without making the index a second methodology document
+
 #### Audit closeout
 
 - Updated `docs/audits/2026-07-11-saturday-audit.md`:
@@ -242,6 +306,9 @@ Biological interpretation belongs in `/reports`.
   - confirms repository inventory, Markdown-link integrity, CSV parsing, artifact checksums, report continuity, prediction continuity, protocol status, and release metadata
   - records a final `PASS`
   - preserves sleep-source reconciliation, blood-report replacement, and later structured-export work as governed open items
+  - corrects the instructional pull-up event date to `2026-07-10`
+  - preserves `2026-07-11` as the audit and repository-incorporation date
+  - leaves record 042 unchanged and open
 
 ---
 
