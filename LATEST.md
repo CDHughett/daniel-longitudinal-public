@@ -12,68 +12,80 @@ Archive DOI: https://doi.org/10.5281/zenodo.20815612
 ## Current State
 
 - **Phase:** Phase 2 — Load Integration
-- **Active window:** 2026-W28
-- **Prior window:** 2026-W27 closed
+- **Active window:** 2026-W29
+- **Prior window:** 2026-W28 closed
 - **System state:** Stable
-- **Archive posture:** Public, governed, versioned, and retrospectively interpreted, with a separately registered prospective prediction layer
-- **Sleep dataset current through:** 2026-07-12
+- **Trajectory posture:** Phase 2 consolidation with increasingly reproducible adaptable-capacity signals
+- **Archive posture:** Public, governed, versioned, and retrospectively interpreted, with prospective predictions isolated in the model-error layer
+- **Sleep dataset current through:** 2026-07-19
 - **Open model-error records:** 041–044
-- **Current emphasis:** standard execution, recovery-floor durability, reduced-overhead movement observation, protocol governance, and preparation for the August biological snapshot
+- **Next major artifact:** August 2026 biological and performance snapshot
 
 No formal Phase 2D transition has been declared.
 
 ---
 
-## Week 27 Closeout
+## Week 28 Closeout
 
-Week 27 completed as a successful post-travel reintegration window.
+Week 28 completed as the highest-density full home-training week of the current cycle.
 
 Observed:
 
-- B1 and Load Integration resumed on the first available home-training day
-- both training blocks were completed on all five available home-training days
-- no graded re-entry, compensatory workload, or protocol repair was required
-- B1 remained low-friction, fasted, nasal-breathing dominant, and recovery-compatible
-- trap-bar work, pull-ups, push-ups, dead hangs, and mobility remained mechanically stable
-- travel-related edema, bloating, and eyelid irritation remained resolved
-- measured bodyweight averaged approximately 232.6 lb across five scale days
-- daily biomarker HRV averaged approximately 61 ms
-- sleep HRV averaged approximately 59.4 ms
-- total sleep averaged approximately 7 hours 33 minutes
-- one shortened night and one transient autonomic deviation did not become progressive
-- recreational swimming, treading, and diving remained compatible with formal training
-- repository cadence and audit activity resumed without destabilization
+- B1 and Load Integration were completed on all seven days
+- B1 totaled 385 minutes
+- Load Integration totaled 315 minutes
+- recreational aquatic work added 169 minutes across three sessions
+- total logged training and aquatic exposure reached 869 minutes
+- morning bodyweight averaged approximately 231.3 lb
+- daily biomarker HRV averaged approximately 68.1 ms
+- sleep HRV averaged approximately 75.4 ms
+- total sleep averaged approximately 8 hours 1 minute
+- no pain, GI disruption, edema recurrence, recovery intervention, compensatory workload, or protocol reduction occurred
 
-The week also produced candidate evidence of reduced operator overhead:
+Execution remained preserved across naturally occurring variation:
 
-- instructional pull-up execution with deliberate pauses and continued verbal explanation
-- preserved movement control under divided attention
-- voluntary slow and more explosive movement expression
-- stable execution after accumulated aerobic, strength, household, and aquatic workload
+- schedule displacement
+- prolonged aquatic work before Load Integration
+- perceptible accumulated fatigue
+- mild competitive and divided-attention contexts
+- voluntary tempo and positional changes
+- close-quarters recreational movement
+- fasted back-to-back B1 and Load Integration
+- unavailable chalk
+- extended walking and social activity after training
 
-These observations are relevant to Model Error 042 but remain insufficient for scoring or closure.
+The strongest signal was not increased prescribed workload.
+
+It was broader preservation of movement quality, grip security, attentional flexibility, and ordinary-life availability when conditions were less controlled.
+
+Week 28 repeated and broadened candidate counter-evidence relevant to Model Error 042. The record remains open and unchanged.
 
 ---
 
-## Active Observation — 2026-W28
+## Active Observation — 2026-W29
 
-Week 28 is intended to test whether the favorable Week 27 characteristics persist under ordinary repetition rather than travel contrast or deliberate performance emphasis.
+Week 29 is focused on whether the Week 28 workload was fully absorbed or produces delayed cumulative effects during continued ordinary execution.
 
-Current observation targets:
+Primary observation targets:
 
-- continued ambient B1 initiation
-- stable Load Integration mechanics
-- recovery compatibility of same-day B1 and Load Integration
-- normalization of sleeping heart rate and deep-sleep behavior after the higher Week 27 workload
-- spontaneous recurrence of divided-attention movement control
-- voluntary tempo and force modulation without technical degradation
-- continued low operator friction
-- preserved recreational capacity without converting it into required workload
-- stable bodyweight and fluid behavior
-- absence of progressive pain, GI disruption, edema, or systemic fatigue
-- continued model-error and phase-governance discipline
+- initiation friction
+- movement quality
+- grip and bar comfort
+- pain or mechanical signaling
+- daily and sleep HRV
+- sleeping-heart-rate behavior
+- sleep duration and continuity
+- mood and GI stability
+- unusual fatigue
+- recreational and social availability
+- need for unplanned workload reduction or recovery intervention
+- spontaneous recurrence of reduced-overhead and adaptable execution
 
-The protocol remains unchanged.
+Standard B1 and Load Integration remain unchanged.
+
+Successful Week 28 variations will not be converted into required tests. Recreational movement remains optional, and no new workload, density, recovery intervention, or performance layer is planned.
+
+An isolated wearable deviation will not be interpreted as failure without repeated or functional corroboration.
 
 ---
 
@@ -83,14 +95,15 @@ The protocol remains unchanged.
 |---|---|
 | Repository Activity | Active |
 | Observation Model | Continuous, artifact-first longitudinal tracking |
-| Interpretation Mode | Retrospective and artifact-bound, with registered predictions isolated in the model-error layer |
+| Interpretation Mode | Retrospective and artifact-bound |
+| Prediction Mode | Prospectively registered and isolated in the model-error layer |
 | Phase Context | Phase 2 — Load Integration |
-| Current Window | 2026-W28 active |
-| Prior Window | 2026-W27 closed |
+| Current Window | 2026-W29 active |
+| Prior Window | 2026-W28 closed |
 | Training Structure | Stable B1 anchor with active Load Integration |
 | Recovery State | Stable; no confirmed recovery-floor breach |
-| Sleep Coverage | Canonical dataset current through 2026-07-12 |
-| Bodyweight Context | Approximately 229–235 lb across training, travel, fluid, GI-timing, and scale-access conditions |
+| Sleep Coverage | Canonical dataset current through 2026-07-19 |
+| Bodyweight Context | Approximately 229–235 lb across training, travel, fluid, GI-timing, and scale conditions |
 | Biomarker Coverage | February and May 2026 integrated multi-domain snapshots |
 | Prediction Layer | Model Error records 041–044 open |
 | Archive Integrity | Maintained |
@@ -100,83 +113,24 @@ The protocol remains unchanged.
 
 ## Phase Context
 
-The current Phase 2 operating pattern includes:
+Current Phase 2 evidence includes:
 
-- preserved aerobic base
+- preserved aerobic infrastructure
 - repeated mechanical loading
 - same-day aerobic and strength compatibility
-- recovery-floor preservation under ordinary and disrupted conditions
-- increasing portability across travel and schedule variation
-- reduced dependence on motivational activation
-- workload absorption across training, household activity, recreation, and repository stewardship
-- conservative interpretation of short-term wearable and bodyweight variability
-- no progression without repeated evidence
-
-Week 27 strengthened the case that execution may be becoming more adaptable rather than merely automatic.
-
-Possible early Phase 2D-type characteristics include:
-
-- reduced conscious stabilization demand
-- spare attentional capacity during movement
-- selectable tempo and force expression
-- cross-context transfer
+- recovery-floor durability
+- increasing schedule and environmental portability
+- reduced motivational and attentional overhead
+- voluntary tempo and force modulation
 - preserved execution after accumulated workload
+- compatibility with household, recreational, social, and repository demands
+- continued protocol restraint despite favorable observations
 
-These remain candidate characteristics.
+These characteristics increasingly resemble early Phase 2D-type expression.
 
-Phase advancement requires repeated cross-context evidence and objective snapshot support.
+They remain candidate characteristics rather than a formal phase classification.
 
----
-
-## Training Structure
-
-### B1 — Aerobic Anchor
-
-- incline treadmill walking
-- approximately 50–55 minutes
-- approximately 3.1–3.3 mph
-- 10% incline
-- nasal breathing
-- fasted where routine allows
-- no planned escalation
-
-### Load Integration
-
-- trap-bar work
-- pull-ups
-- push-ups
-- dead hangs
-- mobility
-- supporting locomotion and preparation work
-- no planned increase in load, volume, density, or complexity
-
-### Recreational Movement
-
-Swimming, treading, diving, walking, and ordinary physical activity remain optional recovery-compatible variability layers.
-
-Recreational activity is not currently part of the required protocol.
-
----
-
-## Recovery Posture
-
-Current recovery monitoring includes:
-
-- daily biomarker HRV
-- sleep HRV
-- resting and sleeping heart rate
-- total sleep
-- deep-sleep trend
-- subjective morning state
-- bodyweight and fluid behavior
-- GI and stomach status
-- edema
-- pain or mechanical signaling
-- next-day performance following higher-volume days
-
-Wearable sleep-stage estimates remain secondary to system-level interpretation.
-
-No recovery intervention is currently indicated.
+Phase advancement requires continued cross-context recurrence, preserved recovery, broader portability, and support from the August objective snapshot.
 
 ---
 
@@ -198,67 +152,60 @@ Current open records:
 
 Evaluates recovery-floor durability through the July–August observation block.
 
-Status: **Open**
+Week 28 added supportive evidence through seven consecutive B1 and Load Integration days, recreational aquatic exposure, and preserved function without intervention.
+
+**Status:** Open
 
 ### 042 — Ambient-Execution Plateau
 
-Evaluates whether execution remains stable but flat or develops additional adaptable capacity.
+Evaluates whether execution remains reliable but flat or develops additional adaptable capacity.
 
-Week 27 produced meaningful candidate counter-evidence through divided-attention pull-up control and voluntary tempo modulation.
+Week 28 broadened the candidate counter-evidence set through repeated tempo control, divided attention, reduced session salience, accumulated-fatigue tolerance, equipment variability, compressed scheduling, and ordinary-life portability.
 
-Status: **Open**
+**Status:** Open
 
 ### 043 — August Biological Snapshot
 
-Evaluates translation of the current operating state into the August biological and performance artifact cycle.
+Evaluates whether the current operating state translates into the August biological and performance artifact cycle.
 
-Prospective scoring rules have been registered. Primary and supplemental collection conditions must remain documented before outcome review.
+Scheduled collection:
 
-Status: **Open**
+- 2026-08-17 — TruAge and TruHealth
+- 2026-08-17 — DEXA and VO₂ max
+- 2026-08-18 — Bod Pod
+
+Registered scoring rules and collection-condition documentation remain required before outcome review.
+
+**Status:** Open
 
 ### 044 — Protocol Governance
 
-Evaluates whether the protocol remains stable and interpretation remains disciplined through the next snapshot cycle.
+Evaluates whether protocol stability and interpretive discipline remain preserved through the next snapshot cycle.
 
-Status: **Open**
+Week 28 added supportive evidence because favorable observations did not trigger added workload, forced testing, prediction revision, or premature phase declaration.
+
+**Status:** Open
 
 No open record currently qualifies for closure.
 
 ---
 
-## Current Constraints
+## Current Constraints and Risk Posture
 
 Active but non-disruptive constraints include:
 
-- ordinary schedule variability
-- transient wearable autonomic deviations
-- sleep-stage estimation limitations
+- possible delayed cumulative-load effects after Week 28
+- transient autonomic and sleep-stage variability
+- uncertainty in wearable REM estimation
 - shoulder, elbow, grip, and lower-back mechanical ownership
-- bodyweight interpretation under fluid and GI-timing variability
-- administrative and repository workload
-- temptation to convert favorable observations into premature progression
-- need to preserve the registered Model Error 043 scoring rules and document August collection conditions before outcome review
+- bodyweight interpretation under fluid and GI-timing variation
+- ordinary social, household, administrative, and repository workload
+- temptation to convert available capacity into required workload
+- need to preserve ordinary conditions before August testing
 
-No active constraint requires protocol retreat.
+**Primary risk:** escalating because the existing protocol feels increasingly easy or portable.
 
----
-
-## Risk Posture
-
-**Primary risk:** treating increased available capacity as a requirement to increase workload.
-
-**Mitigation:**
-
-- preserve the current structure
-- allow favorable traits to recur spontaneously
-- avoid compensatory or proof-seeking training
-- interpret isolated metrics in system context
-- keep Model Error records open until their registered windows end
-- preserve registered August scoring rules
-- complete collection-condition documentation before viewing outcomes
-- declare phase transitions retrospectively
-
-Durability remains the priority.
+**Current response:** preserve the protocol, observe spontaneous recurrence, and intervene only if deviation becomes repeated, progressive, or functionally meaningful.
 
 ---
 
@@ -271,10 +218,8 @@ raw artifacts
 → structured datasets  
 → retrospective reports  
 → phase context  
-→ registered prediction and governance evaluation  
+→ registered prediction evaluation  
 → model correction
-
-This repository documents process rather than performance display.
 
 Evaluation is based on:
 
@@ -282,8 +227,11 @@ Evaluation is based on:
 - durability
 - traceability
 - stability across time
-- agreement between artifact and interpretation
+- agreement between artifacts and interpretation
 - explicit treatment of uncertainty and model error
+- restraint when evidence remains incomplete
+
+The archive documents process rather than performance display.
 
 ---
 
@@ -291,21 +239,22 @@ Evaluation is based on:
 
 Completed:
 
-- 2026-W27 weekly report closed
-- 2026-W28 weekly report initialized
-- W27 sleep observations appended through 2026-07-12
-- July 11 audit remediation completed
-- July 15 Wednesday audit initiated
-- May 2026 integrated artifact cycle preserved
-- prospective evaluation rules for Model Error records 041–044 registered
-- Model Error records 041–044 carried forward unchanged
+- 2026-W28 weekly report closed
+- 2026-W29 weekly report initialized
+- sleep dataset extended through 2026-07-19
+- Week 28 recovery and training metrics verified
+- daily and sleep-tab cardiovascular metrics kept distinct
+- low-confidence REM observations retained without inferred replacement values
+- records 041–044 carried forward unchanged
+- Phase 2 status preserved
 
 Current work:
 
-- ordinary W28 observation
-- preservation of the registered Model Error 043 scoring framework
-- documentation of primary and supplemental August collection conditions
-- continued monitoring of reduced-overhead and divided-attention movement expression
+- ordinary W29 observation
+- monitoring for delayed Week 28 recovery cost
+- continued passive collection of reduced-overhead and adaptable-execution evidence
+- preservation of the Model Error 043 scoring framework
+- documentation of August collection conditions
 - August artifact-cycle preparation
 - routine archive stewardship
 
@@ -337,5 +286,4 @@ Current work:
 ---
 
 **System State:** Stable  
-**Trajectory Posture:** Phase 2 consolidation with emerging adaptable-capacity signals  
 **Operational Mode:** Execute → observe → record → close retrospectively
