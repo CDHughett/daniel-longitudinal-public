@@ -74,14 +74,29 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - `2026-07-11`
   - `2026-07-15`
   - `2026-07-18`
+  - `2026-07-22`
 
 - The July audits collectively:
   - verified repository structure, links, Markdown integrity, CSV parsing, checksums, report continuity, prediction continuity, and release metadata
-  - identified targeted sleep-data, protocol-status, experiment-wording, and governance-language issues
+  - identified targeted sleep-data, protocol-status, experiment-wording, governance-language, privacy, and source-provenance issues
   - confirmed remediation where source evidence was sufficient
   - preserved unresolved source-reconciliation items without inferred correction
   - recognized administrative overhead as a repository-design concern
   - recommended shorter, delta-focused weekly reports and audits
+
+- Added `docs/audits/2026-07-22-wednesday-audit.md`:
+  - confirms mechanical repository integrity after W28 closeout and W29 initialization
+  - verifies canonical sleep continuity through `2026-07-19`
+  - verifies the current sanitized July 2025 blood artifact and updated checksum
+  - identifies the missing changelog record for the blood-artifact replacement
+  - distinguishes current-tree sanitization from unresolved Git-history and archival-distribution verification
+  - audits annual RingConn sleep, activity, and vital-sign exports
+  - identifies multiple sleep episodes, missing dates, timezone limitations, and provider-source anomalies
+  - documents material differences between contemporaneous curated sleep values and later provider-export values
+  - recommends preserving source exports separately from curated datasets
+  - proposes separate normalized sleep-session, activity, and vital-sign tables
+  - prohibits direct append of the annual sleep export into `data/sleep_longitudinal_v1.csv`
+  - preserves records 041–044, release metadata, protocol state, and phase status unchanged
 
 #### Public archive and navigation
 
@@ -190,6 +205,30 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 ---
 
 ### Fixed
+
+#### Public blood-artifact sanitization
+
+- Replaced `snapshots/2025-07/2025-07-full-blood-panel.pdf` with a sanitized public derivative:
+  - removes the full date of birth
+  - removes patient and specimen identifiers
+  - removes address and contact information
+  - removes ordering-physician identity
+  - preserves the measured laboratory values
+  - intentionally retains the subject’s public name and chronological age
+  - preserves the artifact’s evidentiary role while reducing non-public administrative exposure
+
+- Regenerated the corresponding SHA-256 entry in:
+  - `snapshots/2025-07/checksums.txt`
+
+- Classified the replacement as:
+  - privacy remediation
+  - archive maintenance
+  - source-preserving public sanitization
+  - not new biological evidence
+
+- Current-tree replacement does not by itself establish removal of earlier versions from Git history, forks, downloads, caches, or the existing Zenodo deposit. Distribution-level verification remains open and is tracked separately.
+
+#### Other corrections
 
 - Corrected the instructional pull-up observation date to `2026-07-10` while preserving `2026-07-11` as the audit and repository-incorporation date.
 
