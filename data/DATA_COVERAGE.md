@@ -7,8 +7,10 @@ It clarifies:
 - what is tracked
 - how each domain is represented
 - what is structured versus narrative
+- what is preserved as direct source evidence
 - what is only measured at discrete intervals
 - where known gaps or quality restrictions exist
+- what has not yet been normalized into canonical datasets
 
 This is a **coverage declaration**, not an interpretation layer.
 
@@ -20,13 +22,18 @@ Coverage status does not establish measurement validity, causal attribution, or 
 
 | Status | Meaning |
 |---|---|
+| Source-preserved | Original provider or device export is retained without normalization or interpretive modification |
 | Structured longitudinal | Repeated observations are available in a canonical machine-readable dataset |
 | High narrative coverage | Repeated contemporaneous observations are preserved, but no complete canonical structured export exists |
 | Snapshot-based | Measurements occur at discrete testing intervals rather than continuously |
 | Partial | Some relevant observations exist, but collection is incomplete, irregular, or limited in scope |
 | Contextual only | Information appears in reports or notes without systematic structured collection |
 | Not tracked | No governed recurring collection process currently exists |
-| Planned | A structured export is anticipated but has not yet been implemented |
+| Planned | A structured export or normalized dataset is anticipated but has not yet been implemented |
+
+Source-preserved coverage and canonical structured coverage are separate states.
+
+A direct vendor export may improve provenance without yet being suitable for canonical analysis.
 
 ---
 
@@ -35,10 +42,11 @@ Coverage status does not establish measurement validity, causal attribution, or 
 | Domain | Coverage Status | Notes |
 |---|---|---|
 | Training exposure | High narrative coverage | Daily execution is documented through reports and contemporaneous notes; no canonical daily training-block export yet |
-| Sleep | Structured longitudinal, recent; partial historical | Wearable-derived daily dataset begins 2026-02-09; earlier intervals are incomplete or absent |
-| Recovery signals | Structured and narrative, recent | HRV, resting HR, sleep HR, and related signals are represented through wearable data, structured sleep records, and reports during active observation windows |
+| Wearable activity | Source-preserved; normalized dataset planned | Direct RingConn activity export is archived with checksums; canonical activity mapping has not yet been implemented |
+| Sleep | Structured longitudinal, recent; source-preserved historical coverage | Canonical wearable-derived daily dataset begins 2026-02-09; a broader direct RingConn export is preserved separately and has not yet been normalized or reconciled |
+| Recovery and vital signs | Structured, narrative, and source-preserved | HRV, resting HR, sleep HR, SpO₂, and related signals are represented through canonical records, reports, and a direct RingConn vital-signs export |
 | Subjective daily biomarkers | High narrative coverage | Mental state, GI status, pain, dreams, erection quality, weight context, and related observations are recorded regularly but do not yet have a canonical public daily export |
-| Body composition | Snapshot-based | DEXA, BodPod, scale weight, and related measurements occur at discrete intervals with differing methods |
+| Body composition | Snapshot-based | DEXA, Bod Pod, scale weight, and related measurements occur at discrete intervals with differing methods |
 | Blood biomarkers | Snapshot-based | Periodic laboratory panels only; not all referenced health data are publicly included |
 | Epigenetic and aging measures | Structured longitudinal, snapshot-based | TruAge, Advanced TruAge, TruHealth, and associated outputs are represented across repeated testing windows |
 | VO₂ and performance testing | Partial, event-based | Formal performance testing is collected at discrete events rather than continuously |
@@ -51,11 +59,14 @@ Coverage status does not establish measurement validity, causal attribution, or 
 
 ---
 
-## Dataset Locations
+## Dataset and Source Locations
 
 | Dataset or Evidence Layer | Path |
 |---|---|
 | Sleep longitudinal | [`sleep_longitudinal_v1.csv`](./sleep_longitudinal_v1.csv) |
+| RingConn direct source export | [`source_exports/ringconn/2026-07-21/`](./source_exports/ringconn/2026-07-21/) |
+| RingConn export provenance | [`source_exports/ringconn/2026-07-21/README.md`](./source_exports/ringconn/2026-07-21/README.md) |
+| RingConn export checksums | [`source_exports/ringconn/2026-07-21/checksums.txt`](./source_exports/ringconn/2026-07-21/checksums.txt) |
 | Biomarker snapshot | [`biomarker_snapshot.csv`](./biomarker_snapshot.csv) |
 | Epigenetic longitudinal | [`epigenetic_longitudinal.csv`](./epigenetic_longitudinal.csv) |
 | Bloodwork longitudinal | [`bloodwork_longitudinal.csv`](./bloodwork_longitudinal.csv) |
@@ -125,7 +136,8 @@ Datasets begin when stable collection and schema conditions were available.
 
 Current examples:
 
-- Sleep longitudinal dataset: begins `2026-02-09`
+- Canonical sleep longitudinal dataset: begins `2026-02-09`
+- Direct RingConn source-export package: acquired `2026-07-21`
 - Weekly reports: begin `2026-W06`
 - Biomarker snapshot dataset: February and May 2026 comparison points currently represented
 - Epigenetic dataset: repeated low-frequency snapshot outputs
@@ -139,12 +151,286 @@ No single structured file represents the entire archive.
 
 ---
 
+## Direct RingConn Source-Export Coverage
+
+A direct RingConn export package was acquired on `2026-07-21` and preserved in:
+
+[`source_exports/ringconn/2026-07-21/`](./source_exports/ringconn/2026-07-21/)
+
+The package contains:
+
+- `ringconn-sleep-export.csv`
+- `ringconn-activity-export.csv`
+- `ringconn-vital-signs-export.csv`
+- `README.md`
+- `checksums.txt`
+
+The three CSVs are preserved byte-for-byte as downloaded.
+
+Pre-publication screening found:
+
+- no obvious administrative-identifier fields in the exported headers
+- no email-like values
+- expected wearable-domain fields only
+
+This screening reduces obvious privacy risk but does not convert the export into a canonical dataset.
+
+### Export Structure
+
+The archived source package contains:
+
+- 367 lines in the sleep export, including its header
+- 361 lines in the activity export, including its header
+- 361 lines in the vital-signs export, including its header
+
+These line counts must not automatically be interpreted as equal numbers of covered calendar days.
+
+The sleep export may contain:
+
+- multiple sleep episodes associated with one date
+- different date-assignment behavior from the canonical sleep tracker
+- missing dates
+- provider-defined session records rather than one normalized daily record
+
+The activity and vital-signs exports may also differ in date coverage or missingness.
+
+Actual temporal coverage must be determined from file contents and documented mapping rules rather than inferred from the label “annual export.”
+
+---
+
+## Source-Export Integration Boundary
+
+The RingConn exports are source artifacts.
+
+They do not automatically replace, correct, or extend:
+
+[`sleep_longitudinal_v1.csv`](./sleep_longitudinal_v1.csv)
+
+The direct export and the curated canonical dataset serve different roles.
+
+### Direct Export
+
+The direct export preserves:
+
+- vendor-defined field names
+- vendor-defined units
+- vendor-defined date assignment
+- vendor-defined aggregation
+- original missingness
+- original row ordering
+- original byte representation
+
+### Canonical Dataset
+
+The canonical sleep dataset may preserve:
+
+- archive-defined field names
+- manually transcribed values
+- subjective morning observations
+- confidence labels
+- correction notes
+- governed date decisions
+- fields not supplied by the vendor export
+
+Neither layer should silently overwrite the other.
+
+---
+
+## Required Mapping Before Historical Integration
+
+Historical RingConn data should enter normalized or canonical trackers only after a documented source-to-canonical mapping is approved.
+
+The mapping must define:
+
+1. source filename and acquisition event
+2. source field name
+3. source unit
+4. intended normalized field
+5. date and timestamp interpretation
+6. timezone assumptions or unresolved timezone status
+7. treatment of multiple sleep episodes
+8. duplicate-row handling
+9. missing-date handling
+10. blank-value handling
+11. unit conversion, if any
+12. derived-field rules
+13. source-versus-curated discrepancy handling
+14. correction provenance
+15. reproducible transformation procedure
+
+No historical backfill should be performed through manual copy-and-paste without this mapping.
+
+---
+
+## Timestamp and Timezone Limitation
+
+The RingConn exports do not currently establish a fully governed timezone interpretation.
+
+Vendor timestamps must not automatically be assumed to represent:
+
+- UTC
+- local civil time
+- the date sleep began
+- the date sleep ended
+- the date shown in the RingConn application
+- device synchronization time
+- server processing time
+
+This is especially important for:
+
+- sessions crossing midnight
+- travel across time zones
+- daylight-saving transitions
+- multiple sleep episodes
+- date-level comparison with manually curated morning records
+
+Timezone and date-assignment behavior must be resolved or explicitly retained as uncertain before timestamped source data are normalized.
+
+---
+
+## Multiple Sleep Episodes
+
+The direct sleep export may contain more than one sleep episode associated with a calendar date.
+
+A normalized daily sleep dataset must not silently:
+
+- discard secondary episodes
+- sum all episodes without a declared rule
+- select the longest episode without documentation
+- assign episodes to a date solely from row order
+- force one-row-per-date structure before session semantics are understood
+
+Possible future treatment may include:
+
+- preserving a session-level normalized dataset
+- identifying a primary sleep episode
+- retaining secondary sleep episodes separately
+- deriving a daily aggregate under explicit rules
+
+The source export must remain unchanged regardless of the eventual normalization method.
+
+---
+
+## Missing-Date Behavior
+
+Missing source rows must remain missing at the source layer.
+
+The archive must not infer that an absent date means:
+
+- zero activity
+- no sleep
+- no device wear
+- no measurement
+- synchronization failure
+- intentional non-use
+
+Missing dates may reflect:
+
+- absent wear
+- export limitations
+- synchronization gaps
+- provider processing behavior
+- unavailable measurements
+- multiple episodes assigned to adjacent dates
+- undocumented vendor logic
+
+Missing-date classification belongs in the normalized-data methodology.
+
+---
+
+## November 17 Provider Anomaly
+
+The direct export includes a provider-side anomaly associated with November 17.
+
+This anomaly should be treated as a source-quality issue rather than silently repaired.
+
+Before normalization, the archive should determine:
+
+- which export file or fields are affected
+- whether the anomaly is limited to one row or multiple domains
+- whether the same behavior appears in the application view
+- whether adjacent dates are affected
+- whether the issue reflects date assignment, missingness, duplication, or provider aggregation
+- whether a source-backed correction is possible
+
+Until reviewed, the source row remains preserved as exported.
+
+Any normalized treatment must be explicitly documented in:
+
+[`DATA_QUALITY_NOTES.md`](./DATA_QUALITY_NOTES.md)
+
+---
+
+## Curated Versus Direct-Export Differences
+
+The canonical sleep dataset and direct RingConn export were produced through different collection pathways.
+
+Differences may arise from:
+
+- manual transcription
+- application-screen presentation
+- later direct export
+- changing vendor algorithms
+- date assignment
+- session aggregation
+- multiple sleep episodes
+- rounding
+- missing fields
+- corrected manual dates
+- confidence annotations unavailable in the source export
+
+A difference does not automatically establish that either record is wrong.
+
+Each discrepancy should be classified as one of the following:
+
+- exact match
+- rounding-only difference
+- unit or formatting difference
+- date-assignment difference
+- session-aggregation difference
+- source-export omission
+- curated-record omission
+- manual transcription error
+- provider anomaly
+- unresolved discrepancy
+
+No large-scale overwrite of the curated dataset is authorized.
+
+---
+
+## Relationship to Existing Data-Quality Findings
+
+The new RingConn export may provide candidate source evidence relevant to existing data-quality records, including:
+
+- unresolved awake-field duplication
+- sleep-stage total discrepancies
+- historical source-verification questions
+
+These findings are currently documented in:
+
+[`DATA_QUALITY_NOTES.md`](./DATA_QUALITY_NOTES.md)
+
+The existence of a direct export does not automatically resolve those findings.
+
+Before correction, the archive must confirm:
+
+- that the export covers the relevant dates
+- that the exported field represents the same metric
+- that the units and date semantics are comparable
+- that the provider did not retrospectively alter the value
+- that the proposed replacement is source-supported
+- that the correction trail can be preserved
+
+The RingConn export therefore represents candidate reconciliation evidence for DQ-001 through DQ-003, not automatic authorization for correction.
+
+---
+
 ## May 2026 Structured Biomarker Integration
 
 May 2026 represents the first archive window integrating multiple measurement domains within one coordinated snapshot cycle, including:
 
 - DEXA
-- BodPod and COSMED outputs
+- Bod Pod and COSMED outputs
 - VO₂ testing
 - TruAge
 - Advanced TruAge
@@ -186,6 +472,18 @@ It is not yet sufficient for fully automated analysis of:
 - progression history
 - movement-specific volume
 
+The RingConn activity export adds direct wearable activity evidence but does not replace a structured training log.
+
+Steps and estimated calories cannot establish:
+
+- exercise selection
+- resistance-training volume
+- pull-up or push-up exposure
+- trap-bar load
+- session intent
+- movement quality
+- formal versus recreational activity
+
 A canonical `training_blocks.csv` export is planned but not yet implemented.
 
 Until then, training should be described as **high narrative coverage**, not complete structured coverage.
@@ -200,6 +498,7 @@ Recovery evidence includes:
 - HRV
 - resting heart rate
 - sleep heart rate
+- SpO₂
 - sleep duration and architecture
 - subjective morning reports
 - pain and mechanical signaling
@@ -210,11 +509,16 @@ Recovery evidence includes:
 
 Coverage is strongest during recent active observation windows.
 
+The direct RingConn sleep and vital-signs exports extend the available source layer but have not yet been normalized into governed daily trackers.
+
 Limitations include:
 
 - consumer-device estimation
-- incomplete historical exports
+- incomplete or irregular historical coverage
 - possible application or algorithm changes
+- unresolved timestamp and timezone behavior
+- multiple sleep episodes
+- provider-defined aggregation
 - unresolved field-level quality questions
 - absence of a canonical structured daily subjective-biomarker export
 
@@ -309,13 +613,18 @@ Composite UDI remains governed by documented eligibility criteria.
 
 Current gaps include:
 
+- no normalized RingConn sleep dataset
+- no normalized RingConn activity dataset
+- no normalized RingConn vital-signs dataset
+- unresolved direct-export timezone behavior
+- unresolved multiple-sleep-episode handling
+- unresolved November 17 provider anomaly
 - no canonical daily training-block export
 - no canonical daily subjective-biomarker export
 - no canonical perturbation-event export
 - no continuous nutrition logging
 - no systematic daily supplementation dataset
 - no continuous VO₂ measurement
-- incomplete historical wearable coverage
 - incomplete environmental measurement
 - irregular low-frequency biological testing
 - partial reliance on manual transcription
@@ -323,6 +632,10 @@ Current gaps include:
 - referenced health information not always included publicly
 - historical prediction reconstruction separated from the clean primary dataset
 - unresolved sleep-field questions documented in `DATA_QUALITY_NOTES.md`
+
+The direct export reduces uncertainty about source availability.
+
+It does not eliminate uncertainty about field meaning, date semantics, measurement validity, or canonical integration.
 
 ---
 
@@ -340,6 +653,8 @@ For example:
 - the entire dataset need not be discarded
 
 Canonical values are not corrected through inference.
+
+Direct vendor-export values are not silently substituted for curated values.
 
 Source-backed corrections follow the procedure defined in:
 
@@ -371,9 +686,14 @@ No conclusion should exceed the coverage, comparability, and source quality of t
 
 Future structured datasets may include:
 
-- `daily_biomarkers.csv`
-- `training_blocks.csv`
-- `perturbation_events.csv`
+- `data/wearable_sleep_daily_v1.csv`
+- `data/wearable_activity_daily_v1.csv`
+- `data/wearable_vitals_daily_v1.csv`
+- `data/daily_biomarkers.csv`
+- `data/training_blocks.csv`
+- `data/perturbation_events.csv`
+
+The wearable filenames remain proposed until source-to-canonical schemas are approved.
 
 Each new dataset must define:
 
@@ -381,12 +701,40 @@ Each new dataset must define:
 - required fields
 - units
 - date and time rules
+- timezone treatment
+- multiple-session handling
 - source provenance
 - missingness conventions
 - correction procedure
 - semantic validation rules
+- transformation reproducibility
+- relationship to existing curated datasets
 
 Planned status does not imply that these files currently exist.
+
+---
+
+## Proposed Wearable Architecture
+
+The intended architecture is:
+
+```text
+Byte-Preserved RingConn Source Exports
+                ↓
+Documented Source-to-Canonical Mapping
+                ↓
+Normalized Wearable Datasets
+                ↓
+Curated and Governed Analytical Datasets
+                ↓
+Retrospective Reports and Model Evaluation
+```
+
+The source exports remain preserved even after normalized trackers are created.
+
+Normalized datasets must be reproducible from the archived source package.
+
+Curated datasets may retain subjective, confidence, and contextual fields not present in the vendor export.
 
 ---
 
@@ -394,11 +742,26 @@ Planned status does not imply that these files currently exist.
 
 Coverage is expanding incrementally.
 
-New datasets will be introduced only when:
+The `2026-07-21` RingConn source-export package adds a materially stronger historical wearable evidence layer.
+
+It does not yet change the canonical status of:
+
+- sleep
+- activity
+- vital signs
+- daily subjective biomarkers
+- training exposure
+
+New normalized datasets will be introduced only when:
 
 - repeated observations justify a stable schema
-- the source and collection process are sufficiently defined
+- source-field meanings are sufficiently defined
+- timestamp and date behavior are addressed
+- source-to-canonical mapping is documented
+- discrepancies with curated records are preserved
 - structured representation improves continuity or analysis
 - added complexity does not weaken archive governance
 
-Future additions and material coverage changes will be documented in this file and in [`../CHANGELOG.md`](../CHANGELOG.md).
+Future additions and material coverage changes will be documented in this file and in:
+
+[`../CHANGELOG.md`](../CHANGELOG.md)
