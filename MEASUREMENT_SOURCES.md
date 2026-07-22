@@ -169,12 +169,12 @@ A screenshot captured near the original observation date.
 
 Screenshots may preserve:
 
-- app-visible values
-- app-specific labels
+- application-visible values
+- application-specific labels
 - readiness classifications
 - sleep-tab values
 - contemporaneous algorithm output
-- contextual UI information absent from later exports
+- contextual interface information absent from later exports
 
 Screenshots may also contain privacy or account information and require review before public release.
 
@@ -255,10 +255,10 @@ The archive may contain more than one valid value associated with the same date 
 
 Examples include:
 
-- contemporaneous app screenshot
+- contemporaneous application screenshot
 - later provider export
 - manually transcribed daily tracker
-- retrospective structured normalization
+- later archive-defined transformation or analysis
 
 When source states differ:
 
@@ -273,7 +273,12 @@ When source states differ:
 
 A contemporaneous weekly report should normally remain grounded in the values available during that observation window.
 
-A later provider export may govern a separate provider-faithful longitudinal table.
+A later provider export may serve as:
+
+- preserved provider evidence
+- a source for reconciliation
+- a source for targeted historical analysis
+- an input to a future reproducible transformation, if justified
 
 A correction to an existing curated value requires:
 
@@ -346,7 +351,7 @@ RingConn measurements enter the archive through several distinct modes:
 - manual transcription
 - curated daily tracking
 - weekly summary calculation
-- direct annual provider exports
+- direct provider exports
 
 These modes should remain distinguishable.
 
@@ -356,12 +361,12 @@ These modes should remain distinguishable.
 
 ### Daily average heart rate
 
-A provider-generated whole-day average.
+Provider-generated whole-day average heart rate.
 
-Recommended normalized field:
+Current provider field:
 
 ```text
-daily_avg_hr_bpm
+Avg. Heart Rate(bpm)
 ```
 
 This is not:
@@ -371,19 +376,27 @@ This is not:
 - sleep average heart rate
 - minimum heart rate
 
+A future derived dataset may use an archive-defined name such as:
+
+```text
+daily_avg_hr_bpm
+```
+
+No such normalized dataset is currently active.
+
 ---
 
 ### Daily minimum heart rate
 
-The minimum provider-recorded heart rate for the represented day.
-
-Recommended normalized field:
+Current provider field:
 
 ```text
-daily_min_hr_bpm
+Min. Heart Rate(bpm)
 ```
 
-This must not automatically be relabeled as:
+This is the minimum provider-recorded heart rate for the represented day.
+
+It must not automatically be relabeled as:
 
 ```text
 resting_hr_bpm
@@ -395,10 +408,10 @@ The provider’s daily minimum and the archive’s resting-heart-rate field may 
 
 ### Daily maximum heart rate
 
-Recommended normalized field:
+Current provider field:
 
 ```text
-daily_max_hr_bpm
+Max. Heart Rate(bpm)
 ```
 
 This is a provider-generated daily extreme.
@@ -413,10 +426,10 @@ It is not automatically equivalent to:
 
 ### Daily average HRV
 
-Recommended normalized field:
+Current provider field:
 
 ```text
-daily_avg_hrv_ms
+Avg. HRV(ms)
 ```
 
 This is a whole-day provider summary.
@@ -435,7 +448,7 @@ It is not interchangeable with:
 
 A sleep-period metric captured through the RingConn sleep interface or related source.
 
-Recommended curated field:
+Current curated field:
 
 ```text
 sleep_hrv_ms
@@ -449,7 +462,7 @@ Sleep HRV must remain separate from daily average HRV.
 
 The archive’s resting-heart-rate value is a separately tracked metric.
 
-Recommended curated field:
+Current curated field:
 
 ```text
 resting_hr_bpm
@@ -461,7 +474,7 @@ It must not be reconstructed from the RingConn daily minimum unless a documented
 
 ### Sleep average heart rate
 
-Recommended curated field:
+Current curated field:
 
 ```text
 sleep_avg_hr_bpm
@@ -477,12 +490,12 @@ This is not interchangeable with:
 
 ### Daily SpO₂ summaries
 
-Recommended normalized fields:
+Current provider fields:
 
 ```text
-daily_avg_spo2_pct
-daily_min_spo2_pct
-daily_max_spo2_pct
+Avg. SpO2(%)
+Min. SpO2(%)
+Max. SpO2(%)
 ```
 
 These values are provider-generated daily summaries.
@@ -498,10 +511,10 @@ They should not be represented as:
 
 ### Steps
 
-Recommended normalized field:
+Current provider field:
 
 ```text
-steps
+Steps
 ```
 
 Steps are provider-derived activity estimates.
@@ -519,10 +532,10 @@ They may be affected by:
 
 ### Calories
 
-Recommended normalized field:
+Current provider field:
 
 ```text
-total_calories_kcal
+Calories(kcal)
 ```
 
 The annual activity export labels this field as calories.
@@ -533,29 +546,39 @@ It should not be relabeled as:
 active_calories_kcal
 ```
 
-unless RingConn documentation confirms that meaning.
+or:
+
+```text
+total_calories_kcal
+```
+
+unless RingConn documentation confirms the intended meaning.
+
+Until then, the archive describes the value as:
+
+**RingConn-reported calories**
 
 ---
 
-## Annual RingConn Export Event
+## RingConn Export Acquisition
 
 ### Export date
 
 2026-07-21
 
-### Review date
+### Review and ingestion date
 
 2026-07-22
 
-### Source files received
+### Source files preserved
 
-- sleep export
-- activity export
-- vital-sign export
+- `ringconn-sleep-export.csv`
+- `ringconn-activity-export.csv`
+- `ringconn-vital-signs-export.csv`
 
-The downloaded filenames contained an unnecessary personal naming string.
+The original downloaded filenames contained an unnecessary personal naming string.
 
-Public repository filenames should be normalized without changing the CSV contents.
+Public repository filenames were normalized without changing the CSV contents.
 
 ---
 
@@ -565,7 +588,7 @@ Public repository filenames should be normalized without changing the CSV conten
 data/source_exports/ringconn/2026-07-21/
 ```
 
-Recommended filenames:
+Included files:
 
 ```text
 ringconn-sleep-export.csv
@@ -575,9 +598,40 @@ README.md
 checksums.txt
 ```
 
-At the time of this documentation revision, the exports had been received and reviewed.
+The acquisition package has been ingested into the repository.
 
-Repository ingestion is governed through a separate commit sequence.
+---
+
+### Byte-preservation status
+
+The three RingConn CSV files are preserved byte-for-byte.
+
+The repository includes the root rule:
+
+```gitattributes
+data/source_exports/**/*.csv -text
+```
+
+This disables Git text and line-ending conversion for CSVs within the source-export directory.
+
+Post-commit verification confirmed:
+
+- the repository CSVs match the original downloaded files byte-for-byte
+- original CRLF line endings are retained
+- file sizes match the original downloads
+- all three SHA-256 values match `checksums.txt`
+- a fresh GitHub ZIP preserves the same bytes
+- all registered archive checksums pass
+
+Current verified sizes:
+
+| File | Bytes |
+|---|---:|
+| `ringconn-sleep-export.csv` | 38,703 |
+| `ringconn-activity-export.csv` | 8,171 |
+| `ringconn-vital-signs-export.csv` | 16,059 |
+
+The checksum manifest was not rewritten around transformed files.
 
 ---
 
@@ -629,31 +683,34 @@ The represented year includes travel.
 
 Accordingly:
 
-- timestamps should remain in exported local form
-- UTC offsets should not be invented
-- timezone should remain unknown or unresolved unless separately documented
-- cross-timezone analysis should disclose the limitation
+- timestamps remain in exported form
+- UTC offsets are not invented
+- timezone remains unresolved unless separately documented
+- cross-timezone analysis must disclose the limitation
 
-Recommended normalized value:
+A future transformed dataset may use a provenance field such as:
 
 ```text
 timezone_status = local_offset_unknown
 ```
 
+No such transformed dataset is currently active.
+
 ---
 
 ### Direct-export preservation rule
 
-The source-export CSV files should remain byte-preserved.
+The source-export CSV files remain byte-preserved.
 
-Permitted changes before public inclusion:
+Permitted actions associated with public inclusion include:
 
 - filesystem-level filename normalization
 - directory placement
 - checksum generation
 - provenance documentation
+- Git attributes that prevent byte conversion
 
-Not permitted in the source-copy files:
+Not permitted within the source CSV copies:
 
 - header renaming
 - date conversion
@@ -665,7 +722,11 @@ Not permitted in the source-copy files:
 - correction of provider anomalies
 - normalization for appearance
 
-Analytical normalization belongs in separate files.
+Any future analytical transformation must occur in:
+
+- a separate generated file
+- a reproducible script or documented procedure
+- a separately versioned schema
 
 ---
 
@@ -682,7 +743,7 @@ This file contains a governed one-row-per-date structure and may include:
 - manually transcribed sleep values
 - sleep HRV
 - sleep average heart rate
-- awakenings count
+- awakening count
 - subjective state
 - readiness
 - tags
@@ -691,13 +752,47 @@ This file contains a governed one-row-per-date structure and may include:
 
 It is not a raw provider export.
 
-The direct annual sleep export should not be appended directly to this file.
+The direct sleep export must not be appended directly to this file.
+
+Canonical sleep data remained unchanged during the RingConn source-export ingestion.
 
 ---
 
-## RingConn Normalized Data
+## Periodic RingConn Export Policy
 
-Recommended normalized provider-faithful datasets:
+Periodic direct exports are the current wearable-preservation model.
+
+Recommended directory structure:
+
+```text
+data/source_exports/ringconn/YYYY-MM-DD/
+```
+
+Each acquisition package should contain:
+
+- the original provider exports
+- an acquisition `README.md`
+- a checksum manifest
+
+A later export:
+
+- does not overwrite an earlier acquisition
+- may overlap earlier date coverage
+- remains a separate provider-source event
+- may reflect later provider recalculation or software behavior
+- does not silently replace curated data
+
+Quarterly export collection aligned with major snapshot cycles is reasonable but is not mandatory.
+
+An annual export remains acceptable when more frequent acquisition is not operationally justified.
+
+---
+
+## Normalized Wearable Data
+
+No normalized wearable dataset is currently active or required.
+
+The following previously proposed files are deferred:
 
 ```text
 data/wearable_sleep_sessions_v1.csv
@@ -705,39 +800,35 @@ data/wearable_activity_daily_v1.csv
 data/wearable_vitals_daily_v1.csv
 ```
 
-These should remain separate because they differ in:
+Normalization may become justified when:
 
-- row grain
-- field meaning
-- missingness
-- timestamp structure
-- source behavior
+- repeated historical analysis requires merged exports
+- provider schemas change
+- automated comparison becomes necessary
+- a publication requires stable machine-readable fields
+- manual reconciliation becomes burdensome
+- a defined model-error question requires broader historical coverage
 
-### Sleep normalized grain
+Any future normalized dataset should be generated reproducibly and retain:
 
-One row per exported sleep episode.
+- source acquisition date
+- source filename
+- source row identifier
+- original provider fields
+- transformation version
+- date-assignment rule
+- timezone status
+- missingness behavior
 
-### Activity normalized grain
+The source exports would remain unchanged.
 
-One row per provider date.
-
-### Vital-sign normalized grain
-
-One row per provider date.
-
-Normalized tables should retain:
-
-- source export date
-- source device
-- source row
-- timestamp status
-- original missingness
+Normalization is an optional derived layer, not routine current maintenance.
 
 ---
 
 ## Curated Versus Later Export Values
 
-Material differences were observed between:
+Material differences may exist between:
 
 - contemporaneous curated sleep values
 - later direct RingConn export values
@@ -745,7 +836,7 @@ Material differences were observed between:
 Potential explanations include:
 
 - provider recalculation
-- app-versus-export field differences
+- application-versus-export field differences
 - software changes
 - algorithm changes
 - rounding
@@ -754,9 +845,14 @@ Potential explanations include:
 
 Neither source should silently overwrite the other.
 
-The existing curated sleep dataset remains the source for the weekly reports already based on it unless a governed source-backed correction is later performed.
+The existing curated sleep dataset remains the source for weekly reports already based on it unless a governed source-backed correction is later performed.
 
-The later direct export should govern its own provider-faithful normalized tables.
+The later direct export serves as:
+
+- preserved provider evidence
+- a reconciliation source
+- a source for targeted analysis
+- a possible input to future reproducible transformation
 
 ---
 
@@ -1003,9 +1099,13 @@ The public derivative removes:
 
 The subject’s public name and chronological age remain intentionally visible.
 
+---
+
 ### Private source status
 
 The verified provider source is retained privately for source verification.
+
+---
 
 ### Checksum status
 
@@ -1019,11 +1119,78 @@ The public checksum identifies the sanitized derivative.
 
 It does not assert byte identity with the private original.
 
+---
+
+### Repository-history remediation
+
+Operator-led remediation completed on 2026-07-22.
+
+The completed process included:
+
+- identification of affected commits and tags
+- confirmation that the sensitive artifact existed in prior Git and LFS states
+- local history rewrite removing the historical artifact path
+- restoration of the sanitized derivative to the active branch
+- restoration of the sanitized derivative to applicable surviving release tags
+- checksum restoration and verification
+- verification that the prior sensitive commits were no longer reachable from active local refs
+- controlled force-update of the rewritten branch and tags
+- preservation of rewrite evidence for support review
+- submission of a GitHub Support request concerning residual server-side or LFS objects
+
+The repository tree and active refs now contain the sanitized derivative.
+
+GitHub’s completion of residual cached or orphaned object removal remains provider-controlled and cannot be independently proven from the repository ZIP alone.
+
+---
+
+### Zenodo remediation
+
+The published Zenodo v1.0.0 archive was temporarily restricted during remediation.
+
+The archive package was rebuilt so that:
+
+- the sanitized derivative replaced the sensitive artifact
+- the corrected snapshot checksum was included
+- no unrelated archive files changed
+- the resulting archive matched the verified working package
+
+The corrected package was uploaded to the existing v1.0.0 record under Zenodo’s controlled file-editing process.
+
+The published Zenodo archive was then:
+
+- downloaded independently
+- extracted
+- structurally inspected
+- checksum verified
+- confirmed to contain the sanitized derivative
+
+The DOI and substantive release interpretation remained unchanged.
+
+---
+
 ### Distribution status
 
-Current-tree sanitization is complete.
+Intentional distribution surfaces under project control have been remediated and verified.
 
-Historical Git and prior archival-distribution verification remain separate tasks until directly completed.
+This includes:
+
+- active GitHub branch
+- applicable surviving Git tags
+- current GitHub ZIP distribution
+- the Zenodo v1.0.0 package
+
+The project cannot guarantee deletion from:
+
+- prior uncontrolled clones
+- personal downloads
+- third-party mirrors
+- browser caches
+- search-engine caches
+- provider-controlled orphaned storage
+- copies created before remediation
+
+This limitation should remain disclosed.
 
 ---
 
@@ -1167,7 +1334,7 @@ When any of the following change materially:
 - public artifact status
 - preparation conditions
 - field definition
-- normalization method
+- transformation method
 
 the repository should:
 
@@ -1224,7 +1391,7 @@ Each major snapshot cycle should record, when relevant:
 
 General preferred conditions in this file do not substitute for event-specific documentation.
 
-The August 2026 snapshot should use a separate preregistered collection-condition plan before outcome review.
+The August 2026 snapshot should use a separately documented collection-condition plan before outcome review.
 
 ---
 
@@ -1235,7 +1402,7 @@ Measurement artifacts follow these rules:
 - verified source artifacts are preserved privately or publicly as appropriate
 - public artifacts may be sanitized when privacy requires it
 - sanitized derivatives must be identified
-- direct exports should be preserved separately from normalized tables
+- direct exports are preserved separately from curated or derived tables
 - numerical values may be transcribed for structured use
 - transcribed values must remain source-traceable
 - derived values must be labeled
@@ -1252,7 +1419,7 @@ The principle is:
 
 # Repository Locations
 
-Current and planned measurement-source locations include:
+Current measurement-source locations include:
 
 ```text
 /snapshots
@@ -1273,7 +1440,7 @@ Byte-preserved provider or device exports with provenance and checksums.
 
 ### `/data`
 
-Normalized and curated longitudinal tables.
+Canonical, curated, and governed longitudinal tables.
 
 ### `/reports`
 
@@ -1281,7 +1448,7 @@ Active collection and closed retrospective interpretation.
 
 ### `/methodology`
 
-Rules governing collection, normalization, correction, sanitization, and evaluation.
+Rules governing collection, transformation, correction, sanitization, and evaluation.
 
 ---
 
@@ -1331,18 +1498,21 @@ Interpretation must remain proportional to:
 
 ## Version Note
 
-This document was expanded on 2026-07-22 to align measurement-source governance with the archive’s current evidence structure.
+This document was revised on 2026-07-22 to align measurement-source governance with the archive’s actual evidence and maintenance structure.
 
 The revision:
 
-- replaces timeless source descriptions with date-aware provenance
 - distinguishes direct exports, screenshots, transcription, derivation, and narrative observation
-- registers the 2026-07-21 RingConn export event
+- registers completion of the 2026-07-21 RingConn export ingestion
+- documents byte-preserved RingConn source files and Git line-ending controls
+- records successful checksum verification from a fresh GitHub ZIP
 - distinguishes daily, resting, and sleep cardiovascular metrics
 - documents timezone and provider-reprocessing limitations
-- separates immutable source exports from normalized and curated datasets
+- establishes periodic immutable exports as the current wearable-maintenance model
+- defers normalized wearable datasets until a defined analytical or publication requirement exists
 - permits clearly identified public sanitized derivatives
-- documents the July 2025 blood panel’s public artifact status
+- documents completion of controlled Git and Zenodo blood-artifact remediation
+- discloses residual uncontrolled-copy and provider-side limitations
 - preserves unknown hardware, software, firmware, and assay information as unknown
 - defines source-state and correction boundaries
 - replaces universal capture assumptions with event-specific comparability requirements
