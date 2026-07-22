@@ -1900,3 +1900,537 @@ The repository remains suitable for:
 - preparation for the August biological and performance snapshot
 
 The next action should be the missing blood-artifact changelog entry, followed by anonymization and measurement-source governance before the wearable source files are incorporated.
+
+---
+
+# Post-Audit Disposition — 2026-07-22
+
+## Record Boundary
+
+This section records actions and decisions completed after the point-in-time audit above.
+
+It does not retroactively rewrite:
+
+- the original audit evidence
+- the original findings
+- the original recommended sequence
+- the repository state represented by `daniel-longitudinal-public-main (22).zip`
+
+Where a later decision supersedes an original recommendation, both states remain visible:
+
+1. the recommendation made from the evidence available during the audit
+2. the governing disposition adopted after further review
+
+---
+
+## Updated Verdict
+
+**PASS — CONTROLLED-DISTRIBUTION PRIVACY REMEDIATION AND RINGCONN SOURCE PRESERVATION VERIFIED; GITHUB PROVIDER-SIDE CLEANUP PENDING**
+
+The mechanical repository findings from the original audit remain valid.
+
+Subsequent work closed the two primary operational issues identified by the audit:
+
+1. the July 2025 blood artifact was remediated across active repository refs and the controlled Zenodo distribution
+2. the RingConn exports were ingested as byte-preserved source artifacts with verified checksums
+
+The remaining external privacy limitation is provider-controlled cleanup of residual Git or Git LFS objects.
+
+No canonical biological dataset, prediction record, protocol exposure, or phase status was changed during this remediation cycle.
+
+---
+
+# Privacy-Remediation Disposition
+
+## Current Public Artifact
+
+The current public file:
+
+```text
+snapshots/2025-07/2025-07-full-blood-panel.pdf
+```
+
+remains the canonical sanitized public derivative.
+
+Verified SHA-256:
+
+```text
+e3fe18d94b003217f2d9024ee1952117305f1b48dc72bebf183269ec60a375cb
+```
+
+Verification confirmed that the current derivative:
+
+- excludes the identified non-public administrative information
+- preserves measured laboratory values
+- preserves units, reference intervals, flags, dates, and report structure
+- matches the current snapshot checksum manifest
+- remains classified as privacy remediation rather than new biological evidence
+
+The subject’s public name and chronological age remain intentionally visible.
+
+---
+
+## Git-History Remediation
+
+The affected artifact path was removed from repository history through a dedicated sensitive-data rewrite.
+
+The completed process included:
+
+- identification of affected commits and maintained tags
+- removal of the historical blood-artifact path from rewritten history
+- restoration of the sanitized derivative to `main`
+- restoration of the sanitized derivative to applicable maintained tags
+- restoration and verification of the associated checksum manifest
+- verification that the previously affected commits were no longer reachable from active local refs
+- force-update of the rewritten branch and tags
+- comparison of remote refs with rewritten local refs
+- creation of support evidence documenting the rewrite
+- creation and use of a fresh post-rewrite clone
+
+The active branch and applicable maintained tags now contain the sanitized derivative.
+
+Old clones containing pre-rewrite ancestry must not be merged or pushed into the remediated repository.
+
+The history rewrite changed commit hashes throughout the repository.
+
+Any documentation containing hard-coded pre-rewrite commit hashes may require later review.
+
+---
+
+## GitHub Distribution Verification
+
+A fresh GitHub repository ZIP was downloaded and reviewed after the history rewrite.
+
+Verification confirmed:
+
+- the sanitized blood-panel derivative is present
+- the artifact matches the expected checksum
+- the prior sensitive version is not present in the distributed current-tree archive
+- snapshot checksum validation passes
+
+This verifies the current GitHub-controlled repository distribution.
+
+It does not independently prove deletion of provider-retained unreachable objects.
+
+---
+
+## GitHub Provider-Side Status
+
+A GitHub Support request was submitted concerning residual Git LFS or other provider-controlled objects associated with the prior artifact.
+
+Current status:
+
+**Provider cleanup pending**
+
+Until GitHub directly confirms completion, the archive does not claim deletion of:
+
+- every unreachable Git object
+- every residual Git LFS object
+- every provider cache
+- every previously generated platform archive
+
+This limitation does not invalidate the verified remediation of:
+
+- active branches
+- applicable tags
+- current repository contents
+- current GitHub ZIP distribution
+
+---
+
+## Zenodo v1.0.0 Remediation
+
+The DOI-bearing Zenodo v1.0.0 package was separately remediated.
+
+DOI:
+
+```text
+10.5281/zenodo.20815612
+```
+
+Corrected package:
+
+```text
+daniel-longitudinal-public-v1.0.0.zip
+```
+
+Verified corrected package digests:
+
+```text
+MD5: 4dd3838c5c1f90003e1c98d72fec812e
+SHA-256: 0c00fc1c7ea7a708d6fe6224c88fc33b6a4b853e6fbc127c88a0432b5bc8d330
+```
+
+The corrected archive was:
+
+- uploaded through Zenodo’s controlled file-replacement process
+- downloaded independently after publication
+- extracted and structurally inspected
+- compared with the verified corrected package
+- checked for the sanitized blood artifact
+- checked against the internal snapshot checksum
+- confirmed to contain no unrelated package differences
+
+The DOI and substantive v1.0.0 biological interpretation remained unchanged.
+
+The replacement is classified as:
+
+- privacy remediation
+- release-integrity repair
+- not a new biological result
+- not a protocol change
+- not a phase event
+- not a new model-error outcome
+
+---
+
+## Current Privacy Classification
+
+| Surface | Status |
+|---|---|
+| Current blood-panel derivative | Sanitized and checksum verified |
+| Active GitHub `main` branch | Remediated and verified |
+| Applicable maintained Git tags | Remediated and verified |
+| Current GitHub ZIP | Remediated and verified |
+| Zenodo v1.0.0 package | Replaced and independently verified |
+| GitHub residual Git or LFS storage | Provider cleanup pending |
+| Prior uncontrolled clones and downloads | Outside project control |
+| Third-party mirrors and caches | Removal not guaranteed |
+
+Appropriate overall classification:
+
+> **Controlled distribution remediation completed, with GitHub provider-side cleanup pending and uncontrolled-copy limitations disclosed.**
+
+This classification does not imply universal erasure.
+
+---
+
+# RingConn Source-Export Disposition
+
+## Repository Ingestion
+
+The RingConn source package was added under:
+
+```text
+data/source_exports/ringconn/2026-07-21/
+```
+
+The package contains:
+
+- `ringconn-sleep-export.csv`
+- `ringconn-activity-export.csv`
+- `ringconn-vital-signs-export.csv`
+- `README.md`
+- `checksums.txt`
+
+The original downloaded filenames contained an unnecessary personal naming string.
+
+Public filenames were normalized at the filesystem level without modifying the CSV contents.
+
+---
+
+## Source Integrity
+
+Verified source-export sizes:
+
+| File | Bytes |
+|---|---:|
+| `ringconn-sleep-export.csv` | 38,703 |
+| `ringconn-activity-export.csv` | 8,171 |
+| `ringconn-vital-signs-export.csv` | 16,059 |
+
+Verified SHA-256 values:
+
+```text
+2336f95ffdf28eb8cb6ddc0931a1724c028c2ed6e4bbe7be682e87e41ab2523c  ringconn-sleep-export.csv
+6431d57a58e4c0aecda5be94867bc9a638daa27759f21605a3873905893c248c  ringconn-activity-export.csv
+2e102745289d78a039b9657c4cc720322a2b22a29098e860dd7d69e14348d7e9  ringconn-vital-signs-export.csv
+```
+
+The source files are protected by the root repository rule:
+
+```gitattributes
+data/source_exports/**/*.csv -text
+```
+
+This disables Git text and line-ending conversion for source-export CSV files.
+
+Post-commit verification confirmed:
+
+- original CRLF line endings remain intact
+- the repository files match the downloaded originals byte-for-byte
+- the existing checksum manifest remained unchanged
+- all three RingConn checksum entries pass
+- a fresh GitHub ZIP preserves the original bytes
+- all registered archive checksum targets pass
+
+Fresh-ZIP checksum result:
+
+```text
+29 of 29 registered artifacts passed
+```
+
+The RingConn byte-preservation issue identified during later repository review is closed.
+
+---
+
+## Privacy Screening
+
+Read-only privacy screening found:
+
+- no obvious administrative-identifier fields in the headers
+- no email-like values
+- expected wearable-domain fields only
+- no apparent account identifier, device serial number, access token, address, or precise-location field in the exported schema
+
+The health and wearable observations remain intentionally public within the study.
+
+The privacy review reduces obvious administrative exposure but does not establish complete anonymity.
+
+---
+
+## Canonical-Data Boundary
+
+The RingConn exports were not appended to:
+
+```text
+data/sleep_longitudinal_v1.csv
+```
+
+The curated sleep dataset remained unchanged.
+
+No broad historical wearable correction was performed.
+
+The preserved source exports remain available for:
+
+- narrow source reconciliation
+- defined historical analysis
+- provider-state comparison
+- future reproducible transformation when justified
+
+The source files do not automatically govern:
+
+- existing weekly reports
+- contemporaneous screenshots
+- sleep HRV
+- sleep average heart rate
+- resting heart rate
+- awakening count
+- subjective morning observations
+
+---
+
+# Superseded Wearable Recommendation
+
+## Original Audit Recommendation
+
+The point-in-time audit recommended creating:
+
+```text
+data/wearable_sleep_sessions_v1.csv
+data/wearable_activity_daily_v1.csv
+data/wearable_vitals_daily_v1.csv
+```
+
+That recommendation was reasonable under the initial assumption that the annual export should immediately become a normalized longitudinal data layer.
+
+---
+
+## Subsequent Governance Decision
+
+After reviewing:
+
+- continuing maintenance cost
+- current analytical requirements
+- source-versus-curated differences
+- timestamp and timezone ambiguity
+- multiple sleep episodes
+- provider reprocessing uncertainty
+- the absence of a current analysis requiring merged historical data
+
+the archive adopted a simpler operating model.
+
+Current wearable architecture:
+
+```text
+Periodic Byte-Preserved RingConn Exports
+                  ↓
+Acquisition README and SHA-256 Checksums
+                  ↓
+Targeted Reconciliation or Analysis When Needed
+                  ↓
+Optional Reproducible Derived Layer, If Justified
+```
+
+Normalized wearable datasets are therefore:
+
+**deferred rather than planned for immediate implementation**
+
+Previously proposed normalized files should not be created merely to satisfy the original audit recommendation.
+
+Their absence is not a current coverage, quality, or governance failure.
+
+---
+
+## Conditions That May Justify Future Normalization
+
+A derived wearable layer may be created when:
+
+- repeated historical analysis requires merging multiple exports
+- provider schemas change across acquisitions
+- automated comparison becomes operationally necessary
+- publication requires stable archive-defined fields
+- a model-error question requires broader historical evidence
+- repeated manual reconciliation becomes burdensome
+
+Any future transformed layer must remain:
+
+- separate from source exports
+- reproducible
+- versioned
+- source-row traceable
+- explicit about date assignment
+- explicit about timezone uncertainty
+- explicit about multiple-session handling
+- explicit about missingness
+- non-destructive to each acquisition package
+
+---
+
+# Data-Quality Disposition
+
+The RingConn export provides candidate source evidence for:
+
+- DQ-001 `awake_min`
+- DQ-002 `light_sleep_min`
+- DQ-003 `light_sleep_min`
+
+No curated correction was made during this cycle.
+
+Current status remains:
+
+| Item | Status |
+|---|---|
+| DQ-001 `awake_min` | Correction candidate identified |
+| DQ-001 `awakenings_count` | Unresolved |
+| DQ-002 `light_sleep_min` | Correction candidate identified |
+| DQ-003 `light_sleep_min` | Correction candidate identified |
+| Timestamp and timezone semantics | Restricted for broad historical analysis |
+| Multiple sleep episodes | Preserved without daily aggregation |
+| Missing dates | Preserved as source missingness |
+| November 17 session | Preserved as an unclassified-stage provider anomaly |
+| Broad curated-versus-export differences | Diagnostic only |
+
+No bulk overwrite is authorized.
+
+A full normalized wearable dataset is not required to perform a later narrow source-backed correction.
+
+---
+
+# Documentation Disposition
+
+The documentation cycle following this audit aligns the archive with:
+
+- direct provider-export preservation
+- periodic acquisition packages
+- optional rather than mandatory normalization
+- field-level metric distinctions
+- public sanitized derivatives
+- private-source retention
+- active-ref remediation
+- Zenodo package remediation
+- provider-side cleanup limitations
+- uncontrolled-copy limitations
+- source-backed correction boundaries
+
+Affected documentation surfaces include:
+
+- `MEASUREMENT_SOURCES.md`
+- `DATA_DICTIONARY.md`
+- `data/DATA_COVERAGE.md`
+- `data/DATA_QUALITY_NOTES.md`
+- `data/source_exports/ringconn/2026-07-21/README.md`
+- `methodology/anonymization.md`
+- `snapshots/2025-07/2025-07 Epoch.md`
+- `VERSIONING.md`
+- `CHANGELOG.md`
+
+The final changelog should be updated after the documentation sequence accurately reflects the completed work.
+
+---
+
+# Remaining Actions
+
+The remaining actions after this disposition are:
+
+1. complete the final documentation-alignment commits
+2. add the consolidated final changelog entries
+3. perform a fresh repository-ZIP verification after the documentation cycle
+4. retain records 041–044 unchanged and open
+5. retain canonical sleep values unchanged unless a separate source-backed correction is authorized
+6. await direct GitHub confirmation concerning residual provider-controlled objects
+7. document GitHub provider confirmation later if received
+
+No immediate normalized wearable tracker is required.
+
+No release increment is required solely for this documentation and privacy-maintenance cycle.
+
+---
+
+# Final Current Status
+
+Repository mechanics:
+
+**PASS**
+
+Current artifact checksums:
+
+**PASS**
+
+RingConn byte preservation:
+
+**PASS**
+
+RingConn fresh-ZIP verification:
+
+**PASS**
+
+Current blood-panel sanitization:
+
+**PASS**
+
+Active Git branch and tag remediation:
+
+**PASS**
+
+Current GitHub ZIP privacy state:
+
+**PASS**
+
+Zenodo v1.0.0 corrected package:
+
+**PASS**
+
+GitHub residual object cleanup:
+
+**PENDING PROVIDER CONFIRMATION**
+
+Canonical sleep modification:
+
+**NONE**
+
+Model Error records 041–044:
+
+**OPEN, UNSCORED, AND UNCHANGED**
+
+Physical protocol:
+
+**UNCHANGED**
+
+Phase status:
+
+**UNCHANGED**
+
+Current overall disposition:
+
+> **The repository is mechanically healthy and suitable for continued W29 operation. Controlled privacy remediation and RingConn source preservation are verified. Remaining work is documentation closeout, final changelog registration, and provider-side cleanup confirmation.**
