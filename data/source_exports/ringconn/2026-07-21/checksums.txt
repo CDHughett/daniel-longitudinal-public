@@ -1,1 +1,3 @@
-placeholder 
+2336f95ffdf28eb8cb6ddc0931a1724c028c2ed6e4bbe7beb82e87e41ab2523c  ringconn-sleep-export.csv
+6431d57a58e4c0aecda5be94867bc9a638daa27759f21605a3873905893c248c  ringconn-activity-export.csv
+2e102745289d78a039b9657c4cc720322a2b22a29098e860dd7d69e14348d7e9  ringconn-vital-signs-export.csv
