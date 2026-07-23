@@ -1,0 +1,2 @@
+# Preserve direct provider exports exactly as committed.
+data/source_exports/**/*.csv -text
