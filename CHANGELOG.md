@@ -6,7 +6,7 @@ Historical entries are preserved in:
 
 [`docs/archive/CHANGELOG_ARCHIVE.md`](docs/archive/CHANGELOG_ARCHIVE.md)
 
-Biological interpretation belongs in `/reports`. This file records repository, dataset, methodology, governance, privacy, and archive-integrity changes.
+Biological interpretation belongs in `/reports`. This file records repository, dataset, methodology, governance, privacy, validation, and archive-integrity changes.
 
 ---
 
@@ -143,6 +143,56 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 
 - Added Event 003 to `data/model_error/calibration_events_log.md` for initialization of the July–August prediction block.
 
+#### Repository validation tooling
+
+- Added `tools/validate_repository.py` as a local read-only repository validator.
+
+- The validator supports:
+
+  - extracted repository directories
+  - downloaded GitHub ZIP packages
+  - human-readable output
+  - machine-readable JSON output
+  - nonzero exit status for mechanical errors
+  - governed warnings that do not invalidate the repository
+
+- The validator checks:
+
+  - required repository paths
+  - zero-byte files
+  - ZIP CRC and path safety
+  - Markdown relative links
+  - Markdown internal anchors
+  - fenced-code balance
+  - CSV parsing
+  - CSV row widths
+  - duplicate CSV headers
+  - checksum manifests
+  - canonical sleep continuity
+  - governed DQ-001 through DQ-003 warnings
+  - weekly-report continuity
+  - active weekly-report count
+  - model-error record continuity
+  - protected status of records 041–044
+  - release-metadata alignment
+  - RingConn byte sizes
+  - RingConn SHA-256 values
+  - RingConn provider headers
+  - RingConn row counts
+  - RingConn CRLF preservation
+  - the source-export `.gitattributes` rule
+
+- The validator:
+
+  - uses only the Python standard library
+  - does not edit repository files
+  - does not infer corrections
+  - does not score predictions
+  - does not normalize provider exports
+  - does not replace human semantic review
+
+- GitHub Actions validation remains deferred until the local validator demonstrates stability across repeated audit cycles.
+
 #### Audits and archive integrity
 
 - Added repository audits dated:
@@ -154,14 +204,16 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - `2026-07-15`
   - `2026-07-18`
   - `2026-07-22`
+  - `2026-07-25`
 
 - The July audits collectively:
   - verified repository structure, links, Markdown integrity, CSV parsing, checksums, report continuity, prediction continuity, and release metadata
-  - identified targeted sleep-data, protocol-status, experiment-wording, governance-language, privacy, and source-provenance issues
+  - identified targeted sleep-data, protocol-status, experiment-wording, governance-language, privacy, source-provenance, terminology, and validation-tooling issues
   - confirmed remediation where source evidence was sufficient
   - preserved unresolved source-reconciliation items without inferred correction
   - recognized administrative overhead as a repository-design concern
   - recommended shorter, delta-focused weekly reports and audits
+  - identified repeatable mechanical checks suitable for local automation
 
 - Added `docs/audits/2026-07-22-wednesday-audit.md`:
   - confirms mechanical repository integrity after W28 closeout and W29 initialization
@@ -182,6 +234,18 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - establishes periodic immutable provider exports as the current wearable-preservation model
   - retains GitHub provider-side cleanup as pending
   - confirms that no canonical biological value was changed
+
+- Added `docs/audits/2026-07-25-saturday-audit.md`:
+  - confirms that the reviewed Saturday package was unchanged from the preceding verified closeout package
+  - reconfirms ZIP safety and repository structure
+  - reconfirms Markdown, CSV, checksum, artifact, privacy, report, prediction, and release integrity
+  - reconfirms RingConn source-byte and CRLF preservation
+  - confirms W29 remains active through its full observation window
+  - confirms records 041–044 remain open, unscored, and unchanged
+  - identifies phase-language hierarchy as the principal remaining documentation debt
+  - identifies repeated mechanical audit work as suitable for a local validator
+  - preserves the August collection plan as due before outcome access
+  - recommends no canonical-data, privacy-artifact, source-export, protocol, prediction, or phase modification
 
 #### Public archive and navigation
 
@@ -234,6 +298,45 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - separates B1, Load Integration, optional activity, recovery, structured metrics, perturbations, model-error relevance, and governance
   - prohibits inferred missing values
   - does not require historical reports to be reformatted
+
+#### Phase and state governance
+
+- Updated `PHASE_MAP.md`:
+  - establishes canonical phase names
+  - defines the active state as `Phase 2 — Load Integration`
+  - defines consolidation and lock-in observation as operating substates within Phase 2
+  - distinguishes phase, operating substate, candidate characteristic, transition evidence, and retrospective declaration
+  - maps historical aliases without rewriting historical reports
+  - treats Phase 2C as historical consolidation or lock-in shorthand rather than a separate canonical phase
+  - reserves Phase 2D as a possible retrospectively declared Phase 2 substate
+  - classifies Phase 2D-type observations as candidate evidence only
+  - confirms that no Phase 2D or Phase 3 declaration has occurred
+  - prohibits phase language from creating progression pressure
+
+- Updated `STATE_TRANSITIONS.md`:
+  - converts the file from a parallel phase-description document into a governed transition record
+  - records Phase 0 baseline establishment
+  - records the completed Phase 0-to-Phase 1 transition
+  - records the completed Phase 1-to-Phase 2 transition
+  - classifies Phase 2 consolidation and lock-in as an operating-substate change
+  - records the possible Phase 2D boundary as open and undeclared
+  - retains Phase 3 as reserved and inactive
+  - avoids inventing unsupported exact transition dates
+  - preserves historical terminology through aliases
+  - defines required fields for future transition entries
+
+- Expanded `docs/CONCEPTS.md`:
+  - defines observation, telemetry, artifact, collection, archive, and interpretation layers
+  - defines source state, provider source artifact, direct export, byte preservation, curated data, canonical data, and derived data
+  - defines normalization, source precedence, source-backed correction, reconciliation, missingness, and analytical restrictions
+  - defines prediction, model error, prediction auditing, closure, admissible evidence, concordance, UDI, calibration, and model correction
+  - defines phase, operating substate, candidate characteristic, transition evidence, retrospective declaration, and historical alias
+  - defines Phase 2C, Phase 2D-type characteristics, Phase 2D, and reserved phases
+  - defines ambient execution, trait-like execution, operator overhead, movement optionality, portability, reintegration, recovery floor, and spare capacity
+  - defines perturbation, naturalistic perturbation, representative state, sanitized derivatives, and controlled distribution remediation
+  - aligns public-facing terminology with the current governance architecture
+
+- Historical reports were not rewritten solely to enforce the newer canonical vocabulary.
 
 #### Wearable evidence architecture
 
@@ -303,6 +406,35 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   → optional reproducible derived layer when justified
   ```
 
+#### Verification governance
+
+- Expanded `VERIFICATION.md`:
+  - distinguishes artifact verification from whole-repository validation
+  - documents local-directory and ZIP validation
+  - provides Windows, macOS, and Linux commands
+  - documents machine-readable JSON output
+  - defines exit-code behavior
+  - separates `PASS`, `WARN`, and `ERROR`
+  - documents expected governed warnings for DQ-001 through DQ-003
+  - describes each validator check
+  - retains manual SHA-256 verification instructions
+  - documents temporal-anchor relationships
+  - defines privacy-verification limitations
+  - establishes a routine local verification workflow
+  - identifies semantic questions that still require human review
+  - keeps GitHub Actions deferred
+
+- The verification model now distinguishes:
+
+  ```text
+  Artifact identity
+  → repository mechanics
+  → human semantic review
+  → interpretation
+  ```
+
+- Local validation does not replace formal audits when a scheduled audit or material event requires one.
+
 #### Governance and methodology
 
 - Expanded `GOVERNANCE.md`, `METHODOLOGY_AND_CONTROLS.md`, `SYSTEM_OVERVIEW.md`, and `ASSUMPTIONS_AND_BOUNDARIES.md` to:
@@ -352,7 +484,7 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - clarifies release-candidate use
   - documents privacy and integrity repair behavior
   - clarifies Zenodo archival cadence
-  - confirms that routine weekly, audit, and source-export work does not automatically require a version increment
+  - confirms that routine weekly, audit, source-export, governance, and local-tooling work does not automatically require a version increment
 
 #### Prediction-plan registration context
 
@@ -496,6 +628,21 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 
 - Closed the RingConn source-export byte-preservation blocker.
 
+#### Phase-terminology ambiguity
+
+- Removed the parallel interpretation of `Phase 2 — Lock-In Confirmation` as though it were a second canonical Phase 2.
+
+- Clarified that:
+
+  - `Phase 2 — Load Integration` remains the active canonical phase
+  - consolidation and lock-in observation are operating substates
+  - Phase 2C is historical shorthand
+  - Phase 2D-type characteristics are candidate evidence
+  - no formal Phase 2D declaration has occurred
+  - Phase 3 remains reserved and inactive
+
+- Preserved historical wording without rewriting prior weekly reports.
+
 #### Other corrections
 
 - Corrected the instructional pull-up observation date to `2026-07-10` while preserving `2026-07-11` as the audit and repository-incorporation date.
@@ -541,6 +688,45 @@ The source-workbook narrative discrepancy remains documented rather than silentl
 
 ---
 
+### Current governance and validation status
+
+- Current canonical phase:
+
+  ```text
+  Phase 2 — Load Integration
+  ```
+
+- Current operating substate:
+
+  ```text
+  Consolidation / lock-in observation
+  ```
+
+- Current transition state:
+
+  ```text
+  Phase 2D undeclared
+  Phase 3 reserved and inactive
+  ```
+
+- Current validator model:
+
+  ```text
+  Local read-only validation
+  Human semantic review
+  GitHub Actions deferred
+  ```
+
+- Current expected governed validator warnings concern:
+
+  - DQ-001 awake-minute and awakening-count duplication
+  - DQ-002 March 31 sleep-stage difference
+  - DQ-003 April 2 sleep-stage difference
+
+- These warnings do not authorize automatic correction and do not make the repository mechanically invalid.
+
+---
+
 ### Release status
 
 - No release-version increment was made for:
@@ -548,6 +734,10 @@ The source-workbook narrative discrepancy remains documented rather than silentl
   - source-export preservation
   - documentation alignment
   - audit disposition
+  - phase-hierarchy alignment
+  - terminology expansion
+  - local validator addition
+  - verification-guide expansion
   - versioning-policy clarification
 
 - Current release metadata remains:
@@ -560,7 +750,13 @@ The source-workbook narrative discrepancy remains documented rather than silentl
   - unscored
   - unchanged in prediction wording
 
-- Current protocol exposure and phase status remain unchanged.
+- Current protocol exposure remains unchanged.
+
+- Current phase remains:
+
+  ```text
+  Phase 2 — Load Integration
+  ```
 
 ---
 
