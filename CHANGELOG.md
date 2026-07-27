@@ -16,21 +16,27 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 
 #### Weekly reporting
 
-- Added retrospective closeout for `reports/2026-W28.md`:
+- Added retrospective closeout for `reports/2026-W29.md`:
   - records seven completed B1 and seven completed Load Integration sessions
-  - records 169 minutes of optional aquatic activity and 869 total logged movement minutes
-  - summarizes verified bodyweight, recovery, and sleep metrics
-  - documents naturally occurring schedule, fatigue, equipment, recreational, and social-context variation
+  - records 107 structured recreational aquatic minutes and 807 total logged movement minutes
+  - finds no coherent delayed recovery-floor failure after the high-density W28 window
+  - preserves ordinary variation between standard, subtle trait-like, and stronger trait-like session expression
+  - documents preserved execution after schedule displacement, yard work, concentrated repository work, and household maintenance
+  - records the spontaneous 2026-07-24 conversational pull-up demonstration with controlled holds across multiple positions
+  - records preserved training during the 2026-07-26 sanding, preparation, and painting workload
+  - documents the one-day repository-update delay as an intentional household-priority adjustment rather than a governance failure
   - records repeated candidate evidence relevant to Model Error records 041, 042, and 044
   - preserves records 041–044 as open and unscored
   - preserves Phase 2 status without declaring Phase 2D
 
-- Added initialization for `reports/2026-W29.md`:
-  - carries forward the standard protocol without progression
-  - prioritizes observation for delayed effects after the higher-density W28 window
-  - continues passive collection of reduced-overhead, adaptable-execution, and portability evidence
-  - prohibits converting successful W28 variations into required tests
-  - uses a shorter delta-focused structure to reduce weekly-report overhead
+- Added initialization for `reports/2026-W30.md`:
+  - carries forward the standard B1 and Load Integration protocol without progression
+  - prioritizes observation for delayed effects after two consecutive full-density weeks
+  - carries forward the 2026-07-26 household-maintenance workload as an unresolved recovery observation
+  - preserves distinctions between ordinary, partial trait-like, and stronger trait-like execution
+  - continues passive collection of reduced-overhead, divided-attention, cognitive-load, and ordinary-life portability evidence
+  - prohibits manufacturing conversational, positional-hold, aquatic, schedule-compression, or household-work tests
+  - preserves ordinary training, nutrition, recovery, and collection conditions before the August biological snapshot
 
 #### RingConn source exports
 
@@ -93,13 +99,14 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 
 #### Datasets and data quality
 
-- Appended sleep observations for `2026-07-13` through `2026-07-19` to `data/sleep_longitudinal_v1.csv`:
-  - extends canonical sleep coverage through `2026-07-19`
-  - preserves daily sleep-stage, HRV, sleeping-heart-rate, readiness, and subjective-state fields
-  - retains low-confidence REM classification for `2026-07-17` and `2026-07-19`
-  - preserves reported awake time without reconstructing values from other fields
-  - uses `2026-07-13` as the corrected chronological date
-  - adds no inferred replacement values
+- Appended sleep observations for `2026-07-20` through `2026-07-26` to `data/sleep_longitudinal_v1.csv`:
+  - extends canonical sleep coverage through `2026-07-26`
+  - adds seven continuous daily rows without a date gap
+  - preserves sleep-stage, awake-time, awakening-count, efficiency, HRV, sleeping-heart-rate, subjective-state, readiness, and sleep-tag fields
+  - preserves the low-confidence REM classification for `2026-07-21`
+  - retains later medium-confidence REM classifications without inferred replacement values
+  - keeps daily and sleep-tab cardiovascular measurements distinct
+  - adds no reconstructed or silently repaired values
 
 - Added `data/DATA_QUALITY_NOTES.md`:
   - documents unresolved awake-field duplication from `2026-05-18` through `2026-05-31`
@@ -262,14 +269,18 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 #### Current-state alignment
 
 - Updated `LATEST.md`:
-  - marks `2026-W28` closed and `2026-W29` active
-  - advances canonical sleep coverage through `2026-07-19`
-  - summarizes W28 training density, preserved recovery, and cross-context execution
-  - distinguishes daily biomarker HRV from sleep HRV
+  - marks `2026-W29` closed and `2026-W30` active
+  - advances canonical sleep coverage through `2026-07-26`
+  - summarizes W29 training density, recovery posture, and cross-context execution
+  - records that numerically softer recovery values did not form a coherent functional decline
+  - preserves ordinary and below-peak session expression as a boundary against narrative inflation
+  - records the 2026-07-24 conversational positional-control event as candidate evidence rather than a formal test
+  - records compatibility between formal training and the 2026-07-26 household-maintenance workload
+  - identifies delayed effects after two consecutive dense weeks and the household-work day as the primary W30 observation question
+  - documents that the normal Sunday repository update was intentionally delayed one day for household maintenance and resumed without loss of continuity
   - carries Model Error records 041–044 forward unchanged
-  - identifies delayed-load observation as the primary W29 question
   - retains the August 2026 snapshot as the next major objective checkpoint
-  - reduces repeated protocol and weekly-report language to preserve dashboard scope
+  - preserves Phase 2 status without declaring Phase 2D
 
 #### Weekly report governance
 
