@@ -18,7 +18,9 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 
 - Added retrospective closeout for `reports/2026-W29.md`:
   - records seven completed B1 and seven completed Load Integration sessions
-  - records 107 structured recreational aquatic minutes and 807 total logged movement minutes
+  - records 107 minutes of structured timed aquatic exposure
+  - records 807 total structured logged movement minutes
+  - preserves additional ring-diving and underwater-swimming activity as narrative context outside the structured duration total
   - finds no coherent delayed recovery-floor failure after the high-density W28 window
   - preserves ordinary variation between standard, subtle trait-like, and stronger trait-like session expression
   - documents preserved execution after schedule displacement, yard work, concentrated repository work, and household maintenance
@@ -31,12 +33,17 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 
 - Added initialization for `reports/2026-W30.md`:
   - carries forward the standard B1 and Load Integration protocol without progression
+  - records the canonical active phase as `Phase 2 — Load Integration`
+  - records the operating substate as `Consolidation / lock-in observation`
   - prioritizes observation for delayed effects after two consecutive full-density weeks
   - carries forward the 2026-07-26 household-maintenance workload as an unresolved recovery observation
   - preserves distinctions between ordinary, partial trait-like, and stronger trait-like execution
   - continues passive collection of reduced-overhead, divided-attention, cognitive-load, and ordinary-life portability evidence
   - prohibits manufacturing conversational, positional-hold, aquatic, schedule-compression, or household-work tests
   - preserves ordinary training, nutrition, recovery, and collection conditions before the August biological snapshot
+  - links the active prediction-evaluation and snapshot-collection plans
+  - preserves records 041–044 as open and unscored
+  - preserves Phase 2D as undeclared and Phase 3 as reserved and inactive
 
 #### RingConn source exports
 
@@ -148,6 +155,20 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - separates the primary epigenetic endpoint from supplemental August measurements
   - protects prediction language from outcome-driven revision
 
+- Added `methodology/2026-08-snapshot-collection-plan.md`:
+  - preregisters the August 17–18 biological and performance collection window before outcome access
+  - records the planned TruDiagnostic, DEXA, VO₂ max, and Bod Pod schedule
+  - preserves TruDiagnostic as the primary Model Error 043 domain
+  - preserves May 2026 as the primary comparison baseline
+  - classifies DEXA, VO₂ max, Bod Pod, bodyweight, recovery, and subjective state as supplemental evidence
+  - defines representative-state fasting, hydration, training, supplementation, medication, sleep, and collection documentation
+  - prohibits snapshot-directed protocol, nutrition, hydration, recovery, and workload manipulation
+  - defines source-artifact, privacy-review, checksum, and structured-transcription requirements
+  - defines missing, delayed, invalid, incomplete, rescheduled, and discordant-result handling
+  - protects outcome-access, scoring, protocol, phase, and release boundaries
+  - preserves records 041–044 as open and unscored
+  - introduces no prediction, protocol, phase, biological-value, or release change
+
 - Added Event 003 to `data/model_error/calibration_events_log.md` for initialization of the July–August prediction block.
 
 #### Repository validation tooling
@@ -212,6 +233,7 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - `2026-07-18`
   - `2026-07-22`
   - `2026-07-25`
+  - `2026-07-29`
 
 - The July audits collectively:
   - verified repository structure, links, Markdown integrity, CSV parsing, checksums, report continuity, prediction continuity, and release metadata
@@ -254,6 +276,28 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - preserves the August collection plan as due before outcome access
   - recommends no canonical-data, privacy-artifact, source-export, protocol, prediction, or phase modification
 
+- Added `docs/audits/2026-07-29-wednesday-audit.md`:
+  - audits `daniel-longitudinal-public-main (30).zip`
+  - records ZIP SHA-256 `a3a417035f2b580574b1adae3cffe24b89769a721a6039abc77679de91194453`
+  - confirms safe ZIP paths, coherent repository structure, and no zero-byte or exact duplicate files
+  - confirms 122 Markdown files and 670 valid internal references
+  - confirms all 11 CSV files parse with consistent row widths
+  - confirms canonical sleep continuity through `2026-07-26`
+  - reconciles the W29 sleep-derived metrics against the canonical sleep dataset
+  - confirms the 107-minute and 807-minute structured movement calculations
+  - identifies the need to distinguish timed aquatic exposure from additional narrative aquatic activity
+  - confirms 29 of 29 registered checksums
+  - confirms RingConn source-byte and CRLF preservation
+  - confirms current privacy and release metadata integrity
+  - confirms records 041–044 remain open, unscored, and unchanged
+  - confirms Phase 2 remains active, Phase 2D remains undeclared, and Phase 3 remains reserved
+  - confirms the August collection plan is methodologically aligned and preregistered before outcome access
+  - identifies the missing August collection-plan changelog entry
+  - identifies collection-plan and validator discoverability improvements
+  - recommends expansion of `methodology/README.md`
+  - records local validator result of zero errors, two governed warnings, and overall `PASS`
+  - recommends no canonical-data, source-export, privacy-artifact, prediction, protocol, phase, or release modification
+
 #### Public archive and navigation
 
 - Added Zenodo DOI and citation support across `README.md`, `LATEST.md`, and `CITATION.cff`.
@@ -271,13 +315,19 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 - Updated `LATEST.md`:
   - marks `2026-W29` closed and `2026-W30` active
   - advances canonical sleep coverage through `2026-07-26`
+  - records the canonical operating substate as `Consolidation / lock-in observation`
   - summarizes W29 training density, recovery posture, and cross-context execution
   - records that numerically softer recovery values did not form a coherent functional decline
   - preserves ordinary and below-peak session expression as a boundary against narrative inflation
   - records the 2026-07-24 conversational positional-control event as candidate evidence rather than a formal test
+  - clarifies that the 107-minute aquatic figure represents structured timed exposure
+  - preserves additional ring-diving and underwater-swimming activity as narrative context outside the structured total
   - records compatibility between formal training and the 2026-07-26 household-maintenance workload
   - identifies delayed effects after two consecutive dense weeks and the household-work day as the primary W30 observation question
   - documents that the normal Sunday repository update was intentionally delayed one day for household maintenance and resumed without loss of continuity
+  - links the active evaluation plan and August collection plan
+  - records that both plans were committed before outcome access and remain binding
+  - removes wording implying that August collection-condition documentation remains due
   - carries Model Error records 041–044 forward unchanged
   - retains the August 2026 snapshot as the next major objective checkpoint
   - preserves Phase 2 status without declaring Phase 2D
@@ -288,7 +338,7 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - closes the post-travel reintegration window
   - distinguishes daily biomarker HRV from sleep HRV
   - records divided-attention pull-up control and voluntary tempo modulation as candidate record 042 evidence
-  - preserves Phase 2D as a retrospective classification
+  - preserves Phase 2D as a possible retrospective classification rather than a current declaration
 
 - Replaced the active W28 planning scaffold with a retrospective closeout:
   - emphasizes material change rather than repeating standing protocol details
@@ -296,6 +346,25 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - distinguishes internal fatigue from functional degradation
   - records source-confidence limitations and unresolved correction notes
   - carries only consequential observations into W29
+
+- Updated `reports/2026-W29.md`:
+  - clarifies that 107 minutes represents structured timed aquatic exposure
+  - identifies the contributing 30-minute and 77-minute water-treading sessions
+  - preserves approximately 30 minutes of ring diving and underwater swimming as contemporaneous narrative context
+  - excludes the additional aquatic activity from the 107-minute structured aquatic total
+  - excludes the additional aquatic activity from the 807-minute structured logged movement total
+  - preserves all original weekly calculations, recovery interpretation, model-error evidence, and phase status
+
+- Updated `reports/2026-W30.md`:
+  - replaces parallel phase language with the canonical `Phase 2 — Load Integration` label
+  - records `Consolidation / lock-in observation` as the operating substate
+  - links the active prediction-evaluation and August collection plans
+  - records both plans as committed and binding before outcome access
+  - clarifies the W29 aquatic accounting carried into the starting state
+  - adds an explicit phase boundary
+  - preserves Phase 2D-type observations as candidate evidence only
+  - preserves Phase 2D as undeclared and Phase 3 as reserved and inactive
+  - introduces no midweek interpretation, prediction scoring, or protocol change
 
 - Expanded `reports/README.md`:
   - distinguishes active observation reports from retrospective closeouts
@@ -478,6 +547,20 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - retains GitHub provider-side cleanup as pending
   - prohibits claims of universal erasure
 
+- Expanded `methodology/README.md`:
+  - converts the file from a minimal placeholder into a methodology-directory guide
+  - indexes active standing methodology
+  - indexes the active evaluation plan for records 041–044
+  - indexes the August snapshot collection plan
+  - distinguishes standing methodology, preregistered evaluation plans, preregistered collection plans, retrospective notes, and historical or superseded methodology
+  - defines active-status labels and file-header expectations
+  - defines relationships among methodology, governance, protocols, reports, data, artifacts, schemas, audits, and validation
+  - distinguishes `/methodology` from `/docs/methodology`
+  - defines source, correction, preregistration, and interpretation boundaries
+  - adds methodology file-naming, placement, linking, and maintenance guidance
+  - records the active Phase 2, open prediction, and August collection-governance state
+  - introduces no source, dataset, prediction, protocol, phase, or release change
+
 - Updated `snapshots/2025-07/2025-07 Epoch.md`:
   - identifies the blood PDF as a sanitized public derivative
   - documents the public/private source boundary
@@ -520,11 +603,23 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 
 #### Repository orientation
 
-- Updated `README.md`, `DATASET_OVERVIEW.md`, `INDEX.md`, `docs/START_HERE.md`, and `docs/NEWCOMER_PATH.md` to:
+- Updated `README.md`, `DATASET_OVERVIEW.md`, `docs/START_HERE.md`, and `docs/NEWCOMER_PATH.md` to:
   - clarify archive scope and environmental limitations
   - distinguish source artifacts, structured data, reports, snapshots, and predictions
   - expose data-quality, collection, protocol, experiment, audit, and prediction-evaluation paths
   - improve external navigation without duplicating methodology
+
+- Updated `INDEX.md`:
+  - exposes the active August collection plan
+  - exposes the active evaluation plan for records 041–044
+  - exposes `methodology/README.md` as the methodology-directory guide
+  - exposes `tools/validate_repository.py` as the local read-only validator
+  - distinguishes structured data from byte-preserved source exports
+  - distinguishes collection plans from outcome evidence
+  - adds dedicated August snapshot and repository-verification reading flows
+  - expands the archive-structure table to include source exports and tools
+  - records the current W30 active report and current Phase 2 governance posture
+  - improves navigation and representation without altering evidence or interpretation
 
 ---
 
@@ -720,6 +815,20 @@ The source-workbook narrative discrepancy remains documented rather than silentl
   Phase 3 reserved and inactive
   ```
 
+- Current open prediction state:
+
+  ```text
+  Model Error records 041–044 open and unscored
+  ```
+
+- Current August collection-governance state:
+
+  ```text
+  Evaluation plan committed and binding
+  Collection plan committed and binding before outcome access
+  Physical protocol unchanged
+  ```
+
 - Current validator model:
 
   ```text
@@ -750,6 +859,12 @@ The source-workbook narrative discrepancy remains documented rather than silentl
   - local validator addition
   - verification-guide expansion
   - versioning-policy clarification
+  - August collection-plan preregistration
+  - July 29 Wednesday audit
+  - W29 aquatic-accounting clarification
+  - W30 governance alignment
+  - methodology-directory guide expansion
+  - navigation and discoverability improvements
 
 - Current release metadata remains:
   - version: `1.0.0`
