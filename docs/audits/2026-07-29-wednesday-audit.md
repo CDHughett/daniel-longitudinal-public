@@ -566,7 +566,7 @@ to preserve consistency with the W29 report clarification.
 
 ## Result
 
-**PASS — METHODologically STRONG AND PREREGISTERED BEFORE OUTCOME ACCESS**
+**PASS — METHODOLOGICALLY STRONG AND PREREGISTERED BEFORE OUTCOME ACCESS**
 
 The new plan:
 
