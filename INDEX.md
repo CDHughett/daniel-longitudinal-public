@@ -69,6 +69,7 @@ These files define how first-time readers, skeptical observers, and technical re
 - [README.md](README.md) — repository overview
 - [LATEST.md](LATEST.md) — current state
 - [data/DATA_QUALITY_NOTES.md](data/DATA_QUALITY_NOTES.md) — known unresolved data-quality findings
+- [VERIFICATION.md](VERIFICATION.md) — artifact and whole-repository verification procedures
 
 ---
 
@@ -83,6 +84,8 @@ These documents define how the archive operates and how claims are constrained:
 - [STRUCTURAL_PRINCIPLES.md](STRUCTURAL_PRINCIPLES.md) — archive organization and evidence-preservation principles
 - [PHASE_DECLARATION_CRITERIA.md](PHASE_DECLARATION_CRITERIA.md) — requirements for retrospective phase declarations
 - [RISK_MANAGEMENT.md](RISK_MANAGEMENT.md) — operational and interpretive risk controls
+- [PHASE_MAP.md](PHASE_MAP.md) — canonical phase hierarchy and operating-substate boundaries
+- [STATE_TRANSITIONS.md](STATE_TRANSITIONS.md) — governed record of structural state changes
 
 ---
 
@@ -92,10 +95,11 @@ These documents explain what is measured, how it enters the archive, and how qua
 
 - [DATASET_OVERVIEW.md](DATASET_OVERVIEW.md) — evidence classes and dataset structure
 - [DATA_DICTIONARY.md](DATA_DICTIONARY.md) — field and terminology definitions
-- [MEASUREMENT_SOURCES.md](MEASUREMENT_SOURCES.md) — devices, providers, and capture conditions
+- [MEASUREMENT_SOURCES.md](MEASUREMENT_SOURCES.md) — devices, providers, source states, and capture conditions
 - [data/DATA_COVERAGE.md](data/DATA_COVERAGE.md) — coverage boundaries
 - [data/DATA_QUALITY_NOTES.md](data/DATA_QUALITY_NOTES.md) — unresolved quality findings and correction restrictions
 - [methodology/data-collection.md](methodology/data-collection.md) — source hierarchy, transcription, missingness, correction, and provenance
+- [methodology/anonymization.md](methodology/anonymization.md) — public-artifact sanitization and distribution-remediation rules
 - [RECOVERY_MONITORING_FRAMEWORK.md](RECOVERY_MONITORING_FRAMEWORK.md) — recovery-signal interpretation framework
 - [CITATION.cff](CITATION.cff) — citation metadata
 
@@ -104,6 +108,7 @@ These documents explain what is measured, how it enters the archive, and how qua
 ## Current State and Temporal Structure
 
 - [LATEST.md](LATEST.md) — current executive state
+- [reports/2026-W30.md](reports/2026-W30.md) — active weekly observation window
 - [PHASE_MAP.md](PHASE_MAP.md) — phase architecture
 - [STATE_TRANSITIONS.md](STATE_TRANSITIONS.md) — recorded phase and state changes
 - [EPOCH_INDEX.md](EPOCH_INDEX.md) — temporal index of major observation periods
@@ -112,6 +117,15 @@ These documents explain what is measured, how it enters the archive, and how qua
 - [VERSIONING.md](VERSIONING.md) — repository release and archive-version rules
 - [CHANGELOG.md](CHANGELOG.md) — recent structural and methodology changes
 - [docs/archive/CHANGELOG_ARCHIVE.md](docs/archive/CHANGELOG_ARCHIVE.md) — preserved historical changelog entries
+
+### Current preregistered August governance
+
+- [methodology/open_prediction_evaluation_plan_041_044.md](methodology/open_prediction_evaluation_plan_041_044.md) — scoring and admissible-evidence rules for records 041–044
+- [methodology/2026-08-snapshot-collection-plan.md](methodology/2026-08-snapshot-collection-plan.md) — August 17–18 collection conditions and outcome-access boundaries
+
+These documents were committed before August outcome access.
+
+They do not contain August results or declare a phase transition.
 
 ---
 
@@ -123,6 +137,8 @@ These documents explain what is measured, how it enters the archive, and how qua
 - [data/DATA_QUALITY_NOTES.md](data/DATA_QUALITY_NOTES.md) — known quality constraints
 - [docs/CONCEPTS.md](docs/CONCEPTS.md) — archive terminology
 - [docs/audits](docs/audits) — repository audit records
+- [VERIFICATION.md](VERIFICATION.md) — verification scope and limitations
+- [tools/validate_repository.py](tools/validate_repository.py) — local read-only repository validator
 - [GOVERNANCE.md](GOVERNANCE.md) — governing evidence and correction rules
 - [ASSUMPTIONS_AND_BOUNDARIES.md](ASSUMPTIONS_AND_BOUNDARIES.md) — claim boundaries
 
@@ -134,6 +150,8 @@ A skeptical observer should distinguish:
 - candidate evidence from resolved outcomes
 - registered predictions from ordinary planning
 - source-backed correction from unsupported rewriting
+- mechanical validation from semantic review
+- a preregistered collection plan from a result report
 
 ---
 
@@ -141,6 +159,8 @@ A skeptical observer should distinguish:
 
 - [reports](reports) — active and closed weekly reports
 - [reports/README.md](reports/README.md) — report modes, lifecycle, inclusion rules, and correction boundaries
+- [reports/2026-W29.md](reports/2026-W29.md) — most recent closed weekly report
+- [reports/2026-W30.md](reports/2026-W30.md) — current active weekly report
 
 Reports may contain:
 
@@ -151,6 +171,8 @@ Reports may contain:
 
 Reports do not replace source artifacts or canonical structured datasets.
 
+An active report does not determine its own final interpretation.
+
 ---
 
 ## Snapshots and Primary Artifacts
@@ -158,6 +180,7 @@ Reports do not replace source artifacts or canonical structured datasets.
 - [snapshots](snapshots) — primary biological, body-composition, performance, and source artifacts
 - [SNAPSHOT_LOG.md](SNAPSHOT_LOG.md) — chronological snapshot index
 - [snapshots/sleep_signal_core_v1.csv](snapshots/sleep_signal_core_v1.csv) — preserved compact sleep-signal artifact
+- [methodology/2026-08-snapshot-collection-plan.md](methodology/2026-08-snapshot-collection-plan.md) — preregistered plan for the next snapshot cycle
 
 Snapshot review should consider:
 
@@ -168,19 +191,25 @@ Snapshot review should consider:
 - checksum status
 - comparability with prior artifacts
 - direct versus derived status
+- public-original versus sanitized-derivative status
+- preregistered collection and evaluation boundaries
 
 Checksum validity confirms file identity, not biological or clinical validity.
 
+A collection plan governs capture conditions. It does not become outcome evidence.
+
 ---
 
-## Structured Data Layer
+## Structured and Source-Preserved Data Layer
 
-- [data](data) — canonical structured longitudinal datasets
+- [data](data) — canonical, curated, model-error, and source-export data layers
 - [data/sleep_longitudinal_v1.csv](data/sleep_longitudinal_v1.csv) — canonical sleep dataset
 - [data/biomarker_snapshot.csv](data/biomarker_snapshot.csv) — integrated snapshot values
 - [data/bloodwork_longitudinal.csv](data/bloodwork_longitudinal.csv) — longitudinal bloodwork structure
 - [data/epigenetic_longitudinal.csv](data/epigenetic_longitudinal.csv) — longitudinal epigenetic structure
-- [data/DATA_COVERAGE.md](data/DATA_COVERAGE.md) — structured and narrative coverage boundaries
+- [data/source_exports](data/source_exports) — immutable provider and device source-export packages
+- [data/source_exports/ringconn/2026-07-21](data/source_exports/ringconn/2026-07-21) — byte-preserved RingConn acquisition package
+- [data/DATA_COVERAGE.md](data/DATA_COVERAGE.md) — structured, narrative, and source-preserved coverage boundaries
 - [data/DATA_QUALITY_NOTES.md](data/DATA_QUALITY_NOTES.md) — known semantic-quality issues
 
 Structured data support:
@@ -191,7 +220,16 @@ Structured data support:
 - validation
 - prediction evaluation
 
+Source-preserved exports support:
+
+- provenance
+- integrity verification
+- targeted reconciliation
+- future reproducible analysis when justified
+
 A structurally valid dataset may still contain semantic or source-verification issues.
+
+A direct provider export does not automatically replace a curated dataset.
 
 ---
 
@@ -205,6 +243,7 @@ A structurally valid dataset may still contain semantic or source-verification i
 - [data/model_error/historical](data/model_error/historical) — reconstructed historical records
 - [methodology/prediction_evaluation.md](methodology/prediction_evaluation.md) — general prediction-evaluation methodology
 - [methodology/open_prediction_evaluation_plan_041_044.md](methodology/open_prediction_evaluation_plan_041_044.md) — registered evaluation plan for open records 041–044
+- [methodology/2026-08-snapshot-collection-plan.md](methodology/2026-08-snapshot-collection-plan.md) — preregistered collection plan relevant to record 043
 - [docs/methodology/prediction_to_outcome_pipeline.md](docs/methodology/prediction_to_outcome_pipeline.md) — prediction-to-outcome workflow
 - [docs/methodology/valid_prediction_criteria.md](docs/methodology/valid_prediction_criteria.md) — valid-prediction requirements
 - [docs/methodology/UDI_framework_v1.md](docs/methodology/UDI_framework_v1.md) — UDI methodology
@@ -219,6 +258,10 @@ They must remain:
 - open when evidence is insufficient
 - retained when incorrect
 
+A collection plan may protect a prediction from outcome-directed manipulation.
+
+It does not modify the prediction itself.
+
 ---
 
 ## Methodology Structure
@@ -227,14 +270,24 @@ Methodology is split across two connected layers.
 
 ### `/methodology`
 
-Core operating methodology, including:
+Core operating methodology and active preregistration artifacts:
 
-- data collection
-- source hierarchy
+- [methodology/README.md](methodology/README.md) — methodology directory guide
+- [methodology/data-collection.md](methodology/data-collection.md) — source, transcription, missingness, and correction rules
+- [methodology/anonymization.md](methodology/anonymization.md) — artifact sanitization and privacy-remediation rules
+- [methodology/prediction_evaluation.md](methodology/prediction_evaluation.md) — general prediction-evaluation rules
+- [methodology/open_prediction_evaluation_plan_041_044.md](methodology/open_prediction_evaluation_plan_041_044.md) — active evaluation plan
+- [methodology/2026-08-snapshot-collection-plan.md](methodology/2026-08-snapshot-collection-plan.md) — active snapshot collection plan
+
+This layer governs:
+
+- current collection
+- source handling
+- privacy handling
+- correction
 - prediction evaluation
-- active evaluation plans
-- correction procedures
-- missingness and provenance
+- preregistered collection conditions
+- outcome-access boundaries
 
 ### `/docs/methodology`
 
@@ -252,6 +305,8 @@ The distinction is not absolute, but it helps separate:
 - supporting analytical documentation
 
 Neither layer may override verified source evidence.
+
+A retrospective document must not silently rewrite an earlier preregistered rule.
 
 ---
 
@@ -293,22 +348,47 @@ An inactive or paused experiment must not be used as a current explanatory varia
 
 - [schemas](schemas) — file and reporting structures
 - [schemas/weekly-report-template.md](schemas/weekly-report-template.md) — weekly report template
-- [VERIFICATION.md](VERIFICATION.md) — verification procedures
+- [VERIFICATION.md](VERIFICATION.md) — artifact and repository verification procedures
+- [tools/validate_repository.py](tools/validate_repository.py) — local read-only validator
 - [docs/audits](docs/audits) — completed integrity and governance audits
 
-Validation may address:
+The validator may check:
 
-- links
-- CSV syntax
-- schema widths
+- ZIP CRC and safe paths
+- required repository structure
+- Markdown links and anchors
+- fenced-code balance
+- CSV syntax and row widths
 - date continuity
 - model-error sequence continuity
+- protected open-record status
 - checksum validity
-- metadata
-- semantic warnings
-- source reconciliation
+- release metadata
+- RingConn source-byte preservation
+- governed semantic warnings
+
+Validation is divided into:
+
+```text
+Artifact identity
+      ↓
+Repository mechanics
+      ↓
+Human semantic review
+      ↓
+Interpretation
+```
 
 Mechanical validity does not establish interpretive correctness.
+
+The validator does not:
+
+- edit files
+- infer replacement values
+- normalize provider exports
+- score predictions
+- declare phases
+- replace scheduled human audits
 
 ---
 
@@ -319,7 +399,7 @@ Mechanical validity does not establish interpretive correctness.
 
 Dashboards compress lower-level evidence.
 
-They must not introduce claims stronger than the reports, data, or artifacts they summarize.
+They must not introduce claims stronger than the reports, data, artifacts, or preregistered rules they summarize.
 
 ---
 
@@ -344,14 +424,16 @@ They represent possible future work and remain subordinate to:
 | Path | Role |
 |---|---|
 | `/snapshots` | Primary source artifacts and milestone evidence |
-| `/data` | Canonical structured longitudinal datasets |
+| `/data` | Canonical, curated, model-error, and source-export data layers |
+| `/data/source_exports` | Byte-preserved provider and device exports |
 | `/reports` | Active collection and closed retrospective interpretation |
 | `/data/model_error` | Registered predictions, outcomes, and calibration |
-| `/methodology` | Core collection and evaluation rules |
+| `/methodology` | Core collection, privacy, evaluation, and preregistration rules |
 | `/docs/methodology` | Extended analytical methodology |
 | `/protocols` | Active, historical, and superseded protocols |
 | `/experiments` | Defined intervention-specific experiments |
 | `/schemas` | Templates and structural definitions |
+| `/tools` | Read-only local validation and future archive utilities |
 | `/dashboards` | Derived and compressed views |
 | `/docs/audits` | Repository integrity and governance audits |
 | `/roadmap` | Planned future work |
@@ -364,12 +446,13 @@ They represent possible future work and remain subordinate to:
 Use:
 
 - `/snapshots` for **primary evidence**
-- `/data` for **structured longitudinal tracking**
+- `/data` for **structured longitudinal tracking and preserved source exports**
 - `/reports` for **system behavior across time**
 - `/data/model_error` for **prediction versus observed outcome review**
-- `/methodology` for **collection and evaluation rules**
+- `/methodology` for **collection, privacy, preregistration, and evaluation rules**
 - `/protocols` for **protocol history and status**
 - `/experiments` for **experiment state and provenance**
+- `/tools` for **local mechanical validation**
 - `/docs` for **observer guidance, concepts, audits, and extended methodology**
 
 ---
@@ -403,7 +486,7 @@ Relevant Closed Report
   ↓
 Canonical Structured Dataset
   ↓
-Source Snapshot
+Source Snapshot or Source Export
   ↓
 Data-Quality Notes
   ↓
@@ -417,7 +500,9 @@ Governance and Methodology
 ```text
 data/model_error/model_error_gap_v1.csv
   ↓
-Applicable Evaluation Methodology
+Applicable Evaluation Plan
+  ↓
+Applicable Collection Plan
   ↓
 Contemporaneous Reports and Notes
   ↓
@@ -427,6 +512,66 @@ Closure Record
   ↓
 UDI and Calibration Updates
 ```
+
+---
+
+## Recommended August Snapshot Review Flow
+
+Before results:
+
+```text
+methodology/open_prediction_evaluation_plan_041_044.md
+  ↓
+methodology/2026-08-snapshot-collection-plan.md
+  ↓
+Ordinary Active Observation
+  ↓
+Source-Artifact Capture
+```
+
+After results become available:
+
+```text
+Complete Source Artifact Set
+  ↓
+Privacy and Checksum Review
+  ↓
+Structured Transcription
+  ↓
+Collection-Condition Comparison
+  ↓
+Registered Model-Error Evaluation
+  ↓
+Retrospective Snapshot Interpretation
+  ↓
+Separate Phase Review
+```
+
+No result should bypass the preregistered collection and evaluation layers.
+
+---
+
+## Recommended Verification Flow
+
+```text
+Download or Pull Current Repository
+  ↓
+Run tools/validate_repository.py
+  ↓
+Review Errors
+  ↓
+Review Governed Warnings
+  ↓
+Perform Human Semantic Spot Check
+  ↓
+Record Formal Audit When Scheduled or Materially Required
+```
+
+See:
+
+- [VERIFICATION.md](VERIFICATION.md)
+- [tools/validate_repository.py](tools/validate_repository.py)
+- [docs/audits](docs/audits)
 
 ---
 
@@ -493,6 +638,7 @@ Relevant documents:
 - [GOVERNANCE.md](GOVERNANCE.md)
 - [methodology/data-collection.md](methodology/data-collection.md)
 - [data/DATA_QUALITY_NOTES.md](data/DATA_QUALITY_NOTES.md)
+- [VERIFICATION.md](VERIFICATION.md)
 - [CHANGELOG.md](CHANGELOG.md)
 
 ---
@@ -509,6 +655,7 @@ This repository is organized to preserve:
 - prediction accountability
 - longitudinal readability
 - evidence-first evaluation
+- reproducible mechanical validation
 - distinction among artifacts, datasets, reports, dashboards, predictions, protocols, experiments, and governance
 
 Where uncertainty exists:
@@ -518,6 +665,8 @@ Where uncertainty exists:
 - predictions remain open when necessary
 - candidate evidence remains provisional
 - phase declarations wait for retrospective criteria
+- preregistered rules remain fixed through outcome review
+- mechanical validation does not substitute for semantic judgment
 - no claim extends beyond the recorded single-subject archive
 
 ---
@@ -528,8 +677,10 @@ Where uncertainty exists:
 - **Environmental posture:** Defined protocol constraints with incomplete control
 - **Interpretation:** Retrospective and evidence-bound
 - **Prediction layer:** Formally registered and separately governed
+- **August collection governance:** Preregistered before outcome access
 - **Correction model:** Source-backed, narrow, and traceable
 - **Phase model:** Retrospectively declared
+- **Validation model:** Local read-only mechanical validation followed by human semantic review
 - **Public scope:** Bounded single-subject archive
 - **Release posture:** Versioned and DOI-preserved
 
@@ -537,17 +688,37 @@ Where uncertainty exists:
 
 ## Version Note
 
-This index was aligned on 2026-07-18 with the repository’s current:
+This index was aligned on 2026-07-29 with the repository’s current:
 
-- governance architecture
-- data-quality layer
-- data-collection methodology
-- registered prediction framework
-- protocol-status distinctions
-- experiment-status distinctions
-- incomplete environmental-control boundary
-- observer-evaluation structure
+- Phase 2 operating state
+- W30 active observation window
+- August snapshot preregistration
+- open prediction evaluation plan
+- source-preserved RingConn layer
+- methodology-directory structure
+- local repository validator
+- expanded verification workflow
+- privacy and correction boundaries
+- observer-evaluation paths
 
-The revision changes navigation and representation only.
+The revision:
 
-It does not alter any source value, protocol exposure, report observation, prediction record, closed outcome, or phase status.
+- exposes the August collection plan centrally
+- exposes the local validator centrally
+- links the methodology directory guide
+- distinguishes structured data from source-preserved exports
+- distinguishes collection plans from outcome evidence
+- adds dedicated August snapshot and verification reading flows
+- improves navigation and representation only
+
+It does not alter:
+
+- any source value
+- any canonical dataset value
+- any protocol exposure
+- any report observation
+- any prediction record
+- any scoring threshold
+- any closed outcome
+- any phase status
+- any release metadata
