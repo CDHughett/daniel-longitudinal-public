@@ -12,14 +12,16 @@ Archive DOI: https://doi.org/10.5281/zenodo.20815612
 ## Current State
 
 - **Phase:** Phase 2 — Load Integration
+- **Operating substate:** Consolidation / lock-in observation
 - **Active window:** 2026-W30
 - **Prior window:** 2026-W29 closed
 - **System state:** Stable
-- **Trajectory posture:** Phase 2 consolidation with repeated cross-context adaptable-capacity signals
+- **Trajectory posture:** Repeated cross-context adaptable-capacity signals under continued Phase 2 consolidation
 - **Archive posture:** Public, governed, versioned, and retrospectively interpreted, with prospective predictions isolated in the model-error layer
 - **Sleep dataset current through:** 2026-07-26
 - **Open model-error records:** 041–044
 - **Next major artifact:** August 2026 biological and performance snapshot
+- **August collection governance:** Preregistered before outcome access
 
 No formal Phase 2D transition has been declared.
 
@@ -34,8 +36,9 @@ Observed:
 - B1 and Load Integration were completed on all seven days
 - B1 totaled 385 minutes
 - Load Integration totaled 315 minutes
-- recorded recreational aquatic work added 107 minutes
-- total logged training and aquatic exposure reached 807 minutes
+- structured timed aquatic exposure added 107 minutes
+- additional ring-diving and underwater-swimming activity was preserved as narrative context and excluded from the structured total
+- total structured logged training and aquatic exposure reached 807 minutes
 - morning bodyweight averaged approximately 232.9 lb
 - daily biomarker HRV averaged approximately 64.6 ms
 - sleep HRV averaged approximately 70.4 ms
@@ -91,6 +94,40 @@ An isolated wearable deviation, lower-expression session, or disrupted night wil
 
 ---
 
+## August Snapshot Governance
+
+The August 17–18 biological and performance collection window is governed by two committed preregistration artifacts:
+
+- [`methodology/open_prediction_evaluation_plan_041_044.md`](methodology/open_prediction_evaluation_plan_041_044.md)
+- [`methodology/2026-08-snapshot-collection-plan.md`](methodology/2026-08-snapshot-collection-plan.md)
+
+These documents were committed before outcome access and remain binding for:
+
+- the primary Model Error 043 endpoint
+- the May 2026 primary comparison baseline
+- primary-versus-supplemental evidence hierarchy
+- representative-state collection conditions
+- fasting and hydration documentation
+- missing, delayed, invalid, or rescheduled test handling
+- discordant-result handling
+- source-artifact preservation
+- privacy review
+- outcome-access boundaries
+- phase and protocol protections
+
+The collection plan does not:
+
+- predict the August result
+- alter records 041–044
+- modify scoring thresholds
+- authorize protocol progression
+- declare Phase 2D
+- create an August release automatically
+
+The physical protocol remains unchanged.
+
+---
+
 ## Archive State
 
 | Domain | Current Public Status |
@@ -100,6 +137,7 @@ An isolated wearable deviation, lower-expression session, or disrupted night wil
 | Interpretation Mode | Retrospective and artifact-bound |
 | Prediction Mode | Prospectively registered and isolated in the model-error layer |
 | Phase Context | Phase 2 — Load Integration |
+| Operating Substate | Consolidation / lock-in observation |
 | Current Window | 2026-W30 active |
 | Prior Window | 2026-W29 closed |
 | Training Structure | Stable B1 anchor with active Load Integration |
@@ -108,6 +146,7 @@ An isolated wearable deviation, lower-expression session, or disrupted night wil
 | Bodyweight Context | Approximately 229–235 lb across training, fluid, GI-timing, travel, and scale conditions |
 | Biomarker Coverage | February and May 2026 integrated multi-domain snapshots |
 | Prediction Layer | Model Error records 041–044 open |
+| August Collection Governance | Evaluation and collection plans committed before outcome access |
 | Archive Integrity | Maintained |
 | Next Major Artifact | August 2026 biological and performance snapshot |
 
@@ -129,11 +168,15 @@ Current Phase 2 evidence includes:
 - continued protocol restraint despite favorable observations
 - preservation of ordinary lower-expression sessions without narrative inflation
 
-These characteristics increasingly resemble early Phase 2D-type expression.
+These characteristics increasingly resemble Phase 2D-type expression.
 
 They remain candidate characteristics rather than a formal phase classification.
 
-Phase advancement requires continued cross-context recurrence, preserved recovery, broader portability, and support from the August objective snapshot.
+Phase advancement requires continued cross-context recurrence, preserved recovery, broader portability, and separate retrospective review under the applicable declaration criteria.
+
+The August objective snapshot may provide supporting transition evidence.
+
+It cannot independently declare Phase 2D.
 
 ---
 
@@ -192,7 +235,12 @@ Scheduled collection:
 
 Training, nutrition, recovery, hydration, supplementation, and collection conditions will remain ordinary rather than snapshot-optimized.
 
-Registered scoring rules and collection-condition documentation remain required before outcome review.
+The scoring and collection rules are committed and binding before outcome review:
+
+- [`Open Prediction Evaluation Plan 041–044`](methodology/open_prediction_evaluation_plan_041_044.md)
+- [`August 2026 Snapshot Collection Plan`](methodology/2026-08-snapshot-collection-plan.md)
+
+The TruDiagnostic comparison remains the primary domain. DEXA, VO₂ max, Bod Pod, bodyweight, recovery, and subjective state remain supplemental.
 
 **Status:** Open
 
@@ -210,6 +258,8 @@ Week 29 added supportive evidence because favorable observations did not trigger
 - premature phase declaration
 
 A one-day repository-update delay caused by household maintenance was explicitly documented and resumed without loss of continuity.
+
+The August collection plan adds an additional governance boundary by preregistering ordinary conditions and prohibiting snapshot-directed manipulation.
 
 **Status:** Open
 
@@ -242,13 +292,15 @@ Active but non-disruptive constraints include:
 
 The repository operates as a continuous public archive:
 
-raw artifacts  
-→ governed source preservation  
-→ structured datasets  
-→ retrospective reports  
-→ phase context  
-→ registered prediction evaluation  
+```text
+raw artifacts
+→ governed source preservation
+→ structured datasets
+→ retrospective reports
+→ phase context
+→ registered prediction evaluation
 → model correction
+```
 
 Evaluation is based on:
 
@@ -273,11 +325,15 @@ Completed:
 - 2026-W30 weekly report initialized
 - sleep dataset extended through 2026-07-26
 - Week 29 recovery and training metrics verified
+- Week 29 structured aquatic accounting identified as 107 timed minutes
+- additional aquatic activity retained as narrative context outside the structured total
 - daily and sleep-tab cardiovascular metrics kept distinct
 - low-confidence REM observations retained without inferred replacement values
 - records 041–044 carried forward unchanged
 - Phase 2 status preserved
 - delayed weekly repository update resumed after completion of household maintenance
+- August scoring rules preregistered
+- August collection conditions preregistered before outcome access
 
 Current work:
 
@@ -287,7 +343,7 @@ Current work:
 - continued passive collection of reduced-overhead and adaptable-execution evidence
 - preservation of ordinary and below-peak session descriptions
 - maintenance of the Model Error 043 scoring framework
-- documentation of August collection conditions
+- preservation of the committed August collection conditions
 - August artifact-cycle preparation
 - routine archive stewardship
 
@@ -309,11 +365,14 @@ Current work:
 - **Reports:** [reports](reports)
 - **Snapshots:** [snapshots](snapshots)
 - **Methodology:** [METHODOLOGY_AND_CONTROLS.md](METHODOLOGY_AND_CONTROLS.md)
+- **Methodology Directory:** [methodology](methodology)
 - **Data Collection:** [methodology/data-collection.md](methodology/data-collection.md)
 - **Prediction Evaluation:** [methodology/prediction_evaluation.md](methodology/prediction_evaluation.md)
 - **Open Prediction Plan:** [methodology/open_prediction_evaluation_plan_041_044.md](methodology/open_prediction_evaluation_plan_041_044.md)
+- **August Collection Plan:** [methodology/2026-08-snapshot-collection-plan.md](methodology/2026-08-snapshot-collection-plan.md)
 - **Data Dictionary:** [DATA_DICTIONARY.md](DATA_DICTIONARY.md)
 - **Measurement Sources:** [MEASUREMENT_SOURCES.md](MEASUREMENT_SOURCES.md)
+- **Verification:** [VERIFICATION.md](VERIFICATION.md)
 - **Changelog:** [CHANGELOG.md](CHANGELOG.md)
 
 ---
