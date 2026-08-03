@@ -108,7 +108,8 @@ These documents explain what is measured, how it enters the archive, and how qua
 ## Current State and Temporal Structure
 
 - [LATEST.md](LATEST.md) — current executive state
-- [reports/2026-W30.md](reports/2026-W30.md) — active weekly observation window
+- [reports/2026-W31.md](reports/2026-W31.md) — active weekly observation window
+- [reports/2026-W30.md](reports/2026-W30.md) — most recent closed weekly report
 - [PHASE_MAP.md](PHASE_MAP.md) — phase architecture
 - [STATE_TRANSITIONS.md](STATE_TRANSITIONS.md) — recorded phase and state changes
 - [EPOCH_INDEX.md](EPOCH_INDEX.md) — temporal index of major observation periods
@@ -159,8 +160,8 @@ A skeptical observer should distinguish:
 
 - [reports](reports) — active and closed weekly reports
 - [reports/README.md](reports/README.md) — report modes, lifecycle, inclusion rules, and correction boundaries
-- [reports/2026-W29.md](reports/2026-W29.md) — most recent closed weekly report
-- [reports/2026-W30.md](reports/2026-W30.md) — current active weekly report
+- [reports/2026-W30.md](reports/2026-W30.md) — most recent closed weekly report
+- [reports/2026-W31.md](reports/2026-W31.md) — current active weekly report
 
 Reports may contain:
 
@@ -688,10 +689,12 @@ Where uncertainty exists:
 
 ## Version Note
 
-This index was aligned on 2026-07-29 with the repository’s current:
+This index was aligned on 2026-08-03 with the repository’s current:
 
 - Phase 2 operating state
-- W30 active observation window
+- W30 retrospective closeout
+- W31 active observation window
+- canonical sleep coverage through 2026-08-02
 - August snapshot preregistration
 - open prediction evaluation plan
 - source-preserved RingConn layer
@@ -703,13 +706,18 @@ This index was aligned on 2026-07-29 with the repository’s current:
 
 The revision:
 
-- exposes the August collection plan centrally
-- exposes the local validator centrally
-- links the methodology directory guide
+- advances the active weekly-report link from W30 to W31
+- identifies W30 as the most recent closed weekly report
+- aligns the temporal and reports sections with the current repository state
+- advances the index alignment date to 2026-08-03
+- records canonical sleep coverage through 2026-08-02
+- preserves central access to the August collection plan
+- preserves central access to the local validator
+- preserves the methodology directory guide
 - distinguishes structured data from source-preserved exports
 - distinguishes collection plans from outcome evidence
-- adds dedicated August snapshot and verification reading flows
-- improves navigation and representation only
+- preserves the dedicated August snapshot and verification reading flows
+- improves navigation and current-state representation only
 
 It does not alter:
 
