@@ -45,7 +45,7 @@ Observed:
 - total formal training reached 700 minutes
 - no additional recreational conditioning duration was added
 - morning bodyweight averaged approximately 232.7 lb
-- daily biomarker HRV averaged approximately 62.1 ms
+- daily biomarker HRV averaged approximately 62.0 ms
 - sleep HRV averaged approximately 70.4 ms
 - resting heart rate averaged approximately 47.0 bpm
 - sleeping heart rate averaged approximately 50.9 bpm
@@ -81,7 +81,7 @@ Load Integration remained ambient with automatic-feeling bar contact after:
 - grocery shopping
 - minimal downtime before the strength session
 
-Daily HRV softened during the second half of the week, reaching a four-day cluster of 57, 56, 57, and 57 ms.
+Daily HRV softened during the second half of the week, reaching a four-day cluster of 57, 55, 57, and 57 ms.
 
 That pattern did not converge with:
 
@@ -448,7 +448,7 @@ Completed:
 - Week 30 recovery and training metrics verified
 - 700 formal Week 30 training minutes documented
 - Week 30 morning bodyweight average verified at approximately 232.7 lb
-- Week 30 daily biomarker HRV average verified at approximately 62.1 ms
+- Week 30 daily biomarker HRV average verified at approximately 62.0 ms
 - Week 30 sleep HRV average verified at approximately 70.4 ms
 - Week 30 total sleep average verified at approximately 7 hours 41 minutes
 - daily and sleep-tab cardiovascular metrics kept distinct
