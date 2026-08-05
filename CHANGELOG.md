@@ -246,6 +246,7 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - `2026-07-22`
   - `2026-07-25`
   - `2026-07-29`
+  - `2026-08-05`
 
 - The July audits collectively:
   - verified repository structure, links, Markdown integrity, CSV parsing, checksums, report continuity, prediction continuity, and release metadata
@@ -310,6 +311,28 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - records local validator result of zero errors, two governed warnings, and overall `PASS`
   - recommends no canonical-data, source-export, privacy-artifact, prediction, protocol, phase, or release modification
 
+- Added `docs/audits/2026-08-05-wednesday-audit.md`:
+  - audits `daniel-longitudinal-public-main (35).zip`
+  - records ZIP SHA-256 `083a2014d86dab927222113fbffa8b39823f2097a3a2bf315780f6c90afabfb9`
+  - confirms safe ZIP paths, coherent repository structure, and no zero-byte or exact duplicate files
+  - confirms 124 Markdown files and 737 valid internal references
+  - confirms all 11 CSV files parse with consistent row widths
+  - confirms canonical sleep continuity through `2026-08-02`
+  - reconciles W30 sleep metrics against the canonical sleep dataset
+  - reconciles seven B1 sessions, seven Load Integration sessions, and 700 formal training minutes
+  - confirms W30 closure and W31 initialization
+  - confirms 29 of 29 registered checksums
+  - confirms RingConn source-byte and CRLF preservation
+  - confirms current privacy and release-metadata integrity
+  - confirms records 041–044 remain open, unscored, and unchanged
+  - confirms Phase 2 remains active, Phase 2D remains undeclared, and Phase 3 remains reserved
+  - records direct RingConn source review of the July 31 HRV discrepancy
+  - distinguishes July 31 daily-average HRV of `55 ms` from sleep HRV of `67 ms`
+  - identifies the private workbook’s structured `56 ms` and narrative `68 ms` daily-HRV values as incorrect
+  - authorizes correction of the W30 weekly daily-HRV average from `62.1 ms` to `62.0 ms`
+  - confirms that the correction does not alter canonical sleep, weekly interpretation, prediction status, protocol state, phase status, or release metadata
+  - records local validator result of zero errors, two governed warnings, and overall `PASS`
+
 #### Public archive and navigation
 
 - Added Zenodo DOI and citation support across `README.md`, `LATEST.md`, and `CITATION.cff`.
@@ -333,7 +356,7 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - records approximately 21.14 miles of B1 aerobic work
   - records no additional structured recreational-conditioning duration during W30
   - records W30 morning bodyweight averaging approximately 232.7 lb
-  - records daily biomarker HRV averaging approximately 62.1 ms
+  - records daily biomarker HRV averaging approximately 62.0 ms
   - records sleep HRV averaging approximately 70.4 ms
   - records resting heart rate averaging approximately 47.0 bpm
   - records sleeping heart rate averaging approximately 50.9 bpm
@@ -389,6 +412,11 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - preserves residual grip attention rather than declaring complete trait-level absence
   - records strong execution under compressed scheduling on `2026-08-01`
   - preserves the lower late-week daily-HRV cluster without dismissing it or converting it into confirmed recovery failure
+  - corrects July 31 daily-average HRV from the private workbook’s `56 ms` transcription to the direct-source value of `55 ms`
+  - rejects the private workbook narrative’s incompatible `68 ms` daily-HRV value
+  - preserves July 31 sleep HRV as a separate `67 ms` measurement
+  - corrects the W30 weekly daily-biomarker HRV average from `62.1 ms` to `62.0 ms`
+  - records that the narrow correction does not change the W30 recovery interpretation
   - records candidate evidence relevant to Model Error records 041, 042, and 044
   - preserves ordinary behavioral and physiological variability
   - preserves the existing protocol without progression or preemptive reduction
@@ -668,6 +696,69 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 
 ### Fixed
 
+#### W30 July 31 daily-HRV transcription
+
+- Corrected the July 31 daily-average HRV used by `reports/2026-W30.md`:
+
+  ```text
+  Private workbook structured value:
+  56 ms
+
+  Private workbook narrative value:
+  68 ms
+
+  Direct RingConn Vital Signs value:
+  55 ms
+  ```
+
+- Direct RingConn source review separately confirmed:
+
+  ```text
+  July 31 sleep HRV:
+  67 ms
+  ```
+
+- Preserved daily-average HRV and sleep HRV as distinct measurement fields.
+
+- Corrected the W30 daily-biomarker HRV sequence to:
+
+  ```text
+  72, 72, 64, 57, 55, 57, 57
+  ```
+
+- Corrected the W30 weekly daily-biomarker HRV average:
+
+  ```text
+  62.1 ms
+  →
+  62.0 ms
+  ```
+
+- Classified the correction as:
+
+  - source-backed
+  - field-specific
+  - semantically confirmed
+  - narrow
+  - traceable
+  - non-interpretive
+  - unrelated to the August outcome
+  - not a canonical sleep correction
+  - not a prediction revision
+  - not a protocol or phase event
+
+- The correction did not change:
+
+  - July 31 sleep HRV
+  - W30 sleep-HRV average
+  - canonical sleep data
+  - W30 training totals
+  - W30 recovery interpretation
+  - Model Error status
+  - protocol exposure
+  - phase status
+  - release metadata
+
 #### Public blood-artifact sanitization
 
 - Replaced `snapshots/2025-07/2025-07-full-blood-panel.pdf` with a sanitized public derivative:
@@ -912,7 +1003,10 @@ The source-workbook narrative discrepancy remains documented rather than silentl
   - W31 observation-window initialization
   - W30 canonical sleep append through `2026-08-02`
   - `LATEST.md` advancement from W30 to W31
-  
+  - August 5 Wednesday audit
+  - source-backed July 31 daily-HRV correction
+  - W30 weekly daily-HRV average correction from `62.1 ms` to `62.0 ms`
+
 - Current release metadata remains:
   - version: `1.0.0`
   - release date: `2026-06-23`
