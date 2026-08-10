@@ -13,28 +13,30 @@ Archive DOI: https://doi.org/10.5281/zenodo.20815612
 
 - **Phase:** Phase 2 — Load Integration
 - **Operating substate:** Consolidation / lock-in observation
-- **Active window:** 2026-W31
-- **Prior window:** 2026-W30 closed
-- **System state:** Stable
-- **Trajectory posture:** Ordinary availability, reduced operator overhead, and repeated cross-context adaptable-capacity signals under continued Phase 2 consolidation
-- **Recovery posture:** Functionally preserved with a lower late-W30 daily-HRV cluster retained for continued observation
+- **Active window:** 2026-W32
+- **Prior window:** 2026-W31 closed
+- **System state:** Stable with measurable autonomic recovery compression and preserved function
+- **Trajectory posture:** Continued behavioral and motor consolidation with reduced operator overhead, repeated trait-like expression, and preserved cross-context availability
+- **Recovery posture:** Functionally preserved despite a broader W31 pattern of lower HRV and higher heart-rate measures relative to W30
 - **Archive posture:** Public, governed, versioned, and retrospectively interpreted, with prospective predictions isolated in the model-error layer
-- **Sleep dataset current through:** 2026-08-02
+- **Sleep dataset current through:** 2026-08-09
 - **Open model-error records:** 041–044
 - **Next major artifact:** August 2026 biological and performance snapshot
 - **August collection governance:** Preregistered before outcome access
 
 No formal Phase 2D transition has been declared.
 
+The Week 31 autonomic-performance divergence remains an observational carryforward question rather than a retrospectively created prediction.
+
 ---
 
-## Week 30 Closeout
+## Week 31 Closeout
 
-Week 30 tested whether standard execution would remain available after:
+Week 31 tested whether the lower late-Week-30 daily-HRV pattern would resolve naturally while the installed protocol remained unchanged.
 
-- two consecutive complete B1 and Load Integration weeks
-- the recreational and ordinary-life density accumulated during Weeks 28 and 29
-- the high-background-movement household-maintenance day that closed Week 29
+It did not simply disappear.
+
+Instead, the recovery signal broadened while function remained preserved.
 
 Observed:
 
@@ -43,129 +45,160 @@ Observed:
 - B1 totaled 385 minutes and approximately 21.14 miles
 - Load Integration totaled 315 minutes
 - total formal training reached 700 minutes
-- no additional recreational conditioning duration was added
-- morning bodyweight averaged approximately 232.7 lb
-- daily biomarker HRV averaged approximately 62.0 ms
-- sleep HRV averaged approximately 70.4 ms
-- resting heart rate averaged approximately 47.0 bpm
-- sleeping heart rate averaged approximately 50.9 bpm
-- total sleep averaged approximately 7 hours 41 minutes
+- morning bodyweight averaged approximately 235.1 lb
+- daily biomarker HRV averaged approximately 57.3 ms
+- sleep HRV averaged approximately 60.1 ms
+- resting heart rate averaged approximately 51.4 bpm
+- sleeping heart rate averaged approximately 56.4 bpm
+- daily average heart rate averaged approximately 65.9 bpm
+- total sleep averaged approximately 7 hours 39 minutes
+- time in bed averaged approximately 8 hours 21 minutes
 - no pain, GI disruption, mood instability, recovery intervention, compensatory workload, or protocol reduction occurred
 
-No coherent delayed functional failure emerged after the prior household workload or the combined density of the preceding observation windows.
+Compared with Week 30:
 
-The most meaningful Week 30 change was reduced operator overhead.
+- daily biomarker HRV declined from approximately 62.0 to 57.3 ms
+- sleep HRV declined from approximately 70.4 to 60.1 ms
+- resting heart rate increased from approximately 47.0 to 51.4 bpm
+- sleeping heart rate increased from approximately 50.9 to 56.4 bpm
+- total sleep remained broadly stable
 
-Several sessions blended sufficiently into ordinary daily activity that they were logged retrospectively because they produced little psychological salience. This was not treated as independent proof of trait-level execution. Its relevance came from convergence with:
+Several nights also contained localized or early-night cardiovascular elevations that later resolved.
 
-- complete prescribed work
-- stable movement quality
-- low perceived effort
-- absent pain
-- preserved initiation
-- no compensatory mechanics
-- stable mood and GI state
-- continued same-day B1 and Load Integration compatibility
+The recovery pattern therefore became more coherent than the isolated late-Week-30 HRV cluster.
 
-Grip and forearm capacity became the most visible local developmental variable.
+It did not converge with demonstrated functional failure.
 
-Grip was initially identified as a plausible remaining constraint, but no specialized intervention was introduced. It then became solid and subsequently stronger inside the unchanged protocol. Minor residual cognitive attention toward grip remained visible, preserving the distinction between improvement and fully absent trait-level awareness.
+The behavioral and mechanical layer remained favorable.
 
-The strongest portability event occurred on 2026-08-01.
+Relevant Week 31 observations included:
 
-Load Integration remained ambient with automatic-feeling bar contact after:
+- background B1 execution
+- repeated ambient Load Integration execution
+- trait-level pull-ups across all four sets on 2026-08-04
+- controlled dead-hang initiation without meaningful cognitive overhead
+- automatic bar organization and full positional ownership on 2026-08-05
+- trait-level B1 and Load Integration execution on 2026-08-06
+- grip improvement without specialized intervention
+- unsolicited recognition of grip strength during final dead hangs
+- preserved ambient execution during one of the least favorable autonomic portions of the week
+- high, owned, ambient Load Integration performance on 2026-08-08
+- ambient B1 followed by substantial yard work and trait-level Load Integration on 2026-08-09
+- preserved strict pull-up execution during spontaneous social observation, attempted imitation, and direct side-by-side comparison
 
-- subjectively weaker sleep
+The 2026-08-09 event was particularly informative because the movement standard remained available after:
+
 - morning B1
-- mobility work
-- grocery shopping
-- minimal downtime before the strength session
+- substantial intervening front- and back-yard work
+- accumulated weekly training
+- spontaneous external attention
+- attempted replication of the stricter technique
+- direct side-by-side execution
 
-Daily HRV softened during the second half of the week, reaching a four-day cluster of 57, 55, 57, and 57 ms.
+The event was not a planned test.
 
-That pattern did not converge with:
+Its value comes from natural recurrence under increased contextual demand.
 
-- sustained resting-heart-rate elevation
-- sustained sleeping-heart-rate elevation
-- pain
-- mood or GI change
-- reduced readiness
-- initiation resistance
-- impaired aerobic control
-- technical degradation
-- declining grip
-- protocol interruption
-- need for recovery intervention
+Grip also changed meaningfully across the Week 30–31 transition.
+
+During Week 30, grip had been identified as a plausible locally salient constraint.
+
+No direct grip intervention was introduced.
+
+By Week 31:
+
+- grip was less cognitively prominent
+- full-session ownership increased
+- final-set dead hangs remained intact
+- an unrelated observer spontaneously identified grip strength as notable
+
+This supports favorable local consolidation without proving a single mechanism or permanent adaptation.
+
+Week 31 therefore produced a material divergence:
+
+the autonomic recovery layer became less favorable while the functional-performance layer remained intact and, in several respects, improved.
+
+The correct interpretation is not that recovery metrics became irrelevant.
+
+It is also not that preserved performance proves zero accumulated cost.
 
 The recovery floor remained functionally preserved.
 
-The lower HRV pattern remains visible as an unresolved autonomic observation rather than being dismissed or converted into a confirmed recovery failure.
-
-Week 30 extended repeated candidate counter-evidence relevant to Model Error 042 through ordinary repetition rather than a highly visible performance demonstration.
+The physiological cost of the uninterrupted accumulation block may nevertheless be increasing.
 
 Records 041–044 remain open and unchanged.
 
+No retrospective Model Error record was created from the Week 31 divergence.
+
 ---
 
-## Active Observation — 2026-W31
+## Active Observation — 2026-W32
 
-Week 31 is focused on whether the lower late-W30 daily-HRV pattern:
+Week 32 is the final full ordinary observation window before the August 17–18 biological and performance snapshot.
 
-- rebounds naturally
-- stabilizes as a lower but functionally compatible range
-- continues declining
-- begins converging with broader evidence of accumulated cost
+The primary question is whether the Week 31 autonomic pattern:
+
+- rebounds toward the preceding range
+- stabilizes at a softer but functionally compatible level
+- continues diverging without functional change
+- begins converging with subjective or performance deterioration
 
 Primary observation targets:
 
 - daily HRV trajectory
-- agreement or disagreement between daily and sleep HRV
-- resting-heart-rate behavior
-- sleeping-heart-rate behavior
-- sleep onset, duration, continuity, efficiency, and subjective restoration
-- willingness and ease of beginning B1 and Load Integration
-- movement and grip quality
+- sleep HRV trajectory
+- resting-heart-rate trajectory
+- sleeping-heart-rate trajectory
+- recurrence or resolution of localized overnight cardiovascular elevations
+- total sleep
+- sleep continuity
+- sleep efficiency
+- subjective restoration
+- willingness and ease of beginning B1
+- willingness and ease of beginning Load Integration
+- B1 cardiovascular control
+- perceived exertion
+- movement quality
+- grip salience
+- positional control
 - pain or mechanical signaling
-- mood, GI, appetite, and energy stability
-- household, relational, recreational, and repository availability
+- mood and emotional stability
+- GI and stomach state
+- ordinary-life availability
 - need for unplanned workload reduction or recovery intervention
-- reliability of documentation as sessions become less psychologically salient
-- natural recurrence of reduced-overhead and adaptable execution
 
 Standard B1 and Load Integration remain unchanged.
 
-No new workload, progression, performance test, recovery experiment, or specialized grip intervention is planned.
+Week 32 is not:
 
-Grip remains an observed local variable rather than a new training objective.
+- a taper
+- a peak week
+- an overload week
+- a recovery experiment
+- a performance-testing week
 
-The following will not be added during the active window:
+No new workload, direct grip programming, deliberate performance test, or snapshot-directed intervention is planned.
 
-- extra dead hangs
-- farmer’s carries
-- rice-bucket work
-- crushing-grip work
-- high-volume pull-up sessions
-- direct forearm programming
-- grip-strength testing
-
-Recent successful variations will not be converted into required tests.
+Recent successful contexts will not be deliberately reproduced.
 
 This includes:
 
 - compressed scheduling
-- training after subjectively weaker sleep
+- training after weaker sleep
 - automatic bar contact
 - conversational or divided-attention execution
 - positional pull-up control
 - voluntary tempo changes
-- no-chalk execution
 - prolonged aquatic work
-- training after cognitive or physical work
-- stronger grip expression
+- yard-work-plus-training sequences
+- spontaneous social comparison
+- direct observation of pull-up technique
 
-An isolated wearable deviation, lower-expression session, delayed log, or disrupted night will not be interpreted as failure without repeated or functional corroboration.
+Their evidentiary value depends on natural recurrence.
 
-Continued strong execution will not be used to dismiss softer recovery signals.
+Strong performance will not be used to dismiss softer physiological recovery signals.
+
+Softer physiological recovery signals will not independently command protocol change without broader functional convergence.
 
 ---
 
@@ -203,13 +236,21 @@ The collection plan does not:
 - modify scoring thresholds
 - authorize protocol progression
 - declare Phase 2D
-- create an August release automatically
+- require a release automatically
+
+Week 32 remains part of the representative-state exposure period.
 
 Training, nutrition, hydration, supplementation, sleep opportunity, recovery practices, and recreational activity should remain ordinary.
 
-Do not reduce normal work to create an artificially fresh testing state.
+Do not:
 
-Do not increase work to manufacture a stronger adaptation signal.
+- reduce normal work to create an artificially fresh testing state
+- increase work to manufacture a stronger adaptation signal
+- chase a higher HRV
+- chase a lower resting heart rate
+- intentionally manipulate bodyweight for DEXA or Bod Pod
+- alter hydration to produce a preferred body-composition result
+- alter the installed protocol because the snapshot is approaching
 
 The snapshot should evaluate the biology produced by the installed system rather than a short-term optimization strategy.
 
@@ -227,12 +268,12 @@ The physical protocol remains unchanged.
 | Prediction Mode | Prospectively registered and isolated in the model-error layer |
 | Phase Context | Phase 2 — Load Integration |
 | Operating Substate | Consolidation / lock-in observation |
-| Current Window | 2026-W31 active |
-| Prior Window | 2026-W30 closed |
+| Current Window | 2026-W32 active |
+| Prior Window | 2026-W31 closed |
 | Training Structure | Stable B1 anchor with active Load Integration |
-| Recovery State | Functionally preserved; lower late-W30 daily HRV remains under observation |
-| Sleep Coverage | Canonical dataset current through 2026-08-02 |
-| Bodyweight Context | Approximately 229–235 lb across training, fluid, GI-timing, travel, and scale conditions |
+| Recovery State | Functionally preserved with measurable W31 autonomic recovery compression under continued observation |
+| Sleep Coverage | Canonical dataset current through 2026-08-09 |
+| Bodyweight Context | Approximately 229–236 lb across training, fluid, GI-timing, travel, and scale conditions |
 | Biomarker Coverage | February and May 2026 integrated multi-domain snapshots |
 | Prediction Layer | Model Error records 041–044 open |
 | August Collection Governance | Evaluation and collection plans committed before outcome access |
@@ -248,18 +289,22 @@ Current Phase 2 evidence includes:
 - preserved aerobic infrastructure
 - repeated mechanical loading
 - same-day aerobic and strength compatibility
-- recovery-floor durability across three consecutive complete training weeks
+- recovery-floor durability across four consecutive complete training weeks
 - increasing schedule and environmental portability
 - reduced motivational and attentional overhead
 - repeated background and ambient execution
+- repeated trait-like session expression
 - voluntary tempo, positional, and force modulation
 - preserved execution after accumulated physical and cognitive workload
+- automatic bar organization
 - improving grip within the unchanged protocol
-- compatibility with household, recreational, social, and repository demands
-- strong execution under compressed scheduling
+- compatibility with household, recreational, social, relational, and repository demands
+- preserved movement quality under spontaneous social attention
+- strong execution after added same-day ordinary-life workload
 - continued protocol restraint despite favorable observations
 - preservation of ordinary lower-expression sessions without narrative inflation
 - preservation of softer autonomic readings without premature intervention
+- separation of physiological recovery cost from demonstrated functional capacity
 
 These characteristics increasingly resemble Phase 2D-type expression.
 
@@ -291,20 +336,42 @@ Current open records:
 
 Evaluates recovery-floor durability through the July–August observation block.
 
-Weeks 28–30 added supportive evidence through:
+Weeks 28–31 added supportive evidence through:
 
-- three consecutive complete B1 and Load Integration weeks
-- recreational aquatic exposure
-- ordinary-life workload
+- four consecutive complete B1 and Load Integration weeks
+- recreational aquatic exposure during earlier windows
+- repeated ordinary-life workload
 - the 2026-07-26 household-maintenance day
+- compressed scheduling
 - continued execution without intervention
-- preserved function despite softer recovery metrics
+- preserved function during increasingly soft autonomic recovery metrics
+- preserved execution after yard work and other ordinary physical exposure
 
-Week 30 did not reveal a delayed functional failure after the household workload.
+Week 31 strengthened the recovery-capacity evidence while also strengthening the unresolved accumulated-cost signal.
 
-Daily HRV softened during the second half of the week but did not converge with pain, mood or GI disturbance, technical degradation, initiation resistance, loss of grip, sustained cardiovascular elevation, or need for protocol modification.
+Compared with Week 30:
 
-Week 31 will observe whether that pattern rebounds, stabilizes, or converges with broader functional change.
+- daily HRV declined
+- sleep HRV declined
+- resting heart rate increased
+- sleeping heart rate increased
+
+No corresponding convergence occurred across:
+
+- pain
+- mood
+- GI state
+- willingness
+- B1 cardiovascular control
+- movement quality
+- grip
+- positional control
+- session completion
+- ordinary-life availability
+
+The evidence therefore supports substantial recovery capacity without establishing limitless tolerance or absence of physiological cost.
+
+Week 32 will observe whether the autonomic and functional layers reconverge.
 
 **Status:** Open
 
@@ -312,7 +379,7 @@ Week 31 will observe whether that pattern rebounds, stabilizes, or converges wit
 
 Evaluates whether execution remains reliable but flat or develops additional adaptable capacity.
 
-Weeks 27–30 produced repeated candidate counter-evidence involving:
+Weeks 27–31 produced repeated candidate counter-evidence involving:
 
 - voluntary tempo and positional control
 - divided-attention execution
@@ -321,15 +388,23 @@ Weeks 27–30 produced repeated candidate counter-evidence involving:
 - equipment variability
 - schedule displacement
 - preceding cognitive and physical workload
-- recreational, social, and household portability
+- recreational, social, household, and relational portability
 - automatic bar contact
 - grip improvement without direct intervention
 - strong execution under compressed scheduling
-- ordinary repetition without novelty or escalation
+- trait-level pull-ups across complete sets
+- full positional ownership
+- preserved execution during softer recovery metrics
+- spontaneous external recognition
+- social-salience tolerance
+- yard-work-plus-training compatibility
+- direct side-by-side execution without loss of the installed movement standard
 
-Week 30 extended the evidence through reduced operator overhead and ordinary availability rather than a highly visible demonstration.
+Week 31 materially strengthened the candidate counter-evidence.
 
-The evidence has become more durable but remains inside the registered evaluation window.
+The unchanged external task continued changing in its relationship to the operator.
+
+The evidence remains inside the registered evaluation window.
 
 **Status:** Open
 
@@ -343,16 +418,22 @@ Scheduled collection:
 - 2026-08-17 — DEXA and VO₂ max
 - 2026-08-18 — Bod Pod
 
-Training, nutrition, recovery, hydration, supplementation, and collection conditions will remain ordinary rather than snapshot-optimized.
+Training, nutrition, recovery, hydration, supplementation, and collection conditions remain ordinary rather than snapshot-optimized.
 
 The scoring and collection rules are committed and binding before outcome review:
 
 - [`Open Prediction Evaluation Plan 041–044`](methodology/open_prediction_evaluation_plan_041_044.md)
 - [`August 2026 Snapshot Collection Plan`](methodology/2026-08-snapshot-collection-plan.md)
 
-The TruDiagnostic comparison remains the primary domain. DEXA, VO₂ max, Bod Pod, bodyweight, recovery, and subjective state remain supplemental.
+The TruDiagnostic comparison remains the primary domain.
+
+DEXA, VO₂ max, Bod Pod, bodyweight, recovery, and subjective state remain supplemental.
 
 Behavioral portability and biological outcome remain related but independently evaluated.
+
+The less favorable W31 autonomic profile does not predict the biological outcome.
+
+The favorable W31 behavioral record does not predict the biological outcome.
 
 **Status:** Open
 
@@ -360,11 +441,12 @@ Behavioral portability and biological outcome remain related but independently e
 
 Evaluates whether protocol stability and interpretive discipline remain preserved through the next snapshot cycle.
 
-Week 30 added supportive evidence because favorable or uncertain observations did not trigger:
+Week 31 added supportive evidence because simultaneous favorable performance and unfavorable recovery observations did not trigger:
 
 - added formal workload
 - specialized grip or forearm training
 - increased pull-up volume
+- deliberate recreation of spontaneous demonstrations
 - manufactured schedule compression
 - manufactured divided-attention testing
 - prediction revision
@@ -372,8 +454,11 @@ Week 30 added supportive evidence because favorable or uncertain observations di
 - workload reduction based on isolated wearable values
 - snapshot-directed optimization
 - premature phase declaration
+- suppression of less favorable recovery evidence
 
-The August collection plan adds a further governance boundary by preregistering ordinary conditions and prohibiting snapshot-directed manipulation.
+Week 32 creates a further governance challenge because the snapshot is close enough to invite short-term optimization.
+
+Representative-state behavior remains the governing rule.
 
 **Status:** Open
 
@@ -381,29 +466,82 @@ No open record currently qualifies for closure.
 
 ---
 
+## Autonomic-Performance Divergence
+
+Week 31 established a material observational divergence between recovery markers and demonstrated functional capacity.
+
+Less favorable observations included:
+
+- lower daily HRV
+- lower sleep HRV
+- higher resting heart rate
+- higher sleeping heart rate
+- repeated localized overnight cardiovascular elevations
+- recurrent low device-estimated REM
+- several reports of later-night fragmentation
+
+Preserved or improving observations included:
+
+- calm mental state
+- stable emotional state
+- calm GI and stomach state
+- absent pain
+- preserved training initiation
+- preserved B1 cardiovascular control
+- ambient Load Integration
+- repeated trait-level expression
+- automatic positional organization
+- reduced grip salience
+- improved grip
+- strong dead-hang control
+- preserved performance under added same-day ordinary activity
+- preserved performance under spontaneous social observation
+
+This divergence is retained as an observational carryforward question.
+
+It is not a new retrospectively registered prediction.
+
+The next useful evidence is whether:
+
+- autonomic markers rebound
+- autonomic markers stabilize
+- autonomic markers continue diverging
+- functional performance eventually declines
+- subjective state begins changing
+- workload modification becomes functionally necessary
+
+The archive will not force one layer to invalidate the other.
+
+---
+
 ## Current Constraints and Risk Posture
 
-Active but non-disruptive constraints include:
+Active but currently non-disruptive constraints include:
 
-- lower daily-HRV values during the second half of Week 30
-- uncertainty about whether the lower HRV cluster reflects ordinary variability or accumulated autonomic cost
-- transient sleeping- and resting-heart-rate elevations that resolved without intervention
-- uncertainty in wearable REM estimation
+- lower W31 daily HRV relative to Week 30
+- lower W31 sleep HRV relative to Week 30
+- higher W31 resting heart rate
+- higher W31 sleeping heart rate
+- recurrent localized nocturnal cardiovascular elevations
+- repeated low device-estimated REM
+- intermittent late-night fragmentation
+- uncertainty about whether the current autonomic pattern represents accumulated training cost, ordinary variability, or another unresolved influence
 - shoulder, elbow, grip, hand, forearm, and lower-back mechanical ownership
-- residual cognitive attention toward grip
 - bodyweight interpretation under fluid and GI-timing variation
-- ordinary social, household, administrative, and repository workload
+- ordinary social, household, relational, administrative, and repository workload
 - reduced session salience creating a documentation risk
 - temptation to classify every successful session as developmental evidence
-- temptation to convert improving grip into specialized training
+- temptation to convert improving grip or social recognition into specialized training
 - temptation to convert available capacity into required workload
-- need to preserve ordinary conditions before August testing
+- temptation to taper or optimize because August testing is approaching
 
-**Primary risk:** escalating because the existing protocol feels increasingly easy, portable, low-friction, or mechanically owned.
+**Primary risk:** allowing increasingly strong performance and low-friction execution to justify premature progression.
 
-**Secondary risk:** dismissing softer recovery signals because behavioral performance remains strong.
+**Secondary risk:** allowing softer autonomic recovery metrics to drive premature intervention without functional convergence.
 
-**Current response:** preserve the protocol, retain ordinary variability, observe spontaneous recurrence, maintain documentation discipline, and intervene only if deviation becomes repeated, progressive, and functionally meaningful.
+**Snapshot risk:** modifying ordinary behavior to improve an upcoming measurement rather than measuring the installed system as it exists.
+
+**Current response:** preserve the protocol, preserve representative-state behavior, retain ordinary variability, observe spontaneous recurrence, maintain documentation discipline, and intervene only if deviation becomes repeated, progressive, and functionally meaningful.
 
 ---
 
@@ -433,6 +571,7 @@ Evaluation is based on:
 - restraint when evidence remains incomplete
 - separation of behavioral evidence from biological outcome scoring
 - preservation of preregistered conditions before outcome access
+- preservation of disagreement between physiological and functional layers when both are supported by evidence
 
 The archive documents process rather than performance display.
 
@@ -442,19 +581,26 @@ The archive documents process rather than performance display.
 
 Completed:
 
-- 2026-W30 weekly report closed
-- 2026-W31 weekly report initialized
-- sleep dataset extended through 2026-08-02
-- Week 30 recovery and training metrics verified
-- 700 formal Week 30 training minutes documented
-- Week 30 morning bodyweight average verified at approximately 232.7 lb
-- Week 30 daily biomarker HRV average verified at approximately 62.0 ms
-- Week 30 sleep HRV average verified at approximately 70.4 ms
-- Week 30 total sleep average verified at approximately 7 hours 41 minutes
+- 2026-W31 weekly report closed
+- 2026-W32 weekly report initialized
+- sleep dataset extended through 2026-08-09
+- seven new canonical sleep rows added for 2026-08-03 through 2026-08-09
+- canonical sleep continuity extended to 182 daily rows
+- Week 31 recovery and training metrics verified
+- 700 formal Week 31 training minutes documented
+- Week 31 morning bodyweight average verified at approximately 235.1 lb
+- Week 31 daily biomarker HRV average verified at approximately 57.3 ms
+- Week 31 sleep HRV average verified at approximately 60.1 ms
+- Week 31 resting-heart-rate average verified at approximately 51.4 bpm
+- Week 31 sleeping-heart-rate average verified at approximately 56.4 bpm
+- Week 31 total sleep average verified at approximately 7 hours 39 minutes
 - daily and sleep-tab cardiovascular metrics kept distinct
 - sleep-stage confidence preserved without inferred replacement values
+- 2026-08-06 missing post-B1 bodyweight preserved as missing
 - grip improvement retained as candidate local consolidation rather than a confirmed mechanism
-- lower late-week HRV retained as an unresolved observation
+- spontaneous external-recognition events retained as qualitative evidence
+- 2026-08-09 social-comparison event retained as naturalistic evidence rather than a formal test
+- W31 autonomic-performance divergence retained without retrospective prediction creation
 - records 041–044 carried forward unchanged
 - Phase 2 status preserved
 - consolidation / lock-in observation substate preserved
@@ -463,12 +609,14 @@ Completed:
 
 Current work:
 
-- ordinary W31 observation
-- monitoring whether the late-W30 daily-HRV pattern rebounds, stabilizes, or converges with functional change
+- ordinary W32 observation
+- monitoring whether the W31 multi-marker autonomic pattern rebounds, stabilizes, or converges with functional change
 - monitoring grip and local mechanical status without specialized intervention
 - preserving reduced session salience while maintaining reliable logging
 - continued passive collection of reduced-overhead and adaptable-execution evidence
 - preservation of ordinary and below-peak session descriptions
+- preservation of strong performance without using it to dismiss recovery cost
+- preservation of softer autonomic markers without using them as automatic intervention commands
 - maintenance of the Model Error 043 scoring framework
 - preservation of committed August collection conditions
 - August artifact-cycle preparation
@@ -504,5 +652,5 @@ Current work:
 
 ---
 
-**System State:** Stable  
+**System State:** Stable with active autonomic observation  
 **Operational Mode:** Execute → observe → record → close retrospectively
