@@ -16,39 +16,50 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 
 #### Weekly reporting
 
-- Added retrospective closeout for `reports/2026-W30.md`:
+- Added retrospective closeout for `reports/2026-W31.md`:
   - records seven completed B1 and seven completed Load Integration sessions
   - records 385 B1 minutes and 315 Load Integration minutes
   - records 700 total formal training minutes
   - records approximately 21.14 miles of B1 aerobic work
-  - records no additional structured recreational-conditioning duration
-  - finds no coherent delayed recovery-floor failure after the combined Weeks 28–29 density or the 2026-07-26 household-maintenance workload
-  - records repeated ambient and background execution with reduced psychological session salience
-  - preserves delayed logging as a documentation issue rather than independent proof of trait-level execution
-  - records grip and forearm capacity as a plausible local constraint without treating the mechanism as confirmed
-  - records grip becoming solid and then stronger without specialized intervention
-  - preserves minor residual cognitive attention toward grip rather than declaring complete trait-level absence
-  - records strong Load Integration execution after B1, mobility work, grocery shopping, and minimal downtime
-  - records the lower late-week daily-HRV cluster without corresponding pain, mood change, GI disruption, initiation resistance, technical degradation, sustained cardiovascular elevation, or protocol interruption
-  - preserves daily and sleep-tab cardiovascular measurements as separate evidence streams
+  - records morning bodyweight averaging approximately 235.1 lb
+  - records daily biomarker HRV averaging approximately 57.3 ms
+  - records sleep HRV averaging approximately 60.1 ms
+  - records resting heart rate averaging approximately 51.4 bpm
+  - records sleeping heart rate averaging approximately 56.4 bpm
+  - records total sleep averaging approximately 7 hours 39 minutes
+  - records a broader autonomic recovery signal than W30, with lower HRV and higher heart-rate measures across multiple related fields
+  - records that the autonomic pattern did not converge with pain, GI disruption, mood instability, training-initiation failure, impaired aerobic control, technical degradation, loss of grip, or protocol interruption
+  - records trait-level pull-up execution across all four sets on `2026-08-04`
+  - records automatic bar organization and full positional ownership on `2026-08-05`
+  - records trait-level B1 and Load Integration execution on `2026-08-06`
+  - records grip improvement without specialized intervention
+  - records unsolicited external recognition of grip strength during final dead hangs
+  - records high, owned, ambient Load Integration execution on `2026-08-08`
+  - records ambient B1 followed by substantial yard work and trait-level Load Integration on `2026-08-09`
+  - records spontaneous pull-up recognition, attempted technique replication, and direct side-by-side execution on `2026-08-09`
+  - preserves external recognition and social comparison as qualitative naturalistic evidence rather than formal testing
+  - preserves the autonomic-performance divergence as an observational carryforward question rather than creating a retrospective prediction
   - records candidate evidence relevant to Model Error records 041, 042, and 044
   - preserves records 041–044 as open and unscored
   - preserves Phase 2 status and the `Consolidation / lock-in observation` operating substate
   - preserves Phase 2D as undeclared
 
-- Added initialization for `reports/2026-W31.md`:
-  - carries forward the standard B1 and Load Integration protocol without progression
-  - records the canonical active phase as `Phase 2 — Load Integration`
-  - records the operating substate as `Consolidation / lock-in observation`
-  - prioritizes observation of whether the lower late-W30 daily-HRV pattern rebounds, stabilizes, continues, or converges with functional change
-  - preserves daily and sleep HRV as separate measurements
-  - continues observation of resting-heart-rate, sleeping-heart-rate, sleep, mood, GI, pain, readiness, initiation, and movement-quality convergence
+- Added initialization for `reports/2026-W32.md`:
+  - defines the observation window as `2026-08-10` through `2026-08-16`
+  - carries forward the standard B1 and Load Integration protocol unchanged
+  - defines W32 as the final full ordinary observation week before the August 17–18 snapshot
+  - prioritizes observation of whether the W31 multi-marker autonomic pattern rebounds, stabilizes, continues, or converges with functional change
+  - preserves daily HRV, sleep HRV, resting heart rate, and sleeping heart rate as distinct evidence streams
+  - continues observation of sleep continuity, subjective restoration, training initiation, aerobic control, perceived exertion, grip, positional control, pain, mood, GI state, and ordinary-life availability
+  - preserves the W31 autonomic-performance divergence as an observational carryforward question
+  - prohibits retrospective creation of a prediction from the W31 evidence window
   - retains grip as an observed local variable rather than a new training objective
   - prohibits specialized grip work, additional dead hangs, farmer’s carries, rice-bucket work, crushing-grip work, grip testing, and high-volume pull-up sessions
-  - preserves distinctions among standard, ambient, background, partial trait-like, pseudo–trait-level, and fully trait-level execution
-  - continues observation of whether reduced session salience remains compatible with reliable documentation
-  - prohibits manufacturing schedule-compression, divided-attention, positional-control, or portability tests
-  - preserves ordinary training, nutrition, hydration, supplementation, sleep, recovery, and recreational conditions before the August biological snapshot
+  - prohibits deliberate reproduction of the `2026-08-09` yard-work-plus-training or firefighter-comparison contexts
+  - preserves distinctions among standard, ambient, background, partial trait-like, pseudo–trait-level, and fully trait-like execution
+  - defines W32 as neither a taper, peak week, deliberate overload week, nor recovery experiment
+  - prohibits snapshot-directed workload, bodyweight, hydration, HRV, or resting-heart-rate optimization
+  - preserves ordinary training, nutrition, hydration, supplementation, sleep opportunity, recovery, and recreational conditions before the August snapshot
   - links the active prediction-evaluation and snapshot-collection plans
   - preserves records 041–044 as open and unscored
   - preserves Phase 2D as undeclared and Phase 3 as reserved and inactive
@@ -114,18 +125,20 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 
 #### Datasets and data quality
 
-- Appended sleep observations for `2026-07-27` through `2026-08-02` to `data/sleep_longitudinal_v1.csv`:
-  - extends canonical sleep coverage through `2026-08-02`
-  - increases the canonical dataset to 175 continuous daily rows beginning `2026-02-09`
+- Appended sleep observations for `2026-08-03` through `2026-08-09` to `data/sleep_longitudinal_v1.csv`:
+  - extends canonical sleep coverage through `2026-08-09`
+  - increases the canonical dataset to 182 continuous daily rows beginning `2026-02-09`
   - adds seven daily rows without a date gap
   - preserves total-sleep, deep-sleep, light-sleep, REM, awake-time, awakening-count, efficiency, HRV, sleeping-heart-rate, subjective-state, readiness, and sleep-tag fields
-  - calculates sleep-stage percentages from recorded stage minutes divided by total sleep minutes
-  - preserves low-, medium-, and high-confidence REM classifications according to the contemporaneous subjective and wearable evidence
-  - preserves the unusually low recorded REM values on `2026-07-27`, `2026-07-30`, and `2026-08-01` without inferred replacement values
-  - preserves the high-confidence REM observations on `2026-07-28` and `2026-07-31`
+  - calculates sleep-stage percentages directly from recorded stage minutes divided by total sleep minutes
+  - preserves the structured awakening counts from the contemporaneous sleep log
+  - preserves awake-after-sleep-onset values from the nightly records without reconstructing unobserved values
+  - preserves medium-confidence REM classifications across the W31 nights according to contemporaneous wearable and subjective evidence
+  - preserves unusually low device-estimated REM where recorded without inferred replacement values
   - keeps daily biomarker HRV separate from sleep HRV
   - keeps daily heart-rate measurements separate from sleeping-heart-rate measurements
-  - adds no reconstructed, interpolated, or silently repaired values
+  - adds no interpolated, reconstructed, or silently repaired values
+  - leaves the existing governed DQ-001 through DQ-003 findings unchanged
 
 - Added `data/DATA_QUALITY_NOTES.md`:
   - documents unresolved awake-field duplication from `2026-05-18` through `2026-05-31`
@@ -348,33 +361,38 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 #### Current-state alignment
 
 - Updated `LATEST.md`:
-  - marks `2026-W30` closed and `2026-W31` active
-  - advances canonical sleep coverage through `2026-08-02`
+  - marks `2026-W31` closed and `2026-W32` active
+  - advances canonical sleep coverage through `2026-08-09`
+  - records canonical sleep continuity at 182 daily rows
   - records the canonical operating substate as `Consolidation / lock-in observation`
-  - records seven completed B1 and seven completed Load Integration sessions during W30
+  - records seven completed B1 and seven completed Load Integration sessions during W31
   - records 385 B1 minutes, 315 Load Integration minutes, and 700 total formal training minutes
   - records approximately 21.14 miles of B1 aerobic work
-  - records no additional structured recreational-conditioning duration during W30
-  - records W30 morning bodyweight averaging approximately 232.7 lb
-  - records daily biomarker HRV averaging approximately 62.0 ms
-  - records sleep HRV averaging approximately 70.4 ms
-  - records resting heart rate averaging approximately 47.0 bpm
-  - records sleeping heart rate averaging approximately 50.9 bpm
-  - records total sleep averaging approximately 7 hours 41 minutes
-  - summarizes W30 as continued ordinary availability with reduced operator overhead
-  - records repeated delayed logging as a documentation concern rather than independent trait-level proof
-  - records grip becoming solid and then stronger without specialized intervention
-  - preserves minor residual cognitive attention toward grip
-  - records strong execution after B1, mobility work, grocery shopping, and minimal downtime
-  - preserves the lower late-W30 daily-HRV cluster as an unresolved autonomic observation
-  - records that the lower HRV pattern did not converge with pain, mood change, GI disruption, initiation resistance, technical degradation, sustained cardiovascular elevation, or protocol interruption
-  - identifies HRV trajectory, grip persistence, documentation reliability, and broader functional convergence as primary W31 observation targets
-  - preserves ordinary collection conditions before the August biological snapshot
-  - links the active evaluation plan and August collection plan
-  - records that both plans were committed before outcome access and remain binding
+  - records W31 morning bodyweight averaging approximately 235.1 lb
+  - records daily biomarker HRV averaging approximately 57.3 ms
+  - records sleep HRV averaging approximately 60.1 ms
+  - records resting heart rate averaging approximately 51.4 bpm
+  - records sleeping heart rate averaging approximately 56.4 bpm
+  - records total sleep averaging approximately 7 hours 39 minutes
+  - advances the recovery posture from the isolated late-W30 HRV observation to a broader W31 multi-marker autonomic recovery pattern
+  - records that the less favorable autonomic profile did not converge with demonstrated functional failure
+  - records stronger candidate evidence for reduced operator overhead, positional ownership, grip consolidation, social-salience tolerance, and ordinary-life portability
+  - preserves the W31 autonomic-performance divergence as an observational carryforward question rather than a retrospectively registered prediction
+  - defines W32 as the final ordinary full observation week before the August snapshot
+  - preserves representative-state behavior and prohibits tapering, peaking, or snapshot-directed optimization
   - carries Model Error records 041–044 forward unchanged
-  - retains the August 2026 snapshot as the next major objective checkpoint
   - preserves Phase 2 status without declaring Phase 2D
+
+- Updated `INDEX.md`:
+  - advances the active weekly-report link from W31 to W32
+  - identifies W31 as the most recent closed weekly report
+  - advances canonical sleep coverage through `2026-08-09`
+  - advances the index alignment date to `2026-08-10`
+  - preserves records 041–044 as the current open prediction set
+  - preserves the W31 autonomic-performance divergence as observational rather than retrospectively registered
+  - aligns the temporal, reports, and structured-data sections with the current repository state
+  - preserves central access to the August collection and prediction-evaluation plans
+  - changes navigation and current-state representation only
 
 #### Weekly report governance
 
@@ -399,41 +417,35 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - excludes the additional aquatic activity from the 807-minute structured logged movement total
   - preserves all original weekly calculations, recovery interpretation, model-error evidence, and phase status
 
-- Updated `reports/2026-W30.md`:
+- Updated `reports/2026-W31.md`:
   - replaces the active planning scaffold with a retrospective closeout
   - records seven completed B1 and seven completed Load Integration sessions
   - records 385 B1 minutes, 315 Load Integration minutes, and 700 total formal training minutes
-  - records approximately 21.14 miles of B1 aerobic work
-  - records no additional structured recreational-conditioning duration
-  - finds no coherent delayed recovery-floor breach after the combined Weeks 28–29 density or the 2026-07-26 household-maintenance workload
-  - records repeated ambient and background execution with reduced psychological salience
-  - preserves delayed logging as a documentation issue rather than independent proof of trait-level execution
-  - records grip becoming solid and then stronger without specialized intervention
-  - preserves residual grip attention rather than declaring complete trait-level absence
-  - records strong execution under compressed scheduling on `2026-08-01`
-  - preserves the lower late-week daily-HRV cluster without dismissing it or converting it into confirmed recovery failure
-  - corrects July 31 daily-average HRV from the private workbook’s `56 ms` transcription to the direct-source value of `55 ms`
-  - rejects the private workbook narrative’s incompatible `68 ms` daily-HRV value
-  - preserves July 31 sleep HRV as a separate `67 ms` measurement
-  - corrects the W30 weekly daily-biomarker HRV average from `62.1 ms` to `62.0 ms`
-  - records that the narrow correction does not change the W30 recovery interpretation
-  - records candidate evidence relevant to Model Error records 041, 042, and 044
-  - preserves ordinary behavioral and physiological variability
+  - records the W31 multi-marker autonomic recovery pattern
+  - distinguishes autonomic recovery compression from demonstrated functional failure
+  - records repeated ambient and trait-level execution
+  - records stronger pull-up positional ownership and automatic bar organization
+  - records grip improvement without targeted intervention
+  - records naturalistic external-recognition and social-comparison evidence
+  - records preserved execution after substantial same-day yard work
+  - preserves external recognition as qualitative rather than physiological evidence
+  - preserves the W31 autonomic-performance divergence as an observational carryforward question
+  - creates no retrospective Model Error record
   - preserves the existing protocol without progression or preemptive reduction
   - preserves records 041–044 as open and unscored
   - preserves Phase 2 and the `Consolidation / lock-in observation` operating substate
   - declares no Phase 2D transition
 
-- Added `reports/2026-W31.md` as the active observation report:
-  - defines the observation window as `2026-08-03` through `2026-08-09`
-  - carries forward the standard B1 and Load Integration protocol unchanged
-  - prioritizes observation of the lower late-W30 daily-HRV trajectory
-  - requires convergence across cardiovascular, sleep, subjective, mechanical, behavioral, and ordinary-life evidence before intervention
-  - retains grip as an observed local variable without adding specialized training
-  - preserves reduced session salience while requiring reliable documentation
-  - prohibits manufactured schedule-compression, divided-attention, portability, positional-control, or grip tests
-  - preserves representative-state behavior ahead of the August snapshot
-  - links the committed prediction-evaluation and snapshot-collection plans
+- Added `reports/2026-W32.md` as the active observation report:
+  - defines the observation window as `2026-08-10` through `2026-08-16`
+  - carries forward standard B1 and Load Integration unchanged
+  - prioritizes observation of the W31 autonomic-performance divergence
+  - requires multi-domain convergence before recovery intervention
+  - preserves grip as an observed variable without specialized training
+  - prohibits deliberate reproduction of spontaneous portability or social-comparison events
+  - prohibits tapering, peaking, deliberate overload, and snapshot-directed manipulation
+  - preserves representative-state behavior through the final pre-snapshot week
+  - links the committed prediction-evaluation and August collection plans
   - preserves records 041–044 as open and unscored
   - preserves Phase 2D as undeclared and Phase 3 as reserved and inactive
 
@@ -999,13 +1011,12 @@ The source-workbook narrative discrepancy remains documented rather than silentl
   - W30 governance alignment
   - methodology-directory guide expansion
   - navigation and discoverability improvements
-  - W30 retrospective closeout
-  - W31 observation-window initialization
-  - W30 canonical sleep append through `2026-08-02`
-  - `LATEST.md` advancement from W30 to W31
-  - August 5 Wednesday audit
-  - source-backed July 31 daily-HRV correction
-  - W30 weekly daily-HRV average correction from `62.1 ms` to `62.0 ms`
+  - W31 retrospective closeout
+  - W32 observation-window initialization
+  - W31 canonical sleep append through `2026-08-09`
+  - `LATEST.md` advancement from W31 to W32
+  - `INDEX.md` advancement through W32 and sleep coverage through `2026-08-09`
+  - preservation of the W31 autonomic-performance divergence as an observational question without retrospective prediction registration
 
 - Current release metadata remains:
   - version: `1.0.0`
