@@ -108,8 +108,8 @@ These documents explain what is measured, how it enters the archive, and how qua
 ## Current State and Temporal Structure
 
 - [LATEST.md](LATEST.md) — current executive state
-- [reports/2026-W31.md](reports/2026-W31.md) — active weekly observation window
-- [reports/2026-W30.md](reports/2026-W30.md) — most recent closed weekly report
+- [reports/2026-W32.md](reports/2026-W32.md) — active weekly observation window
+- [reports/2026-W31.md](reports/2026-W31.md) — most recent closed weekly report
 - [PHASE_MAP.md](PHASE_MAP.md) — phase architecture
 - [STATE_TRANSITIONS.md](STATE_TRANSITIONS.md) — recorded phase and state changes
 - [EPOCH_INDEX.md](EPOCH_INDEX.md) — temporal index of major observation periods
@@ -160,8 +160,8 @@ A skeptical observer should distinguish:
 
 - [reports](reports) — active and closed weekly reports
 - [reports/README.md](reports/README.md) — report modes, lifecycle, inclusion rules, and correction boundaries
-- [reports/2026-W30.md](reports/2026-W30.md) — most recent closed weekly report
-- [reports/2026-W31.md](reports/2026-W31.md) — current active weekly report
+- [reports/2026-W31.md](reports/2026-W31.md) — most recent closed weekly report
+- [reports/2026-W32.md](reports/2026-W32.md) — current active weekly report
 
 Reports may contain:
 
@@ -204,7 +204,7 @@ A collection plan governs capture conditions. It does not become outcome evidenc
 ## Structured and Source-Preserved Data Layer
 
 - [data](data) — canonical, curated, model-error, and source-export data layers
-- [data/sleep_longitudinal_v1.csv](data/sleep_longitudinal_v1.csv) — canonical sleep dataset
+- [data/sleep_longitudinal_v1.csv](data/sleep_longitudinal_v1.csv) — canonical sleep dataset, current through 2026-08-09
 - [data/biomarker_snapshot.csv](data/biomarker_snapshot.csv) — integrated snapshot values
 - [data/bloodwork_longitudinal.csv](data/bloodwork_longitudinal.csv) — longitudinal bloodwork structure
 - [data/epigenetic_longitudinal.csv](data/epigenetic_longitudinal.csv) — longitudinal epigenetic structure
@@ -689,12 +689,13 @@ Where uncertainty exists:
 
 ## Version Note
 
-This index was aligned on 2026-08-03 with the repository’s current:
+This index was aligned on 2026-08-10 with the repository’s current:
 
 - Phase 2 operating state
-- W30 retrospective closeout
-- W31 active observation window
-- canonical sleep coverage through 2026-08-02
+- W31 retrospective closeout
+- W32 active observation window
+- canonical sleep coverage through 2026-08-09
+- Week 31 autonomic-performance divergence retained as an observational carryforward question
 - August snapshot preregistration
 - open prediction evaluation plan
 - source-preserved RingConn layer
@@ -706,11 +707,13 @@ This index was aligned on 2026-08-03 with the repository’s current:
 
 The revision:
 
-- advances the active weekly-report link from W30 to W31
-- identifies W30 as the most recent closed weekly report
+- advances the active weekly-report link from W31 to W32
+- identifies W31 as the most recent closed weekly report
 - aligns the temporal and reports sections with the current repository state
-- advances the index alignment date to 2026-08-03
-- records canonical sleep coverage through 2026-08-02
+- advances the index alignment date to 2026-08-10
+- records canonical sleep coverage through 2026-08-09
+- preserves records 041–044 as the current open prediction set
+- preserves the Week 31 autonomic-performance divergence as observational rather than retrospectively registered
 - preserves central access to the August collection plan
 - preserves central access to the local validator
 - preserves the methodology directory guide
