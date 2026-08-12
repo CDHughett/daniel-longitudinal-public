@@ -58,7 +58,7 @@ The local validator reviews:
 - governed sleep-data warnings
 - weekly-report continuity
 - model-error continuity
-- protected status of records 041–044
+- protected status of records 041–045
 - release-metadata alignment
 - RingConn source-export byte preservation
 
@@ -477,12 +477,24 @@ The validator checks:
 - record-ID parsing
 - duplicate IDs
 - sequence continuity
-- presence of records 041–044
-- open status of records 041–044
+- presence of records 041–045
+- open status of records 041–045
 - preservation of their registered predictions
 - blank protected actual and error fields
 
+Records 041–045 are explicitly protected rather than inferred dynamically from current `open` status.
+
+This preserves the governance check even if a protected record is accidentally changed from `open` to another status.
+
 The validator does not score predictions.
+
+Record 045 remains separately governed by:
+
+```text
+methodology/open_prediction_evaluation_plan_045.md
+```
+
+The validator protects its registration state but does not determine whether its future scoring criteria are satisfied.
 
 ---
 
@@ -789,7 +801,7 @@ This guide was expanded on 2026-07-25 after introduction of:
 tools/validate_repository.py
 ```
 
-The revision adds:
+The revision added:
 
 - whole-repository validation
 - directory and ZIP validation instructions
@@ -803,11 +815,24 @@ The revision adds:
 - manual-review limitations
 - deferred GitHub Actions status
 
-The revision does not alter:
+On 2026-08-12, the model-error validation boundary was extended from records 041–044 to records 041–045 after prospective registration of Model Error 045.
+
+The 2026-08-12 update:
+
+- adds record 045 to the explicit protected open-record set
+- requires record 045 to remain open while its outcome window is incomplete
+- requires its registered prediction to remain present
+- requires protected actual and error fields to remain blank before scoring
+- documents `methodology/open_prediction_evaluation_plan_045.md` as the separate scoring-governance artifact
+- does not cause the validator to score record 045
+- does not modify records 041–044
+- does not alter any biological value, protocol, phase, collection plan, or release metadata
+
+The verification-guide changes do not alter:
 
 - any artifact
 - any checksum
 - any biological value
-- any prediction record
+- any prediction wording
 - any protocol exposure
 - any phase declaration
