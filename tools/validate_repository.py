@@ -1171,7 +1171,7 @@ class Validator:
             if name is not None
         ]
 
-        for record_id in range(41, 45):
+        for record_id in range(41, 46):
             row = by_id.get(record_id)
 
             if row is None:
@@ -1238,7 +1238,7 @@ class Validator:
                     f"{len(ids)} records continuous "
                     f"from {min(ids):03d} through "
                     f"{max(ids):03d}; "
-                    "041-044 remain open and unscored"
+                    "041-045 remain open and unscored"
                 ),
             )
 
