@@ -3,7 +3,7 @@
 **Audit date:** 2026-08-12  
 **Audit type:** Scheduled Wednesday repository audit with material governance update  
 **Repository:** Daniel Longitudinal Study public archive  
-**Disposition:** PASS before change set; material forward-prediction governance update registered; final post-change ZIP verification pending  
+**Disposition:** PASS; material forward-prediction governance update registered; 11-file post-change package verification completed successfully  
 **Phase:** Phase 2 — Load Integration  
 **Operating substate:** Consolidation / lock-in observation
 
@@ -29,9 +29,13 @@ The audit also reviews whether the Week 31 autonomic-performance divergence just
 
 That review resulted in prospective registration of Model Error 045.
 
+The governed 11-file change set was subsequently downloaded from GitHub as a fresh repository ZIP and independently revalidated.
+
 ---
 
-# Audited Source Package
+# Audited Source Packages
+
+## Pre-Change Reference Package
 
 The pre-change audit was performed against the most recent GitHub ZIP available before the 2026-08-12 governance update.
 
@@ -48,13 +52,45 @@ SHA-256:
 
 This hash establishes the pre-change reference package for the 2026-08-12 audit.
 
-A fresh GitHub ZIP must be downloaded after the full change set is committed and validated separately.
+---
+
+## Post-Change Verification Package
+
+After completion of the governed 11-file change set, a fresh GitHub ZIP was downloaded and independently validated.
+
+```text
+Package:
+daniel-longitudinal-public-main (3).zip
+
+Size:
+35,902,464 bytes
+
+SHA-256:
+30d5e2fa5b8694981307102750ed9c107f581048bc213c5a4a464746a8d3d20d
+```
+
+This package represents the completed core 2026-08-12 governance batch before the later audit-record and changelog closure-only wording updates.
+
+The post-change package passed:
+
+- ZIP CRC validation
+- ZIP path-safety validation
+- full local repository validation
+- extracted-directory validation
+- Python syntax compilation for the validator
+- change-set comparison against the pre-change package
+
+No unintended material file change was identified.
 
 ---
 
 # Executive Audit Result
 
 The audited pre-change package passed repository validation.
+
+The governed 2026-08-12 change set was then implemented and independently revalidated from a fresh GitHub ZIP.
+
+Both states passed.
 
 No biological-data correction was required.
 
@@ -78,13 +114,15 @@ The principal material finding was methodological rather than mechanical:
 
 The resulting action was to create Model Error 045 prospectively on 2026-08-12 with scoring beginning only on 2026-08-13.
 
+The resulting registration, methodology plan, validator protection, current-state documentation, and navigation changes all passed post-change validation.
+
 ---
 
 # Mechanical Validation
 
-## ZIP Validation
+## Pre-Change ZIP Validation
 
-The audited GitHub ZIP passed:
+The pre-change GitHub ZIP passed:
 
 - ZIP CRC verification
 - ZIP path-safety inspection
@@ -124,11 +162,9 @@ They did not represent new repository breakage.
 
 ---
 
-## Extracted Directory Validation
+## Pre-Change Extracted Directory Validation
 
-The extracted repository also passed the local validator.
-
-Pre-change directory result:
+The extracted pre-change repository also passed the local validator.
 
 ```text
 Errors:
@@ -145,6 +181,123 @@ PASS
 ```
 
 The difference in pass count reflects ZIP-specific validation being applicable only when a ZIP is inspected.
+
+---
+
+## Post-Change ZIP Validation
+
+The fresh post-change GitHub ZIP also passed the complete validator.
+
+```text
+Errors:
+0
+
+Warnings:
+2
+
+Passes:
+10
+
+Result:
+PASS
+```
+
+Post-change validator findings included:
+
+```text
+Repository structure:
+181 files
+no zero-byte files
+
+Markdown:
+128 files
+760 internal references
+targets, anchors, and fences pass
+
+CSV structure:
+11 CSV files
+all parsed with consistent row widths
+
+Checksums:
+29 artifact entries
+10 manifests
+29 of 29 pass
+
+Canonical sleep:
+182 continuous rows
+2026-02-09 through 2026-08-09
+
+Weekly reports:
+27 reports
+W06 through W32
+active=2026-W32.md
+
+Model error:
+33 records
+013 through 045
+041-045 remain open and unscored
+
+Release metadata:
+Version 1.0.0
+date 2026-06-23
+DOI 10.5281/zenodo.20815612
+
+RingConn source exports:
+registered bytes preserved
+CRLF preserved
+provider headers preserved
+row counts preserved
+```
+
+The two governed warnings remained:
+
+```text
+2026-03-31 sleep-stage difference:
++16 minutes
+
+2026-04-02 sleep-stage difference:
++14 minutes
+
+DQ-001 awake/awakening duplication:
+14 dates
+```
+
+No new warning appeared.
+
+---
+
+## Post-Change Extracted Directory Validation
+
+The extracted post-change repository also passed:
+
+```text
+Errors:
+0
+
+Warnings:
+2
+
+Passes:
+9
+
+Result:
+PASS
+```
+
+---
+
+## Validator Syntax Check
+
+The current validator also passed Python compilation:
+
+```text
+python -m py_compile tools/validate_repository.py
+
+Result:
+PASS
+```
+
+No syntax defect was introduced by extending the protected record range through 045.
 
 ---
 
@@ -201,6 +354,112 @@ No zero-byte files were present.
 No continuity gap was identified in the governed model-error sequence.
 
 No continuity gap was identified in the represented canonical sleep interval.
+
+---
+
+# Post-Change Repository Inventory
+
+The verified post-change governance package contained:
+
+```text
+Repository files:
+181
+
+Markdown files:
+128
+
+Internal Markdown references:
+760
+
+CSV files:
+11
+
+Checksum manifests:
+10
+
+Registered checksum entries:
+29
+
+Canonical sleep rows:
+182
+
+Canonical sleep coverage:
+2026-02-09 through 2026-08-09
+
+Weekly reports:
+27
+
+Weekly range:
+2026-W06 through 2026-W32
+
+Active weekly report:
+2026-W32.md
+
+Model-error records:
+33
+
+Model-error range:
+013 through 045
+
+Protected open model-error records:
+041 through 045
+```
+
+No zero-byte files were present.
+
+No exact duplicate file-hash groups were identified.
+
+The model-error sequence remained continuous after addition of record 045.
+
+---
+
+# Post-Change Delta Verification
+
+The post-change GitHub ZIP was compared directly against the pre-change reference package.
+
+Observed delta:
+
+```text
+Files added:
+2
+
+Files changed:
+9
+
+Files removed:
+0
+```
+
+Added files:
+
+```text
+docs/audits/2026-08-12-wednesday-audit.md
+methodology/open_prediction_evaluation_plan_045.md
+```
+
+Changed files:
+
+```text
+CHANGELOG.md
+INDEX.md
+LATEST.md
+README.md
+VERIFICATION.md
+data/model_error/model_error_gap_v1.csv
+methodology/README.md
+reports/2026-W32.md
+tools/validate_repository.py
+```
+
+Removed files:
+
+```text
+None
+```
+
+This exactly matched the intended 11-file 2026-08-12 governance batch.
+
+No unintended material file modification was identified.
 
 ---
 
@@ -644,6 +903,37 @@ open
 
 The `secondary` flag is appropriate because the record is a valid forward prediction but is not intended to replace or become a primary calibration anchor over the already registered 041–044 block.
 
+Post-change validation confirmed:
+
+```text
+Record 045 exists:
+yes
+
+Model-error sequence continuous:
+yes
+
+Status open:
+yes
+
+Prediction preserved:
+yes
+
+actual_value blank:
+yes
+
+error_absolute blank:
+yes
+
+error_direction blank:
+yes
+
+error_pct blank:
+yes
+
+Validator protection active:
+yes
+```
+
 ---
 
 # Record 045 Prospective Boundary
@@ -684,6 +974,21 @@ later August snapshot interpretation
 ```
 
 This prevents the short-window autonomic question from being contaminated by later biological outcome knowledge.
+
+Post-change review confirmed that this same evidence boundary is represented consistently across:
+
+- the model-error register
+- the record 045 evaluation plan
+- the active W32 report
+- `LATEST.md`
+- `INDEX.md`
+- `methodology/README.md`
+- `README.md`
+- `VERIFICATION.md`
+- this audit
+- `CHANGELOG.md`
+
+No conflicting current-state scoring window was identified.
 
 ---
 
@@ -728,6 +1033,8 @@ The four-day means must be calculated from the source values for:
 ```
 
 using unrounded source values before threshold comparison.
+
+The post-change audit found no inconsistent threshold representation in the current governance documents.
 
 ---
 
@@ -858,9 +1165,31 @@ Therefore 045 does not determine 044.
 
 ---
 
+# Preservation of Records 041–044
+
+Direct comparison of the pre-change and post-change packages confirmed that records 013–044 in the primary model-error register were preserved while record 045 was appended.
+
+The following original governance file also remained unchanged:
+
+```text
+methodology/open_prediction_evaluation_plan_041_044.md
+```
+
+Record 045 did not silently alter:
+
+- records 041–044 prediction wording
+- their registered plan
+- their status
+- their evidence windows
+- their scoring rules
+
+This preservation is a central post-change verification finding.
+
+---
+
 # Methodology Changes Authorized by This Audit
 
-The following repository changes were authorized and implemented as part of the 2026-08-12 audit workflow:
+The following repository changes were authorized and implemented as part of the 2026-08-12 core audit workflow:
 
 1. added Model Error record 045 to the primary model-error register
 2. added a separate preregistered evaluation plan for record 045
@@ -872,9 +1201,13 @@ The following repository changes were authorized and implemented as part of the 
 8. updated `methodology/README.md` to index the separate 045 plan
 9. updated `README.md` to expose both active prediction-evaluation plans
 10. added this formal audit record
-11. scheduled a changelog update as the final documentation step
+11. updated `CHANGELOG.md` to record the August 12 governance batch
 
 These changes represent governance and navigation updates rather than a protocol or biological-data revision.
+
+The completed 11-file batch was verified through the fresh post-change GitHub ZIP documented above.
+
+This later audit-record closure edit and the corresponding changelog closure edit are administrative status updates only and do not alter the registered Model Error 045 prediction, thresholds, scoring window, physical protocol, canonical data, phase state, or release metadata.
 
 ---
 
@@ -904,6 +1237,8 @@ The pass-state text now reports:
 041-045 remain open and unscored
 ```
 
+Direct pre-change versus post-change comparison of the validator confirmed that these were the only intended validator logic/text modifications associated with record 045 protection.
+
 The protected set remains explicit rather than dynamically derived from whichever records currently contain `status=open`.
 
 This is intentional.
@@ -922,7 +1257,7 @@ The existing file:
 methodology/2026-08-snapshot-collection-plan.md
 ```
 
-remains unchanged.
+remained unchanged across the verified pre-change and post-change packages.
 
 No factual collection change was identified.
 
@@ -953,7 +1288,7 @@ The existing file:
 methodology/open_prediction_evaluation_plan_041_044.md
 ```
 
-remains unchanged.
+remained unchanged across the verified pre-change and post-change packages.
 
 This is intentional.
 
@@ -968,6 +1303,40 @@ Record 045 has:
 Merging 045 retrospectively into the earlier 041–044 plan would weaken the preregistration record.
 
 The plans therefore remain separate.
+
+---
+
+# Other Intentionally Preserved Files
+
+Direct package comparison confirmed that the following remained unchanged through the core governance batch:
+
+```text
+methodology/open_prediction_evaluation_plan_041_044.md
+methodology/2026-08-snapshot-collection-plan.md
+data/model_error/calibration_events_log.md
+data/model_error/udi_by_type_tracker.csv
+data/sleep_longitudinal_v1.csv
+CODEMETA.json
+CITATION.cff
+```
+
+The sanitized blood artifact also remained unchanged:
+
+```text
+snapshots/2025-07/2025-07-full-blood-panel.pdf
+```
+
+Verified state:
+
+```text
+Size:
+158,270 bytes
+
+SHA-256:
+e3fe18d94b003217f2d9024ee1952117305f1b48dc72bebf183269ec60a375cb
+```
+
+No unintended biological, release, source, or collection-governance modification was introduced.
 
 ---
 
@@ -1062,7 +1431,7 @@ SHA-256:
 e3fe18d94b003217f2d9024ee1952117305f1b48dc72bebf183269ec60a375cb
 ```
 
-No new privacy defect was identified in the audited package.
+No new privacy defect was identified in either audited package.
 
 The repository must continue using the existing privacy-state language:
 
@@ -1089,6 +1458,13 @@ DOI:
 10.5281/zenodo.20815612
 ```
 
+Post-change validation independently confirmed agreement between:
+
+```text
+CODEMETA.json
+CITATION.cff
+```
+
 The 2026-08-12 changes do not justify a release increment by themselves.
 
 They add:
@@ -1103,33 +1479,9 @@ The next versioned release remains associated with the broader August artifact c
 
 ---
 
-# Files Intentionally Left Unchanged
-
-The audit specifically does not authorize unnecessary edits to:
-
-```text
-methodology/open_prediction_evaluation_plan_041_044.md
-methodology/2026-08-snapshot-collection-plan.md
-data/model_error/calibration_events_log.md
-data/model_error/udi_by_type_tracker.csv
-data/sleep_longitudinal_v1.csv
-data/source_exports/ringconn/2026-07-21/*
-snapshots/2025-07/2025-07-full-blood-panel.pdf
-CODEMETA.json
-CITATION.cff
-```
-
-It also does not require broad historical replacement of every older reference to records 041–044.
-
-Historical documents should remain historically accurate.
-
-Current-state documents are the appropriate place to expose record 045.
-
----
-
 # No-Change Findings
 
-The following remain unchanged after this audit:
+The following remained unchanged through the verified core governance batch:
 
 ```text
 Canonical biological values:
@@ -1159,6 +1511,12 @@ unchanged
 Records 041–044 scoring rules:
 unchanged
 
+Calibration event log:
+unchanged
+
+UDI tracker:
+unchanged
+
 Physical protocol:
 unchanged
 
@@ -1182,13 +1540,45 @@ unchanged
 
 # Audit Disposition
 
-## Mechanical repository state
+## Pre-change mechanical repository state
 
 ```text
 PASS
 ```
 
 The pre-change GitHub ZIP had no validator errors.
+
+## Post-change mechanical repository state
+
+```text
+PASS
+```
+
+The fresh post-change GitHub ZIP had:
+
+```text
+0 errors
+2 governed warnings
+10 passes
+```
+
+The extracted post-change directory also passed.
+
+## Change-set integrity
+
+```text
+PASS
+```
+
+The core batch produced exactly:
+
+```text
+2 added files
+9 changed files
+0 removed files
+```
+
+matching the intended 11-file workflow.
 
 ## Biological-data state
 
@@ -1203,6 +1593,22 @@ PASS with material update
 ```
 
 Record 045 was justified and prospectively registered without rewriting records 041–044.
+
+## Record 045 protection
+
+```text
+PASS
+```
+
+Record 045 remains:
+
+- present
+- open
+- unscored
+- secondary
+- prospectively bounded
+- protected by the validator
+- blank in protected outcome fields
 
 ## Preregistration integrity
 
@@ -1244,43 +1650,118 @@ No release increment was required.
 
 ---
 
-# Required Final Verification
+# Completed Post-Change Verification
 
-This audit records the validated pre-change baseline and the governed change set.
+The required fresh-GitHub-ZIP verification of the core 2026-08-12 governance batch is complete.
 
-Final completion requires a fresh GitHub ZIP after all 2026-08-12 commits are present.
-
-The fresh package must be checked for:
-
-- ZIP CRC integrity
-- path safety
-- Markdown links
-- Markdown anchors
-- fenced-code balance
-- CSV structure
-- model-error sequence continuity through 045
-- open status of records 041–045
-- blank protected actual and error fields for records 041–045
-- record 045 prediction preservation
-- checksum integrity
-- canonical sleep continuity
-- weekly-report continuity
-- RingConn source-byte preservation
-- release-metadata alignment
-- absence of unintended file changes
-- preservation of the August collection plan
-- preservation of the 041–044 evaluation plan
-
-The fresh ZIP should also be compared against the pre-change reference:
+Verified package:
 
 ```text
-SHA-256:
+daniel-longitudinal-public-main (3).zip
+```
+
+Verified SHA-256:
+
+```text
+30d5e2fa5b8694981307102750ed9c107f581048bc213c5a4a464746a8d3d20d
+```
+
+Compared against pre-change reference:
+
+```text
 2b5e7fbe2477fa512dd4419b0caf70e40e2d9ee70616afe47786341ecc6897c7
 ```
 
-Expected changes should correspond only to the governed 2026-08-12 batch.
+Completed checks:
 
-Final post-change package verification remains pending until that fresh ZIP is available.
+```text
+ZIP CRC:
+PASS
+
+Path safety:
+PASS
+
+Repository structure:
+PASS
+
+Markdown links and anchors:
+PASS
+
+Fenced-code balance:
+PASS
+
+CSV structure:
+PASS
+
+Model-error sequence through 045:
+PASS
+
+Records 041–045 open:
+PASS
+
+Protected actual/error fields blank:
+PASS
+
+Record 045 prediction preservation:
+PASS
+
+Checksum integrity:
+29 / 29 PASS
+
+Canonical sleep continuity:
+PASS
+
+Weekly-report continuity:
+PASS
+
+RingConn source-byte preservation:
+PASS
+
+Release metadata:
+PASS
+
+041–044 evaluation plan preservation:
+PASS
+
+August collection plan preservation:
+PASS
+
+Validator Python compilation:
+PASS
+
+Unintended material file changes:
+none identified
+```
+
+The two remaining warnings are the previously governed sleep-data warnings.
+
+They do not invalidate repository mechanics and do not authorize automatic correction.
+
+---
+
+# Closure Documentation Boundary
+
+The verified post-change ZIP above captures the completed 11-file governance batch.
+
+This audit file is now being updated afterward to replace its formerly correct `verification pending` language with the completed verification result.
+
+A corresponding narrow changelog closure update follows separately.
+
+Those closure-only documentation edits do not alter:
+
+- Model Error 045 registration
+- Model Error 045 thresholds
+- Model Error 045 admissible window
+- records 041–044
+- canonical data
+- source exports
+- checksums
+- physical protocol
+- phase state
+- August collection conditions
+- release metadata
+
+The substantive post-change governance state has already been mechanically verified.
 
 ---
 
@@ -1302,6 +1783,16 @@ Instead, it used the observation to generate a new forward question.
 
 Model Error 045 now tests that question prospectively from 2026-08-13 through 2026-08-16.
 
+The complete core governance batch was subsequently downloaded from GitHub and independently validated with:
+
+```text
+0 errors
+2 governed warnings
+overall PASS
+```
+
+The intended 11-file delta was confirmed with no unintended material change.
+
 This preserves the core archive sequence:
 
 ```text
@@ -1320,4 +1811,4 @@ score after the window closes
 update the model
 ```
 
-That sequence is the principal methodological outcome of the 2026-08-12 audit.
+The 2026-08-12 Wednesday audit is therefore substantively closed with the repository mechanically valid, Model Error 045 prospectively protected, records 041–044 preserved, the physical protocol unchanged, Phase 2D undeclared, and the August snapshot collection boundary intact.
