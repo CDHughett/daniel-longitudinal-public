@@ -109,7 +109,23 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - confirms no biological-data correction
   - confirms no privacy-artifact change
   - confirms no release increment
-  - records final fresh-ZIP verification as pending after completion of the August 12 change set
+  - records completed fresh-ZIP verification of `daniel-longitudinal-public-main (3).zip`
+  - records post-change ZIP size `35,902,464 bytes`
+  - records post-change ZIP SHA-256 `30d5e2fa5b8694981307102750ed9c107f581048bc213c5a4a464746a8d3d20d`
+  - records post-change validator result of zero errors, two governed warnings, ten passes, and overall `PASS`
+  - records extracted-directory validator result of zero errors, two governed warnings, nine passes, and overall `PASS`
+  - records successful Python compilation of `tools/validate_repository.py`
+  - records the verified post-change inventory of 181 files, 128 Markdown files, 760 internal references, 11 CSV files, 182 canonical sleep rows, 27 weekly reports, and 33 model-error records
+  - confirms records 041–045 remain open and unscored
+  - confirms record 045 protected actual and error fields remain blank
+  - confirms 29 of 29 registered checksums pass
+  - confirms RingConn source-byte and CRLF preservation
+  - confirms release metadata remains aligned
+  - confirms the original 041–044 evaluation plan remained unchanged
+  - confirms the August snapshot collection plan remained unchanged
+  - confirms the post-change delta consisted of exactly 2 added files, 9 changed files, and 0 removed files
+  - confirms no unintended material file change was identified
+  - closes the required post-change verification for the substantive 11-file August 12 governance batch
 
 #### Weekly reporting
 
@@ -1199,6 +1215,32 @@ The source-workbook narrative discrepancy remains documented rather than silentl
   GitHub Actions deferred
   ```
 
+- Post-change verification state:
+
+  ```text
+  Core 2026-08-12 governance batch:
+  verified from fresh GitHub ZIP
+
+  Package:
+  daniel-longitudinal-public-main (3).zip
+
+  SHA-256:
+  30d5e2fa5b8694981307102750ed9c107f581048bc213c5a4a464746a8d3d20d
+
+  Validator:
+  0 errors
+  2 governed warnings
+  PASS
+
+  Intended delta:
+  2 files added
+  9 files changed
+  0 files removed
+
+  Unintended material changes:
+  none identified
+  ```
+
 - Current expected governed validator warnings concern:
 
   - DQ-001 awake-minute and awakening-count duplication
@@ -1238,6 +1280,7 @@ The source-workbook narrative discrepancy remains documented rather than silentl
   - validator protection expansion through record 045
   - August 12 Wednesday audit
   - August 12 current-state and navigation alignment
+  - August 12 post-change verification closure
 
 - Current release metadata remains:
   - version: `1.0.0`
