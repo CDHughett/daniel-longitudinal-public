@@ -175,11 +175,11 @@ Prediction evaluation is intended to improve calibration rather than maximize an
 
 ---
 
-## Active Evaluation Plan
+## Active Evaluation Plan — Records 041–044
 
 ### [`open_prediction_evaluation_plan_041_044.md`](open_prediction_evaluation_plan_041_044.md)
 
-This is the active preregistered evaluation plan for Model Error records 041–044.
+This is the preregistered evaluation plan for Model Error records 041–044.
 
 It defines:
 
@@ -193,7 +193,7 @@ It defines:
 - known information at registration
 - closure boundaries
 
-Current governed records:
+Governed records:
 
 - 041 — recovery capacity
 - 042 — ambient-execution plateau
@@ -213,6 +213,118 @@ It may not independently:
 - revise their predictions
 - change their thresholds
 - substitute a new primary endpoint
+
+Record 045 does not amend this plan.
+
+The 041–044 evaluation block remains preserved as originally registered.
+
+---
+
+## Active Evaluation Plan — Record 045
+
+### [`open_prediction_evaluation_plan_045.md`](open_prediction_evaluation_plan_045.md)
+
+This is the separate preregistered evaluation plan for Model Error record 045.
+
+Record 045 was registered on:
+
+```text
+2026-08-12
+```
+
+Its domain is:
+
+```text
+autonomic_reconvergence
+```
+
+Its registered prediction is:
+
+```text
+partial_reconvergence
+```
+
+Its admissible scoring window is:
+
+```text
+2026-08-13 through 2026-08-16
+```
+
+The plan was created after retrospective closeout of Week 31 but before the admissible record 045 outcome window began.
+
+The following observations are registration context only:
+
+```text
+2026-W31
+2026-08-10
+2026-08-11
+2026-08-12
+```
+
+They may explain why the prediction was generated.
+
+They cannot satisfy it.
+
+August 17–18 biological and performance snapshot results are also excluded from record 045 scoring.
+
+The plan defines:
+
+- the W30 and W31 reference states
+- fixed partial-reconvergence thresholds
+- four-day aggregation rules
+- functional-preservation requirements
+- recovery-intervention boundaries
+- failure classifications
+- insufficient-evidence handling
+- missing-data handling
+- evidence hierarchy
+- relationships to records 041–044
+- protocol protections
+- snapshot-result exclusion
+- phase protections
+- threshold immutability
+- post-window scoring procedure
+
+Registered favorable thresholds are:
+
+```text
+Daily HRV >= 59.7 ms
+Sleep HRV >= 65.3 ms
+Resting HR <= 49.2 bpm
+Sleeping HR <= 53.7 bpm
+```
+
+Support requires:
+
+```text
+at least 3 of 4 autonomic thresholds met
+
+AND
+
+no multi-session functional regression
+
+AND
+
+no recovery-driven protocol reduction or intervention
+```
+
+Record 045 is a secondary trajectory prediction.
+
+It does not:
+
+- replace record 041
+- redefine recovery-capacity criteria
+- score motor automaticity under record 042
+- alter the Model Error 043 biological endpoint
+- modify record 044 governance criteria
+- authorize a taper
+- authorize a deload
+- authorize an overload
+- authorize recovery manipulation
+- declare Phase 2D
+- alter the August snapshot collection plan
+
+The plan should remain fixed through its outcome window except for a documented source or factual correction that does not move the prediction boundary after outcome access.
 
 ---
 
@@ -253,11 +365,12 @@ The collection plan does not contain August results.
 It does not:
 
 - predict the result
-- alter records 041–044
+- alter records 041–045
 - change scoring rules
 - authorize protocol progression
 - declare Phase 2D
 - create a release automatically
+- determine the outcome of record 045
 
 The plan should remain unchanged unless a factual collection detail changes.
 
@@ -301,9 +414,10 @@ A standing rule should not be changed merely because a current result is inconve
 
 A preregistered evaluation plan applies standing methodology to a defined prediction block or outcome window.
 
-Example:
+Current examples:
 
 - `open_prediction_evaluation_plan_041_044.md`
+- `open_prediction_evaluation_plan_045.md`
 
 It should identify:
 
@@ -318,6 +432,15 @@ It should identify:
 - discordance handling
 
 Once outcome access begins, substantive scoring rules should remain fixed.
+
+Separate prediction blocks should remain in separate preregistration artifacts when their:
+
+- registration dates differ
+- evidence windows differ
+- primary questions differ
+- admissible evidence differs
+
+The existence of a later evaluation plan must not silently rewrite an earlier one.
 
 ---
 
@@ -521,6 +644,10 @@ Reports operate under methodology.
 
 They must not rewrite preregistered evaluation or collection rules.
 
+For record 045, reports may preserve the relevant August 13–16 observations.
+
+They may not use Week 31 or August 10–12 as scoring evidence merely because those observations generated the prediction.
+
 ---
 
 ## Data
@@ -573,6 +700,10 @@ See:
 - [`../VERIFICATION.md`](../VERIFICATION.md)
 - [`../tools/validate_repository.py`](../tools/validate_repository.py)
 - [`../docs/audits/`](../docs/audits/)
+
+The local validator explicitly protects records 041–045 while they remain in the current open evaluation state.
+
+Validation does not score those records.
 
 ---
 
@@ -637,6 +768,35 @@ Preregistration should preserve:
 - closure conditions
 - missingness and discordance rules
 
+The timing boundary is specific to the prediction or collection question being governed.
+
+For records 041–044, use:
+
+```text
+open_prediction_evaluation_plan_041_044.md
+```
+
+For record 045, use:
+
+```text
+open_prediction_evaluation_plan_045.md
+```
+
+For record 045:
+
+```text
+Known registration context:
+all evidence through 2026-08-12
+
+Admissible scoring window:
+2026-08-13 through 2026-08-16
+
+Excluded:
+Week 31
+2026-08-10 through 2026-08-12
+August 17–18 snapshot outcomes
+```
+
 A document written after outcome access may still be useful.
 
 It must be labeled retrospective rather than preregistered.
@@ -667,6 +827,25 @@ Interpretation must remain proportional to:
 - contradictory evidence
 - registered evaluation rules
 
+A supported record 045 result would establish only that its preregistered short-window partial-reconvergence criteria were met.
+
+It would not independently establish:
+
+- complete recovery
+- optimal recovery
+- absence of accumulated cost
+- permanent autonomic normalization
+- Phase 2D
+- favorable August biological results
+
+A failed record 045 result likewise would not independently establish:
+
+- recovery collapse
+- protocol failure
+- biological regression
+- failure of records 041–044
+- termination of Phase 2
+
 ---
 
 # File Naming Guidance
@@ -689,6 +868,18 @@ Event-specific documents may use:
 
 ```text
 YYYY-MM-DD-descriptive-record.md
+```
+
+Record-specific active plans may use:
+
+```text
+open_prediction_evaluation_plan_###.md
+```
+
+or a bounded record range when the records share the same registration and evaluation framework:
+
+```text
+open_prediction_evaluation_plan_###_###.md
 ```
 
 Avoid filenames based only on:
@@ -725,11 +916,13 @@ A new methodology file should normally be linked from:
 - `LATEST.md` when actively relevant
 - `CHANGELOG.md` when material
 
+A new prediction-specific plan should remain separate from an older preregistered plan when combining them would blur registration timing or admissible evidence.
+
 ---
 
 # Current Active Methodology State
 
-As of 2026-07-29:
+As of 2026-08-12:
 
 ```text
 Data collection:
@@ -744,11 +937,17 @@ Active standing methodology
 Records 041–044 evaluation plan:
 Active and binding
 
+Record 045 evaluation plan:
+Active and binding before its 2026-08-13 scoring-window start
+
 August 2026 snapshot collection plan:
 Active and binding before outcome access
 
-Records 041–044:
+Records 041–045:
 Open and unscored
+
+Record 045 scoring window:
+2026-08-13 through 2026-08-16
 
 Canonical phase:
 Phase 2 — Load Integration
@@ -763,6 +962,21 @@ Physical protocol:
 Unchanged
 ```
 
+The current methodology state preserves three separate August governance artifacts:
+
+```text
+Records 041–044:
+open_prediction_evaluation_plan_041_044.md
+
+Record 045:
+open_prediction_evaluation_plan_045.md
+
+August biological and performance collection:
+2026-08-snapshot-collection-plan.md
+```
+
+These artifacts have different scopes and should not be collapsed into one retrospective document.
+
 ---
 
 # Related Documents
@@ -776,6 +990,7 @@ Unchanged
 - [`../DATA_DICTIONARY.md`](../DATA_DICTIONARY.md)
 - [`../data/DATA_COVERAGE.md`](../data/DATA_COVERAGE.md)
 - [`../data/DATA_QUALITY_NOTES.md`](../data/DATA_QUALITY_NOTES.md)
+- [`../data/model_error/model_error_gap_v1.csv`](../data/model_error/model_error_gap_v1.csv)
 - [`../PHASE_MAP.md`](../PHASE_MAP.md)
 - [`../PHASE_DECLARATION_CRITERIA.md`](../PHASE_DECLARATION_CRITERIA.md)
 - [`../VERIFICATION.md`](../VERIFICATION.md)
@@ -788,26 +1003,45 @@ Unchanged
 
 This directory guide was expanded on 2026-07-29 to reflect the methodology layer’s current operational role.
 
-The revision:
+That revision:
 
-- indexes the active methodology files
-- distinguishes standing methodology from preregistered plans
-- distinguishes active, retrospective, historical, and superseded documents
-- exposes the August snapshot collection plan
-- exposes the active evaluation plan for records 041–044
-- defines the relationship between `/methodology` and `/docs/methodology`
-- defines source, correction, privacy, and interpretation boundaries
-- adds file-placement and naming guidance
-- defines expectations for future methodology additions
+- indexed the active methodology files
+- distinguished standing methodology from preregistered plans
+- distinguished active, retrospective, historical, and superseded documents
+- exposed the August snapshot collection plan
+- exposed the active evaluation plan for records 041–044
+- defined the relationship between `/methodology` and `/docs/methodology`
+- defined source, correction, privacy, and interpretation boundaries
+- added file-placement and naming guidance
+- defined expectations for future methodology additions
 
-The revision changes navigation and maintenance guidance only.
+On 2026-08-12, this guide was updated after prospective registration of Model Error 045.
+
+The 2026-08-12 revision:
+
+- exposes `open_prediction_evaluation_plan_045.md`
+- preserves `open_prediction_evaluation_plan_041_044.md` unchanged as the governing plan for records 041–044
+- identifies record 045 as a separate secondary trajectory prediction
+- records the 2026-08-12 registration date
+- records the 2026-08-13 through 2026-08-16 admissible scoring window
+- preserves Week 31 and August 10–12 as registration context only
+- excludes August 17–18 snapshot outcomes from record 045 scoring
+- documents the fixed record 045 autonomic thresholds
+- documents the relationship between record 045 and records 041–044
+- documents validator protection through record 045
+- advances the current open prediction set to records 041–045
+- preserves the August collection plan as a separate governance artifact
+- preserves the existing physical protocol and phase state
+
+The revision changes methodology navigation and active-governance documentation only.
 
 It does not alter:
 
 - any source artifact
 - any canonical value
-- any prediction
-- any scoring threshold
-- any protocol exposure
+- records 041–044
+- any closed prediction
+- any physical protocol exposure
+- the August snapshot collection conditions
 - any phase declaration
 - any release metadata
