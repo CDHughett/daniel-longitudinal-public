@@ -14,6 +14,103 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 
 ### Added
 
+#### Model Error 045 and August 12 governance
+
+- Added Model Error record `045` to `data/model_error/model_error_gap_v1.csv`:
+  - registration date `2026-08-12`
+  - domain `autonomic_reconvergence`
+  - model `gpt5.6-sol-subject-calibrated`
+  - registered prediction `partial_reconvergence`
+  - model type `subject_calibrated`
+  - calibration state `pre`
+  - flag `secondary`
+  - prediction type `trajectory`
+  - status `open`
+  - preserves actual and error fields as blank before outcome evaluation
+
+- Registered record 045 prospectively after retrospective closeout of the Week 31 autonomic-performance divergence.
+
+- Preserved the temporal boundary between:
+  - the observation that generated the prediction
+  - the evidence permitted to score the prediction
+
+- Defined the following as registration context only for record 045:
+
+  ```text
+  2026-W31
+  2026-08-10
+  2026-08-11
+  2026-08-12
+  ```
+
+- Defined the admissible record 045 scoring window as:
+
+  ```text
+  2026-08-13 through 2026-08-16
+  ```
+
+- Explicitly excluded the following from record 045 scoring:
+  - `2026-08-17` TruAge / TruHealth results
+  - `2026-08-17` DEXA results
+  - `2026-08-17` VO₂ max results
+  - `2026-08-18` Bod Pod results
+  - later August snapshot interpretation
+
+- Added `methodology/open_prediction_evaluation_plan_045.md`:
+  - preregisters the record 045 scoring rules before the admissible outcome window begins
+  - defines W30 as the immediately preceding stronger autonomic reference state
+  - defines W31 as the immediately preceding compressed autonomic state
+  - defines partial reconvergence as recovery of at least half of the W31-to-W30 autonomic gap
+  - fixes the favorable four-day mean thresholds at:
+    - daily biomarker HRV `>= 59.7 ms`
+    - sleep HRV `>= 65.3 ms`
+    - resting heart rate `<= 49.2 bpm`
+    - sleeping heart rate `<= 53.7 bpm`
+  - requires at least three of four favorable autonomic threshold crossings
+  - requires no multi-session functional regression
+  - requires no recovery-driven protocol reduction or intervention
+  - defines persistent-divergence failure
+  - defines adverse functional-reconvergence failure
+  - defines insufficient-evidence handling
+  - defines missing-data handling
+  - preserves daily biomarker HRV and sleep HRV as separate metrics
+  - preserves resting heart rate and sleeping heart rate as separate metrics
+  - prohibits cross-field substitution
+  - preserves records 041–044 unchanged
+  - excludes August 17–18 snapshot results
+  - authorizes no protocol manipulation
+  - authorizes no phase declaration
+  - locks thresholds against outcome-driven revision
+
+- Added `docs/audits/2026-08-12-wednesday-audit.md`:
+  - audits pre-change package `daniel-longitudinal-public-main (2).zip`
+  - records pre-change ZIP size `35,877,254 bytes`
+  - records pre-change ZIP SHA-256 `2b5e7fbe2477fa512dd4419b0caf70e40e2d9ee70616afe47786341ecc6897c7`
+  - records zero validator errors and two governed warnings
+  - records pre-change mechanical repository `PASS`
+  - records 179 files
+  - records 126 Markdown files
+  - records 739 internal Markdown references
+  - records 11 CSV files
+  - records 29 of 29 checksum entries passing
+  - records canonical sleep continuity through `2026-08-09`
+  - records 182 continuous canonical sleep rows
+  - records weekly-report continuity through active `2026-W32`
+  - reconciles Week 31 training and recovery metrics
+  - preserves the Week 31 autonomic-performance divergence as retrospective evidence
+  - documents the prospective rationale for record 045
+  - documents record 045 thresholds and failure boundaries
+  - documents record 045 independence from records 041–044
+  - documents validator protection expansion through record 045
+  - confirms no change to the August collection plan
+  - confirms no change to the original 041–044 evaluation plan
+  - confirms no protocol change
+  - confirms no phase transition
+  - confirms no biological-data correction
+  - confirms no privacy-artifact change
+  - confirms no release increment
+  - records final fresh-ZIP verification as pending after completion of the August 12 change set
+
 #### Weekly reporting
 
 - Added retrospective closeout for `reports/2026-W31.md`:
@@ -226,7 +323,7 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - weekly-report continuity
   - active weekly-report count
   - model-error record continuity
-  - protected status of records 041–044
+  - protected status of records 041–045
   - release-metadata alignment
   - RingConn byte sizes
   - RingConn SHA-256 values
@@ -260,6 +357,7 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - `2026-07-25`
   - `2026-07-29`
   - `2026-08-05`
+  - `2026-08-12`
 
 - The July audits collectively:
   - verified repository structure, links, Markdown integrity, CSV parsing, checksums, report continuity, prediction continuity, and release metadata
@@ -357,6 +455,110 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 ---
 
 ### Changed
+
+#### August 12 current-state and governance alignment
+
+- Updated `reports/2026-W32.md`:
+  - advances the open model-error set from records 041–044 to records 041–045
+  - documents record 045 registration on `2026-08-12`
+  - preserves Week 31 and August 10–12 as record 045 registration context only
+  - defines August 13–16 as the sole record 045 scoring window
+  - exposes the four fixed record 045 autonomic thresholds
+  - documents functional-regression and recovery-intervention failure boundaries
+  - excludes August 17–18 snapshot results from record 045 scoring
+  - adds a dedicated record 045 model-error boundary
+  - preserves records 041–044 independently
+  - preserves ordinary representative-state execution
+  - prohibits behavior manipulation intended to satisfy record 045
+  - preserves Phase 2 and leaves Phase 2D undeclared
+
+- Updated `LATEST.md`:
+  - advances the current open model-error set to records 041–045
+  - exposes record 045 as a secondary prospective autonomic-reconvergence trajectory probe
+  - records the `2026-08-13` through `2026-08-16` scoring window
+  - preserves Week 31 as the retrospective observation that generated the question
+  - preserves August 10–12 as known registration context
+  - exposes the separate record 045 evaluation plan
+  - records the registered thresholds and support criteria
+  - documents record 045 independence from records 041–044
+  - preserves the August snapshot collection plan separately
+  - preserves ordinary protocol behavior
+  - preserves Phase 2D as undeclared
+
+- Updated `INDEX.md`:
+  - exposes `methodology/open_prediction_evaluation_plan_045.md`
+  - advances the current open prediction set to records 041–045
+  - preserves `methodology/open_prediction_evaluation_plan_041_044.md` as the original preregistered evaluation block
+  - records the separate record 045 timing and evidence boundary
+  - adds record 045 to the prediction-review flow
+  - adds separate pre-snapshot record 045 evaluation flow
+  - documents validator protection through record 045
+  - preserves August 17–18 snapshot outcomes as inadmissible for record 045 scoring
+  - preserves Phase 2, protocol, collection, privacy, and release boundaries
+
+- Updated `methodology/README.md`:
+  - indexes `open_prediction_evaluation_plan_045.md`
+  - distinguishes the record 045 plan from the existing records 041–044 plan
+  - records the record 045 registration date
+  - records the August 13–16 admissible scoring window
+  - records the fixed autonomic thresholds
+  - records Week 31 and August 10–12 as registration context only
+  - excludes August 17–18 snapshot results from record 045 scoring
+  - documents the relationship between record 045 and records 041–044
+  - documents validator protection through record 045
+  - advances the current active methodology state to records 041–045 open and unscored
+  - preserves the August collection plan as a separate governance artifact
+  - preserves the physical protocol and phase state
+
+- Updated `README.md`:
+  - exposes both active prediction-evaluation plans
+  - advances the current open model-error set to records 041–045
+  - records record 045 as separately governed
+  - records the August 13–16 scoring window
+  - preserves Week 31 and August 10–12 as context only
+  - excludes August 17–18 snapshot results from record 045 scoring
+  - preserves the original 041–044 plan
+  - preserves the August collection plan separately
+  - adds the record 045 plan to navigation and governance links
+
+- Updated `VERIFICATION.md`:
+  - advances protected model-error documentation from records 041–044 to records 041–045
+  - documents explicit rather than dynamically inferred open-record protection
+  - documents that record 045 must remain open before its scoring window closes
+  - documents preservation of the record 045 prediction
+  - documents blank protected actual and error fields before scoring
+  - links `methodology/open_prediction_evaluation_plan_045.md`
+  - clarifies that the validator protects record state but does not score record 045
+
+- Updated `tools/validate_repository.py`:
+  - changes explicit protected model-error range from:
+
+    ```python
+    range(41, 45)
+    ```
+
+    to:
+
+    ```python
+    range(41, 46)
+    ```
+
+  - advances the validator pass-state message from:
+
+    ```text
+    041-044 remain open and unscored
+    ```
+
+    to:
+
+    ```text
+    041-045 remain open and unscored
+    ```
+
+  - retains explicit protected-record enumeration so an accidental premature status change cannot evade validation
+  - introduces no dynamic scoring behavior
+  - does not score predictions
+  - does not modify source or biological data
 
 #### Current-state alignment
 
@@ -964,14 +1166,27 @@ The source-workbook narrative discrepancy remains documented rather than silentl
 - Current open prediction state:
 
   ```text
-  Model Error records 041–044 open and unscored
+  Model Error records 041–045 open and unscored
+  ```
+
+- Current prediction-governance state:
+
+  ```text
+  Records 041–044:
+  original preregistered evaluation plan remains binding
+
+  Record 045:
+  separately preregistered on 2026-08-12
+  scoring window 2026-08-13 through 2026-08-16
+  secondary trajectory prediction
   ```
 
 - Current August collection-governance state:
 
   ```text
-  Evaluation plan committed and binding
-  Collection plan committed and binding before outcome access
+  Records 041–044 evaluation plan committed and binding
+  Record 045 evaluation plan committed before its scoring window
+  August collection plan committed and binding before outcome access
   Physical protocol unchanged
   ```
 
@@ -979,6 +1194,7 @@ The source-workbook narrative discrepancy remains documented rather than silentl
 
   ```text
   Local read-only validation
+  Explicit protection of records 041–045
   Human semantic review
   GitHub Actions deferred
   ```
@@ -1017,6 +1233,11 @@ The source-workbook narrative discrepancy remains documented rather than silentl
   - `LATEST.md` advancement from W31 to W32
   - `INDEX.md` advancement through W32 and sleep coverage through `2026-08-09`
   - preservation of the W31 autonomic-performance divergence as an observational question without retrospective prediction registration
+  - prospective Model Error 045 registration
+  - record 045 evaluation-plan preregistration
+  - validator protection expansion through record 045
+  - August 12 Wednesday audit
+  - August 12 current-state and navigation alignment
 
 - Current release metadata remains:
   - version: `1.0.0`
@@ -1027,6 +1248,13 @@ The source-workbook narrative discrepancy remains documented rather than silentl
   - open
   - unscored
   - unchanged in prediction wording
+  - governed by their original evaluation plan
+
+- Record 045 remains:
+  - open
+  - unscored
+  - secondary
+  - prospectively bounded to `2026-08-13` through `2026-08-16`
 
 - Current protocol exposure remains unchanged.
 
