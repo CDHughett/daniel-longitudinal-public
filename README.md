@@ -97,7 +97,15 @@ For a compact inspection route, see [`docs/OBSERVER_QUICKSTART.md`](./docs/OBSER
 
 For the broader skeptical or technical review path, see [`docs/FOR_OBSERVERS.md`](./docs/FOR_OBSERVERS.md).
 
-For the prospective evaluation rules governing the current prediction block, see [`methodology/open_prediction_evaluation_plan_041_044.md`](./methodology/open_prediction_evaluation_plan_041_044.md).
+For the prospective evaluation rules governing records 041–044, see:
+
+[`methodology/open_prediction_evaluation_plan_041_044.md`](./methodology/open_prediction_evaluation_plan_041_044.md)
+
+For the separately registered prospective evaluation rules governing record 045, see:
+
+[`methodology/open_prediction_evaluation_plan_045.md`](./methodology/open_prediction_evaluation_plan_045.md)
+
+The two plans remain separate because their registration dates, evidence windows, and scoring questions differ.
 
 ---
 
@@ -198,6 +206,7 @@ Interpretation remains intentionally constrained:
 - biological interpretation remains retrospective
 - registered predictions remain isolated in the model-error layer
 - prediction wording is preserved until the applicable observation window closes
+- observations that generate predictions remain distinct from future evidence permitted to score them
 - subjective context is separated from governed archive records unless formally incorporated
 - protocol documents describe this subject’s archive and are not generalized prescriptions
 
@@ -216,6 +225,8 @@ No claim extends beyond the recorded system without separate evidence.
 Phase language is retrospective and evidence-earned.
 
 Open prediction outcomes may contribute to a later phase evaluation but do not independently declare a phase transition.
+
+A supported or failed record 045 result does not independently declare or terminate a phase.
 
 ---
 
@@ -280,9 +291,56 @@ Registered predictions must be:
 - scored independently where multiple domains are involved
 - retained when evidence is insufficient rather than forced into a pass or failure
 
-Current open-record evaluation rules:
+Current open model-error records:
+
+```text
+041
+042
+043
+044
+045
+```
+
+Records 041–044 remain governed by:
 
 → [`methodology/open_prediction_evaluation_plan_041_044.md`](./methodology/open_prediction_evaluation_plan_041_044.md)
+
+Record 045 remains separately governed by:
+
+→ [`methodology/open_prediction_evaluation_plan_045.md`](./methodology/open_prediction_evaluation_plan_045.md)
+
+Record 045 was registered prospectively on 2026-08-12.
+
+Its admissible scoring window is:
+
+```text
+2026-08-13 through 2026-08-16
+```
+
+For record 045:
+
+```text
+Registration context only:
+2026-W31
+2026-08-10
+2026-08-11
+2026-08-12
+
+Admissible scoring evidence:
+2026-08-13
+2026-08-14
+2026-08-15
+2026-08-16
+
+Excluded:
+2026-08-17 through 2026-08-18 snapshot outcomes
+```
+
+Record 045 does not amend, replace, rescore, or shorten records 041–044.
+
+The August biological and performance collection remains separately governed by:
+
+→ [`methodology/2026-08-snapshot-collection-plan.md`](./methodology/2026-08-snapshot-collection-plan.md)
 
 Model-error layer:
 
@@ -298,6 +356,8 @@ Model-error layer:
 - [`RISK_MANAGEMENT.md`](./RISK_MANAGEMENT.md)
 - [`TELEMETRY.md`](./TELEMETRY.md)
 - [`methodology/open_prediction_evaluation_plan_041_044.md`](./methodology/open_prediction_evaluation_plan_041_044.md)
+- [`methodology/open_prediction_evaluation_plan_045.md`](./methodology/open_prediction_evaluation_plan_045.md)
+- [`methodology/2026-08-snapshot-collection-plan.md`](./methodology/2026-08-snapshot-collection-plan.md)
 
 ---
 
@@ -347,7 +407,9 @@ Hughett, C. D. (2026). *Daniel Longitudinal Study (v1.0.0)* [Data set]. Zenodo. 
 - Artifact history → [`snapshots`](./snapshots/)
 - Weekly reports → [`reports`](./reports/)
 - Model-error layer → [`data/model_error/WHAT_THIS_LAYER_IS.md`](./data/model_error/WHAT_THIS_LAYER_IS.md)
-- Open-prediction evaluation plan → [`methodology/open_prediction_evaluation_plan_041_044.md`](./methodology/open_prediction_evaluation_plan_041_044.md)
+- Open-prediction plan 041–044 → [`methodology/open_prediction_evaluation_plan_041_044.md`](./methodology/open_prediction_evaluation_plan_041_044.md)
+- Open-prediction plan 045 → [`methodology/open_prediction_evaluation_plan_045.md`](./methodology/open_prediction_evaluation_plan_045.md)
+- August collection plan → [`methodology/2026-08-snapshot-collection-plan.md`](./methodology/2026-08-snapshot-collection-plan.md)
 - Telemetry layer → [`TELEMETRY.md`](./TELEMETRY.md)
 - Versioning → [`VERSIONING.md`](./VERSIONING.md)
 
