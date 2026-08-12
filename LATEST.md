@@ -20,13 +20,18 @@ Archive DOI: https://doi.org/10.5281/zenodo.20815612
 - **Recovery posture:** Functionally preserved despite a broader W31 pattern of lower HRV and higher heart-rate measures relative to W30
 - **Archive posture:** Public, governed, versioned, and retrospectively interpreted, with prospective predictions isolated in the model-error layer
 - **Sleep dataset current through:** 2026-08-09
-- **Open model-error records:** 041–044
+- **Open model-error records:** 041–045
+- **Record 045 posture:** Secondary prospective autonomic-reconvergence trajectory probe; scoring window 2026-08-13 through 2026-08-16
 - **Next major artifact:** August 2026 biological and performance snapshot
 - **August collection governance:** Preregistered before outcome access
 
 No formal Phase 2D transition has been declared.
 
-The Week 31 autonomic-performance divergence remains an observational carryforward question rather than a retrospectively created prediction.
+The Week 31 autonomic-performance divergence remains preserved as the observation that generated Model Error 045.
+
+Record 045 was registered prospectively on 2026-08-12.
+
+Week 31 and observations from 2026-08-10 through 2026-08-12 remain registration context only and cannot satisfy record 045.
 
 ---
 
@@ -128,7 +133,9 @@ The physiological cost of the uninterrupted accumulation block may nevertheless 
 
 Records 041–044 remain open and unchanged.
 
-No retrospective Model Error record was created from the Week 31 divergence.
+Week 31 itself was not converted into a retrospective prediction window.
+
+Instead, the observation was carried forward and used to motivate the separately registered prospective Model Error 045 after Week 31 had closed.
 
 ---
 
@@ -136,7 +143,7 @@ No retrospective Model Error record was created from the Week 31 divergence.
 
 Week 32 is the final full ordinary observation window before the August 17–18 biological and performance snapshot.
 
-The primary question is whether the Week 31 autonomic pattern:
+The primary broader question is whether the Week 31 autonomic pattern:
 
 - rebounds toward the preceding range
 - stabilizes at a softer but functionally compatible level
@@ -200,16 +207,120 @@ Strong performance will not be used to dismiss softer physiological recovery sig
 
 Softer physiological recovery signals will not independently command protocol change without broader functional convergence.
 
+A narrow portion of the Week 32 autonomic question is now prospectively governed by Model Error 045.
+
+---
+
+## Model Error 045 — Prospective Autonomic Reconvergence Probe
+
+Model Error 045 was registered on:
+
+```text
+2026-08-12
+```
+
+Registered domain:
+
+```text
+autonomic_reconvergence
+```
+
+Registered prediction:
+
+```text
+partial_reconvergence
+```
+
+Prediction type:
+
+```text
+secondary trajectory
+```
+
+Status:
+
+```text
+open and unscored
+```
+
+The prediction asks whether the W31 autonomic-performance divergence partially reconverges during the final ordinary pre-snapshot interval through improvement in the autonomic layer while functional availability remains preserved.
+
+The scoring window is prospectively fixed at:
+
+```text
+2026-08-13 through 2026-08-16
+```
+
+The following are registration context only:
+
+```text
+2026-W31
+2026-08-10
+2026-08-11
+2026-08-12
+```
+
+They cannot satisfy the prediction.
+
+August 17–18 snapshot outcomes are also excluded from scoring.
+
+The registered favorable four-day mean thresholds are:
+
+| Marker | Favorable threshold |
+|---|---:|
+| Daily biomarker HRV | ≥59.7 ms |
+| Sleep HRV | ≥65.3 ms |
+| Resting heart rate | ≤49.2 bpm |
+| Sleeping heart rate | ≤53.7 bpm |
+
+Support requires:
+
+```text
+at least 3 of 4 autonomic thresholds met
+
+AND
+
+no multi-session functional regression
+
+AND
+
+no recovery-driven protocol reduction or intervention
+```
+
+Fewer than three favorable autonomic threshold crossings with preserved function constitutes failure through persistent autonomic-performance divergence.
+
+Multi-session functional regression or a recovery-driven protocol change also constitutes failure.
+
+Major illness, unrelated major disruption, or insufficient wearable evidence that prevents reliable construction of the registered four-day comparison produces insufficient evidence rather than an inferred pass or fail.
+
+Record 045 does not amend, replace, rescore, shorten, or otherwise change records 041–044.
+
+Full scoring governance is preserved in:
+
+[`methodology/open_prediction_evaluation_plan_045.md`](methodology/open_prediction_evaluation_plan_045.md)
+
+The record must not be scored before the 2026-08-16 observation period is complete.
+
 ---
 
 ## August Snapshot Governance
 
-The August 17–18 biological and performance collection window is governed by two committed preregistration artifacts:
+The August 17–18 biological and performance collection window remains governed by the previously committed preregistration artifacts:
 
 - [`methodology/open_prediction_evaluation_plan_041_044.md`](methodology/open_prediction_evaluation_plan_041_044.md)
 - [`methodology/2026-08-snapshot-collection-plan.md`](methodology/2026-08-snapshot-collection-plan.md)
 
-These documents were committed before outcome access and remain binding for:
+Model Error 045 is governed separately by:
+
+- [`methodology/open_prediction_evaluation_plan_045.md`](methodology/open_prediction_evaluation_plan_045.md)
+
+The 041–044 evaluation plan and August snapshot collection plan were committed before their respective outcome access.
+
+The 045 evaluation plan was committed before the 2026-08-13 through 2026-08-16 scoring window.
+
+These documents remain binding within their own evidence boundaries.
+
+The August snapshot plans govern:
 
 - the primary Model Error 043 endpoint
 - the May 2026 primary comparison baseline
@@ -232,11 +343,22 @@ Scheduled collection:
 The collection plan does not:
 
 - predict the August result
-- alter records 041–044
+- alter records 041–045
 - modify scoring thresholds
 - authorize protocol progression
 - declare Phase 2D
 - require a release automatically
+
+Record 045 likewise does not:
+
+- change the August collection conditions
+- modify Model Error 043
+- use August 17–18 snapshot results for scoring
+- authorize a taper
+- authorize a deload
+- authorize an overload
+- authorize recovery manipulation
+- alter the installed physical protocol
 
 Week 32 remains part of the representative-state exposure period.
 
@@ -251,8 +373,11 @@ Do not:
 - intentionally manipulate bodyweight for DEXA or Bod Pod
 - alter hydration to produce a preferred body-composition result
 - alter the installed protocol because the snapshot is approaching
+- alter ordinary behavior to produce a preferred record 045 result
 
 The snapshot should evaluate the biology produced by the installed system rather than a short-term optimization strategy.
+
+Record 045 should evaluate the autonomic trajectory produced by the same ordinary system.
 
 The physical protocol remains unchanged.
 
@@ -275,7 +400,8 @@ The physical protocol remains unchanged.
 | Sleep Coverage | Canonical dataset current through 2026-08-09 |
 | Bodyweight Context | Approximately 229–236 lb across training, fluid, GI-timing, travel, and scale conditions |
 | Biomarker Coverage | February and May 2026 integrated multi-domain snapshots |
-| Prediction Layer | Model Error records 041–044 open |
+| Prediction Layer | Model Error records 041–045 open |
+| Record 045 | Secondary prospective autonomic-reconvergence probe; scoring 2026-08-13 through 2026-08-16 |
 | August Collection Governance | Evaluation and collection plans committed before outcome access |
 | Archive Integrity | Maintained |
 | Next Major Artifact | August 2026 biological and performance snapshot |
@@ -305,6 +431,7 @@ Current Phase 2 evidence includes:
 - preservation of ordinary lower-expression sessions without narrative inflation
 - preservation of softer autonomic readings without premature intervention
 - separation of physiological recovery cost from demonstrated functional capacity
+- prospective conversion of an unresolved observation into a separately governed secondary prediction without retroactive scoring
 
 These characteristics increasingly resemble Phase 2D-type expression.
 
@@ -315,6 +442,8 @@ Phase advancement requires continued cross-context recurrence, preserved recover
 The August objective snapshot may provide supporting transition evidence.
 
 It cannot independently declare Phase 2D.
+
+A supported Model Error 045 result likewise cannot independently declare Phase 2D.
 
 ---
 
@@ -373,6 +502,8 @@ The evidence therefore supports substantial recovery capacity without establishi
 
 Week 32 will observe whether the autonomic and functional layers reconverge.
 
+Record 045 now evaluates a narrower prospective portion of that question without changing record 041.
+
 **Status:** Open
 
 ### 042 — Ambient-Execution Plateau
@@ -406,6 +537,10 @@ The unchanged external task continued changing in its relationship to the operat
 
 The evidence remains inside the registered evaluation window.
 
+Record 045 does not score motor automaticity, grip expression, divided attention, positional control, or portability.
+
+Those observations may provide functional context but cannot satisfy its autonomic thresholds.
+
 **Status:** Open
 
 ### 043 — August Biological Snapshot
@@ -435,6 +570,10 @@ The less favorable W31 autonomic profile does not predict the biological outcome
 
 The favorable W31 behavioral record does not predict the biological outcome.
 
+A supported or failed record 045 does not automatically determine record 043.
+
+August 17–18 results cannot be used to score record 045.
+
 **Status:** Open
 
 ### 044 — Protocol Governance
@@ -456,9 +595,56 @@ Week 31 added supportive evidence because simultaneous favorable performance and
 - premature phase declaration
 - suppression of less favorable recovery evidence
 
-Week 32 creates a further governance challenge because the snapshot is close enough to invite short-term optimization.
+Week 32 creates a further governance challenge because the snapshot and record 045 scoring window are close enough to invite short-term optimization.
 
 Representative-state behavior remains the governing rule.
+
+A legitimate recovery-driven intervention could cause record 045 to fail while still supporting record 044 if the intervention reflects appropriate evidence-based governance.
+
+**Status:** Open
+
+### 045 — Autonomic Reconvergence
+
+Evaluates whether the W31 autonomic-performance divergence partially reconverges during the final ordinary pre-snapshot interval.
+
+Registration:
+
+```text
+2026-08-12
+```
+
+Scoring window:
+
+```text
+2026-08-13 through 2026-08-16
+```
+
+Registered favorable thresholds:
+
+```text
+Daily HRV >= 59.7 ms
+Sleep HRV >= 65.3 ms
+Resting HR <= 49.2 bpm
+Sleeping HR <= 53.7 bpm
+```
+
+Support requires:
+
+- at least three of four favorable autonomic threshold crossings
+- no multi-session functional regression
+- no recovery-driven protocol reduction or intervention
+
+Week 31 and August 10–12 are context only.
+
+August 17–18 snapshot results are excluded.
+
+The record is secondary and does not replace or modify records 041–044.
+
+Its purpose is to test a narrow forward trajectory created by the unresolved divergence already visible before registration.
+
+Full rules:
+
+[`Open Prediction Evaluation Plan 045`](methodology/open_prediction_evaluation_plan_045.md)
 
 **Status:** Open
 
@@ -497,11 +683,24 @@ Preserved or improving observations included:
 - preserved performance under added same-day ordinary activity
 - preserved performance under spontaneous social observation
 
-This divergence is retained as an observational carryforward question.
+This divergence remains a valid retrospective Week 31 observation.
 
-It is not a new retrospectively registered prediction.
+It is also the motivating context for the separately registered prospective Model Error 045.
 
-The next useful evidence is whether:
+The archive preserves the temporal distinction:
+
+```text
+Week 31
+observation that generated the question
+
+2026-08-10 through 2026-08-12
+additional known registration context
+
+2026-08-13 through 2026-08-16
+future evidence permitted to score record 045
+```
+
+The next broader evidence remains whether:
 
 - autonomic markers rebound
 - autonomic markers stabilize
@@ -510,7 +709,9 @@ The next useful evidence is whether:
 - subjective state begins changing
 - workload modification becomes functionally necessary
 
-The archive will not force one layer to invalidate the other.
+For record 045 specifically, only the preregistered August 13–16 evidence and rules may determine the outcome.
+
+The archive will not force one physiological or functional layer to invalidate the other.
 
 ---
 
@@ -534,14 +735,17 @@ Active but currently non-disruptive constraints include:
 - temptation to convert improving grip or social recognition into specialized training
 - temptation to convert available capacity into required workload
 - temptation to taper or optimize because August testing is approaching
+- temptation to alter ordinary behavior to produce a preferred record 045 outcome
 
 **Primary risk:** allowing increasingly strong performance and low-friction execution to justify premature progression.
 
 **Secondary risk:** allowing softer autonomic recovery metrics to drive premature intervention without functional convergence.
 
+**Prediction risk:** allowing knowledge of the record 045 thresholds to influence ordinary behavior during its scoring window.
+
 **Snapshot risk:** modifying ordinary behavior to improve an upcoming measurement rather than measuring the installed system as it exists.
 
-**Current response:** preserve the protocol, preserve representative-state behavior, retain ordinary variability, observe spontaneous recurrence, maintain documentation discipline, and intervene only if deviation becomes repeated, progressive, and functionally meaningful.
+**Current response:** preserve the protocol, preserve representative-state behavior, retain ordinary variability, observe spontaneous recurrence, preserve the preregistered 045 boundary, maintain documentation discipline, and intervene only if deviation becomes repeated, progressive, and functionally meaningful.
 
 ---
 
@@ -572,6 +776,7 @@ Evaluation is based on:
 - separation of behavioral evidence from biological outcome scoring
 - preservation of preregistered conditions before outcome access
 - preservation of disagreement between physiological and functional layers when both are supported by evidence
+- separation of observations that generate predictions from future evidence permitted to score them
 
 The archive documents process rather than performance display.
 
@@ -600,16 +805,24 @@ Completed:
 - grip improvement retained as candidate local consolidation rather than a confirmed mechanism
 - spontaneous external-recognition events retained as qualitative evidence
 - 2026-08-09 social-comparison event retained as naturalistic evidence rather than a formal test
-- W31 autonomic-performance divergence retained without retrospective prediction creation
-- records 041–044 carried forward unchanged
+- W31 autonomic-performance divergence retained without retroactive scoring
+- Model Error 045 prospectively registered on 2026-08-12
+- record 045 scoring window fixed at 2026-08-13 through 2026-08-16
+- record 045 favorable autonomic thresholds preregistered
+- Week 31 and August 10–12 explicitly excluded from record 045 scoring
+- August 17–18 snapshot outcomes explicitly excluded from record 045 scoring
+- records 041–044 preserved unchanged
+- records 041–045 protected as open and unscored
+- validator protection extended through record 045
 - Phase 2 status preserved
 - consolidation / lock-in observation substate preserved
-- August scoring rules preregistered
+- August 041–044 scoring rules preregistered
 - August collection conditions preregistered before outcome access
 
 Current work:
 
 - ordinary W32 observation
+- prospective record 045 observation beginning 2026-08-13
 - monitoring whether the W31 multi-marker autonomic pattern rebounds, stabilizes, or converges with functional change
 - monitoring grip and local mechanical status without specialized intervention
 - preserving reduced session salience while maintaining reliable logging
@@ -617,6 +830,7 @@ Current work:
 - preservation of ordinary and below-peak session descriptions
 - preservation of strong performance without using it to dismiss recovery cost
 - preservation of softer autonomic markers without using them as automatic intervention commands
+- preservation of ordinary behavior despite knowledge of record 045 thresholds
 - maintenance of the Model Error 043 scoring framework
 - preservation of committed August collection conditions
 - August artifact-cycle preparation
@@ -643,7 +857,8 @@ Current work:
 - **Methodology Directory:** [methodology](methodology)
 - **Data Collection:** [methodology/data-collection.md](methodology/data-collection.md)
 - **Prediction Evaluation:** [methodology/prediction_evaluation.md](methodology/prediction_evaluation.md)
-- **Open Prediction Plan:** [methodology/open_prediction_evaluation_plan_041_044.md](methodology/open_prediction_evaluation_plan_041_044.md)
+- **Open Prediction Plan 041–044:** [methodology/open_prediction_evaluation_plan_041_044.md](methodology/open_prediction_evaluation_plan_041_044.md)
+- **Open Prediction Plan 045:** [methodology/open_prediction_evaluation_plan_045.md](methodology/open_prediction_evaluation_plan_045.md)
 - **August Collection Plan:** [methodology/2026-08-snapshot-collection-plan.md](methodology/2026-08-snapshot-collection-plan.md)
 - **Data Dictionary:** [DATA_DICTIONARY.md](DATA_DICTIONARY.md)
 - **Measurement Sources:** [MEASUREMENT_SOURCES.md](MEASUREMENT_SOURCES.md)
@@ -652,5 +867,5 @@ Current work:
 
 ---
 
-**System State:** Stable with active autonomic observation  
+**System State:** Stable with active autonomic observation and prospective record 045 evaluation  
 **Operational Mode:** Execute → observe → record → close retrospectively
