@@ -108,8 +108,8 @@ These documents explain what is measured, how it enters the archive, and how qua
 ## Current State and Temporal Structure
 
 - [LATEST.md](LATEST.md) — current executive state
-- [reports/2026-W32.md](reports/2026-W32.md) — active weekly observation window
-- [reports/2026-W31.md](reports/2026-W31.md) — most recent closed weekly report
+- [reports/2026-W33.md](reports/2026-W33.md) — active weekly observation window
+- [reports/2026-W32.md](reports/2026-W32.md) — most recent closed weekly report
 - [PHASE_MAP.md](PHASE_MAP.md) — phase architecture
 - [STATE_TRANSITIONS.md](STATE_TRANSITIONS.md) — recorded phase and state changes
 - [EPOCH_INDEX.md](EPOCH_INDEX.md) — temporal index of major observation periods
@@ -121,17 +121,47 @@ These documents explain what is measured, how it enters the archive, and how qua
 
 ### Current preregistered August governance
 
-- [methodology/open_prediction_evaluation_plan_041_044.md](methodology/open_prediction_evaluation_plan_041_044.md) — scoring and admissible-evidence rules for records 041–044
-- [methodology/open_prediction_evaluation_plan_045.md](methodology/open_prediction_evaluation_plan_045.md) — separate prospective scoring plan for secondary autonomic-reconvergence record 045
+- [methodology/open_prediction_evaluation_plan_041_044.md](methodology/open_prediction_evaluation_plan_041_044.md) — scoring and admissible-evidence rules for open records 041–044
+- [methodology/open_prediction_evaluation_plan_045.md](methodology/open_prediction_evaluation_plan_045.md) — completed preregistered plan retained for closed record 045
+- [methodology/open_prediction_evaluation_plan_046.md](methodology/open_prediction_evaluation_plan_046.md) — active prospective evaluation plan for autonomic unload/reload record 046
 - [methodology/2026-08-snapshot-collection-plan.md](methodology/2026-08-snapshot-collection-plan.md) — August 17–18 collection conditions and outcome-access boundaries
 
 The records 041–044 evaluation plan and August snapshot collection plan were committed before their respective outcome access.
 
-The record 045 plan was registered on 2026-08-12 before its admissible scoring window of 2026-08-13 through 2026-08-16.
+Record 045 was registered on 2026-08-12 before its fixed admissible scoring window of:
 
-Record 045 does not amend, replace, rescore, or shorten records 041–044.
+```text
+2026-08-13 through 2026-08-16
+```
 
-These documents do not contain August snapshot results or declare a phase transition.
+Record 045 is now:
+
+```text
+closed / supported
+```
+
+Its completed evaluation plan remains preserved for provenance.
+
+Record 046 was registered separately on 2026-08-17.
+
+Its evidence structure is:
+
+```text
+2026-08-17:
+registration context only
+
+2026-08-18 through 2026-08-19:
+descriptive unload / re-entry kinetics
+
+2026-08-20 through 2026-08-23:
+primary scoring window
+```
+
+Records 045 and 046 do not amend, replace, rescore, or shorten records 041–044.
+
+Record 046 does not reopen or extend record 045.
+
+These documents do not themselves declare a phase transition.
 
 ---
 
@@ -155,10 +185,12 @@ A skeptical observer should distinguish:
 - direct measurements from derived values
 - candidate evidence from resolved outcomes
 - registered predictions from ordinary planning
+- open predictions from completed scored predictions
 - source-backed correction from unsupported rewriting
 - mechanical validation from semantic review
 - a preregistered collection plan from a result report
 - an observation that generated a prediction from future evidence permitted to score that prediction
+- a completed prediction from a later related prediction with a new evidence boundary
 
 ---
 
@@ -166,8 +198,8 @@ A skeptical observer should distinguish:
 
 - [reports](reports) — active and closed weekly reports
 - [reports/README.md](reports/README.md) — report modes, lifecycle, inclusion rules, and correction boundaries
-- [reports/2026-W31.md](reports/2026-W31.md) — most recent closed weekly report
-- [reports/2026-W32.md](reports/2026-W32.md) — current active weekly report
+- [reports/2026-W32.md](reports/2026-W32.md) — most recent closed weekly report
+- [reports/2026-W33.md](reports/2026-W33.md) — current active weekly report
 
 Reports may contain:
 
@@ -175,10 +207,13 @@ Reports may contain:
 - retrospective weekly interpretation after closeout
 - candidate evidence relevant to open model-error records
 - structured summaries grounded in preserved evidence
+- completed prediction scoring when the preregistered evidence boundary has closed
 
 Reports do not replace source artifacts or canonical structured datasets.
 
 An active report does not determine its own final interpretation.
+
+A completed prediction must not be extended merely because related observations continue afterward.
 
 ---
 
@@ -187,30 +222,36 @@ An active report does not determine its own final interpretation.
 - [snapshots](snapshots) — primary biological, body-composition, performance, and source artifacts
 - [SNAPSHOT_LOG.md](SNAPSHOT_LOG.md) — chronological snapshot index
 - [snapshots/sleep_signal_core_v1.csv](snapshots/sleep_signal_core_v1.csv) — preserved compact sleep-signal artifact
-- [methodology/2026-08-snapshot-collection-plan.md](methodology/2026-08-snapshot-collection-plan.md) — preregistered plan for the next snapshot cycle
+- [methodology/2026-08-snapshot-collection-plan.md](methodology/2026-08-snapshot-collection-plan.md) — preregistered plan for the August snapshot cycle
 
 Snapshot review should consider:
 
 - collection date
 - provider or device
 - preparation conditions
+- actual versus planned training exposure
 - source completeness
 - checksum status
 - comparability with prior artifacts
 - direct versus derived status
 - public-original versus sanitized-derivative status
 - preregistered collection and evaluation boundaries
+- documented collection-condition deviations
 
 Checksum validity confirms file identity, not biological or clinical validity.
 
-A collection plan governs capture conditions. It does not become outcome evidence.
+A collection plan governs capture conditions.
+
+It does not become outcome evidence.
+
+Documented deviations remain visible rather than being retrospectively absorbed into the original plan.
 
 ---
 
 ## Structured and Source-Preserved Data Layer
 
 - [data](data) — canonical, curated, model-error, and source-export data layers
-- [data/sleep_longitudinal_v1.csv](data/sleep_longitudinal_v1.csv) — canonical sleep dataset, current through 2026-08-09
+- [data/sleep_longitudinal_v1.csv](data/sleep_longitudinal_v1.csv) — canonical sleep dataset, current through 2026-08-16
 - [data/biomarker_snapshot.csv](data/biomarker_snapshot.csv) — integrated snapshot values
 - [data/bloodwork_longitudinal.csv](data/bloodwork_longitudinal.csv) — longitudinal bloodwork structure
 - [data/epigenetic_longitudinal.csv](data/epigenetic_longitudinal.csv) — longitudinal epigenetic structure
@@ -250,7 +291,8 @@ A direct provider export does not automatically replace a curated dataset.
 - [data/model_error/historical](data/model_error/historical) — reconstructed historical records
 - [methodology/prediction_evaluation.md](methodology/prediction_evaluation.md) — general prediction-evaluation methodology
 - [methodology/open_prediction_evaluation_plan_041_044.md](methodology/open_prediction_evaluation_plan_041_044.md) — registered evaluation plan for open records 041–044
-- [methodology/open_prediction_evaluation_plan_045.md](methodology/open_prediction_evaluation_plan_045.md) — registered evaluation plan for secondary open record 045
+- [methodology/open_prediction_evaluation_plan_045.md](methodology/open_prediction_evaluation_plan_045.md) — completed preregistered evaluation plan for closed record 045
+- [methodology/open_prediction_evaluation_plan_046.md](methodology/open_prediction_evaluation_plan_046.md) — active preregistered evaluation plan for open record 046
 - [methodology/2026-08-snapshot-collection-plan.md](methodology/2026-08-snapshot-collection-plan.md) — preregistered collection plan relevant to record 043
 - [docs/methodology/prediction_to_outcome_pipeline.md](docs/methodology/prediction_to_outcome_pipeline.md) — prediction-to-outcome workflow
 - [docs/methodology/valid_prediction_criteria.md](docs/methodology/valid_prediction_criteria.md) — valid-prediction requirements
@@ -263,20 +305,77 @@ Current open records are:
 042
 043
 044
+046
+```
+
+Recent completed record:
+
+```text
 045
 ```
 
-Records 041–044 retain their original registered evaluation plan.
+### Record 045
 
-Record 045 is a separate secondary trajectory probe registered on 2026-08-12 with a prospective scoring window of:
+Record 045 was registered on:
+
+```text
+2026-08-12
+```
+
+Its fixed scoring window was:
 
 ```text
 2026-08-13 through 2026-08-16
 ```
 
-Week 31 and observations from 2026-08-10 through 2026-08-12 are registration context only for record 045.
+Week 31 and observations from 2026-08-10 through 2026-08-12 were registration context only.
 
-August 17–18 snapshot results are excluded from record 045 scoring.
+August 17–18 snapshot results were excluded.
+
+The recorded outcome is:
+
+```text
+supported
+```
+
+The four preregistered autonomic thresholds were all favorable across the fixed scoring means.
+
+Record 045 is closed.
+
+Its result must not be altered by later unload/reload evidence.
+
+### Record 046
+
+Record 046 was separately registered on:
+
+```text
+2026-08-17
+```
+
+Its registered prediction is:
+
+```text
+reconvergence_persists_after_unload_reload
+```
+
+Evidence boundaries:
+
+```text
+2026-08-17:
+registration context only
+
+2026-08-18 through 2026-08-19:
+descriptive unload / re-entry kinetics
+
+2026-08-20 through 2026-08-23:
+primary scoring window
+```
+
+Record 046 retains the same four autonomic thresholds used under record 045 for direct comparability.
+
+It does not use August biological or performance outcomes for scoring.
+
+It does not reopen record 045.
 
 Registered predictions are permitted only within the governed model-error layer.
 
@@ -287,6 +386,8 @@ They must remain:
 - evaluated after sufficient evidence exists
 - open when evidence is insufficient
 - retained when incorrect
+- closed when their registered evaluation boundary is complete
+- protected from later evidence that belongs to a new question
 
 A collection plan may protect a prediction from outcome-directed manipulation.
 
@@ -300,15 +401,16 @@ Methodology is split across two connected layers.
 
 ### `/methodology`
 
-Core operating methodology and active preregistration artifacts:
+Core operating methodology and preregistration artifacts:
 
 - [methodology/README.md](methodology/README.md) — methodology directory guide
 - [methodology/data-collection.md](methodology/data-collection.md) — source, transcription, missingness, and correction rules
 - [methodology/anonymization.md](methodology/anonymization.md) — artifact sanitization and privacy-remediation rules
 - [methodology/prediction_evaluation.md](methodology/prediction_evaluation.md) — general prediction-evaluation rules
 - [methodology/open_prediction_evaluation_plan_041_044.md](methodology/open_prediction_evaluation_plan_041_044.md) — active evaluation plan for records 041–044
-- [methodology/open_prediction_evaluation_plan_045.md](methodology/open_prediction_evaluation_plan_045.md) — active prospective evaluation plan for secondary record 045
-- [methodology/2026-08-snapshot-collection-plan.md](methodology/2026-08-snapshot-collection-plan.md) — active snapshot collection plan
+- [methodology/open_prediction_evaluation_plan_045.md](methodology/open_prediction_evaluation_plan_045.md) — completed preregistered plan retained for record 045 provenance
+- [methodology/open_prediction_evaluation_plan_046.md](methodology/open_prediction_evaluation_plan_046.md) — active prospective evaluation plan for record 046
+- [methodology/2026-08-snapshot-collection-plan.md](methodology/2026-08-snapshot-collection-plan.md) — active August snapshot collection plan
 
 This layer governs:
 
@@ -320,7 +422,15 @@ This layer governs:
 - preregistered collection conditions
 - outcome-access boundaries
 
-The 041–044 plan and 045 plan remain separate artifacts because their registration dates, evidence windows, and evaluation questions are different.
+The 041–044, 045, and 046 plans remain separate artifacts because their:
+
+- registration dates differ
+- evidence windows differ
+- evaluation questions differ
+
+The completed 045 plan remains in place because preserving its original filename and content protects provenance.
+
+Record 046 was added instead of extending 045 retrospectively.
 
 ### `/docs/methodology`
 
@@ -358,6 +468,16 @@ Current execution state should be confirmed through:
 - the active weekly report
 - current governance documents
 
+The underlying current architecture remains:
+
+```text
+B1
++
+Load Integration
+```
+
+The August testing-related interruption is a temporary exposure deviation rather than a newly declared recurring protocol.
+
 ---
 
 ## Experiment Layer
@@ -394,7 +514,8 @@ The validator may check:
 - CSV syntax and row widths
 - date continuity
 - model-error sequence continuity
-- protected open-record status for records 041–045
+- protected open-record status for records 041–044 and 046
+- preserved closed/scored state for record 045
 - checksum validity
 - release metadata
 - RingConn source-byte preservation
@@ -419,9 +540,13 @@ The validator does not:
 - edit files
 - infer replacement values
 - normalize provider exports
-- score predictions
+- independently score predictions
 - declare phases
 - replace scheduled human audits
+
+For record 045, the validator protects the already committed closed/scored state.
+
+For record 046, it protects the open/unscored prospective state.
 
 ---
 
@@ -552,43 +677,77 @@ For records 041–044, the applicable evaluation plan is:
 methodology/open_prediction_evaluation_plan_041_044.md
 ```
 
-For record 045, the applicable evaluation plan is:
+For completed record 045, the applicable historical scoring plan is:
 
 ```text
 methodology/open_prediction_evaluation_plan_045.md
 ```
 
-The plans must not be merged retrospectively because their registration boundaries differ.
+For open record 046, the applicable prospective evaluation plan is:
+
+```text
+methodology/open_prediction_evaluation_plan_046.md
+```
+
+These plans must not be merged retrospectively because their registration boundaries differ.
 
 ---
 
 ## Recommended August Snapshot Review Flow
 
-Before results:
+### Biological and performance collection
 
 ```text
 methodology/open_prediction_evaluation_plan_041_044.md
   ↓
 methodology/2026-08-snapshot-collection-plan.md
   ↓
-Ordinary Active Observation
+Documented Actual Collection Conditions
   ↓
 Source-Artifact Capture
+  ↓
+Structured Transcription
+  ↓
+Registered Model-Error Evaluation
 ```
 
-Record 045 is evaluated separately before snapshot-result interpretation:
+### Completed record 045
+
+Record 045 was evaluated separately before later snapshot evidence could alter its scoring boundary:
 
 ```text
 methodology/open_prediction_evaluation_plan_045.md
   ↓
 2026-08-13 through 2026-08-16 source observations
   ↓
-Record 045 scoring
+4-day means
+  ↓
+4 of 4 favorable thresholds
+  ↓
+Record 045 closed / supported
 ```
 
-August 17–18 snapshot outcomes are not admissible for record 045 scoring.
+August 17–18 snapshot outcomes remain inadmissible for record 045.
 
-After snapshot results become available:
+### Active record 046
+
+The later autonomic question is governed separately:
+
+```text
+methodology/open_prediction_evaluation_plan_046.md
+  ↓
+2026-08-17 registration context
+  ↓
+2026-08-18 through 2026-08-19 descriptive kinetics
+  ↓
+2026-08-20 through 2026-08-23 primary scoring
+  ↓
+Retrospective Record 046 Evaluation
+```
+
+August biological and performance outcomes are excluded from record 046 scoring.
+
+After the complete August source-artifact set becomes available:
 
 ```text
 Complete Source Artifact Set
@@ -722,11 +881,14 @@ Where uncertainty exists:
 - verified source evidence takes precedence
 - missingness remains visible
 - predictions remain open when necessary
+- completed predictions retain their original scoring boundary
 - candidate evidence remains provisional
 - phase declarations wait for retrospective criteria
 - preregistered rules remain fixed through outcome review
 - mechanical validation does not substitute for semantic judgment
 - observations that generate predictions remain distinct from future evidence permitted to score them
+- later related observations require a new prospective boundary rather than reopening a completed prediction
+- documented deviations remain visible
 - no claim extends beyond the recorded single-subject archive
 
 ---
@@ -737,11 +899,16 @@ Where uncertainty exists:
 - **Environmental posture:** Defined protocol constraints with incomplete control
 - **Interpretation:** Retrospective and evidence-bound
 - **Prediction layer:** Formally registered and separately governed
-- **Open prediction set:** Records 041–045
-- **Record 045 posture:** Secondary prospective trajectory probe with 2026-08-13 through 2026-08-16 scoring window
+- **Open prediction set:** Records 041–044 and 046
+- **Recent completed prediction:** Record 045 — closed / supported
+- **Record 046 posture:** Secondary prospective autonomic unload/reload trajectory probe
+- **Record 046 primary scoring window:** 2026-08-20 through 2026-08-23
 - **August collection governance:** Preregistered before outcome access
 - **Correction model:** Source-backed, narrow, and traceable
 - **Phase model:** Retrospectively declared
+- **Current phase:** Phase 2 — Load Integration
+- **Operating substate:** Consolidation / lock-in observation
+- **Formal Phase 2D declaration:** None
 - **Validation model:** Local read-only mechanical validation followed by human semantic review
 - **Public scope:** Bounded single-subject archive
 - **Release posture:** Versioned and DOI-preserved
@@ -750,47 +917,52 @@ Where uncertainty exists:
 
 ## Version Note
 
-This index was aligned on 2026-08-12 with the repository’s current:
+This index was previously aligned on 2026-08-12 after prospective registration of Model Error 045.
 
-- Phase 2 operating state
-- W31 retrospective closeout
-- W32 active observation window
-- canonical sleep coverage through 2026-08-09
-- Week 31 autonomic-performance divergence preserved as the retrospective observation that generated a later prospective question
-- Model Error 045 prospectively registered on 2026-08-12
-- record 045 scoring window fixed at 2026-08-13 through 2026-08-16
-- records 041–045 preserved as the current open prediction set
-- separate evaluation plans for records 041–044 and record 045
-- August snapshot preregistration
-- source-preserved RingConn layer
-- methodology-directory structure
-- local repository validator
-- explicit validator protection through record 045
-- expanded verification workflow
-- privacy and correction boundaries
-- observer-evaluation paths
+That revision:
 
-The 2026-08-12 revision:
+- exposed `methodology/open_prediction_evaluation_plan_045.md`
+- advanced the then-current open model-error set from records 041–044 to records 041–045
+- preserved `methodology/open_prediction_evaluation_plan_041_044.md` unchanged
+- preserved `methodology/2026-08-snapshot-collection-plan.md`
+- recorded Week 31 and 2026-08-10 through 2026-08-12 as registration context rather than scoring evidence for record 045
+- fixed 2026-08-13 through 2026-08-16 as the prospective record 045 scoring window
+- excluded August 17–18 snapshot outcomes from record 045 scoring
+- extended validator protection through record 045
 
-- exposes `methodology/open_prediction_evaluation_plan_045.md`
-- advances the current open model-error set from records 041–044 to records 041–045
-- preserves `methodology/open_prediction_evaluation_plan_041_044.md` unchanged as the original preregistered evaluation block
-- preserves `methodology/2026-08-snapshot-collection-plan.md` as the August snapshot collection-governance artifact
-- records Week 31 and 2026-08-10 through 2026-08-12 as context rather than scoring evidence for record 045
-- records 2026-08-13 through 2026-08-16 as the prospective record 045 scoring window
-- records August 17–18 snapshot outcomes as inadmissible for record 045 scoring
-- exposes validator protection for records 041–045
-- preserves the current phase, protocol, collection, correction, privacy, and release boundaries
-- improves navigation and current-state representation only
+On 2026-08-17, this index was aligned with the completed Week 32 and current Week 33 governance state.
 
-It does not alter:
+The 2026-08-17 revision:
+
+- closes 2026-W32 and advances 2026-W33 to the active weekly window
+- advances canonical sleep coverage through 2026-08-16
+- records record 045 as closed and supported
+- preserves the fixed record 045 scoring window and historical preregistration artifact
+- removes record 045 from the open prediction set
+- sets the current open prediction set to records 041–044 and 046
+- exposes `methodology/open_prediction_evaluation_plan_046.md`
+- records 2026-08-17 as record 046 registration context only
+- records 2026-08-18 through 2026-08-19 as descriptive unload/re-entry kinetics
+- records 2026-08-20 through 2026-08-23 as the record 046 primary scoring window
+- preserves the record 045 thresholds unchanged for direct 046 comparability
+- separates the completed 045 question from the new unload/reload question
+- updates validator documentation to protect records 041–044 and 046 as open
+- records record 045 as separately protected in its closed/scored state
+- preserves the August 16 testing-directed Load Integration omission as an explicit collection-condition fact
+- preserves the August 17–18 temporary training withdrawal as an explicit testing-related exposure state
+- preserves the August biological and performance snapshot as independently governed from record 046
+- preserves Phase 2 and the consolidation / lock-in observation substate
+- leaves formal Phase 2D undeclared
+
+The 2026-08-17 revision does not alter:
 
 - any source value
-- any canonical dataset value
-- any protocol exposure
-- any report observation
+- any canonical biological value
 - records 041–044
-- any registered scoring threshold
-- any closed outcome
-- any phase status
+- the registered prediction or scoring thresholds of record 045
+- the registered prediction or scoring thresholds of record 046
+- any completed outcome other than accurately documenting its current state
+- the underlying B1 + Load Integration architecture
+- the August snapshot collection plan
+- any phase declaration
 - any release metadata
