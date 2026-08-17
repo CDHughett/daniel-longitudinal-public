@@ -34,6 +34,7 @@ This includes:
 - collection-condition control
 - outcome-access boundaries
 - active evaluation plans
+- completed preregistered plans retained for provenance
 
 The governing sequence is:
 
@@ -50,6 +51,8 @@ Interpret retrospectively
 ```
 
 A later result must not silently rewrite an earlier methodology rule.
+
+A completed preregistered plan should remain preserved after scoring so the original evaluation boundary remains inspectable.
 
 ---
 
@@ -214,17 +217,17 @@ It may not independently:
 - change their thresholds
 - substitute a new primary endpoint
 
-Record 045 does not amend this plan.
+Records 045 and 046 do not amend this plan.
 
 The 041–044 evaluation block remains preserved as originally registered.
 
 ---
 
-## Active Evaluation Plan — Record 045
+## Completed Evaluation Plan — Record 045
 
 ### [`open_prediction_evaluation_plan_045.md`](open_prediction_evaluation_plan_045.md)
 
-This is the separate preregistered evaluation plan for Model Error record 045.
+This is the preserved preregistered evaluation plan for Model Error record 045.
 
 Record 045 was registered on:
 
@@ -238,13 +241,13 @@ Its domain is:
 autonomic_reconvergence
 ```
 
-Its registered prediction is:
+Its registered prediction was:
 
 ```text
 partial_reconvergence
 ```
 
-Its admissible scoring window is:
+Its admissible scoring window was:
 
 ```text
 2026-08-13 through 2026-08-16
@@ -252,7 +255,7 @@ Its admissible scoring window is:
 
 The plan was created after retrospective closeout of Week 31 but before the admissible record 045 outcome window began.
 
-The following observations are registration context only:
+The following observations were registration context only:
 
 ```text
 2026-W31
@@ -261,13 +264,13 @@ The following observations are registration context only:
 2026-08-12
 ```
 
-They may explain why the prediction was generated.
+They explained why the prediction was generated.
 
-They cannot satisfy it.
+They could not satisfy it.
 
-August 17–18 biological and performance snapshot results are also excluded from record 045 scoring.
+August 17–18 biological and performance snapshot results were also excluded from record 045 scoring.
 
-The plan defines:
+The plan defined:
 
 - the W30 and W31 reference states
 - fixed partial-reconvergence thresholds
@@ -285,7 +288,7 @@ The plan defines:
 - threshold immutability
 - post-window scoring procedure
 
-Registered favorable thresholds are:
+Registered favorable thresholds were:
 
 ```text
 Daily HRV >= 59.7 ms
@@ -294,7 +297,7 @@ Resting HR <= 49.2 bpm
 Sleeping HR <= 53.7 bpm
 ```
 
-Support requires:
+Support required:
 
 ```text
 at least 3 of 4 autonomic thresholds met
@@ -308,23 +311,208 @@ AND
 no recovery-driven protocol reduction or intervention
 ```
 
-Record 045 is a secondary trajectory prediction.
+At retrospective scoring after the fixed window closed:
 
-It does not:
+```text
+Daily HRV:
+63.5 ms
+
+Sleep HRV:
+71.25 ms
+
+Resting HR:
+46.5 bpm
+
+Sleeping HR:
+51.75 bpm
+
+Favorable thresholds:
+4 of 4
+
+Multi-session functional regression:
+No
+
+Recovery-driven protocol reduction or intervention:
+No
+```
+
+Record 045 was therefore scored:
+
+```text
+supported
+```
+
+The 2026-08-16 Load Integration omission was testing-directed because DEXA and VO₂-max testing were scheduled for the following morning.
+
+It was not recovery-driven and therefore did not trigger the record 045 recovery-driven protocol-change failure condition.
+
+That classification is specific to record 045.
+
+The same event remains separately relevant to records 043 and 044 because it represents a pre-snapshot testing-preparation deviation from the ordinary-training posture.
+
+Record 045 is now closed.
+
+Its methodology file remains preserved because it documents the rules that governed the prediction before the outcome was known.
+
+Record 045 does not:
 
 - replace record 041
 - redefine recovery-capacity criteria
 - score motor automaticity under record 042
 - alter the Model Error 043 biological endpoint
 - modify record 044 governance criteria
-- authorize a taper
-- authorize a deload
-- authorize an overload
-- authorize recovery manipulation
+- establish complete recovery
+- establish absence of accumulated training cost
 - declare Phase 2D
-- alter the August snapshot collection plan
+- determine later unload/reload behavior
 
-The plan should remain fixed through its outcome window except for a documented source or factual correction that does not move the prediction boundary after outcome access.
+Later evidence must not reopen or extend record 045.
+
+---
+
+## Active Evaluation Plan — Record 046
+
+### [`open_prediction_evaluation_plan_046.md`](open_prediction_evaluation_plan_046.md)
+
+This is the separate preregistered evaluation plan for Model Error record 046.
+
+Record 046 was registered on:
+
+```text
+2026-08-17
+```
+
+Its domain is:
+
+```text
+autonomic_unload_reload
+```
+
+Its registered prediction is:
+
+```text
+reconvergence_persists_after_unload_reload
+```
+
+Record 046 begins where the completed record 045 question ends.
+
+Record 045 asked:
+
+```text
+Did partial autonomic reconvergence occur?
+```
+
+Record 046 asks:
+
+```text
+Does that reconvergence remain broadly preserved
+after planned training withdrawal and reload?
+```
+
+The known exposure sequence at registration is:
+
+```text
+2026-08-16
+B1 completed
+Load Integration withheld before testing
+
+2026-08-17
+No B1
+No Load Integration
+DEXA and VO₂-max testing
+
+2026-08-18
+No B1
+No Load Integration
+Bod Pod testing
+
+2026-08-19
+Planned return to standard B1
+Planned return to standard Load Integration
+```
+
+Because 2026-08-17 had already begun before record 046 registration:
+
+```text
+2026-08-17
+```
+
+is registration context only.
+
+It cannot satisfy the prediction.
+
+The plan preserves:
+
+```text
+2026-08-18
+2026-08-19
+```
+
+as descriptive unload and re-entry kinetics.
+
+The fixed primary scoring window is:
+
+```text
+2026-08-20 through 2026-08-23
+```
+
+Record 046 intentionally reuses the same favorable autonomic thresholds as record 045:
+
+```text
+Daily HRV >= 59.7 ms
+Sleep HRV >= 65.3 ms
+Resting HR <= 49.2 bpm
+Sleeping HR <= 53.7 bpm
+```
+
+This preserves direct comparability without recalibrating thresholds after the favorable record 045 outcome.
+
+Support requires:
+
+```text
+at least 3 of 4 autonomic thresholds favorable
+across the fixed 2026-08-20 through 2026-08-23 means
+
+AND
+
+no multi-session functional regression after reload
+
+AND
+
+no recovery-driven protocol reduction after normal training resumes
+```
+
+The plan explicitly allows a short-lived autonomic disturbance after the 2026-08-17 maximal VO₂ test.
+
+Such an acute response may be documented.
+
+It does not independently fail record 046.
+
+The plan excludes the measured outcomes of:
+
+- DEXA
+- VO₂ max
+- Bod Pod
+- TruDiagnostic
+- TruAge
+- TruHealth
+- other August biological-snapshot interpretation
+
+Those outcomes are independently governed.
+
+Record 046 does not:
+
+- reopen record 045
+- extend record 045
+- rescore record 045
+- change records 041–044
+- alter the August snapshot biological endpoint
+- create a new physical training protocol
+- authorize an extended deload
+- authorize a reload stress test
+- declare Phase 2D
+
+The record 046 evaluation plan remains active and prospective.
 
 ---
 
@@ -357,7 +545,7 @@ The plan preserves:
 - TruDiagnostic as the primary Model Error 043 domain
 - May 2026 as the primary comparison baseline
 - DEXA, VO₂ max, Bod Pod, bodyweight, recovery, and subjective state as supplemental evidence
-- ordinary rather than snapshot-optimized behavior
+- ordinary rather than snapshot-optimized behavior as the intended collection posture
 - separation between collection and interpretation
 
 The collection plan does not contain August results.
@@ -365,14 +553,19 @@ The collection plan does not contain August results.
 It does not:
 
 - predict the result
-- alter records 041–045
+- alter records 041–046
 - change scoring rules
 - authorize protocol progression
 - declare Phase 2D
 - create a release automatically
-- determine the outcome of record 045
+- determine the outcome of record 046
+- reopen record 045
 
-The plan should remain unchanged unless a factual collection detail changes.
+The 2026-08-16 Load Integration omission should remain documented as a factual collection-condition deviation rather than being removed from the record.
+
+The plan itself should not be retrospectively rewritten to make that deviation appear preregistered.
+
+The plan should otherwise remain unchanged unless a factual collection detail changes.
 
 Any amendment should be:
 
@@ -414,10 +607,11 @@ A standing rule should not be changed merely because a current result is inconve
 
 A preregistered evaluation plan applies standing methodology to a defined prediction block or outcome window.
 
-Current examples:
+Current or preserved examples:
 
 - `open_prediction_evaluation_plan_041_044.md`
 - `open_prediction_evaluation_plan_045.md`
+- `open_prediction_evaluation_plan_046.md`
 
 It should identify:
 
@@ -433,6 +627,8 @@ It should identify:
 
 Once outcome access begins, substantive scoring rules should remain fixed.
 
+After scoring, the original preregistered plan should remain preserved for provenance.
+
 Separate prediction blocks should remain in separate preregistration artifacts when their:
 
 - registration dates differ
@@ -441,6 +637,8 @@ Separate prediction blocks should remain in separate preregistration artifacts w
 - admissible evidence differs
 
 The existence of a later evaluation plan must not silently rewrite an earlier one.
+
+Record 046 therefore remains separate from record 045 even though both concern autonomic trajectory.
 
 ---
 
@@ -490,18 +688,25 @@ When timing matters, the file should state:
 
 ---
 
-## Historical or Superseded Methodology
+## Historical or Completed Methodology
 
-A historical methodology file may remain in the repository for provenance.
+A historical, superseded, inactive, or completed methodology file may remain in the repository for provenance.
 
-It should be labeled clearly as:
+It should be labeled clearly when operational ambiguity is possible.
+
+Possible classifications include:
 
 - historical
 - superseded
 - inactive
+- completed preregistered plan
 - retained for provenance
 
-Historical methodology must not be used as a current governing rule when a later active document supersedes it.
+A completed preregistered plan remains evidentially important even when it no longer governs future observations.
+
+It preserves what the scoring boundary was before the result was known.
+
+Historical or completed methodology must not be treated as a current forward-looking rule when a later active document governs a new question.
 
 ---
 
@@ -521,6 +726,7 @@ Possible status labels include:
 - Active standing methodology
 - Active preregistered evaluation plan
 - Active preregistered collection plan
+- Completed preregistered evaluation plan
 - Historical
 - Superseded
 - Inactive
@@ -536,6 +742,7 @@ Current status should be established through:
 - `LATEST.md`
 - `CHANGELOG.md`
 - applicable audit records
+- the model-error register
 
 ---
 
@@ -587,7 +794,7 @@ The distinction is:
 
 ### `/methodology`
 
-Current operating rules and preregistered plans.
+Current operating rules, active preregistered plans, and completed preregistered plans retained for governance provenance.
 
 ### `/docs/methodology`
 
@@ -634,6 +841,10 @@ Methodology defines how that exposure and its outcomes are recorded and evaluate
 
 A methodology update does not automatically modify the physical protocol.
 
+Record 046 observes the planned unload/reload sequence.
+
+It does not create that sequence as a new recurring protocol.
+
 ---
 
 ## Reports
@@ -644,9 +855,24 @@ Reports operate under methodology.
 
 They must not rewrite preregistered evaluation or collection rules.
 
-For record 045, reports may preserve the relevant August 13–16 observations.
+For record 045, the Week 32 report may retrospectively score the fixed August 13–16 evidence under the preregistered rules.
 
-They may not use Week 31 or August 10–12 as scoring evidence merely because those observations generated the prediction.
+It may not use later August evidence to reopen or modify the result.
+
+For record 046:
+
+```text
+2026-08-17:
+registration context only
+
+2026-08-18 through 2026-08-19:
+descriptive unload/re-entry kinetics
+
+2026-08-20 through 2026-08-23:
+primary scoring evidence
+```
+
+Reports must preserve those boundaries.
 
 ---
 
@@ -701,9 +927,27 @@ See:
 - [`../tools/validate_repository.py`](../tools/validate_repository.py)
 - [`../docs/audits/`](../docs/audits/)
 
-The local validator explicitly protects records 041–045 while they remain in the current open evaluation state.
+The local validator currently protects the open/unscored state of:
 
-Validation does not score those records.
+```text
+041
+042
+043
+044
+046
+```
+
+It separately protects record 045 as:
+
+```text
+closed
+```
+
+with its recorded outcome preserved.
+
+Validation does not independently recompute or adjudicate the record 045 score.
+
+It does not score record 046.
 
 ---
 
@@ -782,9 +1026,14 @@ For record 045, use:
 open_prediction_evaluation_plan_045.md
 ```
 
-For record 045:
+Record 045 is now a completed preregistered prediction.
+
+Its fixed boundary remains:
 
 ```text
+Registration:
+2026-08-12
+
 Known registration context:
 all evidence through 2026-08-12
 
@@ -795,11 +1044,47 @@ Excluded:
 Week 31
 2026-08-10 through 2026-08-12
 August 17–18 snapshot outcomes
+
+Outcome:
+supported
+```
+
+For record 046, use:
+
+```text
+open_prediction_evaluation_plan_046.md
+```
+
+Its prospective boundary is:
+
+```text
+Registration:
+2026-08-17
+
+Registration context only:
+2026-08-17
+
+Descriptive unload/re-entry kinetics:
+2026-08-18 through 2026-08-19
+
+Primary scoring window:
+2026-08-20 through 2026-08-23
+
+Excluded from scoring:
+DEXA result
+VO2-max measured result
+Bod Pod result
+TruDiagnostic result
+other August biological-snapshot outcomes
 ```
 
 A document written after outcome access may still be useful.
 
 It must be labeled retrospective rather than preregistered.
+
+A completed prediction must not be extended merely because a related future question remains unanswered.
+
+The related future question should receive a new prospective record.
 
 ---
 
@@ -827,9 +1112,11 @@ Interpretation must remain proportional to:
 - contradictory evidence
 - registered evaluation rules
 
-A supported record 045 result would establish only that its preregistered short-window partial-reconvergence criteria were met.
+Record 045 has been scored supported.
 
-It would not independently establish:
+That result establishes only that its preregistered short-window partial-reconvergence criteria were met.
+
+It does not independently establish:
 
 - complete recovery
 - optimal recovery
@@ -837,13 +1124,28 @@ It would not independently establish:
 - permanent autonomic normalization
 - Phase 2D
 - favorable August biological results
+- persistence after unloading
+- persistence after return to normal training
 
-A failed record 045 result likewise would not independently establish:
+Record 046 is designed to evaluate the final two questions separately.
 
-- recovery collapse
+A supported record 046 result would establish only that the favorable autonomic state remained broadly preserved under its fixed unload/reload evaluation boundary.
+
+It would not independently establish:
+
+- absence of training cost
+- unlimited recovery reserve
+- permanent autonomic adaptation
+- biological snapshot success
+- Phase 2D
+
+A failed record 046 result would not independently establish:
+
+- clinical overtraining
+- global recovery collapse
 - protocol failure
-- biological regression
 - failure of records 041–044
+- biological regression
 - termination of Phase 2
 
 ---
@@ -882,6 +1184,10 @@ or a bounded record range when the records share the same registration and evalu
 open_prediction_evaluation_plan_###_###.md
 ```
 
+The `open_prediction_` filename prefix may remain after a record closes when preserving the original preregistered artifact name is preferable to renaming historical evidence after outcome access.
+
+Operational status should then be established by the document header, this README, the model-error register, and current repository navigation.
+
 Avoid filenames based only on:
 
 - `new`
@@ -899,7 +1205,7 @@ When a file is superseded, preserve the historical file when it contributes prov
 Before adding a new file, determine:
 
 1. What operational problem does it solve?
-2. Is it a standing rule, preregistered plan, or retrospective note?
+2. Is it a standing rule, preregistered plan, completed plan, or retrospective note?
 3. Does an existing file already govern the issue?
 4. Is the document being written before or after outcome access?
 5. What evidence layer does it constrain?
@@ -918,11 +1224,15 @@ A new methodology file should normally be linked from:
 
 A new prediction-specific plan should remain separate from an older preregistered plan when combining them would blur registration timing or admissible evidence.
 
+Record 046 is an example of this rule.
+
+It was created as a separate prediction rather than extending the already completed record 045 boundary.
+
 ---
 
 # Current Active Methodology State
 
-As of 2026-08-12:
+As of 2026-08-17:
 
 ```text
 Data collection:
@@ -938,16 +1248,35 @@ Records 041–044 evaluation plan:
 Active and binding
 
 Record 045 evaluation plan:
-Active and binding before its 2026-08-13 scoring-window start
+Completed preregistered evaluation plan retained for provenance
+
+Record 045 status:
+Closed / supported
+
+Record 046 evaluation plan:
+Active and prospective
+
+Record 046 registration date:
+2026-08-17
+
+Record 046 registration-context date:
+2026-08-17
+
+Record 046 descriptive unload/re-entry interval:
+2026-08-18 through 2026-08-19
+
+Record 046 primary scoring window:
+2026-08-20 through 2026-08-23
 
 August 2026 snapshot collection plan:
-Active and binding before outcome access
+Active and binding through the collection workflow
 
-Records 041–045:
-Open and unscored
-
-Record 045 scoring window:
-2026-08-13 through 2026-08-16
+Open and unscored model-error records:
+041
+042
+043
+044
+046
 
 Canonical phase:
 Phase 2 — Load Integration
@@ -958,24 +1287,34 @@ Consolidation / lock-in observation
 Phase 2D:
 Undeclared
 
-Physical protocol:
-Unchanged
+Underlying physical protocol:
+B1 + Load Integration preserved
+
+Current temporary testing schedule:
+2026-08-17 — no B1 / no LI
+2026-08-18 — no B1 / no LI
+2026-08-19 — planned normal B1 + LI return
 ```
 
-The current methodology state preserves three separate August governance artifacts:
+The current methodology state preserves four distinct governance artifacts:
 
 ```text
 Records 041–044:
 open_prediction_evaluation_plan_041_044.md
 
-Record 045:
+Completed Record 045:
 open_prediction_evaluation_plan_045.md
+
+Active Record 046:
+open_prediction_evaluation_plan_046.md
 
 August biological and performance collection:
 2026-08-snapshot-collection-plan.md
 ```
 
-These artifacts have different scopes and should not be collapsed into one retrospective document.
+These artifacts have different registration dates, purposes, and evidence boundaries.
+
+They should not be collapsed into one retrospective document.
 
 ---
 
@@ -1019,29 +1358,54 @@ On 2026-08-12, this guide was updated after prospective registration of Model Er
 
 The 2026-08-12 revision:
 
-- exposes `open_prediction_evaluation_plan_045.md`
-- preserves `open_prediction_evaluation_plan_041_044.md` unchanged as the governing plan for records 041–044
-- identifies record 045 as a separate secondary trajectory prediction
-- records the 2026-08-12 registration date
-- records the 2026-08-13 through 2026-08-16 admissible scoring window
-- preserves Week 31 and August 10–12 as registration context only
-- excludes August 17–18 snapshot outcomes from record 045 scoring
-- documents the fixed record 045 autonomic thresholds
-- documents the relationship between record 045 and records 041–044
-- documents validator protection through record 045
-- advances the current open prediction set to records 041–045
-- preserves the August collection plan as a separate governance artifact
-- preserves the existing physical protocol and phase state
+- exposed `open_prediction_evaluation_plan_045.md`
+- preserved `open_prediction_evaluation_plan_041_044.md` unchanged as the governing plan for records 041–044
+- identified record 045 as a separate secondary trajectory prediction
+- recorded the 2026-08-12 registration date
+- recorded the 2026-08-13 through 2026-08-16 admissible scoring window
+- preserved Week 31 and August 10–12 as registration context only
+- excluded August 17–18 snapshot outcomes from record 045 scoring
+- documented the fixed record 045 autonomic thresholds
+- documented the relationship between record 045 and records 041–044
+- documented validator protection through record 045
+- advanced the then-current open prediction set to records 041–045
+- preserved the August collection plan as a separate governance artifact
+- preserved the existing physical protocol and phase state
 
-The revision changes methodology navigation and active-governance documentation only.
+On 2026-08-17, this guide was updated after the record 045 scoring boundary closed and Model Error 046 was prospectively registered.
+
+The 2026-08-17 revision:
+
+- records record 045 as closed and supported
+- preserves `open_prediction_evaluation_plan_045.md` as the completed preregistered governance artifact
+- records the fixed August 13–16 record 045 scoring values and 4-of-4 favorable threshold result
+- preserves the 2026-08-16 Load Integration omission as testing-directed rather than recovery-driven for record 045
+- retains the same omission as a separate collection/governance fact for records 043 and 044
+- prohibits later unload/reload evidence from reopening or extending record 045
+- exposes `open_prediction_evaluation_plan_046.md`
+- identifies record 046 as a separate prospective autonomic unload/reload trajectory prediction
+- records 2026-08-17 as registration context only for record 046
+- records 2026-08-18 through 2026-08-19 as descriptive unload/re-entry kinetics
+- records 2026-08-20 through 2026-08-23 as the fixed record 046 primary scoring window
+- preserves the record 045 autonomic thresholds unchanged for direct 046 comparability
+- excludes August biological and performance outcomes from record 046 scoring
+- updates the protected open prediction set to records 041–044 and 046
+- documents record 045 as separately protected in its closed/scored state
+- preserves records 041–044 unchanged
+- preserves Phase 2 and the consolidation / lock-in observation substate
+- preserves the underlying B1 + Load Integration architecture after the temporary testing interruption
+
+The revision changes methodology navigation and current-governance documentation only.
 
 It does not alter:
 
 - any source artifact
-- any canonical value
+- any canonical biological value
 - records 041–044
-- any closed prediction
-- any physical protocol exposure
-- the August snapshot collection conditions
+- the registered wording or thresholds of record 045
+- the registered wording or thresholds of record 046
+- any closed prediction other than documenting its already completed state
+- the underlying physical protocol
+- the August snapshot collection plan
 - any phase declaration
 - any release metadata
