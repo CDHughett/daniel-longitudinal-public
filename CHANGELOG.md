@@ -1542,32 +1542,178 @@ The source-workbook narrative discrepancy remains documented rather than silentl
   GitHub Actions deferred
   ```
 
-- Most recent completed whole-package verification remains the `2026-08-12` post-change verification:
+- Completed final fresh-package verification for the August 17 repository update:
 
   ```text
   Package:
-  daniel-longitudinal-public-main (3).zip
+  daniel-longitudinal-public-main (2).zip
+
+  Package size:
+  35,936,521 bytes
 
   SHA-256:
-  30d5e2fa5b8694981307102750ed9c107f581048bc213c5a4a464746a8d3d20d
+  9d3318e6c7150b0392faa8963252288ad44d75e4c6309beb6ef30cf3712b4792
+  ```
 
-  Validator:
-  0 errors
-  2 governed warnings
+- Fresh-ZIP validator result:
+
+  ```text
+  Errors:
+  0
+
+  Governed warnings:
+  2
+
+  Passes:
+  10
+
+  Result:
   PASS
   ```
 
-- The current August 17 repository update has not yet received its final fresh-package verification entry.
+- Fresh-ZIP validation confirms:
 
-- Final August 17 validation should be recorded only after the updated repository package has been mechanically checked.
+  ```text
+  ZIP safety:
+  PASS
 
-- Current expected governed validator warnings concern:
+  Repository files:
+  183
 
-  - DQ-001 awake-minute and awakening-count duplication
-  - DQ-002 March 31 sleep-stage difference
-  - DQ-003 April 2 sleep-stage difference
+  Zero-byte files:
+  0
 
-- These warnings do not authorize automatic correction and do not make the repository mechanically invalid.
+  Markdown files:
+  130
+
+  Internal Markdown references:
+  773
+
+  CSV files:
+  11
+
+  Registered checksum entries:
+  29 of 29 PASS
+
+  Canonical sleep:
+  189 continuous rows
+  2026-02-09 through 2026-08-16
+
+  Weekly reports:
+  28 continuous reports
+  W06 through W33
+
+  Active report:
+  2026-W33.md
+
+  Model-error records:
+  34 continuous records
+  013 through 046
+
+  Record 045:
+  closed / scored
+
+  Records 041–044 and 046:
+  open / unscored
+
+  Release metadata:
+  aligned
+
+  RingConn source-export preservation:
+  PASS
+  ```
+
+- Independent extracted-directory validation also completed:
+
+  ```text
+  Errors:
+  0
+
+  Governed warnings:
+  2
+
+  Passes:
+  9
+
+  Result:
+  PASS
+  ```
+
+- The extracted-directory result independently confirms:
+  - required repository structure is present
+  - 183 files are present
+  - no zero-byte files are present
+  - all 130 Markdown files pass target, anchor, and fence checks
+  - all 11 CSV files parse with consistent row widths
+  - all 29 registered artifact checksums pass
+  - canonical sleep is continuous through `2026-08-16`
+  - weekly-report continuity extends through active `2026-W33`
+  - model-error continuity extends through record 046
+  - record 045 remains closed/scored
+  - records 041–044 and 046 remain open/unscored
+  - release metadata remains aligned
+  - RingConn source bytes, CRLF line endings, provider headers, and row counts remain preserved
+
+- Final file-level comparison against the repository state that preceded the August 17 update confirms:
+
+  ```text
+  Baseline files:
+  181
+
+  Updated files:
+  183
+
+  Added:
+  2
+
+  Changed:
+  10
+
+  Removed:
+  0
+  ```
+
+- Added files:
+
+  ```text
+  methodology/open_prediction_evaluation_plan_046.md
+  reports/2026-W33.md
+  ```
+
+- Changed files:
+
+  ```text
+  CHANGELOG.md
+  INDEX.md
+  LATEST.md
+  README.md
+  VERIFICATION.md
+  data/model_error/model_error_gap_v1.csv
+  data/sleep_longitudinal_v1.csv
+  methodology/README.md
+  reports/2026-W32.md
+  tools/validate_repository.py
+  ```
+
+- No unintended file additions, removals, or material changes were identified.
+
+- Current governed validator warnings remain limited to:
+  - canonical sleep-stage differences on `2026-03-31` and `2026-04-02`
+  - DQ-001 awake-minute / awakening-count duplication on 14 historical dates
+
+- These warnings:
+  - were present before the August 17 update
+  - do not authorize automatic correction
+  - do not make the repository mechanically invalid
+  - remain subject to their existing source-reconciliation rules
+
+- The August 17 substantive repository update is therefore mechanically closed as:
+
+  ```text
+  PASS
+  ```
+
+- No additional remediation is required from this update before continued Week 33 observation.
 
 ---
 
@@ -1614,6 +1760,7 @@ The source-workbook narrative discrepancy remains documented rather than silentl
   - `INDEX.md` advancement through W33
   - `README.md` current-state alignment
   - August 17 governance and navigation alignment
+  - August 17 final fresh-package verification closure
 
 - Current release metadata remains:
   - version: `1.0.0`
