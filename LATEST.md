@@ -13,205 +13,177 @@ Archive DOI: https://doi.org/10.5281/zenodo.20815612
 
 - **Phase:** Phase 2 — Load Integration
 - **Operating substate:** Consolidation / lock-in observation
-- **Active window:** 2026-W32
-- **Prior window:** 2026-W31 closed
-- **System state:** Stable with measurable autonomic recovery compression and preserved function
-- **Trajectory posture:** Continued behavioral and motor consolidation with reduced operator overhead, repeated trait-like expression, and preserved cross-context availability
-- **Recovery posture:** Functionally preserved despite a broader W31 pattern of lower HRV and higher heart-rate measures relative to W30
-- **Archive posture:** Public, governed, versioned, and retrospectively interpreted, with prospective predictions isolated in the model-error layer
-- **Sleep dataset current through:** 2026-08-09
-- **Open model-error records:** 041–045
-- **Record 045 posture:** Secondary prospective autonomic-reconvergence trajectory probe; scoring window 2026-08-13 through 2026-08-16
-- **Next major artifact:** August 2026 biological and performance snapshot
+- **Active window:** 2026-W33
+- **Prior window:** 2026-W32 closed
+- **System state:** Stable with recent spontaneous autonomic reconvergence, preserved function, and a temporary testing-related withdrawal from normal formal training
+- **Trajectory posture:** Continued behavioral and motor consolidation with reduced operator overhead, repeated ambient or trait-like expression, and preserved cross-context availability
+- **Recovery posture:** Functionally preserved; Week 32 autonomic measures materially improved from the Week 31 compressed state before formal training withdrawal began
+- **Archive posture:** Public, governed, versioned, retrospectively interpreted, and prospectively tested through isolated model-error records
+- **Sleep dataset current through:** 2026-08-16
+- **Open model-error records:** 041–044 and 046
+- **Recent closed model-error record:** 045 — supported
+- **Record 046 posture:** Secondary prospective autonomic unload/reload persistence probe
+- **Current major artifact cycle:** August 2026 biological and performance snapshot
 - **August collection governance:** Preregistered before outcome access
+- **Formal Phase 2D declaration:** None
 
-No formal Phase 2D transition has been declared.
+The underlying physical architecture remains:
 
-The Week 31 autonomic-performance divergence remains preserved as the observation that generated Model Error 045.
+```text
+B1
++
+Load Integration
+```
 
-Record 045 was registered prospectively on 2026-08-12.
+The current testing-related exposure sequence is:
 
-Week 31 and observations from 2026-08-10 through 2026-08-12 remain registration context only and cannot satisfy record 045.
+```text
+2026-08-16:
+B1 completed
+Load Integration withheld before testing
 
----
+2026-08-17:
+No B1
+No Load Integration
+TruAge / TruHealth collection
+DEXA and VO₂-max testing
 
-## Week 31 Closeout
+2026-08-18:
+No B1
+No Load Integration
+Bod Pod testing
 
-Week 31 tested whether the lower late-Week-30 daily-HRV pattern would resolve naturally while the installed protocol remained unchanged.
+2026-08-19:
+Planned return to normal B1
+Planned return to normal Load Integration
+```
 
-It did not simply disappear.
+This temporary withdrawal does not constitute a formal phase transition or recurring protocol change.
 
-Instead, the recovery signal broadened while function remained preserved.
+The 2026-08-16 Load Integration omission and 2026-08-17 through 2026-08-18 training withdrawal are testing-directed.
 
-Observed:
+They are not being classified as recovery-driven interventions.
 
-- B1 was completed on all seven days
-- Load Integration was completed on all seven days
-- B1 totaled 385 minutes and approximately 21.14 miles
-- Load Integration totaled 315 minutes
-- total formal training reached 700 minutes
-- morning bodyweight averaged approximately 235.1 lb
-- daily biomarker HRV averaged approximately 57.3 ms
-- sleep HRV averaged approximately 60.1 ms
-- resting heart rate averaged approximately 51.4 bpm
-- sleeping heart rate averaged approximately 56.4 bpm
-- daily average heart rate averaged approximately 65.9 bpm
-- total sleep averaged approximately 7 hours 39 minutes
-- time in bed averaged approximately 8 hours 21 minutes
-- no pain, GI disruption, mood instability, recovery intervention, compensatory workload, or protocol reduction occurred
-
-Compared with Week 30:
-
-- daily biomarker HRV declined from approximately 62.0 to 57.3 ms
-- sleep HRV declined from approximately 70.4 to 60.1 ms
-- resting heart rate increased from approximately 47.0 to 51.4 bpm
-- sleeping heart rate increased from approximately 50.9 to 56.4 bpm
-- total sleep remained broadly stable
-
-Several nights also contained localized or early-night cardiovascular elevations that later resolved.
-
-The recovery pattern therefore became more coherent than the isolated late-Week-30 HRV cluster.
-
-It did not converge with demonstrated functional failure.
-
-The behavioral and mechanical layer remained favorable.
-
-Relevant Week 31 observations included:
-
-- background B1 execution
-- repeated ambient Load Integration execution
-- trait-level pull-ups across all four sets on 2026-08-04
-- controlled dead-hang initiation without meaningful cognitive overhead
-- automatic bar organization and full positional ownership on 2026-08-05
-- trait-level B1 and Load Integration execution on 2026-08-06
-- grip improvement without specialized intervention
-- unsolicited recognition of grip strength during final dead hangs
-- preserved ambient execution during one of the least favorable autonomic portions of the week
-- high, owned, ambient Load Integration performance on 2026-08-08
-- ambient B1 followed by substantial yard work and trait-level Load Integration on 2026-08-09
-- preserved strict pull-up execution during spontaneous social observation, attempted imitation, and direct side-by-side comparison
-
-The 2026-08-09 event was particularly informative because the movement standard remained available after:
-
-- morning B1
-- substantial intervening front- and back-yard work
-- accumulated weekly training
-- spontaneous external attention
-- attempted replication of the stricter technique
-- direct side-by-side execution
-
-The event was not a planned test.
-
-Its value comes from natural recurrence under increased contextual demand.
-
-Grip also changed meaningfully across the Week 30–31 transition.
-
-During Week 30, grip had been identified as a plausible locally salient constraint.
-
-No direct grip intervention was introduced.
-
-By Week 31:
-
-- grip was less cognitively prominent
-- full-session ownership increased
-- final-set dead hangs remained intact
-- an unrelated observer spontaneously identified grip strength as notable
-
-This supports favorable local consolidation without proving a single mechanism or permanent adaptation.
-
-Week 31 therefore produced a material divergence:
-
-the autonomic recovery layer became less favorable while the functional-performance layer remained intact and, in several respects, improved.
-
-The correct interpretation is not that recovery metrics became irrelevant.
-
-It is also not that preserved performance proves zero accumulated cost.
-
-The recovery floor remained functionally preserved.
-
-The physiological cost of the uninterrupted accumulation block may nevertheless be increasing.
-
-Records 041–044 remain open and unchanged.
-
-Week 31 itself was not converted into a retrospective prediction window.
-
-Instead, the observation was carried forward and used to motivate the separately registered prospective Model Error 045 after Week 31 had closed.
+They nevertheless represent real departures from the previously stated ordinary-training collection posture and remain visible for later Model Error 043 and 044 evaluation.
 
 ---
 
-## Active Observation — 2026-W32
+## Week 32 Closeout
 
-Week 32 is the final full ordinary observation window before the August 17–18 biological and performance snapshot.
+Week 32 began after Week 31 produced a coherent autonomic-performance divergence.
 
-The primary broader question is whether the Week 31 autonomic pattern:
+Week 31 had shown:
 
-- rebounds toward the preceding range
-- stabilizes at a softer but functionally compatible level
-- continues diverging without functional change
-- begins converging with subjective or performance deterioration
+- lower daily HRV
+- lower sleep HRV
+- higher resting heart rate
+- higher sleeping heart rate
 
-Primary observation targets:
+while:
 
-- daily HRV trajectory
-- sleep HRV trajectory
-- resting-heart-rate trajectory
-- sleeping-heart-rate trajectory
-- recurrence or resolution of localized overnight cardiovascular elevations
-- total sleep
-- sleep continuity
-- sleep efficiency
-- subjective restoration
-- willingness and ease of beginning B1
-- willingness and ease of beginning Load Integration
-- B1 cardiovascular control
-- perceived exertion
-- movement quality
-- grip salience
-- positional control
-- pain or mechanical signaling
-- mood and emotional stability
-- GI and stomach state
-- ordinary-life availability
-- need for unplanned workload reduction or recovery intervention
+- subjective state remained stable
+- B1 remained available
+- Load Integration remained available
+- movement automaticity continued strengthening
+- grip continued consolidating
+- ordinary-life availability remained preserved
 
-Standard B1 and Load Integration remain unchanged.
+Week 32 tested what happened next without introducing a recovery-driven intervention.
 
-Week 32 is not:
+Completed exposure:
 
-- a taper
-- a peak week
-- an overload week
-- a recovery experiment
-- a performance-testing week
+- seven B1 sessions
+- six Load Integration sessions
+- B1 totaled 385 minutes
+- B1 covered approximately 21.14 miles
+- Load Integration totaled 270 minutes
+- total formal training reached 655 minutes
+- morning bodyweight averaged approximately 236.3 lb
+- daily biomarker HRV averaged approximately 60.6 ms
+- resting heart rate averaged approximately 48.4 bpm
+- daily average heart rate averaged approximately 64.6 bpm
+- sleep HRV averaged approximately 66.4 ms
+- sleeping heart rate averaged approximately 54.1 bpm
+- total sleep averaged approximately 7 hours 41 minutes
+- time in bed averaged approximately 8 hours 19 minutes
+- no coherent functional recovery-floor failure emerged
 
-No new workload, direct grip programming, deliberate performance test, or snapshot-directed intervention is planned.
+The week was not uniformly favorable.
 
-Recent successful contexts will not be deliberately reproduced.
+A pronounced autonomic disturbance occurred early in the window.
 
-This includes:
+On 2026-08-11:
 
-- compressed scheduling
-- training after weaker sleep
-- automatic bar contact
-- conversational or divided-attention execution
-- positional pull-up control
-- voluntary tempo changes
-- prolonged aquatic work
-- yard-work-plus-training sequences
-- spontaneous social comparison
-- direct observation of pull-up technique
+- daily biomarker HRV was 49 ms
+- resting heart rate was 53 bpm
+- sleep HRV was 53 ms
+- sleeping heart rate was 65 bpm
 
-Their evidentiary value depends on natural recurrence.
+Despite that acute physiological presentation:
 
-Strong performance will not be used to dismiss softer physiological recovery signals.
+- B1 remained available
+- Load Integration remained available
+- performance remained solid
+- no multi-session deterioration followed
+- mood remained calm
+- GI and stomach state remained stable
+- no recovery-driven protocol reduction occurred
 
-Softer physiological recovery signals will not independently command protocol change without broader functional convergence.
+A transient lower-back perturbation also occurred during the final trap-bar set on 2026-08-11 after an overly upright position.
 
-A narrow portion of the Week 32 autonomic question is now prospectively governed by Model Error 045.
+The event:
+
+- resolved the same day
+- produced no persistent guarding
+- produced no pelvic-shift pattern
+- did not prevent subsequent B1
+- did not prevent subsequent Load Integration
+- did not recur across the remainder of the Week 32 observation window
+
+The autonomic layer then improved without an imposed recovery intervention.
+
+By 2026-08-16:
+
+- daily biomarker HRV was 66 ms
+- resting heart rate was 45 bpm
+- sleep HRV was 77 ms
+- sleeping heart rate was 51 bpm
+
+The Week 32 pattern therefore differed materially from Week 31.
+
+Week 31 showed:
+
+```text
+autonomic compression
++
+preserved function
+```
+
+Week 32 showed:
+
+```text
+early autonomic disturbance
+→ spontaneous autonomic rebound
++
+preserved function
+```
+
+This was sufficient to score the narrow prospective Model Error 045 question.
+
+It was not sufficient to establish:
+
+- complete recovery
+- permanent autonomic normalization
+- absence of accumulated training cost
+- unlimited recovery capacity
+- Phase 2D
+- favorable August biological outcomes
+
+Those questions remain separately governed.
 
 ---
 
-## Model Error 045 — Prospective Autonomic Reconvergence Probe
+## Model Error 045 — Closed Autonomic Reconvergence Probe
 
 Model Error 045 was registered on:
 
@@ -240,18 +212,16 @@ secondary trajectory
 Status:
 
 ```text
-open and unscored
+closed
 ```
 
-The prediction asks whether the W31 autonomic-performance divergence partially reconverges during the final ordinary pre-snapshot interval through improvement in the autonomic layer while functional availability remains preserved.
-
-The scoring window is prospectively fixed at:
+Its fixed scoring window was:
 
 ```text
 2026-08-13 through 2026-08-16
 ```
 
-The following are registration context only:
+The following were registration context only:
 
 ```text
 2026-W31
@@ -260,11 +230,9 @@ The following are registration context only:
 2026-08-12
 ```
 
-They cannot satisfy the prediction.
+August 17–18 snapshot outcomes were also excluded.
 
-August 17–18 snapshot outcomes are also excluded from scoring.
-
-The registered favorable four-day mean thresholds are:
+Registered favorable thresholds were:
 
 | Marker | Favorable threshold |
 |---|---:|
@@ -273,113 +241,310 @@ The registered favorable four-day mean thresholds are:
 | Resting heart rate | ≤49.2 bpm |
 | Sleeping heart rate | ≤53.7 bpm |
 
-Support requires:
+Observed four-day means were:
+
+| Marker | 2026-08-13 through 2026-08-16 mean | Result |
+|---|---:|---|
+| Daily biomarker HRV | 63.5 ms | Favorable |
+| Sleep HRV | 71.25 ms | Favorable |
+| Resting heart rate | 46.5 bpm | Favorable |
+| Sleeping heart rate | 51.75 bpm | Favorable |
+
+Threshold result:
 
 ```text
-at least 3 of 4 autonomic thresholds met
-
-AND
-
-no multi-session functional regression
-
-AND
-
-no recovery-driven protocol reduction or intervention
+4 of 4 favorable
 ```
 
-Fewer than three favorable autonomic threshold crossings with preserved function constitutes failure through persistent autonomic-performance divergence.
+Additional registered conditions:
 
-Multi-session functional regression or a recovery-driven protocol change also constitutes failure.
+```text
+Multi-session functional regression:
+No
 
-Major illness, unrelated major disruption, or insufficient wearable evidence that prevents reliable construction of the registered four-day comparison produces insufficient evidence rather than an inferred pass or fail.
+Recovery-driven protocol reduction or intervention:
+No
+```
 
-Record 045 does not amend, replace, rescore, shorten, or otherwise change records 041–044.
+Record 045 was therefore scored:
 
-Full scoring governance is preserved in:
+```text
+supported
+```
+
+The 2026-08-16 Load Integration session was withheld because DEXA and VO₂-max testing were scheduled for the following morning.
+
+That omission was testing-directed rather than recovery-driven and therefore did not activate the record 045 recovery-driven protocol-change failure condition.
+
+That classification does not erase the fact that the omission departed from the earlier representative-state language.
+
+Its broader collection and governance relevance remains preserved for records 043 and 044.
+
+Record 045 is complete.
+
+Later evidence must not:
+
+- reopen it
+- extend its window
+- alter its means
+- rescore it
+- reinterpret it from the August snapshot
+- append the training-withdrawal response to its original prediction
+
+Full historical scoring governance remains preserved in:
 
 [`methodology/open_prediction_evaluation_plan_045.md`](methodology/open_prediction_evaluation_plan_045.md)
 
-The record must not be scored before the 2026-08-16 observation period is complete.
+---
+
+## Active Observation — 2026-W33
+
+Week 33 contains a different exposure geometry than the preceding accumulation weeks.
+
+The sequence is:
+
+```text
+repeated B1 + Load Integration
+→ Week 31 autonomic compression
+→ Week 32 spontaneous autonomic reconvergence
+→ testing-related formal training withdrawal
+→ return to normal training
+→ prospective reload observation
+```
+
+Week 33 therefore contains three analytically separate domains:
+
+1. August biological and performance collection
+2. descriptive autonomic response to unloading
+3. prospective autonomic persistence after reload
+
+These domains should not be collapsed.
 
 ---
 
 ## August Snapshot Governance
 
-The August 17–18 biological and performance collection window remains governed by the previously committed preregistration artifacts:
+The August biological and performance snapshot remains governed by:
 
 - [`methodology/open_prediction_evaluation_plan_041_044.md`](methodology/open_prediction_evaluation_plan_041_044.md)
 - [`methodology/2026-08-snapshot-collection-plan.md`](methodology/2026-08-snapshot-collection-plan.md)
 
-Model Error 045 is governed separately by:
-
-- [`methodology/open_prediction_evaluation_plan_045.md`](methodology/open_prediction_evaluation_plan_045.md)
-
-The 041–044 evaluation plan and August snapshot collection plan were committed before their respective outcome access.
-
-The 045 evaluation plan was committed before the 2026-08-13 through 2026-08-16 scoring window.
-
-These documents remain binding within their own evidence boundaries.
-
-The August snapshot plans govern:
-
-- the primary Model Error 043 endpoint
-- the May 2026 primary comparison baseline
-- primary-versus-supplemental evidence hierarchy
-- representative-state collection conditions
-- fasting and hydration documentation
-- missing, delayed, invalid, or rescheduled test handling
-- discordant-result handling
-- source-artifact preservation
-- privacy review
-- outcome-access boundaries
-- phase and protocol protections
-
 Scheduled collection:
 
-- **2026-08-17:** TruAge and TruHealth
-- **2026-08-17:** DEXA and VO₂ max
-- **2026-08-18:** Bod Pod
+### 2026-08-17
 
-The collection plan does not:
+- TruAge / TruHealth collection
+- DEXA
+- VO₂-max testing
 
-- predict the August result
-- alter records 041–045
-- modify scoring thresholds
-- authorize protocol progression
-- declare Phase 2D
-- require a release automatically
+### 2026-08-18
 
-Record 045 likewise does not:
+- Bod Pod
 
-- change the August collection conditions
-- modify Model Error 043
-- use August 17–18 snapshot results for scoring
-- authorize a taper
-- authorize a deload
-- authorize an overload
-- authorize recovery manipulation
-- alter the installed physical protocol
+The primary Model Error 043 domain remains TruDiagnostic.
 
-Week 32 remains part of the representative-state exposure period.
+Supplemental domains include:
 
-Training, nutrition, hydration, supplementation, sleep opportunity, recovery practices, and recreational activity should remain ordinary.
+- DEXA
+- VO₂ max
+- Bod Pod
+- bodyweight
+- recovery telemetry
+- subjective state
 
-Do not:
+The primary-versus-supplemental distinction remains binding.
 
-- reduce normal work to create an artificially fresh testing state
-- increase work to manufacture a stronger adaptation signal
-- chase a higher HRV
-- chase a lower resting heart rate
-- intentionally manipulate bodyweight for DEXA or Bod Pod
-- alter hydration to produce a preferred body-composition result
-- alter the installed protocol because the snapshot is approaching
-- alter ordinary behavior to produce a preferred record 045 result
+The August collection plan was created to capture representative-state biology rather than a deliberately optimized short-term peak.
 
-The snapshot should evaluate the biology produced by the installed system rather than a short-term optimization strategy.
+A testing-directed deviation nevertheless occurred immediately before collection:
 
-Record 045 should evaluate the autonomic trajectory produced by the same ordinary system.
+```text
+2026-08-16 Load Integration withheld
+```
 
-The physical protocol remains unchanged.
+and the planned testing schedule now includes:
+
+```text
+2026-08-17 no B1 / no LI
+2026-08-18 no B1 / no LI
+```
+
+The archive will not retrospectively rewrite those decisions as though they were part of the original ordinary-training language.
+
+They should instead remain explicit collection-condition facts.
+
+Their relevance to Model Error 043 and Model Error 044 will be evaluated retrospectively under the already registered rules.
+
+No August biological result may be used to change the preregistered endpoint after outcome access.
+
+---
+
+## Model Error 046 — Prospective Autonomic Unload/Reload Probe
+
+Model Error 046 was registered on:
+
+```text
+2026-08-17
+```
+
+Registered domain:
+
+```text
+autonomic_unload_reload
+```
+
+Registered prediction:
+
+```text
+reconvergence_persists_after_unload_reload
+```
+
+Prediction type:
+
+```text
+secondary trajectory
+```
+
+Status:
+
+```text
+open and unscored
+```
+
+Record 046 asks whether the favorable autonomic state demonstrated under record 045 remains broadly preserved after the planned testing-related withdrawal and return to the standard B1 + Load Integration architecture.
+
+Record 046 is intentionally separate from record 045.
+
+Record 045 asked:
+
+```text
+Did partial autonomic reconvergence occur?
+```
+
+Record 046 asks:
+
+```text
+Does that reconvergence persist after unloading and reload?
+```
+
+---
+
+### Record 046 Evidence Boundary
+
+Registration context only:
+
+```text
+2026-08-17
+```
+
+Because August 17 had already begun at registration, it cannot satisfy the prediction.
+
+Descriptive unload and re-entry interval:
+
+```text
+2026-08-18
+2026-08-19
+```
+
+These dates may describe:
+
+- continued formal training withdrawal
+- response to maximal VO₂ testing
+- overnight autonomic response
+- subjective recovery response
+- return to B1
+- return to Load Integration
+- immediate reload behavior
+
+They do not enter the primary threshold means.
+
+Primary scoring window:
+
+```text
+2026-08-20 through 2026-08-23
+```
+
+Only those four dates may satisfy the quantitative autonomic condition.
+
+---
+
+### Record 046 Thresholds
+
+For direct comparability with record 045, the same thresholds remain fixed:
+
+| Marker | Favorable threshold |
+|---|---:|
+| Daily biomarker HRV | ≥59.7 ms |
+| Sleep HRV | ≥65.3 ms |
+| Resting heart rate | ≤49.2 bpm |
+| Sleeping heart rate | ≤53.7 bpm |
+
+They were not recalibrated from the favorable record 045 result.
+
+Support requires:
+
+```text
+at least 3 of 4 favorable autonomic thresholds
+across the 2026-08-20 through 2026-08-23 means
+
+AND
+
+no multi-session functional regression after reload
+
+AND
+
+no recovery-driven protocol reduction after normal training resumes
+```
+
+A short-lived post-VO₂-max autonomic disturbance is admissible.
+
+It does not independently fail record 046.
+
+Record 046 excludes the measured outcomes of:
+
+- TruAge
+- TruHealth
+- TruDiagnostic
+- DEXA
+- VO₂ max
+- Bod Pod
+- later August biological synthesis
+
+Those domains remain independently evaluated.
+
+Full prospective governance:
+
+[`methodology/open_prediction_evaluation_plan_046.md`](methodology/open_prediction_evaluation_plan_046.md)
+
+---
+
+## Autonomic Unload/Reload Observation
+
+The short formal training withdrawal creates an observation that was not available during the preceding accumulation block.
+
+Relevant questions include:
+
+- does daily HRV increase further during unloading?
+- does sleep HRV increase further?
+- does resting heart rate decline further?
+- does sleeping heart rate decline further?
+- does subjective restoration change?
+- does sleep continuity change?
+- does training desire change when formal work is absent?
+- does the maximal VO₂ test temporarily disturb the autonomic profile?
+- how quickly does any such disturbance resolve?
+- what happens when B1 resumes?
+- what happens when Load Integration resumes?
+- does the favorable autonomic state remain present after the ordinary two-session structure returns?
+- does rapid autonomic re-compression occur?
+- does function remain decoupled from any autonomic re-compression?
+- does a recovery-driven workload change become necessary?
+
+The withdrawal itself cannot answer all of these questions.
+
+The return to load is part of the observation.
+
+This is why record 046 extends beyond the testing block while record 045 remains closed.
 
 ---
 
@@ -393,18 +558,21 @@ The physical protocol remains unchanged.
 | Prediction Mode | Prospectively registered and isolated in the model-error layer |
 | Phase Context | Phase 2 — Load Integration |
 | Operating Substate | Consolidation / lock-in observation |
-| Current Window | 2026-W32 active |
-| Prior Window | 2026-W31 closed |
-| Training Structure | Stable B1 anchor with active Load Integration |
-| Recovery State | Functionally preserved with measurable W31 autonomic recovery compression under continued observation |
-| Sleep Coverage | Canonical dataset current through 2026-08-09 |
-| Bodyweight Context | Approximately 229–236 lb across training, fluid, GI-timing, travel, and scale conditions |
-| Biomarker Coverage | February and May 2026 integrated multi-domain snapshots |
-| Prediction Layer | Model Error records 041–045 open |
-| Record 045 | Secondary prospective autonomic-reconvergence probe; scoring 2026-08-13 through 2026-08-16 |
+| Current Window | 2026-W33 active |
+| Prior Window | 2026-W32 closed |
+| Underlying Training Structure | B1 + Load Integration |
+| Temporary Training State | Testing-related withdrawal through 2026-08-18 |
+| Planned Normal Training Return | 2026-08-19 |
+| Recovery State | Functionally preserved with spontaneous Week 32 autonomic reconvergence |
+| Sleep Coverage | Canonical dataset current through 2026-08-16 |
+| Bodyweight Context | Approximately 229–237 lb across training, fluid, GI-timing, travel, and scale conditions |
+| Biomarker Coverage | February and May 2026 integrated multi-domain snapshots; August collection cycle active |
+| Open Prediction Layer | Records 041–044 and 046 |
+| Record 045 | Closed / supported |
+| Record 046 | Open prospective autonomic unload/reload persistence probe |
 | August Collection Governance | Evaluation and collection plans committed before outcome access |
 | Archive Integrity | Maintained |
-| Next Major Artifact | August 2026 biological and performance snapshot |
+| Current Major Artifact | August 2026 biological and performance snapshot |
 
 ---
 
@@ -415,7 +583,8 @@ Current Phase 2 evidence includes:
 - preserved aerobic infrastructure
 - repeated mechanical loading
 - same-day aerobic and strength compatibility
-- recovery-floor durability across four consecutive complete training weeks
+- multiple consecutive weeks of dense formal training
+- substantial recovery-floor durability
 - increasing schedule and environmental portability
 - reduced motivational and attentional overhead
 - repeated background and ambient execution
@@ -423,31 +592,31 @@ Current Phase 2 evidence includes:
 - voluntary tempo, positional, and force modulation
 - preserved execution after accumulated physical and cognitive workload
 - automatic bar organization
-- improving grip within the unchanged protocol
+- grip improvement inside the unchanged training architecture
 - compatibility with household, recreational, social, relational, and repository demands
 - preserved movement quality under spontaneous social attention
-- strong execution after added same-day ordinary-life workload
-- continued protocol restraint despite favorable observations
-- preservation of ordinary lower-expression sessions without narrative inflation
-- preservation of softer autonomic readings without premature intervention
-- separation of physiological recovery cost from demonstrated functional capacity
-- prospective conversion of an unresolved observation into a separately governed secondary prediction without retroactive scoring
+- preserved execution during objectively softer autonomic states
+- spontaneous autonomic rebound without a recovery-driven intervention
+- continued protocol restraint despite favorable performance evidence
+- preservation of unfavorable physiological evidence without forced narrative correction
+- separation of functional capacity from autonomic recovery state
+- prospective testing of unresolved observations rather than retrospective prediction creation
 
 These characteristics increasingly resemble Phase 2D-type expression.
 
 They remain candidate characteristics rather than a formal phase classification.
 
-Phase advancement requires continued cross-context recurrence, preserved recovery, broader portability, objective biological support, and separate retrospective review under the applicable declaration criteria.
+The current snapshot and unload/reload sequence may provide additional evidence.
 
-The August objective snapshot may provide supporting transition evidence.
+They do not independently declare a phase transition.
 
-It cannot independently declare Phase 2D.
-
-A supported Model Error 045 result likewise cannot independently declare Phase 2D.
+A Phase 2D declaration requires separate retrospective governance review.
 
 ---
 
 ## Prediction Layer
+
+### Recent Closed Records
 
 Recent closed records include:
 
@@ -458,154 +627,9 @@ Recent closed records include:
 - 038 — recovery-stability governance evaluation
 - 039 — travel reintegration
 - 040 — recovery-floor preservation
-
-Current open records:
-
-### 041 — Recovery Capacity
-
-Evaluates recovery-floor durability through the July–August observation block.
-
-Weeks 28–31 added supportive evidence through:
-
-- four consecutive complete B1 and Load Integration weeks
-- recreational aquatic exposure during earlier windows
-- repeated ordinary-life workload
-- the 2026-07-26 household-maintenance day
-- compressed scheduling
-- continued execution without intervention
-- preserved function during increasingly soft autonomic recovery metrics
-- preserved execution after yard work and other ordinary physical exposure
-
-Week 31 strengthened the recovery-capacity evidence while also strengthening the unresolved accumulated-cost signal.
-
-Compared with Week 30:
-
-- daily HRV declined
-- sleep HRV declined
-- resting heart rate increased
-- sleeping heart rate increased
-
-No corresponding convergence occurred across:
-
-- pain
-- mood
-- GI state
-- willingness
-- B1 cardiovascular control
-- movement quality
-- grip
-- positional control
-- session completion
-- ordinary-life availability
-
-The evidence therefore supports substantial recovery capacity without establishing limitless tolerance or absence of physiological cost.
-
-Week 32 will observe whether the autonomic and functional layers reconverge.
-
-Record 045 now evaluates a narrower prospective portion of that question without changing record 041.
-
-**Status:** Open
-
-### 042 — Ambient-Execution Plateau
-
-Evaluates whether execution remains reliable but flat or develops additional adaptable capacity.
-
-Weeks 27–31 produced repeated candidate counter-evidence involving:
-
-- voluntary tempo and positional control
-- divided-attention execution
-- reduced session salience
-- accumulated-fatigue tolerance
-- equipment variability
-- schedule displacement
-- preceding cognitive and physical workload
-- recreational, social, household, and relational portability
-- automatic bar contact
-- grip improvement without direct intervention
-- strong execution under compressed scheduling
-- trait-level pull-ups across complete sets
-- full positional ownership
-- preserved execution during softer recovery metrics
-- spontaneous external recognition
-- social-salience tolerance
-- yard-work-plus-training compatibility
-- direct side-by-side execution without loss of the installed movement standard
-
-Week 31 materially strengthened the candidate counter-evidence.
-
-The unchanged external task continued changing in its relationship to the operator.
-
-The evidence remains inside the registered evaluation window.
-
-Record 045 does not score motor automaticity, grip expression, divided attention, positional control, or portability.
-
-Those observations may provide functional context but cannot satisfy its autonomic thresholds.
-
-**Status:** Open
-
-### 043 — August Biological Snapshot
-
-Evaluates whether the current operating state translates into the August biological and performance artifact cycle.
-
-Scheduled collection:
-
-- 2026-08-17 — TruAge and TruHealth
-- 2026-08-17 — DEXA and VO₂ max
-- 2026-08-18 — Bod Pod
-
-Training, nutrition, recovery, hydration, supplementation, and collection conditions remain ordinary rather than snapshot-optimized.
-
-The scoring and collection rules are committed and binding before outcome review:
-
-- [`Open Prediction Evaluation Plan 041–044`](methodology/open_prediction_evaluation_plan_041_044.md)
-- [`August 2026 Snapshot Collection Plan`](methodology/2026-08-snapshot-collection-plan.md)
-
-The TruDiagnostic comparison remains the primary domain.
-
-DEXA, VO₂ max, Bod Pod, bodyweight, recovery, and subjective state remain supplemental.
-
-Behavioral portability and biological outcome remain related but independently evaluated.
-
-The less favorable W31 autonomic profile does not predict the biological outcome.
-
-The favorable W31 behavioral record does not predict the biological outcome.
-
-A supported or failed record 045 does not automatically determine record 043.
-
-August 17–18 results cannot be used to score record 045.
-
-**Status:** Open
-
-### 044 — Protocol Governance
-
-Evaluates whether protocol stability and interpretive discipline remain preserved through the next snapshot cycle.
-
-Week 31 added supportive evidence because simultaneous favorable performance and unfavorable recovery observations did not trigger:
-
-- added formal workload
-- specialized grip or forearm training
-- increased pull-up volume
-- deliberate recreation of spontaneous demonstrations
-- manufactured schedule compression
-- manufactured divided-attention testing
-- prediction revision
-- preemptive recovery intervention
-- workload reduction based on isolated wearable values
-- snapshot-directed optimization
-- premature phase declaration
-- suppression of less favorable recovery evidence
-
-Week 32 creates a further governance challenge because the snapshot and record 045 scoring window are close enough to invite short-term optimization.
-
-Representative-state behavior remains the governing rule.
-
-A legitimate recovery-driven intervention could cause record 045 to fail while still supporting record 044 if the intervention reflects appropriate evidence-based governance.
-
-**Status:** Open
+- 045 — autonomic reconvergence
 
 ### 045 — Autonomic Reconvergence
-
-Evaluates whether the W31 autonomic-performance divergence partially reconverges during the final ordinary pre-snapshot interval.
 
 Registration:
 
@@ -619,7 +643,286 @@ Scoring window:
 2026-08-13 through 2026-08-16
 ```
 
-Registered favorable thresholds:
+Outcome:
+
+```text
+supported
+```
+
+Observed means:
+
+```text
+Daily HRV:
+63.5 ms
+
+Sleep HRV:
+71.25 ms
+
+Resting HR:
+46.5 bpm
+
+Sleeping HR:
+51.75 bpm
+```
+
+Threshold crossings:
+
+```text
+4 of 4
+```
+
+Functional regression:
+
+```text
+No
+```
+
+Recovery-driven protocol reduction:
+
+```text
+No
+```
+
+Record 045 is closed.
+
+Later unload/reload observations are excluded.
+
+Full historical scoring governance remains preserved in:
+
+[`methodology/open_prediction_evaluation_plan_045.md`](methodology/open_prediction_evaluation_plan_045.md)
+
+---
+
+### Current Open Records
+
+The current open model-error set is:
+
+```text
+041
+042
+043
+044
+046
+```
+
+### 041 — Recovery Capacity
+
+Evaluates recovery-capacity durability across the July–August observation block.
+
+Evidence accumulated before Week 33 includes:
+
+- multiple consecutive complete or near-complete B1 + Load Integration weeks
+- preserved formal training availability
+- recreational and ordinary-life workload
+- compressed scheduling
+- household workload
+- stable mood and GI state
+- preserved movement quality
+- improving grip
+- continued low-overhead execution
+- Week 31 autonomic compression without corresponding functional failure
+- Week 32 spontaneous autonomic rebound while formal training continued
+- no recovery-driven intervention required through the record 045 window
+
+Week 33 may add unusually useful evidence because the prolonged accumulation period is now followed by a short externally scheduled unloading interval and reload.
+
+Relevant new observations include:
+
+- magnitude of autonomic change during unloading
+- subjective change during unloading
+- response to maximal VO₂ testing
+- response to two days without B1 or LI
+- ease of returning to two-session training
+- autonomic behavior after reload
+- whether a recovery-driven intervention becomes necessary after return
+
+A large rebound during unloading would be compatible with accumulated load contributing to the previous autonomic compression.
+
+It would not independently prove that the training density was excessive.
+
+**Status:** Open
+
+---
+
+### 042 — Ambient-Execution Plateau
+
+Evaluates whether execution remains reliable but flat or continues developing additional adaptable capacity.
+
+Candidate counter-evidence currently includes:
+
+- voluntary tempo and positional control
+- reduced session salience
+- divided-attention execution
+- automatic bar organization
+- grip improvement without direct intervention
+- preserved execution under accumulated fatigue
+- schedule displacement
+- ordinary-life workload
+- social-salience tolerance
+- strict pull-up control under observation
+- spontaneous side-by-side execution
+- trait-level pull-up sets
+- strong execution during softer autonomic recovery states
+- persistent function during the Week 32 autonomic trough
+- preserved execution as autonomic measures subsequently rebounded
+
+Week 33 may provide another natural comparison:
+
+```text
+trained state
+→ short withdrawal
+→ return to training
+```
+
+Relevant evidence will include whether execution after the short break:
+
+- returns immediately
+- requires reacquisition
+- feels psychologically larger
+- retains positional automaticity
+- retains grip organization
+- retains low operator overhead
+
+No deliberate test is required.
+
+**Status:** Open
+
+---
+
+### 043 — August Biological Snapshot
+
+Evaluates whether the current operating state translates into the August biological and performance artifact cycle.
+
+Scheduled collection:
+
+- 2026-08-17 — TruAge / TruHealth
+- 2026-08-17 — DEXA and VO₂ max
+- 2026-08-18 — Bod Pod
+
+Primary comparison:
+
+```text
+May 2026
+```
+
+Primary biological domain:
+
+```text
+TruDiagnostic
+```
+
+Supplemental domains include:
+
+- DEXA
+- VO₂ max
+- Bod Pod
+- bodyweight
+- recovery
+- subjective state
+
+The preregistered evaluation and collection plans remain binding.
+
+The testing-directed August 16 Load Integration omission is preserved as an actual collection-condition deviation.
+
+The archive will not retroactively redefine the original representative-state instructions to conceal it.
+
+Its materiality will be evaluated after the required results are available.
+
+Record 045 support does not determine record 043.
+
+Record 046 does not determine record 043.
+
+**Status:** Open
+
+---
+
+### 044 — Protocol Governance
+
+Evaluates whether protocol stability and interpretive discipline remain preserved through the August snapshot cycle.
+
+Prior candidate support included:
+
+- no forced progression
+- no direct grip program
+- no high-volume pull-up test
+- no manufactured portability test
+- no prediction rewriting
+- no phase declaration from favorable performance
+- no recovery-driven response to isolated wearable values
+- preservation of unfavorable autonomic evidence
+
+A new governance issue is now explicitly preserved.
+
+The active report before collection stated:
+
+```text
+Week 32 is not a taper.
+```
+
+and:
+
+```text
+Do not taper for the August snapshot.
+```
+
+A deliberate pre-test Load Integration withholding nevertheless occurred on 2026-08-16.
+
+The archive should not hide that contradiction.
+
+The current classification is:
+
+```text
+pre-scheduled measurement-protection deviation
+```
+
+rather than:
+
+```text
+recovery-driven intervention
+```
+
+or:
+
+```text
+record-045-directed manipulation
+```
+
+The planned August 17–18 withdrawal likewise remains visible.
+
+Formal determination of whether this constitutes a Model Error 044 governance failure or an admissible bounded collection deviation remains deferred to the registered evaluation procedure.
+
+**Status:** Open
+
+---
+
+### 046 — Autonomic Unload/Reload Persistence
+
+Registration:
+
+```text
+2026-08-17
+```
+
+Prediction:
+
+```text
+reconvergence_persists_after_unload_reload
+```
+
+Evidence structure:
+
+```text
+2026-08-17:
+registration context only
+
+2026-08-18 through 2026-08-19:
+descriptive unload / re-entry kinetics
+
+2026-08-20 through 2026-08-23:
+primary scoring window
+```
+
+Fixed favorable thresholds:
 
 ```text
 Daily HRV >= 59.7 ms
@@ -630,122 +933,53 @@ Sleeping HR <= 53.7 bpm
 
 Support requires:
 
-- at least three of four favorable autonomic threshold crossings
-- no multi-session functional regression
-- no recovery-driven protocol reduction or intervention
+- at least three of four favorable four-day autonomic means
+- no multi-session functional regression after reload
+- no recovery-driven protocol reduction after normal training resumes
 
-Week 31 and August 10–12 are context only.
+The maximal VO₂ test may create a short-lived autonomic disturbance without independently causing failure.
 
-August 17–18 snapshot results are excluded.
-
-The record is secondary and does not replace or modify records 041–044.
-
-Its purpose is to test a narrow forward trajectory created by the unresolved divergence already visible before registration.
-
-Full rules:
-
-[`Open Prediction Evaluation Plan 045`](methodology/open_prediction_evaluation_plan_045.md)
+Biological and performance snapshot outcomes remain excluded.
 
 **Status:** Open
 
-No open record currently qualifies for closure.
-
----
-
-## Autonomic-Performance Divergence
-
-Week 31 established a material observational divergence between recovery markers and demonstrated functional capacity.
-
-Less favorable observations included:
-
-- lower daily HRV
-- lower sleep HRV
-- higher resting heart rate
-- higher sleeping heart rate
-- repeated localized overnight cardiovascular elevations
-- recurrent low device-estimated REM
-- several reports of later-night fragmentation
-
-Preserved or improving observations included:
-
-- calm mental state
-- stable emotional state
-- calm GI and stomach state
-- absent pain
-- preserved training initiation
-- preserved B1 cardiovascular control
-- ambient Load Integration
-- repeated trait-level expression
-- automatic positional organization
-- reduced grip salience
-- improved grip
-- strong dead-hang control
-- preserved performance under added same-day ordinary activity
-- preserved performance under spontaneous social observation
-
-This divergence remains a valid retrospective Week 31 observation.
-
-It is also the motivating context for the separately registered prospective Model Error 045.
-
-The archive preserves the temporal distinction:
-
-```text
-Week 31
-observation that generated the question
-
-2026-08-10 through 2026-08-12
-additional known registration context
-
-2026-08-13 through 2026-08-16
-future evidence permitted to score record 045
-```
-
-The next broader evidence remains whether:
-
-- autonomic markers rebound
-- autonomic markers stabilize
-- autonomic markers continue diverging
-- functional performance eventually declines
-- subjective state begins changing
-- workload modification becomes functionally necessary
-
-For record 045 specifically, only the preregistered August 13–16 evidence and rules may determine the outcome.
-
-The archive will not force one physiological or functional layer to invalidate the other.
+No currently open record qualifies for closure at this point.
 
 ---
 
 ## Current Constraints and Risk Posture
 
-Active but currently non-disruptive constraints include:
+Active constraints include:
 
-- lower W31 daily HRV relative to Week 30
-- lower W31 sleep HRV relative to Week 30
-- higher W31 resting heart rate
-- higher W31 sleeping heart rate
-- recurrent localized nocturnal cardiovascular elevations
-- repeated low device-estimated REM
-- intermittent late-night fragmentation
-- uncertainty about whether the current autonomic pattern represents accumulated training cost, ordinary variability, or another unresolved influence
-- shoulder, elbow, grip, hand, forearm, and lower-back mechanical ownership
+- uncertainty about how much of the Week 31 autonomic compression reflected accumulated training load
+- uncertainty about how much additional autonomic recovery will occur during formal training withdrawal
+- possible acute autonomic disturbance after maximal VO₂ testing
+- uncertainty about how rapidly telemetry changes after normal B1 + Load Integration resumes
+- unresolved Model Error 041 recovery-capacity boundary
+- unresolved Model Error 042 ambient-execution plateau
+- pending Model Error 043 biological outcome
+- unresolved Model Error 044 collection/protocol-governance question
+- prospective Model Error 046 unload/reload evaluation
+- device-estimated REM uncertainty
+- intermittent sleep fragmentation
+- local mechanical ownership of lower back, shoulders, elbows, hands, and forearms
 - bodyweight interpretation under fluid and GI-timing variation
-- ordinary social, household, relational, administrative, and repository workload
-- reduced session salience creating a documentation risk
-- temptation to classify every successful session as developmental evidence
-- temptation to convert improving grip or social recognition into specialized training
-- temptation to convert available capacity into required workload
-- temptation to taper or optimize because August testing is approaching
-- temptation to alter ordinary behavior to produce a preferred record 045 outcome
+- reduced session salience creating documentation risk
+- temptation to overinterpret favorable August testing
+- temptation to extend unloading if biomarkers improve dramatically
+- temptation to interpret an acute post-VO₂ disturbance as accumulated-training failure
+- temptation to treat successful reload as proof of unlimited recovery capacity
+- temptation to declare Phase 2D before retrospective review
 
-**Primary risk:** allowing increasingly strong performance and low-friction execution to justify premature progression.
+**Primary risk:** allowing favorable objective or behavioral evidence to trigger premature phase or protocol progression.
 
-**Secondary risk:** allowing softer autonomic recovery metrics to drive premature intervention without functional convergence.
+**Secondary risk:** allowing short-term autonomic changes during unloading or reload to be interpreted causally before enough repeated evidence exists.
 
-**Prediction risk:** allowing knowledge of the record 045 thresholds to influence ordinary behavior during its scoring window.
+**Governance risk:** retrospectively sanitizing the August 16–18 training withdrawal instead of preserving its actual relationship to the earlier representative-state instructions.
 
-**Snapshot risk:** modifying ordinary behavior to improve an upcoming measurement rather than measuring the installed system as it exists.
+**Prediction risk:** allowing record 046 thresholds or timing to influence the planned return to normal training.
 
-**Current response:** preserve the protocol, preserve representative-state behavior, retain ordinary variability, observe spontaneous recurrence, preserve the preregistered 045 boundary, maintain documentation discipline, and intervene only if deviation becomes repeated, progressive, and functionally meaningful.
+**Current response:** preserve the finite testing withdrawal as documented, resume the installed B1 + Load Integration architecture on the planned return date unless a genuine reason prevents it, retain source evidence, keep prediction windows fixed, and evaluate retrospectively.
 
 ---
 
@@ -775,8 +1009,10 @@ Evaluation is based on:
 - restraint when evidence remains incomplete
 - separation of behavioral evidence from biological outcome scoring
 - preservation of preregistered conditions before outcome access
-- preservation of disagreement between physiological and functional layers when both are supported by evidence
+- preservation of disagreement between physiological and functional layers when both are supported
 - separation of observations that generate predictions from future evidence permitted to score them
+- preservation of deviations rather than retrospective normalization
+- preservation of closed prediction boundaries when related future questions remain unresolved
 
 The archive documents process rather than performance display.
 
@@ -786,54 +1022,57 @@ The archive documents process rather than performance display.
 
 Completed:
 
-- 2026-W31 weekly report closed
-- 2026-W32 weekly report initialized
-- sleep dataset extended through 2026-08-09
-- seven new canonical sleep rows added for 2026-08-03 through 2026-08-09
-- canonical sleep continuity extended to 182 daily rows
-- Week 31 recovery and training metrics verified
-- 700 formal Week 31 training minutes documented
-- Week 31 morning bodyweight average verified at approximately 235.1 lb
-- Week 31 daily biomarker HRV average verified at approximately 57.3 ms
-- Week 31 sleep HRV average verified at approximately 60.1 ms
-- Week 31 resting-heart-rate average verified at approximately 51.4 bpm
-- Week 31 sleeping-heart-rate average verified at approximately 56.4 bpm
-- Week 31 total sleep average verified at approximately 7 hours 39 minutes
-- daily and sleep-tab cardiovascular metrics kept distinct
-- sleep-stage confidence preserved without inferred replacement values
-- 2026-08-06 missing post-B1 bodyweight preserved as missing
-- grip improvement retained as candidate local consolidation rather than a confirmed mechanism
-- spontaneous external-recognition events retained as qualitative evidence
-- 2026-08-09 social-comparison event retained as naturalistic evidence rather than a formal test
-- W31 autonomic-performance divergence retained without retroactive scoring
-- Model Error 045 prospectively registered on 2026-08-12
-- record 045 scoring window fixed at 2026-08-13 through 2026-08-16
-- record 045 favorable autonomic thresholds preregistered
-- Week 31 and August 10–12 explicitly excluded from record 045 scoring
-- August 17–18 snapshot outcomes explicitly excluded from record 045 scoring
-- records 041–044 preserved unchanged
-- records 041–045 protected as open and unscored
-- validator protection extended through record 045
+- 2026-W32 weekly report closed
+- 2026-W33 weekly report initialized
+- Week 32 formal training summarized at 655 minutes
+- seven Week 32 B1 sessions documented
+- six Week 32 Load Integration sessions documented
+- Week 32 B1 distance documented at approximately 21.14 miles
+- Week 32 morning bodyweight average verified at approximately 236.3 lb
+- Week 32 daily biomarker HRV average verified at approximately 60.6 ms
+- Week 32 resting-heart-rate average verified at approximately 48.4 bpm
+- Week 32 sleep HRV average verified at approximately 66.4 ms
+- Week 32 sleeping-heart-rate average verified at approximately 54.1 bpm
+- Week 32 total sleep average verified at approximately 7 hours 41 minutes
+- early-Week-32 autonomic trough preserved
+- spontaneous late-Week-32 autonomic rebound preserved
+- 2026-08-11 transient lower-back perturbation documented as resolved without recurring functional consequence
+- 2026-08-16 testing-directed Load Integration omission preserved
+- Model Error 045 scored and closed as supported
+- record 045 four-day means preserved
+- record 045 favorable threshold result preserved at 4 of 4
+- later evidence excluded from record 045
+- Model Error 046 prospectively registered
+- `open_prediction_evaluation_plan_046.md` added
+- record 046 registration context and scoring windows fixed
+- records 041–044 preserved unchanged and open
+- protected open model-error set updated to 041–044 and 046
+- record 045 protected as closed/scored history
+- validator updated through record 046
+- verification documentation aligned with 045/046 governance
+- methodology directory guide aligned with 045/046 governance
+- canonical sleep dataset extended through 2026-08-16
+- seven new Week 32 canonical sleep rows added
+- canonical sleep continuity extended to 189 daily rows
+- daily and sleep-tab cardiovascular values kept distinct
+- August snapshot collection plan preserved
 - Phase 2 status preserved
 - consolidation / lock-in observation substate preserved
-- August 041–044 scoring rules preregistered
-- August collection conditions preregistered before outcome access
 
 Current work:
 
-- ordinary W32 observation
-- prospective record 045 observation beginning 2026-08-13
-- monitoring whether the W31 multi-marker autonomic pattern rebounds, stabilizes, or converges with functional change
-- monitoring grip and local mechanical status without specialized intervention
-- preserving reduced session salience while maintaining reliable logging
-- continued passive collection of reduced-overhead and adaptable-execution evidence
-- preservation of ordinary and below-peak session descriptions
-- preservation of strong performance without using it to dismiss recovery cost
-- preservation of softer autonomic markers without using them as automatic intervention commands
-- preservation of ordinary behavior despite knowledge of record 045 thresholds
-- maintenance of the Model Error 043 scoring framework
-- preservation of committed August collection conditions
-- August artifact-cycle preparation
+- August 2026 biological and performance snapshot collection
+- preservation of actual August 17–18 collection conditions
+- preservation of the testing-directed formal training withdrawal
+- descriptive observation of autonomic unloading
+- prospective Model Error 046 observation
+- planned return to normal B1 + Load Integration on 2026-08-19
+- observation of post-reload functional availability
+- observation of post-reload autonomic persistence
+- maintenance of Model Error 041–044 scoring boundaries
+- preservation of August source artifacts before synthesis
+- preservation of biological and autonomic evaluation as separate domains
+- continued phase restraint pending retrospective review
 - routine archive stewardship
 
 ---
@@ -858,7 +1097,8 @@ Current work:
 - **Data Collection:** [methodology/data-collection.md](methodology/data-collection.md)
 - **Prediction Evaluation:** [methodology/prediction_evaluation.md](methodology/prediction_evaluation.md)
 - **Open Prediction Plan 041–044:** [methodology/open_prediction_evaluation_plan_041_044.md](methodology/open_prediction_evaluation_plan_041_044.md)
-- **Open Prediction Plan 045:** [methodology/open_prediction_evaluation_plan_045.md](methodology/open_prediction_evaluation_plan_045.md)
+- **Completed Prediction Plan 045:** [methodology/open_prediction_evaluation_plan_045.md](methodology/open_prediction_evaluation_plan_045.md)
+- **Open Prediction Plan 046:** [methodology/open_prediction_evaluation_plan_046.md](methodology/open_prediction_evaluation_plan_046.md)
 - **August Collection Plan:** [methodology/2026-08-snapshot-collection-plan.md](methodology/2026-08-snapshot-collection-plan.md)
 - **Data Dictionary:** [DATA_DICTIONARY.md](DATA_DICTIONARY.md)
 - **Measurement Sources:** [MEASUREMENT_SOURCES.md](MEASUREMENT_SOURCES.md)
@@ -867,5 +1107,5 @@ Current work:
 
 ---
 
-**System State:** Stable with active autonomic observation and prospective record 045 evaluation  
-**Operational Mode:** Execute → observe → record → close retrospectively
+**System State:** Stable with August snapshot collection and prospective autonomic unload/reload observation active  
+**Operational Mode:** Collect → observe → preserve → reload → evaluate retrospectively
