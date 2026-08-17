@@ -58,7 +58,8 @@ The local validator reviews:
 - governed sleep-data warnings
 - weekly-report continuity
 - model-error continuity
-- protected status of records 041–045
+- protected open status of records 041–044 and 046
+- preserved closed/scored state of record 045
 - release-metadata alignment
 - RingConn source-export byte preservation
 
@@ -70,6 +71,8 @@ It does not:
 - repair values
 - infer missing observations
 - normalize provider exports
+- independently score predictions
+- recompute model-error outcomes
 - change prediction status
 - rewrite history
 - alter checksums
@@ -238,7 +241,7 @@ A documented data-quality warning should not make the repository mechanically in
 
 ## PASS
 
-A check completed without identifying a mechanical problem.
+A check completed without identifying a mechanical or governance-protected problem.
 
 Examples:
 
@@ -246,6 +249,8 @@ Examples:
 - all CSVs parse
 - weekly reports are continuous
 - RingConn bytes match the registered source package
+- protected open model-error records retain their unscored state
+- record 045 retains its registered closed/scored state
 
 ---
 
@@ -284,6 +289,9 @@ Examples include:
 - missing date inside the canonical sleep interval
 - release-metadata mismatch
 - protected open prediction record no longer open
+- protected open prediction record containing outcome data before scoring
+- record 045 no longer retained as closed after its preregistered scoring
+- record 045 losing its recorded actual outcome
 - RingConn source bytes changed
 - unsafe ZIP path
 
@@ -466,7 +474,7 @@ More than one active report is an error.
 
 No active report is a warning.
 
-The validator does not close a weekly report.
+The validator does not close or open a weekly report.
 
 ---
 
@@ -477,24 +485,73 @@ The validator checks:
 - record-ID parsing
 - duplicate IDs
 - sequence continuity
-- presence of records 041–045
-- open status of records 041–045
+- continuity through record 046
+- presence of protected open records 041–044 and 046
+- open status of records 041–044 and 046
 - preservation of their registered predictions
-- blank protected actual and error fields
+- blank protected actual and error fields for records 041–044 and 046
+- presence of record 045
+- closed status of record 045
+- preservation of the registered prediction for record 045
+- presence of a recorded actual value for record 045
 
-Records 041–045 are explicitly protected rather than inferred dynamically from current `open` status.
+The currently protected open-record set is explicitly defined as:
 
-This preserves the governance check even if a protected record is accidentally changed from `open` to another status.
+```text
+041
+042
+043
+044
+046
+```
 
-The validator does not score predictions.
+These records are protected explicitly rather than inferred dynamically from whatever rows currently contain `status=open`.
 
-Record 045 remains separately governed by:
+This preserves the governance check even if one of the protected records is accidentally changed from `open` to another state.
+
+Record 045 is intentionally excluded from the protected open-record set.
+
+Its preregistered scoring window closed on 2026-08-16.
+
+The repository records record 045 as closed after scoring under:
 
 ```text
 methodology/open_prediction_evaluation_plan_045.md
 ```
 
-The validator protects its registration state but does not determine whether its future scoring criteria are satisfied.
+The validator now protects that historical state by requiring record 045 to remain:
+
+```text
+status=closed
+```
+
+with a populated registered prediction and populated actual outcome.
+
+The validator does **not** independently determine whether record 045 deserved a supported or failed classification.
+
+It does not:
+
+- recalculate the August 13–16 four-day means
+- compare those values with the preregistered thresholds
+- independently classify functional regression
+- independently classify whether a protocol change was recovery-driven
+- reinterpret the 2026-08-16 Load Integration omission
+- reopen the prediction
+- rescore the prediction
+
+Those responsibilities belong to the preregistered evaluation artifact, source data, retrospective report, and model-error ledger.
+
+The validator's role is narrower:
+
+```text
+protect the committed scoring state from accidental repository drift
+```
+
+Record 046 is now the active protected prospective autonomic trajectory record.
+
+Its outcome and error fields must remain blank until its own preregistered evidence boundary is complete and retrospective scoring is authorized.
+
+Record 046 does not reopen or extend record 045.
 
 ---
 
@@ -684,7 +741,8 @@ Verification may establish that:
 - repository CSVs parse
 - internal Markdown links resolve
 - weekly reports are continuous
-- protected prediction records remain open
+- protected open prediction records remain open and unscored
+- a previously scored protected record retains its committed closed/scored state
 - release metadata agrees
 - a downloaded ZIP is mechanically safe and internally consistent
 
@@ -695,7 +753,7 @@ Verification does not independently establish:
 - measurement validity
 - device accuracy
 - phase transition
-- prediction success
+- whether a recorded prediction outcome was scientifically correct
 - population generalizability
 - universal privacy erasure
 - provider-side deletion of unreachable Git or LFS objects
@@ -734,8 +792,9 @@ For a routine local verification cycle:
 4. review warnings against `data/DATA_QUALITY_NOTES.md`
 5. spot-check recently changed artifacts
 6. verify that protected prediction and phase boundaries remain intact
-7. download and validate a fresh GitHub ZIP after material changes
-8. record a formal audit only when the scheduled audit cadence or a material event requires it
+7. verify that scored predictions remain frozen after their registered outcome boundary
+8. download and validate a fresh GitHub ZIP after material changes
+9. record a formal audit only when the scheduled audit cadence or a material event requires it
 
 The validator reduces repetitive mechanical work.
 
@@ -750,6 +809,8 @@ The validator cannot fully evaluate:
 - whether interpretation exceeds evidence
 - whether a provider field is semantically equivalent to a curated field
 - whether a prediction was framed fairly
+- whether prediction scoring correctly followed its preregistered criteria
+- whether a protocol deviation belongs to one governance category or another
 - whether a phase declaration is justified
 - whether a screenshot contains unexpected private information
 - whether a PDF redaction preserved all necessary context
@@ -789,6 +850,8 @@ Local read-only validation remains the current operating model.
 - Warnings preserve known uncertainty rather than hiding it.
 - Errors identify mechanical or governance-protected failures.
 - Validation never authorizes automatic biological correction.
+- Open prediction records and scored prediction records may require different protected states.
+- Closing a prediction after its registered outcome boundary does not authorize extending that prediction with later evidence.
 - Interpretation belongs in reports, datasets, model-error evaluation, and designated synthesis layers.
 
 ---
@@ -819,20 +882,39 @@ On 2026-08-12, the model-error validation boundary was extended from records 041
 
 The 2026-08-12 update:
 
-- adds record 045 to the explicit protected open-record set
-- requires record 045 to remain open while its outcome window is incomplete
-- requires its registered prediction to remain present
-- requires protected actual and error fields to remain blank before scoring
-- documents `methodology/open_prediction_evaluation_plan_045.md` as the separate scoring-governance artifact
-- does not cause the validator to score record 045
-- does not modify records 041–044
-- does not alter any biological value, protocol, phase, collection plan, or release metadata
+- added record 045 to the explicit protected open-record set
+- required record 045 to remain open while its outcome window was incomplete
+- required its registered prediction to remain present
+- required protected actual and error fields to remain blank before scoring
+- documented `methodology/open_prediction_evaluation_plan_045.md` as the separate scoring-governance artifact
+- did not cause the validator to score record 045
+- did not modify records 041–044
+- did not alter any biological value, protocol, phase, collection plan, or release metadata
+
+On 2026-08-17, the model-error validation boundary was updated after record 045 reached its preregistered scoring boundary and record 046 was prospectively registered.
+
+The 2026-08-17 update:
+
+- removes record 045 from the protected open-record set after completion of its fixed 2026-08-13 through 2026-08-16 scoring window
+- protects record 045 as a closed/scored historical record
+- requires record 045 to retain its registered prediction
+- requires record 045 to retain a populated actual outcome
+- does not independently recompute or adjudicate the record 045 result
+- adds record 046 to the explicit protected open-record set
+- requires record 046 to remain open while its prospective outcome window remains incomplete
+- requires record 046 to retain its registered prediction
+- requires record 046 actual and error fields to remain blank before scoring
+- extends model-error continuity validation through record 046
+- preserves records 041–044 as open and unscored
+- preserves the separation between record 045 closure and the later autonomic unload/reload question
+- does not reopen or extend record 045
+- does not alter any biological value, phase declaration, release metadata, checksum, or previously registered scoring rule
 
 The verification-guide changes do not alter:
 
-- any artifact
+- any source artifact
 - any checksum
 - any biological value
-- any prediction wording
+- any preregistered prediction wording
 - any protocol exposure
 - any phase declaration
