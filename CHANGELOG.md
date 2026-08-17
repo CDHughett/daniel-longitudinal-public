@@ -14,6 +14,198 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 
 ### Added
 
+#### Model Error 046 and August 17 governance
+
+- Closed Model Error record `045` after completion of its prospectively fixed `2026-08-13` through `2026-08-16` scoring window:
+  - preserves registration date `2026-08-12`
+  - preserves domain `autonomic_reconvergence`
+  - preserves registered prediction `partial_reconvergence`
+  - records status `closed`
+  - records outcome `supported`
+  - preserves the original prediction and scoring boundary without retrospective extension
+
+- Recorded the final record 045 four-day means:
+
+  ```text
+  Daily biomarker HRV:
+  63.5 ms
+
+  Sleep HRV:
+  71.25 ms
+
+  Resting heart rate:
+  46.5 bpm
+
+  Sleeping heart rate:
+  51.75 bpm
+  ```
+
+- Recorded the final threshold result:
+
+  ```text
+  4 of 4 favorable thresholds met
+  ```
+
+- Confirmed that record 045 also satisfied its registered functional conditions:
+  - no multi-session functional regression
+  - no recovery-driven protocol reduction or intervention
+
+- Preserved the `2026-08-16` Load Integration omission as:
+  - testing-directed
+  - scheduled before `2026-08-17` DEXA and VO₂-max testing
+  - not recovery-driven for purposes of record 045 scoring
+  - still separately relevant to Model Error records 043 and 044 as an actual pre-snapshot collection-condition deviation
+
+- Preserved record 045 as a completed calibration event rather than extending it into the later testing-withdrawal period.
+
+- Added Model Error record `046` to `data/model_error/model_error_gap_v1.csv`:
+  - registration date `2026-08-17`
+  - domain `autonomic_unload_reload`
+  - model `gpt5.6-sol-subject-calibrated`
+  - registered prediction `reconvergence_persists_after_unload_reload`
+  - model type `subject_calibrated`
+  - calibration state `pre`
+  - flag `secondary`
+  - prediction type `trajectory`
+  - status `open`
+  - preserves actual and error fields as blank before outcome evaluation
+
+- Registered record 046 prospectively as a separate question from record 045.
+
+- Defined the record 046 evidence architecture as:
+
+  ```text
+  2026-08-17:
+  registration context only
+
+  2026-08-18 through 2026-08-19:
+  descriptive unload / re-entry kinetics
+
+  2026-08-20 through 2026-08-23:
+  primary scoring window
+  ```
+
+- Preserved `2026-08-17` as context only because that date had already begun before record 046 registration.
+
+- Preserved `2026-08-18` through `2026-08-19` as descriptive rather than primary scoring evidence.
+
+- Reused the record 045 autonomic thresholds without recalibration:
+
+  ```text
+  Daily biomarker HRV >= 59.7 ms
+  Sleep HRV >= 65.3 ms
+  Resting heart rate <= 49.2 bpm
+  Sleeping heart rate <= 53.7 bpm
+  ```
+
+- Defined record 046 support as:
+
+  ```text
+  at least 3 of 4 favorable autonomic thresholds
+  across the 2026-08-20 through 2026-08-23 means
+
+  AND
+
+  no multi-session functional regression after reload
+
+  AND
+
+  no recovery-driven protocol reduction after normal training resumes
+  ```
+
+- Defined a transient post-VO₂-max autonomic disturbance as admissible contextual evidence that cannot independently fail record 046.
+
+- Excluded the measured outcomes of the August biological and performance snapshot from record 046 scoring, including:
+  - TruAge
+  - TruHealth
+  - TruDiagnostic
+  - DEXA
+  - VO₂ max
+  - Bod Pod
+
+- Added `methodology/open_prediction_evaluation_plan_046.md`:
+  - preregisters the unload/reload persistence question
+  - preserves record 045 as closed
+  - preserves records 041–044 unchanged
+  - fixes the primary scoring window before it begins
+  - preserves the record 045 thresholds for direct comparability
+  - defines functional-regression and recovery-driven reload-reduction failure modes
+  - defines insufficient-evidence handling
+  - prohibits window shifting
+  - prohibits threshold recalibration
+  - prohibits use of biological snapshot outcomes for scoring
+  - authorizes no new training protocol
+  - authorizes no phase declaration
+
+#### Week 32 closeout and Week 33 initialization
+
+- Replaced the active Week 32 scaffold with retrospective closeout in `reports/2026-W32.md`:
+  - closes the `2026-08-10` through `2026-08-16` observation window
+  - records seven completed B1 sessions
+  - records six completed Load Integration sessions
+  - records 385 B1 minutes
+  - records 270 Load Integration minutes
+  - records 655 total formal training minutes
+  - records approximately 21.14 miles of B1 aerobic work
+  - records morning bodyweight averaging approximately 236.3 lb
+  - records daily biomarker HRV averaging approximately 60.6 ms
+  - records resting heart rate averaging approximately 48.4 bpm
+  - records daily average heart rate averaging approximately 64.6 bpm
+  - records sleep HRV averaging approximately 66.4 ms
+  - records sleeping heart rate averaging approximately 54.1 bpm
+  - records total sleep averaging approximately 7 hours 41 minutes
+  - records time in bed averaging approximately 8 hours 19 minutes
+  - records an early-week autonomic trough followed by spontaneous rebound while formal training remained available
+  - records the `2026-08-11` transient lower-back perturbation
+  - records same-day resolution of the lower-back event
+  - records no persistent guarding or subsequent functional restriction
+  - records preserved B1 and Load Integration availability
+  - records no multi-session functional regression
+  - records no recovery-driven protocol reduction
+  - records the `2026-08-16` Load Integration omission as testing-directed
+  - scores Model Error 045 as supported
+  - preserves records 041–044 as open and unscored
+  - preserves Phase 2 and the `Consolidation / lock-in observation` operating substate
+  - leaves Phase 2D undeclared
+
+- Added `reports/2026-W33.md` as the active observation report:
+  - defines the observation window as `2026-08-17` through `2026-08-23`
+  - documents the August biological and performance snapshot
+  - documents the temporary testing-related withdrawal from B1 and Load Integration
+  - documents the planned return to normal two-session training on `2026-08-19`
+  - preserves `2026-08-17` as record 046 registration context only
+  - preserves `2026-08-18` and `2026-08-19` as descriptive unload and re-entry kinetics
+  - fixes `2026-08-20` through `2026-08-23` as the primary record 046 scoring window
+  - preserves the four record 046 autonomic thresholds
+  - treats maximal VO₂ testing as a possible acute autonomic perturbation
+  - excludes measured August snapshot outcomes from record 046 scoring
+  - preserves records 041–044 as open and unscored
+  - preserves record 045 as closed and supported
+  - preserves record 046 as open and unscored
+  - preserves Phase 2 status
+  - preserves the `Consolidation / lock-in observation` operating substate
+  - leaves Phase 2D undeclared
+
+#### Week 32 canonical sleep extension
+
+- Appended sleep observations for `2026-08-10` through `2026-08-16` to `data/sleep_longitudinal_v1.csv`:
+  - extends canonical sleep coverage through `2026-08-16`
+  - increases canonical sleep continuity to 189 daily rows beginning `2026-02-09`
+  - adds seven daily rows without a date gap
+  - preserves total-sleep, deep-sleep, light-sleep, REM, awakening-count, efficiency, HRV, sleeping-heart-rate, subjective-state, readiness, and sleep-tag fields
+  - calculates sleep-stage percentages from recorded stage minutes divided by total sleep
+  - preserves daily biomarker HRV separately from sleep HRV
+  - preserves resting and daily-average heart-rate measures separately from sleeping heart rate
+  - preserves medium REM-confidence context
+  - preserves the early-week autonomic disturbance and subsequent multi-night recovery pattern
+  - preserves subjective-objective sleep-stage disagreement where contemporaneously reported
+
+- Recovered the `awake_min` fields for two Week 32 nights from source timing components:
+  - `2026-08-11`: `0 min`
+  - `2026-08-12`: `22 min`
+
+- Preserved the reconstruction basis as timing-derived rather than silently substituting another sleep field.
+
 #### Model Error 045 and August 12 governance
 
 - Added Model Error record `045` to `data/model_error/model_error_gap_v1.csv`:
@@ -339,7 +531,7 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - weekly-report continuity
   - active weekly-report count
   - model-error record continuity
-  - protected status of records 041–045
+  - protected model-error state
   - release-metadata alignment
   - RingConn byte sizes
   - RingConn SHA-256 values
@@ -471,6 +663,92 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 ---
 
 ### Changed
+
+#### August 17 current-state and governance alignment
+
+- Updated `data/model_error/model_error_gap_v1.csv`:
+  - closes record 045 as supported
+  - populates the record 045 outcome
+  - preserves record 045 historical scoring context
+  - adds open record 046
+  - extends model-error continuity through record 046
+  - preserves records 041–044 unchanged
+
+- Updated `tools/validate_repository.py`:
+  - protects records `041`, `042`, `043`, `044`, and `046` as open and unscored
+  - separately requires record `045` to remain closed
+  - requires record 045 to retain a populated prediction
+  - requires record 045 to retain a populated actual outcome
+  - requires protected open records to retain blank outcome and error fields
+  - extends model-error sequence continuity through record 046
+  - updates validator pass messaging to distinguish the closed 045 record from the open prediction set
+  - does not independently recompute or adjudicate the record 045 score
+  - does not score record 046
+
+- Updated `VERIFICATION.md`:
+  - records Model Error 045 as closed/scored
+  - preserves the record 045 prediction and recorded outcome as validator-protected history
+  - clarifies that validation protects state but does not independently rescore record 045
+  - protects records 041–044 and 046 as open and unscored
+  - requires blank outcome and error fields for active protected predictions
+  - extends model-error continuity documentation through record 046
+  - documents record 046 as a separate prospective unload/reload trajectory question
+
+- Updated `methodology/README.md`:
+  - records record 045 as a completed preregistered evaluation
+  - preserves `open_prediction_evaluation_plan_045.md` as historical preregistration provenance
+  - records record 045 as closed and supported
+  - exposes `open_prediction_evaluation_plan_046.md`
+  - records the record 046 registration date
+  - records the descriptive and primary scoring windows
+  - preserves the record 045 thresholds for record 046 comparability
+  - excludes August snapshot outcomes from record 046 scoring
+  - updates the active prediction set to records 041–044 and 046
+  - preserves records 041–044 unchanged
+  - preserves Phase 2 and the `Consolidation / lock-in observation` operating substate
+
+- Updated `LATEST.md`:
+  - marks `2026-W32` closed
+  - marks `2026-W33` active
+  - advances canonical sleep coverage through `2026-08-16`
+  - records Week 32 spontaneous autonomic reconvergence with preserved function
+  - records Model Error 045 consistently as closed and supported
+  - removes record 045 from the open prediction set
+  - sets the open model-error set to records 041–044 and 046
+  - exposes Model Error 046 as the active prospective unload/reload trajectory probe
+  - records the August 17–18 testing-related formal training withdrawal
+  - records the planned August 19 return to normal B1 + Load Integration
+  - preserves the August 16 Load Integration omission as an explicit collection-condition deviation
+  - preserves the original representative-state language rather than retroactively rewriting it
+  - preserves records 043 and 044 as unresolved
+  - preserves Phase 2 and leaves Phase 2D undeclared
+
+- Updated `INDEX.md`:
+  - advances the active weekly report from W32 to W33
+  - identifies W32 as the most recent closed weekly report
+  - advances canonical sleep coverage through `2026-08-16`
+  - removes record 045 from every current open-prediction reference
+  - records record 045 as closed and supported
+  - exposes the completed record 045 preregistration plan for provenance
+  - exposes the active record 046 evaluation plan
+  - sets the current open prediction set to records 041–044 and 046
+  - documents the record 046 evidence boundaries
+  - updates prediction-review, snapshot-review, methodology, and validation navigation
+  - preserves the August testing-related exposure deviation
+  - preserves Phase 2 and the `Consolidation / lock-in observation` substate
+
+- Updated `README.md`:
+  - records the active weekly window as `2026-W33`
+  - records the current open model-error set as records 041–044 and 046
+  - records record 045 as closed and supported
+  - preserves the completed 045 evaluation plan for provenance
+  - exposes the active 046 evaluation plan
+  - documents the 046 evidence boundary
+  - documents the temporary August testing-related withdrawal from formal training
+  - preserves the August biological snapshot as separately governed from record 046
+  - preserves Phase 2
+  - preserves the `Consolidation / lock-in observation` operating substate
+  - leaves Phase 2D undeclared
 
 #### August 12 current-state and governance alignment
 
@@ -1179,10 +1457,35 @@ The source-workbook narrative discrepancy remains documented rather than silentl
   Phase 3 reserved and inactive
   ```
 
+- Current weekly-report state:
+
+  ```text
+  2026-W32:
+  closed
+
+  2026-W33:
+  active
+  ```
+
+- Current canonical sleep state:
+
+  ```text
+  Continuous through 2026-08-16
+  189 daily rows
+  ```
+
 - Current open prediction state:
 
   ```text
-  Model Error records 041–045 open and unscored
+  Model Error records 041–044 and 046 open and unscored
+  ```
+
+- Current recent closed prediction state:
+
+  ```text
+  Model Error 045:
+  closed
+  supported
   ```
 
 - Current prediction-governance state:
@@ -1192,35 +1495,56 @@ The source-workbook narrative discrepancy remains documented rather than silentl
   original preregistered evaluation plan remains binding
 
   Record 045:
-  separately preregistered on 2026-08-12
+  registered 2026-08-12
   scoring window 2026-08-13 through 2026-08-16
-  secondary trajectory prediction
+  closed / supported
+  original preregistered plan retained for provenance
+
+  Record 046:
+  registered 2026-08-17
+  registration context 2026-08-17
+  descriptive unload / re-entry 2026-08-18 through 2026-08-19
+  primary scoring window 2026-08-20 through 2026-08-23
+  open / unscored
   ```
 
 - Current August collection-governance state:
 
   ```text
   Records 041–044 evaluation plan committed and binding
-  Record 045 evaluation plan committed before its scoring window
-  August collection plan committed and binding before outcome access
-  Physical protocol unchanged
+  August collection plan committed before outcome access
+  Record 045 completed under its independent preregistered boundary
+  Record 046 separately preregistered before its primary scoring window
+
+  2026-08-16:
+  Load Integration withheld before testing
+
+  2026-08-17:
+  no B1 / no Load Integration
+
+  2026-08-18:
+  no B1 / no Load Integration
+
+  2026-08-19:
+  planned return to normal B1 + Load Integration
+
+  Underlying physical architecture:
+  unchanged
   ```
 
 - Current validator model:
 
   ```text
   Local read-only validation
-  Explicit protection of records 041–045
+  Explicit protection of records 041–044 and 046 as open
+  Explicit protection of record 045 as closed/scored
   Human semantic review
   GitHub Actions deferred
   ```
 
-- Post-change verification state:
+- Most recent completed whole-package verification remains the `2026-08-12` post-change verification:
 
   ```text
-  Core 2026-08-12 governance batch:
-  verified from fresh GitHub ZIP
-
   Package:
   daniel-longitudinal-public-main (3).zip
 
@@ -1231,15 +1555,11 @@ The source-workbook narrative discrepancy remains documented rather than silentl
   0 errors
   2 governed warnings
   PASS
-
-  Intended delta:
-  2 files added
-  9 files changed
-  0 files removed
-
-  Unintended material changes:
-  none identified
   ```
+
+- The current August 17 repository update has not yet received its final fresh-package verification entry.
+
+- Final August 17 validation should be recorded only after the updated repository package has been mechanically checked.
 
 - Current expected governed validator warnings concern:
 
@@ -1281,6 +1601,19 @@ The source-workbook narrative discrepancy remains documented rather than silentl
   - August 12 Wednesday audit
   - August 12 current-state and navigation alignment
   - August 12 post-change verification closure
+  - W32 retrospective closeout
+  - W33 observation-window initialization
+  - W32 canonical sleep append through `2026-08-16`
+  - Model Error 045 scoring and closure
+  - Model Error 046 prospective registration
+  - record 046 evaluation-plan preregistration
+  - validator governance update for 045 and 046
+  - verification-guide alignment for 045 and 046
+  - methodology-directory alignment for 045 and 046
+  - `LATEST.md` advancement from W32 to W33
+  - `INDEX.md` advancement through W33
+  - `README.md` current-state alignment
+  - August 17 governance and navigation alignment
 
 - Current release metadata remains:
   - version: `1.0.0`
@@ -1293,19 +1626,41 @@ The source-workbook narrative discrepancy remains documented rather than silentl
   - unchanged in prediction wording
   - governed by their original evaluation plan
 
-- Record 045 remains:
+- Record 045 is:
+  - closed
+  - supported
+  - preserved under its original prospective scoring boundary
+  - excluded from later unload/reload evidence
+
+- Record 046 remains:
   - open
   - unscored
   - secondary
-  - prospectively bounded to `2026-08-13` through `2026-08-16`
+  - prospectively bounded to its registered unload/reload evidence windows
 
-- Current protocol exposure remains unchanged.
+- The underlying protocol architecture remains:
+
+  ```text
+  B1
+  +
+  Load Integration
+  ```
+
+- The August 16–18 reduction in formal training exposure is preserved as a temporary testing-related interruption rather than a newly declared recurring protocol.
 
 - Current phase remains:
 
   ```text
   Phase 2 — Load Integration
   ```
+
+- Current operating substate remains:
+
+  ```text
+  Consolidation / lock-in observation
+  ```
+
+- Formal Phase 2D remains undeclared.
 
 ---
 
