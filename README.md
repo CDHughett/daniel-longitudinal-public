@@ -22,7 +22,7 @@ It contains:
 
 The Zenodo DOI points to the archived `v1.0.0` release snapshot.
 
-The `main` branch may include post-publication documentation updates, including DOI badges, citation text, metadata cleanup, methodology refinement, and navigation improvements.
+The `main` branch may include post-publication documentation updates, including DOI badges, citation text, metadata cleanup, methodology refinement, navigation improvements, new prospective prediction records, and later retrospective closeouts.
 
 For citation, use the Zenodo DOI-linked release record:
 
@@ -75,6 +75,10 @@ Forward predictions are permitted only when they are:
 
 Predictions are calibration instruments, not claims of certainty.
 
+A completed prediction remains preserved after scoring.
+
+A later related question should receive a new prospective record rather than silently extending or reopening the earlier one.
+
 ---
 
 ## Current State
@@ -82,6 +86,34 @@ Predictions are calibration instruments, not claims of certainty.
 → [`LATEST.md`](./LATEST.md)
 
 This is the fastest way to understand the system's current observed state.
+
+Current archive posture includes:
+
+```text
+Phase:
+Phase 2 — Load Integration
+
+Operating substate:
+Consolidation / lock-in observation
+
+Active weekly window:
+2026-W33
+
+Open model-error records:
+041
+042
+043
+044
+046
+
+Recent completed model-error record:
+045 — supported
+
+Formal Phase 2D declaration:
+None
+```
+
+The August 2026 biological and performance snapshot and the Model Error 046 unload/reload observation are currently governed as separate evidence questions.
 
 ---
 
@@ -101,11 +133,17 @@ For the prospective evaluation rules governing records 041–044, see:
 
 [`methodology/open_prediction_evaluation_plan_041_044.md`](./methodology/open_prediction_evaluation_plan_041_044.md)
 
-For the separately registered prospective evaluation rules governing record 045, see:
+For the completed preregistered evaluation rules that governed record 045, see:
 
 [`methodology/open_prediction_evaluation_plan_045.md`](./methodology/open_prediction_evaluation_plan_045.md)
 
-The two plans remain separate because their registration dates, evidence windows, and scoring questions differ.
+For the separately registered prospective evaluation rules governing record 046, see:
+
+[`methodology/open_prediction_evaluation_plan_046.md`](./methodology/open_prediction_evaluation_plan_046.md)
+
+The three plans remain separate because their registration dates, evidence windows, and scoring questions differ.
+
+Record 046 does not reopen or extend record 045.
 
 ---
 
@@ -206,8 +244,11 @@ Interpretation remains intentionally constrained:
 - biological interpretation remains retrospective
 - registered predictions remain isolated in the model-error layer
 - prediction wording is preserved until the applicable observation window closes
+- completed predictions retain their original evidence and scoring boundaries
+- later related observations require a separate prospective record when they represent a new question
 - observations that generate predictions remain distinct from future evidence permitted to score them
 - subjective context is separated from governed archive records unless formally incorporated
+- documented protocol or collection deviations remain visible rather than being retrospectively normalized
 - protocol documents describe this subject’s archive and are not generalized prescriptions
 
 This archive documents one subject under defined protocol constraints and incomplete environmental control.
@@ -220,13 +261,21 @@ No claim extends beyond the recorded system without separate evidence.
 
 **Phase 2 — Load Integration**
 
+**Operating substate:** Consolidation / lock-in observation
+
 → [`PHASE_MAP.md`](./PHASE_MAP.md)
 
 Phase language is retrospective and evidence-earned.
 
 Open prediction outcomes may contribute to a later phase evaluation but do not independently declare a phase transition.
 
-A supported or failed record 045 result does not independently declare or terminate a phase.
+Record 045 is now closed and supported.
+
+That result does not independently declare Phase 2D.
+
+A supported or failed record 046 result likewise cannot independently declare or terminate a phase.
+
+Formal Phase 2D remains undeclared.
 
 ---
 
@@ -276,6 +325,8 @@ Root
 
 Historical or superseded protocol material may remain in the repository for provenance when its inactive status is clearly identified.
 
+Completed preregistration artifacts may likewise remain under their original filenames when preserving the original committed artifact is preferable to renaming it after outcome access.
+
 ---
 
 ## Prediction Governance
@@ -290,6 +341,7 @@ Registered predictions must be:
 - closed only after sufficient evidence exists
 - scored independently where multiple domains are involved
 - retained when evidence is insufficient rather than forced into a pass or failure
+- retained after closure so the original prediction and outcome remain inspectable
 
 Current open model-error records:
 
@@ -298,20 +350,38 @@ Current open model-error records:
 042
 043
 044
-045
+046
+```
+
+Recent completed record:
+
+```text
+045 — supported
 ```
 
 Records 041–044 remain governed by:
 
 → [`methodology/open_prediction_evaluation_plan_041_044.md`](./methodology/open_prediction_evaluation_plan_041_044.md)
 
-Record 045 remains separately governed by:
+Record 045 was separately governed by:
 
 → [`methodology/open_prediction_evaluation_plan_045.md`](./methodology/open_prediction_evaluation_plan_045.md)
 
-Record 045 was registered prospectively on 2026-08-12.
+Record 046 is separately governed by:
 
-Its admissible scoring window is:
+→ [`methodology/open_prediction_evaluation_plan_046.md`](./methodology/open_prediction_evaluation_plan_046.md)
+
+---
+
+### Record 045 — Completed Autonomic Reconvergence Probe
+
+Record 045 was registered prospectively on:
+
+```text
+2026-08-12
+```
+
+Its admissible scoring window was:
 
 ```text
 2026-08-13 through 2026-08-16
@@ -334,17 +404,191 @@ Admissible scoring evidence:
 
 Excluded:
 2026-08-17 through 2026-08-18 snapshot outcomes
+later unload/reload evidence
 ```
 
-Record 045 does not amend, replace, rescore, or shorten records 041–044.
+The four preregistered favorable thresholds were:
+
+```text
+Daily HRV >= 59.7 ms
+Sleep HRV >= 65.3 ms
+Resting HR <= 49.2 bpm
+Sleeping HR <= 53.7 bpm
+```
+
+Observed four-day means were:
+
+```text
+Daily HRV:
+63.5 ms
+
+Sleep HRV:
+71.25 ms
+
+Resting HR:
+46.5 bpm
+
+Sleeping HR:
+51.75 bpm
+```
+
+Result:
+
+```text
+4 of 4 favorable thresholds
+```
+
+No multi-session functional regression occurred.
+
+No recovery-driven protocol reduction or intervention occurred.
+
+Record 045 was therefore scored:
+
+```text
+supported
+```
+
+The 2026-08-16 Load Integration omission was testing-directed rather than recovery-driven for purposes of the record 045 failure rule.
+
+That classification does not remove the event from later Model Error 043 and 044 collection/governance evaluation.
+
+Record 045 is closed.
+
+It does not amend, replace, rescore, or shorten records 041–044.
+
+It must not be reopened using later unload/reload evidence.
+
+---
+
+### Record 046 — Active Autonomic Unload/Reload Probe
+
+Record 046 was registered separately on:
+
+```text
+2026-08-17
+```
+
+Its prediction is:
+
+```text
+reconvergence_persists_after_unload_reload
+```
+
+Its evidence structure is fixed as:
+
+```text
+2026-08-17:
+registration context only
+
+2026-08-18 through 2026-08-19:
+descriptive unload / re-entry kinetics
+
+2026-08-20 through 2026-08-23:
+primary scoring window
+```
+
+Record 046 reuses the record 045 autonomic thresholds without recalibration:
+
+```text
+Daily HRV >= 59.7 ms
+Sleep HRV >= 65.3 ms
+Resting HR <= 49.2 bpm
+Sleeping HR <= 53.7 bpm
+```
+
+Support requires:
+
+```text
+at least 3 of 4 favorable autonomic thresholds
+
+AND
+
+no multi-session functional regression after reload
+
+AND
+
+no recovery-driven protocol reduction after normal training resumes
+```
+
+The August biological and performance outcomes are excluded from record 046 scoring.
+
+This includes:
+
+- TruAge
+- TruHealth
+- TruDiagnostic
+- DEXA
+- VO₂ max
+- Bod Pod
+
+A transient autonomic disturbance after maximal VO₂ testing may be documented but does not independently fail record 046.
+
+Record 046 does not:
+
+- reopen record 045
+- rescore record 045
+- alter records 041–044
+- determine the August biological snapshot outcome
+- declare Phase 2D
+
+---
+
+## August Snapshot Governance
 
 The August biological and performance collection remains separately governed by:
 
 → [`methodology/2026-08-snapshot-collection-plan.md`](./methodology/2026-08-snapshot-collection-plan.md)
 
-Model-error layer:
+and, for records 041–044:
 
-→ [`data/model_error/WHAT_THIS_LAYER_IS.md`](./data/model_error/WHAT_THIS_LAYER_IS.md)
+→ [`methodology/open_prediction_evaluation_plan_041_044.md`](./methodology/open_prediction_evaluation_plan_041_044.md)
+
+The scheduled collection window includes:
+
+```text
+2026-08-17:
+TruAge / TruHealth
+DEXA
+VO₂ max
+
+2026-08-18:
+Bod Pod
+```
+
+The underlying physical architecture remains:
+
+```text
+B1
++
+Load Integration
+```
+
+A temporary testing-related interruption is documented:
+
+```text
+2026-08-16:
+B1 completed
+Load Integration withheld before testing
+
+2026-08-17:
+No B1
+No Load Integration
+
+2026-08-18:
+No B1
+No Load Integration
+
+2026-08-19:
+Planned return to normal B1 + Load Integration
+```
+
+The 2026-08-16 Load Integration omission and the August 17–18 training withdrawal remain visible as actual collection-condition facts.
+
+They should not be retrospectively rewritten into the original representative-state collection plan.
+
+Their materiality for records 043 and 044 remains subject to later evaluation under the preregistered rules.
+
+The biological snapshot and Model Error 046 remain analytically separate.
 
 ---
 
@@ -357,6 +601,7 @@ Model-error layer:
 - [`TELEMETRY.md`](./TELEMETRY.md)
 - [`methodology/open_prediction_evaluation_plan_041_044.md`](./methodology/open_prediction_evaluation_plan_041_044.md)
 - [`methodology/open_prediction_evaluation_plan_045.md`](./methodology/open_prediction_evaluation_plan_045.md)
+- [`methodology/open_prediction_evaluation_plan_046.md`](./methodology/open_prediction_evaluation_plan_046.md)
 - [`methodology/2026-08-snapshot-collection-plan.md`](./methodology/2026-08-snapshot-collection-plan.md)
 
 ---
@@ -408,7 +653,8 @@ Hughett, C. D. (2026). *Daniel Longitudinal Study (v1.0.0)* [Data set]. Zenodo. 
 - Weekly reports → [`reports`](./reports/)
 - Model-error layer → [`data/model_error/WHAT_THIS_LAYER_IS.md`](./data/model_error/WHAT_THIS_LAYER_IS.md)
 - Open-prediction plan 041–044 → [`methodology/open_prediction_evaluation_plan_041_044.md`](./methodology/open_prediction_evaluation_plan_041_044.md)
-- Open-prediction plan 045 → [`methodology/open_prediction_evaluation_plan_045.md`](./methodology/open_prediction_evaluation_plan_045.md)
+- Completed prediction plan 045 → [`methodology/open_prediction_evaluation_plan_045.md`](./methodology/open_prediction_evaluation_plan_045.md)
+- Open-prediction plan 046 → [`methodology/open_prediction_evaluation_plan_046.md`](./methodology/open_prediction_evaluation_plan_046.md)
 - August collection plan → [`methodology/2026-08-snapshot-collection-plan.md`](./methodology/2026-08-snapshot-collection-plan.md)
 - Telemetry layer → [`TELEMETRY.md`](./TELEMETRY.md)
 - Versioning → [`VERSIONING.md`](./VERSIONING.md)
