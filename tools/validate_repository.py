@@ -1067,6 +1067,11 @@ class Validator:
             ],
         )
 
+        actual_col = find_column(
+            header,
+            ["actual_value"],
+        )
+
         if id_col is None or status_col is None:
             self.report.error(
                 check,
@@ -1151,10 +1156,7 @@ class Validator:
         protected_fields = [
             name
             for name in [
-                find_column(
-                    header,
-                    ["actual_value"],
-                ),
+                actual_col,
                 find_column(
                     header,
                     ["error_absolute"],
@@ -1171,7 +1173,15 @@ class Validator:
             if name is not None
         ]
 
-        for record_id in range(41, 46):
+        protected_open_ids = (
+            41,
+            42,
+            43,
+            44,
+            46,
+        )
+
+        for record_id in protected_open_ids:
             row = by_id.get(record_id)
 
             if row is None:
@@ -1227,6 +1237,64 @@ class Validator:
                         ),
                     )
 
+        scored_record_id = 45
+        scored_row = by_id.get(scored_record_id)
+
+        if scored_row is None:
+            self.report.error(
+                check,
+                (
+                    "Required scored record "
+                    f"missing: {scored_record_id:03d}"
+                ),
+            )
+        else:
+            scored_status = scored_row.get(
+                status_col,
+                "",
+            ).strip().lower()
+
+            if scored_status != "closed":
+                self.report.error(
+                    check,
+                    (
+                        f"Record {scored_record_id:03d} "
+                        "must remain closed after "
+                        "preregistered scoring"
+                    ),
+                )
+
+            if (
+                prediction_col
+                and not scored_row.get(
+                    prediction_col,
+                    "",
+                ).strip()
+            ):
+                self.report.error(
+                    check,
+                    (
+                        f"Record {scored_record_id:03d} "
+                        "prediction is blank"
+                    ),
+                )
+
+            if (
+                actual_col
+                and not scored_row.get(
+                    actual_col,
+                    "",
+                ).strip()
+            ):
+                self.report.error(
+                    check,
+                    (
+                        f"Record {scored_record_id:03d} "
+                        "actual value must remain "
+                        "populated after scoring"
+                    ),
+                )
+
         if (
             not duplicates
             and not missing
@@ -1238,7 +1306,9 @@ class Validator:
                     f"{len(ids)} records continuous "
                     f"from {min(ids):03d} through "
                     f"{max(ids):03d}; "
-                    "041-045 remain open and unscored"
+                    "045 closed/scored; "
+                    "041-044 and 046 remain "
+                    "open and unscored"
                 ),
             )
 
