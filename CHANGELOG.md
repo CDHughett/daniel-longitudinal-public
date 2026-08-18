@@ -14,6 +14,151 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 
 ### Added
 
+#### August 18 snapshot collection and artifact integration
+
+- Completed the physical portion of the August 2026 biological and performance snapshot across `2026-08-17` and `2026-08-18`.
+
+- Added the final August VO₂ provider artifact:
+
+  `snapshots/2026-08/2026-08-vo2-summary.pdf`
+
+- Finalized the current August physical source-artifact set:
+
+  - `2026-08-dexa-body-comp.jpg`
+  - `2026-08-dexa-summary.jpg`
+  - `2026-08-vo2-summary.pdf`
+  - `2026-08-bodpod-cosmed.jpg`
+
+- Completed privacy review of the August physical artifacts:
+  - preserved declared public identity fields where applicable
+  - removed the nonessential ethnicity field from the public Bod Pod derivative
+  - preserved biological and performance measurements
+  - identified no public administrative identifier requiring additional VO₂ sanitization
+
+- Replaced the August snapshot checksum placeholder with a complete SHA-256 manifest covering all four current physical artifacts.
+
+- Verified the August VO₂ artifact SHA-256 as:
+
+  ```text
+  f6dd377ddd6537e530e86373ea096c0ea4895898e38156f32d73c985fac7bb2a
+  ```
+
+- Confirmed repository artifact-integrity validation after August physical-source ingestion:
+  - zero errors
+  - two governed historical sleep warnings
+  - 33 registered artifact entries across 11 checksum manifests
+  - all registered artifact checksums passing
+  - overall validator result `PASS`
+
+- Updated `methodology/2026-08-snapshot-collection-plan.md` with the actual collection execution record while preserving the original preregistration.
+
+- Recorded the `2026-08-17` collection sequence:
+
+  ```text
+  05:37
+  TruDiagnostic collection
+
+  07:55
+  DEXA
+
+  approximately 08:10
+  VO₂ max
+  ```
+
+- Recorded the `2026-08-17` preparation context:
+  - wake time approximately `05:15`
+  - morning bodyweight `235.1 lb`
+  - final meal approximately `19:00` on `2026-08-16`
+  - no morning caloric intake
+  - no morning fluid intake
+  - no coffee or caffeine
+  - no supplements
+  - no medications before testing
+  - mental state calm and normal to the recent trend
+  - GI and stomach state calm
+  - no pain
+  - no sweating
+  - no illness or mechanical signal
+  - no unusual testing event
+  - DEXA completed before VO₂
+
+- Recorded the corresponding approximate fasting durations:
+  - TruDiagnostic: `10 h 37 min`
+  - DEXA: `12 h 55 min`
+  - VO₂: `13 h 10 min`
+
+- Preserved the `2026-08-16` Load Integration omission as an explicit collection-condition deviation:
+  - B1 was completed
+  - Load Integration was intentionally withheld to preserve recovery before VO₂ testing
+  - the omission was not provider-required
+  - the omission reduced normal protocol exposure relative to the preregistered representative-state objective
+  - the deviation was retained rather than retroactively normalized
+  - the deviation remains separately relevant to Model Error records 043 and 044
+  - no Model Error 043 or 044 outcome was assigned from the deviation during collection logging
+
+- Recorded the `2026-08-18` Bod Pod collection:
+  - wake time approximately `05:15`
+  - final meal approximately `19:00` on `2026-08-17`
+  - no morning food
+  - no morning fluid
+  - no supplements
+  - no medications before testing
+  - no exercise before testing
+  - Bod Pod start time `08:26`
+  - tight boxer briefs
+  - hair cap
+  - approximate fasting duration `13 h 26 min`
+  - thoracic gas volume predicted rather than directly measured
+  - direct thoracic-gas-volume mask measurement not performed
+  - no unusual testing event reported
+
+- Preserved unavailable `2026-08-18` morning-report and wearable fields as `unknown` rather than retrospectively reconstructing them.
+
+- Added:
+
+  `snapshots/2026-08/2026-08 Epoch.md`
+
+  as the August temporal anchor record.
+
+- The August epoch:
+  - records the physical collection window as complete
+  - records the TruDiagnostic collection event
+  - records TruDiagnostic provider results as pending
+  - enumerates the current checksum-verified physical artifacts
+  - preserves the actual August 17–18 collection geometry
+  - preserves the testing-directed Load Integration deviation
+  - distinguishes physical collection completion from interpretive completion
+  - remains explicitly non-interpretive
+  - creates no phase declaration
+  - creates no model-error outcome
+
+- Extended `EPOCH_INDEX.md` through the `2026-08` epoch.
+
+- Extended `SNAPSHOT_LOG.md` through the August 2026 Phase 2 consolidation / testing-window capture.
+
+- Preserved the August snapshot state as:
+
+  ```text
+  physical collection:
+  complete
+
+  physical source-artifact preservation:
+  complete
+
+  TruDiagnostic sample collection:
+  complete
+
+  TruDiagnostic provider results:
+  pending
+
+  complete August biological interpretation:
+  pending
+  ```
+
+- Preserved Model Error 043 as open because its preregistered primary TruDiagnostic provider-result domain remains unavailable.
+
+- No August DEXA, VO₂, Bod Pod, bodyweight, recovery, or subjective result was substituted for the pending Model Error 043 primary endpoint.
+
 #### Model Error 046 and August 17 governance
 
 - Closed Model Error record `045` after completion of its prospectively fixed `2026-08-13` through `2026-08-16` scoring window:
@@ -663,6 +808,57 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 ---
 
 ### Changed
+
+#### August 18 current-state and weekly-report alignment
+
+- Updated `LATEST.md` through completion of the August 17–18 physical collection window:
+  - records DEXA, VO₂, and Bod Pod physical collection as complete
+  - records the physical source artifacts as privacy-reviewed and checksum-verified
+  - records the TruDiagnostic sample as collected on `2026-08-17` at `05:37`
+  - preserves TruDiagnostic provider results as pending
+  - exposes the August temporal epoch
+  - records actual collection timing and preparation conditions
+  - preserves the August 16 Load Integration omission as a testing-directed collection-condition deviation
+  - preserves the planned `2026-08-19` return to standard B1 + Load Integration
+  - distinguishes physical collection completion from complete August interpretation
+  - preserves Model Error records 041–044 and 046 as open
+  - preserves record 045 as closed and supported
+  - preserves Model Error 043 as dependent on the pending primary TruDiagnostic domain
+  - preserves Phase 2 and the `Consolidation / lock-in observation` operating substate
+  - leaves Phase 2D undeclared
+
+- Refactored `reports/2026-W33.md` into a shorter evidence-centered active report:
+  - removes repeated methodology and prediction-history material already maintained in governed source files
+  - retains the Week 32 handoff only where necessary for Week 33 interpretation
+  - records the actual August 17–18 snapshot execution
+  - records physical artifact status and pending TruDiagnostic status
+  - preserves the August 16 testing-directed Load Integration omission
+  - preserves the unload / reload observation geometry
+  - retains concise Model Error 041–046 relevance
+  - retains record 046 thresholds and scoring-window boundaries
+  - keeps the report active through `2026-08-23`
+  - introduces no prediction closure
+  - introduces no phase declaration
+
+- Re-established the intended weekly-report design principle:
+
+  ```text
+  weekly reports:
+  record what changed
+
+  methodology:
+  preserves standing and preregistered rules
+
+  model-error layer:
+  preserves prediction and scoring state
+
+  LATEST:
+  preserves broad executive synthesis
+  ```
+
+- Reduced duplication between the active weekly report, `LATEST.md`, collection methodology, and model-error evaluation plans.
+
+- No historical weekly report was reformatted solely to match the shorter Week 33 structure.
 
 #### August 17 current-state and governance alignment
 
@@ -1511,25 +1707,69 @@ The source-workbook narrative discrepancy remains documented rather than silentl
 - Current August collection-governance state:
 
   ```text
-  Records 041–044 evaluation plan committed and binding
-  August collection plan committed before outcome access
-  Record 045 completed under its independent preregistered boundary
-  Record 046 separately preregistered before its primary scoring window
+  Records 041–044 evaluation plan:
+  committed and binding
+
+  August collection plan:
+  committed before outcome access
+  execution conditions recorded after collection
+
+  Record 045:
+  completed under its independent preregistered boundary
+
+  Record 046:
+  separately preregistered before its primary scoring window
 
   2026-08-16:
+  B1 completed
   Load Integration withheld before testing
 
   2026-08-17:
   no B1 / no Load Integration
+  TruDiagnostic collected 05:37
+  DEXA 07:55
+  VO₂ approximately 08:10
 
   2026-08-18:
-  no B1 / no Load Integration
+  no exercise before Bod Pod
+  Bod Pod 08:26
+  physical collection window complete
 
   2026-08-19:
   planned return to normal B1 + Load Integration
 
+  Physical source artifacts:
+  archived
+  privacy-reviewed
+  checksum-verified
+
+  TruDiagnostic provider results:
+  pending
+
+  August interpretation:
+  incomplete
+
   Underlying physical architecture:
   unchanged
+  ```
+
+- Current August artifact-layer validation state:
+
+  ```text
+  Errors:
+  0
+
+  Governed warnings:
+  2
+
+  Registered artifact entries:
+  33 across 11 checksum manifests
+
+  Registered artifact checksums:
+  PASS
+
+  Result:
+  PASS
   ```
 
 - Current validator model:
@@ -1623,7 +1863,11 @@ The source-workbook narrative discrepancy remains documented rather than silentl
   PASS
   ```
 
-- Independent extracted-directory validation also completed:
+- The preceding fresh-package verification is retained as a point-in-time record of the August 17 repository state.
+
+- Its `29 of 29` checksum count is historical and is not rewritten after the August 18 artifact-set expansion.
+
+- Independent extracted-directory validation also completed for the August 17 repository update:
 
   ```text
   Errors:
@@ -1645,7 +1889,7 @@ The source-workbook narrative discrepancy remains documented rather than silentl
   - no zero-byte files are present
   - all 130 Markdown files pass target, anchor, and fence checks
   - all 11 CSV files parse with consistent row widths
-  - all 29 registered artifact checksums pass
+  - all 29 then-registered artifact checksums pass
   - canonical sleep is continuous through `2026-08-16`
   - weekly-report continuity extends through active `2026-W33`
   - model-error continuity extends through record 046
@@ -1695,7 +1939,7 @@ The source-workbook narrative discrepancy remains documented rather than silentl
   tools/validate_repository.py
   ```
 
-- No unintended file additions, removals, or material changes were identified.
+- No unintended file additions, removals, or material changes were identified in the August 17 verification package.
 
 - Current governed validator warnings remain limited to:
   - canonical sleep-stage differences on `2026-03-31` and `2026-04-02`
@@ -1703,17 +1947,20 @@ The source-workbook narrative discrepancy remains documented rather than silentl
 
 - These warnings:
   - were present before the August 17 update
+  - remain present after August physical-artifact integration
   - do not authorize automatic correction
   - do not make the repository mechanically invalid
   - remain subject to their existing source-reconciliation rules
 
-- The August 17 substantive repository update is therefore mechanically closed as:
+- The August 17 substantive repository update remains mechanically closed as:
 
   ```text
   PASS
   ```
 
-- No additional remediation is required from this update before continued Week 33 observation.
+- The August 18 physical-artifact layer has separately passed local repository validation.
+
+- Final fresh-package verification for the complete August 18 documentation batch remains a later integrity step after the intended documentation changes are complete.
 
 ---
 
@@ -1761,6 +2008,17 @@ The source-workbook narrative discrepancy remains documented rather than silentl
   - `README.md` current-state alignment
   - August 17 governance and navigation alignment
   - August 17 final fresh-package verification closure
+  - August 18 VO₂ source-artifact ingestion
+  - August 18 Bod Pod public-artifact privacy finalization
+  - August physical checksum-manifest completion
+  - August physical artifact-layer validation
+  - August collection-plan execution logging
+  - August temporal epoch creation
+  - `EPOCH_INDEX.md` advancement through August 2026
+  - `SNAPSHOT_LOG.md` advancement through August 2026
+  - `LATEST.md` advancement through physical snapshot completion
+  - W33 evidence-centered report compression
+  - August 18 snapshot collection and documentation alignment
 
 - Current release metadata remains:
   - version: `1.0.0`
@@ -1772,6 +2030,11 @@ The source-workbook narrative discrepancy remains documented rather than silentl
   - unscored
   - unchanged in prediction wording
   - governed by their original evaluation plan
+
+- Record 043 specifically remains:
+  - open
+  - dependent on the pending TruDiagnostic provider-result domain
+  - protected from substitution by supplemental August physical measurements
 
 - Record 045 is:
   - closed
@@ -1794,6 +2057,25 @@ The source-workbook narrative discrepancy remains documented rather than silentl
   ```
 
 - The August 16–18 reduction in formal training exposure is preserved as a temporary testing-related interruption rather than a newly declared recurring protocol.
+
+- Current August snapshot status remains:
+
+  ```text
+  Physical collection:
+  complete
+
+  Physical artifacts:
+  archived and checksum-verified
+
+  TruDiagnostic sample:
+  collected
+
+  TruDiagnostic provider results:
+  pending
+
+  Complete snapshot interpretation:
+  pending
+  ```
 
 - Current phase remains:
 
