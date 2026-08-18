@@ -14,6 +14,209 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 
 ### Added
 
+#### August 18 Model Error 041, 042, and 044 adjudication
+
+- Formally adjudicated Model Error records `041`, `042`, and `044` against their preserved preregistered evaluation rules in:
+
+  `methodology/open_prediction_evaluation_plan_041_044.md`
+
+- Closed Model Error record `041`:
+  - domain `recovery_capacity`
+  - registered prediction `stable`
+  - prediction type `primary trajectory`
+  - actual state `stable`
+  - error direction `none`
+  - outcome `supported`
+
+- Record 041 closure preserves the observed July–August autonomic cost rather than treating the interval as physiologically cost-free.
+
+- Record 041 nevertheless remained inside its registered recovery-capacity boundary because the observation interval did not produce the qualifying combination of:
+  - unplanned recovery intervention
+  - multi-session functional regression
+  - persistent physiological suppression with the required functional or subjective deterioration
+
+- Preserved the `2026-08-16` Load Integration omission as testing-directed rather than recovery-driven for record 041.
+
+- The testing-directed omission therefore did not activate the record 041 recovery-intervention failure condition.
+
+- Record 041 closure does not establish:
+  - costless accumulation
+  - unlimited recovery capacity
+  - permanent autonomic normalization
+  - absence of short-window physiological strain
+
+- Closed Model Error record `042`:
+  - domain `ambient_execution`
+  - registered prediction `plateau`
+  - prediction type `primary trajectory`
+  - actual state `continued_adaptation`
+  - error direction `under`
+  - outcome `not supported`
+
+- Record 042 was closed against the model after the preregistered qualitative-transition threshold was met across:
+  - at least three separately dated qualifying observations
+  - more than 14 calendar days
+  - multiple contexts
+  - no substantive explanatory protocol progression
+
+- Qualifying record 042 evidence included:
+  - voluntary tempo modulation
+  - voluntary positional control
+  - conversational divided attention
+  - social-context execution
+  - positional optionality
+  - reduced preparation
+  - reduced session salience
+  - automatic bar contact
+  - automatic movement initiation
+  - automatic positional organization
+  - automatic force control
+  - automatic transitions
+  - preserved movement quality under accumulated workload
+  - preserved execution across differing short-window autonomic states
+
+- Record 042 therefore identifies a model-underestimation event:
+
+  ```text
+  predicted:
+  plateau
+
+  observed:
+  continued_adaptation
+  ```
+
+- Record 042 closure does not independently declare Phase 2D.
+
+- Closed Model Error record `044`:
+  - domain `protocol_governance`
+  - registered prediction `preserved`
+  - prediction type `primary state`
+  - error direction `under`
+  - outcome `not supported`
+  - classification `narrow snapshot-directed governance deviation`
+
+- Record 044 retained substantial evidence of successful governance across most of its observation window, including:
+  - no forced training progression
+  - no direct grip program
+  - no high-volume pull-up test
+  - no manufactured portability test
+  - no recovery-driven reaction to isolated wearable values
+  - no outcome-driven prediction rewriting
+  - no premature Phase 2D declaration
+
+- A separate preregistered snapshot-governance boundary was nevertheless activated by:
+
+  ```text
+  2026-08-16
+  Load Integration intentionally withheld
+  to preserve recovery before VO₂ testing
+  ```
+
+- The August 16 omission was:
+  - intentional
+  - testing-directed
+  - not provider-required
+  - not recovery-driven
+
+- Because the August collection posture was intended to preserve representative-state biology rather than deliberately improve testing freshness, the omission conflicted with the registered snapshot-manipulation boundary.
+
+- Record 044 therefore closed as not supported.
+
+- The record 044 result does not establish:
+  - broad protocol-governance collapse
+  - biological harm
+  - invalidity of the August snapshot
+  - failure of record 041
+  - failure of record 045
+  - a measured biological consequence from the governance deviation
+
+- Preserved the distinction between:
+
+  ```text
+  governance outcome
+  ≠
+  biological-effect inference
+  ```
+
+- Preserved Model Error record `043` as:
+  - open
+  - unscored
+  - dependent on the pending primary TruDiagnostic provider-result domain
+
+- Preserved Model Error record `045` as:
+  - closed
+  - supported
+  - unchanged by the 041/042/044 adjudication
+
+- Preserved Model Error record `046` as:
+  - open
+  - unscored
+  - prospectively bounded to its existing unload/reload evaluation window
+
+- Reduced the current open model-error set to:
+
+  ```text
+  043
+  046
+  ```
+
+- Established the current recent closed set as:
+
+  ```text
+  041 — supported
+  042 — not supported / continued adaptation
+  044 — not supported / narrow snapshot-directed governance deviation
+  045 — supported
+  ```
+
+- Preserved the original `open_prediction_evaluation_plan_041_044.md` artifact unchanged rather than rewriting its preregistered language after outcome access.
+
+- Updated `data/model_error/udi_by_type_tracker.csv` for the newly eligible closed primary predictions.
+
+- Updated primary state calibration to:
+
+  ```text
+  eligible closed primary state predictions:
+  14
+
+  concordant:
+  11
+
+  under:
+  1
+
+  over:
+  2
+
+  primary state concordance:
+  11 / 14
+  0.79
+  ```
+
+- Updated primary trajectory calibration to:
+
+  ```text
+  eligible closed primary trajectory predictions:
+  3
+
+  concordant:
+  2
+
+  under:
+  1
+
+  over:
+  0
+
+  primary trajectory concordance:
+  2 / 3
+  0.67
+  ```
+
+- Preserved point and range magnitude UDI values unchanged because records 041, 042, and 044 are state or trajectory predictions rather than eligible point or range magnitude predictions.
+
+- The updated concordance values are calibration summaries rather than biological-success metrics.
+
 #### August 18 snapshot collection and artifact integration
 
 - Completed the physical portion of the August 2026 biological and performance snapshot across `2026-08-17` and `2026-08-18`.
@@ -93,8 +296,12 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - the omission was not provider-required
   - the omission reduced normal protocol exposure relative to the preregistered representative-state objective
   - the deviation was retained rather than retroactively normalized
-  - the deviation remains separately relevant to Model Error records 043 and 044
+  - the deviation remained separately relevant to Model Error records 043 and 044 during collection logging
   - no Model Error 043 or 044 outcome was assigned from the deviation during collection logging
+
+- Record 044 was subsequently adjudicated separately under the original registered governance rules.
+
+- The subsequent record 044 outcome does not alter the factual collection log.
 
 - Recorded the `2026-08-18` Bod Pod collection:
   - wake time approximately `05:15`
@@ -271,7 +478,7 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 - Added `methodology/open_prediction_evaluation_plan_046.md`:
   - preregisters the unload/reload persistence question
   - preserves record 045 as closed
-  - preserves records 041–044 unchanged
+  - preserves records 041–044 unchanged at registration
   - fixes the primary scoring window before it begins
   - preserves the record 045 thresholds for direct comparability
   - defines functional-regression and recovery-driven reload-reduction failure modes
@@ -309,7 +516,7 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - records no recovery-driven protocol reduction
   - records the `2026-08-16` Load Integration omission as testing-directed
   - scores Model Error 045 as supported
-  - preserves records 041–044 as open and unscored
+  - preserves records 041–044 as open and unscored at Week 32 closeout
   - preserves Phase 2 and the `Consolidation / lock-in observation` operating substate
   - leaves Phase 2D undeclared
 
@@ -324,12 +531,14 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - preserves the four record 046 autonomic thresholds
   - treats maximal VO₂ testing as a possible acute autonomic perturbation
   - excludes measured August snapshot outcomes from record 046 scoring
-  - preserves records 041–044 as open and unscored
+  - initially preserved records 041–044 as open and unscored pending their separate August snapshot-cycle adjudication
   - preserves record 045 as closed and supported
   - preserves record 046 as open and unscored
   - preserves Phase 2 status
   - preserves the `Consolidation / lock-in observation` operating substate
   - leaves Phase 2D undeclared
+
+- The active W33 report was subsequently aligned after formal closure of records 041, 042, and 044.
 
 #### Week 32 canonical sleep extension
 
@@ -490,7 +699,7 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - preserves external recognition and social comparison as qualitative naturalistic evidence rather than formal testing
   - preserves the autonomic-performance divergence as an observational carryforward question rather than creating a retrospective prediction
   - records candidate evidence relevant to Model Error records 041, 042, and 044
-  - preserves records 041–044 as open and unscored
+  - preserves records 041–044 as open and unscored at Week 31 closeout
   - preserves Phase 2 status and the `Consolidation / lock-in observation` operating substate
   - preserves Phase 2D as undeclared
 
@@ -511,7 +720,7 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - prohibits snapshot-directed workload, bodyweight, hydration, HRV, or resting-heart-rate optimization
   - preserves ordinary training, nutrition, hydration, supplementation, sleep opportunity, recovery, and recreational conditions before the August snapshot
   - links the active prediction-evaluation and snapshot-collection plans
-  - preserves records 041–044 as open and unscored
+  - preserves records 041–044 as open and unscored at initialization
   - preserves Phase 2D as undeclared and Phase 3 as reserved and inactive
 
 #### RingConn source exports
@@ -641,7 +850,7 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - defines source-artifact, privacy-review, checksum, and structured-transcription requirements
   - defines missing, delayed, invalid, incomplete, rescheduled, and discordant-result handling
   - protects outcome-access, scoring, protocol, phase, and release boundaries
-  - preserves records 041–044 as open and unscored
+  - preserves records 041–044 as open and unscored at registration
   - introduces no prediction, protocol, phase, biological-value, or release change
 
 - Added Event 003 to `data/model_error/calibration_events_log.md` for initialization of the July–August prediction block.
@@ -747,7 +956,7 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - reconfirms Markdown, CSV, checksum, artifact, privacy, report, prediction, and release integrity
   - reconfirms RingConn source-byte and CRLF preservation
   - confirms W29 remains active through its full observation window
-  - confirms records 041–044 remain open, unscored, and unchanged
+  - confirms records 041–044 remain open, unscored, and unchanged at that point
   - identifies phase-language hierarchy as the principal remaining documentation debt
   - identifies repeated mechanical audit work as suitable for a local validator
   - preserves the August collection plan as due before outcome access
@@ -766,7 +975,7 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - confirms 29 of 29 registered checksums
   - confirms RingConn source-byte and CRLF preservation
   - confirms current privacy and release metadata integrity
-  - confirms records 041–044 remain open, unscored, and unchanged
+  - confirms records 041–044 remain open, unscored, and unchanged at that point
   - confirms Phase 2 remains active, Phase 2D remains undeclared, and Phase 3 remains reserved
   - confirms the August collection plan is methodologically aligned and preregistered before outcome access
   - identifies the missing August collection-plan changelog entry
@@ -788,7 +997,7 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - confirms 29 of 29 registered checksums
   - confirms RingConn source-byte and CRLF preservation
   - confirms current privacy and release-metadata integrity
-  - confirms records 041–044 remain open, unscored, and unchanged
+  - confirms records 041–044 remain open, unscored, and unchanged at that point
   - confirms Phase 2 remains active, Phase 2D remains undeclared, and Phase 3 remains reserved
   - records direct RingConn source review of the July 31 HRV discrepancy
   - distinguishes July 31 daily-average HRV of `55 ms` from sleep HRV of `67 ms`
@@ -809,38 +1018,114 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 
 ### Changed
 
-#### August 18 current-state and weekly-report alignment
+#### August 18 model-error closure and documentation alignment
 
-- Updated `LATEST.md` through completion of the August 17–18 physical collection window:
-  - records DEXA, VO₂, and Bod Pod physical collection as complete
-  - records the physical source artifacts as privacy-reviewed and checksum-verified
-  - records the TruDiagnostic sample as collected on `2026-08-17` at `05:37`
-  - preserves TruDiagnostic provider results as pending
-  - exposes the August temporal epoch
-  - records actual collection timing and preparation conditions
-  - preserves the August 16 Load Integration omission as a testing-directed collection-condition deviation
-  - preserves the planned `2026-08-19` return to standard B1 + Load Integration
-  - distinguishes physical collection completion from complete August interpretation
-  - preserves Model Error records 041–044 and 046 as open
-  - preserves record 045 as closed and supported
-  - preserves Model Error 043 as dependent on the pending primary TruDiagnostic domain
-  - preserves Phase 2 and the `Consolidation / lock-in observation` operating substate
+- Updated `data/model_error/model_error_gap_v1.csv`:
+  - closes record `041` as supported
+  - records `actual_value=stable`
+  - records `error_direction=none`
+  - closes record `042` as not supported
+  - records `actual_value=continued_adaptation`
+  - records `error_direction=under`
+  - preserves record `043` as open and unscored
+  - closes record `044` as not supported
+  - records the registered governance miss
+  - records `error_direction=under`
+  - preserves record `045` as closed and supported
+  - preserves record `046` as open and unscored
+  - reduces the current open model-error set to records `043` and `046`
+
+- Updated `data/model_error/udi_by_type_tracker.csv`:
+  - incorporates record 041 as a concordant eligible primary trajectory prediction
+  - incorporates record 042 as an under-direction primary trajectory miss
+  - incorporates record 044 as an under-direction primary state miss
+  - updates primary state concordance to `11/14 = 0.79`
+  - updates primary trajectory concordance to `2/3 = 0.67`
+  - leaves point UDI unchanged
+  - leaves range UDI unchanged
+
+- Updated `tools/validate_repository.py`:
+  - removes records `041`, `042`, and `044` from the protected open set
+  - reduces the protected open set to records `043` and `046`
+  - requires records `043` and `046` to remain open and unscored
+  - requires their protected actual and error fields to remain blank before authorized closure
+  - protects records `041`, `042`, `044`, and `045` as closed/adjudicated history
+  - protects selected committed actual values and error directions for the closed set
+  - detects accidental reopening or outcome-field drift
+  - does not independently recompute or adjudicate the scientific correctness of the closures
+  - does not score records 043 or 046
+  - preserves model-error continuity through record 046
+
+- Updated `LATEST.md`:
+  - records 041 as closed / supported
+  - records 042 as closed / not supported through continued adaptation
+  - records 044 as closed / not supported through a narrow snapshot-directed governance deviation
+  - preserves 045 as closed / supported
+  - reduces the open model-error set to 043 and 046
+  - preserves 043 as dependent on pending TruDiagnostic provider results
+  - preserves 046 under its prospective unload/reload boundary
+  - distinguishes the record 044 governance outcome from any unmeasured biological effect
+  - preserves Phase 2
+  - preserves the `Consolidation / lock-in observation` operating substate
   - leaves Phase 2D undeclared
 
-- Refactored `reports/2026-W33.md` into a shorter evidence-centered active report:
-  - removes repeated methodology and prediction-history material already maintained in governed source files
-  - retains the Week 32 handoff only where necessary for Week 33 interpretation
-  - records the actual August 17–18 snapshot execution
-  - records physical artifact status and pending TruDiagnostic status
-  - preserves the August 16 testing-directed Load Integration omission
-  - preserves the unload / reload observation geometry
-  - retains concise Model Error 041–046 relevance
-  - retains record 046 thresholds and scoring-window boundaries
-  - keeps the report active through `2026-08-23`
-  - introduces no prediction closure
-  - introduces no phase declaration
+- Updated `reports/2026-W33.md`:
+  - removes obsolete treatment of 041, 042, and 044 as active Week 33 scoring questions
+  - preserves their outcomes as closed historical context
+  - records 041 as supported
+  - records 042 as not supported through continued adaptation
+  - records 044 as not supported through a narrow snapshot-directed governance deviation
+  - preserves 045 as closed and supported
+  - narrows active Week 33 model-error work to records 043 and 046
+  - prohibits later Week 33 evidence from reopening or improving records 041, 042, 044, or 045
+  - preserves the August 20–23 record 046 scoring window
+  - preserves W33 as active through August 23
+  - leaves Phase 2D undeclared
 
-- Re-established the intended weekly-report design principle:
+- Updated `README.md`:
+  - reduces the current open prediction set to records 043 and 046
+  - records recent closures 041, 042, 044, and 045
+  - identifies record 042 as a model-underestimation event rather than a system failure
+  - identifies record 044 as a narrow governance miss rather than a broad biological or protocol failure
+  - records the August physical collection as complete
+  - preserves the pending TruDiagnostic boundary for record 043
+  - exposes current primary state and trajectory concordance
+  - preserves formal Phase 2D as undeclared
+
+- Updated `INDEX.md`:
+  - reduces current open model-error references to 043 and 046
+  - records 041, 042, 044, and 045 as closed
+  - preserves `open_prediction_evaluation_plan_041_044.md` under its original filename as the preregistered source artifact
+  - records 043 as the sole remaining open record under that original 041–044 framework
+  - updates model-error, prediction-review, methodology, validation, snapshot, and current-archive navigation
+  - records the updated state and trajectory concordance values
+  - preserves the historical August 12 and August 17 index states as point-in-time documentation
+  - leaves Phase 2D undeclared
+
+- Updated `methodology/README.md`:
+  - reclassifies `open_prediction_evaluation_plan_041_044.md` as a preserved preregistered multi-record artifact with one remaining open governed record
+  - records 041 as closed and supported
+  - records 042 as closed and not supported through continued adaptation
+  - records 043 as open pending TruDiagnostic provider results
+  - records 044 as closed and not supported through a narrow snapshot-directed governance deviation
+  - preserves 045 as closed and supported
+  - preserves 046 as active and prospective
+  - distinguishes active, completed, and partially resolved preregistration states
+  - records the August physical collection plan as collection-complete but still relevant to pending record 043 interpretation
+  - updates validator-governance documentation
+  - leaves the original preregistration files unchanged
+
+- Updated `VERIFICATION.md`:
+  - reduces the explicit protected open set to records 043 and 046
+  - documents records 041, 042, 044, and 045 as protected closed/adjudicated history
+  - documents selected protected actual values and error directions for those closed records
+  - clarifies that validation protects committed governance state rather than independently scoring predictions
+  - records the August physical artifact-verification state
+  - preserves the pending record 043 primary-domain boundary
+  - preserves the prospective record 046 boundary
+  - retains the existing governed sleep warnings
+
+- The current documentation hierarchy remains:
 
   ```text
   weekly reports:
@@ -854,11 +1139,49 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 
   LATEST:
   preserves broad executive synthesis
+
+  README and INDEX:
+  preserve observer-facing orientation and navigation
+
+  VERIFICATION:
+  protects mechanical and governance state
   ```
 
-- Reduced duplication between the active weekly report, `LATEST.md`, collection methodology, and model-error evaluation plans.
+- No closed record was retroactively rewritten to make its prediction appear more accurate.
 
-- No historical weekly report was reformatted solely to match the shorter Week 33 structure.
+- No Phase 2D declaration was introduced by the 042 continued-adaptation finding.
+
+- No biological consequence was inferred from the 044 governance miss.
+
+#### August 18 current-state and physical-snapshot alignment
+
+- Updated current documentation through completion of the August 17–18 physical collection window:
+  - records DEXA, VO₂, and Bod Pod physical collection as complete
+  - records the physical source artifacts as privacy-reviewed and checksum-verified
+  - records the TruDiagnostic sample as collected on `2026-08-17` at `05:37`
+  - preserves TruDiagnostic provider results as pending
+  - exposes the August temporal epoch
+  - records actual collection timing and preparation conditions
+  - preserves the August 16 Load Integration omission as a testing-directed collection-condition deviation
+  - preserves the planned `2026-08-19` return to standard B1 + Load Integration
+  - distinguishes physical collection completion from complete August interpretation
+  - preserves Model Error 043 as open pending its primary molecular domain
+  - preserves Model Error 046 as open and prospective
+  - preserves Phase 2 and the `Consolidation / lock-in observation` operating substate
+  - leaves Phase 2D undeclared
+
+- Refactored `reports/2026-W33.md` into a shorter evidence-centered active report before the later 041/042/044 closure alignment:
+  - removes repeated methodology and prediction-history material already maintained in governed source files
+  - retains the Week 32 handoff only where necessary for Week 33 interpretation
+  - records the actual August 17–18 snapshot execution
+  - records physical artifact status and pending TruDiagnostic status
+  - preserves the August 16 testing-directed Load Integration omission
+  - preserves the unload / reload observation geometry
+  - retains record 046 thresholds and scoring-window boundaries
+  - keeps the report active through `2026-08-23`
+  - introduces no phase declaration
+
+- The later August 18 model-error alignment subsequently replaced obsolete open-status language for records 041, 042, and 044.
 
 #### August 17 current-state and governance alignment
 
@@ -868,16 +1191,16 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - preserves record 045 historical scoring context
   - adds open record 046
   - extends model-error continuity through record 046
-  - preserves records 041–044 unchanged
+  - preserves records 041–044 unchanged at that point
 
 - Updated `tools/validate_repository.py`:
-  - protects records `041`, `042`, `043`, `044`, and `046` as open and unscored
+  - protects records `041`, `042`, `043`, `044`, and `046` as open and unscored at that point
   - separately requires record `045` to remain closed
   - requires record 045 to retain a populated prediction
   - requires record 045 to retain a populated actual outcome
   - requires protected open records to retain blank outcome and error fields
   - extends model-error sequence continuity through record 046
-  - updates validator pass messaging to distinguish the closed 045 record from the open prediction set
+  - updates validator pass messaging to distinguish the closed 045 record from the then-open prediction set
   - does not independently recompute or adjudicate the record 045 score
   - does not score record 046
 
@@ -885,7 +1208,7 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - records Model Error 045 as closed/scored
   - preserves the record 045 prediction and recorded outcome as validator-protected history
   - clarifies that validation protects state but does not independently rescore record 045
-  - protects records 041–044 and 046 as open and unscored
+  - protects records 041–044 and 046 as open and unscored at that point
   - requires blank outcome and error fields for active protected predictions
   - extends model-error continuity documentation through record 046
   - documents record 046 as a separate prospective unload/reload trajectory question
@@ -899,8 +1222,8 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - records the descriptive and primary scoring windows
   - preserves the record 045 thresholds for record 046 comparability
   - excludes August snapshot outcomes from record 046 scoring
-  - updates the active prediction set to records 041–044 and 046
-  - preserves records 041–044 unchanged
+  - updates the then-active prediction set to records 041–044 and 046
+  - preserves records 041–044 unchanged at that point
   - preserves Phase 2 and the `Consolidation / lock-in observation` operating substate
 
 - Updated `LATEST.md`:
@@ -910,13 +1233,13 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - records Week 32 spontaneous autonomic reconvergence with preserved function
   - records Model Error 045 consistently as closed and supported
   - removes record 045 from the open prediction set
-  - sets the open model-error set to records 041–044 and 046
+  - sets the then-open model-error set to records 041–044 and 046
   - exposes Model Error 046 as the active prospective unload/reload trajectory probe
   - records the August 17–18 testing-related formal training withdrawal
   - records the planned August 19 return to normal B1 + Load Integration
   - preserves the August 16 Load Integration omission as an explicit collection-condition deviation
   - preserves the original representative-state language rather than retroactively rewriting it
-  - preserves records 043 and 044 as unresolved
+  - preserves records 043 and 044 as unresolved at that point
   - preserves Phase 2 and leaves Phase 2D undeclared
 
 - Updated `INDEX.md`:
@@ -927,7 +1250,7 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - records record 045 as closed and supported
   - exposes the completed record 045 preregistration plan for provenance
   - exposes the active record 046 evaluation plan
-  - sets the current open prediction set to records 041–044 and 046
+  - sets the then-current open prediction set to records 041–044 and 046
   - documents the record 046 evidence boundaries
   - updates prediction-review, snapshot-review, methodology, and validation navigation
   - preserves the August testing-related exposure deviation
@@ -935,7 +1258,7 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 
 - Updated `README.md`:
   - records the active weekly window as `2026-W33`
-  - records the current open model-error set as records 041–044 and 046
+  - records the then-current open model-error set as records 041–044 and 046
   - records record 045 as closed and supported
   - preserves the completed 045 evaluation plan for provenance
   - exposes the active 046 evaluation plan
@@ -996,7 +1319,7 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - excludes August 17–18 snapshot results from record 045 scoring
   - documents the relationship between record 045 and records 041–044
   - documents validator protection through record 045
-  - advances the current active methodology state to records 041–045 open and unscored
+  - advances the then-current active methodology state to records 041–045 open and unscored
   - preserves the August collection plan as a separate governance artifact
   - preserves the physical protocol and phase state
 
@@ -1080,7 +1403,7 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - identifies W31 as the most recent closed weekly report
   - advances canonical sleep coverage through `2026-08-09`
   - advances the index alignment date to `2026-08-10`
-  - preserves records 041–044 as the current open prediction set
+  - preserves records 041–044 as the then-current open prediction set
   - preserves the W31 autonomic-performance divergence as observational rather than retrospectively registered
   - aligns the temporal, reports, and structured-data sections with the current repository state
   - preserves central access to the August collection and prediction-evaluation plans
@@ -1124,7 +1447,7 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - preserves the W31 autonomic-performance divergence as an observational carryforward question
   - creates no retrospective Model Error record
   - preserves the existing protocol without progression or preemptive reduction
-  - preserves records 041–044 as open and unscored
+  - preserves records 041–044 as open and unscored at that time
   - preserves Phase 2 and the `Consolidation / lock-in observation` operating substate
   - declares no Phase 2D transition
 
@@ -1138,7 +1461,7 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - prohibits tapering, peaking, deliberate overload, and snapshot-directed manipulation
   - preserves representative-state behavior through the final pre-snapshot week
   - links the committed prediction-evaluation and August collection plans
-  - preserves records 041–044 as open and unscored
+  - preserves records 041–044 as open and unscored at that time
   - preserves Phase 2D as undeclared and Phase 3 as reserved and inactive
 
 - Expanded `reports/README.md`:
@@ -1325,7 +1648,7 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 - Expanded `methodology/README.md`:
   - converts the file from a minimal placeholder into a methodology-directory guide
   - indexes active standing methodology
-  - indexes the active evaluation plan for records 041–044
+  - indexes the preregistered evaluation plan for records 041–044
   - indexes the August snapshot collection plan
   - distinguishes standing methodology, preregistered evaluation plans, preregistered collection plans, retrospective notes, and historical or superseded methodology
   - defines active-status labels and file-header expectations
@@ -1333,7 +1656,6 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - distinguishes `/methodology` from `/docs/methodology`
   - defines source, correction, preregistration, and interpretation boundaries
   - adds methodology file-naming, placement, linking, and maintenance guidance
-  - records the active Phase 2, open prediction, and August collection-governance state
   - introduces no source, dataset, prediction, protocol, phase, or release change
 
 - Updated `snapshots/2025-07/2025-07 Epoch.md`:
@@ -1357,12 +1679,14 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 
 #### Prediction-plan registration context
 
-- Updated `methodology/open_prediction_evaluation_plan_041_044.md`:
+- Updated `methodology/open_prediction_evaluation_plan_041_044.md` before its outcome windows closed:
   - discloses observations already known at registration
   - confirms final trajectories and August outcomes remained unknown
   - distinguishes the primary TruDiagnostic endpoint from supplemental DEXA, VO₂ max, Bod Pod, bodyweight, and recovery evidence
   - defines the planned August 17–18 measurement window
-  - preserves original thresholds and record status
+  - preserves original thresholds and record status at that time
+
+- After outcome access and formal adjudication, the preregistration artifact itself remains preserved unchanged.
 
 #### Protocol and experiment status
 
@@ -1385,15 +1709,14 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - improve external navigation without duplicating methodology
 
 - Updated `INDEX.md`:
-  - exposes the active August collection plan
-  - exposes the active evaluation plan for records 041–044
+  - exposes the August collection plan
+  - exposes the preregistered evaluation plan for records 041–044
   - exposes `methodology/README.md` as the methodology-directory guide
   - exposes `tools/validate_repository.py` as the local read-only validator
   - distinguishes structured data from byte-preserved source exports
   - distinguishes collection plans from outcome evidence
   - adds dedicated August snapshot and repository-verification reading flows
   - expands the archive-structure table to include source exports and tools
-  - records the current W30 active report and current Phase 2 governance posture
   - improves navigation and representation without altering evidence or interpretation
 
 ---
@@ -1673,22 +1996,50 @@ The source-workbook narrative discrepancy remains documented rather than silentl
 - Current open prediction state:
 
   ```text
-  Model Error records 041–044 and 046 open and unscored
+  Model Error 043:
+  open / unscored
+
+  Model Error 046:
+  open / unscored
   ```
 
 - Current recent closed prediction state:
 
   ```text
+  Model Error 041:
+  closed / supported
+
+  Model Error 042:
+  closed / not supported
+  actual = continued_adaptation
+  error direction = under
+
+  Model Error 044:
+  closed / not supported
+  narrow snapshot-directed governance deviation
+  error direction = under
+
   Model Error 045:
-  closed
-  supported
+  closed / supported
   ```
 
 - Current prediction-governance state:
 
   ```text
-  Records 041–044:
-  original preregistered evaluation plan remains binding
+  Records 041–044 preregistration artifact:
+  preserved unchanged
+
+  Record 041:
+  closed / supported
+
+  Record 042:
+  closed / not supported — continued adaptation
+
+  Record 043:
+  open / pending primary TruDiagnostic provider results
+
+  Record 044:
+  closed / not supported — narrow snapshot-directed governance deviation
 
   Record 045:
   registered 2026-08-12
@@ -1704,11 +2055,36 @@ The source-workbook narrative discrepancy remains documented rather than silentl
   open / unscored
   ```
 
+- Current prediction-calibration state:
+
+  ```text
+  Primary state concordance:
+  11 / 14
+  0.79
+
+  Primary trajectory concordance:
+  2 / 3
+  0.67
+
+  Point UDI:
+  unchanged
+
+  Range UDI:
+  unchanged
+  ```
+
 - Current August collection-governance state:
 
   ```text
   Records 041–044 evaluation plan:
-  committed and binding
+  original preregistration preserved
+
+  Records 041, 042, and 044:
+  formally adjudicated
+
+  Record 043:
+  remains governed by the original plan
+  pending primary TruDiagnostic evidence
 
   August collection plan:
   committed before outcome access
@@ -1753,7 +2129,7 @@ The source-workbook narrative discrepancy remains documented rather than silentl
   unchanged
   ```
 
-- Current August artifact-layer validation state:
+- Current August physical artifact-layer validation state:
 
   ```text
   Errors:
@@ -1772,15 +2148,31 @@ The source-workbook narrative discrepancy remains documented rather than silentl
   PASS
   ```
 
-- Current validator model:
+- Current validator governance model:
 
   ```text
   Local read-only validation
-  Explicit protection of records 041–044 and 046 as open
-  Explicit protection of record 045 as closed/scored
-  Human semantic review
-  GitHub Actions deferred
+
+  Protected open / unscored:
+  043
+  046
+
+  Protected closed / adjudicated:
+  041
+  042
+  044
+  045
+
+  Human semantic review:
+  required
+
+  GitHub Actions:
+  deferred
   ```
+
+- The validator protects selected closed-record outcome state from accidental drift.
+
+- It does not independently adjudicate whether the registered prediction outcomes were scientifically correct.
 
 - Completed final fresh-package verification for the August 17 repository update:
 
@@ -1811,7 +2203,7 @@ The source-workbook narrative discrepancy remains documented rather than silentl
   PASS
   ```
 
-- Fresh-ZIP validation confirms:
+- Fresh-ZIP validation confirms the historical August 17 state:
 
   ```text
   ZIP safety:
@@ -1854,7 +2246,7 @@ The source-workbook narrative discrepancy remains documented rather than silentl
   closed / scored
 
   Records 041–044 and 046:
-  open / unscored
+  open / unscored at the August 17 verification point
 
   Release metadata:
   aligned
@@ -1865,7 +2257,7 @@ The source-workbook narrative discrepancy remains documented rather than silentl
 
 - The preceding fresh-package verification is retained as a point-in-time record of the August 17 repository state.
 
-- Its `29 of 29` checksum count is historical and is not rewritten after the August 18 artifact-set expansion.
+- Its `29 of 29` checksum count and records 041–044 open state are historical and are not rewritten after the August 18 artifact and prediction-closure changes.
 
 - Independent extracted-directory validation also completed for the August 17 repository update:
 
@@ -1883,22 +2275,22 @@ The source-workbook narrative discrepancy remains documented rather than silentl
   PASS
   ```
 
-- The extracted-directory result independently confirms:
-  - required repository structure is present
-  - 183 files are present
-  - no zero-byte files are present
-  - all 130 Markdown files pass target, anchor, and fence checks
-  - all 11 CSV files parse with consistent row widths
-  - all 29 then-registered artifact checksums pass
-  - canonical sleep is continuous through `2026-08-16`
-  - weekly-report continuity extends through active `2026-W33`
-  - model-error continuity extends through record 046
-  - record 045 remains closed/scored
-  - records 041–044 and 046 remain open/unscored
-  - release metadata remains aligned
-  - RingConn source bytes, CRLF line endings, provider headers, and row counts remain preserved
+- The extracted-directory result independently confirmed the historical August 17 state:
+  - required repository structure was present
+  - 183 files were present
+  - no zero-byte files were present
+  - all 130 Markdown files passed target, anchor, and fence checks
+  - all 11 CSV files parsed with consistent row widths
+  - all 29 then-registered artifact checksums passed
+  - canonical sleep was continuous through `2026-08-16`
+  - weekly-report continuity extended through active `2026-W33`
+  - model-error continuity extended through record 046
+  - record 045 remained closed/scored
+  - records 041–044 and 046 remained open/unscored at that point
+  - release metadata remained aligned
+  - RingConn source bytes, CRLF line endings, provider headers, and row counts remained preserved
 
-- Final file-level comparison against the repository state that preceded the August 17 update confirms:
+- Final file-level comparison against the repository state that preceded the August 17 update confirmed:
 
   ```text
   Baseline files:
@@ -1947,7 +2339,7 @@ The source-workbook narrative discrepancy remains documented rather than silentl
 
 - These warnings:
   - were present before the August 17 update
-  - remain present after August physical-artifact integration
+  - remained present after August physical-artifact integration
   - do not authorize automatic correction
   - do not make the repository mechanically invalid
   - remain subject to their existing source-reconciliation rules
@@ -1958,9 +2350,11 @@ The source-workbook narrative discrepancy remains documented rather than silentl
   PASS
   ```
 
-- The August 18 physical-artifact layer has separately passed local repository validation.
+- The August 18 physical-artifact layer separately passed local repository validation.
 
-- Final fresh-package verification for the complete August 18 documentation batch remains a later integrity step after the intended documentation changes are complete.
+- The August 18 model-error closure and documentation batch is being aligned through the current mobile workflow.
+
+- Final fresh-package verification for the complete August 18 documentation and model-error closure batch remains a later integrity step after all intended documentation changes are complete.
 
 ---
 
@@ -2019,22 +2413,48 @@ The source-workbook narrative discrepancy remains documented rather than silentl
   - `LATEST.md` advancement through physical snapshot completion
   - W33 evidence-centered report compression
   - August 18 snapshot collection and documentation alignment
+  - Model Error 041 formal adjudication and closure
+  - Model Error 042 formal adjudication and closure
+  - Model Error 044 formal adjudication and closure
+  - primary state and trajectory concordance updates
+  - validator protection transition from open 041–044 to closed 041/042/044
+  - `LATEST.md` alignment with the 041/042/044 closure set
+  - `reports/2026-W33.md` alignment with the 041/042/044 closure set
+  - `README.md` alignment with the August model-error closure state
+  - `INDEX.md` alignment with the August model-error closure state
+  - `methodology/README.md` alignment with partially resolved 041–044 preregistration state
+  - `VERIFICATION.md` alignment with the updated open and closed validator-protection sets
+  - current `CHANGELOG.md` closure-state reconciliation
 
 - Current release metadata remains:
   - version: `1.0.0`
   - release date: `2026-06-23`
   - DOI: `10.5281/zenodo.20815612`
 
-- Records 041–044 remain:
+- Record 041 is:
+  - closed
+  - supported
+  - preserved under its original prediction wording
+  - not interpreted as evidence of costless or unlimited recovery capacity
+
+- Record 042 is:
+  - closed
+  - not supported
+  - observed as `continued_adaptation`
+  - classified as an under-direction model miss
+  - not independently sufficient for a Phase 2D declaration
+
+- Record 043 remains:
   - open
   - unscored
-  - unchanged in prediction wording
-  - governed by their original evaluation plan
-
-- Record 043 specifically remains:
-  - open
   - dependent on the pending TruDiagnostic provider-result domain
   - protected from substitution by supplemental August physical measurements
+
+- Record 044 is:
+  - closed
+  - not supported
+  - classified as a narrow snapshot-directed governance deviation
+  - not interpreted as proof of biological harm or broad protocol failure
 
 - Record 045 is:
   - closed
@@ -2047,6 +2467,22 @@ The source-workbook narrative discrepancy remains documented rather than silentl
   - unscored
   - secondary
   - prospectively bounded to its registered unload/reload evidence windows
+
+- Current open model-error set:
+
+  ```text
+  043
+  046
+  ```
+
+- Current recent closed model-error set:
+
+  ```text
+  041
+  042
+  044
+  045
+  ```
 
 - The underlying protocol architecture remains:
 
