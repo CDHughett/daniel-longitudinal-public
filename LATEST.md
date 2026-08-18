@@ -15,7 +15,7 @@ Archive DOI: https://doi.org/10.5281/zenodo.20815612
 - **Operating substate:** Consolidation / lock-in observation
 - **Active window:** 2026-W33
 - **Prior window:** 2026-W32 closed
-- **System state:** Stable with recent spontaneous autonomic reconvergence, preserved function, and a temporary testing-related withdrawal from normal formal training
+- **System state:** Stable with recent spontaneous autonomic reconvergence, preserved function, completed August physical snapshot collection, and temporary testing-related withdrawal from normal formal training through 2026-08-18
 - **Trajectory posture:** Continued behavioral and motor consolidation with reduced operator overhead, repeated ambient or trait-like expression, and preserved cross-context availability
 - **Recovery posture:** Functionally preserved; Week 32 autonomic measures materially improved from the Week 31 compressed state before formal training withdrawal began
 - **Archive posture:** Public, governed, versioned, retrospectively interpreted, and prospectively tested through isolated model-error records
@@ -23,8 +23,10 @@ Archive DOI: https://doi.org/10.5281/zenodo.20815612
 - **Open model-error records:** 041–044 and 046
 - **Recent closed model-error record:** 045 — supported
 - **Record 046 posture:** Secondary prospective autonomic unload/reload persistence probe
-- **Current major artifact cycle:** August 2026 biological and performance snapshot
-- **August collection governance:** Preregistered before outcome access
+- **Current major artifact cycle:** August 2026 physical snapshot collection complete; TruDiagnostic provider-result domain pending
+- **August collection governance:** Preregistered before outcome access; actual collection conditions now recorded
+- **August physical artifact status:** DEXA, VO₂, and Bod Pod source artifacts archived, privacy-reviewed, and checksum-verified
+- **TruDiagnostic status:** Sample collected 2026-08-17 at 05:37; provider results pending
 - **Formal Phase 2D declaration:** None
 
 The underlying physical architecture remains:
@@ -45,13 +47,14 @@ Load Integration withheld before testing
 2026-08-17:
 No B1
 No Load Integration
-TruAge / TruHealth collection
-DEXA and VO₂-max testing
+TruDiagnostic collection at 05:37
+DEXA at 07:55
+VO₂-max testing at approximately 08:10
 
 2026-08-18:
 No B1
 No Load Integration
-Bod Pod testing
+Bod Pod testing at 08:26
 
 2026-08-19:
 Planned return to normal B1
@@ -60,11 +63,15 @@ Planned return to normal Load Integration
 
 This temporary withdrawal does not constitute a formal phase transition or recurring protocol change.
 
-The 2026-08-16 Load Integration omission and 2026-08-17 through 2026-08-18 training withdrawal are testing-directed.
+The 2026-08-16 Load Integration omission and 2026-08-17 through 2026-08-18 training withdrawal were testing-directed.
 
 They are not being classified as recovery-driven interventions.
 
 They nevertheless represent real departures from the previously stated ordinary-training collection posture and remain visible for later Model Error 043 and 044 evaluation.
+
+The physical collection window is now complete.
+
+Interpretive completion remains deferred because the primary Model Error 043 TruDiagnostic provider-result domain is still pending.
 
 ---
 
@@ -308,7 +315,7 @@ repeated B1 + Load Integration
 → Week 31 autonomic compression
 → Week 32 spontaneous autonomic reconvergence
 → testing-related formal training withdrawal
-→ return to normal training
+→ planned return to normal training
 → prospective reload observation
 ```
 
@@ -320,6 +327,12 @@ Week 33 therefore contains three analytically separate domains:
 
 These domains should not be collapsed.
 
+The physical August collection component is now complete.
+
+The molecular provider-result component remains pending.
+
+The unload/reload observation remains active.
+
 ---
 
 ## August Snapshot Governance
@@ -329,19 +342,82 @@ The August biological and performance snapshot remains governed by:
 - [`methodology/open_prediction_evaluation_plan_041_044.md`](methodology/open_prediction_evaluation_plan_041_044.md)
 - [`methodology/2026-08-snapshot-collection-plan.md`](methodology/2026-08-snapshot-collection-plan.md)
 
-Scheduled collection:
+The registered primary collection window was:
+
+```text
+2026-08-17 through 2026-08-18
+```
+
+That physical collection window is complete.
+
+Actual collection sequence:
 
 ### 2026-08-17
 
-- TruAge / TruHealth collection
-- DEXA
-- VO₂-max testing
+- wake time approximately 05:15
+- prior final meal approximately 19:00 on 2026-08-16
+- no morning food, fluid, caffeine, supplements, or medications before testing
+- TruDiagnostic sample collected at 05:37
+- DEXA began at 07:55
+- VO₂-max testing began at approximately 08:10
+- actual order: TruDiagnostic → DEXA → VO₂
+- no unusual testing event reported
+
+Recorded fasting durations were approximately:
+
+```text
+TruDiagnostic:
+10 h 37 min
+
+DEXA:
+12 h 55 min
+
+VO₂:
+13 h 10 min
+```
 
 ### 2026-08-18
 
-- Bod Pod
+- wake time approximately 05:15
+- prior final meal approximately 19:00 on 2026-08-17
+- no morning food, fluid, supplements, or medications before testing
+- no exercise performed before testing
+- Bod Pod began at 08:26
+- clothing: tight boxer briefs
+- hair-compression procedure: hair cap
+- thoracic gas volume: predicted
+- direct thoracic-gas-volume measurement was not performed
+- no unusual testing event reported
+
+Recorded fasting duration at Bod Pod start was approximately:
+
+```text
+13 h 26 min
+```
+
+Current physical source artifacts:
+
+- `snapshots/2026-08/2026-08-dexa-body-comp.jpg`
+- `snapshots/2026-08/2026-08-dexa-summary.jpg`
+- `snapshots/2026-08/2026-08-vo2-summary.pdf`
+- `snapshots/2026-08/2026-08-bodpod-cosmed.jpg`
+
+Those physical artifacts have been:
+
+- privacy-reviewed
+- assigned stable filenames
+- incorporated into the August checksum manifest
+- verified by the repository validator
+
+The August temporal anchor is:
+
+[`snapshots/2026-08/2026-08 Epoch.md`](snapshots/2026-08/2026-08%20Epoch.md)
 
 The primary Model Error 043 domain remains TruDiagnostic.
+
+The TruDiagnostic sample was collected on 2026-08-17.
+
+Provider-result artifacts remain pending.
 
 Supplemental domains include:
 
@@ -362,20 +438,24 @@ A testing-directed deviation nevertheless occurred immediately before collection
 2026-08-16 Load Integration withheld
 ```
 
-and the planned testing schedule now includes:
+and the completed testing schedule included:
 
 ```text
 2026-08-17 no B1 / no LI
 2026-08-18 no B1 / no LI
 ```
 
-The archive will not retrospectively rewrite those decisions as though they were part of the original ordinary-training language.
+The archive does not retrospectively rewrite those decisions as though they were part of the original ordinary-training language.
 
-They should instead remain explicit collection-condition facts.
+They remain explicit collection-condition facts.
 
-Their relevance to Model Error 043 and Model Error 044 will be evaluated retrospectively under the already registered rules.
+Their relevance to Model Error 043 and Model Error 044 remains deferred to formal evaluation under the already registered rules.
+
+No supplemental August result may replace the preregistered TruDiagnostic primary domain.
 
 No August biological result may be used to change the preregistered endpoint after outcome access.
+
+Physical collection completion does not equal Model Error 043 closure.
 
 ---
 
@@ -546,6 +626,10 @@ The return to load is part of the observation.
 
 This is why record 046 extends beyond the testing block while record 045 remains closed.
 
+August 18 remains descriptive for record 046.
+
+The primary quantitative scoring window has not yet begun.
+
 ---
 
 ## Archive State
@@ -566,13 +650,16 @@ This is why record 046 extends beyond the testing block while record 045 remains
 | Recovery State | Functionally preserved with spontaneous Week 32 autonomic reconvergence |
 | Sleep Coverage | Canonical dataset current through 2026-08-16 |
 | Bodyweight Context | Approximately 229–237 lb across training, fluid, GI-timing, travel, and scale conditions |
-| Biomarker Coverage | February and May 2026 integrated multi-domain snapshots; August collection cycle active |
+| Biomarker Coverage | February and May 2026 integrated multi-domain snapshots; August physical collection complete with TruDiagnostic provider results pending |
 | Open Prediction Layer | Records 041–044 and 046 |
 | Record 045 | Closed / supported |
 | Record 046 | Open prospective autonomic unload/reload persistence probe |
-| August Collection Governance | Evaluation and collection plans committed before outcome access |
+| August Collection Governance | Evaluation and collection plans committed before outcome access; actual execution conditions recorded |
+| August Physical Artifacts | DEXA, VO₂, and Bod Pod archived and checksum-verified |
+| August TruDiagnostic | Sample collected; provider results pending |
+| August Temporal Anchor | Added |
 | Archive Integrity | Maintained |
-| Current Major Artifact | August 2026 biological and performance snapshot |
+| Current Major Artifact | August 2026 snapshot — physical collection complete / molecular results pending |
 
 ---
 
@@ -606,7 +693,7 @@ These characteristics increasingly resemble Phase 2D-type expression.
 
 They remain candidate characteristics rather than a formal phase classification.
 
-The current snapshot and unload/reload sequence may provide additional evidence.
+The August snapshot and unload/reload sequence may provide additional evidence.
 
 They do not independently declare a phase transition.
 
@@ -724,9 +811,9 @@ Evidence accumulated before Week 33 includes:
 - Week 32 spontaneous autonomic rebound while formal training continued
 - no recovery-driven intervention required through the record 045 window
 
-Week 33 may add unusually useful evidence because the prolonged accumulation period is now followed by a short externally scheduled unloading interval and reload.
+Week 33 may add unusually useful descriptive evidence because the prolonged accumulation period is now followed by a short externally scheduled unloading interval and reload.
 
-Relevant new observations include:
+Relevant observations include:
 
 - magnitude of autonomic change during unloading
 - subjective change during unloading
@@ -739,6 +826,8 @@ Relevant new observations include:
 A large rebound during unloading would be compatible with accumulated load contributing to the previous autonomic compression.
 
 It would not independently prove that the training density was excessive.
+
+Formal scoring remains governed separately.
 
 **Status:** Open
 
@@ -766,7 +855,7 @@ Candidate counter-evidence currently includes:
 - persistent function during the Week 32 autonomic trough
 - preserved execution as autonomic measures subsequently rebounded
 
-Week 33 may provide another natural comparison:
+Week 33 may provide another natural descriptive comparison:
 
 ```text
 trained state
@@ -785,6 +874,8 @@ Relevant evidence will include whether execution after the short break:
 
 No deliberate test is required.
 
+Formal scoring remains governed separately.
+
 **Status:** Open
 
 ---
@@ -793,10 +884,11 @@ No deliberate test is required.
 
 Evaluates whether the current operating state translates into the August biological and performance artifact cycle.
 
-Scheduled collection:
+Completed physical collection:
 
-- 2026-08-17 — TruAge / TruHealth
-- 2026-08-17 — DEXA and VO₂ max
+- 2026-08-17 — TruDiagnostic sample collection
+- 2026-08-17 — DEXA
+- 2026-08-17 — VO₂ max
 - 2026-08-18 — Bod Pod
 
 Primary comparison:
@@ -820,17 +912,25 @@ Supplemental domains include:
 - recovery
 - subjective state
 
+The physical source-artifact layer is now present and checksum-verified.
+
+The TruDiagnostic sample has been collected.
+
+The corresponding provider-result domain remains pending.
+
 The preregistered evaluation and collection plans remain binding.
 
 The testing-directed August 16 Load Integration omission is preserved as an actual collection-condition deviation.
 
-The archive will not retroactively redefine the original representative-state instructions to conceal it.
+The archive does not retroactively redefine the original representative-state instructions to conceal it.
 
 Its materiality will be evaluated after the required results are available.
 
 Record 045 support does not determine record 043.
 
 Record 046 does not determine record 043.
+
+No supplemental physical result can substitute for the pending primary domain.
 
 **Status:** Open
 
@@ -851,7 +951,7 @@ Prior candidate support included:
 - no recovery-driven response to isolated wearable values
 - preservation of unfavorable autonomic evidence
 
-A new governance issue is now explicitly preserved.
+A governance issue is explicitly preserved.
 
 The active report before collection stated:
 
@@ -867,12 +967,12 @@ Do not taper for the August snapshot.
 
 A deliberate pre-test Load Integration withholding nevertheless occurred on 2026-08-16.
 
-The archive should not hide that contradiction.
+The archive does not hide that contradiction.
 
-The current classification is:
+The current descriptive classification is:
 
 ```text
-pre-scheduled measurement-protection deviation
+testing-directed measurement-protection deviation
 ```
 
 rather than:
@@ -887,9 +987,9 @@ or:
 record-045-directed manipulation
 ```
 
-The planned August 17–18 withdrawal likewise remains visible.
+The completed August 17–18 training withdrawal likewise remains visible.
 
-Formal determination of whether this constitutes a Model Error 044 governance failure or an admissible bounded collection deviation remains deferred to the registered evaluation procedure.
+Formal determination of whether these actions constitute a Model Error 044 governance failure, partial deviation, or admissible bounded collection adjustment remains deferred to the registered evaluation procedure.
 
 **Status:** Open
 
@@ -943,7 +1043,7 @@ Biological and performance snapshot outcomes remain excluded.
 
 **Status:** Open
 
-No currently open record qualifies for closure at this point.
+No model-error outcome is changed by the physical artifact ingestion itself.
 
 ---
 
@@ -952,20 +1052,23 @@ No currently open record qualifies for closure at this point.
 Active constraints include:
 
 - uncertainty about how much of the Week 31 autonomic compression reflected accumulated training load
-- uncertainty about how much additional autonomic recovery will occur during formal training withdrawal
+- uncertainty about how much additional autonomic recovery occurs during formal training withdrawal
 - possible acute autonomic disturbance after maximal VO₂ testing
 - uncertainty about how rapidly telemetry changes after normal B1 + Load Integration resumes
 - unresolved Model Error 041 recovery-capacity boundary
 - unresolved Model Error 042 ambient-execution plateau
-- pending Model Error 043 biological outcome
+- pending Model Error 043 primary biological outcome
 - unresolved Model Error 044 collection/protocol-governance question
 - prospective Model Error 046 unload/reload evaluation
+- pending TruDiagnostic provider-result artifacts
+- incomplete August molecular structured-data layer
 - device-estimated REM uncertainty
 - intermittent sleep fragmentation
 - local mechanical ownership of lower back, shoulders, elbows, hands, and forearms
 - bodyweight interpretation under fluid and GI-timing variation
+- cross-method DEXA and Bod Pod comparability limits
 - reduced session salience creating documentation risk
-- temptation to overinterpret favorable August testing
+- temptation to overinterpret favorable or unfavorable physical snapshot results before the molecular domain is complete
 - temptation to extend unloading if biomarkers improve dramatically
 - temptation to interpret an acute post-VO₂ disturbance as accumulated-training failure
 - temptation to treat successful reload as proof of unlimited recovery capacity
@@ -975,11 +1078,13 @@ Active constraints include:
 
 **Secondary risk:** allowing short-term autonomic changes during unloading or reload to be interpreted causally before enough repeated evidence exists.
 
+**Snapshot risk:** allowing currently available DEXA, VO₂, or Bod Pod evidence to substitute for the pending TruDiagnostic primary Model Error 043 domain.
+
 **Governance risk:** retrospectively sanitizing the August 16–18 training withdrawal instead of preserving its actual relationship to the earlier representative-state instructions.
 
 **Prediction risk:** allowing record 046 thresholds or timing to influence the planned return to normal training.
 
-**Current response:** preserve the finite testing withdrawal as documented, resume the installed B1 + Load Integration architecture on the planned return date unless a genuine reason prevents it, retain source evidence, keep prediction windows fixed, and evaluate retrospectively.
+**Current response:** preserve the completed collection conditions as documented, retain verified source artifacts, await the pending molecular provider-result domain, resume the installed B1 + Load Integration architecture on the planned return date unless a genuine reason prevents it, keep prediction windows fixed, and evaluate retrospectively.
 
 ---
 
@@ -1045,7 +1150,7 @@ Completed:
 - Model Error 046 prospectively registered
 - `open_prediction_evaluation_plan_046.md` added
 - record 046 registration context and scoring windows fixed
-- records 041–044 preserved unchanged and open
+- records 041–044 preserved open pending separate formal evaluation
 - protected open model-error set updated to 041–044 and 046
 - record 045 protected as closed/scored history
 - validator updated through record 046
@@ -1056,21 +1161,36 @@ Completed:
 - canonical sleep continuity extended to 189 daily rows
 - daily and sleep-tab cardiovascular values kept distinct
 - August snapshot collection plan preserved
+- August 17 collection conditions recorded
+- August 18 collection conditions recorded
+- August 16 testing-directed Load Integration deviation explicitly retained
+- August DEXA body-composition artifact archived
+- August DEXA summary artifact archived
+- August VO₂ summary PDF archived
+- August Bod Pod / COSMED artifact archived
+- August physical source artifacts privacy-reviewed
+- August physical checksum manifest completed
+- August physical artifact checksums validator-verified
+- August 2026 temporal epoch anchor added
+- `EPOCH_INDEX.md` extended through August 2026
+- `SNAPSHOT_LOG.md` extended through August 2026
+- physical August snapshot collection completed
+- TruDiagnostic sample collected on 2026-08-17 at 05:37
 - Phase 2 status preserved
 - consolidation / lock-in observation substate preserved
 
 Current work:
 
-- August 2026 biological and performance snapshot collection
-- preservation of actual August 17–18 collection conditions
-- preservation of the testing-directed formal training withdrawal
+- awaiting August TruDiagnostic provider results
+- preservation and privacy review of future August molecular source artifacts when received
+- structured transcription of August molecular values only after source verification
+- preservation of physical and molecular domains as separate until the complete August evidence set is available
 - descriptive observation of autonomic unloading
 - prospective Model Error 046 observation
 - planned return to normal B1 + Load Integration on 2026-08-19
 - observation of post-reload functional availability
 - observation of post-reload autonomic persistence
-- maintenance of Model Error 041–044 scoring boundaries
-- preservation of August source artifacts before synthesis
+- maintenance of Model Error 041–044 scoring boundaries pending separate formal review
 - preservation of biological and autonomic evaluation as separate domains
 - continued phase restraint pending retrospective review
 - routine archive stewardship
@@ -1087,6 +1207,7 @@ Current work:
 - **Concepts:** [docs/CONCEPTS.md](docs/CONCEPTS.md)
 - **Temporal Index:** [EPOCH_INDEX.md](EPOCH_INDEX.md)
 - **Snapshot Log:** [SNAPSHOT_LOG.md](SNAPSHOT_LOG.md)
+- **August Epoch:** [snapshots/2026-08/2026-08 Epoch.md](snapshots/2026-08/2026-08%20Epoch.md)
 - **Index:** [INDEX.md](INDEX.md)
 - **Why Public:** [WHY_PUBLIC.md](WHY_PUBLIC.md)
 - **Governance:** [GOVERNANCE.md](GOVERNANCE.md)
@@ -1107,5 +1228,5 @@ Current work:
 
 ---
 
-**System State:** Stable with August snapshot collection and prospective autonomic unload/reload observation active  
-**Operational Mode:** Collect → observe → preserve → reload → evaluate retrospectively
+**System State:** Stable; August physical snapshot collection complete, TruDiagnostic provider results pending, and prospective autonomic unload/reload observation active  
+**Operational Mode:** Preserve → observe unload → reload → await complete source set → evaluate retrospectively
