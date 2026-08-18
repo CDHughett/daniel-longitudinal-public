@@ -5,7 +5,9 @@
 **Primary collection window:** 2026-08-17 through 2026-08-18  
 **Outcome review status at registration:** No August results viewed  
 **Active phase:** Phase 2 — Load Integration  
-**Operating substate:** Consolidation / lock-in observation
+**Operating substate:** Consolidation / lock-in observation  
+**Collection execution status:** Physical testing complete; TruDiagnostic sample collected; provider results pending  
+**Execution log updated:** 2026-08-18
 
 ---
 
@@ -973,35 +975,35 @@ For each day, complete the following when applicable.
 ## 2026-08-17
 
 ```text
-Wake time:
-Morning weight:
-GI-clearance status:
-Last meal time:
-Fasting duration:
-Morning fluid intake:
-Mental state:
-EQ:
-GI state:
-Stomach state:
-Pain:
-Sweating:
-Dream or sleep context:
-Prior-day training:
-Sleep duration:
-Sleep HRV:
-Sleep average heart rate:
-Readiness:
-TruDiagnostic collection time:
-DEXA start time:
-VO₂ start time:
-Actual test order:
-Unexpected delay:
-Provider instruction deviation:
-Supplement or medication deviation:
-Hydration deviation:
-Illness or mechanical signal:
-Source artifacts received:
-Other material context:
+Wake time: 05:15
+Morning weight: 235.1 lb
+GI-clearance status: unknown
+Last meal time: 19:00 on 2026-08-16
+Fasting duration: 10 h 37 min at TruDiagnostic collection; 12 h 55 min at DEXA start; 13 h 10 min at VO₂ start
+Morning fluid intake: none
+Mental state: calm; normal to recent trend
+EQ: 9.4
+GI state: calm
+Stomach state: calm
+Pain: none
+Sweating: none
+Dream or sleep context: vivid; subjectively full night's rest without reported fragmentation
+Prior-day training: B1 completed on 2026-08-16; Load Integration intentionally omitted to preserve recovery before VO₂ testing
+Sleep duration: unknown
+Sleep HRV: unknown
+Sleep average heart rate: unknown
+Readiness: normal to recent trend
+TruDiagnostic collection time: 05:37
+DEXA start time: 07:55
+VO₂ start time: approximately 08:10
+Actual test order: TruDiagnostic collection → DEXA → VO₂
+Unexpected delay: none
+Provider instruction deviation: none
+Supplement or medication deviation: none consumed before testing
+Hydration deviation: no morning fluid consumed; broader hydration state not independently established
+Illness or mechanical signal: none
+Source artifacts received: 2026-08-dexa-body-comp.jpg; 2026-08-dexa-summary.jpg; 2026-08-vo2-summary.pdf; TruDiagnostic sample collected with provider results pending
+Other material context: DEXA and VO₂ proceeded without unusual event. The 2026-08-16 Load Integration session was intentionally withheld specifically to preserve recovery before VO₂ testing. This was not provider-required and reduced normal protocol exposure relative to the preregistered representative-state objective; the deviation is retained rather than normalized.
 ```
 
 ---
@@ -1009,35 +1011,35 @@ Other material context:
 ## 2026-08-18
 
 ```text
-Wake time:
-Morning weight:
-GI-clearance status:
-Last meal time:
-Fasting duration:
-Morning fluid intake:
-Mental state:
-EQ:
-GI state:
-Stomach state:
-Pain:
-Sweating:
-Dream or sleep context:
-Prior-day testing and activity:
-Sleep duration:
-Sleep HRV:
-Sleep average heart rate:
-Readiness:
-Bod Pod start time:
-Clothing:
-Hair-compression procedure:
-Thoracic-gas-volume method:
-Unexpected delay:
-Provider instruction deviation:
-Supplement or medication deviation:
-Hydration deviation:
-Illness or mechanical signal:
-Source artifacts received:
-Other material context:
+Wake time: 05:15
+Morning weight: unknown
+GI-clearance status: unknown
+Last meal time: 19:00 on 2026-08-17
+Fasting duration: 13 h 26 min at Bod Pod start
+Morning fluid intake: none
+Mental state: unknown
+EQ: unknown
+GI state: unknown
+Stomach state: unknown
+Pain: unknown
+Sweating: unknown
+Dream or sleep context: unknown
+Prior-day testing and activity: TruDiagnostic collection, DEXA, and VO₂ completed on 2026-08-17; no exercise performed before Bod Pod on 2026-08-18
+Sleep duration: unknown
+Sleep HRV: unknown
+Sleep average heart rate: unknown
+Readiness: unknown
+Bod Pod start time: 08:26
+Clothing: tight boxer briefs
+Hair-compression procedure: hair cap
+Thoracic-gas-volume method: predicted; direct thoracic-gas-volume measurement was not performed and the mask attachment was not used
+Unexpected delay: none
+Provider instruction deviation: none
+Supplement or medication deviation: none consumed before testing
+Hydration deviation: no morning fluid consumed; broader hydration state not independently established
+Illness or mechanical signal: none reported
+Source artifacts received: 2026-08-bodpod-cosmed.jpg
+Other material context: no exercise was performed before testing; no unusual event or procedural deviation was reported during Bod Pod testing
 ```
 
 Blank items remain blank or are marked unknown.
