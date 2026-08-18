@@ -132,6 +132,32 @@ Where present, an accompanying epoch file serves as the temporal anchor record f
 
 ---
 
+## [2026-08 — Phase 2 Consolidation / Testing Window Capture](./snapshots/2026-08/)
+**Artifacts:**
+- DEXA body-composition artifact
+- DEXA summary artifact
+- Bod Pod / COSMED
+- VO2 summary
+- TruDiagnostic sample collection; provider-result artifacts pending
+
+**Links:**
+- Epoch file: [`2026-08 Epoch.md`](./snapshots/2026-08/2026-08%20Epoch.md)
+- Collection plan: [`2026-08-snapshot-collection-plan.md`](./methodology/2026-08-snapshot-collection-plan.md)
+
+**Notes:**
+- Primary physical collection window completed across 2026-08-17 and 2026-08-18
+- 2026-08-17 collection sequence was TruDiagnostic at 05:37, DEXA at 07:55, and VO2 at approximately 08:10
+- Bod Pod testing began at 08:26 on 2026-08-18
+- Physical source artifacts were privacy-reviewed, assigned stable filenames, and checksum-verified
+- The 2026-08-16 B1 session was completed; the corresponding Load Integration session was intentionally withheld to preserve recovery before VO2 testing
+- The testing-directed Load Integration omission is retained as a documented collection-condition deviation rather than normalized
+- Bod Pod thoracic gas volume was predicted rather than directly measured
+- TruDiagnostic provider results remain pending, so the molecular domain and complete August interpretation remain open
+- No August snapshot result independently changes phase status or closes Model Error 043
+- Interpretation remains deferred to report, structured-data, and model-error layers
+
+---
+
 ## Future
 
 Future snapshots will be appended chronologically.
