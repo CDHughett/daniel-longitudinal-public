@@ -22,7 +22,7 @@ It contains:
 
 The Zenodo DOI points to the archived `v1.0.0` release snapshot.
 
-The `main` branch may include post-publication documentation updates, including DOI badges, citation text, metadata cleanup, methodology refinement, navigation improvements, new prospective prediction records, and later retrospective closeouts.
+The `main` branch may include post-publication documentation updates, including DOI badges, citation text, metadata cleanup, methodology refinement, navigation improvements, new prospective prediction records, retrospective closeouts, and later snapshot artifacts.
 
 For citation, use the Zenodo DOI-linked release record:
 
@@ -99,21 +99,37 @@ Consolidation / lock-in observation
 Active weekly window:
 2026-W33
 
-Open model-error records:
-041
-042
+Recently closed model-error records:
+041 — supported
+042 — not supported / continued adaptation
+044 — not supported / narrow governance deviation
+045 — supported
+
+Current open model-error records:
 043
-044
 046
 
-Recent completed model-error record:
-045 — supported
+August physical snapshot collection:
+complete
+
+August TruDiagnostic provider results:
+pending
 
 Formal Phase 2D declaration:
 None
 ```
 
-The August 2026 biological and performance snapshot and the Model Error 046 unload/reload observation are currently governed as separate evidence questions.
+Record 041 closed with the registered recovery-capacity prediction supported.
+
+Record 042 closed against the model: continued adaptation exceeded the predicted ambient-execution plateau.
+
+Record 044 closed against the model after a testing-directed pre-snapshot Load Integration omission violated the separately registered snapshot-governance boundary.
+
+Record 045 remains closed and supported.
+
+Record 043 remains open pending the primary TruDiagnostic provider-result domain.
+
+Record 046 remains prospectively open through its fixed unload/reload scoring window.
 
 ---
 
@@ -129,9 +145,13 @@ For a compact inspection route, see [`docs/OBSERVER_QUICKSTART.md`](./docs/OBSER
 
 For the broader skeptical or technical review path, see [`docs/FOR_OBSERVERS.md`](./docs/FOR_OBSERVERS.md).
 
-For the prospective evaluation rules governing records 041–044, see:
+For the preregistered evaluation rules governing records 041–044, see:
 
 [`methodology/open_prediction_evaluation_plan_041_044.md`](./methodology/open_prediction_evaluation_plan_041_044.md)
+
+Records 041, 042, and 044 have now been adjudicated.
+
+Record 043 remains open under that preregistered framework pending its required primary biological evidence.
 
 For the completed preregistered evaluation rules that governed record 045, see:
 
@@ -141,9 +161,11 @@ For the separately registered prospective evaluation rules governing record 046,
 
 [`methodology/open_prediction_evaluation_plan_046.md`](./methodology/open_prediction_evaluation_plan_046.md)
 
-The three plans remain separate because their registration dates, evidence windows, and scoring questions differ.
+These records remain separate because their registration dates, evidence windows, and scoring questions differ.
 
 Record 046 does not reopen or extend record 045.
+
+Later unload/reload evidence does not reopen records 041, 042, or 044.
 
 ---
 
@@ -249,6 +271,7 @@ Interpretation remains intentionally constrained:
 - observations that generate predictions remain distinct from future evidence permitted to score them
 - subjective context is separated from governed archive records unless formally incorporated
 - documented protocol or collection deviations remain visible rather than being retrospectively normalized
+- prediction misses remain visible rather than being softened after outcome access
 - protocol documents describe this subject’s archive and are not generalized prescriptions
 
 This archive documents one subject under defined protocol constraints and incomplete environmental control.
@@ -267,11 +290,17 @@ No claim extends beyond the recorded system without separate evidence.
 
 Phase language is retrospective and evidence-earned.
 
-Open prediction outcomes may contribute to a later phase evaluation but do not independently declare a phase transition.
+Record 042 now establishes that the registered ambient-execution plateau prediction underestimated continued adaptation under the existing architecture.
 
-Record 045 is now closed and supported.
+That is meaningful evidence of continued consolidation.
 
-That result does not independently declare Phase 2D.
+It does not independently declare Phase 2D.
+
+Record 041 support likewise does not establish unlimited recovery capacity.
+
+Record 044 failure does not independently terminate the current phase or invalidate the underlying training architecture.
+
+Record 045 remains closed and supported.
 
 A supported or failed record 046 result likewise cannot independently declare or terminate a phase.
 
@@ -325,7 +354,7 @@ Root
 
 Historical or superseded protocol material may remain in the repository for provenance when its inactive status is clearly identified.
 
-Completed preregistration artifacts may likewise remain under their original filenames when preserving the original committed artifact is preferable to renaming it after outcome access.
+Completed or partially completed preregistration artifacts may likewise remain under their original filenames when preserving the original committed artifact is preferable to renaming it after outcome access.
 
 ---
 
@@ -346,22 +375,26 @@ Registered predictions must be:
 Current open model-error records:
 
 ```text
-041
-042
 043
-044
 046
 ```
 
-Recent completed record:
+Recently closed records:
 
 ```text
+041 — supported
+042 — not supported / continued adaptation
+044 — not supported / narrow snapshot-directed governance deviation
 045 — supported
 ```
 
-Records 041–044 remain governed by:
+Records 041–044 were registered under:
 
 → [`methodology/open_prediction_evaluation_plan_041_044.md`](./methodology/open_prediction_evaluation_plan_041_044.md)
+
+Records 041, 042, and 044 are now closed.
+
+Record 043 remains open under the same preregistered evaluation framework because its primary TruDiagnostic evidence is still pending.
 
 Record 045 was separately governed by:
 
@@ -370,6 +403,136 @@ Record 045 was separately governed by:
 Record 046 is separately governed by:
 
 → [`methodology/open_prediction_evaluation_plan_046.md`](./methodology/open_prediction_evaluation_plan_046.md)
+
+---
+
+### Record 041 — Closed Recovery-Capacity Prediction
+
+Record 041 predicted:
+
+```text
+stable
+```
+
+It closed as:
+
+```text
+actual:
+stable
+
+outcome:
+supported
+```
+
+Accumulated July–August exposure produced measurable autonomic compression.
+
+The registered recovery-capacity failure boundary nevertheless was not crossed.
+
+No qualifying combination of:
+
+- recovery-driven intervention
+- multi-session training regression
+- persistent physiological suppression with corresponding functional or subjective deterioration
+
+was observed.
+
+The later autonomic rebound does not imply the accumulation block was costless.
+
+Record 041 establishes only that the observed cost remained inside its preregistered recovery-capacity boundary.
+
+---
+
+### Record 042 — Closed Ambient-Execution Plateau Prediction
+
+Record 042 predicted:
+
+```text
+plateau
+```
+
+It closed as:
+
+```text
+actual:
+continued_adaptation
+
+error direction:
+under
+
+outcome:
+not supported
+```
+
+The registered counter-evidence threshold was met across repeated dates, more than 14 calendar days, multiple contexts, and without substantive explanatory protocol progression.
+
+Evidence included increasing:
+
+- positional optionality
+- voluntary tempo control
+- divided-attention execution
+- automatic movement organization
+- reduced cognitive overhead
+- low-salience execution
+- preservation across accumulated workload and differing autonomic states
+
+The external protocol remained broadly stable while the relationship to the work continued changing.
+
+Record 042 therefore represents a model underestimation rather than a failure of the observed system.
+
+It does not independently declare Phase 2D.
+
+---
+
+### Record 044 — Closed Protocol-Governance Prediction
+
+Record 044 predicted:
+
+```text
+preserved
+```
+
+Most of the observation window showed strong governance restraint.
+
+However:
+
+```text
+2026-08-16:
+Load Integration intentionally withheld
+to preserve recovery before VO₂ testing
+```
+
+The omission was:
+
+- testing-directed
+- intentional
+- not provider-required
+- not recovery-driven
+
+The August collection plan had established a representative-state posture rather than deliberate short-term testing optimization.
+
+Record 044 contained a separately registered snapshot-manipulation boundary.
+
+The pre-test Load Integration omission conflicted with that boundary.
+
+Record 044 therefore closed as:
+
+```text
+outcome:
+not supported
+
+classification:
+narrow snapshot-directed governance deviation
+```
+
+This does not establish:
+
+- broad protocol-governance collapse
+- biological harm
+- invalidity of the August snapshot
+- failure of record 041
+- failure of record 045
+
+The archive preserves the governance miss without inferring an unmeasured biological effect.
 
 ---
 
@@ -450,13 +613,49 @@ supported
 
 The 2026-08-16 Load Integration omission was testing-directed rather than recovery-driven for purposes of the record 045 failure rule.
 
-That classification does not remove the event from later Model Error 043 and 044 collection/governance evaluation.
+The same event was separately relevant to record 044 because record 044 governed snapshot preparation rather than recovery-driven intervention.
 
 Record 045 is closed.
 
-It does not amend, replace, rescore, or shorten records 041–044.
-
 It must not be reopened using later unload/reload evidence.
+
+---
+
+### Record 043 — Active August Biological Translation Prediction
+
+Record 043 remains open.
+
+Its primary comparison remains:
+
+```text
+May 2026
+→
+August 2026
+```
+
+The August physical collection is complete.
+
+Current preserved physical domains include:
+
+- DEXA
+- VO₂ max
+- Bod Pod
+
+The TruDiagnostic sample was collected on:
+
+```text
+2026-08-17
+```
+
+The primary TruDiagnostic provider-result domain remains pending.
+
+No supplemental physical result may substitute for that primary evidence.
+
+The record 044 governance determination does not establish whether the August 16 training deviation materially altered any biological result.
+
+That materiality remains unknown unless supported by separate evidence.
+
+Record 043 must remain open until its required primary source evidence is available.
 
 ---
 
@@ -525,9 +724,10 @@ A transient autonomic disturbance after maximal VO₂ testing may be documented 
 
 Record 046 does not:
 
+- reopen record 041
+- reopen record 042
+- repair record 044
 - reopen record 045
-- rescore record 045
-- alter records 041–044
 - determine the August biological snapshot outcome
 - declare Phase 2D
 
@@ -535,24 +735,43 @@ Record 046 does not:
 
 ## August Snapshot Governance
 
-The August biological and performance collection remains separately governed by:
+The August biological and performance collection remains governed by:
 
 → [`methodology/2026-08-snapshot-collection-plan.md`](./methodology/2026-08-snapshot-collection-plan.md)
 
-and, for records 041–044:
+and, for the original records 041–044 framework:
 
 → [`methodology/open_prediction_evaluation_plan_041_044.md`](./methodology/open_prediction_evaluation_plan_041_044.md)
 
-The scheduled collection window includes:
+The primary physical collection window was completed across:
 
 ```text
-2026-08-17:
-TruAge / TruHealth
+2026-08-17
+TruDiagnostic sample collection
 DEXA
 VO₂ max
 
-2026-08-18:
+2026-08-18
 Bod Pod
+```
+
+Current August state:
+
+```text
+physical collection:
+complete
+
+physical source-artifact preservation:
+complete
+
+TruDiagnostic sample collection:
+complete
+
+TruDiagnostic provider results:
+pending
+
+complete biological interpretation:
+pending
 ```
 
 The underlying physical architecture remains:
@@ -563,20 +782,24 @@ B1
 Load Integration
 ```
 
-A temporary testing-related interruption is documented:
+The actual testing transition was:
 
 ```text
 2026-08-16:
 B1 completed
-Load Integration withheld before testing
+Load Integration intentionally withheld before testing
 
 2026-08-17:
 No B1
 No Load Integration
+TruDiagnostic
+DEXA
+VO₂ max
 
 2026-08-18:
 No B1
 No Load Integration
+Bod Pod
 
 2026-08-19:
 Planned return to normal B1 + Load Integration
@@ -584,11 +807,51 @@ Planned return to normal B1 + Load Integration
 
 The 2026-08-16 Load Integration omission and the August 17–18 training withdrawal remain visible as actual collection-condition facts.
 
-They should not be retrospectively rewritten into the original representative-state collection plan.
+They are not retrospectively rewritten into the original representative-state collection posture.
 
-Their materiality for records 043 and 044 remains subject to later evaluation under the preregistered rules.
+The governance significance of the August 16 omission has been adjudicated under record 044.
+
+The record closed as not supported because the testing-directed omission conflicted with the registered snapshot-manipulation boundary.
+
+That governance result does not establish that the deviation materially altered any August biological measurement.
+
+Record 043 therefore remains open pending its primary TruDiagnostic evidence.
 
 The biological snapshot and Model Error 046 remain analytically separate.
+
+---
+
+## Current Prediction Calibration State
+
+The August 18 closure batch changed the primary state and trajectory concordance layers.
+
+Current tracked primary-prediction concordance includes:
+
+```text
+State:
+11 concordant of 14 eligible closed primary state predictions
+0.79
+
+Trajectory:
+2 concordant of 3 eligible closed primary trajectory predictions
+0.67
+```
+
+Point and range magnitude UDI values remain unchanged by this closure batch.
+
+These values are calibration summaries.
+
+They are not measures of biological success.
+
+A prediction miss may reflect:
+
+- model underestimation
+- model overestimation
+- governance failure
+- boundary-condition discovery
+- insufficient evidence
+
+The underlying record determines interpretation.
 
 ---
 
@@ -652,7 +915,7 @@ Hughett, C. D. (2026). *Daniel Longitudinal Study (v1.0.0)* [Data set]. Zenodo. 
 - Artifact history → [`snapshots`](./snapshots/)
 - Weekly reports → [`reports`](./reports/)
 - Model-error layer → [`data/model_error/WHAT_THIS_LAYER_IS.md`](./data/model_error/WHAT_THIS_LAYER_IS.md)
-- Open-prediction plan 041–044 → [`methodology/open_prediction_evaluation_plan_041_044.md`](./methodology/open_prediction_evaluation_plan_041_044.md)
+- Preregistered prediction plan 041–044 → [`methodology/open_prediction_evaluation_plan_041_044.md`](./methodology/open_prediction_evaluation_plan_041_044.md)
 - Completed prediction plan 045 → [`methodology/open_prediction_evaluation_plan_045.md`](./methodology/open_prediction_evaluation_plan_045.md)
 - Open-prediction plan 046 → [`methodology/open_prediction_evaluation_plan_046.md`](./methodology/open_prediction_evaluation_plan_046.md)
 - August collection plan → [`methodology/2026-08-snapshot-collection-plan.md`](./methodology/2026-08-snapshot-collection-plan.md)
