@@ -20,7 +20,7 @@ It does not independently determine biological interpretation, declare a phase, 
 
 ## Directory Role
 
-The `/methodology` directory contains rules and preregistered plans that directly govern current archive operation.
+The `/methodology` directory contains rules and preregistered plans that directly govern archive operation.
 
 This includes:
 
@@ -35,6 +35,7 @@ This includes:
 - outcome-access boundaries
 - active evaluation plans
 - completed preregistered plans retained for provenance
+- partially resolved preregistered plans that still govern an open record
 
 The governing sequence is:
 
@@ -53,6 +54,8 @@ Interpret retrospectively
 A later result must not silently rewrite an earlier methodology rule.
 
 A completed preregistered plan should remain preserved after scoring so the original evaluation boundary remains inspectable.
+
+A preregistered multi-record plan may remain operationally relevant when some records have closed and another record governed by the same original artifact remains open.
 
 ---
 
@@ -178,11 +181,11 @@ Prediction evaluation is intended to improve calibration rather than maximize an
 
 ---
 
-## Active Evaluation Plan — Records 041–044
+## Preserved Preregistered Evaluation Plan — Records 041–044
 
 ### [`open_prediction_evaluation_plan_041_044.md`](open_prediction_evaluation_plan_041_044.md)
 
-This is the preregistered evaluation plan for Model Error records 041–044.
+This is the preserved preregistered evaluation plan for Model Error records 041–044.
 
 It defines:
 
@@ -205,21 +208,326 @@ Governed records:
 
 The plan was committed before the final outcome windows closed.
 
-Its registered rules remain binding until formal evaluation.
+Its original registered rules remain preserved.
 
-A weekly report may preserve candidate evidence relevant to these records.
+Current outcomes under this plan are:
 
-It may not independently:
+```text
+041:
+closed / supported
 
-- score them
-- close them
+042:
+closed / not supported — continued adaptation
+
+043:
+open / TruDiagnostic provider results pending
+
+044:
+closed / not supported — narrow snapshot-directed governance deviation
+```
+
+Records 041, 042, and 044 were formally adjudicated at the August snapshot-cycle endpoint.
+
+Record 043 remains open because its primary TruDiagnostic provider-result domain is still pending.
+
+The original preregistration artifact must not be rewritten after those outcomes became known.
+
+Later reports may reference the closed outcomes.
+
+They may not:
+
+- reopen records 041, 042, or 044
+- extend their evidence windows
 - revise their predictions
-- change their thresholds
-- substitute a new primary endpoint
+- improve or weaken their recorded outcomes
+- substitute a new primary endpoint for record 043
 
 Records 045 and 046 do not amend this plan.
 
-The 041–044 evaluation block remains preserved as originally registered.
+The 041–044 evaluation artifact remains preserved under its original filename because renaming or restructuring it after outcome access would weaken provenance.
+
+---
+
+## Record 041 — Closed Recovery-Capacity Evaluation
+
+Record 041 was registered on:
+
+```text
+2026-06-25
+```
+
+Its domain was:
+
+```text
+recovery_capacity
+```
+
+Its registered prediction was:
+
+```text
+stable
+```
+
+Its prediction type was:
+
+```text
+primary trajectory
+```
+
+The observation block produced measurable autonomic compression.
+
+The registered recovery-capacity failure boundary nevertheless was not crossed.
+
+No qualifying combination of:
+
+- unplanned recovery intervention
+- multi-session training regression
+- persistent physiological suppression with required functional or subjective deterioration
+
+occurred.
+
+The 2026-08-16 Load Integration omission was testing-directed rather than recovery-driven.
+
+It therefore did not constitute a record 041 recovery-capacity failure.
+
+Record 041 closed as:
+
+```text
+actual:
+stable
+
+error direction:
+none
+
+outcome:
+supported
+```
+
+This result does not establish:
+
+- costless accumulation
+- unlimited recovery capacity
+- permanent autonomic normalization
+- absence of short-window physiological strain
+
+The original governing rules remain preserved in `open_prediction_evaluation_plan_041_044.md`.
+
+---
+
+## Record 042 — Closed Ambient-Execution Plateau Evaluation
+
+Record 042 was registered on:
+
+```text
+2026-06-25
+```
+
+Its domain was:
+
+```text
+ambient_execution
+```
+
+Its registered prediction was:
+
+```text
+plateau
+```
+
+Its prediction type was:
+
+```text
+primary trajectory
+```
+
+The preregistered counter-evidence threshold was met across:
+
+- at least three separately dated qualifying observations
+- more than 14 calendar days
+- multiple contexts
+- no substantive explanatory protocol progression
+
+Observed characteristics included:
+
+- voluntary tempo modulation
+- positional optionality
+- conversational divided attention
+- social-context execution
+- reduced preparation
+- reduced session salience
+- automatic bar contact
+- automatic movement initiation
+- automatic positional organization
+- automatic force control
+- automatic transitions
+- preserved execution across differing short-window autonomic states
+
+Record 042 closed as:
+
+```text
+actual:
+continued_adaptation
+
+error direction:
+under
+
+outcome:
+not supported
+```
+
+The model underestimated continued adaptation beyond the predicted ambient-execution plateau.
+
+This result does not independently declare Phase 2D.
+
+The original governing rules remain preserved in `open_prediction_evaluation_plan_041_044.md`.
+
+---
+
+## Record 043 — Active August Biological Evaluation
+
+Record 043 remains open under:
+
+### [`open_prediction_evaluation_plan_041_044.md`](open_prediction_evaluation_plan_041_044.md)
+
+Its domain is:
+
+```text
+biological_translation
+```
+
+Its registered prediction is:
+
+```text
+moderate_improvement
+```
+
+Its prediction type is:
+
+```text
+primary trajectory
+```
+
+The primary comparison remains:
+
+```text
+May 2026
+→
+August 2026
+```
+
+The primary biological domain remains:
+
+```text
+TruDiagnostic
+```
+
+The August physical collection is complete.
+
+The TruDiagnostic sample was collected on:
+
+```text
+2026-08-17
+```
+
+The corresponding provider-result domain remains pending.
+
+Supplemental domains include:
+
+- DEXA
+- VO₂ max
+- Bod Pod
+- bodyweight
+- recovery telemetry
+- subjective state
+
+No supplemental physical result may substitute for the pending primary TruDiagnostic evidence.
+
+Record 043 must remain open until the required source evidence is available and the preregistered rules are applied.
+
+The record 044 governance outcome does not independently determine record 043.
+
+---
+
+## Record 044 — Closed Protocol-Governance Evaluation
+
+Record 044 was registered on:
+
+```text
+2026-06-25
+```
+
+Its domain was:
+
+```text
+protocol_governance
+```
+
+Its registered prediction was:
+
+```text
+preserved
+```
+
+Its prediction type was:
+
+```text
+primary state
+```
+
+Most of the observation window showed strong governance restraint.
+
+No:
+
+- forced training progression
+- direct grip program
+- high-volume pull-up test
+- manufactured portability test
+- recovery-driven reaction to isolated wearable values
+- premature phase declaration
+
+was introduced.
+
+A separately registered snapshot-governance boundary nevertheless applied to testing preparation.
+
+On:
+
+```text
+2026-08-16
+```
+
+Load Integration was intentionally withheld to preserve recovery before the following morning’s testing.
+
+The omission was:
+
+- intentional
+- testing-directed
+- not provider-required
+- not recovery-driven
+
+Because the preregistered collection posture was intended to preserve representative-state biology rather than create unusually favorable testing freshness, the omission conflicted with that snapshot-governance boundary.
+
+Record 044 therefore closed as:
+
+```text
+outcome:
+not supported
+
+error direction:
+under
+
+classification:
+narrow snapshot-directed governance deviation
+```
+
+This outcome does not establish:
+
+- broad protocol-governance collapse
+- biological harm
+- invalidity of the August snapshot
+- failure of record 041
+- failure of record 045
+
+The original governing rules remain preserved in `open_prediction_evaluation_plan_041_044.md`.
 
 ---
 
@@ -348,9 +656,11 @@ It was not recovery-driven and therefore did not trigger the record 045 recovery
 
 That classification is specific to record 045.
 
-The same event remains separately relevant to records 043 and 044 because it represents a pre-snapshot testing-preparation deviation from the ordinary-training posture.
+The same event was separately evaluated under record 044 because record 044 governed snapshot preparation rather than recovery-driven intervention.
 
-Record 045 is now closed.
+Record 044 subsequently closed as not supported.
+
+Record 045 remains closed and unchanged.
 
 Its methodology file remains preserved because it documents the rules that governed the prediction before the outcome was known.
 
@@ -360,7 +670,7 @@ Record 045 does not:
 - redefine recovery-capacity criteria
 - score motor automaticity under record 042
 - alter the Model Error 043 biological endpoint
-- modify record 044 governance criteria
+- repair or modify record 044
 - establish complete recovery
 - establish absence of accumulated training cost
 - declare Phase 2D
@@ -502,11 +812,11 @@ Those outcomes are independently governed.
 
 Record 046 does not:
 
+- reopen record 041
+- reopen record 042
+- alter record 043
+- repair record 044
 - reopen record 045
-- extend record 045
-- rescore record 045
-- change records 041–044
-- alter the August snapshot biological endpoint
 - create a new physical training protocol
 - authorize an extended deload
 - authorize a reload stress test
@@ -516,7 +826,7 @@ The record 046 evaluation plan remains active and prospective.
 
 ---
 
-## Active Snapshot Collection Plan
+## August Snapshot Collection Plan — Physical Collection Complete
 
 ### [`2026-08-snapshot-collection-plan.md`](2026-08-snapshot-collection-plan.md)
 
@@ -548,31 +858,68 @@ The plan preserves:
 - ordinary rather than snapshot-optimized behavior as the intended collection posture
 - separation between collection and interpretation
 
-The collection plan does not contain August results.
+The physical collection window is now complete.
+
+Actual collection included:
+
+```text
+2026-08-17
+TruDiagnostic sample collection at 05:37
+DEXA at 07:55
+VO₂-max testing at approximately 08:10
+
+2026-08-18
+Bod Pod at 08:26
+```
+
+Current collection state is:
+
+```text
+physical collection:
+complete
+
+physical source-artifact preservation:
+complete
+
+TruDiagnostic sample collection:
+complete
+
+TruDiagnostic provider results:
+pending
+
+complete biological interpretation:
+pending
+```
+
+The collection plan does not itself determine the August biological outcome.
 
 It does not:
 
-- predict the result
-- alter records 041–046
-- change scoring rules
+- alter record 043
+- alter record 046
 - authorize protocol progression
 - declare Phase 2D
 - create a release automatically
 - determine the outcome of record 046
-- reopen record 045
+- reopen any closed model-error record
 
-The 2026-08-16 Load Integration omission should remain documented as a factual collection-condition deviation rather than being removed from the record.
+The 2026-08-16 Load Integration omission remains documented as a factual collection-condition deviation rather than being removed from the record.
 
-The plan itself should not be retrospectively rewritten to make that deviation appear preregistered.
+The plan itself must not be retrospectively rewritten to make that deviation appear preregistered.
 
-The plan should otherwise remain unchanged unless a factual collection detail changes.
+The governance significance of that omission has already been adjudicated under record 044.
 
-Any amendment should be:
+Record 044 closed as not supported.
+
+The biological materiality of the omission remains unknown and must not be inferred from the governance result.
+
+The collection plan remains relevant to record 043 interpretation until the required primary molecular evidence is available.
+
+Any later factual amendment should be:
 
 - dated
 - narrow
 - factual
-- committed before the affected result is interpreted when possible
 - explicit about whether outcome access had already occurred
 
 ---
@@ -629,6 +976,8 @@ Once outcome access begins, substantive scoring rules should remain fixed.
 
 After scoring, the original preregistered plan should remain preserved for provenance.
 
+A multi-record plan may remain partly operational when one governed record remains open after other records in the same original plan have closed.
+
 Separate prediction blocks should remain in separate preregistration artifacts when their:
 
 - registration dates differ
@@ -666,6 +1015,15 @@ A collection plan governs capture.
 
 It does not determine the result.
 
+After physical collection is complete, the plan remains evidentially relevant for:
+
+- actual-versus-planned comparison
+- deviation review
+- outcome interpretation
+- provenance
+
+It must not be rewritten after outcome access to make execution appear more compliant than it was.
+
 ---
 
 ## Retrospective Methodology Note
@@ -700,6 +1058,7 @@ Possible classifications include:
 - superseded
 - inactive
 - completed preregistered plan
+- partially resolved preregistered plan with an open governed record
 - retained for provenance
 
 A completed preregistered plan remains evidentially important even when it no longer governs future observations.
@@ -712,7 +1071,7 @@ Historical or completed methodology must not be treated as a current forward-loo
 
 # Active Versus Historical Status
 
-Every methodology file whose operational status could become ambiguous should state near the top:
+Every methodology file whose operational status could become ambiguous should state near the top when appropriate:
 
 ```text
 Status:
@@ -727,6 +1086,8 @@ Possible status labels include:
 - Active preregistered evaluation plan
 - Active preregistered collection plan
 - Completed preregistered evaluation plan
+- Partially resolved preregistered evaluation plan
+- Physical collection complete / interpretation pending
 - Historical
 - Superseded
 - Inactive
@@ -794,7 +1155,7 @@ The distinction is:
 
 ### `/methodology`
 
-Current operating rules, active preregistered plans, and completed preregistered plans retained for governance provenance.
+Current operating rules, active preregistered plans, partially resolved preregistered plans, and completed preregistered plans retained for governance provenance.
 
 ### `/docs/methodology`
 
@@ -855,9 +1216,17 @@ Reports operate under methodology.
 
 They must not rewrite preregistered evaluation or collection rules.
 
-For record 045, the Week 32 report may retrospectively score the fixed August 13–16 evidence under the preregistered rules.
+Records 041, 042, and 044 are closed.
 
-It may not use later August evidence to reopen or modify the result.
+Later reports may reference them historically.
+
+They may not reopen or rescore them.
+
+Record 043 remains open pending its required primary source evidence.
+
+For record 045, later reports may preserve the completed August 13–16 score.
+
+They may not use later August evidence to reopen or modify the result.
 
 For record 046:
 
@@ -886,6 +1255,8 @@ Methodology defines:
 - how missingness is handled
 - how corrections occur
 - how provenance is retained
+
+The August integrated biological snapshot must not be treated as complete before the pending primary molecular source evidence is verified.
 
 ---
 
@@ -930,22 +1301,24 @@ See:
 The local validator currently protects the open/unscored state of:
 
 ```text
-041
-042
 043
-044
 046
 ```
 
-It separately protects record 045 as:
+It separately protects the adjudicated closed state of:
 
 ```text
-closed
+041
+042
+044
+045
 ```
 
-with its recorded outcome preserved.
+with their recorded actual values and error directions preserved where applicable.
 
-Validation does not independently recompute or adjudicate the record 045 score.
+Validation does not independently recompute or adjudicate those scores.
+
+It does not score record 043.
 
 It does not score record 046.
 
@@ -1020,13 +1393,31 @@ For records 041–044, use:
 open_prediction_evaluation_plan_041_044.md
 ```
 
+Current status under that plan:
+
+```text
+041:
+closed / supported
+
+042:
+closed / not supported — continued adaptation
+
+043:
+open / pending TruDiagnostic provider results
+
+044:
+closed / not supported — narrow governance deviation
+```
+
+The original plan remains preserved unchanged.
+
 For record 045, use:
 
 ```text
 open_prediction_evaluation_plan_045.md
 ```
 
-Record 045 is now a completed preregistered prediction.
+Record 045 is a completed preregistered prediction.
 
 Its fixed boundary remains:
 
@@ -1072,7 +1463,7 @@ Primary scoring window:
 
 Excluded from scoring:
 DEXA result
-VO2-max measured result
+VO₂-max measured result
 Bod Pod result
 TruDiagnostic result
 other August biological-snapshot outcomes
@@ -1112,6 +1503,37 @@ Interpretation must remain proportional to:
 - contradictory evidence
 - registered evaluation rules
 
+Record 041 has been scored supported.
+
+That result establishes only that its preregistered recovery-capacity failure boundary was not crossed.
+
+It does not independently establish:
+
+- absence of accumulated physiological cost
+- unlimited recovery reserve
+- permanent autonomic normalization
+
+Record 042 has been scored not supported through continued adaptation.
+
+That result establishes only that the predicted ambient-execution plateau underestimated the observed adaptive transition.
+
+It does not independently establish:
+
+- Phase 2D
+- unlimited adaptation
+- need for immediate progression
+
+Record 044 has been scored not supported because of a narrow snapshot-directed governance deviation.
+
+That result establishes a governance miss under the registered collection boundary.
+
+It does not independently establish:
+
+- biological harm
+- invalidity of the August snapshot
+- broad protocol failure
+- failure of recovery capacity
+
 Record 045 has been scored supported.
 
 That result establishes only that its preregistered short-window partial-reconvergence criteria were met.
@@ -1144,7 +1566,7 @@ A failed record 046 result would not independently establish:
 - clinical overtraining
 - global recovery collapse
 - protocol failure
-- failure of records 041–044
+- reopening of records 041, 042, 044, or 045
 - biological regression
 - termination of Phase 2
 
@@ -1205,7 +1627,7 @@ When a file is superseded, preserve the historical file when it contributes prov
 Before adding a new file, determine:
 
 1. What operational problem does it solve?
-2. Is it a standing rule, preregistered plan, completed plan, or retrospective note?
+2. Is it a standing rule, preregistered plan, completed plan, partially resolved plan, or retrospective note?
 3. Does an existing file already govern the issue?
 4. Is the document being written before or after outcome access?
 5. What evidence layer does it constrain?
@@ -1232,7 +1654,7 @@ It was created as a separate prediction rather than extending the already comple
 
 # Current Active Methodology State
 
-As of 2026-08-17:
+As of 2026-08-18:
 
 ```text
 Data collection:
@@ -1244,13 +1666,25 @@ Active standing methodology
 Prediction evaluation:
 Active standing methodology
 
-Records 041–044 evaluation plan:
-Active and binding
+Records 041–044 preregistration artifact:
+Preserved and unchanged
+
+Record 041:
+Closed / supported
+
+Record 042:
+Closed / not supported — continued adaptation
+
+Record 043:
+Open / TruDiagnostic provider results pending
+
+Record 044:
+Closed / not supported — narrow snapshot-directed governance deviation
 
 Record 045 evaluation plan:
 Completed preregistered evaluation plan retained for provenance
 
-Record 045 status:
+Record 045:
 Closed / supported
 
 Record 046 evaluation plan:
@@ -1269,14 +1703,26 @@ Record 046 primary scoring window:
 2026-08-20 through 2026-08-23
 
 August 2026 snapshot collection plan:
-Active and binding through the collection workflow
+Physical collection complete; retained for execution comparison and pending record 043 interpretation
+
+August physical source artifacts:
+Archived, privacy-reviewed, checksum-manifested, and validator-verified
+
+TruDiagnostic sample:
+Collected 2026-08-17
+
+TruDiagnostic provider results:
+Pending
 
 Open and unscored model-error records:
+043
+046
+
+Closed recent model-error records:
 041
 042
-043
 044
-046
+045
 
 Canonical phase:
 Phase 2 — Load Integration
@@ -1290,16 +1736,17 @@ Undeclared
 Underlying physical protocol:
 B1 + Load Integration preserved
 
-Current temporary testing schedule:
-2026-08-17 — no B1 / no LI
-2026-08-18 — no B1 / no LI
-2026-08-19 — planned normal B1 + LI return
+Testing-related withdrawal:
+Through 2026-08-18
+
+Planned normal training return:
+2026-08-19
 ```
 
 The current methodology state preserves four distinct governance artifacts:
 
 ```text
-Records 041–044:
+Original Records 041–044 framework:
 open_prediction_evaluation_plan_041_044.md
 
 Completed Record 045:
@@ -1330,6 +1777,7 @@ They should not be collapsed into one retrospective document.
 - [`../data/DATA_COVERAGE.md`](../data/DATA_COVERAGE.md)
 - [`../data/DATA_QUALITY_NOTES.md`](../data/DATA_QUALITY_NOTES.md)
 - [`../data/model_error/model_error_gap_v1.csv`](../data/model_error/model_error_gap_v1.csv)
+- [`../data/model_error/udi_by_type_tracker.csv`](../data/model_error/udi_by_type_tracker.csv)
 - [`../PHASE_MAP.md`](../PHASE_MAP.md)
 - [`../PHASE_DECLARATION_CRITERIA.md`](../PHASE_DECLARATION_CRITERIA.md)
 - [`../VERIFICATION.md`](../VERIFICATION.md)
@@ -1376,36 +1824,59 @@ On 2026-08-17, this guide was updated after the record 045 scoring boundary clos
 
 The 2026-08-17 revision:
 
-- records record 045 as closed and supported
-- preserves `open_prediction_evaluation_plan_045.md` as the completed preregistered governance artifact
-- records the fixed August 13–16 record 045 scoring values and 4-of-4 favorable threshold result
-- preserves the 2026-08-16 Load Integration omission as testing-directed rather than recovery-driven for record 045
-- retains the same omission as a separate collection/governance fact for records 043 and 044
-- prohibits later unload/reload evidence from reopening or extending record 045
-- exposes `open_prediction_evaluation_plan_046.md`
-- identifies record 046 as a separate prospective autonomic unload/reload trajectory prediction
-- records 2026-08-17 as registration context only for record 046
-- records 2026-08-18 through 2026-08-19 as descriptive unload/re-entry kinetics
-- records 2026-08-20 through 2026-08-23 as the fixed record 046 primary scoring window
-- preserves the record 045 autonomic thresholds unchanged for direct 046 comparability
-- excludes August biological and performance outcomes from record 046 scoring
-- updates the protected open prediction set to records 041–044 and 046
-- documents record 045 as separately protected in its closed/scored state
-- preserves records 041–044 unchanged
+- recorded record 045 as closed and supported
+- preserved `open_prediction_evaluation_plan_045.md` as the completed preregistered governance artifact
+- recorded the fixed August 13–16 record 045 scoring values and 4-of-4 favorable threshold result
+- preserved the 2026-08-16 Load Integration omission as testing-directed rather than recovery-driven for record 045
+- retained the same omission as a separate collection/governance fact for records 043 and 044
+- prohibited later unload/reload evidence from reopening or extending record 045
+- exposed `open_prediction_evaluation_plan_046.md`
+- identified record 046 as a separate prospective autonomic unload/reload trajectory prediction
+- recorded 2026-08-17 as registration context only for record 046
+- recorded 2026-08-18 through 2026-08-19 as descriptive unload/re-entry kinetics
+- recorded 2026-08-20 through 2026-08-23 as the fixed record 046 primary scoring window
+- preserved the record 045 autonomic thresholds unchanged for direct 046 comparability
+- excluded August biological and performance outcomes from record 046 scoring
+- updated the then-protected open prediction set to records 041–044 and 046
+- documented record 045 as separately protected in its closed/scored state
+- preserved records 041–044 unchanged at that point
+- preserved Phase 2 and the consolidation / lock-in observation substate
+- preserved the underlying B1 + Load Integration architecture after the temporary testing interruption
+
+On 2026-08-18, this guide was aligned after completion of the August physical collection window and formal adjudication of Model Error records 041, 042, and 044.
+
+The 2026-08-18 revision:
+
+- preserves `open_prediction_evaluation_plan_041_044.md` unchanged as the original preregistration artifact
+- records 041 as closed and supported
+- records 042 as closed and not supported through continued adaptation
+- preserves 043 as open pending the primary TruDiagnostic provider-result domain
+- records 044 as closed and not supported through a narrow snapshot-directed governance deviation
+- preserves 045 as closed and supported
+- preserves 046 as open and unscored
+- reduces the current open model-error set to records 043 and 046
+- records the August 17–18 physical collection window as complete
+- records the August physical source-artifact layer as archived, privacy-reviewed, checksum-manifested, and validator-verified
+- preserves the August 16 Load Integration omission as testing-directed rather than recovery-driven
+- records that the omission activated the separately registered record 044 snapshot-governance boundary
+- does not infer that the governance deviation materially altered an August biological measurement
+- preserves record 043 as independently open pending TruDiagnostic provider results
+- updates methodology navigation to distinguish closed, open, partially resolved, and completed preregistration states
+- updates validator documentation so records 041, 042, 044, and 045 are protected as closed while records 043 and 046 remain open
+- preserves the record 046 August 20–23 primary scoring window
 - preserves Phase 2 and the consolidation / lock-in observation substate
-- preserves the underlying B1 + Load Integration architecture after the temporary testing interruption
+- leaves formal Phase 2D undeclared
 
-The revision changes methodology navigation and current-governance documentation only.
-
-It does not alter:
+The 2026-08-18 revision does not alter:
 
 - any source artifact
 - any canonical biological value
-- records 041–044
+- the original prediction wording of records 041–044
+- the original 041–044 preregistration rules
 - the registered wording or thresholds of record 045
 - the registered wording or thresholds of record 046
-- any closed prediction other than documenting its already completed state
+- the pending record 043 outcome
 - the underlying physical protocol
-- the August snapshot collection plan
+- the original August snapshot collection-plan language
 - any phase declaration
 - any release metadata
