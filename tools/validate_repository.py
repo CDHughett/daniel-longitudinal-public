@@ -1072,6 +1072,21 @@ class Validator:
             ["actual_value"],
         )
 
+        error_absolute_col = find_column(
+            header,
+            ["error_absolute"],
+        )
+
+        error_direction_col = find_column(
+            header,
+            ["error_direction"],
+        )
+
+        error_pct_col = find_column(
+            header,
+            ["error_pct"],
+        )
+
         if id_col is None or status_col is None:
             self.report.error(
                 check,
@@ -1157,27 +1172,18 @@ class Validator:
             name
             for name in [
                 actual_col,
-                find_column(
-                    header,
-                    ["error_absolute"],
-                ),
-                find_column(
-                    header,
-                    ["error_direction"],
-                ),
-                find_column(
-                    header,
-                    ["error_pct"],
-                ),
+                error_absolute_col,
+                error_direction_col,
+                error_pct_col,
             ]
             if name is not None
         ]
 
+        # Records whose prospective evidence windows
+        # remain incomplete and whose outcome/error
+        # fields must therefore remain blank.
         protected_open_ids = (
-            41,
-            42,
             43,
-            44,
             46,
         )
 
@@ -1237,36 +1243,65 @@ class Validator:
                         ),
                     )
 
-        scored_record_id = 45
-        scored_row = by_id.get(scored_record_id)
+        # Closed records whose adjudicated state is now
+        # part of protected repository history.
+        #
+        # Expected values intentionally protect only the
+        # fields needed to prevent accidental reopening,
+        # outcome erasure, or direction drift.
+        protected_closed_records = {
+            41: {
+                "actual": "stable",
+                "error_direction": "none",
+            },
+            42: {
+                "actual": "continued_adaptation",
+                "error_direction": "under",
+            },
+            44: {
+                "actual": "0",
+                "error_direction": "under",
+            },
+            45: {
+                "actual": "partial_reconvergence",
+                "error_direction": "none",
+            },
+        }
 
-        if scored_row is None:
-            self.report.error(
-                check,
-                (
-                    "Required scored record "
-                    f"missing: {scored_record_id:03d}"
-                ),
-            )
-        else:
-            scored_status = scored_row.get(
+        for (
+            record_id,
+            expected,
+        ) in protected_closed_records.items():
+            row = by_id.get(record_id)
+
+            if row is None:
+                self.report.error(
+                    check,
+                    (
+                        "Required closed record "
+                        f"missing: {record_id:03d}"
+                    ),
+                )
+                continue
+
+            status = row.get(
                 status_col,
                 "",
             ).strip().lower()
 
-            if scored_status != "closed":
+            if status != "closed":
                 self.report.error(
                     check,
                     (
-                        f"Record {scored_record_id:03d} "
+                        f"Record {record_id:03d} "
                         "must remain closed after "
-                        "preregistered scoring"
+                        "registered adjudication"
                     ),
                 )
 
             if (
                 prediction_col
-                and not scored_row.get(
+                and not row.get(
                     prediction_col,
                     "",
                 ).strip()
@@ -1274,26 +1309,58 @@ class Validator:
                 self.report.error(
                     check,
                     (
-                        f"Record {scored_record_id:03d} "
+                        f"Record {record_id:03d} "
                         "prediction is blank"
                     ),
                 )
 
-            if (
-                actual_col
-                and not scored_row.get(
+            if actual_col:
+                actual = row.get(
                     actual_col,
                     "",
                 ).strip()
-            ):
-                self.report.error(
-                    check,
-                    (
-                        f"Record {scored_record_id:03d} "
-                        "actual value must remain "
-                        "populated after scoring"
-                    ),
-                )
+
+                if not actual:
+                    self.report.error(
+                        check,
+                        (
+                            f"Record {record_id:03d} "
+                            "actual value must remain "
+                            "populated after scoring"
+                        ),
+                    )
+                elif actual != expected["actual"]:
+                    self.report.error(
+                        check,
+                        (
+                            f"Record {record_id:03d} "
+                            "actual value drift: "
+                            f"expected "
+                            f"{expected['actual']!r}, "
+                            f"got {actual!r}"
+                        ),
+                    )
+
+            if error_direction_col:
+                direction = row.get(
+                    error_direction_col,
+                    "",
+                ).strip().lower()
+
+                if (
+                    direction
+                    != expected["error_direction"]
+                ):
+                    self.report.error(
+                        check,
+                        (
+                            f"Record {record_id:03d} "
+                            "error-direction drift: "
+                            f"expected "
+                            f"{expected['error_direction']!r}, "
+                            f"got {direction!r}"
+                        ),
+                    )
 
         if (
             not duplicates
@@ -1306,8 +1373,9 @@ class Validator:
                     f"{len(ids)} records continuous "
                     f"from {min(ids):03d} through "
                     f"{max(ids):03d}; "
-                    "045 closed/scored; "
-                    "041-044 and 046 remain "
+                    "041, 042, 044, and 045 "
+                    "closed/scored; "
+                    "043 and 046 remain "
                     "open and unscored"
                 ),
             )
