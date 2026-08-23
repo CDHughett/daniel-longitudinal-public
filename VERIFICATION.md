@@ -62,6 +62,8 @@ The local validator reviews:
 - protected open status of records 043 and 046
 - preserved closed/adjudicated state of records 041, 042, 044, and 045
 - selected protected actual values and error directions for those closed records
+- preserved prospective registration state for records 041–046
+- preservation of the original registered prediction narrative for records 041–046
 - release-metadata alignment
 - RingConn source-export byte preservation
 
@@ -254,6 +256,8 @@ Examples:
 - records 043 and 046 retain their protected open/unscored state
 - records 041, 042, 044, and 045 retain their protected closed/adjudicated state
 - protected closed-record actual values and error directions remain unchanged
+- records 041–046 retain `calibration_state=pre`
+- records 041–046 retain their original registered prediction narratives at the beginning of `notes`
 
 ---
 
@@ -297,6 +301,8 @@ Examples include:
 - protected closed prediction record losing its recorded actual outcome
 - protected closed prediction record drifting from its registered adjudicated actual value
 - protected closed prediction record drifting from its recorded error direction
+- protected preregistered record changing `calibration_state` from `pre`
+- protected registered prediction narrative being removed, replaced, or altered
 - RingConn source bytes changed
 - unsafe ZIP path
 
@@ -500,6 +506,116 @@ The validator checks:
 - preservation of their registered predictions
 - preservation of their adjudicated actual values
 - preservation of their recorded error directions
+- preservation of `calibration_state=pre` for records 041–046
+- preservation of the exact original registered prediction narrative for records 041–046
+
+The validator now treats prediction-registration provenance as distinct from prediction lifecycle.
+
+---
+
+## Registration-Provenance Protection
+
+The currently protected prospective registration block is:
+
+```text
+041
+042
+043
+044
+045
+046
+```
+
+Each of these records must retain:
+
+```text
+calibration_state = pre
+```
+
+This field records the state in which the prediction was registered.
+
+It does **not** mean:
+
+```text
+prediction is currently awaiting evaluation
+```
+
+and it does not become:
+
+```text
+post
+```
+
+merely because the prediction has later been scored or closed.
+
+A prospectively registered prediction remains historically:
+
+```text
+pre
+```
+
+after adjudication.
+
+The validator therefore treats a later mutation such as:
+
+```text
+pre
+→
+post
+```
+
+as registration-provenance drift and returns an error.
+
+---
+
+## Registered Prediction-Narrative Protection
+
+For records 041–046, the validator also contains the preserved original prospective `Prediction:` narrative.
+
+The `notes` field must begin with that registered narrative.
+
+After an outcome window closes, later information may be appended, for example:
+
+```text
+Prediction: [original registered prospective text]
+
+Closure: [later retrospective adjudication]
+```
+
+The closure text may supplement the historical record.
+
+It must not replace or rewrite the original prediction.
+
+This protects the distinction:
+
+```text
+what was predicted before the outcome
+```
+
+from:
+
+```text
+what was concluded after the outcome
+```
+
+The validator compares the beginning of each protected record's `notes` field with its registered narrative.
+
+If the original narrative is:
+
+- removed
+- replaced
+- substantively edited
+- reordered behind closure text
+
+the validator returns an error.
+
+This protection is intentionally explicit rather than dynamically inferred from current row contents.
+
+Otherwise, a corrupted row could become the validator's own new reference state.
+
+---
+
+## Protected Open Records
 
 The currently protected open-record set is explicitly defined as:
 
@@ -513,6 +629,22 @@ These records are protected explicitly rather than inferred dynamically from wha
 This preserves the governance check even if one of the protected records is accidentally changed from `open` to another state.
 
 Their outcome fields must remain blank until their applicable prospective evidence boundaries are complete and retrospective scoring is authorized.
+
+For those records, the validator protects:
+
+- presence
+- open status
+- registered prediction value
+- blank actual value
+- blank absolute error
+- blank error direction
+- blank percentage error
+- prospective registration state
+- original registered prediction narrative
+
+---
+
+## Protected Closed Records
 
 The currently protected closed-record set is:
 
@@ -547,6 +679,14 @@ The validator therefore protects more than closure status.
 
 It also detects accidental drift in the selected committed outcome fields.
 
+For these records it additionally requires:
+
+```text
+calibration_state = pre
+```
+
+and preservation of the original registered `Prediction:` narrative.
+
 This protection exists to prevent later repository edits from silently:
 
 - reopening a closed record
@@ -555,8 +695,14 @@ This protection exists to prevent later repository edits from silently:
 - changing an error direction
 - converting a model miss into a concordant result
 - changing a concordant result into a miss
+- changing the historical registration state
+- replacing a forward prediction with a retrospective closure narrative
 
 The validator does **not** independently determine whether those adjudications were scientifically correct.
+
+---
+
+## Records 041–044 Evaluation Boundary
 
 For records 041, 042, and 044, formal scoring was performed retrospectively against the preserved preregistered rules in:
 
@@ -593,6 +739,10 @@ The validator does not independently:
 
 Those responsibilities belong to the preregistered evaluation artifact, source evidence, model-error ledger, and retrospective semantic review.
 
+---
+
+## Record 045 Evaluation Boundary
+
 For record 045, the preregistered scoring window closed on 2026-08-16.
 
 The repository records record 045 as closed after scoring under:
@@ -603,7 +753,19 @@ methodology/open_prediction_evaluation_plan_045.md
 
 The validator protects that historical state.
 
-It does not:
+It requires the row to retain:
+
+```text
+calibration_state = pre
+```
+
+because record 045 was prospectively registered on 2026-08-12.
+
+It also requires the original registered `Prediction:` narrative to remain at the beginning of the `notes` field.
+
+Closure language may follow that registered text.
+
+The validator does not:
 
 - recalculate the August 13–16 four-day means
 - compare those values with the preregistered thresholds
@@ -612,6 +774,25 @@ It does not:
 - reinterpret the 2026-08-16 Load Integration omission
 - reopen the prediction
 - rescore the prediction
+
+The 2026-08-23 catch-up audit identified and authorized correction of a narrow provenance defect in which:
+
+```text
+calibration_state:
+pre
+→
+post
+```
+
+and the original prediction narrative had been replaced by closure text.
+
+The repair restores registration provenance only.
+
+It does not alter record 045's supported outcome.
+
+---
+
+## Record 046 Evaluation Boundary
 
 For record 046, the validator protects the open/unscored prospective state.
 
@@ -636,12 +817,21 @@ primary scoring window
 
 Record 046 outcome and error fields must remain blank until that prospective boundary is complete and retrospective scoring is authorized.
 
+Record 046 must also retain:
+
+```text
+calibration_state = pre
+```
+
+and its original registered prediction narrative.
+
 Record 046 does not reopen or extend records 041, 042, 044, or 045.
 
 The validator's role across the model-error layer is narrow:
 
 ```text
 protect committed governance state
+and registration provenance
 from accidental repository drift
 ```
 
@@ -896,6 +1086,8 @@ Verification may establish that:
 - protected open prediction records remain open and unscored
 - protected closed prediction records retain their committed adjudicated states
 - selected protected actual values and error directions remain unchanged
+- prospective registration state remains preserved for records 041–046
+- original registered prediction narratives remain preserved for records 041–046
 - release metadata agrees
 - a downloaded ZIP is mechanically safe and internally consistent
 
@@ -946,10 +1138,11 @@ For a routine local verification cycle:
 4. review warnings against `data/DATA_QUALITY_NOTES.md`
 5. spot-check recently changed artifacts
 6. verify that protected prediction and phase boundaries remain intact
-7. verify that scored predictions remain frozen after their registered outcome boundaries
-8. confirm that records 043 and 046 remain unscored until their respective evidence boundaries close
-9. download and validate a fresh GitHub ZIP after material changes
-10. record a formal audit only when the scheduled audit cadence or a material event requires it
+7. verify that preregistered prediction records retain their original registration state and prediction narrative
+8. verify that scored predictions remain frozen after their registered outcome boundaries
+9. confirm that records 043 and 046 remain unscored until their respective evidence boundaries close
+10. download and validate a fresh GitHub ZIP after material changes
+11. record a formal audit only when the scheduled audit cadence or a material event requires it
 
 The validator reduces repetitive mechanical work.
 
@@ -965,6 +1158,8 @@ The validator cannot fully evaluate:
 - whether a provider field is semantically equivalent to a curated field
 - whether a prediction was framed fairly
 - whether prediction scoring correctly followed its preregistered criteria
+- whether closure language accurately describes the evidence
+- whether preservation of the original prediction narrative is sufficient to establish fair adjudication
 - whether record 041 was substantively supported
 - whether record 042 satisfied its qualitative-transition threshold
 - whether the record 044 deviation was correctly classified
@@ -1010,6 +1205,10 @@ Local read-only validation remains the current operating model.
 - Errors identify mechanical or governance-protected failures.
 - Validation never authorizes automatic biological correction.
 - Open prediction records and scored prediction records require different protected states.
+- Prospectively registered records retain their historical registration state after closure.
+- Closing a prediction does not convert `calibration_state=pre` to `post`.
+- Original registered prediction narratives must remain inspectable after adjudication.
+- Closure language may be appended but must not replace the registered prediction.
 - Closed prediction records may additionally protect selected adjudicated outcome fields.
 - Closing a prediction after its registered outcome boundary does not authorize extending that prediction with later evidence.
 - A governance miss does not automatically establish a biological effect.
@@ -1099,13 +1298,52 @@ The 2026-08-18 update:
 - leaves Phase 2 and the consolidation / lock-in observation substate unchanged
 - leaves formal Phase 2D undeclared
 
-The 2026-08-18 verification-guide update does not alter:
+On 2026-08-23, the verification boundary was hardened after the catch-up audit identified a narrow registration-provenance defect in record 045.
+
+The 2026-08-23 update:
+
+- records that prospectively registered Model Error records retain their registration-state provenance after adjudication
+- explicitly protects `calibration_state=pre` for records 041–046
+- treats `calibration_state` as registration metadata rather than a prediction-lifecycle field
+- prevents a closed prospective prediction from being changed from `pre` to `post`
+- protects the original registered `Prediction:` narrative for records 041–046
+- requires each protected `notes` field to begin with its preserved prospective prediction narrative
+- permits later closure language to be appended after the original prediction
+- prevents closure language from replacing the registered prediction narrative
+- documents the source-backed restoration of record 045 from `calibration_state=post` to `calibration_state=pre`
+- documents restoration of record 045's original registered prediction narrative before its existing closure narrative
+- leaves the record 045 supported outcome unchanged
+- leaves its actual value, error direction, scoring window, thresholds, and calculated four-day means unchanged
+- leaves records 041–044 unchanged
+- leaves record 043 open pending its primary provider result
+- leaves record 046 open and unscored while its prospective window remains active
+- does not independently score or rescore any model-error record
+- introduces no biological-value correction
+- introduces no canonical sleep correction
+- introduces no protocol modification
+- introduces no phase declaration
+- introduces no release increment
+
+The 2026-08-23 provenance protection exists because a mechanically valid closed outcome is not sufficient if the archive loses the state in which the prediction was originally registered.
+
+The validator now protects both:
+
+```text
+registered prediction
++
+later adjudicated outcome
+```
+
+as distinct pieces of historical evidence.
+
+The 2026-08-23 verification-guide update does not alter:
 
 - any source artifact
 - any checksum
 - any biological value
-- any preregistered prediction wording
+- any registered prediction value
 - any registered prediction threshold
+- any adjudicated outcome
 - the pending record 043 outcome
 - the prospective record 046 outcome
 - any physical protocol exposure
