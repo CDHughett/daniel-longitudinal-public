@@ -1087,11 +1087,27 @@ class Validator:
             ["error_pct"],
         )
 
-        if id_col is None or status_col is None:
+        calibration_state_col = find_column(
+            header,
+            ["calibration_state"],
+        )
+
+        notes_col = find_column(
+            header,
+            ["notes"],
+        )
+
+        if (
+            id_col is None
+            or status_col is None
+            or calibration_state_col is None
+            or notes_col is None
+        ):
             self.report.error(
                 check,
                 (
-                    "Required record_id or status "
+                    "Required record_id, status, "
+                    "calibration_state, or notes "
                     "column missing"
                 ),
             )
@@ -1178,6 +1194,209 @@ class Validator:
             ]
             if name is not None
         ]
+
+        # Prospective registration provenance for the
+        # currently governed 041-046 prediction block.
+        #
+        # calibration_state records the state at
+        # registration. It is not a lifecycle field and
+        # must not change from "pre" to "post" merely
+        # because a prediction is later adjudicated.
+        #
+        # The exact registered prediction narrative must
+        # also remain at the beginning of notes so closure
+        # language can be appended without replacing the
+        # original forward-locked statement.
+        protected_registration_records = {
+            41: (
+                "Prediction: During the uninterrupted "
+                "July-August observation block, "
+                "accumulated B1 and Load Integration "
+                "exposure will remain compatible with "
+                "recovery without requiring an unplanned "
+                "recovery intervention, multi-session "
+                "training regression, or persistent "
+                "physiological suppression under otherwise "
+                "stable inputs. This prediction intentionally "
+                "probes the upper boundary of current "
+                "recovery reserve rather than simple "
+                "recovery preservation."
+            ),
+            42: (
+                "Prediction: Ambient execution has "
+                "approached its current adaptive ceiling "
+                "under the existing protocol. Between now "
+                "and the August snapshot, execution quality "
+                "will remain stable but will not demonstrate "
+                "another distinct qualitative transition "
+                "toward greater automaticity. Failure would "
+                "indicate continued nervous-system adaptation "
+                "beyond the currently modeled plateau."
+            ),
+            43: (
+                "Prediction: The August 2026 biological "
+                "snapshot will demonstrate measurable "
+                "improvement relative to May 2026 across "
+                "the overall physiological profile, but the "
+                "magnitude of improvement will be smaller "
+                "than the February-to-May interval. This "
+                "tests whether prolonged protocol stability "
+                "continues translating into measurable "
+                "biological adaptation while probing "
+                "calibration after prior conservative "
+                "underestimation."
+            ),
+            44: (
+                "Prediction: Protocol governance will remain "
+                "preserved through the August snapshot. No "
+                "substantive training progression, volume "
+                "expansion, or protocol modification will be "
+                "implemented without objective evidence "
+                "meeting predefined governance criteria. "
+                "Failure would indicate governance drift "
+                "rather than biological limitation."
+            ),
+            45: (
+                "Prediction: The W31 autonomic-performance "
+                "divergence will partially reconverge during "
+                "the final ordinary pre-snapshot interval "
+                "through improvement in the autonomic layer, "
+                "without multi-session functional regression "
+                "or a recovery-driven protocol change. "
+                "Registration context includes all "
+                "observations available through 2026-08-12. "
+                "The scoring window is prospectively fixed "
+                "at 2026-08-13 through 2026-08-16; W31 and "
+                "2026-08-10 through 2026-08-12 are context "
+                "only and cannot satisfy the prediction. "
+                "August 17-18 biological and performance "
+                "snapshot results are excluded. Partial "
+                "reconvergence is defined against W30 and "
+                "W31 weekly references as recovery of at "
+                "least half of the W31-to-W30 autonomic gap. "
+                "Favorable four-day mean thresholds are "
+                "daily HRV >=59.7 ms, sleep HRV >=65.3 ms, "
+                "resting HR <=49.2 bpm, and sleeping HR "
+                "<=53.7 bpm. Support requires at least 3 of "
+                "4 autonomic markers to cross their "
+                "preregistered threshold using the unrounded "
+                "2026-08-13 through 2026-08-16 source values, "
+                "with no multi-session functional regression "
+                "and no recovery-driven protocol reduction "
+                "or intervention during the scoring window. "
+                "Fewer than 3 of 4 threshold crossings with "
+                "preserved function constitutes persistent "
+                "autonomic-performance divergence and failure "
+                "of the reconvergence prediction. "
+                "Multi-session functional regression or a "
+                "recovery-driven protocol change also "
+                "constitutes failure. Major illness, "
+                "unrelated major disruption, or insufficient "
+                "wearable evidence to calculate a reliable "
+                "four-day comparison produces insufficient "
+                "evidence rather than an inferred pass or "
+                "fail. Record 045 is a secondary forward "
+                "trajectory probe and does not amend, "
+                "rescore, replace, or change the evaluation "
+                "windows or criteria of records 041-044."
+            ),
+            46: (
+                "Prediction: The autonomic reconvergence "
+                "supported in record 045 will remain broadly "
+                "preserved through the planned testing-related "
+                "training withdrawal and after the normal B1 "
+                "plus Load Integration architecture resumes, "
+                "rather than reverting to the W31 compressed "
+                "state. Registration context includes all "
+                "observations available through 2026-08-17 "
+                "and the known schedule: no B1 or Load "
+                "Integration on 2026-08-17 and 2026-08-18, "
+                "with normal two-session training planned to "
+                "resume on 2026-08-19. Because 2026-08-17 "
+                "includes DEXA and VO2-max testing and is "
+                "already in progress at registration, "
+                "2026-08-17 is context only and cannot "
+                "satisfy the prediction. The 2026-08-18 "
+                "through 2026-08-19 values will be retained "
+                "as descriptive unload and re-entry kinetics. "
+                "The prospectively fixed primary scoring "
+                "window is 2026-08-20 through 2026-08-23, "
+                "after the first planned return-to-training "
+                "day. Support requires at least 3 of the same "
+                "4 autonomic markers to remain on the "
+                "favorable side of the record 045 thresholds "
+                "across the four-day arithmetic means: daily "
+                "HRV >=59.7 ms, sleep HRV >=65.3 ms, resting "
+                "HR <=49.2 bpm, and sleeping HR <=53.7 bpm, "
+                "with no multi-session functional regression "
+                "and no recovery-driven protocol reduction "
+                "after normal training resumes. A transient "
+                "post-VO2-max autonomic disturbance is "
+                "admissible and should be documented but "
+                "cannot independently fail the record. Fewer "
+                "than 3 of 4 favorable threshold crossings "
+                "across the reload scoring window, "
+                "multi-session functional regression, or a "
+                "recovery-driven protocol reduction after "
+                "normal training resumes constitutes failure. "
+                "Major illness, unrelated major disruption, "
+                "or insufficient wearable evidence produces "
+                "insufficient evidence rather than an inferred "
+                "pass or fail. Record 046 does not amend or "
+                "reopen record 045 and does not score DEXA, "
+                "VO2-max, Bod Pod, TruDiagnostic, or other "
+                "August biological snapshot outcomes."
+            ),
+        }
+
+        for (
+            record_id,
+            registered_prediction_note,
+        ) in protected_registration_records.items():
+            row = by_id.get(record_id)
+
+            if row is None:
+                self.report.error(
+                    check,
+                    (
+                        "Protected registration record "
+                        f"missing: {record_id:03d}"
+                    ),
+                )
+                continue
+
+            calibration_state = row.get(
+                calibration_state_col,
+                "",
+            ).strip().lower()
+
+            if calibration_state != "pre":
+                self.report.error(
+                    check,
+                    (
+                        f"Record {record_id:03d} "
+                        "registration calibration-state "
+                        "drift: expected 'pre', got "
+                        f"{calibration_state!r}"
+                    ),
+                )
+
+            notes = row.get(
+                notes_col,
+                "",
+            ).strip()
+
+            if not notes.startswith(
+                registered_prediction_note
+            ):
+                self.report.error(
+                    check,
+                    (
+                        f"Record {record_id:03d} "
+                        "registered prediction narrative "
+                        "is missing or has drifted"
+                    ),
+                )
 
         # Records whose prospective evidence windows
         # remain incomplete and whose outcome/error
@@ -1376,7 +1595,9 @@ class Validator:
                     "041, 042, 044, and 045 "
                     "closed/scored; "
                     "043 and 046 remain "
-                    "open and unscored"
+                    "open and unscored; "
+                    "041-046 registration "
+                    "provenance preserved"
                 ),
             )
 
