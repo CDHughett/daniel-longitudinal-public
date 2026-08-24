@@ -14,6 +14,395 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 
 ### Added
 
+#### August 24 Week 33 closeout and Model Error 046 adjudication
+
+- Closed `reports/2026-W33.md` after completion of the full `2026-08-17` through `2026-08-23` observation window.
+
+- Week 33 contained three analytically separate events:
+
+  ```text
+  August physical snapshot collection
+  +
+  testing-directed withdrawal from normal formal training
+  +
+  autonomic observation after return to B1 + Load Integration
+  ```
+
+- Recorded actual Week 33 formal training exposure:
+
+  ```text
+  2026-08-17:
+  no B1
+  no Load Integration
+  TruDiagnostic
+  DEXA
+  VO₂ max
+
+  2026-08-18:
+  no B1
+  no Load Integration
+  Bod Pod
+
+  2026-08-19 through 2026-08-23:
+  normal B1 + Load Integration restored
+  ```
+
+- Recorded Week 33 completed training totals:
+
+  ```text
+  B1:
+  5 sessions
+  275 minutes
+  approximately 15.10 miles
+
+  Load Integration:
+  5 sessions
+  225 minutes
+
+  Total formal training:
+  500 minutes
+  ```
+
+- Recorded Week 33 weekly averages:
+
+  ```text
+  Morning bodyweight:
+  approximately 235.4 lb
+
+  Daily biomarker HRV:
+  approximately 61.4 ms
+
+  Sleep HRV:
+  approximately 64.0 ms
+
+  Resting heart rate:
+  approximately 52.6 bpm
+
+  Sleeping heart rate:
+  approximately 52.6 bpm
+
+  Daily average heart rate:
+  approximately 61.1 bpm
+
+  Total sleep:
+  approximately 7 h 47 min
+
+  Time in bed:
+  approximately 8 h 22 min
+  ```
+
+- Extended `data/sleep_longitudinal_v1.csv` through `2026-08-23`.
+
+- Canonical sleep now contains:
+
+  ```text
+  196 continuous daily rows
+
+  Coverage:
+  2026-02-09 through 2026-08-23
+  ```
+
+- Preserved the existing governed historical sleep warnings without automatic correction:
+  - DQ-001 awake-minute / awakening-count duplication
+  - DQ-002 `2026-03-31` sleep-stage difference
+  - DQ-003 `2026-04-02` sleep-stage difference
+
+- Recorded the post-testing autonomic disturbance as real rather than normalizing it away.
+
+- Preserved the distinction between:
+
+  ```text
+  less favorable short-window autonomic telemetry
+  ```
+
+  and:
+
+  ```text
+  preserved functional training availability
+  ```
+
+- Recorded that normal two-session training resumed on `2026-08-19`.
+
+- Recorded no:
+  - graded return-to-training requirement
+  - recovery-driven workload reduction
+  - multi-session functional regression
+  - persistent pain
+  - recurrence of the resolved lower-back perturbation
+
+- Recorded strong natural portability evidence during `2026-08-20` through `2026-08-23`.
+
+- The repeated alternate training configuration included:
+  - a different gym room
+  - a different-style trap bar
+  - a curved pull-up bar
+  - altered pull-up-bar thickness
+  - altered surface texture
+
+- Preserved the execution sequence as descriptive Phase 2 evidence:
+  - ambient execution on initial altered-equipment exposure
+  - preserved grip
+  - reduced novelty across repeated exposures
+  - later trait-like pull-up and grip behavior within the alternate configuration
+  - later trait-like movement/control behavior within the altered context
+
+- The portability evidence:
+  - was naturally occurring
+  - was not manufactured as a formal test
+  - does not reopen record 042
+  - does not independently establish universal portability
+  - does not independently declare Phase 2D
+
+- Formally adjudicated Model Error record `046` after completion of its prospectively fixed `2026-08-20` through `2026-08-23` scoring window.
+
+- Preserved record 046 registration provenance:
+
+  ```text
+  registration date:
+  2026-08-17
+
+  calibration_state:
+  pre
+
+  flag:
+  secondary
+
+  prediction type:
+  trajectory
+  ```
+
+- Preserved the original prospectively registered record 046 `Prediction:` narrative at the beginning of the model-error `notes` field.
+
+- Preserved the record 046 evidence boundary:
+
+  ```text
+  2026-08-17:
+  registration context only
+
+  2026-08-18 through 2026-08-19:
+  descriptive unload / re-entry kinetics
+
+  2026-08-20 through 2026-08-23:
+  primary scoring window
+  ```
+
+- Preserved the registered record 046 favorable thresholds:
+
+  ```text
+  Daily biomarker HRV >= 59.7 ms
+
+  Sleep HRV >= 65.3 ms
+
+  Resting heart rate <= 49.2 bpm
+
+  Sleeping heart rate <= 53.7 bpm
+  ```
+
+- Calculated the fixed-window record 046 arithmetic means as:
+
+  ```text
+  Daily biomarker HRV:
+  60.25 ms
+  favorable
+
+  Sleep HRV:
+  63.25 ms
+  unfavorable
+
+  Resting heart rate:
+  52.0 bpm
+  unfavorable
+
+  Sleeping heart rate:
+  54.0 bpm
+  unfavorable
+  ```
+
+- Recorded the quantitative threshold result:
+
+  ```text
+  1 of 4 favorable
+  ```
+
+- Confirmed the additional registered conditions:
+
+  ```text
+  Multi-session functional regression after reload:
+  No
+
+  Recovery-driven protocol reduction after normal training resumed:
+  No
+  ```
+
+- Because the registered support rule required at least three of four favorable autonomic means in addition to preserved function and protocol continuity, record 046 did not satisfy its support criterion.
+
+- Closed record 046 as:
+
+  ```text
+  status:
+  closed
+
+  actual_value:
+  failed_autonomic_recompression
+
+  error_direction:
+  over
+  ```
+
+- The `over` direction records that the model overestimated persistence of the favorable record 045 autonomic state across the immediate post-testing reload interval.
+
+- Preserved the substantial late-window autonomic improvement on August 22–23 as retrospective contextual evidence.
+
+- The later rebound:
+  - supports reversibility
+  - remains biologically and operationally meaningful
+  - does not alter the fixed four-day scoring mean
+  - does not rescue the failed prospective criterion
+  - does not reopen record 045
+
+- Record 046 remains a secondary trajectory record.
+
+- Its closure therefore does not modify:
+  - primary state concordance
+  - primary trajectory concordance
+  - point UDI
+  - range UDI
+
+- Current primary calibration summaries remain:
+
+  ```text
+  Primary state concordance:
+  11 / 14
+  0.79
+
+  Primary trajectory concordance:
+  2 / 3
+  0.67
+  ```
+
+- Advanced validator governance through the record 046 lifecycle transition.
+
+- `tools/validate_repository.py` was first changed to permit a controlled record 046 closure transition while preserving:
+  - registration provenance
+  - original prediction wording
+  - open-state blank outcome fields before closure
+  - required populated outcome fields once closed
+
+- After record 046 adjudication, validator protection was advanced again to hard-protect the final closed state:
+
+  ```text
+  Protected open:
+  043
+
+  Protected closed:
+  041
+  042
+  044
+  045
+  046
+  ```
+
+- The final protected record 046 fields are:
+
+  ```text
+  actual_value:
+  failed_autonomic_recompression
+
+  error_direction:
+  over
+  ```
+
+- Records 041–046 continue to require:
+
+  ```text
+  calibration_state = pre
+  ```
+
+- Records 041–046 continue to require preservation of their original registered `Prediction:` narratives.
+
+- Updated `VERIFICATION.md` to align the documented verification boundary with:
+  - record 043 as the sole protected open record
+  - record 046 as closed/adjudicated history
+  - record 046 actual value `failed_autonomic_recompression`
+  - record 046 error direction `over`
+  - preserved record 046 registration provenance
+  - the distinction between fixed-window scoring and later favorable recovery
+
+- Added `reports/2026-W34.md` as the active observation window for:
+
+  ```text
+  2026-08-24 through 2026-08-30
+  ```
+
+- Week 34 preserves:
+
+  ```text
+  Phase:
+  Phase 2 — Load Integration
+
+  Operating substate:
+  Consolidation / lock-in observation
+
+  Formal Phase 2D:
+  undeclared
+  ```
+
+- Week 34 returns to ordinary B1 + Load Integration continuity.
+
+- No new threshold-based recovery prediction is created from the Week 33 outcome.
+
+- No special recovery intervention is introduced solely because record 046 failed.
+
+- Updated `LATEST.md`:
+  - advances `2026-W34` to the active weekly window
+  - records `2026-W33` as closed
+  - advances canonical sleep through `2026-08-23`
+  - records 196 continuous canonical sleep rows
+  - reduces the current open model-error set to record `043`
+  - records record `046` as closed / `failed_autonomic_recompression`
+  - records the Week 33 training and recovery summary
+  - records natural Week 33 portability evidence
+  - preserves the August TruDiagnostic provider-result domain as pending
+  - preserves Phase 2
+  - preserves the consolidation / lock-in observation substate
+  - leaves Phase 2D undeclared
+
+- Updated `INDEX.md`:
+  - advances the active weekly report to `2026-W34`
+  - records `2026-W33` as the most recent closed report
+  - advances canonical sleep coverage through `2026-08-23`
+  - reduces the current open prediction set to record `043`
+  - records record `046` as closed
+  - relabels the record 046 preregistration plan as a completed preserved historical artifact
+  - aligns model-error, verification, prediction-review, and August snapshot navigation
+  - preserves record 046 as secondary and therefore outside primary UDI/concordance recalculation
+  - preserves Phase 2D as undeclared
+
+- Updated `README.md`:
+  - advances the active weekly window to `2026-W34`
+  - records `2026-W33` as the most recent closed window
+  - advances canonical sleep through `2026-08-23`
+  - reduces the open model-error set to record `043`
+  - records record `046` as closed / not supported
+  - records formal record 046 outcome `failed_autonomic_recompression`
+  - relabels the record 046 evaluation artifact as completed preregistration provenance
+  - records Week 33 natural portability evidence
+  - preserves the pending TruDiagnostic boundary for record 043
+  - preserves current primary concordance values
+  - preserves formal Phase 2D as undeclared
+
+- The August 24 alignment does not:
+  - modify a source artifact
+  - modify an artifact checksum
+  - alter a registered prediction threshold
+  - move a registered prediction window
+  - reopen records 041, 042, 044, or 045
+  - score record 043
+  - modify primary UDI or concordance values
+  - introduce a new recurring training protocol
+  - declare Phase 2D
+  - increment the formal release version
+
 #### August 23 catch-up audit and prediction-provenance review
 
 - Added `docs/audits/2026-08-23-catch-up-audit.md` as a single retrospective catch-up audit covering the scheduled repository checkpoints missed on:
@@ -1337,6 +1726,106 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 
 ### Changed
 
+#### August 24 Week 33 closeout alignment
+
+- Updated `data/model_error/model_error_gap_v1.csv`:
+  - closes record `046`
+  - preserves registered prediction `reconvergence_persists_after_unload_reload`
+  - records `actual_value=failed_autonomic_recompression`
+  - records `error_direction=over`
+  - preserves `calibration_state=pre`
+  - preserves the original registered `Prediction:` narrative
+  - appends retrospective closure language after the prospective registration narrative
+  - leaves trajectory numeric `error_absolute` and `error_pct` unforced where no meaningful scalar magnitude is defined
+  - preserves record `043` as the sole open model-error record
+
+- Updated `tools/validate_repository.py`:
+  - removes record `046` from the protected open set
+  - reduces the protected open set to record `043`
+  - adds record `046` to the protected closed-record set
+  - requires record `046` to remain closed
+  - protects `actual_value=failed_autonomic_recompression`
+  - protects `error_direction=over`
+  - preserves registration-provenance protection across records `041` through `046`
+  - preserves the original registered prediction narratives for records `041` through `046`
+  - updates model-error pass messaging to reflect record 043 as the sole open/unscored record
+  - removes the temporary controlled-closure transition state after successful ledger closure
+
+- Updated `VERIFICATION.md`:
+  - reduces the protected open-record documentation to record `043`
+  - adds record `046` to protected closed/adjudicated history
+  - documents record 046 fixed-window arithmetic means
+  - documents the 1-of-4 favorable threshold result
+  - documents preserved function and normal training reload
+  - documents the formal `failed_autonomic_recompression` outcome
+  - documents `error_direction=over`
+  - preserves record 046 `calibration_state=pre`
+  - preserves record 046's original prospective prediction narrative
+  - distinguishes later recovery from evidence admissible to the fixed scoring window
+
+- Updated `reports/2026-W33.md`:
+  - closes the Week 33 observation window
+  - compresses repeated standing methodology into a more evidence-centered retrospective report
+  - records actual August testing and reload geometry
+  - records five B1 and five Load Integration sessions after testing
+  - records 500 total formal training minutes
+  - records approximately 15.10 B1 miles
+  - records Week 33 structured recovery averages
+  - records natural altered-room and altered-equipment portability evidence
+  - formally scores record 046 against the registered four-day window
+  - records record 046 as not supported through autonomic re-compression
+  - preserves later recovery as context rather than rescoring evidence
+  - preserves record 043 as open
+  - preserves Phase 2
+  - preserves the consolidation / lock-in observation substate
+  - leaves Phase 2D undeclared
+
+- Added and activated `reports/2026-W34.md`:
+  - defines `2026-08-24` through `2026-08-30` as the active observation window
+  - returns to ordinary B1 + Load Integration continuity
+  - creates no new threshold-based autonomic prediction
+  - preserves record 046 as historical and closed
+  - prohibits Week 34 evidence from retrospectively rescuing record 046
+  - preserves record 043 as the sole open model-error record
+  - preserves Phase 2D as undeclared
+
+- Updated `LATEST.md`:
+  - advances active state from W33 to W34
+  - records W33 as closed
+  - advances canonical sleep through `2026-08-23`
+  - records 196 continuous canonical sleep rows
+  - reduces the open model-error set to record `043`
+  - records record `046` as closed / `failed_autonomic_recompression`
+  - records Week 33 natural portability evidence
+  - preserves the August physical collection as complete
+  - preserves pending TruDiagnostic provider results
+  - preserves current primary concordance values
+  - preserves Phase 2D as undeclared
+
+- Updated `INDEX.md`:
+  - advances current weekly navigation to W34
+  - records W33 as the most recent closed report
+  - advances canonical sleep through `2026-08-23`
+  - reduces the open prediction set to record `043`
+  - records record `046` as closed
+  - updates the prediction and verification navigation layers
+  - reclassifies `open_prediction_evaluation_plan_046.md` as a completed preserved preregistration artifact
+  - preserves current primary UDI/concordance values because record 046 is secondary
+  - preserves Phase 2D as undeclared
+
+- Updated `README.md`:
+  - advances current weekly state to W34
+  - records W33 as closed
+  - advances canonical sleep coverage through `2026-08-23`
+  - reduces the open model-error set to record `043`
+  - records 046 as closed / not supported
+  - exposes its formal `failed_autonomic_recompression` outcome
+  - relabels the 046 evaluation plan as completed preregistration provenance
+  - records Week 33 portability evidence
+  - preserves record 043's pending primary-domain boundary
+  - preserves current primary calibration summaries
+  - leaves formal Phase 2D undeclared
+
 #### August 23 registration-provenance hardening
 
 - Updated `data/model_error/model_error_gap_v1.csv` to restore the original registration provenance of Model Error 045.
@@ -2491,20 +2980,19 @@ The source-workbook narrative discrepancy remains documented rather than silentl
 - Current weekly-report state:
 
   ```text
-  2026-W32:
+  2026-W33:
   closed
 
-  2026-W33:
+  2026-W34:
   active
   ```
-
-- W33 remains active until the complete `2026-08-23` evidence set is available for retrospective closeout.
 
 - Current canonical sleep state:
 
   ```text
-  Continuous through 2026-08-16
-  189 daily rows
+  Continuous through 2026-08-23
+
+  196 daily rows
   ```
 
 - Current open prediction state:
@@ -2512,9 +3000,7 @@ The source-workbook narrative discrepancy remains documented rather than silentl
   ```text
   Model Error 043:
   open / unscored
-
-  Model Error 046:
-  open / unscored
+  pending primary TruDiagnostic provider results
   ```
 
 - Current recent closed prediction state:
@@ -2535,41 +3021,11 @@ The source-workbook narrative discrepancy remains documented rather than silentl
 
   Model Error 045:
   closed / supported
-  ```
 
-- Current prediction-governance state:
-
-  ```text
-  Records 041–044 preregistration artifact:
-  preserved unchanged
-
-  Record 041:
-  closed / supported
-
-  Record 042:
-  closed / not supported — continued adaptation
-
-  Record 043:
-  open / pending primary TruDiagnostic provider results
-
-  Record 044:
-  closed / not supported — narrow snapshot-directed governance deviation
-
-  Record 045:
-  registered 2026-08-12
-  calibration_state = pre
-  original prospective Prediction narrative preserved
-  scoring window 2026-08-13 through 2026-08-16
-  closed / supported
-  original preregistered plan retained for provenance
-
-  Record 046:
-  registered 2026-08-17
-  calibration_state = pre
-  registration context 2026-08-17
-  descriptive unload / re-entry 2026-08-18 through 2026-08-19
-  primary scoring window 2026-08-20 through 2026-08-23
-  open / unscored
+  Model Error 046:
+  closed / not supported
+  actual = failed_autonomic_recompression
+  error direction = over
   ```
 
 - Current prediction-registration provenance state:
@@ -2607,6 +3063,8 @@ The source-workbook narrative discrepancy remains documented rather than silentl
   unchanged
   ```
 
+- Record 046 is secondary and therefore does not modify the primary UDI or concordance layers.
+
 - Current August collection-governance state:
 
   ```text
@@ -2617,8 +3075,8 @@ The source-workbook narrative discrepancy remains documented rather than silentl
   formally adjudicated
 
   Record 043:
-  remains governed by the original plan
-  pending primary TruDiagnostic evidence
+  open
+  pending primary TruDiagnostic provider results
 
   August collection plan:
   committed before outcome access
@@ -2626,11 +3084,12 @@ The source-workbook narrative discrepancy remains documented rather than silentl
 
   Record 045:
   completed under its independent preregistered boundary
-  registration provenance restored and protected
+  registration provenance preserved
 
   Record 046:
-  separately preregistered before its primary scoring window
-  remains open until complete scoring-window evidence is available
+  completed under its independent preregistered boundary
+  registration provenance preserved
+  closed / failed_autonomic_recompression
 
   2026-08-16:
   B1 completed
@@ -2648,7 +3107,7 @@ The source-workbook narrative discrepancy remains documented rather than silentl
   physical collection window complete
 
   2026-08-19:
-  planned return to normal B1 + Load Integration
+  normal B1 + Load Integration resumed
 
   Physical source artifacts:
   archived
@@ -2658,30 +3117,11 @@ The source-workbook narrative discrepancy remains documented rather than silentl
   TruDiagnostic provider results:
   pending
 
-  August interpretation:
+  Complete August molecular interpretation:
   incomplete
 
   Underlying physical architecture:
   unchanged
-  ```
-
-- Current August physical artifact-layer validation state:
-
-  ```text
-  Errors:
-  0
-
-  Governed warnings:
-  2
-
-  Registered artifact entries:
-  33 across 11 checksum manifests
-
-  Registered artifact checksums:
-  PASS
-
-  Result:
-  PASS
   ```
 
 - Current validator governance model:
@@ -2691,13 +3131,13 @@ The source-workbook narrative discrepancy remains documented rather than silentl
 
   Protected open / unscored:
   043
-  046
 
   Protected closed / adjudicated:
   041
   042
   044
   045
+  046
 
   Protected registration provenance:
   041–046
@@ -2715,345 +3155,165 @@ The source-workbook narrative discrepancy remains documented rather than silentl
   deferred
   ```
 
-- The validator protects selected closed-record outcome state from accidental drift.
+- The validator protects selected closed-record outcomes from accidental drift.
 
-- The validator now also protects prospective registration provenance from accidental drift.
+- The validator also protects prospective registration provenance from accidental drift.
 
-- It does not independently adjudicate whether the registered prediction outcomes were scientifically correct.
+- It does not independently adjudicate whether prediction outcomes were scientifically correct.
 
-- The `2026-08-23` catch-up audit identified the record 045 provenance defect despite the pre-repair repository mechanically passing.
+- Existing governed validator warnings remain limited to the documented canonical-sleep issues.
 
-- This reinforces the repository distinction:
+- Those warnings do not authorize automatic correction and do not make the repository mechanically invalid.
 
-  ```text
-  mechanical validation
-  +
-  human semantic audit
-  ```
+- The committed August 24 state is intended to be the state subjected to the final read-only repository verification pass.
 
-- The narrow record 045 remediation has been incorporated into the current change set.
+- A successful read-only verification of this unchanged committed state does **not** itself require another changelog entry or repository commit.
 
-- Final fresh-ZIP verification of the complete August 23 remediation batch remains pending until the changelog commit is complete.
+- A later repository modification would require its own normal documentation only if verification identifies an issue that actually requires a source or repository change.
 
-- W33 closeout and Model Error 046 scoring remain deferred until the complete August 23 evidence set is collected.
-
-- Completed final fresh-package verification for the August 17 repository update:
+- This preserves the distinction:
 
   ```text
-  Package:
-  daniel-longitudinal-public-main (2).zip
-
-  Package size:
-  35,936,521 bytes
-
-  SHA-256:
-  9d3318e6c7150b0392faa8963252288ad44d75e4c6309beb6ef30cf3712b4792
+  repository change
+  ≠
+  verification of an unchanged repository state
   ```
-
-- Fresh-ZIP validator result:
-
-  ```text
-  Errors:
-  0
-
-  Governed warnings:
-  2
-
-  Passes:
-  10
-
-  Result:
-  PASS
-  ```
-
-- Fresh-ZIP validation confirms the historical August 17 state:
-
-  ```text
-  ZIP safety:
-  PASS
-
-  Repository files:
-  183
-
-  Zero-byte files:
-  0
-
-  Markdown files:
-  130
-
-  Internal Markdown references:
-  773
-
-  CSV files:
-  11
-
-  Registered checksum entries:
-  29 of 29 PASS
-
-  Canonical sleep:
-  189 continuous rows
-  2026-02-09 through 2026-08-16
-
-  Weekly reports:
-  28 continuous reports
-  W06 through W33
-
-  Active report:
-  2026-W33.md
-
-  Model-error records:
-  34 continuous records
-  013 through 046
-
-  Record 045:
-  closed / scored
-
-  Records 041–044 and 046:
-  open / unscored at the August 17 verification point
-
-  Release metadata:
-  aligned
-
-  RingConn source-export preservation:
-  PASS
-  ```
-
-- The preceding fresh-package verification is retained as a point-in-time record of the August 17 repository state.
-
-- Its `29 of 29` checksum count and records 041–044 open state are historical and are not rewritten after the August 18 artifact and prediction-closure changes.
-
-- Independent extracted-directory validation also completed for the August 17 repository update:
-
-  ```text
-  Errors:
-  0
-
-  Governed warnings:
-  2
-
-  Passes:
-  9
-
-  Result:
-  PASS
-  ```
-
-- The extracted-directory result independently confirmed the historical August 17 state:
-  - required repository structure was present
-  - 183 files were present
-  - no zero-byte files were present
-  - all 130 Markdown files passed target, anchor, and fence checks
-  - all 11 CSV files parsed with consistent row widths
-  - all 29 then-registered artifact checksums passed
-  - canonical sleep was continuous through `2026-08-16`
-  - weekly-report continuity extended through active `2026-W33`
-  - model-error continuity extended through record 046
-  - record 045 remained closed/scored
-  - records 041–044 and 046 remained open/unscored at that point
-  - release metadata remained aligned
-  - RingConn source bytes, CRLF line endings, provider headers, and row counts remained preserved
-
-- Final file-level comparison against the repository state that preceded the August 17 update confirmed:
-
-  ```text
-  Baseline files:
-  181
-
-  Updated files:
-  183
-
-  Added:
-  2
-
-  Changed:
-  10
-
-  Removed:
-  0
-  ```
-
-- Added files:
-
-  ```text
-  methodology/open_prediction_evaluation_plan_046.md
-  reports/2026-W33.md
-  ```
-
-- Changed files:
-
-  ```text
-  CHANGELOG.md
-  INDEX.md
-  LATEST.md
-  README.md
-  VERIFICATION.md
-  data/model_error/model_error_gap_v1.csv
-  data/sleep_longitudinal_v1.csv
-  methodology/README.md
-  reports/2026-W32.md
-  tools/validate_repository.py
-  ```
-
-- No unintended file additions, removals, or material changes were identified in the August 17 verification package.
-
-- Current governed validator warnings remain limited to:
-  - canonical sleep-stage differences on `2026-03-31` and `2026-04-02`
-  - DQ-001 awake-minute / awakening-count duplication on 14 historical dates
-
-- These warnings:
-  - were present before the August 17 update
-  - remained present after August physical-artifact integration
-  - do not authorize automatic correction
-  - do not make the repository mechanically invalid
-  - remain subject to their existing source-reconciliation rules
-
-- The August 17 substantive repository update remains mechanically closed as:
-
-  ```text
-  PASS
-  ```
-
-- The August 18 physical-artifact layer separately passed local repository validation.
-
-- The August 18 model-error closure and documentation batch has been incorporated into the current repository state.
-
-- The August 23 catch-up audit and provenance-remediation batch now supersedes the prior pending verification posture for the next integrity checkpoint.
-
-- Final fresh-package verification for the complete August 23 provenance-remediation batch remains pending after the current changelog commit.
 
 ---
 
 ### Release status
 
-- No release-version increment was made for:
-  - privacy remediation
-  - source-export preservation
-  - documentation alignment
-  - audit disposition
-  - phase-hierarchy alignment
-  - terminology expansion
-  - local validator addition
-  - verification-guide expansion
-  - versioning-policy clarification
-  - August collection-plan preregistration
-  - July 29 Wednesday audit
-  - W29 aquatic-accounting clarification
-  - W30 governance alignment
-  - methodology-directory guide expansion
-  - navigation and discoverability improvements
-  - W31 retrospective closeout
-  - W32 observation-window initialization
-  - W31 canonical sleep append through `2026-08-09`
-  - `LATEST.md` advancement from W31 to W32
-  - `INDEX.md` advancement through W32 and sleep coverage through `2026-08-09`
-  - preservation of the W31 autonomic-performance divergence as an observational question without retrospective prediction registration
-  - prospective Model Error 045 registration
-  - record 045 evaluation-plan preregistration
-  - validator protection expansion through record 045
-  - August 12 Wednesday audit
-  - August 12 current-state and navigation alignment
-  - August 12 post-change verification closure
-  - W32 retrospective closeout
-  - W33 observation-window initialization
-  - W32 canonical sleep append through `2026-08-16`
-  - Model Error 045 scoring and closure
-  - Model Error 046 prospective registration
-  - record 046 evaluation-plan preregistration
-  - validator governance update for 045 and 046
-  - verification-guide alignment for 045 and 046
-  - methodology-directory alignment for 045 and 046
-  - `LATEST.md` advancement from W32 to W33
-  - `INDEX.md` advancement through W33
-  - `README.md` current-state alignment
-  - August 17 governance and navigation alignment
-  - August 17 final fresh-package verification closure
-  - August 18 VO₂ source-artifact ingestion
-  - August 18 Bod Pod public-artifact privacy finalization
-  - August physical checksum-manifest completion
-  - August physical artifact-layer validation
-  - August collection-plan execution logging
-  - August temporal epoch creation
-  - `EPOCH_INDEX.md` advancement through August 2026
-  - `SNAPSHOT_LOG.md` advancement through August 2026
-  - `LATEST.md` advancement through physical snapshot completion
-  - W33 evidence-centered report compression
-  - August 18 snapshot collection and documentation alignment
-  - Model Error 041 formal adjudication and closure
-  - Model Error 042 formal adjudication and closure
-  - Model Error 044 formal adjudication and closure
-  - primary state and trajectory concordance updates
-  - validator protection transition from open 041–044 to closed 041/042/044
-  - `LATEST.md` alignment with the 041/042/044 closure set
-  - `reports/2026-W33.md` alignment with the 041/042/044 closure set
-  - `README.md` alignment with the August model-error closure state
-  - `INDEX.md` alignment with the August model-error closure state
-  - `methodology/README.md` alignment with partially resolved 041–044 preregistration state
-  - `VERIFICATION.md` alignment with the updated open and closed validator-protection sets
-  - current `CHANGELOG.md` closure-state reconciliation
-  - August 23 catch-up audit
-  - Model Error 045 registration-provenance restoration
-  - restoration of the original record 045 registered prediction narrative
-  - validator protection of `calibration_state=pre` for records 041–046
-  - validator protection of original registered prediction narratives for records 041–046
-  - verification-guide prediction-provenance alignment
-  - August 23 changelog provenance-remediation alignment
+- No release-version increment was made for the August 24 Week 33 closeout and governance-alignment batch.
+
+- This batch includes:
+  - canonical sleep extension through `2026-08-23`
+  - Week 33 retrospective closeout
+  - Model Error 046 adjudication
+  - record 046 model-error ledger closure
+  - validator transition authorization
+  - validator hard-protection of the closed 046 state
+  - verification-guide alignment
+  - Week 34 initialization
+  - `LATEST.md` advancement through Week 33
+  - `INDEX.md` advancement through Week 33
+  - `README.md` advancement through Week 33
+  - current changelog reconciliation
 
 - Current release metadata remains:
-  - version: `1.0.0`
-  - release date: `2026-06-23`
-  - DOI: `10.5281/zenodo.20815612`
+
+  ```text
+  version:
+  1.0.0
+
+  release date:
+  2026-06-23
+
+  DOI:
+  10.5281/zenodo.20815612
+  ```
 
 - Record 041 is:
-  - closed
-  - supported
-  - prospectively registered with `calibration_state=pre`
-  - preserved under its original prediction wording
-  - not interpreted as evidence of costless or unlimited recovery capacity
+
+  ```text
+  closed
+  supported
+  calibration_state = pre
+  ```
 
 - Record 042 is:
-  - closed
-  - not supported
-  - prospectively registered with `calibration_state=pre`
-  - observed as `continued_adaptation`
-  - classified as an under-direction model miss
-  - not independently sufficient for a Phase 2D declaration
+
+  ```text
+  closed
+  not supported
+  actual = continued_adaptation
+  error direction = under
+  calibration_state = pre
+  ```
 
 - Record 043 remains:
-  - open
-  - unscored
-  - prospectively registered with `calibration_state=pre`
-  - dependent on the pending TruDiagnostic provider-result domain
-  - protected from substitution by supplemental August physical measurements
+
+  ```text
+  open
+  unscored
+  calibration_state = pre
+  pending primary TruDiagnostic provider results
+  ```
 
 - Record 044 is:
-  - closed
-  - not supported
-  - prospectively registered with `calibration_state=pre`
-  - classified as a narrow snapshot-directed governance deviation
-  - not interpreted as proof of biological harm or broad protocol failure
+
+  ```text
+  closed
+  not supported
+  narrow snapshot-directed governance deviation
+  error direction = under
+  calibration_state = pre
+  ```
 
 - Record 045 is:
-  - closed
-  - supported
-  - prospectively registered with `calibration_state=pre`
-  - preserved under its original prospective scoring boundary
-  - original registered prediction narrative restored and protected
-  - closure narrative retained after the registered prediction
-  - excluded from later unload/reload evidence
 
-- Record 046 remains:
-  - open
-  - unscored
-  - secondary
-  - prospectively registered with `calibration_state=pre`
-  - prospectively bounded to its registered unload/reload evidence windows
-  - not eligible for scoring until the complete August 23 scoring-window evidence is available
+  ```text
+  closed
+  supported
+  calibration_state = pre
+  original prospective prediction preserved
+  fixed 2026-08-13 through 2026-08-16 scoring boundary preserved
+  ```
+
+- Record 046 is:
+
+  ```text
+  closed
+  not supported
+
+  actual:
+  failed_autonomic_recompression
+
+  error direction:
+  over
+
+  calibration_state:
+  pre
+
+  primary scoring window:
+  2026-08-20 through 2026-08-23
+  ```
+
+- Record 046 four-day scoring means remain:
+
+  ```text
+  Daily HRV:
+  60.25 ms
+
+  Sleep HRV:
+  63.25 ms
+
+  Resting HR:
+  52.0 bpm
+
+  Sleeping HR:
+  54.0 bpm
+  ```
+
+- Record 046 threshold result remains:
+
+  ```text
+  1 of 4 favorable
+  ```
+
+- Record 046 functional and protocol conditions remain:
+
+  ```text
+  Multi-session functional regression:
+  No
+
+  Recovery-driven protocol reduction:
+  No
+  ```
 
 - Current open model-error set:
 
   ```text
   043
-  046
   ```
 
 - Current recent closed model-error set:
@@ -3063,6 +3323,7 @@ The source-workbook narrative discrepancy remains documented rather than silentl
   042
   044
   045
+  046
   ```
 
 - The underlying protocol architecture remains:
@@ -3073,9 +3334,24 @@ The source-workbook narrative discrepancy remains documented rather than silentl
   Load Integration
   ```
 
-- The August 16–18 reduction in formal training exposure is preserved as a temporary testing-related interruption rather than a newly declared recurring protocol.
+- Current weekly archive state:
 
-- Current August snapshot status remains:
+  ```text
+  2026-W33:
+  closed
+
+  2026-W34:
+  active
+  ```
+
+- Current canonical sleep state:
+
+  ```text
+  through 2026-08-23
+  196 continuous daily rows
+  ```
+
+- Current August snapshot state:
 
   ```text
   Physical collection:
@@ -3090,23 +3366,7 @@ The source-workbook narrative discrepancy remains documented rather than silentl
   TruDiagnostic provider results:
   pending
 
-  Complete snapshot interpretation:
-  pending
-  ```
-
-- Current weekly archive state remains:
-
-  ```text
-  2026-W33:
-  active through completion of 2026-08-23 evidence collection
-
-  W33 retrospective closeout:
-  pending
-
-  August 17–23 canonical sleep append:
-  pending
-
-  Model Error 046 adjudication:
+  Complete molecular interpretation:
   pending
   ```
 
@@ -3123,6 +3383,12 @@ The source-workbook narrative discrepancy remains documented rather than silentl
   ```
 
 - Formal Phase 2D remains undeclared.
+
+- No new formal release is created by this documentation and governance batch.
+
+- Read-only verification of this committed state is an integrity check rather than a repository change.
+
+- If that verification passes without requiring repository modification, no additional changelog entry, documentation update, or commit is required solely to record the pass.
 
 ---
 
