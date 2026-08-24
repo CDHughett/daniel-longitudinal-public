@@ -59,8 +59,8 @@ The local validator reviews:
 - governed sleep-data warnings
 - weekly-report continuity
 - model-error continuity
-- protected open status of records 043 and 046
-- preserved closed/adjudicated state of records 041, 042, 044, and 045
+- protected open status of record 043
+- preserved closed/adjudicated state of records 041, 042, 044, 045, and 046
 - selected protected actual values and error directions for those closed records
 - preserved prospective registration state for records 041–046
 - preservation of the original registered prediction narrative for records 041–046
@@ -253,8 +253,8 @@ Examples:
 - all CSVs parse
 - weekly reports are continuous
 - RingConn bytes match the registered source package
-- records 043 and 046 retain their protected open/unscored state
-- records 041, 042, 044, and 045 retain their protected closed/adjudicated state
+- record 043 retains its protected open/unscored state
+- records 041, 042, 044, 045, and 046 retain their protected closed/adjudicated states
 - protected closed-record actual values and error directions remain unchanged
 - records 041–046 retain `calibration_state=pre`
 - records 041–046 retain their original registered prediction narratives at the beginning of `notes`
@@ -497,19 +497,19 @@ The validator checks:
 - duplicate IDs
 - sequence continuity
 - continuity through record 046
-- presence of protected open records 043 and 046
-- open status of records 043 and 046
-- preservation of their registered predictions
-- blank protected actual and error fields for records 043 and 046
-- presence of protected closed records 041, 042, 044, and 045
-- closed status of records 041, 042, 044, and 045
+- presence of protected open record 043
+- open status of record 043
+- preservation of its registered prediction
+- blank protected actual and error fields for record 043
+- presence of protected closed records 041, 042, 044, 045, and 046
+- closed status of records 041, 042, 044, 045, and 046
 - preservation of their registered predictions
 - preservation of their adjudicated actual values
 - preservation of their recorded error directions
 - preservation of `calibration_state=pre` for records 041–046
 - preservation of the exact original registered prediction narrative for records 041–046
 
-The validator now treats prediction-registration provenance as distinct from prediction lifecycle.
+The validator treats prediction-registration provenance as distinct from prediction lifecycle.
 
 ---
 
@@ -570,7 +570,7 @@ as registration-provenance drift and returns an error.
 
 ## Registered Prediction-Narrative Protection
 
-For records 041–046, the validator also contains the preserved original prospective `Prediction:` narrative.
+For records 041–046, the validator contains the preserved original prospective `Prediction:` narrative.
 
 The `notes` field must begin with that registered narrative.
 
@@ -621,16 +621,15 @@ The currently protected open-record set is explicitly defined as:
 
 ```text
 043
-046
 ```
 
-These records are protected explicitly rather than inferred dynamically from whatever rows currently contain `status=open`.
+This record is protected explicitly rather than inferred dynamically from whatever rows currently contain `status=open`.
 
-This preserves the governance check even if one of the protected records is accidentally changed from `open` to another state.
+That preserves the governance check even if the protected row is accidentally changed from `open` to another state.
 
-Their outcome fields must remain blank until their applicable prospective evidence boundaries are complete and retrospective scoring is authorized.
+Its outcome fields must remain blank until the applicable prospective evidence boundary is complete and retrospective scoring is authorized.
 
-For those records, the validator protects:
+For record 043, the validator protects:
 
 - presence
 - open status
@@ -653,6 +652,7 @@ The currently protected closed-record set is:
 042
 044
 045
+046
 ```
 
 The validator protects the following adjudicated state:
@@ -673,11 +673,15 @@ error_direction = under
 045
 actual_value = partial_reconvergence
 error_direction = none
+
+046
+actual_value = failed_autonomic_recompression
+error_direction = over
 ```
 
 The validator therefore protects more than closure status.
 
-It also detects accidental drift in the selected committed outcome fields.
+It also detects accidental drift in selected committed outcome fields.
 
 For these records it additionally requires:
 
@@ -786,23 +790,27 @@ post
 
 and the original prediction narrative had been replaced by closure text.
 
-The repair restores registration provenance only.
+The repair restored registration provenance only.
 
-It does not alter record 045's supported outcome.
+It did not alter record 045's supported outcome.
 
 ---
 
 ## Record 046 Evaluation Boundary
 
-For record 046, the validator protects the open/unscored prospective state.
+Record 046 was prospectively registered on:
 
-Record 046 remains governed by:
+```text
+2026-08-17
+```
+
+under:
 
 ```text
 methodology/open_prediction_evaluation_plan_046.md
 ```
 
-Its evidence structure is:
+Its evidence structure was fixed as:
 
 ```text
 2026-08-17:
@@ -815,19 +823,98 @@ descriptive unload / re-entry kinetics
 primary scoring window
 ```
 
-Record 046 outcome and error fields must remain blank until that prospective boundary is complete and retrospective scoring is authorized.
+The scoring window is complete.
 
-Record 046 must also retain:
+The registered four-day favorable thresholds were:
+
+```text
+daily HRV >= 59.7 ms
+sleep HRV >= 65.3 ms
+resting HR <= 49.2 bpm
+sleeping HR <= 53.7 bpm
+```
+
+The repository records the following four-day means:
+
+```text
+daily HRV:
+60.25 ms
+favorable
+
+sleep HRV:
+63.25 ms
+unfavorable
+
+resting HR:
+52.0 bpm
+unfavorable
+
+sleeping HR:
+54.0 bpm
+unfavorable
+```
+
+Threshold result:
+
+```text
+1 of 4 favorable
+```
+
+The registered support requirement was:
+
+```text
+at least 3 of 4 favorable thresholds
+
+AND
+
+no multi-session functional regression
+
+AND
+
+no recovery-driven protocol reduction after normal training resumed
+```
+
+The latter two conditions were satisfied.
+
+The quantitative autonomic condition was not.
+
+Record 046 is therefore preserved as:
+
+```text
+status = closed
+actual_value = failed_autonomic_recompression
+error_direction = over
+```
+
+The qualitative error direction is `over` because the model overestimated persistence of the favorable record 045 autonomic state through the immediate post-testing reload interval.
+
+The validator protects this committed state.
+
+It does not:
+
+- recalculate the August 20–23 means
+- independently determine whether 1 of 4 thresholds was favorable
+- reinterpret the post-VO₂ disturbance
+- determine whether later autonomic rebound should alter the score
+- reopen record 046
+- extend its evidence window
+- substitute Week 34 evidence
+- rescore record 045
+- score DEXA, VO₂-max, Bod Pod, TruDiagnostic, or other biological outcomes
+
+Late-window improvement remains part of retrospective interpretation.
+
+It does not change the fixed-window outcome.
+
+Record 046 remains historically prospectively registered and therefore must retain:
 
 ```text
 calibration_state = pre
 ```
 
-and its original registered prediction narrative.
+and the original registered `Prediction:` narrative at the beginning of `notes`.
 
-Record 046 does not reopen or extend records 041, 042, 044, or 045.
-
-The validator's role across the model-error layer is narrow:
+The validator's role across the model-error layer remains narrow:
 
 ```text
 protect committed governance state
@@ -1140,7 +1227,7 @@ For a routine local verification cycle:
 6. verify that protected prediction and phase boundaries remain intact
 7. verify that preregistered prediction records retain their original registration state and prediction narrative
 8. verify that scored predictions remain frozen after their registered outcome boundaries
-9. confirm that records 043 and 046 remain unscored until their respective evidence boundaries close
+9. verify that record 043 remains unscored until its required primary evidence arrives
 10. download and validate a fresh GitHub ZIP after material changes
 11. record a formal audit only when the scheduled audit cadence or a material event requires it
 
@@ -1164,6 +1251,7 @@ The validator cannot fully evaluate:
 - whether record 042 satisfied its qualitative-transition threshold
 - whether the record 044 deviation was correctly classified
 - whether the record 044 deviation materially affected a measured biological result
+- whether record 046 was substantively adjudicated correctly
 - whether a protocol deviation belongs to one governance category or another
 - whether a phase declaration is justified
 - whether a screenshot contains unexpected private information
@@ -1211,6 +1299,7 @@ Local read-only validation remains the current operating model.
 - Closure language may be appended but must not replace the registered prediction.
 - Closed prediction records may additionally protect selected adjudicated outcome fields.
 - Closing a prediction after its registered outcome boundary does not authorize extending that prediction with later evidence.
+- Later favorable evidence does not retrospectively rescue a failed fixed-window prediction.
 - A governance miss does not automatically establish a biological effect.
 - Interpretation belongs in reports, datasets, model-error evaluation, and designated synthesis layers.
 
@@ -1265,7 +1354,6 @@ The 2026-08-17 update:
 - required record 046 to retain its registered prediction
 - required record 046 actual and error fields to remain blank before scoring
 - extended model-error continuity validation through record 046
-- preserved records 041–044 as open and unscored at that time
 - preserved the separation between record 045 closure and the later autonomic unload/reload question
 - did not reopen or extend record 045
 - did not alter any biological value, phase declaration, release metadata, checksum, or previously registered scoring rule
@@ -1274,59 +1362,59 @@ On 2026-08-18, the model-error validation boundary was aligned after formal adju
 
 The 2026-08-18 update:
 
-- removes records 041, 042, and 044 from the protected open-record set
-- reduces the protected open-record set to records 043 and 046
-- requires records 043 and 046 to remain open and unscored
-- requires their protected actual and error fields to remain blank
-- adds records 041, 042, and 044 to the protected closed-record set alongside record 045
-- requires records 041, 042, 044, and 045 to remain closed
-- protects record 041 actual value `stable` and error direction `none`
-- protects record 042 actual value `continued_adaptation` and error direction `under`
-- protects record 044 actual value `0` and error direction `under`
-- protects record 045 actual value `partial_reconvergence` and error direction `none`
-- records 041 as closed and supported
-- records 042 as closed and not supported through continued adaptation
-- records 044 as closed and not supported through a narrow snapshot-directed governance deviation
-- preserves record 045 as closed and supported
-- preserves record 043 as open pending TruDiagnostic provider results
-- preserves record 046 as open through its fixed prospective evidence window
-- does not independently recompute or adjudicate any of those outcomes
-- preserves the original `open_prediction_evaluation_plan_041_044.md` artifact unchanged
-- preserves the record 045 and 046 preregistration artifacts unchanged
-- records the August physical source-artifact layer as complete and checksum-governed
-- preserves the distinction between artifact verification and Model Error 043 biological interpretation
-- leaves Phase 2 and the consolidation / lock-in observation substate unchanged
-- leaves formal Phase 2D undeclared
+- removed records 041, 042, and 044 from the protected open-record set
+- reduced the protected open-record set to records 043 and 046
+- required records 043 and 046 to remain open and unscored
+- required their protected actual and error fields to remain blank
+- added records 041, 042, and 044 to the protected closed-record set alongside record 045
+- required records 041, 042, 044, and 045 to remain closed
+- protected record 041 actual value `stable` and error direction `none`
+- protected record 042 actual value `continued_adaptation` and error direction `under`
+- protected record 044 actual value `0` and error direction `under`
+- protected record 045 actual value `partial_reconvergence` and error direction `none`
+- recorded 041 as closed and supported
+- recorded 042 as closed and not supported through continued adaptation
+- recorded 044 as closed and not supported through a narrow snapshot-directed governance deviation
+- preserved record 045 as closed and supported
+- preserved record 043 as open pending TruDiagnostic provider results
+- preserved record 046 as open through its fixed prospective evidence window
+- did not independently recompute or adjudicate any of those outcomes
+- preserved the original `open_prediction_evaluation_plan_041_044.md` artifact unchanged
+- preserved the record 045 and 046 preregistration artifacts unchanged
+- recorded the August physical source-artifact layer as complete and checksum-governed
+- preserved the distinction between artifact verification and Model Error 043 biological interpretation
+- left Phase 2 and the consolidation / lock-in observation substate unchanged
+- left formal Phase 2D undeclared
 
 On 2026-08-23, the verification boundary was hardened after the catch-up audit identified a narrow registration-provenance defect in record 045.
 
 The 2026-08-23 update:
 
-- records that prospectively registered Model Error records retain their registration-state provenance after adjudication
-- explicitly protects `calibration_state=pre` for records 041–046
-- treats `calibration_state` as registration metadata rather than a prediction-lifecycle field
-- prevents a closed prospective prediction from being changed from `pre` to `post`
-- protects the original registered `Prediction:` narrative for records 041–046
-- requires each protected `notes` field to begin with its preserved prospective prediction narrative
-- permits later closure language to be appended after the original prediction
-- prevents closure language from replacing the registered prediction narrative
-- documents the source-backed restoration of record 045 from `calibration_state=post` to `calibration_state=pre`
-- documents restoration of record 045's original registered prediction narrative before its existing closure narrative
-- leaves the record 045 supported outcome unchanged
-- leaves its actual value, error direction, scoring window, thresholds, and calculated four-day means unchanged
-- leaves records 041–044 unchanged
-- leaves record 043 open pending its primary provider result
-- leaves record 046 open and unscored while its prospective window remains active
-- does not independently score or rescore any model-error record
-- introduces no biological-value correction
-- introduces no canonical sleep correction
-- introduces no protocol modification
-- introduces no phase declaration
-- introduces no release increment
+- recorded that prospectively registered Model Error records retain their registration-state provenance after adjudication
+- explicitly protected `calibration_state=pre` for records 041–046
+- treated `calibration_state` as registration metadata rather than a prediction-lifecycle field
+- prevented a closed prospective prediction from being changed from `pre` to `post`
+- protected the original registered `Prediction:` narrative for records 041–046
+- required each protected `notes` field to begin with its preserved prospective prediction narrative
+- permitted later closure language to be appended after the original prediction
+- prevented closure language from replacing the registered prediction narrative
+- documented the source-backed restoration of record 045 from `calibration_state=post` to `calibration_state=pre`
+- documented restoration of record 045's original registered prediction narrative before its existing closure narrative
+- left the record 045 supported outcome unchanged
+- left its actual value, error direction, scoring window, thresholds, and calculated four-day means unchanged
+- left records 041–044 unchanged
+- left record 043 open pending its primary provider result
+- left record 046 open and unscored while its prospective window remained active
+- did not independently score or rescore any model-error record
+- introduced no biological-value correction
+- introduced no canonical sleep correction
+- introduced no protocol modification
+- introduced no phase declaration
+- introduced no release increment
 
 The 2026-08-23 provenance protection exists because a mechanically valid closed outcome is not sufficient if the archive loses the state in which the prediction was originally registered.
 
-The validator now protects both:
+The validator protects both:
 
 ```text
 registered prediction
@@ -1336,16 +1424,64 @@ later adjudicated outcome
 
 as distinct pieces of historical evidence.
 
-The 2026-08-23 verification-guide update does not alter:
+On 2026-08-24, the verification boundary was advanced after completion of the prospectively fixed Model Error 046 scoring window.
+
+The 2026-08-24 update:
+
+- removed record 046 from the protected open-record set
+- reduced the protected open-record set to record 043 only
+- added record 046 to the protected closed-record set
+- preserved record 046's original prospective `Prediction:` narrative
+- preserved `calibration_state=pre`
+- protected record 046 as `status=closed`
+- protected record 046 actual value as `failed_autonomic_recompression`
+- protected record 046 error direction as `over`
+- recorded the fixed 2026-08-20 through 2026-08-23 scoring window as complete
+- recorded four-day means of daily HRV 60.25 ms, sleep HRV 63.25 ms, resting HR 52.0 bpm, and sleeping HR 54.0 bpm
+- recorded that 1 of 4 autonomic thresholds was favorable
+- preserved the finding that no multi-session functional regression occurred
+- preserved the finding that normal B1 + Load Integration resumed without recovery-driven protocol reduction
+- preserved later autonomic improvement as retrospective context without allowing it to alter the fixed-window score
+- did not reopen or rescore record 045
+- did not score record 043
+- did not use DEXA, VO₂-max, Bod Pod, TruDiagnostic, or other August biological outcomes to score record 046
+- did not alter any registered threshold or evidence window
+- introduced no canonical sleep correction
+- introduced no protocol change
+- introduced no phase declaration
+- introduced no release increment
+
+The 2026-08-24 update therefore advances the protected model-error lifecycle state to:
+
+```text
+041:
+closed / supported
+
+042:
+closed / not supported — continued adaptation
+
+043:
+open / unscored
+
+044:
+closed / not supported — narrow snapshot-directed governance deviation
+
+045:
+closed / supported
+
+046:
+closed / failed_autonomic_recompression
+```
+
+The update does not alter:
 
 - any source artifact
 - any checksum
 - any biological value
 - any registered prediction value
 - any registered prediction threshold
-- any adjudicated outcome
+- any prior adjudicated outcome
 - the pending record 043 outcome
-- the prospective record 046 outcome
 - any physical protocol exposure
 - any phase declaration
 - any release metadata
