@@ -4,80 +4,66 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20815612.svg)](https://doi.org/10.5281/zenodo.20815612)
 
-This archive began as a personal health project, evolved into a longitudinal observational archive, and now documents an ongoing effort to learn from reality through repeated measurement, prediction auditing, and error correction.
+This archive began as a personal health project and evolved into a structured longitudinal observation system.
 
-This repository documents the behavior of a single human system across time under defined constraints.
+It documents the behavior of a single human system across time under defined constraints through:
 
-It contains:
+- repeated measurement
+- structured data
+- contemporaneous observation
+- retrospective interpretation
+- prospective prediction
+- model-error tracking
+- explicit governance
+- source-backed correction
+
+This repository contains:
 
 - longitudinal biomarker and sleep data
 - weekly system-state reports
-- a prediction-versus-observed-outcome review layer
-- structured methodology, governance, and constraints
-- a defined relationship between governed archive records and real-time subjective telemetry
+- biological and performance snapshot artifacts
+- prediction-versus-observed-outcome records
+- methodology and governance documentation
+- archive-integrity and verification tooling
+
+This is a single-subject archive.
+
+It is not a clinical trial, coaching product, or generalized intervention protocol.
 
 ---
 
-## DOI and Versioning Note
+## DOI and Versioning
 
 The Zenodo DOI points to the archived `v1.0.0` release snapshot.
 
-The `main` branch may include post-publication documentation updates, including DOI badges, citation text, metadata cleanup, methodology refinement, navigation improvements, new prospective prediction records, retrospective closeouts, and later snapshot artifacts.
+The `main` branch may contain later documentation, data, methodology, prediction, report, and snapshot updates that have not yet been incorporated into a new Zenodo release.
 
-For citation, use the Zenodo DOI-linked release record:
+For citation, use:
 
 Hughett, C. D. (2026). *Daniel Longitudinal Study (v1.0.0)* [Data set]. Zenodo. https://doi.org/10.5281/zenodo.20815612
+
+See:
+
+- [`VERSIONING.md`](./VERSIONING.md)
+- [`CITATION.cff`](./CITATION.cff)
 
 ---
 
 ## First 5 Minutes
 
-If this is your first visit, read in this order:
+If this is your first visit, read:
 
-1. [`docs/START_HERE.md`](./docs/START_HERE.md) — 5-minute orientation
-2. [`LATEST.md`](./LATEST.md) — current system state
+1. [`docs/START_HERE.md`](./docs/START_HERE.md) — first-contact orientation
+2. [`LATEST.md`](./LATEST.md) — current executive system state
 3. [`docs/OBSERVER_QUICKSTART.md`](./docs/OBSERVER_QUICKSTART.md) — compact technical inspection route
-4. [`docs/FOR_OBSERVERS.md`](./docs/FOR_OBSERVERS.md) — broader observer evaluation path
-5. [`data/DATA_COVERAGE.md`](./data/DATA_COVERAGE.md) — what data is and is not included
-6. [`docs/CONCEPTS.md`](./docs/CONCEPTS.md) — recurring terms
+4. [`data/DATA_COVERAGE.md`](./data/DATA_COVERAGE.md) — what is and is not publicly structured
+5. [`docs/CONCEPTS.md`](./docs/CONCEPTS.md) — recurring archive terminology
 
-This path is enough to understand what the archive is, what it claims, what it does not claim, and where the evidence lives.
+For a deeper review:
 
-Use these based on depth:
-
-- [`docs/START_HERE.md`](./docs/START_HERE.md) — first 5 minutes
-- [`docs/OBSERVER_QUICKSTART.md`](./docs/OBSERVER_QUICKSTART.md) — compact technical inspection route
-- [`docs/NEWCOMER_PATH.md`](./docs/NEWCOMER_PATH.md) — first full reading pass
-- [`INDEX.md`](./INDEX.md) — complete repository map
-
----
-
-## What Makes This Different
-
-This is not a blog, protocol, intervention program, or theory thread.
-
-Everything preserved here is intended to be:
-
-- measured or contemporaneously observed
-- logged
-- versioned
-- auditable
-
-Biological interpretation remains retrospective and artifact-bound.
-
-Forward predictions are permitted only when they are:
-
-- explicitly registered in the model-error layer
-- stated before the relevant outcome is known
-- time-bounded
-- preserved without hindsight revision
-- evaluated against observed outcomes after their windows close
-
-Predictions are calibration instruments, not claims of certainty.
-
-A completed prediction remains preserved after scoring.
-
-A later related question should receive a new prospective record rather than silently extending or reopening the earlier one.
+- [`docs/FOR_OBSERVERS.md`](./docs/FOR_OBSERVERS.md)
+- [`docs/NEWCOMER_PATH.md`](./docs/NEWCOMER_PATH.md)
+- [`INDEX.md`](./INDEX.md)
 
 ---
 
@@ -85,9 +71,7 @@ A later related question should receive a new prospective record rather than sil
 
 → [`LATEST.md`](./LATEST.md)
 
-This is the fastest way to understand the system's current observed state.
-
-Current archive posture includes:
+Current archive posture:
 
 ```text
 Phase:
@@ -97,19 +81,25 @@ Operating substate:
 Consolidation / lock-in observation
 
 Active weekly window:
+2026-W34
+
+Most recent closed window:
 2026-W33
+
+Canonical sleep:
+current through 2026-08-23
+
+Current open model-error record:
+043
 
 Recently closed model-error records:
 041 — supported
 042 — not supported / continued adaptation
 044 — not supported / narrow governance deviation
 045 — supported
+046 — not supported / failed_autonomic_recompression
 
-Current open model-error records:
-043
-046
-
-August physical snapshot collection:
+August physical snapshot:
 complete
 
 August TruDiagnostic provider results:
@@ -119,513 +109,179 @@ Formal Phase 2D declaration:
 None
 ```
 
-Record 041 closed with the registered recovery-capacity prediction supported.
-
-Record 042 closed against the model: continued adaptation exceeded the predicted ambient-execution plateau.
-
-Record 044 closed against the model after a testing-directed pre-snapshot Load Integration omission violated the separately registered snapshot-governance boundary.
-
-Record 045 remains closed and supported.
-
-Record 043 remains open pending the primary TruDiagnostic provider-result domain.
-
-Record 046 remains prospectively open through its fixed unload/reload scoring window.
-
----
-
-## How to Evaluate This Archive
-
-Use `/snapshots` for primary evidence.  
-Use `/reports` for retrospective interpretation.  
-Use `/data` for structured longitudinal datasets.  
-Use `/data/model_error` for prediction-versus-observed-outcome review.  
-Use `/methodology` and `/docs/methodology` for evaluation and governance rules.
-
-For a compact inspection route, see [`docs/OBSERVER_QUICKSTART.md`](./docs/OBSERVER_QUICKSTART.md).
-
-For the broader skeptical or technical review path, see [`docs/FOR_OBSERVERS.md`](./docs/FOR_OBSERVERS.md).
-
-For the preregistered evaluation rules governing records 041–044, see:
-
-[`methodology/open_prediction_evaluation_plan_041_044.md`](./methodology/open_prediction_evaluation_plan_041_044.md)
-
-Records 041, 042, and 044 have now been adjudicated.
-
-Record 043 remains open under that preregistered framework pending its required primary biological evidence.
-
-For the completed preregistered evaluation rules that governed record 045, see:
-
-[`methodology/open_prediction_evaluation_plan_045.md`](./methodology/open_prediction_evaluation_plan_045.md)
-
-For the separately registered prospective evaluation rules governing record 046, see:
-
-[`methodology/open_prediction_evaluation_plan_046.md`](./methodology/open_prediction_evaluation_plan_046.md)
-
-These records remain separate because their registration dates, evidence windows, and scoring questions differ.
-
-Record 046 does not reopen or extend record 045.
-
-Later unload/reload evidence does not reopen records 041, 042, or 044.
-
----
-
-## Start Here
-
-- [`docs/START_HERE.md`](./docs/START_HERE.md) — first-contact orientation
-- [`docs/OBSERVER_QUICKSTART.md`](./docs/OBSERVER_QUICKSTART.md) — compact technical inspection route
-- [`docs/NEWCOMER_PATH.md`](./docs/NEWCOMER_PATH.md) — extended reading path for first-time visitors
-- [`docs/CONCEPTS.md`](./docs/CONCEPTS.md) — glossary of recurring archive concepts
-- [`LATEST.md`](./LATEST.md) — current system state
-- [`snapshots`](./snapshots/) — primary artifacts and source evidence
-- [`reports`](./reports/) — structured retrospective interpretation
-- [`data`](./data/) — structured longitudinal datasets
-- [`TELEMETRY.md`](./TELEMETRY.md) — relationship between the governed archive and real-time public subjective telemetry
-
----
-
-## System Flow
+The underlying physical architecture remains:
 
 ```text
-Protocol Inputs
+B1
++
+Load Integration
+```
+
+Week 33 closed after:
+
+```text
+August testing withdrawal
++
+maximal VO₂ exposure
+→
+temporary autonomic re-compression
+→
+normal B1 + Load Integration reload
+→
+preserved function
+→
+late-week autonomic recovery
+```
+
+Record 046 failed its fixed short-window autonomic persistence criterion despite preserved reload and functional availability.
+
+Week 34 returns to ordinary continuity.
+
+Record 043 remains the only open model-error record because the primary August TruDiagnostic provider-result domain is still pending.
+
+---
+
+## What Makes This Different
+
+This archive separates evidence layers that are often blended together.
+
+```text
+Source Artifacts
       ↓
-Biological System
+Structured Data
       ↓
-Measurement Layer
-(sleep, HRV, body composition, biomarkers)
+Contemporaneous Observations
       ↓
-Dataset Layer
-(versioned tracking)
+Retrospective Reports
       ↓
-Snapshots
-(primary artifacts)
+Phase and State Interpretation
       ↓
-Reports
-(retrospective interpretation)
-      ↓
-Model-Error Layer
-(registered prediction vs. observed outcome)
+Registered Prediction Evaluation
       ↓
 Model Correction
 ```
 
----
+Each layer has a different role.
 
-## Dataset Orientation
+Higher-level interpretation should remain traceable to the evidence beneath it.
 
-This repository documents a longitudinal observation of a human performance system operating under defined constraints.
+The archive is designed to preserve disagreement as well as agreement.
 
-The archive preserves continuity across:
+Examples include:
 
-- body-composition measurements
-- training-architecture evolution
-- phase-based system progression
-- governance and constraint frameworks
-- biomarker and system-health snapshots where publicly included
-- prediction-versus-observed-outcome tracking as an auxiliary calibration layer
-- separation between governed records and informal subjective telemetry
-
-**Data scope and limitations:**  
-→ [`data/DATA_COVERAGE.md`](./data/DATA_COVERAGE.md)
-
-**Known structured-data quality questions:**  
-→ [`data/DATA_QUALITY_NOTES.md`](./data/DATA_QUALITY_NOTES.md)
-
-**Model-error layer context:**  
-→ [`data/model_error/WHAT_THIS_LAYER_IS.md`](./data/model_error/WHAT_THIS_LAYER_IS.md)
-
-**Subjective telemetry context:**  
-→ [`TELEMETRY.md`](./TELEMETRY.md)
-
-**Note:** Some biomarker data may be referenced in reports but not included in the public archive.
-
-SHA-256 verification is provided for binary snapshot artifacts where applicable.
-
----
-
-## External Observers
-
-If you are evaluating the system structure directly:
-
-→ [`docs/OBSERVER_QUICKSTART.md`](./docs/OBSERVER_QUICKSTART.md)
-
-For the broader observer review path:
-
-→ [`docs/FOR_OBSERVERS.md`](./docs/FOR_OBSERVERS.md)
+- strong function alongside less favorable recovery telemetry
+- favorable biological observations alongside prediction misses
+- broad governance discipline alongside a narrow governance failure
+- later recovery that does not retrospectively rescue a failed fixed-window prediction
 
 ---
 
 ## Archive Posture
 
-This repository is maintained as a longitudinal observational archive.
+Interpretation is intentionally constrained.
 
-Interpretation remains intentionally constrained:
+The archive follows these principles:
 
-- artifacts take precedence over language
-- observations remain provisional
-- conclusions require repeated evidence across time
+- artifacts take precedence over narrative
+- verified source evidence takes precedence over reconstruction
 - biological interpretation remains retrospective
-- registered predictions remain isolated in the model-error layer
-- prediction wording is preserved until the applicable observation window closes
-- completed predictions retain their original evidence and scoring boundaries
-- later related observations require a separate prospective record when they represent a new question
-- observations that generate predictions remain distinct from future evidence permitted to score them
-- subjective context is separated from governed archive records unless formally incorporated
-- documented protocol or collection deviations remain visible rather than being retrospectively normalized
-- prediction misses remain visible rather than being softened after outcome access
-- protocol documents describe this subject’s archive and are not generalized prescriptions
+- uncertainty remains visible
+- missing evidence is not inferred
+- protocol deviations remain documented
+- unfavorable evidence is preserved
+- closed predictions remain closed
+- incorrect predictions remain visible
+- later related questions require new prospective boundaries
+- phase transitions require retrospective evidence and governance review
 
-This archive documents one subject under defined protocol constraints and incomplete environmental control.
+A favorable result does not automatically justify progression.
 
-No claim extends beyond the recorded system without separate evidence.
+A failed prediction does not automatically imply biological deterioration.
 
----
-
-## Current Phase Context
-
-**Phase 2 — Load Integration**
-
-**Operating substate:** Consolidation / lock-in observation
-
-→ [`PHASE_MAP.md`](./PHASE_MAP.md)
-
-Phase language is retrospective and evidence-earned.
-
-Record 042 now establishes that the registered ambient-execution plateau prediction underestimated continued adaptation under the existing architecture.
-
-That is meaningful evidence of continued consolidation.
-
-It does not independently declare Phase 2D.
-
-Record 041 support likewise does not establish unlimited recovery capacity.
-
-Record 044 failure does not independently terminate the current phase or invalidate the underlying training architecture.
-
-Record 045 remains closed and supported.
-
-A supported or failed record 046 result likewise cannot independently declare or terminate a phase.
-
-Formal Phase 2D remains undeclared.
-
----
-
-## Temporal Navigation
-
-- [`EPOCH_INDEX.md`](./EPOCH_INDEX.md) — temporal index of snapshot epochs
-- [`SNAPSHOT_LOG.md`](./SNAPSHOT_LOG.md) — chronological artifact record
-- [`snapshots`](./snapshots/) — primary artifact windows
-
-Recommended flow:
-
-`LATEST.md`  
-→ `EPOCH_INDEX.md`  
-→ `SNAPSHOT_LOG.md`  
-→ `/snapshots/YYYY-MM/`
-
----
-
-## Repository Structure
-
-```text
-Root
-│
-├── snapshots/
-├── reports/
-├── dashboards/
-│
-├── data/
-│   └── model_error/
-│
-├── protocols/
-├── experiments/
-├── schemas/
-├── methodology/
-├── docs/
-│   ├── audits/
-│   └── methodology/
-│
-├── roadmap/
-│
-├── README.md
-├── INDEX.md
-├── LATEST.md
-├── TELEMETRY.md
-├── CHANGELOG.md
-```
-
-Historical or superseded protocol material may remain in the repository for provenance when its inactive status is clearly identified.
-
-Completed or partially completed preregistration artifacts may likewise remain under their original filenames when preserving the original committed artifact is preferable to renaming it after outcome access.
+A governance miss does not automatically imply biological harm.
 
 ---
 
 ## Prediction Governance
 
-The prediction layer exists to test model calibration rather than demonstrate foresight.
+The model-error layer exists to test model calibration rather than demonstrate foresight.
 
-Registered predictions must be:
+Forward predictions must be:
 
+- registered before the relevant outcome is known
 - specific enough to evaluate
-- preserved without outcome-driven rewriting
-- linked to an observation window
-- closed only after sufficient evidence exists
-- scored independently where multiple domains are involved
-- retained when evidence is insufficient rather than forced into a pass or failure
-- retained after closure so the original prediction and outcome remain inspectable
+- time- or state-bounded
+- preserved after registration
+- evaluated only from admissible evidence
+- retained when wrong
+- closed after their registered evidence boundary is complete
 
-Current open model-error records:
+The original prediction must remain distinguishable from later adjudication.
 
-```text
-043
-046
-```
-
-Recently closed records:
+Prospectively registered records retain:
 
 ```text
-041 — supported
-042 — not supported / continued adaptation
-044 — not supported / narrow snapshot-directed governance deviation
-045 — supported
+calibration_state = pre
 ```
 
-Records 041–044 were registered under:
+after closure because that field records registration provenance, not prediction lifecycle.
 
-→ [`methodology/open_prediction_evaluation_plan_041_044.md`](./methodology/open_prediction_evaluation_plan_041_044.md)
+For protected records, the original `Prediction:` narrative remains at the beginning of the model-error notes.
 
-Records 041, 042, and 044 are now closed.
+Closure language may follow it.
 
-Record 043 remains open under the same preregistered evaluation framework because its primary TruDiagnostic evidence is still pending.
-
-Record 045 was separately governed by:
-
-→ [`methodology/open_prediction_evaluation_plan_045.md`](./methodology/open_prediction_evaluation_plan_045.md)
-
-Record 046 is separately governed by:
-
-→ [`methodology/open_prediction_evaluation_plan_046.md`](./methodology/open_prediction_evaluation_plan_046.md)
+It must not replace it.
 
 ---
 
-### Record 041 — Closed Recovery-Capacity Prediction
+## Current Model-Error State
 
-Record 041 predicted:
+| Record | Domain | Status | Outcome |
+|---|---|---|---|
+| 041 | recovery_capacity | Closed | supported |
+| 042 | ambient_execution | Closed | not supported — continued adaptation |
+| 043 | biological_translation | Open | TruDiagnostic provider results pending |
+| 044 | protocol_governance | Closed | not supported — narrow snapshot-directed deviation |
+| 045 | autonomic_reconvergence | Closed | supported |
+| 046 | autonomic_unload_reload | Closed | failed_autonomic_recompression |
 
-```text
-stable
-```
+### 041 — Recovery Capacity
 
-It closed as:
+Record 041 closed as supported.
 
-```text
-actual:
-stable
+Accumulated July–August loading produced measurable autonomic cost, but the preregistered recovery-capacity failure boundary was not crossed.
 
-outcome:
-supported
-```
+This does not establish costless or unlimited recovery capacity.
 
-Accumulated July–August exposure produced measurable autonomic compression.
+### 042 — Ambient Execution
 
-The registered recovery-capacity failure boundary nevertheless was not crossed.
+Record 042 predicted a plateau.
 
-No qualifying combination of:
-
-- recovery-driven intervention
-- multi-session training regression
-- persistent physiological suppression with corresponding functional or subjective deterioration
-
-was observed.
-
-The later autonomic rebound does not imply the accumulation block was costless.
-
-Record 041 establishes only that the observed cost remained inside its preregistered recovery-capacity boundary.
-
----
-
-### Record 042 — Closed Ambient-Execution Plateau Prediction
-
-Record 042 predicted:
+Observed state:
 
 ```text
-plateau
-```
-
-It closed as:
-
-```text
-actual:
 continued_adaptation
+```
 
-error direction:
+Error direction:
+
+```text
 under
-
-outcome:
-not supported
 ```
 
-The registered counter-evidence threshold was met across repeated dates, more than 14 calendar days, multiple contexts, and without substantive explanatory protocol progression.
+The model underestimated continued adaptation beyond the predicted ambient-execution ceiling.
 
-Evidence included increasing:
+The result does not independently declare Phase 2D.
 
-- positional optionality
-- voluntary tempo control
-- divided-attention execution
-- automatic movement organization
-- reduced cognitive overhead
-- low-salience execution
-- preservation across accumulated workload and differing autonomic states
+### 043 — August Biological Translation
 
-The external protocol remained broadly stable while the relationship to the work continued changing.
-
-Record 042 therefore represents a model underestimation rather than a failure of the observed system.
-
-It does not independently declare Phase 2D.
-
----
-
-### Record 044 — Closed Protocol-Governance Prediction
-
-Record 044 predicted:
+Record 043 remains:
 
 ```text
-preserved
+open / unscored
 ```
 
-Most of the observation window showed strong governance restraint.
-
-However:
-
-```text
-2026-08-16:
-Load Integration intentionally withheld
-to preserve recovery before VO₂ testing
-```
-
-The omission was:
-
-- testing-directed
-- intentional
-- not provider-required
-- not recovery-driven
-
-The August collection plan had established a representative-state posture rather than deliberate short-term testing optimization.
-
-Record 044 contained a separately registered snapshot-manipulation boundary.
-
-The pre-test Load Integration omission conflicted with that boundary.
-
-Record 044 therefore closed as:
-
-```text
-outcome:
-not supported
-
-classification:
-narrow snapshot-directed governance deviation
-```
-
-This does not establish:
-
-- broad protocol-governance collapse
-- biological harm
-- invalidity of the August snapshot
-- failure of record 041
-- failure of record 045
-
-The archive preserves the governance miss without inferring an unmeasured biological effect.
-
----
-
-### Record 045 — Completed Autonomic Reconvergence Probe
-
-Record 045 was registered prospectively on:
-
-```text
-2026-08-12
-```
-
-Its admissible scoring window was:
-
-```text
-2026-08-13 through 2026-08-16
-```
-
-For record 045:
-
-```text
-Registration context only:
-2026-W31
-2026-08-10
-2026-08-11
-2026-08-12
-
-Admissible scoring evidence:
-2026-08-13
-2026-08-14
-2026-08-15
-2026-08-16
-
-Excluded:
-2026-08-17 through 2026-08-18 snapshot outcomes
-later unload/reload evidence
-```
-
-The four preregistered favorable thresholds were:
-
-```text
-Daily HRV >= 59.7 ms
-Sleep HRV >= 65.3 ms
-Resting HR <= 49.2 bpm
-Sleeping HR <= 53.7 bpm
-```
-
-Observed four-day means were:
-
-```text
-Daily HRV:
-63.5 ms
-
-Sleep HRV:
-71.25 ms
-
-Resting HR:
-46.5 bpm
-
-Sleeping HR:
-51.75 bpm
-```
-
-Result:
-
-```text
-4 of 4 favorable thresholds
-```
-
-No multi-session functional regression occurred.
-
-No recovery-driven protocol reduction or intervention occurred.
-
-Record 045 was therefore scored:
-
-```text
-supported
-```
-
-The 2026-08-16 Load Integration omission was testing-directed rather than recovery-driven for purposes of the record 045 failure rule.
-
-The same event was separately relevant to record 044 because record 044 governed snapshot preparation rather than recovery-driven intervention.
-
-Record 045 is closed.
-
-It must not be reopened using later unload/reload evidence.
-
----
-
-### Record 043 — Active August Biological Translation Prediction
-
-Record 043 remains open.
-
-Its primary comparison remains:
+Primary comparison:
 
 ```text
 May 2026
@@ -633,129 +289,186 @@ May 2026
 August 2026
 ```
 
-The August physical collection is complete.
+Primary domain:
 
-Current preserved physical domains include:
+```text
+TruDiagnostic
+```
 
-- DEXA
-- VO₂ max
-- Bod Pod
+The physical August collection is complete.
 
-The TruDiagnostic sample was collected on:
+The TruDiagnostic sample was collected on 2026-08-17.
+
+Provider-result evidence remains pending.
+
+DEXA, VO₂ max, Bod Pod, bodyweight, recovery telemetry, and subjective state remain supplemental under the registered evaluation framework.
+
+### 044 — Protocol Governance
+
+Record 044 closed as not supported after:
+
+```text
+2026-08-16:
+Load Integration intentionally withheld
+before DEXA / VO₂ testing
+```
+
+The omission was testing-directed rather than recovery-driven.
+
+Most broader governance remained preserved.
+
+The separately registered representative-state snapshot boundary was nevertheless violated.
+
+The result is classified as a narrow governance miss.
+
+No biological consequence is inferred solely from that outcome.
+
+### 045 — Autonomic Reconvergence
+
+Record 045 used a fixed scoring window:
+
+```text
+2026-08-13 through 2026-08-16
+```
+
+Observed four-day means met all four registered autonomic thresholds.
+
+Functional preservation also remained intact.
+
+Outcome:
+
+```text
+supported
+```
+
+Later testing and reload evidence cannot alter record 045.
+
+### 046 — Autonomic Unload/Reload Persistence
+
+Record 046 was prospectively registered on:
 
 ```text
 2026-08-17
 ```
 
-The primary TruDiagnostic provider-result domain remains pending.
+Primary scoring window:
 
-No supplemental physical result may substitute for that primary evidence.
+```text
+2026-08-20 through 2026-08-23
+```
 
-The record 044 governance determination does not establish whether the August 16 training deviation materially altered any biological result.
+Observed four-day means:
 
-That materiality remains unknown unless supported by separate evidence.
+```text
+Daily HRV:
+60.25 ms
+favorable
 
-Record 043 must remain open until its required primary source evidence is available.
+Sleep HRV:
+63.25 ms
+unfavorable
+
+Resting HR:
+52.0 bpm
+unfavorable
+
+Sleeping HR:
+54.0 bpm
+unfavorable
+```
+
+Threshold result:
+
+```text
+1 of 4 favorable
+```
+
+Additional conditions remained favorable:
+
+```text
+Multi-session functional regression:
+No
+
+Normal B1 + Load Integration reload:
+Preserved
+
+Recovery-driven protocol reduction:
+No
+```
+
+Formal outcome:
+
+```text
+failed_autonomic_recompression
+```
+
+Error direction:
+
+```text
+over
+```
+
+The model overestimated persistence of the favorable pre-testing autonomic state across the immediate reload interval.
+
+Later autonomic improvement demonstrates reversibility.
+
+It does not change the fixed-window score.
 
 ---
 
-### Record 046 — Active Autonomic Unload/Reload Probe
+## Preregistered Evaluation Artifacts
 
-Record 046 was registered separately on:
+Records 041–044:
 
-```text
-2026-08-17
-```
+[`methodology/open_prediction_evaluation_plan_041_044.md`](./methodology/open_prediction_evaluation_plan_041_044.md)
 
-Its prediction is:
+Record 045:
 
-```text
-reconvergence_persists_after_unload_reload
-```
+[`methodology/open_prediction_evaluation_plan_045.md`](./methodology/open_prediction_evaluation_plan_045.md)
 
-Its evidence structure is fixed as:
+Record 046:
 
-```text
-2026-08-17:
-registration context only
+[`methodology/open_prediction_evaluation_plan_046.md`](./methodology/open_prediction_evaluation_plan_046.md)
 
-2026-08-18 through 2026-08-19:
-descriptive unload / re-entry kinetics
+August collection:
 
-2026-08-20 through 2026-08-23:
-primary scoring window
-```
+[`methodology/2026-08-snapshot-collection-plan.md`](./methodology/2026-08-snapshot-collection-plan.md)
 
-Record 046 reuses the record 045 autonomic thresholds without recalibration:
-
-```text
-Daily HRV >= 59.7 ms
-Sleep HRV >= 65.3 ms
-Resting HR <= 49.2 bpm
-Sleeping HR <= 53.7 bpm
-```
-
-Support requires:
-
-```text
-at least 3 of 4 favorable autonomic thresholds
-
-AND
-
-no multi-session functional regression after reload
-
-AND
-
-no recovery-driven protocol reduction after normal training resumes
-```
-
-The August biological and performance outcomes are excluded from record 046 scoring.
-
-This includes:
-
-- TruAge
-- TruHealth
-- TruDiagnostic
-- DEXA
-- VO₂ max
-- Bod Pod
-
-A transient autonomic disturbance after maximal VO₂ testing may be documented but does not independently fail record 046.
-
-Record 046 does not:
-
-- reopen record 041
-- reopen record 042
-- repair record 044
-- reopen record 045
-- determine the August biological snapshot outcome
-- declare Phase 2D
+The original filenames remain preserved even after prediction closure when retaining the committed historical artifact is preferable to renaming it after outcome access.
 
 ---
 
-## August Snapshot Governance
-
-The August biological and performance collection remains governed by:
-
-→ [`methodology/2026-08-snapshot-collection-plan.md`](./methodology/2026-08-snapshot-collection-plan.md)
-
-and, for the original records 041–044 framework:
-
-→ [`methodology/open_prediction_evaluation_plan_041_044.md`](./methodology/open_prediction_evaluation_plan_041_044.md)
+## August 2026 Snapshot State
 
 The primary physical collection window was completed across:
 
 ```text
 2026-08-17
-TruDiagnostic sample collection
+2026-08-18
+```
+
+Actual sequence:
+
+```text
+2026-08-17:
+TruDiagnostic
+→
 DEXA
+→
 VO₂ max
 
-2026-08-18
+2026-08-18:
 Bod Pod
 ```
 
-Current August state:
+Preserved physical artifacts:
+
+- `snapshots/2026-08/2026-08-dexa-body-comp.jpg`
+- `snapshots/2026-08/2026-08-dexa-summary.jpg`
+- `snapshots/2026-08/2026-08-vo2-summary.pdf`
+- `snapshots/2026-08/2026-08-bodpod-cosmed.jpg`
+
+Current state:
 
 ```text
 physical collection:
@@ -770,118 +483,340 @@ complete
 TruDiagnostic provider results:
 pending
 
-complete biological interpretation:
+complete molecular interpretation:
 pending
 ```
 
-The underlying physical architecture remains:
+The physical artifacts have been:
 
-```text
-B1
-+
-Load Integration
-```
+- privacy-reviewed
+- assigned stable filenames
+- checksum-manifested
+- validator-verified
 
-The actual testing transition was:
+August temporal anchor:
 
-```text
-2026-08-16:
-B1 completed
-Load Integration intentionally withheld before testing
+[`snapshots/2026-08/2026-08 Epoch.md`](./snapshots/2026-08/2026-08%20Epoch.md)
 
-2026-08-17:
-No B1
-No Load Integration
-TruDiagnostic
-DEXA
-VO₂ max
-
-2026-08-18:
-No B1
-No Load Integration
-Bod Pod
-
-2026-08-19:
-Planned return to normal B1 + Load Integration
-```
-
-The 2026-08-16 Load Integration omission and the August 17–18 training withdrawal remain visible as actual collection-condition facts.
-
-They are not retrospectively rewritten into the original representative-state collection posture.
-
-The governance significance of the August 16 omission has been adjudicated under record 044.
-
-The record closed as not supported because the testing-directed omission conflicted with the registered snapshot-manipulation boundary.
-
-That governance result does not establish that the deviation materially altered any August biological measurement.
-
-Record 043 therefore remains open pending its primary TruDiagnostic evidence.
-
-The biological snapshot and Model Error 046 remain analytically separate.
+Physical collection completion does not close Model Error 043.
 
 ---
 
-## Current Prediction Calibration State
+## Current Phase Context
 
-The August 18 closure batch changed the primary state and trajectory concordance layers.
-
-Current tracked primary-prediction concordance includes:
+Current phase:
 
 ```text
-State:
-11 concordant of 14 eligible closed primary state predictions
-0.79
-
-Trajectory:
-2 concordant of 3 eligible closed primary trajectory predictions
-0.67
+Phase 2 — Load Integration
 ```
 
-Point and range magnitude UDI values remain unchanged by this closure batch.
+Operating substate:
 
-These values are calibration summaries.
+```text
+Consolidation / lock-in observation
+```
 
-They are not measures of biological success.
+Formal Phase 2D:
 
-A prediction miss may reflect:
+```text
+undeclared
+```
 
-- model underestimation
-- model overestimation
-- governance failure
-- boundary-condition discovery
-- insufficient evidence
+Current evidence includes:
 
-The underlying record determines interpretation.
+- preserved aerobic infrastructure
+- repeated mechanical loading
+- same-day aerobic and strength compatibility
+- dense repeated training
+- preserved functional recovery floor
+- reduced operator overhead
+- repeated ambient execution
+- behavior-specific trait-like expression
+- automatic bar organization
+- voluntary positional and force control
+- continued adaptation beyond the previously modeled plateau
+- preserved execution across different autonomic states
+- successful return after short training interruption
+- natural portability across altered room and equipment geometry
+- separation of wearable recovery telemetry from demonstrated functional capacity
+
+Week 33 added strong natural portability evidence across:
+
+- a different gym room
+- a different-style trap bar
+- a curved pull-up bar
+- altered bar thickness
+- altered grip texture
+
+Execution remained low-salience across repeated exposures.
+
+Later pull-up and grip behavior became trait-like within the alternate configuration.
+
+This is meaningful Phase 2 evidence.
+
+It does not independently authorize Phase 2D.
+
+---
+
+## Dataset Orientation
+
+Primary public data and evidence layers include:
+
+- [`data`](./data/)
+- [`snapshots`](./snapshots/)
+- [`reports`](./reports/)
+- [`data/model_error`](./data/model_error/)
+- [`data/source_exports`](./data/source_exports/)
+
+Canonical sleep:
+
+[`data/sleep_longitudinal_v1.csv`](./data/sleep_longitudinal_v1.csv)
+
+Current coverage:
+
+```text
+through 2026-08-23
+```
+
+Data coverage and limitations:
+
+[`data/DATA_COVERAGE.md`](./data/DATA_COVERAGE.md)
+
+Known data-quality issues:
+
+[`data/DATA_QUALITY_NOTES.md`](./data/DATA_QUALITY_NOTES.md)
+
+Measurement sources:
+
+[`MEASUREMENT_SOURCES.md`](./MEASUREMENT_SOURCES.md)
+
+Data dictionary:
+
+[`DATA_DICTIONARY.md`](./DATA_DICTIONARY.md)
+
+A structurally valid dataset may still contain semantic uncertainty.
+
+Provider exports do not automatically replace curated values.
+
+Source-backed correction remains separately governed.
+
+---
+
+## Weekly Reports
+
+Current active report:
+
+[`reports/2026-W34.md`](./reports/2026-W34.md)
+
+Most recent closed report:
+
+[`reports/2026-W33.md`](./reports/2026-W33.md)
+
+Reports contain:
+
+- active observation
+- retrospective closeout
+- weekly metrics
+- perturbations
+- candidate evidence
+- governed prediction scoring where applicable
+
+Reports do not replace primary artifacts or canonical datasets.
+
+The report lifecycle is documented in:
+
+[`reports/README.md`](./reports/README.md)
+
+---
+
+## Verification
+
+Repository verification is documented in:
+
+[`VERIFICATION.md`](./VERIFICATION.md)
+
+Local read-only validator:
+
+```text
+tools/validate_repository.py
+```
+
+The validator checks mechanical integrity and selected governance-protected state including:
+
+- repository structure
+- Markdown targets and anchors
+- CSV parsing
+- checksum manifests
+- canonical sleep continuity
+- weekly-report continuity
+- model-error continuity
+- protected open record 043
+- protected closed records 041, 042, 044, 045, and 046
+- protected adjudicated actual values and error directions
+- registration provenance for records 041–046
+- release metadata
+- RingConn source-export byte preservation
+
+Validation does not independently establish:
+
+- biological causality
+- clinical validity
+- prediction-scoring correctness
+- phase transition
+- semantic correctness of every field
+
+Mechanical validation is followed by human semantic review.
+
+---
+
+## System Flow
+
+```text
+Protocol Inputs
+      ↓
+Biological System
+      ↓
+Measurement Layer
+      ↓
+Structured Dataset Layer
+      ↓
+Primary Artifacts
+      ↓
+Retrospective Reports
+      ↓
+Registered Prediction Evaluation
+      ↓
+Model Correction
+```
+
+---
+
+## Repository Structure
+
+```text
+Root
+│
+├── snapshots/
+├── reports/
+├── dashboards/
+│
+├── data/
+│   ├── model_error/
+│   └── source_exports/
+│
+├── protocols/
+├── experiments/
+├── schemas/
+├── methodology/
+├── docs/
+│   ├── audits/
+│   └── methodology/
+│
+├── roadmap/
+├── tools/
+│
+├── README.md
+├── INDEX.md
+├── LATEST.md
+├── TELEMETRY.md
+├── VERIFICATION.md
+├── CHANGELOG.md
+```
+
+Historical, completed, or superseded material may remain in place when preserving the original committed artifact is important for provenance.
+
+Inactive status should remain explicit.
 
 ---
 
 ## Governance
 
+Core governance documents:
+
 - [`GOVERNANCE.md`](./GOVERNANCE.md)
+- [`METHODOLOGY_AND_CONTROLS.md`](./METHODOLOGY_AND_CONTROLS.md)
+- [`ASSUMPTIONS_AND_BOUNDARIES.md`](./ASSUMPTIONS_AND_BOUNDARIES.md)
 - [`STRUCTURAL_PRINCIPLES.md`](./STRUCTURAL_PRINCIPLES.md)
 - [`PHASE_DECLARATION_CRITERIA.md`](./PHASE_DECLARATION_CRITERIA.md)
 - [`RISK_MANAGEMENT.md`](./RISK_MANAGEMENT.md)
+- [`PHASE_MAP.md`](./PHASE_MAP.md)
+- [`STATE_TRANSITIONS.md`](./STATE_TRANSITIONS.md)
 - [`TELEMETRY.md`](./TELEMETRY.md)
-- [`methodology/open_prediction_evaluation_plan_041_044.md`](./methodology/open_prediction_evaluation_plan_041_044.md)
-- [`methodology/open_prediction_evaluation_plan_045.md`](./methodology/open_prediction_evaluation_plan_045.md)
-- [`methodology/open_prediction_evaluation_plan_046.md`](./methodology/open_prediction_evaluation_plan_046.md)
-- [`methodology/2026-08-snapshot-collection-plan.md`](./methodology/2026-08-snapshot-collection-plan.md)
+
+---
+
+## How to Evaluate This Archive
+
+Use:
+
+- `/snapshots` for **primary evidence**
+- `/data` for **structured longitudinal evidence**
+- `/data/source_exports` for **provider/device provenance**
+- `/reports` for **retrospective system interpretation**
+- `/data/model_error` for **prediction versus outcome**
+- `/methodology` for **operating and preregistration rules**
+- `/docs/methodology` for **extended analytical methodology**
+- `/protocols` for **protocol history**
+- `/experiments` for **experiment state**
+- `/tools` for **mechanical validation**
+- `/docs/audits` for **formal integrity and governance audits**
+
+Recommended evidence flow:
+
+```text
+LATEST.md
+  ↓
+Relevant Weekly Report
+  ↓
+Canonical Structured Dataset
+  ↓
+Primary Artifact or Source Export
+  ↓
+Applicable Methodology
+  ↓
+Model-Error Record
+```
+
+---
+
+## Current Prediction Calibration
+
+Current eligible primary calibration layers remain:
+
+```text
+Primary state concordance:
+11 / 14
+0.79
+
+Primary trajectory concordance:
+2 / 3
+0.67
+```
+
+Record 046 is a secondary trajectory record.
+
+Its closure does not change those primary concordance values or point/range UDI magnitude summaries.
+
+Prediction calibration describes agreement between model and registered outcome.
+
+It is not a measure of biological success.
 
 ---
 
 ## Scope
 
-Single-subject longitudinal observational archive.
+This repository documents one subject under defined protocol constraints and incomplete environmental control.
 
-This repository does not establish:
+It does not establish:
 
 - population-level causality
 - clinical efficacy
 - generalized intervention guidance
-- a protocol suitable for direct replication without independent review
+- protocol safety for other individuals
+- universal device accuracy
 - certainty from prediction accuracy
 
-Claims remain bounded to the recorded subject, artifacts, methods, and observation windows.
+No claim extends beyond the recorded system without separate evidence.
 
 ---
 
@@ -903,23 +838,24 @@ Hughett, C. D. (2026). *Daniel Longitudinal Study (v1.0.0)* [Data set]. Zenodo. 
 
 - First 5 minutes → [`docs/START_HERE.md`](./docs/START_HERE.md)
 - Current state → [`LATEST.md`](./LATEST.md)
+- Complete index → [`INDEX.md`](./INDEX.md)
 - Observer quickstart → [`docs/OBSERVER_QUICKSTART.md`](./docs/OBSERVER_QUICKSTART.md)
 - Observer evaluation → [`docs/FOR_OBSERVERS.md`](./docs/FOR_OBSERVERS.md)
 - Data coverage → [`data/DATA_COVERAGE.md`](./data/DATA_COVERAGE.md)
 - Data-quality notes → [`data/DATA_QUALITY_NOTES.md`](./data/DATA_QUALITY_NOTES.md)
-- Recurring terms → [`docs/CONCEPTS.md`](./docs/CONCEPTS.md)
-- Guided orientation → [`docs/NEWCOMER_PATH.md`](./docs/NEWCOMER_PATH.md)
-- Index → [`INDEX.md`](./INDEX.md)
+- Concepts → [`docs/CONCEPTS.md`](./docs/CONCEPTS.md)
 - Epoch tracking → [`EPOCH_INDEX.md`](./EPOCH_INDEX.md)
 - Snapshot log → [`SNAPSHOT_LOG.md`](./SNAPSHOT_LOG.md)
-- Artifact history → [`snapshots`](./snapshots/)
+- August epoch → [`snapshots/2026-08/2026-08 Epoch.md`](./snapshots/2026-08/2026-08%20Epoch.md)
 - Weekly reports → [`reports`](./reports/)
 - Model-error layer → [`data/model_error/WHAT_THIS_LAYER_IS.md`](./data/model_error/WHAT_THIS_LAYER_IS.md)
-- Preregistered prediction plan 041–044 → [`methodology/open_prediction_evaluation_plan_041_044.md`](./methodology/open_prediction_evaluation_plan_041_044.md)
+- Historical prediction plan 041–044 → [`methodology/open_prediction_evaluation_plan_041_044.md`](./methodology/open_prediction_evaluation_plan_041_044.md)
 - Completed prediction plan 045 → [`methodology/open_prediction_evaluation_plan_045.md`](./methodology/open_prediction_evaluation_plan_045.md)
-- Open-prediction plan 046 → [`methodology/open_prediction_evaluation_plan_046.md`](./methodology/open_prediction_evaluation_plan_046.md)
+- Completed prediction plan 046 → [`methodology/open_prediction_evaluation_plan_046.md`](./methodology/open_prediction_evaluation_plan_046.md)
 - August collection plan → [`methodology/2026-08-snapshot-collection-plan.md`](./methodology/2026-08-snapshot-collection-plan.md)
-- Telemetry layer → [`TELEMETRY.md`](./TELEMETRY.md)
+- Verification → [`VERIFICATION.md`](./VERIFICATION.md)
+- Telemetry → [`TELEMETRY.md`](./TELEMETRY.md)
+- Changelog → [`CHANGELOG.md`](./CHANGELOG.md)
 - Versioning → [`VERSIONING.md`](./VERSIONING.md)
 
 ---
