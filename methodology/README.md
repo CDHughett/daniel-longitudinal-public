@@ -446,6 +446,8 @@ Record 043 must remain open until the required source evidence is available and 
 
 The record 044 governance outcome does not independently determine record 043.
 
+Record 046 likewise does not determine record 043.
+
 ---
 
 ## Record 044 — Closed Protocol-Governance Evaluation
@@ -680,11 +682,11 @@ Later evidence must not reopen or extend record 045.
 
 ---
 
-## Active Evaluation Plan — Record 046
+## Completed Evaluation Plan — Record 046
 
 ### [`open_prediction_evaluation_plan_046.md`](open_prediction_evaluation_plan_046.md)
 
-This is the separate preregistered evaluation plan for Model Error record 046.
+This is the preserved preregistered evaluation plan for Model Error record 046.
 
 Record 046 was registered on:
 
@@ -698,13 +700,19 @@ Its domain is:
 autonomic_unload_reload
 ```
 
-Its registered prediction is:
+Its registered prediction was:
 
 ```text
 reconvergence_persists_after_unload_reload
 ```
 
-Record 046 begins where the completed record 045 question ends.
+Its prediction type was:
+
+```text
+secondary trajectory
+```
+
+Record 046 began where the completed record 045 question ended.
 
 Record 045 asked:
 
@@ -712,14 +720,14 @@ Record 045 asked:
 Did partial autonomic reconvergence occur?
 ```
 
-Record 046 asks:
+Record 046 asked:
 
 ```text
 Does that reconvergence remain broadly preserved
 after planned training withdrawal and reload?
 ```
 
-The known exposure sequence at registration is:
+The known exposure sequence at registration was:
 
 ```text
 2026-08-16
@@ -747,11 +755,11 @@ Because 2026-08-17 had already begun before record 046 registration:
 2026-08-17
 ```
 
-is registration context only.
+was registration context only.
 
-It cannot satisfy the prediction.
+It could not satisfy the prediction.
 
-The plan preserves:
+The plan preserved:
 
 ```text
 2026-08-18
@@ -760,13 +768,13 @@ The plan preserves:
 
 as descriptive unload and re-entry kinetics.
 
-The fixed primary scoring window is:
+The fixed primary scoring window was:
 
 ```text
 2026-08-20 through 2026-08-23
 ```
 
-Record 046 intentionally reuses the same favorable autonomic thresholds as record 045:
+Record 046 intentionally reused the same favorable autonomic thresholds as record 045:
 
 ```text
 Daily HRV >= 59.7 ms
@@ -775,9 +783,9 @@ Resting HR <= 49.2 bpm
 Sleeping HR <= 53.7 bpm
 ```
 
-This preserves direct comparability without recalibrating thresholds after the favorable record 045 outcome.
+This preserved direct comparability without recalibrating thresholds after the favorable record 045 outcome.
 
-Support requires:
+Support required:
 
 ```text
 at least 3 of 4 autonomic thresholds favorable
@@ -789,16 +797,16 @@ no multi-session functional regression after reload
 
 AND
 
-no recovery-driven protocol reduction after normal training resumes
+no recovery-driven protocol reduction after normal training resumed
 ```
 
-The plan explicitly allows a short-lived autonomic disturbance after the 2026-08-17 maximal VO₂ test.
+The plan explicitly allowed a short-lived autonomic disturbance after the 2026-08-17 maximal VO₂ test.
 
-Such an acute response may be documented.
+Such an acute response could be documented.
 
-It does not independently fail record 046.
+It could not independently fail record 046.
 
-The plan excludes the measured outcomes of:
+The plan excluded the measured outcomes of:
 
 - DEXA
 - VO₂ max
@@ -808,7 +816,67 @@ The plan excludes the measured outcomes of:
 - TruHealth
 - other August biological-snapshot interpretation
 
-Those outcomes are independently governed.
+Those outcomes remained independently governed.
+
+After the fixed scoring window closed, the four-day arithmetic means were:
+
+```text
+Daily HRV:
+60.25 ms
+favorable
+
+Sleep HRV:
+63.25 ms
+unfavorable
+
+Resting HR:
+52.0 bpm
+unfavorable
+
+Sleeping HR:
+54.0 bpm
+unfavorable
+```
+
+The quantitative threshold result was:
+
+```text
+1 of 4 favorable
+```
+
+The additional registered conditions remained:
+
+```text
+Multi-session functional regression after reload:
+No
+
+Recovery-driven protocol reduction after normal training resumed:
+No
+```
+
+Because support required at least three of four favorable autonomic thresholds in addition to preserved function and protocol continuity, record 046 did not satisfy its registered support criterion.
+
+Record 046 closed as:
+
+```text
+status:
+closed
+
+actual:
+failed_autonomic_recompression
+
+error direction:
+over
+
+outcome:
+not supported
+```
+
+The `over` direction records that the model overestimated persistence of the favorable record 045 autonomic state across the immediate post-testing reload interval.
+
+Late-window autonomic improvement on 2026-08-22 and 2026-08-23 remains meaningful contextual evidence of reversibility.
+
+It does not alter the fixed four-day scoring mean or rescue the registered prediction.
 
 Record 046 does not:
 
@@ -817,12 +885,15 @@ Record 046 does not:
 - alter record 043
 - repair record 044
 - reopen record 045
+- establish clinical overtraining
+- establish global recovery collapse
+- establish failure of the underlying B1 + Load Integration architecture
 - create a new physical training protocol
-- authorize an extended deload
-- authorize a reload stress test
 - declare Phase 2D
 
-The record 046 evaluation plan remains active and prospective.
+The record 046 evaluation plan is complete and retained unchanged as preregistration provenance.
+
+Later evidence must not reopen or extend record 046.
 
 ---
 
@@ -895,12 +966,11 @@ The collection plan does not itself determine the August biological outcome.
 
 It does not:
 
-- alter record 043
-- alter record 046
+- alter or score record 043
+- reopen or rescore record 046
 - authorize protocol progression
 - declare Phase 2D
 - create a release automatically
-- determine the outcome of record 046
 - reopen any closed model-error record
 
 The 2026-08-16 Load Integration omission remains documented as a factual collection-condition deviation rather than being removed from the record.
@@ -1202,9 +1272,9 @@ Methodology defines how that exposure and its outcomes are recorded and evaluate
 
 A methodology update does not automatically modify the physical protocol.
 
-Record 046 observes the planned unload/reload sequence.
+Record 046 observed a temporary testing-directed unload/reload sequence.
 
-It does not create that sequence as a new recurring protocol.
+It did not create that sequence as a new recurring protocol.
 
 ---
 
@@ -1228,7 +1298,7 @@ For record 045, later reports may preserve the completed August 13–16 score.
 
 They may not use later August evidence to reopen or modify the result.
 
-For record 046:
+For record 046, the preserved scoring boundary is:
 
 ```text
 2026-08-17:
@@ -1241,7 +1311,17 @@ descriptive unload/re-entry kinetics
 primary scoring evidence
 ```
 
-Reports must preserve those boundaries.
+Record 046 is now closed.
+
+Later reports may discuss subsequent recovery or autonomic behavior as new evidence.
+
+They may not use it to:
+
+- reopen record 046
+- extend its scoring window
+- alter its four-day means
+- change its 1-of-4 threshold result
+- rescore `failed_autonomic_recompression`
 
 ---
 
@@ -1302,7 +1382,6 @@ The local validator currently protects the open/unscored state of:
 
 ```text
 043
-046
 ```
 
 It separately protects the adjudicated closed state of:
@@ -1312,15 +1391,30 @@ It separately protects the adjudicated closed state of:
 042
 044
 045
+046
 ```
 
 with their recorded actual values and error directions preserved where applicable.
+
+It additionally protects registration provenance for records:
+
+```text
+041–046
+```
+
+including:
+
+```text
+calibration_state = pre
+```
+
+and preservation of the original registered `Prediction:` narrative.
 
 Validation does not independently recompute or adjudicate those scores.
 
 It does not score record 043.
 
-It does not score record 046.
+It does not rescore record 046.
 
 ---
 
@@ -1446,7 +1540,9 @@ For record 046, use:
 open_prediction_evaluation_plan_046.md
 ```
 
-Its prospective boundary is:
+Record 046 is also a completed preregistered prediction.
+
+Its preserved boundary remains:
 
 ```text
 Registration:
@@ -1467,6 +1563,12 @@ VO₂-max measured result
 Bod Pod result
 TruDiagnostic result
 other August biological-snapshot outcomes
+
+Outcome:
+failed_autonomic_recompression
+
+Error direction:
+over
 ```
 
 A document written after outcome access may still be useful.
@@ -1549,26 +1651,56 @@ It does not independently establish:
 - persistence after unloading
 - persistence after return to normal training
 
-Record 046 is designed to evaluate the final two questions separately.
+Record 046 has been scored not supported under its fixed unload/reload boundary.
 
-A supported record 046 result would establish only that the favorable autonomic state remained broadly preserved under its fixed unload/reload evaluation boundary.
+Its registered autonomic condition produced:
 
-It would not independently establish:
+```text
+1 of 4 favorable thresholds
+```
 
-- absence of training cost
-- unlimited recovery reserve
-- permanent autonomic adaptation
-- biological snapshot success
-- Phase 2D
+while:
 
-A failed record 046 result would not independently establish:
+```text
+multi-session functional regression:
+No
+
+recovery-driven protocol reduction:
+No
+```
+
+The formal outcome is:
+
+```text
+failed_autonomic_recompression
+```
+
+with:
+
+```text
+error direction:
+over
+```
+
+That result establishes only that the model overestimated persistence of the favorable record 045 autonomic state across the fixed immediate post-testing reload interval.
+
+It does not independently establish:
 
 - clinical overtraining
 - global recovery collapse
-- protocol failure
-- reopening of records 041, 042, 044, or 045
+- broad protocol failure
+- permanent autonomic suppression
 - biological regression
+- failure of record 041
+- failure of record 045
 - termination of Phase 2
+- absence of later recovery
+- absence of portability
+- absence of continued motor consolidation
+
+The observed late-window rebound remains meaningful contextual evidence.
+
+It does not change the preregistered score.
 
 ---
 
@@ -1652,9 +1784,9 @@ It was created as a separate prediction rather than extending the already comple
 
 ---
 
-# Current Active Methodology State
+# Current Methodology State
 
-As of 2026-08-18:
+As of 2026-08-24:
 
 ```text
 Data collection:
@@ -1688,7 +1820,16 @@ Record 045:
 Closed / supported
 
 Record 046 evaluation plan:
-Active and prospective
+Completed preregistered evaluation plan retained for provenance
+
+Record 046:
+Closed / not supported
+
+Record 046 actual:
+failed_autonomic_recompression
+
+Record 046 error direction:
+over
 
 Record 046 registration date:
 2026-08-17
@@ -1716,13 +1857,23 @@ Pending
 
 Open and unscored model-error records:
 043
-046
 
 Closed recent model-error records:
 041
 042
 044
 045
+046
+
+Canonical sleep:
+Continuous through 2026-08-23
+196 daily rows
+
+Current weekly window:
+2026-W34
+
+Most recent closed weekly window:
+2026-W33
 
 Canonical phase:
 Phase 2 — Load Integration
@@ -1737,10 +1888,10 @@ Underlying physical protocol:
 B1 + Load Integration preserved
 
 Testing-related withdrawal:
-Through 2026-08-18
+Completed 2026-08-18
 
-Planned normal training return:
-2026-08-19
+Normal training return:
+Completed 2026-08-19
 ```
 
 The current methodology state preserves four distinct governance artifacts:
@@ -1752,7 +1903,7 @@ open_prediction_evaluation_plan_041_044.md
 Completed Record 045:
 open_prediction_evaluation_plan_045.md
 
-Active Record 046:
+Completed Record 046:
 open_prediction_evaluation_plan_046.md
 
 August biological and performance collection:
@@ -1880,3 +2031,44 @@ The 2026-08-18 revision does not alter:
 - the original August snapshot collection-plan language
 - any phase declaration
 - any release metadata
+
+On 2026-08-24, this guide was aligned after Week 33 closeout and formal adjudication of Model Error 046.
+
+The 2026-08-24 revision:
+
+- preserves `open_prediction_evaluation_plan_046.md` unchanged as the original record 046 preregistration artifact
+- reclassifies the record 046 plan from active/prospective to completed and retained for provenance
+- records record 046 as closed and not supported
+- records `actual=failed_autonomic_recompression`
+- records `error_direction=over`
+- preserves `calibration_state=pre`
+- preserves the fixed `2026-08-20` through `2026-08-23` scoring window
+- records the four fixed-window arithmetic means
+- records the 1-of-4 favorable autonomic threshold result
+- records preserved function after reload
+- records the absence of recovery-driven protocol reduction
+- preserves late-window autonomic improvement as context rather than rescoring evidence
+- prohibits later evidence from reopening or extending record 046
+- reduces the current open model-error set to record 043
+- advances the protected closed set to records 041, 042, 044, 045, and 046
+- advances canonical sleep coverage through `2026-08-23`
+- advances the active weekly window to `2026-W34`
+- records `2026-W33` as closed
+- records normal B1 + Load Integration return as completed on `2026-08-19`
+- preserves record 043 as open pending TruDiagnostic provider results
+- preserves the primary state and trajectory concordance summaries unchanged because record 046 is secondary
+- preserves Phase 2 and the consolidation / lock-in observation substate
+- leaves formal Phase 2D undeclared
+
+The 2026-08-24 revision does not alter:
+
+- the original record 046 preregistration artifact
+- any record 046 registered threshold
+- the record 046 scoring window
+- any source artifact
+- any artifact checksum
+- the pending record 043 outcome
+- primary UDI or concordance values
+- the underlying B1 + Load Integration architecture
+- any formal phase declaration
+- release metadata
