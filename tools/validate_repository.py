@@ -1403,7 +1403,6 @@ class Validator:
         # fields must therefore remain blank.
         protected_open_ids = (
             43,
-            46,
         )
 
         for record_id in protected_open_ids:
@@ -1461,6 +1460,120 @@ class Validator:
                             f"remain blank: {field}"
                         ),
                     )
+
+        # Record 046 has reached its registered scoring
+        # boundary and is now in a controlled closure
+        # transition.
+        #
+        # This temporary validator state allows the ledger
+        # row to move from open/unscored to closed/scored
+        # without weakening its protected registration
+        # provenance or requiring an internally broken
+        # intermediate commit.
+        #
+        # While open, its outcome/error fields must still
+        # remain blank. Once closed, actual_value and
+        # error_direction must be populated. The exact
+        # adjudicated values will be hard-locked in the
+        # subsequent validator commit.
+        transition_record_ids = (
+            46,
+        )
+
+        for record_id in transition_record_ids:
+            row = by_id.get(record_id)
+
+            if row is None:
+                self.report.error(
+                    check,
+                    (
+                        "Closure-transition record "
+                        f"missing: {record_id:03d}"
+                    ),
+                )
+                continue
+
+            status = row.get(
+                status_col,
+                "",
+            ).strip().lower()
+
+            if status not in {
+                "open",
+                "closed",
+            }:
+                self.report.error(
+                    check,
+                    (
+                        f"Record {record_id:03d} "
+                        "closure-transition status must "
+                        "be 'open' or 'closed', got "
+                        f"{status!r}"
+                    ),
+                )
+
+            if (
+                prediction_col
+                and not row.get(
+                    prediction_col,
+                    "",
+                ).strip()
+            ):
+                self.report.error(
+                    check,
+                    (
+                        f"Record {record_id:03d} "
+                        "prediction is blank"
+                    ),
+                )
+
+            if status == "open":
+                for field in protected_fields:
+                    if row.get(
+                        field,
+                        "",
+                    ).strip():
+                        self.report.error(
+                            check,
+                            (
+                                f"Record {record_id:03d} "
+                                "open transition field must "
+                                f"remain blank: {field}"
+                            ),
+                        )
+
+            elif status == "closed":
+                if actual_col:
+                    actual = row.get(
+                        actual_col,
+                        "",
+                    ).strip()
+
+                    if not actual:
+                        self.report.error(
+                            check,
+                            (
+                                f"Record {record_id:03d} "
+                                "actual value must be "
+                                "populated at closure"
+                            ),
+                        )
+
+                if error_direction_col:
+                    direction = row.get(
+                        error_direction_col,
+                        "",
+                    ).strip()
+
+                    if not direction:
+                        self.report.error(
+                            check,
+                            (
+                                f"Record {record_id:03d} "
+                                "error direction must be "
+                                "populated at closure"
+                            ),
+                        )
 
         # Closed records whose adjudicated state is now
         # part of protected repository history.
@@ -1594,8 +1707,9 @@ class Validator:
                     f"{max(ids):03d}; "
                     "041, 042, 044, and 045 "
                     "closed/scored; "
-                    "043 and 046 remain "
-                    "open and unscored; "
+                    "043 remains open and unscored; "
+                    "046 is authorized for controlled "
+                    "closure transition; "
                     "041-046 registration "
                     "provenance preserved"
                 ),
