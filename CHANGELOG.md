@@ -14,6 +14,529 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 
 ### Added
 
+#### August 31 Week 34 closeout and Week 35 initialization
+
+- Closed `reports/2026-W34.md` after completion of the full `2026-08-24` through `2026-08-30` observation window.
+
+- Week 34 returned the archive to a complete ordinary B1 + Load Integration training week after the nonordinary August testing interval.
+
+- Recorded actual Week 34 formal training exposure:
+
+  ```text
+  B1:
+  7 sessions
+  385 minutes
+  approximately 21.14 miles
+
+  Load Integration:
+  7 sessions
+  315 minutes
+
+  Total formal training:
+  700 minutes
+  ```
+
+- Recorded Week 34 weekly averages:
+
+  ```text
+  Morning bodyweight:
+  approximately 233.8 lb
+
+  Daily biomarker HRV:
+  approximately 59.1 ms
+
+  Sleep HRV:
+  approximately 65.3 ms
+
+  Resting heart rate:
+  approximately 49.6 bpm
+
+  Sleeping heart rate:
+  approximately 52.0 bpm
+
+  Daily average heart rate:
+  approximately 65.4 bpm
+
+  Total sleep:
+  approximately 7 h 24 min
+
+  Time in bed:
+  approximately 8 h 04 min
+
+  Sleep efficiency:
+  approximately 92%
+  ```
+
+- Recorded complete Week 34 B1 continuity:
+  - seven of seven sessions completed
+  - ambient/background execution preserved across all seven sessions
+  - no recovery-driven shortening
+  - no pace or incline reduction
+  - no graded re-entry
+  - no pain-driven modification
+  - no respiratory compensation
+  - no abnormal motivational effort
+
+- Recorded complete Week 34 Load Integration continuity:
+  - seven of seven sessions completed
+  - no recovery-driven cancellation
+  - no volume reduction
+  - no exercise removal
+  - no abnormal rest extension
+  - no pain-driven modification
+  - no technical rescue
+  - no motivational escalation
+
+- Recorded stronger descriptive behavioral-consolidation evidence during Week 34.
+
+- Preserved the observed Load Integration sequence:
+
+  ```text
+  return to canonical equipment
+  without reacclimation
+  →
+  repeated trait-like execution
+  →
+  automatic grip coupling
+  →
+  explicit session-level trait expression
+  →
+  preservation after substantial yard work
+  →
+  preservation after meaningful schedule displacement
+  →
+  increasing ownership of pacing,
+  pauses,
+  positions,
+  transitions,
+  and sequencing
+  ```
+
+- Recorded reverse transfer from the alternate Week 33 configuration back to the canonical:
+  - straight pull-up bar
+  - normal trap bar
+  - normal training-room configuration
+
+- No detectable reacclimation period was required after return to the canonical setup.
+
+- Recorded automatic grip coupling as a repeated descriptive observation rather than introducing a specialized grip intervention.
+
+- Recorded natural portability evidence across:
+  - equipment reversal
+  - same-day incidental physical workload
+  - altered session timing
+  - ordinary social scheduling
+  - variable overnight autonomic states
+
+- Recorded substantial yard work before Load Integration on `2026-08-27`.
+
+- Preserved subsequent Load Integration execution as trait-like rather than treating the ordinary-life workload as a manufactured perturbation test.
+
+- Recorded meaningful schedule displacement on `2026-08-29` due to an ordinary social commitment.
+
+- Preserved the delayed Load Integration session as completed with trait-like execution.
+
+- Recorded the `2026-08-30` Load Integration observation that:
+  - pacing
+  - pauses
+  - positions
+  - transitions
+  - sequencing
+  - grip behavior
+
+  were experienced as increasingly owned and embedded.
+
+- Preserved the distinction between:
+
+  ```text
+  ambient session-level execution
+  ```
+
+  and:
+
+  ```text
+  trait-like or explicit session-level trait expression
+  ```
+
+- Week 34 portability and automaticity evidence remains descriptive.
+
+- It does not:
+  - reopen record 042
+  - rescore record 042
+  - repair record 046
+  - establish universal portability
+  - independently declare Phase 2D
+
+- Recorded continued overnight autonomic variability without converting the Week 34 observations into a new threshold-based prediction.
+
+- Preserved Week 34 sleep-HRV sequence:
+
+  ```text
+  65
+  69
+  69
+  68
+  60
+  56
+  70 ms
+  ```
+
+- Preserved Week 34 sleeping-heart-rate sequence:
+
+  ```text
+  58
+  48
+  53
+  48
+  51
+  57
+  49 bpm
+  ```
+
+- Recorded the clearest less-favorable overnight profile on `2026-08-29`:
+
+  ```text
+  Sleep HRV:
+  56 ms
+
+  Sleeping heart rate:
+  57 bpm
+
+  Daily biomarker HRV:
+  53 ms
+
+  Resting heart rate:
+  53 bpm
+  ```
+
+- Preserved that the same day still contained:
+  - ambient B1
+  - completed delayed Load Integration
+  - trait-like Load Integration execution
+  - substantial ordinary activity
+  - calm mood
+  - calm GI state
+  - no pain
+  - no recovery-driven intervention
+
+- Recorded the subsequent `2026-08-30` recovery state:
+
+  ```text
+  Sleep HRV:
+  70 ms
+
+  Sleeping heart rate:
+  49 bpm
+
+  Daily biomarker HRV:
+  65 ms
+  ```
+
+- Preserved the Week 34 recovery interpretation boundary:
+
+  ```text
+  autonomic variability
+  ≠
+  sustained functional regression
+  ```
+
+- Recorded the `2026-08-27` shorter sleep exposure:
+
+  ```text
+  Total sleep:
+  6 h 44 min
+
+  Sleep HRV:
+  68 ms
+
+  Sleeping heart rate:
+  48 bpm
+  ```
+
+- Preserved that the shorter night did not produce an observed daytime functional regression.
+
+- The observation does not establish that reduced sleep is generally costless.
+
+- Recorded the `2026-08-26` wearable-stage confidence issue:
+  - wearable-estimated REM remained `35 min`
+  - REM confidence remained low
+  - subjective dream phenomenology remained vivid, immersive, semi-lucid, and reality adjacent
+  - the wearable REM value was not retrospectively increased
+  - subjective dream experience was not used to overwrite the device-estimated sleep stage
+
+- Extended `data/sleep_longitudinal_v1.csv` through `2026-08-30`.
+
+- Canonical sleep now contains:
+
+  ```text
+  203 continuous daily rows
+
+  Coverage:
+  2026-02-09 through 2026-08-30
+  ```
+
+- Added canonical sleep rows for:
+
+  ```text
+  2026-08-24
+  2026-08-25
+  2026-08-26
+  2026-08-27
+  2026-08-28
+  2026-08-29
+  2026-08-30
+  ```
+
+- Preserved sleep-stage percentages using the canonical calculation rule:
+
+  ```text
+  recorded stage minutes
+  ÷
+  recorded total sleep minutes
+  ```
+
+- Did not propagate prose percentages where they disagreed with the recorded stage-minute arithmetic.
+
+- Preserved the existing governed historical sleep warnings without automatic correction:
+  - DQ-001 awake-minute / awakening-count duplication
+  - DQ-002 `2026-03-31` sleep-stage difference
+  - DQ-003 `2026-04-02` sleep-stage difference
+
+- Recorded Week 34 morning bodyweight values:
+
+  ```text
+  235.6
+  235.3
+  233.4
+  233.1
+  232.2
+  232.8
+  234.1 lb
+  ```
+
+- Recorded Week 34 morning bodyweight mean:
+
+  ```text
+  233.79 lb
+  reported as 233.8 lb
+  ```
+
+- Recorded the Week 33 morning bodyweight comparison:
+
+  ```text
+  W33:
+  approximately 235.4 lb
+
+  W34:
+  approximately 233.8 lb
+  ```
+
+- Preserved lower reported caloric intake and increasing physique clarification as contextual observations.
+
+- Preserved the interpretation boundary that short-window scale movement cannot be assigned entirely to tissue change because:
+  - fluid state
+  - glycogen
+  - food mass
+  - sodium
+  - GI-clearance timing
+  - measurement conditions
+
+  remain relevant.
+
+- Recorded the narrower Week 34 relationship:
+
+  ```text
+  lower average bodyweight
+  +
+  lower reported intake
+  +
+  complete formal training
+  +
+  high ordinary activity
+  +
+  preserved training execution
+  +
+  stable mood and GI state
+  ```
+
+- No claim is made that the current energy deficit is indefinitely costless.
+
+- Preserved the current model-error state:
+
+  ```text
+  041:
+  closed / supported
+
+  042:
+  closed / not supported
+  continued adaptation
+
+  043:
+  open / unscored
+  TruDiagnostic provider results pending
+
+  044:
+  closed / not supported
+  narrow snapshot-directed governance deviation
+
+  045:
+  closed / supported
+
+  046:
+  closed / not supported
+  failed_autonomic_recompression
+  ```
+
+- Preserved record 043 as the sole open model-error record.
+
+- Preserved records 041, 042, 044, 045, and 046 as closed historical outcomes.
+
+- Week 34 recovery observations were not used to rescore record 046.
+
+- Preserved the fixed record 046 scoring result:
+
+  ```text
+  actual:
+  failed_autonomic_recompression
+
+  error direction:
+  over
+
+  primary scoring window:
+  2026-08-20 through 2026-08-23
+  ```
+
+- Preserved the interpretation that Week 34 provides post-closure evidence of reversibility and ordinary functional continuity.
+
+- That later evidence does not alter the registered record 046 result.
+
+- Preserved record 042 as closed / not supported through continued adaptation.
+
+- Week 34 adds later descriptive evidence consistent with that closure through:
+  - automatic grip coupling
+  - reverse equipment transfer
+  - reduced attentional demand
+  - preservation after incidental workload
+  - preservation after schedule displacement
+  - increased ownership of movement sequencing
+
+- Those observations do not rescore record 042.
+
+- Preserved record 043 as open because TruDiagnostic provider-result evidence remains pending.
+
+- No:
+  - DEXA result
+  - VO₂ result
+  - Bod Pod result
+  - bodyweight trend
+  - wearable recovery result
+  - subjective observation
+  - training-performance observation
+
+  was substituted for the registered primary TruDiagnostic domain.
+
+- Added `reports/2026-W35.md` as the active observation window for:
+
+  ```text
+  2026-08-31 through 2026-09-06
+  ```
+
+- Week 35 preserves:
+
+  ```text
+  Phase:
+  Phase 2 — Load Integration
+
+  Operating substate:
+  Consolidation / lock-in observation
+
+  Formal Phase 2D:
+  undeclared
+  ```
+
+- Week 35 continues ordinary B1 + Load Integration.
+
+- No new formal perturbation is introduced at opening.
+
+- No new threshold-based recovery prediction is created at opening.
+
+- No new model-error record is created at opening.
+
+- Week 35 observation priorities include:
+  - ordinary B1 continuity
+  - Load Integration automaticity
+  - grip availability
+  - movement organization
+  - autonomic-function relationships
+  - sleep continuity
+  - bodyweight trajectory
+  - lower-intake tolerance
+  - ordinary-life availability
+  - naturally occurring portability conditions
+
+- Week 35 explicitly avoids:
+  - workload escalation solely because execution feels embedded
+  - unloading solely because of an isolated less-favorable wearable night
+  - manufactured portability challenges
+  - specialized grip work without independent justification
+  - reopening completed model errors
+  - premature record 043 scoring
+  - isolated-session Phase 2D declaration
+
+- Updated `LATEST.md` through the Week 34 closeout:
+  - advances `2026-W35` to the active weekly window
+  - records `2026-W34` as closed
+  - advances canonical sleep through `2026-08-30`
+  - records 203 continuous canonical sleep rows
+  - records Week 34 training totals
+  - records Week 34 recovery metrics
+  - records Week 34 natural portability and automaticity evidence
+  - preserves record 043 as the sole open model-error record
+  - preserves records 041, 042, 044, 045, and 046 as closed
+  - preserves record 046 as `failed_autonomic_recompression`
+  - preserves pending TruDiagnostic provider results
+  - preserves Phase 2
+  - preserves the consolidation / lock-in observation substate
+  - leaves formal Phase 2D undeclared
+
+- Updated `INDEX.md`:
+  - advances the active weekly report to `2026-W35`
+  - records `2026-W34` as the most recent closed report
+  - advances canonical sleep through `2026-08-30`
+  - records 203 continuous canonical sleep rows
+  - adds a compact Week 34 closeout summary
+  - records Week 34 automaticity and natural portability evidence
+  - preserves record 043 as the current open prediction set
+  - preserves completed model-error scoring boundaries
+  - preserves current primary concordance values
+  - leaves formal Phase 2D undeclared
+
+- Updated `README.md`:
+  - advances current weekly state to `2026-W35`
+  - records `2026-W34` as the most recent closed window
+  - advances canonical sleep through `2026-08-30`
+  - records 203 continuous canonical sleep rows
+  - adds a compact public-facing Week 34 closeout
+  - records increasing automaticity and natural portability
+  - preserves record 043's pending primary-domain boundary
+  - preserves all closed model-error outcomes
+  - preserves current primary calibration summaries
+  - leaves formal Phase 2D undeclared
+
+- The August 31 alignment does not:
+  - modify a primary source artifact
+  - modify an artifact checksum
+  - alter a registered prediction wording
+  - alter a registered threshold
+  - extend a completed prediction window
+  - reopen a closed model-error record
+  - score record 043
+  - modify primary UDI or concordance values
+  - introduce a new recurring training protocol
+  - declare Phase 2D
+  - modify release metadata
+  - increment the formal release version
+
 #### August 24 Week 33 closeout and Model Error 046 adjudication
 
 - Closed `reports/2026-W33.md` after completion of the full `2026-08-17` through `2026-08-23` observation window.
@@ -93,7 +616,7 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 
 - Extended `data/sleep_longitudinal_v1.csv` through `2026-08-23`.
 
-- Canonical sleep now contains:
+- Canonical sleep now contained at that point:
 
   ```text
   196 continuous daily rows
@@ -268,7 +791,7 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - point UDI
   - range UDI
 
-- Current primary calibration summaries remain:
+- Current primary calibration summaries remained:
 
   ```text
   Primary state concordance:
@@ -347,51 +870,15 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   undeclared
   ```
 
-- Week 34 returns to ordinary B1 + Load Integration continuity.
+- Week 34 returned to ordinary B1 + Load Integration continuity.
 
-- No new threshold-based recovery prediction is created from the Week 33 outcome.
+- No new threshold-based recovery prediction was created from the Week 33 outcome.
 
-- No special recovery intervention is introduced solely because record 046 failed.
+- No special recovery intervention was introduced solely because record 046 failed.
 
-- Updated `LATEST.md`:
-  - advances `2026-W34` to the active weekly window
-  - records `2026-W33` as closed
-  - advances canonical sleep through `2026-08-23`
-  - records 196 continuous canonical sleep rows
-  - reduces the current open model-error set to record `043`
-  - records record `046` as closed / `failed_autonomic_recompression`
-  - records the Week 33 training and recovery summary
-  - records natural Week 33 portability evidence
-  - preserves the August TruDiagnostic provider-result domain as pending
-  - preserves Phase 2
-  - preserves the consolidation / lock-in observation substate
-  - leaves Phase 2D undeclared
+- Updated `LATEST.md`, `INDEX.md`, and `README.md` through the Week 33 closeout.
 
-- Updated `INDEX.md`:
-  - advances the active weekly report to `2026-W34`
-  - records `2026-W33` as the most recent closed report
-  - advances canonical sleep coverage through `2026-08-23`
-  - reduces the current open prediction set to record `043`
-  - records record `046` as closed
-  - relabels the record 046 preregistration plan as a completed preserved historical artifact
-  - aligns model-error, verification, prediction-review, and August snapshot navigation
-  - preserves record 046 as secondary and therefore outside primary UDI/concordance recalculation
-  - preserves Phase 2D as undeclared
-
-- Updated `README.md`:
-  - advances the active weekly window to `2026-W34`
-  - records `2026-W33` as the most recent closed window
-  - advances canonical sleep through `2026-08-23`
-  - reduces the open model-error set to record `043`
-  - records record `046` as closed / not supported
-  - records formal record 046 outcome `failed_autonomic_recompression`
-  - relabels the record 046 evaluation artifact as completed preregistration provenance
-  - records Week 33 natural portability evidence
-  - preserves the pending TruDiagnostic boundary for record 043
-  - preserves current primary concordance values
-  - preserves formal Phase 2D as undeclared
-
-- The August 24 alignment does not:
+- The August 24 alignment did not:
   - modify a source artifact
   - modify an artifact checksum
   - alter a registered prediction threshold
@@ -599,7 +1086,7 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - record 043 correctly remained open
   - record 044 narrow governance-failure closure remained methodologically defensible
   - record 045 scoring remained supported
-  - record 046 correctly remained open and unscored
+  - record 046 correctly remained open and unscored at the time of the audit
 
 - Independently rechecked the record 045 four-day means:
 
@@ -824,16 +1311,16 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 - Preserved Model Error record `046` as:
   - open
   - unscored
-  - prospectively bounded to its existing unload/reload evaluation window
+  - prospectively bounded to its existing unload/reload evaluation window at that point
 
-- Reduced the current open model-error set to:
+- Reduced the current open model-error set at that point to:
 
   ```text
   043
   046
   ```
 
-- Established the current recent closed set as:
+- Established the current recent closed set at that point as:
 
   ```text
   041 — supported
@@ -1301,100 +1788,23 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - authorizes no phase declaration
   - locks thresholds against outcome-driven revision
 
-- Added `docs/audits/2026-08-12-wednesday-audit.md`:
-  - audits pre-change package `daniel-longitudinal-public-main (2).zip`
-  - records pre-change ZIP size `35,877,254 bytes`
-  - records pre-change ZIP SHA-256 `2b5e7fbe2477fa512dd4419b0caf70e40e2d9ee70616afe47786341ecc6897c7`
-  - records zero validator errors and two governed warnings
-  - records pre-change mechanical repository `PASS`
-  - records 179 files
-  - records 126 Markdown files
-  - records 739 internal Markdown references
-  - records 11 CSV files
-  - records 29 of 29 checksum entries passing
-  - records canonical sleep continuity through `2026-08-09`
-  - records 182 continuous canonical sleep rows
-  - records weekly-report continuity through active `2026-W32`
-  - reconciles Week 31 training and recovery metrics
-  - preserves the Week 31 autonomic-performance divergence as retrospective evidence
-  - documents the prospective rationale for record 045
-  - documents record 045 thresholds and failure boundaries
-  - documents record 045 independence from records 041–044
-  - documents validator protection expansion through record 045
-  - confirms no change to the August collection plan
-  - confirms no change to the original 041–044 evaluation plan
-  - confirms no protocol change
-  - confirms no phase transition
-  - confirms no biological-data correction
-  - confirms no privacy-artifact change
-  - confirms no release increment
-  - records completed fresh-ZIP verification of `daniel-longitudinal-public-main (3).zip`
-  - records post-change ZIP size `35,902,464 bytes`
-  - records post-change ZIP SHA-256 `30d5e2fa5b8694981307102750ed9c107f581048bc213c5a4a464746a8d3d20d`
-  - records post-change validator result of zero errors, two governed warnings, ten passes, and overall `PASS`
-  - records extracted-directory validator result of zero errors, two governed warnings, nine passes, and overall `PASS`
-  - records successful Python compilation of `tools/validate_repository.py`
-  - records the verified post-change inventory of 181 files, 128 Markdown files, 760 internal references, 11 CSV files, 182 canonical sleep rows, 27 weekly reports, and 33 model-error records
-  - confirms records 041–045 remain open and unscored
-  - confirms record 045 protected actual and error fields remain blank
-  - confirms 29 of 29 registered checksums pass
-  - confirms RingConn source-byte and CRLF preservation
-  - confirms release metadata remains aligned
-  - confirms the original 041–044 evaluation plan remained unchanged
-  - confirms the August snapshot collection plan remained unchanged
-  - confirms the post-change delta consisted of exactly 2 added files, 9 changed files, and 0 removed files
-  - confirms no unintended material file change was identified
-  - closes the required post-change verification for the substantive 11-file August 12 governance batch
+- Added `docs/audits/2026-08-12-wednesday-audit.md` and recorded the associated August 12 governance and validation batch.
 
 #### Weekly reporting
 
-- Added retrospective closeout for `reports/2026-W31.md`:
-  - records seven completed B1 and seven completed Load Integration sessions
-  - records 385 B1 minutes and 315 Load Integration minutes
-  - records 700 total formal training minutes
-  - records approximately 21.14 miles of B1 aerobic work
-  - records morning bodyweight averaging approximately 235.1 lb
-  - records daily biomarker HRV averaging approximately 57.3 ms
-  - records sleep HRV averaging approximately 60.1 ms
-  - records resting heart rate averaging approximately 51.4 bpm
-  - records sleeping heart rate averaging approximately 56.4 bpm
-  - records total sleep averaging approximately 7 hours 39 minutes
-  - records a broader autonomic recovery signal than W30, with lower HRV and higher heart-rate measures across multiple related fields
-  - records that the autonomic pattern did not converge with pain, GI disruption, mood instability, training-initiation failure, impaired aerobic control, technical degradation, loss of grip, or protocol interruption
-  - records trait-level pull-up execution across all four sets on `2026-08-04`
-  - records automatic bar organization and full positional ownership on `2026-08-05`
-  - records trait-level B1 and Load Integration execution on `2026-08-06`
-  - records grip improvement without specialized intervention
-  - records unsolicited external recognition of grip strength during final dead hangs
-  - records high, owned, ambient Load Integration execution on `2026-08-08`
-  - records ambient B1 followed by substantial yard work and trait-level Load Integration on `2026-08-09`
-  - records spontaneous pull-up recognition, attempted technique replication, and direct side-by-side execution on `2026-08-09`
-  - preserves external recognition and social comparison as qualitative naturalistic evidence rather than formal testing
-  - preserves the autonomic-performance divergence as an observational carryforward question rather than creating a retrospective prediction
-  - records candidate evidence relevant to Model Error records 041, 042, and 044
-  - preserves records 041–044 as open and unscored at Week 31 closeout
-  - preserves Phase 2 status and the `Consolidation / lock-in observation` operating substate
-  - preserves Phase 2D as undeclared
+- Added retrospective closeout for `reports/2026-W31.md`.
 
-- Added initialization for `reports/2026-W32.md`:
-  - defines the observation window as `2026-08-10` through `2026-08-16`
-  - carries forward the standard B1 and Load Integration protocol unchanged
-  - defines W32 as the final full ordinary observation week before the August 17–18 snapshot
-  - prioritizes observation of whether the W31 multi-marker autonomic pattern rebounds, stabilizes, continues, or converges with functional change
-  - preserves daily HRV, sleep HRV, resting heart rate, and sleeping heart rate as distinct evidence streams
-  - continues observation of sleep continuity, subjective restoration, training initiation, aerobic control, perceived exertion, grip, positional control, pain, mood, GI state, and ordinary-life availability
-  - preserves the W31 autonomic-performance divergence as an observational carryforward question
-  - prohibits retrospective creation of a prediction from the W31 evidence window
-  - retains grip as an observed local variable rather than a new training objective
-  - prohibits specialized grip work, additional dead hangs, farmer’s carries, rice-bucket work, crushing-grip work, grip testing, and high-volume pull-up sessions
-  - prohibits deliberate reproduction of the `2026-08-09` yard-work-plus-training or firefighter-comparison contexts
-  - preserves distinctions among standard, ambient, background, partial trait-like, pseudo–trait-level, and fully trait-like execution
-  - defines W32 as neither a taper, peak week, deliberate overload week, nor recovery experiment
-  - prohibits snapshot-directed workload, bodyweight, hydration, HRV, or resting-heart-rate optimization
-  - preserves ordinary training, nutrition, hydration, supplementation, sleep opportunity, recovery, and recreational conditions before the August snapshot
-  - links the active prediction-evaluation and snapshot-collection plans
-  - preserves records 041–044 as open and unscored at initialization
-  - preserves Phase 2D as undeclared and Phase 3 as reserved and inactive
+- Added initialization for `reports/2026-W32.md`.
+
+- Updated `reports/2026-W27.md`.
+
+- Replaced the active W28 planning scaffold with a retrospective closeout.
+
+- Updated `reports/2026-W29.md`.
+
+- Expanded `reports/README.md`.
+
+- Expanded `schemas/weekly-report-template.md`.
 
 #### RingConn source exports
 
@@ -1403,7 +1813,6 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   `data/source_exports/ringconn/2026-07-21/`
 
 - Added:
-
   - `ringconn-sleep-export.csv`
   - `ringconn-activity-export.csv`
   - `ringconn-vital-signs-export.csv`
@@ -1411,7 +1820,6 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - `checksums.txt`
 
 - Registered the package as:
-
   - a direct user-account export
   - provider-source evidence
   - separate from curated longitudinal datasets
@@ -1420,78 +1828,23 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - privacy screened
   - available for targeted reconciliation or future analysis
 
-- Documented source coverage:
-
-  - 366 sleep-episode rows
-  - 360 activity-date rows
-  - 360 vital-sign-date rows
-  - sleep coverage beginning 2025-07-21
-  - activity and vital-sign coverage through 2026-07-20
-  - missing source dates
-  - multiple sleep episodes
-  - unresolved timezone behavior
-  - mixed timestamp precision
-  - provider-defined field semantics
-
 - Added root `.gitattributes` control:
 
   ```gitattributes
   data/source_exports/**/*.csv -text
   ```
 
-- The Git attribute prevents line-ending conversion for provider-source CSV files stored beneath `data/source_exports/`.
-
-- Verified that the committed RingConn files:
-
-  - match the original downloaded exports byte-for-byte
-  - preserve original CRLF line endings
-  - retain their original file sizes
-  - match the registered SHA-256 manifest
-  - remain byte-identical after download through a fresh GitHub repository ZIP
-
-- Verified all registered archive checksums after the byte-preservation repair:
-
-  - 10 checksum manifests
-  - 29 registered artifacts
-  - 29 of 29 passed
+- Verified byte preservation and checksum integrity through fresh repository packaging.
 
 #### Datasets and data quality
 
-- Appended sleep observations for `2026-08-03` through `2026-08-09` to `data/sleep_longitudinal_v1.csv`:
-  - extends canonical sleep coverage through `2026-08-09`
-  - increases the canonical dataset to 182 continuous daily rows beginning `2026-02-09`
-  - adds seven daily rows without a date gap
-  - preserves total-sleep, deep-sleep, light-sleep, REM, awake-time, awakening-count, efficiency, HRV, sleeping-heart-rate, subjective-state, readiness, and sleep-tag fields
-  - calculates sleep-stage percentages directly from recorded stage minutes divided by total sleep minutes
-  - preserves the structured awakening counts from the contemporaneous sleep log
-  - preserves awake-after-sleep-onset values from the nightly records without reconstructing unobserved values
-  - preserves medium-confidence REM classifications across the W31 nights according to contemporaneous wearable and subjective evidence
-  - preserves unusually low device-estimated REM where recorded without inferred replacement values
-  - keeps daily biomarker HRV separate from sleep HRV
-  - keeps daily heart-rate measurements separate from sleeping-heart-rate measurements
-  - adds no interpolated, reconstructed, or silently repaired values
-  - leaves the existing governed DQ-001 through DQ-003 findings unchanged
+- Appended sleep observations for `2026-08-03` through `2026-08-09` to `data/sleep_longitudinal_v1.csv`.
 
-- Added `data/DATA_QUALITY_NOTES.md`:
-  - documents unresolved awake-field duplication from `2026-05-18` through `2026-05-31`
-  - documents sleep-stage total discrepancies for `2026-03-31` and `2026-04-02`
-  - requires source reconciliation before modification
-  - prohibits silent or inferred repair
+- Added `data/DATA_QUALITY_NOTES.md`.
 
-- Expanded the data-quality register through DQ-008:
-  - identifies direct-export correction candidates for DQ-001 through DQ-003
-  - preserves `awakenings_count` as unresolved
-  - documents sleep date-assignment and timezone uncertainty
-  - documents mixed timestamp precision
-  - documents multiple sleep episodes
-  - documents cross-domain missing dates
-  - documents the November 17 unclassified-stage provider session
-  - documents broader curated-versus-export differences
-  - converts unresolved source questions into field-specific analytical restrictions
-  - authorizes no bulk historical overwrite
+- Expanded the data-quality register through DQ-008.
 
 - Confirmed that RingConn ingestion did not modify:
-
   - `data/sleep_longitudinal_v1.csv`
   - existing weekly reports
   - Model Error records
@@ -1500,83 +1853,25 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 
 #### Prediction and methodology governance
 
-- Added Model Error records 041–044 covering:
-  - July–August recovery capacity
-  - ambient-execution plateau behavior
-  - August biological-snapshot translation
-  - protocol-governance preservation
+- Added Model Error records 041–044.
 
-- Added `methodology/open_prediction_evaluation_plan_041_044.md`:
-  - registers scoring rules and admissible evidence before outcome review
-  - defines repeated-evidence requirements for record 042
-  - separates the primary epigenetic endpoint from supplemental August measurements
-  - protects prediction language from outcome-driven revision
+- Added `methodology/open_prediction_evaluation_plan_041_044.md`.
 
-- Added `methodology/2026-08-snapshot-collection-plan.md`:
-  - preregisters the August 17–18 biological and performance collection window before outcome access
-  - records the planned TruDiagnostic, DEXA, VO₂ max, and Bod Pod schedule
-  - preserves TruDiagnostic as the primary Model Error 043 domain
-  - preserves May 2026 as the primary comparison baseline
-  - classifies DEXA, VO₂ max, Bod Pod, bodyweight, recovery, and subjective state as supplemental evidence
-  - defines representative-state fasting, hydration, training, supplementation, medication, sleep, and collection documentation
-  - prohibits snapshot-directed protocol, nutrition, hydration, recovery, and workload manipulation
-  - defines source-artifact, privacy-review, checksum, and structured-transcription requirements
-  - defines missing, delayed, invalid, incomplete, rescheduled, and discordant-result handling
-  - protects outcome-access, scoring, protocol, phase, and release boundaries
-  - preserves records 041–044 as open and unscored at registration
-  - introduces no prediction, protocol, phase, biological-value, or release change
+- Added `methodology/2026-08-snapshot-collection-plan.md`.
 
-- Added Event 003 to `data/model_error/calibration_events_log.md` for initialization of the July–August prediction block.
+- Added Event 003 to `data/model_error/calibration_events_log.md`.
 
 #### Repository validation tooling
 
 - Added `tools/validate_repository.py` as a local read-only repository validator.
 
 - The validator supports:
-
   - extracted repository directories
   - downloaded GitHub ZIP packages
   - human-readable output
   - machine-readable JSON output
   - nonzero exit status for mechanical errors
   - governed warnings that do not invalidate the repository
-
-- The validator checks:
-
-  - required repository paths
-  - zero-byte files
-  - ZIP CRC and path safety
-  - Markdown relative links
-  - Markdown internal anchors
-  - fenced-code balance
-  - CSV parsing
-  - CSV row widths
-  - duplicate CSV headers
-  - checksum manifests
-  - canonical sleep continuity
-  - governed DQ-001 through DQ-003 warnings
-  - weekly-report continuity
-  - active weekly-report count
-  - model-error record continuity
-  - protected model-error state
-  - protected prospective registration provenance
-  - protected registered prediction narratives
-  - release-metadata alignment
-  - RingConn byte sizes
-  - RingConn SHA-256 values
-  - RingConn provider headers
-  - RingConn row counts
-  - RingConn CRLF preservation
-  - the source-export `.gitattributes` rule
-
-- The validator:
-
-  - uses only the Python standard library
-  - does not edit repository files
-  - does not infer corrections
-  - does not score predictions
-  - does not normalize provider exports
-  - does not replace human semantic review
 
 - GitHub Actions validation remains deferred until the local validator demonstrates stability across repeated audit cycles.
 
@@ -1597,122 +1892,7 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - `2026-08-12`
   - `2026-08-23`
 
-- The July audits collectively:
-  - verified repository structure, links, Markdown integrity, CSV parsing, checksums, report continuity, prediction continuity, and release metadata
-  - identified targeted sleep-data, protocol-status, experiment-wording, governance-language, privacy, source-provenance, terminology, and validation-tooling issues
-  - confirmed remediation where source evidence was sufficient
-  - preserved unresolved source-reconciliation items without inferred correction
-  - recognized administrative overhead as a repository-design concern
-  - recommended shorter, delta-focused weekly reports and audits
-  - identified repeatable mechanical checks suitable for local automation
-
-- Added `docs/audits/2026-07-22-wednesday-audit.md`:
-  - confirms mechanical repository integrity after W28 closeout and W29 initialization
-  - verifies canonical sleep continuity through `2026-07-19`
-  - verifies the current sanitized July 2025 blood artifact and updated checksum
-  - distinguishes current-tree sanitization from historical and archival distribution
-  - audits annual RingConn sleep, activity, and vital-sign exports
-  - identifies multiple sleep episodes, missing dates, timezone limitations, and provider anomalies
-  - documents material differences between contemporaneous curated sleep values and later provider-export values
-  - prohibits direct append of the annual sleep export into `data/sleep_longitudinal_v1.csv`
-  - preserves records 041–044, release metadata, protocol state, and phase status unchanged
-
-- Appended a post-audit disposition to the July 22 audit:
-  - preserves the original audit as a point-in-time record
-  - records completion of controlled privacy remediation
-  - records completion of RingConn source ingestion and byte verification
-  - supersedes the immediate normalized-tracker recommendation
-  - establishes periodic immutable provider exports as the current wearable-preservation model
-  - retains GitHub provider-side cleanup as pending
-  - confirms that no canonical biological value was changed
-
-- Added `docs/audits/2026-07-25-saturday-audit.md`:
-  - confirms that the reviewed Saturday package was unchanged from the preceding verified closeout package
-  - reconfirms ZIP safety and repository structure
-  - reconfirms Markdown, CSV, checksum, artifact, privacy, report, prediction, and release integrity
-  - reconfirms RingConn source-byte and CRLF preservation
-  - confirms W29 remains active through its full observation window
-  - confirms records 041–044 remain open, unscored, and unchanged at that point
-  - identifies phase-language hierarchy as the principal remaining documentation debt
-  - identifies repeated mechanical audit work as suitable for a local validator
-  - preserves the August collection plan as due before outcome access
-  - recommends no canonical-data, privacy-artifact, source-export, protocol, prediction, or phase modification
-
-- Added `docs/audits/2026-07-29-wednesday-audit.md`:
-  - audits `daniel-longitudinal-public-main (30).zip`
-  - records ZIP SHA-256 `a3a417035f2b580574b1adae3cffe24b89769a721a6039abc77679de91194453`
-  - confirms safe ZIP paths, coherent repository structure, and no zero-byte or exact duplicate files
-  - confirms 122 Markdown files and 670 valid internal references
-  - confirms all 11 CSV files parse with consistent row widths
-  - confirms canonical sleep continuity through `2026-07-26`
-  - reconciles the W29 sleep-derived metrics against the canonical sleep dataset
-  - confirms the 107-minute and 807-minute structured movement calculations
-  - identifies the need to distinguish timed aquatic exposure from additional narrative aquatic activity
-  - confirms 29 of 29 registered checksums
-  - confirms RingConn source-byte and CRLF preservation
-  - confirms current privacy and release metadata integrity
-  - confirms records 041–044 remain open, unscored, and unchanged at that point
-  - confirms Phase 2 remains active, Phase 2D remains undeclared, and Phase 3 remains reserved
-  - confirms the August collection plan is methodologically aligned and preregistered before outcome access
-  - identifies the missing August collection-plan changelog entry
-  - identifies collection-plan and validator discoverability improvements
-  - recommends expansion of `methodology/README.md`
-  - records local validator result of zero errors, two governed warnings, and overall `PASS`
-  - recommends no canonical-data, source-export, privacy-artifact, prediction, protocol, phase, or release modification
-
-- Added `docs/audits/2026-08-05-wednesday-audit.md`:
-  - audits `daniel-longitudinal-public-main (35).zip`
-  - records ZIP SHA-256 `083a2014d86dab927222113fbffa8b39823f2097a3a2bf315780f6c90afabfb9`
-  - confirms safe ZIP paths, coherent repository structure, and no zero-byte or exact duplicate files
-  - confirms 124 Markdown files and 737 valid internal references
-  - confirms all 11 CSV files parse with consistent row widths
-  - confirms canonical sleep continuity through `2026-08-02`
-  - reconciles W30 sleep metrics against the canonical sleep dataset
-  - reconciles seven B1 sessions, seven Load Integration sessions, and 700 formal training minutes
-  - confirms W30 closure and W31 initialization
-  - confirms 29 of 29 registered checksums
-  - confirms RingConn source-byte and CRLF preservation
-  - confirms current privacy and release-metadata integrity
-  - confirms records 041–044 remain open, unscored, and unchanged at that point
-  - confirms Phase 2 remains active, Phase 2D remains undeclared, and Phase 3 remains reserved
-  - records direct RingConn source review of the July 31 HRV discrepancy
-  - distinguishes July 31 daily-average HRV of `55 ms` from sleep HRV of `67 ms`
-  - identifies the private workbook’s structured `56 ms` and narrative `68 ms` daily-HRV values as incorrect
-  - authorizes correction of the W30 weekly daily-HRV average from `62.1 ms` to `62.0 ms`
-  - confirms that the correction does not alter canonical sleep, weekly interpretation, prediction status, protocol state, phase status, or release metadata
-  - records local validator result of zero errors, two governed warnings, and overall `PASS`
-
-- Added `docs/audits/2026-08-23-catch-up-audit.md`:
-  - records the audit as performed on August 23 rather than backdating missed August 19 and August 22 checkpoints
-  - audits `daniel-longitudinal-public-main (8).zip`
-  - records ZIP size `40,120,282 bytes`
-  - records ZIP SHA-256 `08828eda225717bddf2f9e5126c912d183eb935316ce7c29f2ed4c5e08dd023d`
-  - compares the current state with the August 15 Saturday reference package
-  - confirms zero validator errors
-  - confirms two governed warnings
-  - confirms overall mechanical `PASS`
-  - confirms 189 files
-  - confirms 131 Markdown files
-  - confirms 813 internal Markdown references
-  - confirms 11 CSV files
-  - confirms 33 of 33 registered checksums passing
-  - confirms canonical sleep continuity through `2026-08-16`
-  - confirms 189 continuous canonical sleep rows
-  - confirms weekly-report continuity through active `2026-W33`
-  - confirms model-error continuity through record `046`
-  - confirms August physical-artifact readability
-  - confirms RingConn byte preservation
-  - confirms release metadata alignment
-  - reviews records 041–046 against their preserved governance boundaries
-  - confirms record 045 scoring remained supported
-  - identifies record 045 registration-provenance drift
-  - identifies the validator blind spot that allowed that drift to pass mechanically
-  - authorizes narrow record 045 provenance correction
-  - authorizes validator hardening
-  - preserves record 046 as open and unscored
-  - preserves W33 as active
-  - defers W33 closeout and record 046 scoring until complete August 23 evidence collection
-  - records overall disposition `PASS WITH NARROW GOVERNANCE-PROVENANCE CORRECTION REQUIRED`
+- The audit layer continues to distinguish mechanical repository validation from human semantic and governance review.
 
 #### Public archive and navigation
 
@@ -1725,6 +1905,95 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 ---
 
 ### Changed
+
+#### August 31 Week 34 closeout and live-state alignment
+
+- Updated `reports/2026-W34.md`:
+  - changes status from active to closed
+  - records all seven B1 sessions
+  - records all seven Load Integration sessions
+  - records 700 total formal training minutes
+  - records approximately 21.14 B1 miles
+  - records Week 34 structured recovery averages
+  - records lower morning bodyweight
+  - records recurring overnight autonomic variability
+  - records preserved functional execution
+  - records reverse equipment transfer
+  - records automatic grip coupling
+  - records same-day yard-work compatibility
+  - records schedule-displacement compatibility
+  - records increasing ownership of pacing and sequencing
+  - preserves model-error scoring boundaries
+  - preserves record 043 as open
+  - preserves Phase 2
+  - preserves the consolidation / lock-in observation substate
+  - leaves Phase 2D undeclared
+
+- Added and activated `reports/2026-W35.md`:
+  - defines `2026-08-31` through `2026-09-06` as the active observation window
+  - preserves standard B1 + Load Integration
+  - creates no new recovery threshold
+  - creates no new model-error record at opening
+  - continues observation of automaticity, recovery-function relationships, bodyweight, intake context, and natural portability
+  - prohibits forced progression
+  - preserves record 043 as the sole open model-error record
+  - preserves Phase 2D as undeclared
+
+- Updated `data/sleep_longitudinal_v1.csv`:
+  - appends seven daily observations
+  - advances coverage through `2026-08-30`
+  - advances canonical continuity to 203 daily rows
+  - preserves device-estimated REM values
+  - preserves explicit REM-confidence labeling
+  - preserves subjective dream phenomenology separately
+  - preserves daily versus sleep HRV distinction
+  - preserves resting versus sleeping heart-rate distinction
+  - calculates stage percentages from recorded stage minutes
+  - introduces no inferred replacement sleep-stage values
+
+- Updated `LATEST.md`:
+  - advances active state from W34 to W35
+  - records W34 as closed
+  - advances canonical sleep through `2026-08-30`
+  - records 203 continuous canonical sleep rows
+  - records W34 complete training exposure
+  - records W34 automaticity and natural portability evidence
+  - records recurrent autonomic variability with preserved function
+  - records lower bodyweight / lower-intake context
+  - preserves record 043 as the sole open prediction
+  - preserves records 041, 042, 044, 045, and 046 as closed
+  - preserves primary UDI and concordance values
+  - leaves Phase 2D undeclared
+
+- Updated `INDEX.md`:
+  - advances current weekly navigation to W35
+  - records W34 as the most recent closed report
+  - advances canonical sleep through `2026-08-30`
+  - records 203 continuous canonical sleep rows
+  - adds compact W34 training, recovery, portability, and automaticity state
+  - preserves completed prediction boundaries
+  - preserves record 043 as the sole current open record
+  - preserves Phase 2D as undeclared
+
+- Updated `README.md`:
+  - advances public current-state navigation to W35
+  - records W34 as the most recent closed report
+  - advances canonical sleep through `2026-08-30`
+  - records 203 continuous canonical sleep rows
+  - adds compact W34 training and behavioral-consolidation context
+  - preserves the August molecular evidence boundary
+  - preserves all completed model-error outcomes
+  - leaves Phase 2D undeclared
+
+- No model-error ledger modification was required for Week 34.
+
+- No validator modification was required for Week 34.
+
+- No verification-rule modification was required for Week 34.
+
+- No methodology modification was required for Week 34.
+
+- No phase-governance file modification was required for Week 34.
 
 #### August 24 Week 33 closeout alignment
 
@@ -1739,92 +2008,19 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - leaves trajectory numeric `error_absolute` and `error_pct` unforced where no meaningful scalar magnitude is defined
   - preserves record `043` as the sole open model-error record
 
-- Updated `tools/validate_repository.py`:
-  - removes record `046` from the protected open set
-  - reduces the protected open set to record `043`
-  - adds record `046` to the protected closed-record set
-  - requires record `046` to remain closed
-  - protects `actual_value=failed_autonomic_recompression`
-  - protects `error_direction=over`
-  - preserves registration-provenance protection across records `041` through `046`
-  - preserves the original registered prediction narratives for records `041` through `046`
-  - updates model-error pass messaging to reflect record 043 as the sole open/unscored record
-  - removes the temporary controlled-closure transition state after successful ledger closure
+- Updated `tools/validate_repository.py`.
 
-- Updated `VERIFICATION.md`:
-  - reduces the protected open-record documentation to record `043`
-  - adds record `046` to protected closed/adjudicated history
-  - documents record 046 fixed-window arithmetic means
-  - documents the 1-of-4 favorable threshold result
-  - documents preserved function and normal training reload
-  - documents the formal `failed_autonomic_recompression` outcome
-  - documents `error_direction=over`
-  - preserves record 046 `calibration_state=pre`
-  - preserves record 046's original prospective prediction narrative
-  - distinguishes later recovery from evidence admissible to the fixed scoring window
+- Updated `VERIFICATION.md`.
 
-- Updated `reports/2026-W33.md`:
-  - closes the Week 33 observation window
-  - compresses repeated standing methodology into a more evidence-centered retrospective report
-  - records actual August testing and reload geometry
-  - records five B1 and five Load Integration sessions after testing
-  - records 500 total formal training minutes
-  - records approximately 15.10 B1 miles
-  - records Week 33 structured recovery averages
-  - records natural altered-room and altered-equipment portability evidence
-  - formally scores record 046 against the registered four-day window
-  - records record 046 as not supported through autonomic re-compression
-  - preserves later recovery as context rather than rescoring evidence
-  - preserves record 043 as open
-  - preserves Phase 2
-  - preserves the consolidation / lock-in observation substate
-  - leaves Phase 2D undeclared
+- Updated `reports/2026-W33.md`.
 
-- Added and activated `reports/2026-W34.md`:
-  - defines `2026-08-24` through `2026-08-30` as the active observation window
-  - returns to ordinary B1 + Load Integration continuity
-  - creates no new threshold-based autonomic prediction
-  - preserves record 046 as historical and closed
-  - prohibits Week 34 evidence from retrospectively rescuing record 046
-  - preserves record 043 as the sole open model-error record
-  - preserves Phase 2D as undeclared
+- Added and activated `reports/2026-W34.md`.
 
-- Updated `LATEST.md`:
-  - advances active state from W33 to W34
-  - records W33 as closed
-  - advances canonical sleep through `2026-08-23`
-  - records 196 continuous canonical sleep rows
-  - reduces the open model-error set to record `043`
-  - records record `046` as closed / `failed_autonomic_recompression`
-  - records Week 33 natural portability evidence
-  - preserves the August physical collection as complete
-  - preserves pending TruDiagnostic provider results
-  - preserves current primary concordance values
-  - preserves Phase 2D as undeclared
+- Updated `LATEST.md`.
 
-- Updated `INDEX.md`:
-  - advances current weekly navigation to W34
-  - records W33 as the most recent closed report
-  - advances canonical sleep through `2026-08-23`
-  - reduces the open prediction set to record `043`
-  - records record `046` as closed
-  - updates the prediction and verification navigation layers
-  - reclassifies `open_prediction_evaluation_plan_046.md` as a completed preserved preregistration artifact
-  - preserves current primary UDI/concordance values because record 046 is secondary
-  - preserves Phase 2D as undeclared
+- Updated `INDEX.md`.
 
-- Updated `README.md`:
-  - advances current weekly state to W34
-  - records W33 as closed
-  - advances canonical sleep coverage through `2026-08-23`
-  - reduces the open model-error set to record `043`
-  - records 046 as closed / not supported
-  - exposes its formal `failed_autonomic_recompression` outcome
-  - relabels the 046 evaluation plan as completed preregistration provenance
-  - records Week 33 portability evidence
-  - preserves record 043's pending primary-domain boundary
-  - preserves current primary calibration summaries
-  - leaves formal Phase 2D undeclared
+- Updated `README.md`.
 
 #### August 23 registration-provenance hardening
 
@@ -1844,684 +2040,107 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 
 - Preserved the later record 045 closure narrative by appending it after the restored prospective prediction rather than replacing the original registration text.
 
-- The repair preserves:
+- Updated `tools/validate_repository.py`.
 
-  ```text
-  registered prospective prediction
-  +
-  retrospective closure
-  ```
-
-  as separate inspectable historical layers.
-
-- Record 045 remains:
-
-  ```text
-  status:
-  closed
-
-  actual_value:
-  partial_reconvergence
-
-  error_absolute:
-  0
-
-  error_direction:
-  none
-
-  error_pct:
-  0%
-  ```
-
-- The repair does not alter:
-  - record 045 scoring window
-  - record 045 thresholds
-  - record 045 four-day means
-  - record 045 supported outcome
-  - records 041–044
-  - record 046
-  - UDI values
-  - canonical biological values
-  - canonical sleep values
-  - protocol exposure
-  - phase state
-  - release metadata
-
-- Updated `tools/validate_repository.py`:
-  - preserves the existing protected open-record set of `043` and `046`
-  - preserves the existing protected closed-record set of `041`, `042`, `044`, and `045`
-  - continues protecting selected adjudicated actual values and error directions
-  - adds explicit registration-provenance protection for records `041` through `046`
-  - requires all prospectively registered records in that block to retain:
-
-    ```text
-    calibration_state = pre
-    ```
-
-  - treats `calibration_state` as registration metadata rather than a lifecycle field
-  - prevents a prospectively registered prediction from changing from `pre` to `post` merely because it was later scored
-  - stores the original registered prediction narrative for each protected record `041` through `046`
-  - requires each protected `notes` field to begin with its original registered `Prediction:` narrative
-  - permits later closure language to be appended after the registered prediction
-  - detects removal, replacement, substantive mutation, or reordering of the protected registered prediction narrative
-  - retains explicit rather than dynamically inferred protection so corrupted row contents cannot silently become the validator's own reference state
-  - continues to avoid scientific rescoring
-  - continues to avoid biological-data modification
-
-- Updated `VERIFICATION.md`:
-  - documents registration provenance as a mechanically protected archive property
-  - documents `calibration_state=pre` protection for records 041–046
-  - clarifies that a prospectively registered closed prediction remains historically `pre`
-  - documents original registered prediction-narrative protection
-  - documents that closure language may be appended but may not replace registered prediction wording
-  - documents the August 23 record 045 provenance defect and restoration
-  - clarifies the distinction between:
-    - prediction registration state
-    - prediction lifecycle status
-    - retrospective adjudication
-  - preserves records 043 and 046 as open/unscored
-  - preserves records 041, 042, 044, and 045 as closed/adjudicated
-  - introduces no prediction scoring or biological interpretation
-
-- The registration-provenance hardening is intended to prevent future outcome adjudication from silently changing:
-
-  ```text
-  what was registered before the outcome
-  ```
-
-  into:
-
-  ```text
-  what was concluded after the outcome
-  ```
-
-- W33 closeout and record 046 scoring remain intentionally outside this remediation batch.
+- Updated `VERIFICATION.md`.
 
 #### August 18 model-error closure and documentation alignment
 
-- Updated `data/model_error/model_error_gap_v1.csv`:
-  - closes record `041` as supported
-  - records `actual_value=stable`
-  - records `error_direction=none`
-  - closes record `042` as not supported
-  - records `actual_value=continued_adaptation`
-  - records `error_direction=under`
-  - preserves record `043` as open and unscored
-  - closes record `044` as not supported
-  - records the registered governance miss
-  - records `error_direction=under`
-  - preserves record `045` as closed and supported
-  - preserves record `046` as open and unscored
-  - reduces the current open model-error set to records `043` and `046`
+- Updated `data/model_error/model_error_gap_v1.csv`.
 
-- Updated `data/model_error/udi_by_type_tracker.csv`:
-  - incorporates record 041 as a concordant eligible primary trajectory prediction
-  - incorporates record 042 as an under-direction primary trajectory miss
-  - incorporates record 044 as an under-direction primary state miss
-  - updates primary state concordance to `11/14 = 0.79`
-  - updates primary trajectory concordance to `2/3 = 0.67`
-  - leaves point UDI unchanged
-  - leaves range UDI unchanged
+- Updated `data/model_error/udi_by_type_tracker.csv`.
 
-- Updated `tools/validate_repository.py`:
-  - removes records `041`, `042`, and `044` from the protected open set
-  - reduces the protected open set to records `043` and `046`
-  - requires records `043` and `046` to remain open and unscored
-  - requires their protected actual and error fields to remain blank before authorized closure
-  - protects records `041`, `042`, `044`, and `045` as closed/adjudicated history
-  - protects selected committed actual values and error directions for the closed set
-  - detects accidental reopening or outcome-field drift
-  - does not independently recompute or adjudicate the scientific correctness of the closures
-  - does not score records 043 or 046
-  - preserves model-error continuity through record 046
+- Updated `tools/validate_repository.py`.
 
-- Updated `LATEST.md`:
-  - records 041 as closed / supported
-  - records 042 as closed / not supported through continued adaptation
-  - records 044 as closed / not supported through a narrow snapshot-directed governance deviation
-  - preserves 045 as closed / supported
-  - reduces the open model-error set to 043 and 046
-  - preserves 043 as dependent on pending TruDiagnostic provider results
-  - preserves 046 under its prospective unload/reload boundary
-  - distinguishes the record 044 governance outcome from any unmeasured biological effect
-  - preserves Phase 2
-  - preserves the `Consolidation / lock-in observation` operating substate
-  - leaves Phase 2D undeclared
+- Updated `LATEST.md`.
 
-- Updated `reports/2026-W33.md`:
-  - removes obsolete treatment of 041, 042, and 044 as active Week 33 scoring questions
-  - preserves their outcomes as closed historical context
-  - records 041 as supported
-  - records 042 as not supported through continued adaptation
-  - records 044 as not supported through a narrow snapshot-directed governance deviation
-  - preserves 045 as closed and supported
-  - narrows active Week 33 model-error work to records 043 and 046
-  - prohibits later Week 33 evidence from reopening or improving records 041, 042, 044, or 045
-  - preserves the August 20–23 record 046 scoring window
-  - preserves W33 as active through August 23
-  - leaves Phase 2D undeclared
+- Updated `reports/2026-W33.md`.
 
-- Updated `README.md`:
-  - reduces the current open prediction set to records 043 and 046
-  - records recent closures 041, 042, 044, and 045
-  - identifies record 042 as a model-underestimation event rather than a system failure
-  - identifies record 044 as a narrow governance miss rather than a broad biological or protocol failure
-  - records the August physical collection as complete
-  - preserves the pending TruDiagnostic boundary for record 043
-  - exposes current primary state and trajectory concordance
-  - preserves formal Phase 2D as undeclared
+- Updated `README.md`.
 
-- Updated `INDEX.md`:
-  - reduces current open model-error references to 043 and 046
-  - records 041, 042, 044, and 045 as closed
-  - preserves `open_prediction_evaluation_plan_041_044.md` under its original filename as the preregistered source artifact
-  - records 043 as the sole remaining open record under that original 041–044 framework
-  - updates model-error, prediction-review, methodology, validation, snapshot, and current-archive navigation
-  - records the updated state and trajectory concordance values
-  - preserves the historical August 12 and August 17 index states as point-in-time documentation
-  - leaves Phase 2D undeclared
+- Updated `INDEX.md`.
 
-- Updated `methodology/README.md`:
-  - reclassifies `open_prediction_evaluation_plan_041_044.md` as a preserved preregistered multi-record artifact with one remaining open governed record
-  - records 041 as closed and supported
-  - records 042 as closed and not supported through continued adaptation
-  - records 043 as open pending TruDiagnostic provider results
-  - records 044 as closed and not supported through a narrow snapshot-directed governance deviation
-  - preserves 045 as closed and supported
-  - preserves 046 as active and prospective
-  - distinguishes active, completed, and partially resolved preregistration states
-  - records the August physical collection plan as collection-complete but still relevant to pending record 043 interpretation
-  - updates validator-governance documentation
-  - leaves the original preregistration files unchanged
+- Updated `methodology/README.md`.
 
-- Updated `VERIFICATION.md`:
-  - reduces the explicit protected open set to records 043 and 046
-  - documents records 041, 042, 044, and 045 as protected closed/adjudicated history
-  - documents selected protected actual values and error directions for those closed records
-  - clarifies that validation protects committed governance state rather than independently scoring predictions
-  - records the August physical artifact-verification state
-  - preserves the pending record 043 primary-domain boundary
-  - preserves the prospective record 046 boundary
-  - retains the existing governed sleep warnings
-
-- The current documentation hierarchy remains:
-
-  ```text
-  weekly reports:
-  record what changed
-
-  methodology:
-  preserves standing and preregistered rules
-
-  model-error layer:
-  preserves prediction and scoring state
-
-  LATEST:
-  preserves broad executive synthesis
-
-  README and INDEX:
-  preserve observer-facing orientation and navigation
-
-  VERIFICATION:
-  protects mechanical and governance state
-  ```
-
-- No closed record was retroactively rewritten to make its prediction appear more accurate.
-
-- No Phase 2D declaration was introduced by the 042 continued-adaptation finding.
-
-- No biological consequence was inferred from the 044 governance miss.
+- Updated `VERIFICATION.md`.
 
 #### August 18 current-state and physical-snapshot alignment
 
-- Updated current documentation through completion of the August 17–18 physical collection window:
-  - records DEXA, VO₂, and Bod Pod physical collection as complete
-  - records the physical source artifacts as privacy-reviewed and checksum-verified
-  - records the TruDiagnostic sample as collected on `2026-08-17` at `05:37`
-  - preserves TruDiagnostic provider results as pending
-  - exposes the August temporal epoch
-  - records actual collection timing and preparation conditions
-  - preserves the August 16 Load Integration omission as a testing-directed collection-condition deviation
-  - preserves the planned `2026-08-19` return to standard B1 + Load Integration
-  - distinguishes physical collection completion from complete August interpretation
-  - preserves Model Error 043 as open pending its primary molecular domain
-  - preserves Model Error 046 as open and prospective
-  - preserves Phase 2 and the `Consolidation / lock-in observation` operating substate
-  - leaves Phase 2D undeclared
+- Updated current documentation through completion of the August 17–18 physical collection window.
 
-- Refactored `reports/2026-W33.md` into a shorter evidence-centered active report before the later 041/042/044 closure alignment:
-  - removes repeated methodology and prediction-history material already maintained in governed source files
-  - retains the Week 32 handoff only where necessary for Week 33 interpretation
-  - records the actual August 17–18 snapshot execution
-  - records physical artifact status and pending TruDiagnostic status
-  - preserves the August 16 testing-directed Load Integration omission
-  - preserves the unload / reload observation geometry
-  - retains record 046 thresholds and scoring-window boundaries
-  - keeps the report active through `2026-08-23`
-  - introduces no phase declaration
-
-- The later August 18 model-error alignment subsequently replaced obsolete open-status language for records 041, 042, and 044.
+- Refactored `reports/2026-W33.md` into a shorter evidence-centered active report before later model-error alignment.
 
 #### August 17 current-state and governance alignment
 
-- Updated `data/model_error/model_error_gap_v1.csv`:
-  - closes record 045 as supported
-  - populates the record 045 outcome
-  - preserves record 045 historical scoring context
-  - adds open record 046
-  - extends model-error continuity through record 046
-  - preserves records 041–044 unchanged at that point
+- Updated `data/model_error/model_error_gap_v1.csv`.
 
-- Updated `tools/validate_repository.py`:
-  - protects records `041`, `042`, `043`, `044`, and `046` as open and unscored at that point
-  - separately requires record `045` to remain closed
-  - requires record 045 to retain a populated prediction
-  - requires record 045 to retain a populated actual outcome
-  - requires protected open records to retain blank outcome and error fields
-  - extends model-error sequence continuity through record 046
-  - updates validator pass messaging to distinguish the closed 045 record from the then-open prediction set
-  - does not independently recompute or adjudicate the record 045 score
-  - does not score record 046
+- Updated `tools/validate_repository.py`.
 
-- Updated `VERIFICATION.md`:
-  - records Model Error 045 as closed/scored
-  - preserves the record 045 prediction and recorded outcome as validator-protected history
-  - clarifies that validation protects state but does not independently rescore record 045
-  - protects records 041–044 and 046 as open and unscored at that point
-  - requires blank outcome and error fields for active protected predictions
-  - extends model-error continuity documentation through record 046
-  - documents record 046 as a separate prospective unload/reload trajectory question
+- Updated `VERIFICATION.md`.
 
-- Updated `methodology/README.md`:
-  - records record 045 as a completed preregistered evaluation
-  - preserves `open_prediction_evaluation_plan_045.md` as historical preregistration provenance
-  - records record 045 as closed and supported
-  - exposes `open_prediction_evaluation_plan_046.md`
-  - records the record 046 registration date
-  - records the descriptive and primary scoring windows
-  - preserves the record 045 thresholds for record 046 comparability
-  - excludes August snapshot outcomes from record 046 scoring
-  - updates the then-active prediction set to records 041–044 and 046
-  - preserves records 041–044 unchanged at that point
-  - preserves Phase 2 and the `Consolidation / lock-in observation` operating substate
+- Updated `methodology/README.md`.
 
-- Updated `LATEST.md`:
-  - marks `2026-W32` closed
-  - marks `2026-W33` active
-  - advances canonical sleep coverage through `2026-08-16`
-  - records Week 32 spontaneous autonomic reconvergence with preserved function
-  - records Model Error 045 consistently as closed and supported
-  - removes record 045 from the open prediction set
-  - sets the then-open model-error set to records 041–044 and 046
-  - exposes Model Error 046 as the active prospective unload/reload trajectory probe
-  - records the August 17–18 testing-related formal training withdrawal
-  - records the planned August 19 return to normal B1 + Load Integration
-  - preserves the August 16 Load Integration omission as an explicit collection-condition deviation
-  - preserves the original representative-state language rather than retroactively rewriting it
-  - preserves records 043 and 044 as unresolved at that point
-  - preserves Phase 2 and leaves Phase 2D undeclared
+- Updated `LATEST.md`.
 
-- Updated `INDEX.md`:
-  - advances the active weekly report from W32 to W33
-  - identifies W32 as the most recent closed weekly report
-  - advances canonical sleep coverage through `2026-08-16`
-  - removes record 045 from every current open-prediction reference
-  - records record 045 as closed and supported
-  - exposes the completed record 045 preregistration plan for provenance
-  - exposes the active record 046 evaluation plan
-  - sets the then-current open prediction set to records 041–044 and 046
-  - documents the record 046 evidence boundaries
-  - updates prediction-review, snapshot-review, methodology, and validation navigation
-  - preserves the August testing-related exposure deviation
-  - preserves Phase 2 and the `Consolidation / lock-in observation` substate
+- Updated `INDEX.md`.
 
-- Updated `README.md`:
-  - records the active weekly window as `2026-W33`
-  - records the then-current open model-error set as records 041–044 and 046
-  - records record 045 as closed and supported
-  - preserves the completed 045 evaluation plan for provenance
-  - exposes the active 046 evaluation plan
-  - documents the 046 evidence boundary
-  - documents the temporary August testing-related withdrawal from formal training
-  - preserves the August biological snapshot as separately governed from record 046
-  - preserves Phase 2
-  - preserves the `Consolidation / lock-in observation` operating substate
-  - leaves Phase 2D undeclared
+- Updated `README.md`.
 
 #### August 12 current-state and governance alignment
 
-- Updated `reports/2026-W32.md`:
-  - advances the open model-error set from records 041–044 to records 041–045
-  - documents record 045 registration on `2026-08-12`
-  - preserves Week 31 and August 10–12 as record 045 registration context only
-  - defines August 13–16 as the sole record 045 scoring window
-  - exposes the four fixed record 045 autonomic thresholds
-  - documents functional-regression and recovery-intervention failure boundaries
-  - excludes August 17–18 snapshot results from record 045 scoring
-  - adds a dedicated record 045 model-error boundary
-  - preserves records 041–044 independently
-  - preserves ordinary representative-state execution
-  - prohibits behavior manipulation intended to satisfy record 045
-  - preserves Phase 2 and leaves Phase 2D undeclared
+- Updated `reports/2026-W32.md`.
 
-- Updated `LATEST.md`:
-  - advances the current open model-error set to records 041–045
-  - exposes record 045 as a secondary prospective autonomic-reconvergence trajectory probe
-  - records the `2026-08-13` through `2026-08-16` scoring window
-  - preserves Week 31 as the retrospective observation that generated the question
-  - preserves August 10–12 as known registration context
-  - exposes the separate record 045 evaluation plan
-  - records the registered thresholds and support criteria
-  - documents record 045 independence from records 041–044
-  - preserves the August snapshot collection plan separately
-  - preserves ordinary protocol behavior
-  - preserves Phase 2D as undeclared
+- Updated `LATEST.md`.
 
-- Updated `INDEX.md`:
-  - exposes `methodology/open_prediction_evaluation_plan_045.md`
-  - advances the current open prediction set to records 041–045
-  - preserves `methodology/open_prediction_evaluation_plan_041_044.md` as the original preregistered evaluation block
-  - records the separate record 045 timing and evidence boundary
-  - adds record 045 to the prediction-review flow
-  - adds separate pre-snapshot record 045 evaluation flow
-  - documents validator protection through record 045
-  - preserves August 17–18 snapshot outcomes as inadmissible for record 045 scoring
-  - preserves Phase 2, protocol, collection, privacy, and release boundaries
+- Updated `INDEX.md`.
 
-- Updated `methodology/README.md`:
-  - indexes `open_prediction_evaluation_plan_045.md`
-  - distinguishes the record 045 plan from the existing records 041–044 plan
-  - records the record 045 registration date
-  - records the August 13–16 admissible scoring window
-  - records the fixed autonomic thresholds
-  - records Week 31 and August 10–12 as registration context only
-  - excludes August 17–18 snapshot results from record 045 scoring
-  - documents the relationship between record 045 and records 041–044
-  - documents validator protection through record 045
-  - advances the then-current active methodology state to records 041–045 open and unscored
-  - preserves the August collection plan as a separate governance artifact
-  - preserves the physical protocol and phase state
+- Updated `methodology/README.md`.
 
-- Updated `README.md`:
-  - exposes both active prediction-evaluation plans
-  - advances the current open model-error set to records 041–045
-  - records record 045 as separately governed
-  - records the August 13–16 scoring window
-  - preserves Week 31 and August 10–12 as context only
-  - excludes August 17–18 snapshot results from record 045 scoring
-  - preserves the original 041–044 plan
-  - preserves the August collection plan separately
-  - adds the record 045 plan to navigation and governance links
+- Updated `README.md`.
 
-- Updated `VERIFICATION.md`:
-  - advances protected model-error documentation from records 041–044 to records 041–045
-  - documents explicit rather than dynamically inferred open-record protection
-  - documents that record 045 must remain open before its scoring window closes
-  - documents preservation of the record 045 prediction
-  - documents blank protected actual and error fields before scoring
-  - links `methodology/open_prediction_evaluation_plan_045.md`
-  - clarifies that the validator protects record state but does not score record 045
+- Updated `VERIFICATION.md`.
 
-- Updated `tools/validate_repository.py`:
-  - changes explicit protected model-error range from:
-
-    ```python
-    range(41, 45)
-    ```
-
-    to:
-
-    ```python
-    range(41, 46)
-    ```
-
-  - advances the validator pass-state message from:
-
-    ```text
-    041-044 remain open and unscored
-    ```
-
-    to:
-
-    ```text
-    041-045 remain open and unscored
-    ```
-
-  - retains explicit protected-record enumeration so an accidental premature status change cannot evade validation
-  - introduces no dynamic scoring behavior
-  - does not score predictions
-  - does not modify source or biological data
+- Updated `tools/validate_repository.py`.
 
 #### Current-state alignment
 
-- Updated `LATEST.md`:
-  - marks `2026-W31` closed and `2026-W32` active
-  - advances canonical sleep coverage through `2026-08-09`
-  - records canonical sleep continuity at 182 daily rows
-  - records the canonical operating substate as `Consolidation / lock-in observation`
-  - records seven completed B1 and seven completed Load Integration sessions during W31
-  - records 385 B1 minutes, 315 Load Integration minutes, and 700 total formal training minutes
-  - records approximately 21.14 miles of B1 aerobic work
-  - records W31 morning bodyweight averaging approximately 235.1 lb
-  - records daily biomarker HRV averaging approximately 57.3 ms
-  - records sleep HRV averaging approximately 60.1 ms
-  - records resting heart rate averaging approximately 51.4 bpm
-  - records sleeping heart rate averaging approximately 56.4 bpm
-  - records total sleep averaging approximately 7 hours 39 minutes
-  - advances the recovery posture from the isolated late-W30 HRV observation to a broader W31 multi-marker autonomic recovery pattern
-  - records that the less favorable autonomic profile did not converge with demonstrated functional failure
-  - records stronger candidate evidence for reduced operator overhead, positional ownership, grip consolidation, social-salience tolerance, and ordinary-life portability
-  - preserves the W31 autonomic-performance divergence as an observational carryforward question rather than a retrospectively registered prediction
-  - defines W32 as the final ordinary full observation week before the August snapshot
-  - preserves representative-state behavior and prohibits tapering, peaking, or snapshot-directed optimization
-  - carries Model Error records 041–044 forward unchanged
-  - preserves Phase 2 status without declaring Phase 2D
+- Updated `LATEST.md` through the W31 closeout and W32 initialization.
 
-- Updated `INDEX.md`:
-  - advances the active weekly-report link from W31 to W32
-  - identifies W31 as the most recent closed weekly report
-  - advances canonical sleep coverage through `2026-08-09`
-  - advances the index alignment date to `2026-08-10`
-  - preserves records 041–044 as the then-current open prediction set
-  - preserves the W31 autonomic-performance divergence as observational rather than retrospectively registered
-  - aligns the temporal, reports, and structured-data sections with the current repository state
-  - preserves central access to the August collection and prediction-evaluation plans
-  - changes navigation and current-state representation only
+- Updated `INDEX.md` through the W31 closeout and W32 initialization.
 
 #### Weekly report governance
 
-- Updated `reports/2026-W27.md`:
-  - closes the post-travel reintegration window
-  - distinguishes daily biomarker HRV from sleep HRV
-  - records divided-attention pull-up control and voluntary tempo modulation as candidate record 042 evidence
-  - preserves Phase 2D as a possible retrospective classification rather than a current declaration
-
-- Replaced the active W28 planning scaffold with a retrospective closeout:
-  - emphasizes material change rather than repeating standing protocol details
-  - separates verified metrics from interpretation
-  - distinguishes internal fatigue from functional degradation
-  - records source-confidence limitations and unresolved correction notes
-  - carries only consequential observations into W29
-
-- Updated `reports/2026-W29.md`:
-  - clarifies that 107 minutes represents structured timed aquatic exposure
-  - identifies the contributing 30-minute and 77-minute water-treading sessions
-  - preserves approximately 30 minutes of ring diving and underwater swimming as contemporaneous narrative context
-  - excludes the additional aquatic activity from the 107-minute structured aquatic total
-  - excludes the additional aquatic activity from the 807-minute structured logged movement total
-  - preserves all original weekly calculations, recovery interpretation, model-error evidence, and phase status
-
-- Updated `reports/2026-W31.md`:
-  - replaces the active planning scaffold with a retrospective closeout
-  - records seven completed B1 and seven completed Load Integration sessions
-  - records 385 B1 minutes, 315 Load Integration minutes, and 700 total formal training minutes
-  - records the W31 multi-marker autonomic recovery pattern
-  - distinguishes autonomic recovery compression from demonstrated functional failure
-  - records repeated ambient and trait-level execution
-  - records stronger pull-up positional ownership and automatic bar organization
-  - records grip improvement without targeted intervention
-  - records naturalistic external-recognition and social-comparison evidence
-  - records preserved execution after substantial same-day yard work
-  - preserves external recognition as qualitative rather than physiological evidence
-  - preserves the W31 autonomic-performance divergence as an observational carryforward question
-  - creates no retrospective Model Error record
-  - preserves the existing protocol without progression or preemptive reduction
-  - preserves records 041–044 as open and unscored at that time
-  - preserves Phase 2 and the `Consolidation / lock-in observation` operating substate
-  - declares no Phase 2D transition
-
-- Added `reports/2026-W32.md` as the active observation report:
-  - defines the observation window as `2026-08-10` through `2026-08-16`
-  - carries forward standard B1 and Load Integration unchanged
-  - prioritizes observation of the W31 autonomic-performance divergence
-  - requires multi-domain convergence before recovery intervention
-  - preserves grip as an observed variable without specialized training
-  - prohibits deliberate reproduction of spontaneous portability or social-comparison events
-  - prohibits tapering, peaking, deliberate overload, and snapshot-directed manipulation
-  - preserves representative-state behavior through the final pre-snapshot week
-  - links the committed prediction-evaluation and August collection plans
-  - preserves records 041–044 as open and unscored at that time
-  - preserves Phase 2D as undeclared and Phase 3 as reserved and inactive
-
-- Expanded `reports/README.md`:
-  - distinguishes active observation reports from retrospective closeouts
-  - defines the weekly report lifecycle
-  - permits labeled contemporaneous observations and candidate model-error evidence
-  - prohibits unregistered prediction, prediction rewriting, and premature closure
-
-- Expanded `schemas/weekly-report-template.md`:
-  - establishes a compact governed structure
-  - emphasizes deviations, new evidence, unresolved questions, and decisions
-  - separates B1, Load Integration, optional activity, recovery, structured metrics, perturbations, model-error relevance, and governance
-  - prohibits inferred missing values
-  - does not require historical reports to be reformatted
+- Updated historical and active weekly-report governance and schemas.
 
 #### Phase and state governance
 
-- Updated `PHASE_MAP.md`:
-  - establishes canonical phase names
-  - defines the active state as `Phase 2 — Load Integration`
-  - defines consolidation and lock-in observation as operating substates within Phase 2
-  - distinguishes phase, operating substate, candidate characteristic, transition evidence, and retrospective declaration
-  - maps historical aliases without rewriting historical reports
-  - treats Phase 2C as historical consolidation or lock-in shorthand rather than a separate canonical phase
-  - reserves Phase 2D as a possible retrospectively declared Phase 2 substate
-  - classifies Phase 2D-type observations as candidate evidence only
-  - confirms that no Phase 2D or Phase 3 declaration has occurred
-  - prohibits phase language from creating progression pressure
+- Updated `PHASE_MAP.md`.
 
-- Updated `STATE_TRANSITIONS.md`:
-  - converts the file from a parallel phase-description document into a governed transition record
-  - records Phase 0 baseline establishment
-  - records the completed Phase 0-to-Phase 1 transition
-  - records the completed Phase 1-to-Phase 2 transition
-  - classifies Phase 2 consolidation and lock-in as an operating-substate change
-  - records the possible Phase 2D boundary as open and undeclared
-  - retains Phase 3 as reserved and inactive
-  - avoids inventing unsupported exact transition dates
-  - preserves historical terminology through aliases
-  - defines required fields for future transition entries
+- Updated `STATE_TRANSITIONS.md`.
 
-- Expanded `docs/CONCEPTS.md`:
-  - defines observation, telemetry, artifact, collection, archive, and interpretation layers
-  - defines source state, provider source artifact, direct export, byte preservation, curated data, canonical data, and derived data
-  - defines normalization, source precedence, source-backed correction, reconciliation, missingness, and analytical restrictions
-  - defines prediction, model error, prediction auditing, closure, admissible evidence, concordance, UDI, calibration, and model correction
-  - defines phase, operating substate, candidate characteristic, transition evidence, retrospective declaration, and historical alias
-  - defines Phase 2C, Phase 2D-type characteristics, Phase 2D, and reserved phases
-  - defines ambient execution, trait-like execution, operator overhead, movement optionality, portability, reintegration, recovery floor, and spare capacity
-  - defines perturbation, naturalistic perturbation, representative state, sanitized derivatives, and controlled distribution remediation
-  - aligns public-facing terminology with the current governance architecture
+- Expanded `docs/CONCEPTS.md`.
 
-- Historical reports were not rewritten solely to enforce the newer canonical vocabulary.
+- Historical reports were not rewritten solely to enforce newer canonical vocabulary.
 
 #### Wearable evidence architecture
 
-- Updated `MEASUREMENT_SOURCES.md`:
-  - distinguishes provider artifacts, direct exports, screenshots, transcription, derivation, and narrative evidence
-  - records RingConn Gen 2 provenance and known software-version limitations
-  - defines daily, resting, and sleep heart-rate and HRV boundaries
-  - registers completion of the 2026-07-21 RingConn export ingestion
-  - documents source-export coverage and byte-preservation controls
-  - distinguishes RingConn-reported calories from active or total calorie assumptions
-  - preserves timezone and provider-reprocessing uncertainty
-  - establishes periodic immutable exports as the current wearable-maintenance model
-  - defers normalized wearable trackers until a defined analytical or publication need exists
+- Updated `MEASUREMENT_SOURCES.md`.
 
-- Updated `DATA_DICTIONARY.md`:
-  - defines provider-source, curated, derived, and narrative data layers
-  - registers direct RingConn export fields using provider labels
-  - defines missingness and source-state boundaries
-  - separates daily HRV from sleep HRV
-  - separates daily minimum HR from resting HR
-  - separates daily average HR from sleep average HR
-  - records that no normalized RingConn tracker is currently active
+- Updated `DATA_DICTIONARY.md`.
 
-- Updated `data/DATA_COVERAGE.md`:
-  - distinguishes source-preserved wearable coverage from canonical structured coverage
-  - registers the RingConn acquisition package
-  - documents byte-preservation and fresh-ZIP verification
-  - records actual sleep, activity, and vital-sign coverage
-  - documents missing dates, multiple sessions, timestamp uncertainty, and provider anomalies
-  - establishes periodic provider exports as the current operating model
-  - classifies normalized wearable trackers as deferred rather than planned
-  - confirms that the absence of normalized trackers is not a current coverage failure
+- Updated `data/DATA_COVERAGE.md`.
 
-- Updated `data/DATA_QUALITY_NOTES.md`:
-  - registers the externally verified RingConn package
-  - records exact row counts and file sizes
-  - preserves correction candidates for DQ-001 through DQ-003
-  - retains broader RingConn differences as diagnostic evidence
-  - limits timestamp, multiple-session, missing-date, and anomaly issues to their applicable analyses
-  - removes a full normalized wearable architecture as a prerequisite for narrow correction
-  - defers comprehensive mapping until a concrete analytical need exists
+- Updated `data/DATA_QUALITY_NOTES.md`.
 
-- Updated `data/source_exports/ringconn/2026-07-21/README.md`:
-  - records public filename normalization
-  - records exact row counts and byte sizes
-  - documents the `.gitattributes` protection
-  - records checksum and fresh-GitHub-ZIP verification
-  - documents privacy-screening results
-  - defines source-versus-curated boundaries
-  - establishes separate acquisition-date directories for later exports
-  - defers normalized wearable datasets
+- Updated `data/source_exports/ringconn/2026-07-21/README.md`.
 
-- Replaced the previously proposed immediate wearable architecture:
-
-  ```text
-  Source exports
-  → normalized wearable trackers
-  → curated datasets
-  ```
-
-  with:
-
-  ```text
-  Periodic byte-preserved RingConn exports
-  → acquisition README and checksums
-  → targeted reconciliation or analysis when needed
-  → optional reproducible derived layer when justified
-  ```
+- Replaced the previously proposed immediate normalized wearable architecture with periodic byte-preserved provider exports plus targeted reconciliation when needed.
 
 #### Verification governance
 
-- Expanded `VERIFICATION.md`:
-  - distinguishes artifact verification from whole-repository validation
-  - documents local-directory and ZIP validation
-  - provides Windows, macOS, and Linux commands
-  - documents machine-readable JSON output
-  - defines exit-code behavior
-  - separates `PASS`, `WARN`, and `ERROR`
-  - documents expected governed warnings for DQ-001 through DQ-003
-  - describes each validator check
-  - retains manual SHA-256 verification instructions
-  - documents temporal-anchor relationships
-  - defines privacy-verification limitations
-  - establishes a routine local verification workflow
-  - identifies semantic questions that still require human review
-  - keeps GitHub Actions deferred
+- Expanded `VERIFICATION.md`.
 
-- The verification model now distinguishes:
+- The verification model distinguishes:
 
   ```text
   Artifact identity
@@ -2530,113 +2149,25 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   → interpretation
   ```
 
-- Local validation does not replace formal audits when a scheduled audit or material event requires one.
-
 #### Governance and methodology
 
-- Expanded `GOVERNANCE.md`, `METHODOLOGY_AND_CONTROLS.md`, `SYSTEM_OVERVIEW.md`, and `ASSUMPTIONS_AND_BOUNDARIES.md` to:
-  - replace complete-control claims with stabilized inputs under incomplete real-world control
-  - distinguish retrospective interpretation from registered prospective prediction
-  - define evidence hierarchy, missingness, derivation, source-backed correction, and measurement comparability
-  - establish candidate-evidence and phase-declaration boundaries
-  - prohibit silent, unsupported, or outcome-driven rewriting
-  - define model correction as an explicit archive output
-
-- Expanded `docs/FOR_OBSERVERS.md`:
-  - distinguishes active reports, closed reports, datasets, snapshots, and predictions
-  - explains candidate evidence and source-backed correction
-  - adds concise evaluation and warning-sign guidance
-
-- Expanded `methodology/data-collection.md`:
-  - defines source hierarchy, transcription, provenance, units, timing, derivation, inference, missingness, and correction rules
-  - separates collection from interpretation
-
-- Expanded `methodology/anonymization.md`:
-  - defines private originals, public originals, filename-normalized sources, and sanitized derivatives
-  - distinguishes true removal from visual covering
-  - requires hidden-text, metadata, annotation, and embedded-object review when applicable
-  - defines checksum and changelog requirements
-  - distinguishes current-tree, active-ref, historical-object, provider-side, and uncontrolled-copy remediation states
-  - documents the completed July 2025 blood-panel privacy sequence
-  - documents Git-history rewriting and fresh-clone requirements
-  - documents correction of the Zenodo v1.0.0 package
-  - documents RingConn privacy screening and filename normalization
-  - retains GitHub provider-side cleanup as pending
-  - prohibits claims of universal erasure
-
-- Expanded `methodology/README.md`:
-  - converts the file from a minimal placeholder into a methodology-directory guide
-  - indexes active standing methodology
-  - indexes the preregistered evaluation plan for records 041–044
-  - indexes the August snapshot collection plan
-  - distinguishes standing methodology, preregistered evaluation plans, preregistered collection plans, retrospective notes, and historical or superseded methodology
-  - defines active-status labels and file-header expectations
-  - defines relationships among methodology, governance, protocols, reports, data, artifacts, schemas, audits, and validation
-  - distinguishes `/methodology` from `/docs/methodology`
-  - defines source, correction, preregistration, and interpretation boundaries
-  - adds methodology file-naming, placement, linking, and maintenance guidance
-  - introduces no source, dataset, prediction, protocol, phase, or release change
-
-- Updated `snapshots/2025-07/2025-07 Epoch.md`:
-  - identifies the blood PDF as a sanitized public derivative
-  - documents the public/private source boundary
-  - records the verified current checksum
-  - records active Git branch and tag remediation
-  - records current GitHub ZIP verification
-  - records Zenodo v1.0.0 package remediation
-  - discloses GitHub Support and uncontrolled-copy limitations
-  - confirms that biological values and interpretation were unchanged
-
-- Updated `VERSIONING.md`:
-  - aligns versioning rules with actual repository practice
-  - distinguishes ordinary commits from formal releases
-  - defines patch, minor, and major release triggers
-  - clarifies release-candidate use
-  - documents privacy and integrity repair behavior
-  - clarifies Zenodo archival cadence
-  - confirms that routine weekly, audit, source-export, governance, and local-tooling work does not automatically require a version increment
+- Expanded core governance, methodology, observer, collection, anonymization, epoch, and versioning documentation.
 
 #### Prediction-plan registration context
 
-- Updated `methodology/open_prediction_evaluation_plan_041_044.md` before its outcome windows closed:
-  - discloses observations already known at registration
-  - confirms final trajectories and August outcomes remained unknown
-  - distinguishes the primary TruDiagnostic endpoint from supplemental DEXA, VO₂ max, Bod Pod, bodyweight, and recovery evidence
-  - defines the planned August 17–18 measurement window
-  - preserves original thresholds and record status at that time
+- Updated `methodology/open_prediction_evaluation_plan_041_044.md` before its outcome windows closed.
 
 - After outcome access and formal adjudication, the preregistration artifact itself remains preserved unchanged.
 
 #### Protocol and experiment status
 
-- Updated `protocols/hybrid-expansion-phase-v2.md`:
-  - marks the document historical, superseded, and inactive
-  - preserves it for provenance
+- Updated `protocols/hybrid-expansion-phase-v2.md`.
 
-- Updated `experiments/EXP-001-autophagy-endurance.md`:
-  - corrects the active observation window
-  - marks the experiment paused
-  - removes it as an active explanatory variable
-  - defines requirements for reactivation
+- Updated `experiments/EXP-001-autophagy-endurance.md`.
 
 #### Repository orientation
 
-- Updated `README.md`, `DATASET_OVERVIEW.md`, `docs/START_HERE.md`, and `docs/NEWCOMER_PATH.md` to:
-  - clarify archive scope and environmental limitations
-  - distinguish source artifacts, structured data, reports, snapshots, and predictions
-  - expose data-quality, collection, protocol, experiment, audit, and prediction-evaluation paths
-  - improve external navigation without duplicating methodology
-
-- Updated `INDEX.md`:
-  - exposes the August collection plan
-  - exposes the preregistered evaluation plan for records 041–044
-  - exposes `methodology/README.md` as the methodology-directory guide
-  - exposes `tools/validate_repository.py` as the local read-only validator
-  - distinguishes structured data from byte-preserved source exports
-  - distinguishes collection plans from outcome evidence
-  - adds dedicated August snapshot and repository-verification reading flows
-  - expands the archive-structure table to include source exports and tools
-  - improves navigation and representation without altering evidence or interpretation
+- Updated observer-facing repository navigation and orientation documents.
 
 ---
 
@@ -2678,80 +2209,33 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 
 - Preserved the existing retrospective closure narrative by appending it after the restored registered prediction rather than replacing the registration text.
 
-- The repaired row therefore preserves both:
-
-  ```text
-  what was predicted prospectively
-  ```
-
-  and:
-
-  ```text
-  what was concluded retrospectively
-  ```
-
 - Record 045 remains closed and supported.
 
 - The correction did not change:
-
-  - `prediction_value=partial_reconvergence`
-  - `actual_value=partial_reconvergence`
-  - `error_absolute=0`
-  - `error_direction=none`
-  - `error_pct=0%`
-  - August 13–16 scoring window
-  - registered autonomic thresholds
-  - four-day scoring means
-  - functional-regression assessment
-  - recovery-driven-intervention assessment
-  - records 041–044
-  - record 046
-  - UDI or concordance values
+  - prediction value
+  - scoring window
+  - registered thresholds
+  - observed scoring means
+  - supported outcome
+  - error direction
   - biological data
   - canonical sleep data
   - physical protocol
   - phase state
   - release metadata
 
-- Classified the repair as:
-  - source-backed
-  - narrow
-  - traceable
-  - governance-provenance preserving
-  - non-biological
-  - non-scoring
-  - non-interpretive
-
-- The corresponding validator protection was expanded so the same class of drift cannot pass silently for the current preregistered block.
-
 #### W30 July 31 daily-HRV transcription
 
-- Corrected the July 31 daily-average HRV used by `reports/2026-W30.md`:
+- Corrected the July 31 daily-average HRV used by `reports/2026-W30.md`.
+
+- Direct RingConn source review confirmed:
 
   ```text
-  Private workbook structured value:
-  56 ms
-
-  Private workbook narrative value:
-  68 ms
-
-  Direct RingConn Vital Signs value:
+  July 31 daily HRV:
   55 ms
-  ```
 
-- Direct RingConn source review separately confirmed:
-
-  ```text
   July 31 sleep HRV:
   67 ms
-  ```
-
-- Preserved daily-average HRV and sleep HRV as distinct measurement fields.
-
-- Corrected the W30 daily-biomarker HRV sequence to:
-
-  ```text
-  72, 72, 64, 57, 55, 57, 57
   ```
 
 - Corrected the W30 weekly daily-biomarker HRV average:
@@ -2762,107 +2246,27 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   62.0 ms
   ```
 
-- Classified the correction as:
-
-  - source-backed
-  - field-specific
-  - semantically confirmed
-  - narrow
-  - traceable
-  - non-interpretive
-  - unrelated to the August outcome
-  - not a canonical sleep correction
-  - not a prediction revision
-  - not a protocol or phase event
-
-- The correction did not change:
-
-  - July 31 sleep HRV
-  - W30 sleep-HRV average
-  - canonical sleep data
-  - W30 training totals
-  - W30 recovery interpretation
-  - Model Error status
-  - protocol exposure
-  - phase status
-  - release metadata
+- Preserved daily-average HRV and sleep HRV as distinct fields.
 
 #### Public blood-artifact sanitization
 
-- Replaced `snapshots/2025-07/2025-07-full-blood-panel.pdf` with a sanitized public derivative:
-  - removes the full date of birth
-  - removes patient and specimen identifiers
-  - removes address and contact information
-  - removes ordering-physician identity
-  - preserves measured laboratory values
-  - preserves units, reference intervals, flags, dates, and report structure
-  - intentionally retains the subject’s public name and chronological age
-  - preserves the artifact’s evidentiary role while reducing non-public administrative exposure
+- Replaced `snapshots/2025-07/2025-07-full-blood-panel.pdf` with a sanitized public derivative.
 
-- Regenerated and verified the corresponding SHA-256 entry in:
+- Regenerated and verified the corresponding SHA-256 entry.
 
-  `snapshots/2025-07/checksums.txt`
-
-- Verified public artifact SHA-256:
-
-  `e3fe18d94b003217f2d9024ee1952117305f1b48dc72bebf183269ec60a375cb`
-
-- Classified the replacement as:
-  - privacy remediation
-  - archive maintenance
-  - source-preserving public sanitization
-  - checksum-changing artifact replacement
-  - not new biological evidence
-  - not a protocol or phase event
+- Classified the replacement as privacy remediation rather than new biological evidence.
 
 #### Git-history and active-ref remediation
 
-- Rewrote repository history to remove the prior blood-artifact path from historical commits.
+- Rewrote repository history to remove the prior blood-artifact path from maintained historical refs.
 
-- Restored the sanitized derivative and corresponding checksum to:
-  - `main`
-  - `v0.9.0`
-  - `v1.0.0`
-  - `v1.0.0-rc1`
-  - `v1.0.0-rc2`
+- Restored the sanitized derivative and corresponding checksum to maintained branches and tags.
 
-- Confirmed that:
-  - the previously affected commits are not reachable from active rewritten refs
-  - remote branches and tags match the rewritten local refs
-  - current maintained refs contain the sanitized derivative
-  - subsequent work is being performed from a fresh clone
-
-- Historical commit hashes changed as a consequence of the privacy rewrite.
-
-- Old clones containing pre-rewrite ancestry must not be merged or pushed back into the repository.
-
-- Submitted a GitHub Support request concerning residual Git LFS or other provider-controlled objects.
-
-- GitHub provider-side cleanup remains pending and must not be described as completed until direct confirmation is received.
+- GitHub provider-side cleanup remains pending support confirmation.
 
 #### Zenodo v1.0.0 remediation
 
-- Rebuilt the DOI-bearing Zenodo v1.0.0 archive so that:
-  - the sanitized blood-panel derivative replaces the prior artifact
-  - the corrected snapshot checksum is included
-  - the intended release inventory is preserved
-  - unrelated release content remains unchanged
-
-- Corrected package:
-
-  `daniel-longitudinal-public-v1.0.0.zip`
-
-- Verified corrected archive digests:
-
-  - MD5: `4dd3838c5c1f90003e1c98d72fec812e`
-  - SHA-256: `0c00fc1c7ea7a708d6fe6224c88fc33b6a4b853e6fbc127c88a0432b5bc8d330`
-
-- Independently downloaded and verified the corrected Zenodo archive for:
-  - expected archive structure
-  - expected file inventory
-  - presence of the sanitized derivative
-  - internal checksum agreement
-  - absence of unrelated archive differences
+- Rebuilt the DOI-bearing Zenodo v1.0.0 archive with the sanitized blood-panel derivative.
 
 - Preserved:
   - DOI
@@ -2873,60 +2277,33 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 
 #### RingConn source-export byte preservation
 
-- Identified that initial Git ingestion converted RingConn CSV line endings from CRLF to LF.
+- Identified initial CRLF-to-LF conversion during Git ingestion.
 
-- Added `.gitattributes` protection for provider-source CSV files.
+- Added `.gitattributes` protection.
 
-- Replaced the converted repository copies with the original downloaded bytes.
+- Restored original provider-export bytes.
 
-- Retained the original checksum manifest rather than regenerating hashes around transformed files.
-
-- Verified original source sizes:
-
-  - sleep export: 38,703 bytes
-  - activity export: 8,171 bytes
-  - vital-sign export: 16,059 bytes
-
-- Verified the source files:
-  - in the working tree
-  - in the Git index
-  - after commit
-  - after push
-  - through a fresh GitHub ZIP
-
-- Closed the RingConn source-export byte-preservation blocker.
+- Verified byte preservation through repository and packaged-copy checks.
 
 #### Phase-terminology ambiguity
 
-- Removed the parallel interpretation of `Phase 2 — Lock-In Confirmation` as though it were a second canonical Phase 2.
-
-- Clarified that:
-
-  - `Phase 2 — Load Integration` remains the active canonical phase
-  - consolidation and lock-in observation are operating substates
-  - Phase 2C is historical shorthand
-  - Phase 2D-type characteristics are candidate evidence
-  - no formal Phase 2D declaration has occurred
-  - Phase 3 remains reserved and inactive
-
-- Preserved historical wording without rewriting prior weekly reports.
+- Clarified:
+  - `Phase 2 — Load Integration` as the canonical active phase
+  - consolidation / lock-in observation as an operating substate
+  - Phase 2C as historical shorthand
+  - Phase 2D-type characteristics as candidate evidence
+  - Phase 2D as undeclared
+  - Phase 3 as reserved and inactive
 
 #### Other corrections
 
-- Corrected the instructional pull-up observation date to `2026-07-10` while preserving `2026-07-11` as the audit and repository-incorporation date.
+- Corrected the instructional pull-up observation date to `2026-07-10`.
 
-- Corrected the active EXP-001 duration wording and deprecated the stale hybrid protocol without rewriting historical exposure.
+- Corrected active EXP-001 duration wording.
 
-- Preserved `2026-07-13` as the intended W28 date in the canonical sleep append after identifying an incorrect source-workbook date encoding.
+- Deprecated the stale hybrid protocol without rewriting historical exposure.
 
-- Documented the correct separation of the `2026-07-13` cardiovascular values:
-  - daily HRV: `77 ms`
-  - resting heart rate: `44 bpm`
-  - daily average heart rate: `61 bpm`
-  - sleep HRV: `88 ms`
-  - average sleeping heart rate: `46 bpm`
-
-The source-workbook narrative discrepancy remains documented rather than silently overwritten.
+- Preserved `2026-07-13` as the intended W28 date after identifying a source-workbook date-encoding issue.
 
 ---
 
@@ -2980,19 +2357,19 @@ The source-workbook narrative discrepancy remains documented rather than silentl
 - Current weekly-report state:
 
   ```text
-  2026-W33:
+  2026-W34:
   closed
 
-  2026-W34:
+  2026-W35:
   active
   ```
 
 - Current canonical sleep state:
 
   ```text
-  Continuous through 2026-08-23
+  Continuous through 2026-08-30
 
-  196 daily rows
+  203 daily rows
   ```
 
 - Current open prediction state:
@@ -3109,6 +2486,11 @@ The source-workbook narrative discrepancy remains documented rather than silentl
   2026-08-19:
   normal B1 + Load Integration resumed
 
+  2026-08-24 through 2026-08-30:
+  seven B1 sessions
+  seven Load Integration sessions
+  ordinary full training restored
+
   Physical source artifacts:
   archived
   privacy-reviewed
@@ -3165,7 +2547,7 @@ The source-workbook narrative discrepancy remains documented rather than silentl
 
 - Those warnings do not authorize automatic correction and do not make the repository mechanically invalid.
 
-- The committed August 24 state is intended to be the state subjected to the final read-only repository verification pass.
+- The committed August 31 state is intended to be the state subjected to the final read-only repository verification pass.
 
 - A successful read-only verification of this unchanged committed state does **not** itself require another changelog entry or repository commit.
 
@@ -3183,20 +2565,28 @@ The source-workbook narrative discrepancy remains documented rather than silentl
 
 ### Release status
 
-- No release-version increment was made for the August 24 Week 33 closeout and governance-alignment batch.
+- No release-version increment was made for the August 31 Week 34 closeout and Week 35 initialization batch.
 
 - This batch includes:
-  - canonical sleep extension through `2026-08-23`
-  - Week 33 retrospective closeout
-  - Model Error 046 adjudication
-  - record 046 model-error ledger closure
-  - validator transition authorization
-  - validator hard-protection of the closed 046 state
-  - verification-guide alignment
-  - Week 34 initialization
-  - `LATEST.md` advancement through Week 33
-  - `INDEX.md` advancement through Week 33
-  - `README.md` advancement through Week 33
+  - canonical sleep extension through `2026-08-30`
+  - increase to 203 continuous canonical sleep rows
+  - Week 34 retrospective closeout
+  - seven B1 sessions
+  - seven Load Integration sessions
+  - 700 total formal training minutes
+  - approximately 21.14 B1 miles
+  - Week 34 structured recovery summary
+  - Week 34 bodyweight summary
+  - preservation of recurrent autonomic variability
+  - preservation of functional continuity
+  - reverse-equipment-transfer evidence
+  - automatic grip-coupling evidence
+  - incidental-workload portability evidence
+  - schedule-displacement portability evidence
+  - Week 35 initialization
+  - `LATEST.md` advancement through Week 34
+  - `INDEX.md` advancement through Week 34
+  - `README.md` advancement through Week 34
   - current changelog reconciliation
 
 - Current release metadata remains:
@@ -3337,18 +2727,18 @@ The source-workbook narrative discrepancy remains documented rather than silentl
 - Current weekly archive state:
 
   ```text
-  2026-W33:
+  2026-W34:
   closed
 
-  2026-W34:
+  2026-W35:
   active
   ```
 
 - Current canonical sleep state:
 
   ```text
-  through 2026-08-23
-  196 continuous daily rows
+  through 2026-08-30
+  203 continuous daily rows
   ```
 
 - Current August snapshot state:
@@ -3384,7 +2774,7 @@ The source-workbook narrative discrepancy remains documented rather than silentl
 
 - Formal Phase 2D remains undeclared.
 
-- No new formal release is created by this documentation and governance batch.
+- No new formal release is created by this weekly documentation and data-alignment batch.
 
 - Read-only verification of this committed state is an integrity check rather than a repository change.
 
