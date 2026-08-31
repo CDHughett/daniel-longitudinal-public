@@ -1786,7 +1786,7 @@ It was created as a separate prediction rather than extending the already comple
 
 # Current Methodology State
 
-As of 2026-08-24:
+As of 2026-08-31:
 
 ```text
 Data collection:
@@ -1866,14 +1866,14 @@ Closed recent model-error records:
 046
 
 Canonical sleep:
-Continuous through 2026-08-23
-196 daily rows
+Continuous through 2026-08-30
+203 daily rows
 
 Current weekly window:
-2026-W34
+2026-W35
 
 Most recent closed weekly window:
-2026-W33
+2026-W34
 
 Canonical phase:
 Phase 2 — Load Integration
@@ -2070,5 +2070,51 @@ The 2026-08-24 revision does not alter:
 - the pending record 043 outcome
 - primary UDI or concordance values
 - the underlying B1 + Load Integration architecture
+- any formal phase declaration
+- release metadata
+
+On 2026-08-31, this guide was aligned after Week 34 closeout and Week 35 initialization.
+
+The 2026-08-31 revision:
+
+- advances the current methodology-state date through `2026-08-31`
+- advances canonical sleep coverage through `2026-08-30`
+- records 203 continuous canonical sleep rows
+- records `2026-W34` as the most recent closed weekly window
+- advances `2026-W35` to the current active weekly window
+- preserves record 043 as the sole open and unscored model-error record
+- preserves records 041, 042, 044, 045, and 046 as closed historical outcomes
+- preserves the original records 041–044 preregistration artifact unchanged
+- preserves the completed record 045 preregistration artifact unchanged
+- preserves the completed record 046 preregistration artifact unchanged
+- preserves all registered record 045 and 046 scoring boundaries
+- preserves record 046 as `failed_autonomic_recompression`
+- preserves record 046 `error_direction=over`
+- preserves the August snapshot collection plan as physically complete but still relevant to pending record 043 interpretation
+- preserves TruDiagnostic provider results as pending
+- preserves Phase 2 — Load Integration
+- preserves the consolidation / lock-in observation substate
+- preserves the underlying B1 + Load Integration architecture
+- leaves formal Phase 2D undeclared
+
+The 2026-08-31 revision is a live-state alignment only.
+
+It does not alter:
+
+- standing methodology
+- source hierarchy
+- correction rules
+- privacy rules
+- prediction-evaluation rules
+- any preregistered prediction wording
+- any preregistered threshold
+- any prediction scoring window
+- any adjudicated model-error outcome
+- any source artifact
+- any artifact checksum
+- any canonical biological value
+- the pending record 043 outcome
+- primary UDI or concordance values
+- the underlying physical protocol
 - any formal phase declaration
 - release metadata
