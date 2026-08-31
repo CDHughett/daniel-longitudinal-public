@@ -81,13 +81,16 @@ Operating substate:
 Consolidation / lock-in observation
 
 Active weekly window:
-2026-W34
+2026-W35
 
 Most recent closed window:
-2026-W33
+2026-W34
 
 Canonical sleep:
-current through 2026-08-23
+current through 2026-08-30
+
+Canonical sleep rows:
+203 continuous daily records
 
 Current open model-error record:
 043
@@ -117,27 +120,90 @@ B1
 Load Integration
 ```
 
-Week 33 closed after:
+The recent longitudinal sequence is:
 
 ```text
-August testing withdrawal
-+
-maximal VO₂ exposure
-→
-temporary autonomic re-compression
-→
-normal B1 + Load Integration reload
-→
-preserved function
-→
-late-week autonomic recovery
+Week 31:
+autonomic-performance divergence
+
+Week 32:
+spontaneous autonomic reconvergence
+
+Week 33:
+maximal-testing perturbation
+→ transient autonomic re-compression
+→ preserved reload
+→ later recovery
+
+Week 34:
+ordinary uninterrupted B1 + Load Integration
+→ variable physiology with preserved function
+→ increasing behavioral automaticity
+→ broader natural portability
+
+Week 35:
+ordinary continuity observation
 ```
 
-Record 046 failed its fixed short-window autonomic persistence criterion despite preserved reload and functional availability.
-
-Week 34 returns to ordinary continuity.
-
 Record 043 remains the only open model-error record because the primary August TruDiagnostic provider-result domain is still pending.
+
+---
+
+## Week 34 Closeout
+
+Week 34 covered:
+
+```text
+2026-08-24 through 2026-08-30
+```
+
+Completed formal training:
+
+```text
+B1:
+7 sessions
+385 minutes
+approximately 21.14 miles
+
+Load Integration:
+7 sessions
+315 minutes
+
+Total:
+700 formal training minutes
+```
+
+Weekly averages:
+
+| Marker | W34 |
+|---|---:|
+| Morning bodyweight | 233.8 lb |
+| Daily biomarker HRV | 59.1 ms |
+| Sleep HRV | 65.3 ms |
+| Resting heart rate | 49.6 bpm |
+| Sleeping heart rate | 52.0 bpm |
+| Total sleep | 7h24m |
+
+B1 remained ambient/background across all seven sessions.
+
+Load Integration showed increasing automaticity and reduced management cost without a change in the external training architecture.
+
+Material observations included:
+
+- return to canonical equipment without reacclimation
+- repeated trait-like execution
+- explicit session-level trait expression
+- automatic grip coupling
+- preserved execution after substantial yard work
+- preserved execution after meaningful schedule displacement
+- increasing ownership of pacing, pauses, positions, transitions, and sequencing
+- variable overnight autonomic physiology without sustained functional regression
+- lower average bodyweight under lower reported intake without observed training failure
+- no pain, guarding, GI destabilization, or recovery-driven protocol reduction
+
+These observations provide strong descriptive evidence of continued behavioral consolidation and increasing natural portability.
+
+They do not independently declare Phase 2D.
 
 ---
 
@@ -173,6 +239,7 @@ Examples include:
 - favorable biological observations alongside prediction misses
 - broad governance discipline alongside a narrow governance failure
 - later recovery that does not retrospectively rescue a failed fixed-window prediction
+- increasing behavioral automaticity without premature phase declaration
 
 ---
 
@@ -271,6 +338,8 @@ under
 
 The model underestimated continued adaptation beyond the predicted ambient-execution ceiling.
 
+Later observations of automatic grip coupling, reverse equipment transfer, reduced management cost, and preserved execution across ordinary-life variation remain post-closure descriptive evidence.
+
 The result does not independently declare Phase 2D.
 
 ### 043 — August Biological Translation
@@ -301,7 +370,7 @@ The TruDiagnostic sample was collected on 2026-08-17.
 
 Provider-result evidence remains pending.
 
-DEXA, VO₂ max, Bod Pod, bodyweight, recovery telemetry, and subjective state remain supplemental under the registered evaluation framework.
+DEXA, VO₂ max, Bod Pod, bodyweight, recovery telemetry, subjective state, and training execution remain supplemental under the registered evaluation framework.
 
 ### 044 — Protocol Governance
 
@@ -319,7 +388,7 @@ Most broader governance remained preserved.
 
 The separately registered representative-state snapshot boundary was nevertheless violated.
 
-The result is classified as a narrow governance miss.
+The result remains classified as a narrow governance miss.
 
 No biological consequence is inferred solely from that outcome.
 
@@ -331,7 +400,7 @@ Record 045 used a fixed scoring window:
 2026-08-13 through 2026-08-16
 ```
 
-Observed four-day means met all four registered autonomic thresholds.
+All four registered autonomic thresholds were favorable.
 
 Functional preservation also remained intact.
 
@@ -410,7 +479,7 @@ over
 
 The model overestimated persistence of the favorable pre-testing autonomic state across the immediate reload interval.
 
-Later autonomic improvement demonstrates reversibility.
+Later recovery, including Week 34 observations, demonstrates reversibility.
 
 It does not change the fixed-window score.
 
@@ -434,7 +503,7 @@ August collection:
 
 [`methodology/2026-08-snapshot-collection-plan.md`](./methodology/2026-08-snapshot-collection-plan.md)
 
-The original filenames remain preserved even after prediction closure when retaining the committed historical artifact is preferable to renaming it after outcome access.
+The original filenames remain preserved after prediction closure when retaining the committed historical artifact is preferable to renaming it after outcome access.
 
 ---
 
@@ -532,29 +601,23 @@ Current evidence includes:
 - reduced operator overhead
 - repeated ambient execution
 - behavior-specific trait-like expression
-- automatic bar organization
+- session-level trait expression
+- automatic bar and grip organization
 - voluntary positional and force control
 - continued adaptation beyond the previously modeled plateau
 - preserved execution across different autonomic states
 - successful return after short training interruption
 - natural portability across altered room and equipment geometry
+- reverse transfer back to canonical equipment without reacclimation
+- preserved execution after substantial incidental physical workload
+- preserved execution after meaningful schedule displacement
 - separation of wearable recovery telemetry from demonstrated functional capacity
 
-Week 33 added strong natural portability evidence across:
+These observations increasingly resemble Phase 2D-type expression.
 
-- a different gym room
-- a different-style trap bar
-- a curved pull-up bar
-- altered bar thickness
-- altered grip texture
+They do not independently authorize Phase 2D.
 
-Execution remained low-salience across repeated exposures.
-
-Later pull-up and grip behavior became trait-like within the alternate configuration.
-
-This is meaningful Phase 2 evidence.
-
-It does not independently authorize Phase 2D.
+Formal phase transition remains separately and retrospectively governed.
 
 ---
 
@@ -575,7 +638,8 @@ Canonical sleep:
 Current coverage:
 
 ```text
-through 2026-08-23
+2026-02-09 through 2026-08-30
+203 continuous daily records
 ```
 
 Data coverage and limitations:
@@ -606,9 +670,13 @@ Source-backed correction remains separately governed.
 
 Current active report:
 
-[`reports/2026-W34.md`](./reports/2026-W34.md)
+[`reports/2026-W35.md`](./reports/2026-W35.md)
 
 Most recent closed report:
+
+[`reports/2026-W34.md`](./reports/2026-W34.md)
+
+Recent testing / reload report:
 
 [`reports/2026-W33.md`](./reports/2026-W33.md)
 
@@ -626,6 +694,35 @@ Reports do not replace primary artifacts or canonical datasets.
 The report lifecycle is documented in:
 
 [`reports/README.md`](./reports/README.md)
+
+---
+
+## Active Observation — Week 35
+
+Week 35 continues ordinary B1 + Load Integration without a new formal perturbation.
+
+Current observation focuses include:
+
+- persistence of ambient B1 execution
+- persistence of Load Integration automaticity
+- grip availability
+- movement organization
+- autonomic-function relationships
+- sleep continuity
+- bodyweight trajectory
+- lower-intake tolerance
+- ordinary-life availability
+- naturally occurring portability conditions
+
+No training escalation is introduced solely because execution feels increasingly embedded.
+
+No recovery intervention is introduced solely because of an isolated less-favorable wearable night.
+
+No stronger portability test is manufactured.
+
+Record 043 remains open pending its required primary evidence.
+
+Formal Phase 2D remains undeclared.
 
 ---
 
