@@ -120,8 +120,8 @@ These documents explain what is measured, how evidence enters the archive, and h
 # Current State and Temporal Structure
 
 - [LATEST.md](LATEST.md) — current executive state
-- [reports/2026-W34.md](reports/2026-W34.md) — active weekly observation window
-- [reports/2026-W33.md](reports/2026-W33.md) — most recent closed weekly report
+- [reports/2026-W35.md](reports/2026-W35.md) — active weekly observation window
+- [reports/2026-W34.md](reports/2026-W34.md) — most recent closed weekly report
 - [PHASE_MAP.md](PHASE_MAP.md) — phase architecture
 - [STATE_TRANSITIONS.md](STATE_TRANSITIONS.md) — governed structural changes
 - [EPOCH_INDEX.md](EPOCH_INDEX.md) — major temporal periods
@@ -135,13 +135,16 @@ Current state:
 
 ```text
 Active weekly window:
-2026-W34
+2026-W35
 
 Most recent closed weekly window:
-2026-W33
+2026-W34
 
 Canonical sleep:
-current through 2026-08-23
+current through 2026-08-30
+
+Canonical sleep rows:
+203 continuous daily records
 
 Phase:
 Phase 2 — Load Integration
@@ -151,6 +154,31 @@ Consolidation / lock-in observation
 
 Formal Phase 2D:
 undeclared
+```
+
+The current operating sequence is:
+
+```text
+Week 31:
+autonomic-performance divergence
+
+Week 32:
+spontaneous autonomic reconvergence
+
+Week 33:
+maximal-testing perturbation
+→ transient autonomic re-compression
+→ preserved reload
+→ later recovery
+
+Week 34:
+ordinary uninterrupted training
+→ variable physiology with preserved function
+→ increasing automaticity
+→ broader natural portability
+
+Week 35:
+ordinary continuity observation
 ```
 
 ---
@@ -192,7 +220,7 @@ Records 041, 042, 044, 045, and 046 are closed historical outcomes.
 
 Their evidence windows must not be retrospectively extended.
 
-The original preregistration artifacts remain preserved even after closure.
+The original preregistration artifacts remain preserved after closure.
 
 ---
 
@@ -200,8 +228,9 @@ The original preregistration artifacts remain preserved even after closure.
 
 - [reports](reports) — active and closed weekly reports
 - [reports/README.md](reports/README.md) — report lifecycle and correction boundaries
-- [reports/2026-W34.md](reports/2026-W34.md) — current active weekly report
-- [reports/2026-W33.md](reports/2026-W33.md) — most recent closed weekly report
+- [reports/2026-W35.md](reports/2026-W35.md) — current active weekly report
+- [reports/2026-W34.md](reports/2026-W34.md) — most recent closed weekly report
+- [reports/2026-W33.md](reports/2026-W33.md) — August testing / unload-reload closeout
 
 Reports may contain:
 
@@ -217,6 +246,80 @@ Reports do not replace source artifacts or canonical structured datasets.
 An active report does not determine its own final interpretation.
 
 A completed prediction must not be extended because related observations continue later.
+
+---
+
+# Most Recent Closed Window — 2026-W34
+
+Week 34 covered:
+
+```text
+2026-08-24 through 2026-08-30
+```
+
+Completed formal training:
+
+```text
+B1:
+7 sessions
+385 minutes
+approximately 21.14 miles
+
+Load Integration:
+7 sessions
+315 minutes
+
+Total:
+700 formal training minutes
+```
+
+Weekly means:
+
+```text
+Morning bodyweight:
+233.8 lb
+
+Daily biomarker HRV:
+59.1 ms
+
+Sleep HRV:
+65.3 ms
+
+Resting heart rate:
+49.6 bpm
+
+Sleeping heart rate:
+52.0 bpm
+
+Total sleep:
+approximately 7h24m
+
+Time in bed:
+approximately 8h04m
+```
+
+Material observations included:
+
+- ambient B1 execution across all seven sessions
+- repeated trait-like Load Integration execution
+- explicit session-level trait expression
+- automatic grip coupling
+- return to canonical equipment without reacclimation
+- preserved execution after substantial yard work
+- preserved execution after meaningful schedule displacement
+- increasing ownership of pacing, transitions, positions, and sequencing
+- variable overnight autonomic physiology without sustained functional regression
+- lower average bodyweight under lower reported intake without observed training failure
+- no pain, guarding, GI destabilization, or recovery-driven protocol change
+
+Week 34 adds strong descriptive evidence of continued behavioral consolidation and natural portability.
+
+It does not:
+
+- rescore record 042
+- repair record 046
+- score record 043
+- independently declare Phase 2D
 
 ---
 
@@ -276,7 +379,7 @@ Checksum validity confirms file identity, not biological or clinical validity.
 # Structured and Source-Preserved Data Layer
 
 - [data](data)
-- [data/sleep_longitudinal_v1.csv](data/sleep_longitudinal_v1.csv) — canonical sleep data through 2026-08-23
+- [data/sleep_longitudinal_v1.csv](data/sleep_longitudinal_v1.csv) — canonical sleep data through 2026-08-30
 - [data/biomarker_snapshot.csv](data/biomarker_snapshot.csv)
 - [data/bloodwork_longitudinal.csv](data/bloodwork_longitudinal.csv)
 - [data/epigenetic_longitudinal.csv](data/epigenetic_longitudinal.csv)
@@ -288,8 +391,8 @@ Checksum validity confirms file identity, not biological or clinical validity.
 Canonical sleep currently contains:
 
 ```text
-196 continuous daily rows
-through 2026-08-23
+203 continuous daily rows
+through 2026-08-30
 ```
 
 Structured data support:
@@ -398,6 +501,16 @@ closed / not supported
 
 The registered qualitative-transition threshold was met across repeated dates, contexts, and more than 14 calendar days without substantive explanatory protocol progression.
 
+Week 34 subsequently added descriptive evidence of:
+
+- automatic grip coupling
+- reverse equipment transfer
+- reduced operator-management cost
+- preserved execution after incidental workload
+- preserved execution after schedule displacement
+
+These observations do not rescore the record.
+
 The model underestimated continued adaptation.
 
 Record 042 does not independently declare Phase 2D.
@@ -440,6 +553,7 @@ Supplemental evidence includes:
 - bodyweight
 - recovery telemetry
 - subjective state
+- training execution
 
 No supplemental result may substitute for the pending primary TruDiagnostic domain.
 
@@ -536,7 +650,7 @@ Outcome:
 closed / supported
 ```
 
-Later testing, unload, and reload evidence cannot alter record 045.
+Later testing, unload, reload, and ordinary Week 34 evidence cannot alter record 045.
 
 Applicable preserved plan:
 
@@ -634,7 +748,7 @@ closed / not supported
 
 The model overestimated persistence of the favorable record 045 autonomic state across the immediate post-testing reload interval.
 
-Later autonomic recovery demonstrates reversibility but cannot alter the fixed-window result.
+Later autonomic recovery, including Week 34 observations, demonstrates reversibility but cannot alter the fixed-window result.
 
 Record 046 does not reopen or modify record 045.
 
@@ -783,14 +897,18 @@ Current Phase 2 evidence includes:
 - preserved functional recovery floor
 - reduced operator overhead
 - repeated ambient execution
-- behavior-specific trait-like expression
-- automatic bar organization
+- repeated behavior-specific trait-like expression
+- session-level trait expression
+- automatic bar and grip organization
 - voluntary positional and force control
 - continued adaptation beyond the previously modeled plateau
 - preserved execution across different autonomic states
 - spontaneous autonomic recovery without recovery-driven intervention
 - successful natural transfer across altered room and equipment geometry
-- preserved reload after short training interruption
+- reverse transfer to canonical equipment without reacclimation
+- preserved execution after short training interruption
+- preserved execution after substantial incidental physical workload
+- preserved execution after meaningful schedule displacement
 - separation of autonomic telemetry from demonstrated functional capacity
 
 These observations increasingly resemble Phase 2D-type expression.
@@ -798,6 +916,47 @@ These observations increasingly resemble Phase 2D-type expression.
 They do not independently authorize a Phase 2D declaration.
 
 Phase transition remains separately and retrospectively governed.
+
+---
+
+# Active Observation — 2026-W35
+
+Week 35 continues ordinary B1 + Load Integration.
+
+No new formal perturbation or prediction is registered at opening.
+
+Observe:
+
+- ordinary B1 continuity
+- Load Integration automaticity
+- grip availability
+- movement organization
+- daily HRV
+- sleep HRV
+- resting heart rate
+- sleeping heart rate
+- sleep continuity
+- material overnight cardiovascular variation
+- bodyweight trajectory
+- lower-intake tolerance
+- subjective restoration
+- mood
+- GI state
+- pain
+- ordinary-life functional availability
+- naturally occurring portability conditions
+
+Do not:
+
+- escalate training because execution feels increasingly embedded
+- unload solely because of an isolated less-favorable wearable night
+- manufacture stronger portability tests
+- add specialized grip work without independent justification
+- reopen completed model errors
+- score record 043 without required primary evidence
+- convert isolated trait-like or trait-level observations into a formal phase declaration
+
+The next useful evidence remains ordinary continuity.
 
 ---
 
@@ -821,6 +980,7 @@ It did not create a new recurring protocol.
 Current execution state should be confirmed through:
 
 - [LATEST.md](LATEST.md)
+- [reports/2026-W35.md](reports/2026-W35.md)
 - [reports/2026-W34.md](reports/2026-W34.md)
 - current governance documents
 
@@ -1159,9 +1319,10 @@ Where uncertainty exists:
 - **August physical collection:** Complete
 - **August physical artifact preservation:** Complete and checksum-verified
 - **August TruDiagnostic:** Sample collected; provider results pending
-- **Current weekly window:** 2026-W34 active
-- **Most recent closed weekly window:** 2026-W33
-- **Canonical sleep:** Current through 2026-08-23
+- **Current weekly window:** 2026-W35 active
+- **Most recent closed weekly window:** 2026-W34
+- **Canonical sleep:** Current through 2026-08-30
+- **Canonical sleep rows:** 203 continuous daily records
 - **Correction model:** Source-backed, narrow, and traceable
 - **Primary state concordance:** 0.79
 - **Primary trajectory concordance:** 0.67
@@ -1177,30 +1338,34 @@ Where uncertainty exists:
 
 # Version Note
 
-On 2026-08-24, this index was advanced through the Week 33 closeout and Model Error 046 adjudication.
+On 2026-08-31, this index was advanced through the Week 34 closeout and Week 35 initialization.
 
 The update:
 
-- closes 2026-W33
-- advances 2026-W34 to the active weekly window
-- advances canonical sleep coverage through 2026-08-23
-- records 196 continuous canonical sleep rows
-- reduces the open model-error set to record 043 only
-- preserves record 043 as open pending TruDiagnostic provider-result evidence
-- records record 046 as closed / `failed_autonomic_recompression`
-- records record 046 error direction as `over`
-- preserves record 046's original prospective registration provenance
-- preserves `calibration_state=pre`
-- preserves the original registered record 046 `Prediction:` narrative
-- preserves the fixed 2026-08-20 through 2026-08-23 scoring window
-- records the record 046 four-day means as daily HRV 60.25 ms, sleep HRV 63.25 ms, resting HR 52.0 bpm, and sleeping HR 54.0 bpm
-- records the record 046 threshold result as 1 of 4 favorable
-- preserves the finding that no multi-session functional regression occurred
-- preserves the finding that normal B1 + Load Integration resumed without recovery-driven protocol reduction
-- preserves later autonomic improvement as retrospective context without allowing it to change the fixed-window result
-- preserves records 041, 042, 044, and 045 as closed historical outcomes
-- leaves record 046 outside primary UDI and concordance updates because it is a secondary trajectory record
-- records strong natural Week 33 portability evidence without declaring Phase 2D
+- closes 2026-W34
+- advances 2026-W35 to the active weekly window
+- advances canonical sleep coverage through 2026-08-30
+- records 203 continuous canonical sleep rows
+- records Week 34 at 7 B1 sessions and 7 Load Integration sessions
+- records 700 total formal training minutes
+- records approximately 21.14 B1 miles
+- records Week 34 morning bodyweight averaging approximately 233.8 lb
+- records daily biomarker HRV averaging approximately 59.1 ms
+- records sleep HRV averaging approximately 65.3 ms
+- records resting heart rate averaging approximately 49.6 bpm
+- records sleeping heart rate averaging approximately 52.0 bpm
+- records ambient B1 execution throughout the week
+- records repeated trait-like and session-level trait Load Integration observations
+- records automatic grip coupling
+- records reverse equipment transfer without reacclimation
+- records preserved execution after substantial incidental workload
+- records preserved execution after meaningful schedule displacement
+- preserves recurrent autonomic variability without converting it into a new prediction result
+- preserves record 043 as the only open model-error record
+- preserves records 041, 042, 044, 045, and 046 as closed historical outcomes
+- preserves record 046 as `failed_autonomic_recompression`
+- preserves record 046 error direction as `over`
+- does not use Week 34 recovery to alter the fixed record 046 score
 - preserves the August physical artifact layer as complete
 - preserves the August TruDiagnostic provider-result domain as pending
 - preserves Phase 2 — Load Integration
@@ -1212,11 +1377,11 @@ The update does not alter:
 
 - any source artifact
 - any checksum
-- any biological measurement
 - any registered prediction wording
 - any registered threshold
 - any prior adjudicated outcome
+- any primary UDI or concordance value
 - the pending record 043 outcome
 - the underlying B1 + Load Integration architecture
-- any phase declaration
+- any formal phase declaration
 - any release metadata
