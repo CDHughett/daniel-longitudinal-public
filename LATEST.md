@@ -56,7 +56,8 @@ preserved function
 Week 33:
 testing withdrawal
 +
-maximal VO₂ perturbation
+August 17 maximal testing exposure
+→ post-testing autonomic disturbance
 → transient autonomic re-compression
 → normal reload
 → preserved function
@@ -299,13 +300,25 @@ Mean:
 reported as 233.8 lb
 ```
 
-Week 33 morning average:
+Current structured Week 33 morning average:
 
 ```text
 235.4 lb
 ```
 
-The Week 34 average was therefore approximately 1.6 lb lower.
+A source discrepancy remains for the 2026-08-17 Week 33 morning-bodyweight value:
+
+```text
+current structured dataset:
+234.1 lb
+
+earlier Week 33 / August collection record:
+235.1 lb
+```
+
+The Week 33 `235.4 lb` average therefore remains provisional pending source reconciliation.
+
+Using the current structured Week 33 calculation, the Week 34 average was approximately 1.6 lb lower.
 
 Lower caloric intake and increasing physique clarification were also reported.
 
@@ -856,6 +869,7 @@ Current uncertainties include:
 - local mechanical ownership across lower back, shoulders, elbows, hands, and forearms
 - bodyweight interpretation under fluid and GI-timing variation
 - cross-method DEXA and Bod Pod comparability limits
+- unresolved 2026-08-17 Week 33 morning-bodyweight source discrepancy
 
 **Primary risk:** allowing increasingly favorable behavioral evidence to trigger premature phase or protocol progression.
 
@@ -867,7 +881,7 @@ Current uncertainties include:
 
 **Prediction risk:** allowing later recovery to retrospectively repair record 046 or later adaptation to rescore record 042.
 
-**Current response:** preserve ordinary B1 + Load Integration, retain favorable and unfavorable observations, keep closed prediction boundaries fixed, await the pending molecular source domain, and continue retrospective interpretation without forced phase progression.
+**Current response:** preserve ordinary B1 + Load Integration, retain favorable and unfavorable observations, keep closed prediction boundaries fixed, await the pending molecular source domain, preserve the unresolved Week 33 weight discrepancy until source reconciliation, and continue retrospective interpretation without forced phase progression.
 
 ---
 
@@ -937,6 +951,7 @@ Current work:
 - continued observation of autonomic-function relationships
 - continued natural portability observation
 - continued bodyweight / intake observation
+- reconciliation of the 2026-08-17 Week 33 morning-bodyweight source discrepancy
 - awaiting August TruDiagnostic provider results
 - preservation and privacy review of future molecular source artifacts
 - structured transcription of molecular values only after source verification
