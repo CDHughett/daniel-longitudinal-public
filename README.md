@@ -130,7 +130,8 @@ Week 32:
 spontaneous autonomic reconvergence
 
 Week 33:
-maximal-testing perturbation
+August 17 maximal testing exposure
+→ post-testing autonomic disturbance
 → transient autonomic re-compression
 → preserved reload
 → later recovery
