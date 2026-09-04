@@ -14,6 +14,116 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 
 ### Added
 
+#### September 4 delayed Wednesday audit
+
+- Added `docs/audits/2026-09-04-late-wednesday-audit.md`.
+
+- The audit records the delayed Wednesday repository review scheduled for `2026-09-02` and actually performed on `2026-09-04`.
+
+- No backdated September 2 audit was created.
+
+- The audit reviewed:
+
+  ```text
+  Package:
+  daniel-longitudinal-public-main (18).zip
+
+  Size:
+  40,135,759 bytes
+
+  SHA-256:
+  3de4a952aec36486f510b19b3202d1771b54dd665b9e64d317b09c16587e53cb
+  ```
+
+- The most recent prior audited Saturday reference remained:
+
+  ```text
+  Package:
+  daniel-longitudinal-public-main (14).zip
+
+  Size:
+  40,138,259 bytes
+
+  SHA-256:
+  62935ddd3d663bfff8de3484973c15f52cfc0ddcd6322e91857ab516eba1475f
+  ```
+
+- The reviewed August 29-to-current change surface was:
+
+  ```text
+  Added:
+  1
+
+  Changed:
+  7
+
+  Removed:
+  0
+  ```
+
+- The audit confirmed:
+  - fresh-ZIP validator `PASS`
+  - extracted-directory validator `PASS`
+  - Python validator compilation `PASS`
+  - 192 repository files
+  - zero zero-byte files
+  - zero exact duplicate hash groups
+  - 134 Markdown files
+  - 11 CSV files
+  - 33 of 33 registered checksums passing
+  - 203 continuous canonical sleep rows
+  - canonical sleep coverage through `2026-08-30`
+  - weekly-report continuity through active `2026-W35`
+  - model-error continuity through record `046`
+  - record `043` preserved open and unscored
+  - record `046` preserved closed as `failed_autonomic_recompression`
+  - records `041–046` preserving `calibration_state=pre`
+  - preserved original prospective prediction narratives
+  - 24 of 24 images readable
+  - 7 of 7 PDFs readable
+  - 115 readable PDF pages
+  - zero encrypted PDFs
+  - release metadata aligned
+  - RingConn byte-preservation controls intact
+
+- The audit independently rechecked Week 34 arithmetic and found no numerical correction required.
+
+- The audit identified three narrow issues:
+
+  ```text
+  1.
+  a post-window record_046 tag
+  on the 2026-08-24 canonical sleep row
+
+  2.
+  testing-related causal language
+  stronger than the archive's standing
+  causal-attribution boundary
+
+  3.
+  the already-disclosed unresolved
+  2026-08-17 morning-bodyweight
+  source discrepancy
+  ```
+
+- Audit disposition:
+
+  ```text
+  PASS WITH NARROW SEMANTIC REMEDIATION REQUIRED
+  AND ONE PRESERVED SOURCE DISCREPANCY
+  ```
+
+- The audit did not authorize:
+  - biological-value reconstruction
+  - Model Error 046 rescoring
+  - Model Error 043 closure
+  - prediction-threshold modification
+  - scoring-window modification
+  - protocol modification
+  - Phase 2D declaration
+  - Phase 3 activation
+  - release-version modification
+
 #### August 31 Week 34 closeout and Week 35 initialization
 
 - Closed `reports/2026-W34.md` after completion of the full `2026-08-24` through `2026-08-30` observation window.
@@ -1891,6 +2001,7 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   - `2026-08-05`
   - `2026-08-12`
   - `2026-08-23`
+  - `2026-09-04`
 
 - The audit layer continues to distinguish mechanical repository validation from human semantic and governance review.
 
@@ -1905,6 +2016,160 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 ---
 
 ### Changed
+
+#### September 4 audit-remediation alignment
+
+- Updated `reports/2026-W33.md` to narrow testing-related causal attribution.
+
+- Replaced language implying established causation, including formulations equivalent to:
+
+  ```text
+  maximal testing perturbation
+  ```
+
+  and:
+
+  ```text
+  the maximal VO₂ test produced
+  measurable autonomic carryover
+  ```
+
+  with temporally bounded language such as:
+
+  ```text
+  August 17 maximal testing exposure
+  →
+  post-testing autonomic disturbance
+  ```
+
+  and:
+
+  ```text
+  a measurable autonomic disturbance
+  followed the August 17 maximal VO₂ test
+  ```
+
+- Preserved the archive's standing interpretation boundary:
+
+  ```text
+  temporal association
+  ≠
+  established causation
+  ```
+
+- The Week 33 wording correction did not change:
+  - any structured value
+  - record 046 scoring
+  - record 046 outcome
+  - record 046 error direction
+  - any prediction threshold
+  - any evidence window
+  - protocol state
+  - phase state
+
+- Updated `reports/2026-W34.md`:
+  - replaces testing-causality shorthand with temporal-association language
+  - removes framing that presupposed complete clearance before Week 34
+  - describes Week 34 as ordinary continuity after the August testing interval and late-Week-33 autonomic rebound
+  - preserves all Week 34 numerical values and training totals
+  - preserves record 046 as closed historical evidence
+  - preserves record 043 as open
+  - preserves Phase 2D as undeclared
+
+- Updated the Week 34 comparison to identify the Week 33 `235.4 lb` value as the current structured calculation rather than a fully reconciled source value.
+
+- Added explicit qualification that the `2026-08-17` morning-bodyweight discrepancy remains:
+
+  ```text
+  current structured dataset:
+  234.1 lb
+
+  earlier Week 33 / August collection record:
+  235.1 lb
+  ```
+
+- No source value was selected from inference.
+
+- Updated `reports/2026-W35.md`:
+  - aligns the Week 33 sequence with the narrowed testing-attribution language
+  - preserves Week 35 as ordinary observation
+  - qualifies the Week 33 bodyweight comparison
+  - preserves all active observation rules
+  - creates no new model-error record
+  - creates no new threshold
+  - leaves Phase 2D undeclared
+
+- Updated `LATEST.md`:
+  - replaces `maximal VO₂ perturbation` shorthand with temporally bounded testing language
+  - preserves the Week 33-to-Week 35 longitudinal sequence
+  - qualifies the current structured Week 33 bodyweight average
+  - records the unresolved `234.1 lb` versus `235.1 lb` source discrepancy
+  - preserves the discrepancy for later source reconciliation
+  - preserves all model-error outcomes
+  - preserves current primary concordance values
+  - preserves current phase and protocol state
+
+- Updated `README.md`:
+  - replaces the public-facing `maximal-testing perturbation` shorthand
+  - uses `August 17 maximal testing exposure` followed by `post-testing autonomic disturbance`
+  - makes no numerical, prediction, protocol, phase, or release change
+
+- Updated `INDEX.md`:
+  - aligns the current Week 33 sequence with the same temporally bounded terminology
+  - makes no numerical, prediction, protocol, phase, or release change
+
+- The September 4 attribution remediation preserves the distinction:
+
+  ```text
+  observed sequence
+  and temporal association
+  ```
+
+  from:
+
+  ```text
+  experimentally isolated causal proof
+  ```
+
+- The remediation does not weaken the observed record 046 result.
+
+- Record 046 remains:
+
+  ```text
+  status:
+  closed / not supported
+
+  actual:
+  failed_autonomic_recompression
+
+  error direction:
+  over
+
+  primary scoring window:
+  2026-08-20 through 2026-08-23
+  ```
+
+- Record 043 remains:
+
+  ```text
+  open / unscored
+  pending primary TruDiagnostic provider results
+  ```
+
+- The September 4 alignment does not:
+  - modify any primary source artifact
+  - modify any registered checksum
+  - alter any biological measurement
+  - alter any registered prediction wording
+  - alter any registered threshold
+  - extend any completed scoring window
+  - reopen any completed model error
+  - score record 043
+  - modify primary UDI or concordance values
+  - change the B1 + Load Integration architecture
+  - declare Phase 2D
+  - activate Phase 3
+  - increment the formal release version
 
 #### August 31 Week 34 closeout and live-state alignment
 
@@ -2172,6 +2437,94 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 ---
 
 ### Fixed
+
+#### September 4 canonical sleep-tag and semantic-attribution remediation
+
+- Corrected one narrow canonical sleep-tag inconsistency identified during the `2026-09-04` delayed Wednesday audit.
+
+- The `2026-08-24` row in:
+
+  `data/sleep_longitudinal_v1.csv`
+
+  contained:
+
+  ```text
+  record_046
+  ```
+
+  inside `sleep_tags`.
+
+- Record 046's fixed primary scoring window ended on:
+
+  ```text
+  2026-08-23
+  ```
+
+- The August 24 tag therefore implied a record association outside the registered scoring boundary.
+
+- Removed only:
+
+  ```text
+  record_046
+  ```
+
+  from the `2026-08-24` `sleep_tags` field.
+
+- Preserved every other field and tag on that row.
+
+- The correction did not change:
+  - total sleep
+  - deep sleep
+  - light sleep
+  - REM sleep
+  - awake minutes
+  - awakening count
+  - sleep efficiency
+  - sleep-stage percentages
+  - sleep HRV
+  - sleeping heart rate
+  - subjective-state fields
+  - readiness state
+  - source field
+  - any other canonical sleep row
+
+- Classification:
+
+  ```text
+  Biological value error:
+  No
+
+  Record 046 scoring error:
+  No
+
+  Canonical date error:
+  No
+
+  Semantic tag inconsistency:
+  Yes
+  ```
+
+- Record 046 remains closed under its original fixed scoring boundary.
+
+- Later Week 34 observations remain post-closure descriptive evidence.
+
+- They do not reopen, extend, or rescore record 046.
+
+- Also corrected testing-attribution language across:
+  - `reports/2026-W33.md`
+  - `reports/2026-W34.md`
+  - `reports/2026-W35.md`
+  - `LATEST.md`
+  - `README.md`
+  - `INDEX.md`
+
+- The wording correction narrows causal claims without changing the underlying observations.
+
+- Preserved the unresolved `2026-08-17` morning-bodyweight discrepancy rather than silently selecting a value.
+
+- Downstream Week 33 bodyweight comparisons now identify the current structured `235.4 lb` weekly average as provisional where relevant.
+
+- No correction to either `234.1 lb` or `235.1 lb` is authorized until the strongest contemporaneous source is reconciled.
 
 #### Model Error 045 registration provenance
 
@@ -2547,9 +2900,9 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 
 - Those warnings do not authorize automatic correction and do not make the repository mechanically invalid.
 
-- The committed August 31 state is intended to be the state subjected to the final read-only repository verification pass.
+- The September 4 post-audit remediation state is intended to be subjected to a fresh read-only repository verification pass.
 
-- A successful read-only verification of this unchanged committed state does **not** itself require another changelog entry or repository commit.
+- A successful read-only verification of the unchanged September 4 remediation state does not itself require another changelog entry or repository commit.
 
 - A later repository modification would require its own normal documentation only if verification identifies an issue that actually requires a source or repository change.
 
@@ -2564,6 +2917,16 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 ---
 
 ### Release status
+
+- No release-version increment was made for the September 4 delayed-audit remediation.
+
+- The September 4 remediation is limited to:
+  - one canonical semantic-tag correction
+  - testing-attribution language narrowing
+  - qualification of the unresolved Week 33 bodyweight source discrepancy
+  - preservation of the associated formal audit artifact
+
+- It introduces no new biological evidence, prediction outcome, protocol state, phase state, or release artifact.
 
 - No release-version increment was made for the August 31 Week 34 closeout and Week 35 initialization batch.
 
