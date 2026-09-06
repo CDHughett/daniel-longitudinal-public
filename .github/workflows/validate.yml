@@ -1,0 +1,28 @@
+name: Repository validation
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run core repository validator
+        run: python tools/validate_repository.py
+
+      - name: Run machine-readable layer validator
+        run: python tools/validate_machine_readable.py
