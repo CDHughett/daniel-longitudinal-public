@@ -1,48 +1,20 @@
 # Observer Quickstart
 
-This is a short inspection route for researchers, technical reviewers, or skeptical readers who want to evaluate the archive without reading everything.
+This is the shortest technical inspection route for researchers, data reviewers, engineers, or skeptical readers.
 
-Use this only as a quick audit path.
-
-For broader context, see [`FOR_OBSERVERS.md`](./FOR_OBSERVERS.md).
+The goal is not to summarize everything. The goal is to test whether the archive's claims, data, provenance, interpretation, and governance remain coherent when inspected from the bottom up.
 
 ---
 
-## Purpose
+## 1. Establish Scope
 
-This file answers one question:
+Read:
 
-**What should an outside observer inspect first if they want to test the archive structure?**
+- [`../README.md`](../README.md)
+- [`START_HERE.md`](./START_HERE.md)
+- [`../ASSUMPTIONS_AND_BOUNDARIES.md`](../ASSUMPTIONS_AND_BOUNDARIES.md)
 
-The goal is not to summarize the entire repository.
-
-The goal is to provide a compact review route through:
-
-- archive posture
-- current state
-- data coverage
-- one report
-- one snapshot
-- model-error review
-- governance boundaries
-
----
-
-## 1. Read The Archive Posture
-
-Start with:
-
-- [`README.md`](../README.md)
-- [`docs/START_HERE.md`](./START_HERE.md)
-
-Check whether the archive clearly states:
-
-- what it is
-- what it is not
-- what it claims
-- what it does not claim
-- where evidence lives
-- how interpretation is limited
+Confirm that the archive describes itself as a single-subject observational system under incomplete environmental control rather than a clinical trial or generalized intervention protocol.
 
 ---
 
@@ -50,160 +22,185 @@ Check whether the archive clearly states:
 
 Read:
 
-- [`LATEST.md`](../LATEST.md)
+[`../LATEST.md`](../LATEST.md)
 
-Check whether the current system state is clearly separated from:
-
-- historical reports
-- future expectations
-- performance claims
-- speculative interpretation
-
-The current-state dashboard should describe the active observation window without making forward claims.
+Check that current phase, active report, open predictions, pending snapshot evidence, and current data coverage are separated from historical results and future expectations.
 
 ---
 
-## 3. Check Data Coverage
+## 3. Inspect Machine-Readable Coverage
 
 Read:
 
-- [`data/DATA_COVERAGE.md`](../data/DATA_COVERAGE.md)
+- [`../data/DATA_COVERAGE.md`](../data/DATA_COVERAGE.md)
+- [`../schemas/machine-readable-layer-v1.md`](../schemas/machine-readable-layer-v1.md)
 
-Check:
+Then inspect the core structured files:
 
-- what datasets are public
-- what data is excluded
-- what is structured longitudinally
-- what is referenced but not included
-- where data limitations constrain interpretation
+- [`../data/daily_biomarkers_v1.csv`](../data/daily_biomarkers_v1.csv)
+- [`../data/sleep_longitudinal_v1.csv`](../data/sleep_longitudinal_v1.csv)
+- [`../data/training_blocks_v1.csv`](../data/training_blocks_v1.csv)
+- [`../data/context_events_v1.csv`](../data/context_events_v1.csv)
 
-Do not evaluate claims without first checking coverage.
+Current public coverage includes 203 aligned daily biomarker rows, 203 canonical sleep rows, 325 training-session rows, and 42 bounded context-event rows across the current represented interval.
+
+Check whether:
+
+- identifiers are stable
+- missingness remains visible
+- subjective and measured fields are distinguishable
+- context classification is bounded
+- historical duration expressions preserve uncertainty rather than invent precision
+- row-level `source_ref` values remain present
 
 ---
 
-## 4. Inspect One Report
+## 4. Inspect Source Provenance
 
-Open one recent weekly report:
+For direct provider/device evidence, inspect:
 
-- [`reports`](../reports/)
+[`../data/source_exports/`](../data/source_exports/)
 
-Suggested starting point:
+For curated rows derived from private `Daniel_Dataset_v1.x` sources, inspect:
 
-- the most recent closed weekly report
+[`../data/source_provenance/`](../data/source_provenance/)
 
-Check whether the report:
+The private-source manifest registers SHA-256 only when the exact retained private file was available. A missing hash is intentionally left missing rather than reconstructed.
+
+---
+
+## 5. Inspect One Closed Report and Its Evidence
+
+Open the most recent closed report:
+
+[`../reports/2026-W34.md`](../reports/2026-W34.md)
+
+Then compare its material values with the applicable structured datasets.
+
+Ask whether the report:
 
 - interprets retrospectively
-- references observed conditions
-- avoids unsupported forward claims
-- distinguishes system-wide patterns from localized events
-- remains consistent with the stated archive posture
+- preserves unfavorable signals
+- distinguishes daily HRV from sleep HRV
+- distinguishes resting from sleeping heart rate
+- avoids treating one subjective observation as a declared phase transition
+- remains proportional to the underlying rows
 
 ---
 
-## 5. Inspect One Snapshot
+## 6. Inspect One Snapshot
 
-Open the corresponding snapshot window:
+Use:
 
-- [`snapshots`](../snapshots/)
-- [`SNAPSHOT_LOG.md`](../SNAPSHOT_LOG.md)
-- [`EPOCH_INDEX.md`](../EPOCH_INDEX.md)
+- [`../snapshots/`](../snapshots/)
+- [`../SNAPSHOT_LOG.md`](../SNAPSHOT_LOG.md)
+- [`../EPOCH_INDEX.md`](../EPOCH_INDEX.md)
+- [`../methodology/2026-08-snapshot-collection-plan.md`](../methodology/2026-08-snapshot-collection-plan.md)
 
-Check whether the snapshot layer supports the report context.
-
-Artifacts should precede interpretation.
+Check source identity, timing, preparation conditions, checksum coverage, missingness, and whether interpretation remains distinct from artifact preservation.
 
 ---
 
-## 6. Inspect The Model-Error Layer
+## 7. Inspect Prediction Accountability
 
 Read:
 
-- [`data/model_error/WHAT_THIS_LAYER_IS.md`](../data/model_error/WHAT_THIS_LAYER_IS.md)
-- [`data/model_error/model_error_gap_v1.csv`](../data/model_error/model_error_gap_v1.csv)
+- [`../data/model_error/WHAT_THIS_LAYER_IS.md`](../data/model_error/WHAT_THIS_LAYER_IS.md)
+- [`../data/model_error/model_error_gap_v1.csv`](../data/model_error/model_error_gap_v1.csv)
+- [`../docs/methodology/valid_prediction_criteria.md`](../docs/methodology/valid_prediction_criteria.md)
 
-Check whether predictions are:
+Check whether predictions were logged before their relevant outcomes, remained bounded and falsifiable, and stayed visible when wrong.
 
-- recorded
-- closed retrospectively
-- compared against observed outcomes
-- preserved even when wrong
-- used for calibration rather than promotion
+For future model-error schema semantics, see:
 
-The model-error layer is auxiliary.
-
-It is not the primary evidence layer.
+[`../docs/methodology/model_error_schema_v2.md`](../docs/methodology/model_error_schema_v2.md)
 
 ---
 
-## 7. Review Governance
+## 8. Inspect Governance
 
 Read:
 
-- [`GOVERNANCE.md`](../GOVERNANCE.md)
-- [`STRUCTURAL_PRINCIPLES.md`](../STRUCTURAL_PRINCIPLES.md)
-- [`PHASE_DECLARATION_CRITERIA.md`](../PHASE_DECLARATION_CRITERIA.md)
-- [`RISK_MANAGEMENT.md`](../RISK_MANAGEMENT.md)
+- [`../GOVERNANCE.md`](../GOVERNANCE.md)
+- [`../PHASE_DECLARATION_CRITERIA.md`](../PHASE_DECLARATION_CRITERIA.md)
+- [`../PHASE_MAP.md`](../PHASE_MAP.md)
+- [`../data/DATA_QUALITY_NOTES.md`](../data/DATA_QUALITY_NOTES.md)
 
-Check whether the repository defines:
+Look for whether corrections, phase decisions, prediction closure, and source conflicts are handled under declared rules rather than outcome preference.
 
-- interpretation boundaries
-- phase advancement requirements
-- evidence hierarchy
-- risk controls
-- constraints on claims
-- separation between artifacts and interpretation
+---
+
+## 9. Run Validation
+
+Core mechanical/governance validator:
+
+```text
+python tools/validate_repository.py
+```
+
+Machine-readable semantic validator:
+
+```text
+python tools/validate_machine_readable.py
+```
+
+See [`../tools/README.md`](../tools/README.md).
+
+The GitHub Actions workflow runs both validators on pushes to `main` and pull requests.
+
+A validator pass is not a biological-validity claim.
+
+---
+
+## 10. Inspect AI-Assistance Boundary
+
+Read:
+
+[`AI_ASSISTANCE.md`](./AI_ASSISTANCE.md)
+
+AI can assist with structuring, analysis, drafting, code, and governed prediction generation, but it is not an evidence source and cannot override the archive's source hierarchy.
 
 ---
 
 ## Quick Audit Sequence
 
 ```text
-README.md
-  ↓
-docs/START_HERE.md
-  ↓
-LATEST.md
-  ↓
-data/DATA_COVERAGE.md
-  ↓
-one recent report
-  ↓
-corresponding snapshot window
-  ↓
-data/model_error
-  ↓
-governance documents
+README / START_HERE
+        ↓
+LATEST
+        ↓
+DATA_COVERAGE
+        ↓
+machine-readable schema + core CSVs
+        ↓
+source provenance / source exports
+        ↓
+one closed report + one snapshot
+        ↓
+model-error layer
+        ↓
+governance
+        ↓
+validators
 ```
 
 ---
 
 ## Evaluation Principle
 
-The archive should be evaluated by coherence between:
+A strong review should move:
 
-- what is claimed
-- what is measured
-- what is preserved
-- what is interpreted
-- what is explicitly limited
+```text
+evidence
+→ structure
+→ interpretation
+```
 
-A strong reading should move from evidence toward interpretation.
+not:
 
-Not from narrative toward evidence.
+```text
+narrative
+→ search for supporting evidence
+```
 
----
-
-## Boundary
-
-This file is a shortcut.
-
-It does not replace the full archive map.
-
-For complete navigation, use:
-
-- [`INDEX.md`](../INDEX.md)
-
-For a full first reading pass, use:
-
-- [`docs/NEWCOMER_PATH.md`](./NEWCOMER_PATH.md)
+For the broader observer path, see [`FOR_OBSERVERS.md`](./FOR_OBSERVERS.md). For complete navigation, use [`../INDEX.md`](../INDEX.md).

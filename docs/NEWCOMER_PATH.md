@@ -1,201 +1,233 @@
-# Newcomer Reading Path
+# Newcomer Path
 
-This is the first full reading pass for the Daniel Longitudinal Study.
+This is the recommended first extended reading pass for someone who wants to understand the Daniel Longitudinal Study beyond the 5-minute orientation.
 
-Use this after the 5-minute orientation in [`docs/START_HERE.md`](./START_HERE.md).
-
-This path is intended for a reader who wants more than the first-contact summary but does not need the complete repository map.
+The sequence is designed to move from scope → current state → data → provenance → interpretation → prediction → governance.
 
 ---
 
-## Role Of This File
-
-Use these based on depth:
-
-- [`docs/START_HERE.md`](./START_HERE.md) — first 5 minutes
-- [`docs/NEWCOMER_PATH.md`](./NEWCOMER_PATH.md) — first 30–60 minutes
-- [`INDEX.md`](../INDEX.md) — complete repository map
-
-`START_HERE.md` explains what the archive is.
-
-`NEWCOMER_PATH.md` shows how to begin reading it.
-
-`INDEX.md` maps the full repository.
-
----
-
-## Step 1 — Understand The Project
+## Step 1 — Establish the Archive Boundary
 
 Read:
 
-- [`README.md`](../README.md)
+- [`../README.md`](../README.md)
+- [`START_HERE.md`](./START_HERE.md)
+- [`../ASSUMPTIONS_AND_BOUNDARIES.md`](../ASSUMPTIONS_AND_BOUNDARIES.md)
 
-Purpose:
+Understand first that this is a governed N-of-1 observational archive under incomplete real-world environmental control.
 
-Understand what the archive is, why it exists, what it contains, and what it does not claim.
+Do not begin by treating a favorable biomarker or performance observation as a population claim.
 
 ---
 
-## Step 2 — Establish Current State
+## Step 2 — Read the Current State
 
 Read:
 
-- [`LATEST.md`](../LATEST.md)
+[`../LATEST.md`](../LATEST.md)
 
-Purpose:
-
-Understand the active observation window, current phase, recent archive updates, and current system emphasis.
-
-This prevents the reader from entering the archive only through historical material.
+This establishes the active weekly window, current phase/substate, current open prediction, recent closed outcomes, and pending biological evidence.
 
 ---
 
-## Step 3 — Understand Data Coverage
+## Step 3 — Learn What Is Actually Structured
 
 Read:
 
-- [`data/DATA_COVERAGE.md`](../data/DATA_COVERAGE.md)
+[`../data/DATA_COVERAGE.md`](../data/DATA_COVERAGE.md)
 
-Purpose:
+The current machine-readable core includes:
 
-Understand what data is included, what data is excluded, what is public, and where interpretation is limited by available evidence.
+- [`../data/daily_biomarkers_v1.csv`](../data/daily_biomarkers_v1.csv)
+- [`../data/sleep_longitudinal_v1.csv`](../data/sleep_longitudinal_v1.csv)
+- [`../data/training_blocks_v1.csv`](../data/training_blocks_v1.csv)
+- [`../data/context_events_v1.csv`](../data/context_events_v1.csv)
 
-This should come before technical interpretation.
+The current aligned interval includes 203 daily biomarker rows, 203 canonical sleep rows, 325 training-session rows, and 42 context-event rows.
 
 ---
 
-## Step 4 — Understand Observer Evaluation
+## Step 4 — Read the Data Contract
 
 Read:
 
-- [`docs/FOR_OBSERVERS.md`](./FOR_OBSERVERS.md)
+[`../schemas/machine-readable-layer-v1.md`](../schemas/machine-readable-layer-v1.md)
 
-Purpose:
+Pay particular attention to:
 
-Understand how a skeptical or technical reader should evaluate the archive.
+- measured versus subjective fields
+- contextual classifications
+- missingness
+- `source_ref`
+- the v1 `duration_min` compatibility rule
+- context-event classification
+- cross-file relationships
 
-This provides the basic audit posture before entering deeper system documents.
+Historical source uncertainty is preserved rather than normalized into unsupported precision.
 
 ---
 
-## Step 5 — Understand System Structure
+## Step 5 — Inspect Provenance
 
 Read:
 
-- [`SYSTEM_OVERVIEW.md`](../SYSTEM_OVERVIEW.md)
-- [`DATASET_OVERVIEW.md`](../DATASET_OVERVIEW.md)
+- [`../data/source_provenance/README.md`](../data/source_provenance/README.md)
+- [`../data/source_exports/`](../data/source_exports/)
+- [`../MEASUREMENT_SOURCES.md`](../MEASUREMENT_SOURCES.md)
 
-Purpose:
+The archive distinguishes private curated sources from byte-preserved provider exports.
 
-Understand how information moves through the archive and how datasets relate to reports, snapshots, and governance.
+Private `Daniel_Dataset_v1.x` sources remain private, while row-level source locators and available exact-file SHA-256 values provide a public provenance trail.
 
 ---
 
-## Step 6 — Understand Evidence And Artifacts
+## Step 6 — Inspect Data Quality
 
 Read:
 
-- [`EPOCH_INDEX.md`](../EPOCH_INDEX.md)
-- [`SNAPSHOT_LOG.md`](../SNAPSHOT_LOG.md)
-- [`snapshots`](../snapshots/)
-- [`reports`](../reports/)
+[`../data/DATA_QUALITY_NOTES.md`](../data/DATA_QUALITY_NOTES.md)
 
-Purpose:
+This is important because machine-readable does not mean error-free.
 
-Understand the temporal structure of the archive and how primary artifacts support retrospective interpretation.
-
-Suggested order:
-
-1. Review the epoch index.
-2. Review the snapshot log.
-3. Inspect one snapshot window.
-4. Inspect the corresponding weekly report.
+Look for unresolved findings, corrected findings, source conflicts, and restrictions on automatic correction.
 
 ---
 
-## Step 7 — Understand The Model-Error Layer
+## Step 7 — Read a Closed Week
+
+Start with:
+
+[`../reports/2026-W34.md`](../reports/2026-W34.md)
+
+Then inspect the underlying structured rows for the same window.
+
+The point is to see how the archive moves from recorded values and observations toward bounded retrospective interpretation.
+
+---
+
+## Step 8 — Inspect the August Testing Cycle
 
 Read:
 
-- [`data/model_error/WHAT_THIS_LAYER_IS.md`](../data/model_error/WHAT_THIS_LAYER_IS.md)
-- [`data/model_error/model_error_gap_v1.csv`](../data/model_error/model_error_gap_v1.csv)
+- [`../methodology/2026-08-snapshot-collection-plan.md`](../methodology/2026-08-snapshot-collection-plan.md)
+- [`../snapshots/2026-08/2026-08 Epoch.md`](../snapshots/2026-08/2026-08%20Epoch.md)
+- [`../reports/2026-W33.md`](../reports/2026-W33.md)
 
-Purpose:
-
-Understand how predictions are compared against observed outcomes and how model error is preserved for calibration.
-
-This layer is auxiliary.
-
-It is not the primary evidence layer.
+Review collection conditions, source artifacts, recorded deviations, and the distinction between physical snapshot completion and the still-pending TruDiagnostic domain for record 043.
 
 ---
 
-## Step 8 — Understand Uncertainty And Calibration
+## Step 9 — Understand Prediction Accountability
 
 Read:
 
-- [`docs/methodology/UDI_framework_v1.md`](./methodology/UDI_framework_v1.md)
+- [`../data/model_error/WHAT_THIS_LAYER_IS.md`](../data/model_error/WHAT_THIS_LAYER_IS.md)
+- [`../data/model_error/README.md`](../data/model_error/README.md)
+- [`../docs/methodology/valid_prediction_criteria.md`](./methodology/valid_prediction_criteria.md)
+- [`../docs/methodology/UDI_framework_v1.md`](./methodology/UDI_framework_v1.md)
 
-Purpose:
+UDI canonically means **Unobstructed Delta Index**.
 
-Understand how uncertainty, prediction performance, state concordance, and trajectory concordance are evaluated.
+It is an experimental directional prediction-error framework for eligible magnitude-based records. State and trajectory predictions are evaluated separately through concordance rather than forced into magnitude UDI.
 
-This should be read after the model-error layer, not before it.
+The prediction layer exists for calibration, not authority.
 
 ---
 
-## Step 9 — Understand Recurring Concepts
+## Step 10 — Understand Future Model-Error Semantics
 
 Read:
 
-- [`docs/CONCEPTS.md`](./CONCEPTS.md)
+[`methodology/model_error_schema_v2.md`](./methodology/model_error_schema_v2.md)
 
-Purpose:
-
-Understand recurring archive terms and internal concepts used across reports, methodology, and observer-facing documents.
-
----
-
-## Step 10 — Explore The Archive
-
-Suggested areas:
-
-- weekly reports
-- audit reports
-- findings
-- model-error records
-- longitudinal summaries
-- governance documents
-- snapshot windows
-
-At this point, most recurring concepts used throughout the archive should be understandable.
-
----
-
-## Reading Principle
-
-Move from simple to technical:
+The future schema separates:
 
 ```text
-orientation
-  ↓
-current state
-  ↓
-data coverage
-  ↓
-observer evaluation
-  ↓
-system structure
-  ↓
-artifacts and reports
-  ↓
-model-error layer
-  ↓
-uncertainty framework
-  ↓
-full archive exploration
+registration_status
 ```
 
-The goal is not to read everything immediately.
+from:
 
-The goal is to understand enough structure to inspect the archive intelligently.
+```text
+model_calibration_scope
+```
+
+because a prospectively locked prediction can also be generated by a subject-calibrated model.
+
+This design note does not rewrite existing protected records.
+
+---
+
+## Step 11 — Read Governance and Phase Rules
+
+Read:
+
+- [`../GOVERNANCE.md`](../GOVERNANCE.md)
+- [`../METHODOLOGY_AND_CONTROLS.md`](../METHODOLOGY_AND_CONTROLS.md)
+- [`../PHASE_MAP.md`](../PHASE_MAP.md)
+- [`../PHASE_DECLARATION_CRITERIA.md`](../PHASE_DECLARATION_CRITERIA.md)
+
+Understand the distinction between:
+
+- candidate evidence
+- operating substate
+- formal retrospective declaration
+
+and why favorable execution does not automatically authorize progression.
+
+---
+
+## Step 12 — Review AI Assistance
+
+Read:
+
+[`AI_ASSISTANCE.md`](./AI_ASSISTANCE.md)
+
+AI may help with structuring, drafting, analysis, validation code, and registered predictions. It is not a source-evidence class and cannot override stronger source evidence.
+
+---
+
+## Step 13 — Run or Inspect Validation
+
+Read:
+
+- [`../tools/README.md`](../tools/README.md)
+- [`../VERIFICATION.md`](../VERIFICATION.md)
+
+The current read-only tools are:
+
+```text
+tools/validate_repository.py
+tools/validate_machine_readable.py
+```
+
+GitHub Actions runs both on pushes to `main` and pull requests.
+
+---
+
+## Step 14 — Use the Full Index
+
+After the first pass, use:
+
+[`../INDEX.md`](../INDEX.md)
+
+for the complete repository map.
+
+---
+
+## What You Should Understand After This Path
+
+You should be able to distinguish:
+
+- source evidence from curated data
+- public data from private-source provenance
+- objective/source-transcribed values from subjective fields
+- daily data from session data and bounded events
+- active collection from closed-window interpretation
+- prediction registration from later outcome scoring
+- model error from biological deterioration
+- phase evidence from phase declaration
+- AI assistance from source authority
+- mechanical validation from scientific validity
+
+That distinction is the core of the archive architecture.

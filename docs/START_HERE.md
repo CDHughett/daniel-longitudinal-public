@@ -2,13 +2,11 @@
 
 This is the 5-minute orientation for the Daniel Longitudinal Study.
 
-It is the fastest way to understand what this repository is, what it is not, where the evidence lives, and how claims are limited.
-
 ---
 
 ## In One Sentence
 
-This is a governed, DOI-preserved, single-subject longitudinal observational archive documenting one human system across time under defined constraints.
+This is a governed, DOI-preserved, single-subject longitudinal observational archive documenting one human system across time through source artifacts, machine-readable data, retrospective interpretation, and prospectively registered prediction review.
 
 ---
 
@@ -17,11 +15,10 @@ This is a governed, DOI-preserved, single-subject longitudinal observational arc
 - a public longitudinal archive
 - a single-subject observational record
 - a versioned evidence structure
+- a machine-readable longitudinal data layer
 - a retrospective interpretation system
 - a prediction-audit and calibration record
-- a governed archive of repeated measurement, observation, and review
-
----
+- a governed archive of repeated measurement, observation, correction, and review
 
 ## What This Is Not
 
@@ -29,111 +26,102 @@ This is a governed, DOI-preserved, single-subject longitudinal observational arc
 - not a coaching product
 - not a clinical study
 - not a universal longevity claim
-- not a real-time performance diary
 - not a theory-first archive
+- not proof that one intervention caused every observed change
 
 ---
 
 ## What To Read First
 
-If you only have a few minutes, read in this order:
-
-1. [`README.md`](../README.md) — repository overview
+1. [`README.md`](../README.md) — repository overview and current archive posture
 2. [`LATEST.md`](../LATEST.md) — current system state
-3. [`docs/OBSERVER_QUICKSTART.md`](./OBSERVER_QUICKSTART.md) — compact technical inspection route
-4. [`data/DATA_COVERAGE.md`](../data/DATA_COVERAGE.md) — what data is and is not included
-5. [`docs/FOR_OBSERVERS.md`](./FOR_OBSERVERS.md) — broader observer evaluation path
-6. [`docs/CONCEPTS.md`](./CONCEPTS.md) — recurring terms
+3. [`data/DATA_COVERAGE.md`](../data/DATA_COVERAGE.md) — what is and is not publicly structured
+4. [`docs/OBSERVER_QUICKSTART.md`](./OBSERVER_QUICKSTART.md) — compact technical inspection route
+5. [`docs/FOR_OBSERVERS.md`](./FOR_OBSERVERS.md) — broader skeptical-review path
+6. [`docs/CONCEPTS.md`](./CONCEPTS.md) — recurring archive terminology
 
-This sequence is enough to understand what the archive is, what it claims, what it does not claim, where the evidence lives, and how to inspect it.
+For the complete repository map, use [`INDEX.md`](../INDEX.md).
+
+---
+
+## Machine-Readable Core
+
+The current aligned structured layer includes:
+
+| Dataset | Current public coverage |
+|---|---|
+| [`data/daily_biomarkers_v1.csv`](../data/daily_biomarkers_v1.csv) | 203 continuous daily rows through 2026-08-30 |
+| [`data/sleep_longitudinal_v1.csv`](../data/sleep_longitudinal_v1.csv) | 203 continuous daily rows through 2026-08-30 |
+| [`data/training_blocks_v1.csv`](../data/training_blocks_v1.csv) | 325 session rows through 2026-08-30 |
+| [`data/context_events_v1.csv`](../data/context_events_v1.csv) | 42 bounded contextual events through 2026-08-29 |
+
+The three daily/training/event files are governed by:
+
+[`schemas/machine-readable-layer-v1.md`](../schemas/machine-readable-layer-v1.md)
+
+Private `Daniel_Dataset_v1.x` source-file provenance is documented in:
+
+[`data/source_provenance/`](../data/source_provenance/)
 
 ---
 
 ## Where The Evidence Lives
 
-Use these areas based on what you are trying to inspect:
+- [`snapshots`](../snapshots/) — primary testing and measurement artifacts
+- [`data`](../data/) — curated machine-readable longitudinal datasets
+- [`data/source_exports`](../data/source_exports/) — byte-preserved provider/device exports
+- [`data/source_provenance`](../data/source_provenance/) — private-source provenance without publishing private workbooks
+- [`reports`](../reports/) — active collection and closed retrospective interpretation
+- [`data/model_error`](../data/model_error/) — prediction versus observed-outcome review
+- [`docs`](./) and [`methodology`](../methodology/) — governance, methodology, concepts, observer guidance, and audits
 
-- [`snapshots`](../snapshots/) — primary artifacts and source evidence
-- [`reports`](../reports/) — structured retrospective interpretation
-- [`data`](../data/) — structured longitudinal datasets
-- [`data/model_error`](../data/model_error/) — prediction versus observed outcome review
-- [`docs`](./) — methodology, governance, concepts, and observer context
+Artifacts and source evidence precede interpretation.
 
-Artifacts precede interpretation.
-
-Reports interpret recorded evidence retrospectively.
-
-Datasets preserve structured longitudinal signals.
-
-The model-error layer records prediction calibration and observed outcomes.
-
-Governance documents define how the archive constrains interpretation.
-
----
-
-## Current System State
-
-The fastest current-state view is:
-
-[`LATEST.md`](../LATEST.md)
-
-Use this to understand the active observation window, current phase, recent archive updates, and present system emphasis.
-
----
-
-## Observer Review
-
-For a compact inspection route, use:
-
-[`docs/OBSERVER_QUICKSTART.md`](./OBSERVER_QUICKSTART.md)
-
-For a broader skeptical or technical review path, use:
-
-[`docs/FOR_OBSERVERS.md`](./FOR_OBSERVERS.md)
-
-The quickstart is a shortcut.
-
-The observer guide is the fuller evaluation path.
-
----
-
-## How Evidence Is Organized
-
-```text
-snapshots
-  ↓
-reports
-  ↓
-data
-  ↓
-model-error layer
-  ↓
-governance
-```
-
-The archive should be read from evidence toward interpretation, not the other way around.
+Structured datasets organize evidence; they do not silently override stronger verified sources.
 
 ---
 
 ## How Claims Are Limited
 
-No claim extends beyond the recorded single-subject archive.
+No claim extends beyond the recorded single-subject archive without separate evidence.
 
-This repository does not claim that observed outcomes generalize to other people.
+The repository does not claim laboratory-grade control, population-level efficacy, or universal transferability.
 
-It documents one human system under constrained conditions across time.
+Missingness remains visible. Unfavorable evidence remains visible. Source-backed corrections remain traceable. Closed predictions remain closed.
 
-Interpretation remains provisional unless repeatedly supported by recorded evidence.
+---
+
+## Verification
+
+Read-only validation tools:
+
+```text
+tools/validate_repository.py
+tools/validate_machine_readable.py
+```
+
+GitHub Actions runs both on pushes to `main` and on pull requests.
+
+See [`tools/README.md`](../tools/README.md) and [`VERIFICATION.md`](../VERIFICATION.md).
+
+---
+
+## AI Assistance
+
+AI may assist with repository maintenance, structuring, code, analysis, and formally governed prediction work, but AI output is not a source-evidence class and cannot override the archive's source hierarchy.
+
+Disclosure:
+
+[`docs/AI_ASSISTANCE.md`](./AI_ASSISTANCE.md)
 
 ---
 
 ## Recommended Navigation By Depth
 
-Use these based on how much time you have:
-
 - [`docs/START_HERE.md`](./START_HERE.md) — first 5 minutes
-- [`docs/OBSERVER_QUICKSTART.md`](./OBSERVER_QUICKSTART.md) — compact technical inspection route
-- [`docs/NEWCOMER_PATH.md`](./NEWCOMER_PATH.md) — first full reading pass
+- [`docs/OBSERVER_QUICKSTART.md`](./OBSERVER_QUICKSTART.md) — compact technical audit route
+- [`docs/NEWCOMER_PATH.md`](./NEWCOMER_PATH.md) — extended first reading pass
+- [`docs/FOR_OBSERVERS.md`](./FOR_OBSERVERS.md) — skeptical/technical evaluation guidance
 - [`INDEX.md`](../INDEX.md) — complete repository map
 
 ---
@@ -142,6 +130,7 @@ Use these based on how much time you have:
 
 Traceable.  
 Conservative.  
+Machine-readable.  
 Auditable.  
 Longitudinal.  
 Artifact-first.

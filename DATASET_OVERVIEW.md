@@ -8,49 +8,66 @@
 
 The **Daniel Longitudinal Study** is a continuous single-subject observational archive documenting biological, behavioral, recovery, and training-system responses across time.
 
-The archive follows one subject through extended observation windows under:
+The archive operates under:
 
 - defined protocol constraints
 - repeated measurement
 - structured reporting
 - ordinary-life environmental variability
 - incomplete experimental control
+- explicit source and correction governance
 
-The primary objective is to preserve artifact continuity and enable bounded retrospective interpretation of long-term system behavior.
+The primary objective is to preserve durable evidence and enable bounded retrospective interpretation of long-term system behavior.
 
-This is not a controlled clinical trial.
-
-Travel, schedule variation, household demands, environmental exposure, social context, equipment access, intake variation, and other real-world conditions may affect individual observation windows. These factors are documented when known but are not comprehensively controlled or measured.
+This is not a controlled clinical trial and does not establish population-level causality, clinical efficacy, generalized intervention guidance, or complete control of external variables.
 
 ---
 
-## Dataset Scope
+## Current Public Machine-Readable Core
+
+The September 2026 structured-data expansion created an aligned daily/session/event layer from governed source material.
+
+| Dataset | Unit of observation | Current public coverage |
+|---|---|---|
+| [`data/daily_biomarkers_v1.csv`](./data/daily_biomarkers_v1.csv) | one row per represented day | 203 continuous rows, 2026-02-09 through 2026-08-30 |
+| [`data/sleep_longitudinal_v1.csv`](./data/sleep_longitudinal_v1.csv) | one canonical governed wake-date row | 203 continuous rows, 2026-02-09 through 2026-08-30 |
+| [`data/training_blocks_v1.csv`](./data/training_blocks_v1.csv) | one row per training/session block | 325 sessions, 2026-02-09 through 2026-08-30 |
+| [`data/context_events_v1.csv`](./data/context_events_v1.csv) | one row per bounded contextual event | 42 events, current event coverage through 2026-08-29 |
+
+The three newer datasets are curated public extracts derived primarily from private `Daniel_Dataset_v1.0`–`v1.28` source states and governed contemporaneous evidence.
+
+They are not raw provider exports.
+
+Their schema contract is:
+
+[`schemas/machine-readable-layer-v1.md`](./schemas/machine-readable-layer-v1.md)
+
+Private-source file identity is documented, when the exact retained file was available for hashing, in:
+
+[`data/source_provenance/daniel_dataset_private_manifest.csv`](./data/source_provenance/daniel_dataset_private_manifest.csv)
+
+---
+
+## Study Scope
 
 | Attribute | Description |
 |---|---|
 | Subject count | 1 |
 | Observation type | Longitudinal, observational |
 | Archive model | Artifact-first, version-controlled system |
-| Primary domains | Training exposure, recovery signals, biological measurement, behavioral execution |
+| Primary domains | Training exposure, recovery signals, biological measurement, behavioral execution, contextual perturbation |
 | Environmental control | Defined protocol constraints with incomplete real-world control |
 | Interpretation posture | Retrospective, bounded, and subject-specific |
 | Prediction layer | Explicitly registered and evaluated through the model-error system |
+| AI assistance | Permitted as a maintenance/analysis aid under explicit source and governance constraints |
 
-The archive preserves chronological continuity so system behavior can be examined across repeated measurement windows, protocol states, perturbations, and recovery periods.
+AI-assistance disclosure:
 
-The dataset does not establish:
-
-- population-level causality
-- clinical efficacy
-- generalized intervention guidance
-- complete control of external variables
-- attribution of an outcome to a single input without supporting evidence
+[`docs/AI_ASSISTANCE.md`](./docs/AI_ASSISTANCE.md)
 
 ---
 
 ## Observation Flow
-
-The archive follows a governed observational pipeline:
 
 ```text
 Protocol Inputs
@@ -65,283 +82,208 @@ Ordinary-Life Variability
       ↓
 Physiological and Functional Response
       ↓
-Artifact and Data Capture
+Source Evidence
       ↓
-Structured Dataset Integration
+Curated Structured Data
       ↓
 Retrospective Interpretation
       ↓
-Prediction Evaluation and Model Correction
+Prediction Evaluation
+      ↓
+Model Correction
 ```
 
 Artifacts and contemporaneous records are preserved before final interpretation whenever practical.
 
-Interpretive documents may organize and contextualize evidence, but they do not replace the underlying source material.
+Structured datasets organize the evidence; they do not outrank stronger verified source artifacts when a source-backed discrepancy is established.
 
 ---
 
-## Dataset Structure
+## Evidence Layers
 
-The archive is organized into several complementary evidence layers.
+### Source Artifacts
 
-### Snapshots
+Provider reports, testing outputs, direct device exports, screenshots, and other primary evidence are preserved under `/snapshots` and `/data/source_exports`.
 
-Time-bounded source and measurement artifacts.
+Some source artifacts are provider-generated reports rather than raw instrument data. Source identity, date, preparation condition, and interpretation limits therefore remain important.
 
-Examples include:
+### Curated Structured Data
 
-- DEXA reports
-- BodPod outputs
-- epigenetic reports
-- biomarker panels
-- bloodwork
-- physiological testing outputs
-- supporting images and verification files
+Machine-readable archive-defined datasets live under `/data`.
 
-Location:
+The current core includes:
 
-[`/snapshots`](./snapshots/)
-
-Snapshots represent primary archived evidence for specific measurement windows.
-
-Some snapshot artifacts are provider-generated reports rather than unprocessed raw instrument data. Their source, date, and interpretation limits should therefore remain visible.
-
----
-
-### Structured Data
-
-Machine-readable longitudinal datasets derived from source artifacts, wearable records, and governed transcription.
-
-Examples include:
-
-- longitudinal sleep data
+- daily biomarkers
+- sleep
+- training blocks
+- context events
 - biomarker snapshots
-- bloodwork data
+- bloodwork
 - epigenetic outputs
 - model-error records
 - calibration trackers
 
-Location:
+Curated data may include source-transcribed measurements, subjective fields, contextual classifications, correction notes, and archive-defined identifiers.
 
-[`/data`](./data/)
+### Reports
 
-Structured data improves continuity, comparison, and analysis but remains subordinate to verified source artifacts when a conflict is identified.
+Weekly and event-oriented reports preserve bounded retrospective interpretation after evidence accumulates.
+
+Active reports may collect observations, but unfinished windows remain provisional.
+
+### Model-Error Layer
+
+`data/model_error` preserves prediction registration, later outcome evidence, error direction, status, and calibration review.
+
+Wrong predictions remain visible.
+
+### Governance and Audits
+
+Governance documents define correction, prediction, phase, missingness, and interpretation boundaries. Audits review continuity and integrity without rewriting the evidence being audited.
+
+---
+
+## Machine-Readable Field Semantics
+
+The newer daily/training/event datasets distinguish:
+
+- **measurement / source-transcribed fields**
+- **subjective fields**
+- **contextual / classified fields**
+- **provenance fields**
+
+The distinction is defined in the schema rather than inferred by data consumers.
+
+A notable v1 compatibility rule applies to `training_blocks_v1.csv`:
+
+`duration_min` is a source-preserving **duration expression**, not universally numeric. Scalar values may be treated as minutes; ranges and compound historical expressions must not be coerced to a point estimate without a documented transformation.
+
+A cleaner numeric/raw duration split is reserved for a future schema migration.
+
+---
+
+## Source Provenance
+
+Public row-level provenance is retained in `source_ref`.
+
+Current canonical private-source syntax is documented in:
+
+[`schemas/machine-readable-layer-v1.md`](./schemas/machine-readable-layer-v1.md)
+
+Historical training rows retain accepted v1 aliases such as `wb:v1.28:TB:...`; those aliases are deprecated for new rows but remain valid historical provenance.
+
+File-level private-source SHA-256 values are registered only when the exact private file was available. Missing hashes are left missing rather than reconstructed.
+
+---
+
+## Direct Provider Exports
+
+The RingConn acquisition package under:
+
+[`data/source_exports/ringconn/2026-07-21/`](./data/source_exports/ringconn/2026-07-21/)
+
+remains a separate source-preservation layer.
+
+Direct exports preserve provider-defined bytes, fields, timestamps, aggregation, and missingness. They do not silently overwrite curated public datasets.
+
+---
+
+## Data Quality and Correction
 
 Known data-quality questions are documented in:
 
 [`data/DATA_QUALITY_NOTES.md`](./data/DATA_QUALITY_NOTES.md)
 
-Coverage and missingness are documented in:
+Coverage boundaries are documented in:
 
 [`data/DATA_COVERAGE.md`](./data/DATA_COVERAGE.md)
 
----
-
-### Reports
-
-Structured interpretive summaries produced after evidence accumulates.
-
-Reports may include:
-
-- weekly observation summaries
-- phase closeouts
-- snapshot interpretations
-- perturbation and recovery synthesis
-- unresolved questions
-- evidence relevant to open predictions
-
-Location:
-
-[`/reports`](./reports/)
-
-Reports interpret preserved evidence but do not replace it.
-
-Weekly reports may also contain contemporaneous collection notes. Final weekly interpretation remains retrospective and is completed at closeout.
+A source-backed correction must remain narrow, traceable, and review downstream derived values without rewriting unrelated historical evidence.
 
 ---
 
-### Model-Error Layer
+## Validation
 
-A governed prediction-versus-observed-outcome review system.
+Two read-only validators are maintained:
 
-Location:
+```text
+tools/validate_repository.py
+tools/validate_machine_readable.py
+```
 
-[`/data/model_error`](./data/model_error/)
+The machine-readable validator checks the new daily/training/event layer for:
 
-This layer preserves:
+- headers
+- unique identifiers
+- date continuity and bounds
+- numeric syntax
+- controlled vocabularies
+- duration-expression semantics
+- source-reference syntax
+- event interval validity
+- model-error cross-references
+- cross-file date relationships
 
-- predictions registered before outcomes are known
-- applicable observation windows
-- observed outcomes
-- direction and magnitude of error
-- closure status
-- model-correction evidence
+GitHub Actions runs both validators on pushes to `main` and on pull requests.
 
-Forward predictions are permitted only when explicitly registered, time-bounded, preserved without hindsight revision, and evaluated after the relevant window closes.
-
-The model-error layer is a calibration instrument rather than evidence of certainty.
-
----
-
-### Milestone Artifacts
-
-Contextual or symbolic artifacts associated with notable events in the archive timeline.
-
-Examples include:
-
-- challenge coins
-- recognition tokens
-- contextual markers tied to external observation
-
-Location:
-
-[`/snapshots/milestones`](./snapshots/milestones/)
-
-Milestone artifacts provide historical context.
-
-They are not treated as biological evidence unless a separate record establishes a direct evidentiary role.
+Validation confirms implemented structural/semantic checks; it does not establish biological causality or clinical validity.
 
 ---
 
-## Evidence Hierarchy
+## Interpretation and Environmental Boundary
 
-When sources disagree, interpretation should generally prioritize:
+Observation occurs under ordinary life rather than laboratory isolation.
 
-1. verified primary artifacts
-2. direct device exports
-3. contemporaneous structured records
-4. contemporaneous collection notes
-5. weekly retrospective reports
-6. later synthesis grounded in preserved evidence
+Potential influences include travel, schedule displacement, household workload, social context, equipment availability, intake variation, hydration, sleep environment, environmental exposure, device/provider behavior, and unmeasured factors.
 
-A later narrative should not create an observation that was not otherwise recorded.
+The archive therefore prioritizes:
 
-Structured values should not be corrected through inference when the original source remains unresolved.
-
----
-
-## Observation Philosophy
-
-The archive follows a conservative observational posture:
-
-- artifacts precede interpretation
-- biological interpretation remains retrospective
-- observations remain provisional
-- conclusions require repeated evidence across time
-- uncertainty and missingness remain visible
-- real-world constraints are distinguished from behavioral failure
-- protocol changes require explicit governance
-- predictions remain separate from retrospective interpretation
-- failed predictions are preserved as model-correction evidence
-
-Because the dataset represents one subject under incomplete environmental control, findings should not be generalized without independent evidence.
+- repeated evidence over isolated results
+- visible uncertainty
+- explicit missingness
+- source traceability
+- natural rather than manufactured perturbations
+- retrospective interpretation
+- prediction accountability
+- correction over narrative defense
 
 ---
 
-## Environmental Context
-
-The archive operates under real-world rather than laboratory conditions.
-
-Known contextual variables may include:
-
-- travel
-- schedule disruption
-- household workload
-- social and administrative demands
-- equipment availability
-- altered sleep environment
-- hydration and sodium variation
-- meal timing
-- GI timing
-- transient illness or exposure
-- environmental temperature and air quality
-- incomplete scale or measurement access
-
-These factors are documented when they are known and relevant.
-
-Their absence from a report does not establish that all external variables were controlled.
-
----
-
-## Phase Model
-
-The longitudinal system is organized into operational phases.
-
-Phase definitions are documented in:
-
-[`PHASE_MAP.md`](./PHASE_MAP.md)
-
-Phases describe retrospectively identified system states and protocol conditions.
-
-They are not declared solely from:
-
-- a single favorable measurement
-- one strong training session
-- prediction accuracy
-- subjective confidence
-- elapsed time
-
-Phase transitions require the evidence and governance standards defined in:
-
-[`PHASE_DECLARATION_CRITERIA.md`](./PHASE_DECLARATION_CRITERIA.md)
-
----
-
-## Data Integrity
-
-Artifact and dataset continuity are supported through:
-
-- chronological storage
-- version-controlled history
-- explicit governance constraints
-- source-linked structured data
-- documented correction procedures
-- checksum verification for applicable binary artifacts
-- audit records
-- visible data-quality notes
-
-Dataset and structural changes are documented in:
-
-[`CHANGELOG.md`](./CHANGELOG.md)
-
-Audit records are preserved in:
-
-[`docs/audits`](./docs/audits/)
-
----
-
-## Limitations
+## Current Limitations
 
 Important limitations include:
 
 - single-subject design
+- absence of randomized controls
 - incomplete environmental control
-- partial reliance on consumer wearable estimates
-- evolving measurement availability
-- manually transcribed fields in some datasets
-- irregular low-frequency biological testing
-- incomplete structured training exports
-- potential changes in device software or algorithms
-- inability to isolate many concurrent variables
-- incomplete public inclusion of some referenced health data
+- concurrent exposures and interventions
+- consumer wearable limitations
+- low-frequency biological testing
+- partial manual/source-backed transcription
+- incomplete public availability of some private source material
+- provider and algorithm variability
+- no continuous structured nutrition or supplement-adherence dataset
+- incomplete environmental measurement
+- v1 historical training-duration expressions that are not uniformly numeric
+- potential operator and observer bias
 
-These limitations narrow interpretation but do not eliminate the value of repeated, traceable longitudinal observation.
+The newer machine-readable layer improves analyzability but does not remove these limitations.
 
 ---
 
 ## Intended Use
 
-This repository is published to:
+The repository is published to:
 
 - document long-term system behavior
-- preserve primary artifacts and structured data
-- support retrospective longitudinal analysis
+- preserve primary artifacts and source provenance
+- support reproducible longitudinal analysis
 - audit predictions against observed outcomes
 - expose uncertainty and model error
-- maintain an inspectable record of protocol evolution
+- preserve protocol/governance evolution
 - provide a reference architecture for governed single-subject observation
 
-The archive may inform future longitudinal research design, but it should not be treated as a validated intervention program or direct clinical guide.
+The appropriate framing is a governed longitudinal case archive and methodological research object, not a universal intervention program.
 
 ---
 

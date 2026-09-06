@@ -1,84 +1,80 @@
 # Model Error Data Layer
 
----
-
 ## Purpose
 
-This layer records the gap between prediction and observed outcome.
+This layer preserves the gap between forward-logged predictions and later observed outcomes.
 
-It exists to preserve prediction → outcome relationships as an auxiliary analytical layer within the archive.
+It exists to support:
 
-The goal is to preserve prediction → outcome → error as a reviewable historical structure.
+```text
+prediction
+→ outcome
+→ error
+→ calibration review
+```
 
-This layer is subordinate to the artifact-first system.
+The model-error layer is auxiliary to the artifact-first archive.
 
-It does not influence training decisions or system behavior.
-It exists only as a recorded comparison between predicted and observed outcomes.
+It does not override source evidence, drive protocol progression, or establish scientific authority merely because a prediction is accurate.
 
 ---
 
 ## Dataset Structure
 
-The model error layer is split into two distinct datasets:
-
 ### `model_error_gap_v1.csv`
-Forward-logged prediction records only.
 
-This file is the primary evaluation dataset.
+Primary prediction-versus-outcome register.
 
-It is used for:
+The file contains the archive's forward-logged prediction history beginning with record 013 and the later protected preregistered block.
 
-- prediction → outcome review
-- error analysis
-- UDI computation
-- calibration review
+Current recent state includes:
 
-Only forward-logged predictions are admissible in this file.
-
----
+```text
+041 closed / supported
+042 closed / not supported — continued_adaptation
+043 open / unscored
+044 closed / not supported — narrow governance deviation
+045 closed / supported
+046 closed / failed_autonomic_recompression
+```
 
 ### `historical/model_error_gap_reconstructed.csv`
-Retrospective baseline records.
 
-These entries were reconstructed after outcomes were already known in order to document an early baseline error profile before the forward-logging layer was fully established.
+Historical retrospective reconstruction layer.
 
-These records are retained for historical context only.
+These rows were created after the relevant outcomes and remain segregated from prospectively governed evaluation.
 
-They are:
-
-- not used for evaluation metrics
-- not used for UDI computation
-- not used for calibration analysis
-- not treated as forward-test artifacts
-- not methodologically equivalent to forward-logged predictions
+They are not methodologically equivalent to clean prospective registrations and should not be used as though they were.
 
 ---
 
-## Core Principle
+## Valid Prediction Standard
 
-Only predictions logged before outcomes are known qualify for the primary evaluation layer.
+A prediction intended for prospective evaluation should be:
 
-This distinction matters.
+1. recorded before the relevant outcome is known
+2. time- or state-bounded
+3. observable using archive evidence
+4. falsifiable
+5. domain-specific
+6. independently resolvable
+7. sufficiently specific
+8. context-aware where material
 
-The archive preserves reconstructed baseline records for transparency, but forward-logged records and retrospective records are not methodologically equivalent and are not used interchangeably.
+See:
 
----
-
-## What This Layer Records
-
-For eligible forward-logged predictions, this layer records:
-
-- whether the prediction resolved cleanly
-- whether the prediction under- or overestimated observed reality
-- whether error magnitude improved over time
-- whether subject-calibrated expectations outperform generic assumptions
+[`../../docs/methodology/valid_prediction_criteria.md`](../../docs/methodology/valid_prediction_criteria.md)
 
 ---
 
 ## Primary Fields
 
-Each row may include:
+The v1 file contains:
 
+- `record_id`
+- `date`
+- `domain`
+- `model_version`
 - `prediction_value`
 - `actual_value`
 - `error_absolute`
@@ -93,54 +89,96 @@ Each row may include:
 
 ---
 
-## Calibration State
+# Important v1 Semantic Boundary: `calibration_state`
 
-`calibration_state` describes the relationship between the prediction and prior subject-specific information.
+The v1 field name `calibration_state` accumulated two concepts during the evolution of the archive:
 
-It does **not** indicate whether the prediction was evaluated before or after the outcome.
+```text
+registration provenance
+```
 
-Values:
+and
 
-- `pre`
-  - Prediction was **pre-registered and forward-locked**
-  - Defined before outcome was known
-  - No post-hoc modification allowed
-  - Represents a clean forward test
+```text
+model calibration scope
+```
 
-- `post`
-  - Prediction was generated using a **subject-calibrated model**
-  - Model had prior exposure to subject data or interaction history
-  - May incorporate previously observed patterns
-  - Not considered an independent or pre-registered prediction
+Those concepts are not the same.
 
-## Important Distinction
+A prediction may be generated by a subject-calibrated model **and** still be prospectively locked before outcome access.
 
-`post` does **not** mean post-outcome evaluation.
+For recent protected prospective records 041–046, the canonical historical meaning of:
 
-It indicates that the prediction was made **after model calibration to the subject**, not after the outcome occurred.
+```text
+calibration_state = pre
+```
 
-## Interpretation Guidance
+is **prospective registration provenance**.
 
-- Only `pre` entries should be treated as **externally evaluable forward tests**
-- `post` entries represent **calibrated or exploratory predictions**
+It records that the prediction was registered before its applicable outcome boundary.
+
+It is not a lifecycle field and therefore remains `pre` after the prediction is scored or closed.
+
+Do not mechanically convert these protected rows to `post` after closure.
+
+---
+
+## Older v1 Records
+
+Earlier v1 records used `post` language in connection with subject-calibrated/exploratory model use.
+
+Because the same field therefore spans more than one historical semantic convention, researchers should **not** use `calibration_state` alone as a clean cross-era variable for model-calibration scope.
+
+The underlying records remain preserved as historical v1 data.
+
+This semantic debt is documented rather than repaired through outcome-aware mutation.
+
+---
+
+# Future Schema Separation
+
+A future model-error schema is designed to split the concepts explicitly:
+
+```text
+registration_status
+```
+
+from:
+
+```text
+model_calibration_scope
+```
+
+Proposed registration states include:
+
+- `prospective_locked`
+- `forward_exploratory`
+- `retrospective_reconstructed`
+
+Proposed model-calibration scopes include:
+
+- `general_population`
+- `subject_calibrated`
+- `mixed_or_unknown`
+
+Design document:
+
+[`../../docs/methodology/model_error_schema_v2.md`](../../docs/methodology/model_error_schema_v2.md)
+
+That design does **not** migrate, rewrite, or rescore the current v1 file.
 
 ---
 
 ## Flag Definitions
 
-### `primary`
-A forward-logged prediction entered before the outcome was known.
+The current v1 `flag` field records archive role labels such as:
 
-### `secondary`
-A forward-logged prediction that is still valid but not treated as a primary calibration anchor.
+- `primary`
+- `secondary`
 
-### `reconstructed`
-A retrospective record created after the outcome was already known.
+Historical reconstructed/inferred material belongs in the segregated historical layer rather than being promoted into clean prospective evidence.
 
-### `inferred`
-A retrospective record created from prior reasoning or archived discussion after the outcome was already known.
-
-`reconstructed` and `inferred` records belong in the historical dataset, not the primary evaluation file.
+Flag alone is not a substitute for evaluating temporal registration provenance.
 
 ---
 
@@ -156,69 +194,124 @@ A bounded expected interval.
 A binary or condition-based expectation.
 
 ### `trajectory`
-A directional prediction expected to resolve across a longer observation window.
+A directional expectation resolved across a longer observation window.
 
 ---
 
-## Inclusion Standard for `model_error_gap_v1.csv`
+## Closure Discipline
 
-A prediction belongs in the primary file only if it is:
+A prediction may be closed only after:
 
-1. forward-logged before outcome is known
-2. time-bounded
-3. observable using archive data
-4. falsifiable
-5. assigned to a defined domain
-6. independently resolvable
-7. sufficiently documented to support closure
+- the applicable observation/scoring boundary has elapsed, and
+- enough admissible evidence exists to resolve it without forced interpretation.
 
-If any of these conditions are not met, the record does not belong in the primary evaluation file.
+When evidence is insufficient, the record remains open.
+
+Later related evidence cannot retrospectively extend a completed fixed scoring window.
 
 ---
 
-## Closure Rules
+## Prediction Narrative Protection
 
-A prediction may be closed only when:
+For protected prospective records, the original registered `Prediction:` narrative must remain at the beginning of `notes`.
 
-1. the observation window has elapsed, and
-2. enough evidence exists to evaluate the outcome without forced interpretation
+Later closure language may be appended.
 
-Status values:
+It must not replace or rewrite the original prediction.
 
-- `open`
-- `closed`
+This preserves:
 
-When ambiguity remains, the prediction should stay open.
+```text
+what was predicted before outcome access
+```
 
----
+separately from:
 
-## Evaluation Standard
-
-Scoring and closure logic are defined in:
-
-- `/methodology/prediction_evaluation.md`
-- `/docs/methodology/prediction_to_outcome_pipeline.md`
-- `/docs/methodology/valid_prediction_criteria.md`
-
-This README does not duplicate those rules.
+```text
+what was concluded after the evidence window closed
+```
 
 ---
 
-## Calibration Boundary
+# UDI and Concordance
 
-`calibration_events_log.md` documents major shifts in how prediction behavior should be interpreted across time.
+UDI canonically means **Unobstructed Delta Index**.
 
-This supports distinction between:
+The current framework uses signed directional error for eligible magnitude-based records.
 
-- general-population assumptions
-- subject-calibrated expectations
+Current canonical strata are:
 
-Calibration review occurs only after outcomes are known and records are eligible for evaluation.
+- `UDI_point`
+- `UDI_range`
+- `State_concordance`
+- `Trajectory_concordance`
+
+State and trajectory records are excluded from magnitude UDI because they do not contain comparable continuous error magnitudes.
+
+Composite UDI remains withheld under the framework's preregistered sample-size rules.
+
+See:
+
+[`../../docs/methodology/UDI_framework_v1.md`](../../docs/methodology/UDI_framework_v1.md)
+
+UDI/concordance describe prediction calibration.
+
+They are not biological health scores.
+
+---
+
+## Model Version
+
+`model_version` identifies the model associated with a prediction record.
+
+The field is part of the audit trail and may support future analysis of prediction behavior across model generations.
+
+A model identifier does not confer independent evidentiary authority.
+
+---
+
+## AI Assistance Boundary
+
+Prediction generation, classification, auditing, or analysis may involve AI assistance under:
+
+[`../../docs/AI_ASSISTANCE.md`](../../docs/AI_ASSISTANCE.md)
+
+AI output remains subordinate to source evidence and the registered evaluation boundary.
+
+---
+
+## Validation Protection
+
+The repository validator protects selected recent records against accidental drift, including:
+
+- required open state of record 043
+- required closed state of 041, 042, 044, 045, and 046
+- protected actual values/error directions
+- `calibration_state=pre` registration provenance for 041–046
+- preservation of original registered prediction narratives
+
+The validator does not independently decide whether a scientific adjudication was correct.
+
+---
+
+## Related Documents
+
+- [`model_error_gap_v1.csv`](./model_error_gap_v1.csv)
+- [`udi_by_type_tracker.csv`](./udi_by_type_tracker.csv)
+- [`WHAT_THIS_LAYER_IS.md`](./WHAT_THIS_LAYER_IS.md)
+- [`../../methodology/prediction_evaluation.md`](../../methodology/prediction_evaluation.md)
+- [`../../docs/methodology/prediction_to_outcome_pipeline.md`](../../docs/methodology/prediction_to_outcome_pipeline.md)
+- [`../../docs/methodology/valid_prediction_criteria.md`](../../docs/methodology/valid_prediction_criteria.md)
+- [`../../docs/methodology/UDI_framework_v1.md`](../../docs/methodology/UDI_framework_v1.md)
+- [`../../docs/methodology/model_error_schema_v2.md`](../../docs/methodology/model_error_schema_v2.md)
+- [`../../GOVERNANCE.md`](../../GOVERNANCE.md)
 
 ---
 
 ## Archive Posture
 
-This layer is strongest when it remains narrow, explicit, and honest.
+The model-error layer is strongest when it remains smaller than the narrative archive, temporally explicit, and willing to preserve misses.
 
-A smaller forward-logged dataset with clean temporal integrity is more valuable than a larger dataset with mixed methodological status.
+Prediction quality is evidence about the model.
+
+It is not permission to strengthen the biological claims of the archive.

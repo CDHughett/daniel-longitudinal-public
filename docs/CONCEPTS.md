@@ -1,32 +1,10 @@
 # Concepts
 
-This document provides plain-language definitions for recurring concepts used throughout the Daniel Longitudinal Study archive.
+This glossary defines recurring terms used throughout the Daniel Longitudinal Study.
 
-Its purpose is to:
+It improves external legibility but does not independently declare a phase, score a prediction, correct a dataset, establish causality, or authorize protocol progression.
 
-- improve external legibility
-- reduce terminology drift
-- distinguish observation from interpretation
-- distinguish evidence states from declared system states
-- preserve consistent use of phase, prediction, source, and correction language
-
-This glossary explains terms.
-
-It does not independently:
-
-- declare a phase
-- score a prediction
-- correct a dataset
-- establish causality
-- authorize protocol progression
-
-Canonical phase architecture is defined in:
-
-[`../PHASE_MAP.md`](../PHASE_MAP.md)
-
-State-transition history is recorded in:
-
-[`../STATE_TRANSITIONS.md`](../STATE_TRANSITIONS.md)
+Canonical phase architecture is defined in [`../PHASE_MAP.md`](../PHASE_MAP.md).
 
 ---
 
@@ -34,482 +12,301 @@ State-transition history is recorded in:
 
 ## Observation
 
-An observation is something recorded about the subject, environment, protocol, or measurement system.
+Something recorded about the subject, environment, protocol, or measurement system.
 
-Examples include:
+An observation may be provider-generated, device-generated, manually transcribed, subjective, narrative, or classified.
 
-- bodyweight
-- wearable values
-- laboratory results
-- training completion
-- pain
-- GI state
-- movement quality
-- sleep description
-- travel
-- equipment limitations
-
-An observation may be:
-
-- objective
-- provider generated
-- device generated
-- manually transcribed
-- subjective
-- narrative
-
-An observation does not automatically establish interpretation.
-
----
-
-## Telemetry
-
-Telemetry is information collected from measurements, observations, and recorded outcomes.
-
-Examples include:
-
-- sleep duration
-- HRV
-- heart rate
-- body composition
-- training exposure
-- bodyweight
-- laboratory values
-- subjective recovery
-- performance outcomes
-
-Telemetry supplies evidence to the archive.
-
-It does not independently establish:
-
-- causality
-- clinical meaning
-- phase status
-- protocol success
-- prediction success
-
----
+Observation does not automatically establish interpretation.
 
 ## Artifact
 
-An artifact is a preserved file or record that supports an observation.
+A preserved file or record supporting an observation, such as a provider report, screenshot, source export, structured dataset, weekly report, checksum manifest, or audit file.
 
-Examples include:
-
-- provider PDF
-- laboratory report
-- DEXA report
-- Bod Pod image
-- wearable CSV export
-- screenshot
-- weekly report
-- audit file
-- checksum manifest
-- structured dataset
-
-Artifacts vary in source strength and interpretation value.
-
-A source artifact should not be confused with a retrospective summary derived from it.
-
----
+Artifacts vary in source strength.
 
 ## Artifact-First
 
-Artifact-first means preserving evidence before final interpretation.
-
-The sequence is:
+Preserve evidence before final interpretation whenever practical:
 
 ```text
-Observation
-    ↓
-Artifact preservation
-    ↓
-Source and quality review
-    ↓
-Interpretation
+observation
+→ artifact/source preservation
+→ quality review
+→ interpretation
 ```
 
-Artifact-first practice reduces the risk that later interpretation changes what is remembered or recorded.
-
-It does not mean that every artifact is error-free.
-
----
+Artifact-first does not mean every artifact is error-free.
 
 ## Collection Layer
 
-The collection layer captures observations near the time they occur.
-
-Examples include:
-
-- wearable data
-- bodyweight
-- biomarker results
-- training notes
-- recovery observations
-- morning reports
-- source screenshots
-- provider exports
-
-The collection layer should preserve:
-
-- timing
-- source
-- units
-- uncertainty
-- missingness
-- contemporaneous context
-
-Collection should remain separate from retrospective interpretation when practical.
-
----
+The near-time capture layer for wearable values, bodyweight, subjective state, training notes, testing context, screenshots, and other contemporaneous evidence.
 
 ## Archive Layer
 
-The archive layer organizes evidence into durable records.
-
-Examples include:
-
-- canonical datasets
-- weekly reports
-- audit reports
-- model-error records
-- source-export packages
-- snapshot directories
-- longitudinal summaries
-- governance documents
-
-The archive layer preserves both individual observations and patterns across time.
-
-It should not silently transform uncertainty into certainty.
-
----
+The durable organization layer: datasets, reports, snapshots, source exports, prediction records, audits, and governance documents.
 
 ## Interpretation Layer
 
-The interpretation layer evaluates what preserved observations may mean.
-
-Examples include:
-
-- weekly retrospective assessment
-- snapshot comparison
-- phase review
-- model-error scoring
-- perturbation analysis
-- trajectory assessment
-
-Interpretation must remain proportional to:
-
-- source quality
-- metric meaning
-- measurement conditions
-- missingness
-- comparability
-- contradictory evidence
-
-Interpretation does not alter the underlying source record.
+The layer that evaluates what accumulated evidence may mean. Interpretation remains subordinate to source quality, comparability, missingness, contradictions, and alternative explanations.
 
 ---
 
-# Source and Dataset Concepts
+# Source and Data Concepts
+
+## Source Artifact
+
+The closest preserved representation of a measurement or externally generated record, such as a provider PDF, DEXA output, Bod Pod output, laboratory report, or direct RingConn export.
 
 ## Source State
 
-A source state is the value or record supplied by a particular evidence pathway at a particular time.
+The value supplied by a particular evidence pathway at a particular time.
 
-Examples include:
+Two source states for one date may differ because of provider recalculation, rounding, date assignment, aggregation, manual transcription, or software behavior.
 
-- a value visible in the RingConn application on the observation date
-- a later RingConn account export
-- a manually transcribed value
-- a provider PDF
-- a sanitized public derivative
+A difference is investigated rather than silently forced into agreement.
 
-Two source states associated with the same date may differ without either being automatically discarded.
+## Curated Structured Dataset
 
-Possible causes include:
+An archive-defined machine-readable file created from governed sources under an explicit schema.
 
-- provider recalculation
-- software changes
-- rounding
-- date assignment
-- transcription
-- aggregation differences
+Current examples include:
 
-Source states should not be forced into false agreement.
+- `data/daily_biomarkers_v1.csv`
+- `data/sleep_longitudinal_v1.csv`
+- `data/training_blocks_v1.csv`
+- `data/context_events_v1.csv`
+- `data/biomarker_snapshot.csv`
+- `data/epigenetic_longitudinal.csv`
+- `data/bloodwork_longitudinal.csv`
+- `data/model_error/model_error_gap_v1.csv`
 
----
+A curated value remains subordinate to stronger verified source evidence if a source-backed discrepancy is established.
 
-## Provider Source Artifact
+## Source-Preserved Export
 
-A provider source artifact is a file created by an external provider, laboratory, facility, or device ecosystem.
+A provider/device export retained in its original byte representation.
 
-Examples include:
+It preserves the provider state and is not automatically the canonical analytical dataset.
 
-- laboratory PDF
-- DEXA report
-- Bod Pod report
-- TruDiagnostic report
-- RingConn CSV export
+## `source_ref`
 
-It is generally stronger evidence than unsupported memory or retrospective reconstruction.
+A row-level provenance locator used by the current machine-readable daily/training/event layer.
 
-It may still contain:
+It identifies a source pathway/version/tab/date and, where applicable, a session/row label.
 
-- provider error
-- algorithmic estimation
-- unclear field definitions
-- privacy-sensitive administrative information
+It is not a checksum.
 
----
+Canonical syntax and accepted historical training aliases are defined in [`../schemas/machine-readable-layer-v1.md`](../schemas/machine-readable-layer-v1.md).
 
-## Direct Provider Export
+## Private Source Provenance
 
-A direct provider export is a structured file generated through a provider or device account.
+Public documentation that records identity and extraction relationships for private source files without publishing those files.
 
-Examples include:
+Current private Daniel Dataset provenance lives in [`../data/source_provenance/`](../data/source_provenance/).
 
-- RingConn sleep export
-- RingConn activity export
-- RingConn vital-sign export
+Exact-file SHA-256 is recorded only when the retained historical file was actually available for hashing.
 
-A direct export preserves the provider’s database state at the time of export.
+## Machine-Readable Core
 
-It may not reproduce values displayed contemporaneously in an earlier application view.
-
-A later direct export does not automatically overwrite earlier curated records.
-
----
-
-## Source-Preserved
-
-Source-preserved means a provider or device file is retained without analytical modification.
-
-Permitted associated actions may include:
-
-- public filename normalization
-- directory placement
-- checksum registration
-- provenance documentation
-- Git controls preventing byte conversion
-
-Source-preserved does not mean:
-
-- clinically validated
-- semantically complete
-- suitable for immediate canonical integration
-- free from provider anomalies
-
----
-
-## Byte-Preserved
-
-Byte-preserved means the archived file contains the same bytes as the registered source file.
-
-This can be tested through:
-
-- file size
-- cryptographic checksum
-- direct binary comparison
-
-Byte preservation protects source integrity.
-
-It does not prove that the source measurement itself is correct.
-
----
-
-## Curated Dataset
-
-A curated dataset is a governed structured table assembled for longitudinal use.
-
-It may contain:
-
-- manually transcribed observations
-- archive-defined field names
-- confidence labels
-- subjective context
-- correction notes
-- governed date assignments
-- fields from more than one evidence mode
-
-A curated dataset is not the same as a raw provider export.
-
-Example:
+The aligned structured layer currently combining:
 
 ```text
-data/sleep_longitudinal_v1.csv
+daily biomarkers
++
+canonical sleep
++
+training sessions
++
+context events
++
+model-error outcomes
 ```
 
----
-
-## Canonical Dataset
-
-A canonical dataset is the archive-designated structured record for a defined use.
-
-Canonical means:
-
-- governed
-- versioned
-- schema-defined
-- used consistently for its intended analytical purpose
-
-Canonical does not mean:
-
-- perfect
-- final
-- free from documented quality restrictions
-- automatically superior to every source artifact
-
-A field-specific quality issue may exist without invalidating the entire canonical dataset.
+The files have different units of observation and should not be treated as row-for-row equivalent.
 
 ---
 
-## Derived Dataset
+# Field Evidence Concepts
 
-A derived dataset is produced from other preserved data through an explicit procedure.
+## Measurement / Source-Transcribed Field
 
-Examples include:
+A numeric or categorical value copied from a governed measurement/source field.
 
-- weekly averages
-- normalized provider fields
-- comparison tables
-- model-error calculations
-- UDI trackers
+This classification describes provenance, not clinical validity.
 
-A derived dataset should document:
+## Subjective Field
 
-- input sources
-- formulas
-- transformation rules
-- missingness handling
-- version
-- provenance
+A contemporaneous operator-reported state, such as mood, energy, GI state, pain, or execution texture.
 
-Derived values must not be represented as direct measurements.
+Subjective data may be structured without becoming objective measurement.
 
----
+## Contextual / Classified Field
 
-## Normalization
+An archive label used to organize preserved context, such as `context_tags`, equipment state, protocol status, event type, or event impact.
 
-Normalization is the transformation of provider- or source-specific fields into a stable archive-defined structure.
+Classification should remain bounded by source evidence and must not create causal certainty.
 
-Normalization may include:
+## Provenance Field
 
-- field renaming
-- date parsing
-- unit standardization
-- source-row tracking
-- schema alignment
-
-Normalization does not mean changing values to appear more typical.
-
-Within this archive, wearable normalization is currently deferred until a defined analytical need justifies it.
-
-Source exports remain preserved regardless of whether normalization is later performed.
+A field describing where a row or value came from, such as `source_ref`.
 
 ---
 
-## Source Precedence
-
-Source precedence is the rule used to determine which evidence should govern a specific question or correction.
-
-The default hierarchy favors:
-
-1. verified provider or device artifact
-2. direct provider export
-3. contemporaneous screenshot
-4. contemporaneous structured transcription
-5. contemporaneous operator note
-6. retrospective synthesis
-7. unsupported memory
-
-This hierarchy is not automatic.
-
-Correction also requires semantic equivalence.
-
-A later export may be stronger as provider evidence but unsuitable for overwriting a contemporaneous metric with a different definition.
-
----
-
-## Source-Backed Correction
-
-A source-backed correction is a narrow change supported by stronger, semantically equivalent evidence.
-
-A correction should require:
-
-- affected field identified
-- applicable source identified
-- compatible units
-- compatible date meaning
-- documented correction logic
-- review of dependent values
-- traceable commit history
-
-A correction is archive maintenance.
-
-It is not a new biological observation.
-
----
-
-## Silent Correction
-
-A silent correction changes a value without preserving:
-
-- the prior state
-- supporting evidence
-- reasoning
-- correction history
-
-Silent correction is prohibited.
-
----
-
-## Reconciliation
-
-Reconciliation is the comparison of multiple source states to determine:
-
-- whether they refer to the same metric
-- whether a difference is meaningful
-- whether correction is justified
-- whether both values should remain preserved
-
-Reconciliation does not require two sources to agree.
-
-An unresolved difference may remain an appropriate outcome.
-
----
+# Missingness and Correction
 
 ## Missingness
 
-Missingness means that a value or source row is absent or unavailable.
+Absence of a governed value.
 
-Missing does not automatically mean:
+Missing does not mean zero, normal, no event, or no device wear.
 
-- zero
-- no event
-- no device wear
-- no sleep
-- no activity
-- normal
-- failed collection
+Missing values remain missing unless source-backed evidence supports correction or later structured inclusion.
 
-Missing values should remain missing unless source evidence supports a specific classification.
+## Source-Backed Correction
+
+A narrow correction made because identifiable stronger source evidence establishes that a recorded value, label, date, or representation is inaccurate.
+
+Correction preserves prior repository state through Git history and is not new biological evidence.
+
+## Source Reconciliation
+
+The process of comparing competing source states under the archive hierarchy and determining whether one controls, the conflict remains unresolved, or a narrow correction is justified.
 
 ---
 
-## Analytical Restriction
+# Reporting and State Concepts
 
-An analytical restriction limits how a field, row, or source may be used without deleting it.
+## Active Report
 
-Examples include:
+An open weekly collection surface.
 
-- excluding a provider anomaly from stage-percentage analysis
-- avoiding quantitative use of a suspected transcription field
-- prohibiting timezone analysis when offsets are unknown
-- retaining a row for continuity while restricting one affected field
+It may contain contemporaneous observations and candidate evidence but must not present the unfinished window as a closed retrospective outcome.
 
-An analytical restriction narrows interpretation.
+## Closed Report
 
-It does not necessarily invalidate the source or complete record.
+A completed weekly or event report interpreted retrospectively after the observation boundary ends.
+
+## Candidate Evidence
+
+An observation that may be relevant to an open prediction, future operating substate, or phase review but does not independently determine an outcome.
+
+## Current State
+
+The presently declared archive/system posture, summarized in [`../LATEST.md`](../LATEST.md).
+
+Current state should not be inferred from an old report or historical audit.
+
+---
+
+# Training and Behavioral Concepts
+
+## B1
+
+The recurring aerobic anchor in the current Phase 2 architecture.
+
+## Load Integration
+
+The recurring structured resistance/movement layer currently paired with B1.
+
+The public `training_blocks_v1.csv` now provides a machine-readable session layer for these and historical training blocks.
+
+## Ambient Execution
+
+Execution that occurs with reduced conscious management or attentional salience under the established behavior.
+
+It is a descriptive behavioral observation, not a clinical state or automatic phase declaration.
+
+## Trait-Like Execution
+
+Repeated behavior-specific execution that appears increasingly stable and low-overhead across time/context.
+
+The term does not mean immutable trait or universal transferability.
+
+## Trait-Level Expression
+
+A stronger session-level descriptive label used when execution appears deeply embedded across the observed session context.
+
+It remains an observation unless separately incorporated into retrospective phase review.
+
+## Operator Overhead
+
+The active cognitive/behavioral management cost required to initiate, sequence, pace, or maintain a practiced behavior.
+
+Reduced operator overhead is descriptive evidence of behavioral consolidation, not proof of a specific neurological mechanism.
+
+## Portability
+
+Preserved execution across a changed context such as equipment, room, schedule, travel, or ordinary-life workload.
+
+Natural portability evidence is preferred to manufactured proof tests.
+
+---
+
+# Context and Perturbation Concepts
+
+## Context Tag
+
+A compact `snake_case` label attached to a daily or training row.
+
+It is descriptive and does not automatically create a formal event.
+
+## Context Event
+
+A bounded event in `data/context_events_v1.csv` whose inclusion materially improves interpretation of training availability, recovery, testing, protocol state, portability, prediction evaluation, or source reconciliation.
+
+The event dataset is an index, not a complete diary.
+
+## Perturbation
+
+A meaningful change in ordinary conditions such as travel, illness, schedule displacement, environmental exposure, equipment access, or unusual physical workload.
+
+Perturbations need not be deliberately engineered.
+
+## Absorbed
+
+A retrospective context-event outcome indicating that the event occurred without a persistent observed loss of ordinary function within the represented window.
+
+It does not mean the event had zero physiological effect.
+
+---
+
+# Phase Concepts
+
+## Phase
+
+A retrospectively declared operating architecture defined under `PHASE_MAP.md` and `PHASE_DECLARATION_CRITERIA.md`.
+
+Current phase:
+
+```text
+Phase 2 — Load Integration
+```
+
+## Operating Substate
+
+A descriptive mode within the active phase.
+
+Current operating substate:
+
+```text
+Consolidation / lock-in observation
+```
+
+## Phase 2D-Type Characteristic
+
+An observation resembling a possible future Phase 2D criterion.
+
+It does not mean Phase 2D is active or inevitable.
+
+## Phase 2D
+
+A reserved possible retrospective substate within Phase 2 describing durable, portable, low-overhead expression of installed capacity.
+
+Formal Phase 2D remains undeclared.
+
+## Phase Declaration
+
+A retrospective archive decision requiring closed observation, supporting evidence, contradictory-evidence review, recovery/mechanical compatibility, governance review, and explicit documentation.
 
 ---
 
@@ -517,862 +314,151 @@ It does not necessarily invalidate the source or complete record.
 
 ## Prediction
 
-A prediction is a prospectively recorded statement about a future state or trajectory.
+A forward expectation intended for evaluation.
 
-A governed prediction should define:
-
-- registration date
-- observation window
-- expected state or direction
-- scoring conditions
-- admissible evidence
-- closure requirements
-
-A retrospective explanation is not a prediction.
-
----
+Clean prospective prediction records are registered before relevant outcome access, bounded, observable, falsifiable, and preserved without hindsight revision.
 
 ## Model Error
 
-A model error is a documented difference between what was expected and what occurred.
+A material difference between registered expectation and observed outcome.
 
-Model error is not treated as personal failure.
+Model error is evidence about the prediction/model, not automatically evidence of biological deterioration.
 
-It is evidence about the limitations of the current internal model.
+## Error Direction
 
-A model-error record may identify:
+For eligible records:
 
-- direction error
-- magnitude error
-- timing error
-- state error
-- trajectory error
-- confidence error
+- `under` — the model underestimated the observed result/state in the defined comparison
+- `over` — the model overestimated it
+- `none` — no directional error under the applicable rule
 
-The purpose is model correction.
+Meaning remains domain-specific.
 
----
+## Registration Provenance
 
-## Prediction Auditing
+Whether and how a prediction was fixed relative to outcome access.
 
-Prediction auditing is the process of comparing a registered prediction with later evidence.
+For the protected recent records 041–046, `calibration_state=pre` is preserved as historical prospective-registration provenance.
 
-The audit asks:
+## Model Calibration Scope
 
-- What was predicted?
-- What occurred?
-- Was the outcome inside the defined window?
-- Was the evidence admissible?
-- How large was the difference?
-- What should change in the model?
+How much prior subject-specific information informed the model generating the prediction.
 
-The objective is calibration rather than self-validation.
+This is conceptually distinct from registration provenance.
 
----
-
-## Prediction Closure
-
-Prediction closure occurs after:
-
-- the observation window ends
-- required evidence is available
-- the prediction is compared with the outcome
-- scoring rules are applied
-- limitations are documented
-
-An open prediction must not be scored early merely because favorable or unfavorable evidence appears.
-
----
-
-## Candidate Evidence
-
-Candidate evidence is an observation that may later support a prediction outcome, phase review, or transition assessment.
-
-Candidate evidence:
-
-- may be recorded contemporaneously
-- may recur naturally
-- remains provisional
-- does not independently close a prediction
-- should not be forced for proof
-
-Example:
-
-A divided-attention pull-up observation may be candidate evidence for reduced operator overhead without independently closing the relevant prediction.
-
----
-
-## Admissible Evidence
-
-Admissible evidence is evidence allowed under the preregistered evaluation rule.
-
-Admissibility may depend on:
-
-- source
-- timing
-- repetition
-- measurement method
-- collection conditions
-- independence from outcome-directed behavior
-
-Evidence may be interesting without being admissible for formal scoring.
-
----
-
-## Concordance
-
-Concordance is the degree of agreement between a prediction and an observed outcome.
-
-The archive may distinguish:
-
-- state concordance
-- trajectory concordance
-- directional concordance
-- magnitude concordance
-
-Higher concordance suggests the model described the observed outcome more accurately.
-
-Lower concordance indicates a need for review or revision.
-
-Concordance is not proof of causality.
-
----
+The future model-error schema separates these concepts explicitly in [`methodology/model_error_schema_v2.md`](./methodology/model_error_schema_v2.md).
 
 ## UDI
 
-UDI means **Uncertainty Delta Index**.
+UDI means **Unobstructed Delta Index**.
 
-UDI evaluates how prediction uncertainty and observed error behave across governed prediction–outcome records.
+It is an experimental signed directional prediction-error framework for eligible magnitude-based records.
 
-Its purpose is not to eliminate uncertainty.
+Current canonical reporting is stratified:
 
-Its purpose is to quantify whether the predictive model is becoming:
+- `UDI_point`
+- `UDI_range`
+- `State_concordance`
+- `Trajectory_concordance`
 
-- better calibrated
-- more directionally accurate
-- more appropriately confident
-- more useful across repeated cycles
+State and trajectory predictions are excluded from magnitude UDI because they do not contain directly comparable continuous error magnitudes.
 
-UDI should be interpreted only under its registered eligibility and calculation rules.
+Composite UDI remains withheld under the framework's predefined release criteria.
 
----
+UDI is not a biological score.
 
-## Calibration
+## Concordance
 
-Calibration describes how closely predicted confidence and expected outcomes match reality over time.
+Agreement between a state/trajectory prediction and its governed outcome classification.
 
-A well-calibrated model:
-
-- is not always correct
-- represents uncertainty honestly
-- avoids excessive confidence
-- improves after error review
-- distinguishes strong from weak evidence
-
-Calibration is more important than maintaining a high apparent success rate.
+Concordance is a calibration signal, not certainty.
 
 ---
 
-## Model Correction
+# Validation and Governance Concepts
 
-Model correction is an explicit update to the internal or documented understanding after prediction error, source review, or accumulated evidence.
+## Mechanical Validation
 
-A model correction may change:
+Read-only checks of repository structure, links, CSV parsing, checksum manifests, continuity, and protected state.
 
-- future prediction thresholds
-- expected recovery behavior
-- interpretation of wearable signals
-- phase criteria
-- operating rules
-- confidence
+## Machine-Readable Validation
 
-It should not rewrite the original prediction.
+Read-only semantic checks specific to daily/training/event datasets: identifiers, dates, vocabularies, numeric syntax, source references, event intervals, and cross-file relationships.
 
----
+Tool:
 
-# Phase and State Concepts
+`tools/validate_machine_readable.py`
 
-## Phase
+## Semantic Review
 
-A phase is a canonical operational state defined by a primary system objective and constraint environment.
+Human/model-assisted review of whether fields, interpretations, state language, and source relationships actually mean what the repository claims they mean.
 
-Current canonical phases include:
+Mechanical validation cannot replace semantic review.
 
-- Phase 0 — Baseline Reconstruction
-- Phase 1 — Firmware Installation and Stabilization
-- Phase 2 — Load Integration
-- Phase 3 — External Capability Demonstration, reserved
+## Governance Miss
 
-A phase is not a motivational label or reward.
+Failure of a declared operational/governance condition.
+
+A governance miss does not automatically imply biological harm.
 
 ---
 
-## Operating Substate
+# AI Assistance
 
-An operating substate describes how the active phase is currently expressed.
+## AI-Assisted Maintenance
 
-Examples within Phase 2 include:
+Use of an AI/LLM to help structure source-backed data, draft documentation, calculate summaries, identify inconsistencies, write validation code, or support audits.
 
-- entry
-- reintegration
-- consolidation
-- lock-in observation
+AI assistance is not a source-evidence class.
 
-An operating substate:
+## AI-Generated Prediction
 
-- remains inside the canonical phase
-- may change without a phase transition
-- may recur
-- does not automatically authorize progression
+A prediction generated with AI assistance that enters the governed model-error layer only if it independently satisfies prospective registration and evaluation rules.
 
----
+Model version may be retained as part of the audit trail.
 
-## Candidate Characteristic
+AI disclosure:
 
-A candidate characteristic is an observation resembling a possible future substate or transition criterion.
-
-Examples include:
-
-- ambient execution
-- automatic mechanics
-- divided-attention control
-- reduced operator overhead
-- portability
-- stable reintegration
-- voluntary tempo control
-
-A candidate characteristic is evidence to preserve, not a state to declare.
-
----
-
-## Transition Evidence
-
-Transition evidence is accumulated evidence relevant to a possible formal state change.
-
-It may include:
-
-- repeated protocol continuity
-- stable recovery
-- preserved mechanics
-- cross-context performance
-- portability
-- biological snapshot support
-- model-error outcomes
-- governance preservation
-
-One observation is rarely sufficient.
-
-Transition evidence must be reviewed as a pattern.
-
----
-
-## Phase Transition
-
-A phase transition is a retrospectively declared movement from one canonical phase to another.
-
-A phase transition requires:
-
-- accumulated evidence
-- closed observation window
-- review of contradictory evidence
-- satisfaction of declaration criteria
-- explicit documentation
-
-A phase transition is not created by:
-
-- one favorable workout
-- one biomarker result
-- increased enthusiasm
-- an aspirational plan
-- candidate terminology
-
----
-
-## Retrospective Declaration
-
-A retrospective declaration formally records a phase or recognized substate only after the supporting evidence window has been reviewed.
-
-The declaration should identify:
-
-- prior state
-- declared state
-- evidence window
-- supporting evidence
-- limitations
-- contradictory evidence
-- operational consequence
-
-The declaration date may occur after the biological or behavioral pattern began.
-
----
-
-## Historical Alias
-
-A historical alias is earlier terminology retained in existing reports.
-
-Examples include:
-
-- System Awakening
-- Repair, Purification, Stability
-- Aerobic Firmware Installation
-- Lock-In Confirmation
-- Phase 2C
-
-Historical aliases should be interpreted through the current canonical hierarchy.
-
-Historical reports should not be rewritten solely to standardize wording.
-
----
-
-## Phase 2C
-
-Phase 2C is historical shorthand for consolidation or lock-in observation within Phase 2.
-
-It is not a separate canonical phase.
-
----
-
-## Phase 2D-Type Characteristic
-
-A Phase 2D-type characteristic is an observation resembling a possible future Phase 2D criterion.
-
-Examples may include:
-
-- trait-like execution
-- automatic bar contact
-- divided-attention movement control
-- low-friction portability
-- reduced need for conscious correction
-
-The phrase does not mean Phase 2D has been declared.
-
----
-
-## Phase 2D
-
-Phase 2D is a possible retrospectively declared Phase 2 substate representing durable, portable, low-overhead capacity.
-
-Current status:
-
-```text
-Undeclared
-```
-
-Phase 2D-type evidence may accumulate without changing the current phase or protocol.
-
----
-
-## Reserved Phase
-
-A reserved phase is a future structural category preserved in the architecture but not active.
-
-Phase 3 is reserved.
-
-Reserved does not mean:
-
-- expected
-- scheduled
-- guaranteed
-- earned by favorable results
-
----
-
-# Training and Adaptation Concepts
-
-## B1
-
-B1 is the archive’s primary aerobic anchor.
-
-Current expression generally includes:
-
-- incline treadmill walking
-- controlled speed
-- nasal breathing
-- repeatable low-intensity exposure
-- fasted morning execution when practical
-
-B1 is treated as a stable operating component rather than a performance test.
-
----
-
-## Load Integration
-
-Load Integration is the structured addition of mechanical loading while preserving the aerobic and recovery platform.
-
-Current examples include:
-
-- trap-bar work
-- pull-ups
-- push-ups
-- dead hangs
-- mobility
-
-The objective is not unrestricted workload expansion.
-
-It is stable integration without recovery degradation.
-
----
-
-## Ambient Execution
-
-Ambient execution describes a session or movement that occurs with low conscious friction.
-
-Possible features include:
-
-- easy initiation
-- automatic setup
-- familiar mechanics
-- low perceived operator demand
-- reduced need to mentally rehearse the session
-
-Ambient execution is a subjective and functional observation.
-
-It is not identical to low physiological load.
-
----
-
-## Trait-Like Execution
-
-Trait-like execution describes capacity that appears increasingly stable and readily available across repeated observations.
-
-It suggests the behavior may be becoming an installed characteristic rather than a temporary favorable state.
-
-The phrase remains observational unless supported by repeated cross-context evidence.
-
----
-
-## Operator Overhead
-
-Operator overhead is the conscious effort required to initiate, regulate, remember, or complete a protocol.
-
-Examples include:
-
-- mentally negotiating whether to train
-- repeatedly checking technique
-- needing extensive preparation
-- consciously indexing every set
-- using substantial attention to maintain ordinary execution
-
-Reduced operator overhead may indicate increasing integration.
-
-It should not be confused with reduced physiological effort.
-
----
-
-## Movement Optionality
-
-Movement optionality is the ability to vary execution without losing control.
-
-Examples include:
-
-- tempo changes
-- pauses
-- positional holds
-- divided-attention demonstration
-- altered equipment context
-
-Optionality is different from mandatory progression.
-
-A capability may be available without being converted into required workload.
-
----
-
-## Portability
-
-Portability is the ability of a protocol or capability to remain available across changes in:
-
-- schedule
-- environment
-- equipment
-- travel
-- social context
-- sequence of activities
-
-Portability requires more than success in one familiar setting.
-
----
-
-## Reintegration
-
-Reintegration is the return to standard protocol execution after interruption, travel, illness, or altered environment.
-
-A low-friction reintegration may include:
-
-- no graded re-entry
-- no compensatory workload
-- preserved mechanics
-- stable recovery
-- rapid return to ordinary operation
-
-Reintegration is an operating condition within a phase, not necessarily a transition.
-
----
-
-## Recovery Floor
-
-Recovery floor describes the lowest functional state reached during disruption.
-
-Improvement may appear as:
-
-- a higher minimum state
-- less performance degradation
-- faster return to baseline
-- reduced intervention need
-- preserved ordinary function
-
-Recovery floor is different from peak recovery.
-
----
-
-## Spare Capacity
-
-Spare capacity is capability available beyond the workload currently required by the protocol.
-
-Spare capacity may appear as:
-
-- optional recreational activity
-- additional movement control
-- reduced perceived effort
-- preserved performance under mild perturbation
-
-Spare capacity should not automatically become required workload.
-
----
-
-## Protocol Governance
-
-Protocol governance is the set of rules preventing reactive, impulsive, or outcome-directed changes to physical execution.
-
-Examples include:
-
-- no compensation after missed sessions
-- no progression merely because a session felt easy
-- no forcing candidate evidence
-- no changing behavior to improve a scheduled measurement
-- no premature phase declaration
-
-Governance protects interpretability.
-
----
-
-## Protocol Progression
-
-Protocol progression is a deliberate increase in:
-
-- load
-- volume
-- density
-- duration
-- complexity
-- novelty
-- performance demand
-
-Progression should be distinguished from spontaneous expression of existing capacity.
-
-A tempo variation or optional recreational activity does not automatically constitute formal progression.
-
----
-
-# Context and Perturbation Concepts
-
-## Perturbation
-
-A perturbation is a change in ordinary operating conditions that may test system stability.
-
-Examples include:
-
-- travel
-- poor sleep
-- schedule disruption
-- environmental heat
-- illness
-- social activity
-- equipment loss
-- unusual workload
-- dietary variation
-
-Perturbations may be planned or unplanned.
-
-They are not automatically experiments.
-
----
-
-## Naturalistic Perturbation
-
-A naturalistic perturbation occurs through ordinary life rather than deliberate experimental design.
-
-Examples include:
-
-- travel
-- family obligations
-- altered gym access
-- social events
-- yard work
-
-Naturalistic perturbations can reveal portability and recovery behavior while preserving real-world relevance.
-
-They provide limited causal control.
-
----
-
-## Controlled Exposure
-
-A controlled exposure is a deliberately bounded protocol input.
-
-Examples include:
-
-- standard B1
-- standard Load Integration
-- a defined testing condition
-- a preregistered collection procedure
-
-Controlled does not mean every external variable is held constant.
-
----
-
-## Representative State
-
-Representative state is the ordinary operating condition the archive attempts to measure rather than an artificially optimized display.
-
-Examples of avoiding artificial optimization include:
-
-- no acute dehydration
-- no unusual sodium manipulation
-- no short-term glycogen strategy
-- no outcome-directed training change
-
-Representative state remains an objective, not a claim of perfect control.
-
----
-
-# Privacy and Integrity Concepts
-
-## Public Original
-
-A public original is a source artifact published without substantive privacy modification.
-
-It may be renamed and checksummed while remaining byte-identical.
-
----
-
-## Filename-Normalized Source
-
-A filename-normalized source is a byte-identical file whose public filename was changed to remove unnecessary personal or account-facing text.
-
-The file contents remain unchanged.
-
----
-
-## Sanitized Derivative
-
-A sanitized derivative is a public artifact created from a verified private source after removing unnecessary administrative identifiers.
-
-A sanitized derivative should preserve:
-
-- measurements
-- units
-- dates
-- reference intervals
-- flags
-- interpretation-relevant structure
-
-It must be identified as a derivative rather than an untouched provider original.
-
----
-
-## Controlled Distribution Remediation
-
-Controlled distribution remediation means intentional public surfaces under project control were reviewed and corrected.
-
-Examples may include:
-
-- active branch
-- maintained tags
-- current repository ZIP
-- Zenodo package
-
-This status does not imply deletion from uncontrolled prior copies or provider-retained residual storage.
-
----
-
-## Checksum
-
-A checksum is a cryptographic digest used to verify file identity.
-
-This archive primarily uses SHA-256.
-
-A matching checksum confirms that file bytes match the registered artifact.
-
-It does not independently establish:
-
-- source validity
-- clinical accuracy
-- privacy completeness
-- correct interpretation
-
----
-
-## Integrity
-
-Integrity means that evidence remains:
-
-- identifiable
-- traceable
-- unaltered or transparently transformed
-- correctly checksummed
-- documented
-- reviewable
-
-Integrity is broader than file validity.
-
-It includes procedural and interpretive discipline.
-
----
-
-# Governance Principles
-
-## No Inference as Observation
-
-A calculated, estimated, or reconstructed value must not be presented as directly observed.
-
-Inference must be labeled.
-
-Missing values remain missing unless source evidence supports correction.
-
----
-
-## No Outcome-Driven Rewriting
-
-Outcome-driven rewriting changes earlier predictions, rules, or interpretations after seeing the result.
-
-This is prohibited.
-
-Later interpretation may correct the model while preserving the original record.
-
----
-
-## No Forced Proof
-
-No forced proof means a candidate capability should not be deliberately repeated merely to create confirming evidence unless a governed test is separately defined.
-
-Natural recurrence is stronger evidence of integration than performance staged for validation.
-
----
-
-## Evidence Proportionality
-
-Evidence proportionality means conclusions should not exceed the strength, scope, or comparability of their supporting evidence.
-
-Examples:
-
-- one session does not establish a trait
-- one biomarker does not establish causality
-- a consumer wearable does not establish diagnosis
-- one favorable snapshot does not establish permanent adaptation
-
----
-
-## Governance Preservation
-
-Governance preservation means the system continues following its rules even when:
-
-- performance improves
-- enthusiasm rises
-- favorable measurements appear
-- external attention increases
-- the subject becomes impatient
-
-Governance preservation is itself a meaningful archive outcome.
+[`AI_ASSISTANCE.md`](./AI_ASSISTANCE.md)
 
 ---
 
 # Current Terminology State
 
-As of 2026-07-25:
+As of the current September 2026 archive state:
 
 ```text
-Canonical phase:
+Active phase:
 Phase 2 — Load Integration
 
 Operating substate:
 Consolidation / lock-in observation
 
-Phase 2D-type characteristics:
-Candidate evidence only
+Phase 2D:
+undeclared
 
-Formal Phase 2D declaration:
-None
+Current open model-error record:
+043
 
-Phase 3:
-Reserved and inactive
+Recently closed model-error records:
+041, 042, 044, 045, 046
 
-Model Error records 041–044:
-Open and unscored
+Daily biomarker coverage:
+203 continuous daily rows through 2026-08-30
 
-Wearable architecture:
-Periodic byte-preserved exports with optional future derivation
+Canonical sleep coverage:
+203 continuous daily rows through 2026-08-30
 
-Canonical sleep:
-Curated dataset preserved separately from later provider exports
+Training-block coverage:
+325 sessions through 2026-08-30
+
+Context-event coverage:
+42 bounded events through 2026-08-29
+
+UDI canonical name:
+Unobstructed Delta Index
 ```
 
----
+Historical documents may retain terminology that was correct for their original date/state.
 
-# Related Documents
-
-- [`../PHASE_MAP.md`](../PHASE_MAP.md)
-- [`../STATE_TRANSITIONS.md`](../STATE_TRANSITIONS.md)
-- [`../PHASE_DECLARATION_CRITERIA.md`](../PHASE_DECLARATION_CRITERIA.md)
-- [`../GOVERNANCE.md`](../GOVERNANCE.md)
-- [`../METHODOLOGY_AND_CONTROLS.md`](../METHODOLOGY_AND_CONTROLS.md)
-- [`../ASSUMPTIONS_AND_BOUNDARIES.md`](../ASSUMPTIONS_AND_BOUNDARIES.md)
-- [`../MEASUREMENT_SOURCES.md`](../MEASUREMENT_SOURCES.md)
-- [`../DATA_DICTIONARY.md`](../DATA_DICTIONARY.md)
-- [`../data/DATA_COVERAGE.md`](../data/DATA_COVERAGE.md)
-- [`../data/DATA_QUALITY_NOTES.md`](../data/DATA_QUALITY_NOTES.md)
-- [`../methodology/data-collection.md`](../methodology/data-collection.md)
-- [`../methodology/anonymization.md`](../methodology/anonymization.md)
-- [`../methodology/open_prediction_evaluation_plan_041_044.md`](../methodology/open_prediction_evaluation_plan_041_044.md)
-
----
-
-## Version Note
-
-This glossary was expanded on 2026-07-25 to align archive terminology with the current phase hierarchy, source architecture, data-quality model, privacy governance, and prediction-calibration framework.
-
-The revision adds definitions for:
-
-- phase
-- operating substate
-- candidate characteristic
-- transition evidence
-- retrospective declaration
-- historical alias
-- Phase 2C
-- Phase 2D-type characteristics
-- source state
-- curated and canonical datasets
-- direct provider exports
-- normalization
-- reconciliation
-- source-backed correction
-- missingness
-- analytical restriction
-- admissible evidence
-- prediction closure
-- operator overhead
-- movement optionality
-- portability
-- spare capacity
-- perturbation
-- sanitized derivatives
-- controlled distribution remediation
-
-The revision does not alter:
-
-- any observation
-- any biological measurement
-- any prediction wording
-- any prediction outcome
-- any protocol exposure
-- any phase declaration
+Current-facing documents should use the definitions in this glossary and the governing schema/methodology files.

@@ -2,17 +2,17 @@
 
 ## Purpose
 
-This document defines the current public schema contract for the three daily/event datasets introduced in September 2026:
+This document defines the public schema contract for:
 
 - `data/daily_biomarkers_v1.csv`
 - `data/training_blocks_v1.csv`
 - `data/context_events_v1.csv`
 
-The files are curated archive datasets derived primarily from private `Daniel_Dataset_v1.x` source workbooks/PDFs and governed contemporaneous records.
+These files are curated archive datasets derived primarily from private `Daniel_Dataset_v1.x` source workbooks/PDFs and governed contemporaneous records.
 
 They are not raw provider exports.
 
-The schema exists to make the public layer machine-readable without pretending that historical source material was more precise than it was.
+The schema makes the public layer machine-readable without pretending historical source material was more precise than it was.
 
 ---
 
@@ -26,17 +26,13 @@ Canonical date format:
 YYYY-MM-DD
 ```
 
-Dates must parse as real calendar dates.
-
-The current shared structured observation interval is:
+Current shared represented interval:
 
 ```text
 2026-02-09 through 2026-08-30
 ```
 
-A future extension may advance the end date without changing this schema.
-
----
+A later data extension may advance the end date without changing the v1 field structure.
 
 ## Missingness
 
@@ -44,42 +40,32 @@ Blank means unavailable, not collected, not represented in the source, or not tr
 
 Blank does not mean zero.
 
-No value may be inferred from an adjacent date merely to create completeness.
+Do not infer a missing value from neighboring dates merely to create completeness.
 
----
+## Vocabulary Types
 
-## Controlled Vocabulary
+**Closed vocabulary** fields may contain only the values listed below or blank where blank is explicitly allowed.
 
-Fields identified below as **closed vocabulary** may contain only the listed values or blank where blank is explicitly allowed.
+**Extensible vocabulary** fields use lower-case `snake_case`. Existing values remain valid; new values require a distinct documented meaning.
 
-Fields identified as **extensible vocabulary** use lower-case `snake_case` terms. Existing values remain valid, and new values may be added only when the new term has a distinct documented meaning.
+## Evidence Classes
 
-Free-text fields are not controlled vocabularies.
-
----
-
-## Field Evidence Classes
-
-The schema distinguishes four evidence roles:
-
-- **measurement / source-transcribed** — numeric or categorical value copied from a governed measurement/source field
+- **measurement / source-transcribed** — copied from a governed measurement/source field
 - **subjective** — contemporaneous operator-reported state
-- **contextual / classified** — archive classification or compact context label derived from preserved source context
+- **contextual / classified** — archive classification derived from preserved context
 - **provenance** — locator describing where the public row came from
 
-A field class does not establish clinical validity.
+A field class describes evidence role, not clinical validity.
 
 ---
 
-# `source_ref` Contract
+# `source_ref`
 
-`source_ref` is a provenance locator, not a cryptographic checksum.
+`source_ref` is a row-level provenance locator, not a checksum.
 
-Multiple source locators are separated by a semicolon (`;`).
+Multiple source locators are separated with `;`.
 
-## Canonical Private-Source Form
-
-New curated rows should use:
+## Canonical New Private-Source Form
 
 ```text
 private_workbook:Daniel_Dataset_v<version>:<sheet>:<YYYY-MM-DD>[:<row_or_session_label>]
@@ -94,40 +80,26 @@ private_workbook:Daniel_Dataset_v1.28:Training Blocks:2026-08-30:LI
 private_pdf:Daniel_Dataset_v1.0:Training Blocks:2026-02-09
 ```
 
-The sheet component may contain spaces because it preserves the private source-tab label.
+## Accepted Historical Training Aliases
 
-## Legacy Training Aliases
-
-`training_blocks_v1.csv` contains historical aliases created during the first backfill:
+The first training backfill used:
 
 ```text
 wb:v<version>:TB:<YYYY-MM-DD>[:<session_label>]
 pdf:v<version>:TB:<YYYY-MM-DD>[:<session_label>]
 ```
 
-These aliases remain valid for existing v1 rows and are not evidence defects.
+These aliases remain valid for existing v1 rows and are deprecated for new rows.
 
-They are deprecated for new rows.
+A future migration may normalize them only if it is deterministic and preserves traceability.
 
-A future schema migration may normalize them if the migration is deterministic and preserves source traceability.
+## File-Level Private Provenance
 
-## File-Level Provenance
-
-Where an immutable private source file is available for hashing, its SHA-256 is registered separately in:
+Where an exact retained private source file was available for hashing, file identity is registered separately in:
 
 `data/source_provenance/daniel_dataset_private_manifest.csv`
 
-This separates:
-
-```text
-row locator
-```
-
-from:
-
-```text
-private file identity
-```
+This keeps row location distinct from private file identity.
 
 ---
 
@@ -139,15 +111,15 @@ private file identity
 date
 ```
 
-Exactly one row is permitted per represented date.
+Exactly one row per represented date.
 
-The current dataset is continuous from `2026-02-09` through `2026-08-30`.
+Current dataset: 203 continuous rows, `2026-02-09` through `2026-08-30`.
 
 ## Fields
 
 | Field | Type | Evidence class | Rule |
 |---|---|---|---|
-| `date` | ISO date | measurement/index | unique daily key |
+| `date` | ISO date | index | unique daily key |
 | `morning_weight_lb` | number or blank | measurement / source-transcribed | pounds |
 | `daily_hrv_ms` | number or blank | measurement / source-transcribed | milliseconds |
 | `resting_hr_bpm` | number or blank | measurement / source-transcribed | bpm |
@@ -159,7 +131,7 @@ The current dataset is continuous from `2026-02-09` through `2026-08-30`.
 | `stomach_state` | category or blank | subjective | closed vocabulary |
 | `pain_state` | category or blank | subjective | closed vocabulary |
 | `sweating_state` | category or blank | subjective | closed vocabulary |
-| `context_tags` | semicolon list or blank | contextual / classified | extensible `snake_case` tags |
+| `context_tags` | semicolon list or blank | contextual / classified | extensible `snake_case` |
 | `source_ref` | text | provenance | required; canonical private-source form |
 
 ## Closed Vocabularies
@@ -195,7 +167,7 @@ high
 calm
 ```
 
-Blank is permitted when the private source did not contain a transferable state.
+Blank permitted.
 
 ### `stomach_state`
 
@@ -203,7 +175,7 @@ Blank is permitted when the private source did not contain a transferable state.
 calm
 ```
 
-Blank is permitted.
+Blank permitted.
 
 ### `pain_state`
 
@@ -212,7 +184,7 @@ none
 transient
 ```
 
-Blank is permitted.
+Blank permitted.
 
 ### `sweating_state`
 
@@ -220,18 +192,16 @@ Blank is permitted.
 none
 ```
 
-Blank is permitted.
+Blank permitted.
 
 ## Context Tags
 
-`context_tags` is intentionally extensible because the archive must preserve real-world context without forcing unrelated events into a small taxonomy.
-
 Rules:
 
-- tags use lower-case `snake_case`
-- multiple tags use `;`
-- a tag is descriptive, not causal
-- a daily tag does not automatically create a `context_events_v1.csv` event
+- lower-case `snake_case`
+- multiple tags separated with `;`
+- descriptive rather than causal
+- a daily tag does not automatically require a context-event row
 
 ---
 
@@ -243,39 +213,39 @@ Rules:
 session_id
 ```
 
-Every session ID must be unique.
+Every session ID must be unique. Multiple sessions may occur on one date.
 
-Multiple sessions may occur on the same date.
+Current dataset: 325 session rows, `2026-02-09` through `2026-08-30`.
 
 ## Fields
 
 | Field | Type | Evidence class | Rule |
 |---|---|---|---|
-| `session_id` | text | index | unique; date-prefixed identifier |
-| `date` | ISO date | measurement/index | must fall inside represented daily observation interval |
+| `session_id` | text | index | unique, date-prefixed |
+| `date` | ISO date | index | within represented daily interval |
 | `block_type` | category | contextual / classified | closed vocabulary |
-| `duration_min` | **duration expression** | measurement / source-transcribed | v1 compatibility field; see duration rule below |
-| `intensity` | source text or blank | measurement / source-transcribed | preserves source semantics |
-| `hr_range_bpm` | source text or blank | measurement / source-transcribed | may be a range/expression |
+| `duration_min` | duration expression | measurement / source-transcribed | v1 compatibility rule below |
+| `intensity` | source text or blank | measurement / source-transcribed | source-preserving |
+| `hr_range_bpm` | source text or blank | measurement / source-transcribed | may be range/expression |
 | `distance_mi` | number or blank | measurement / source-transcribed | miles |
 | `load_summary` | source text or blank | measurement / source-transcribed | compact movement/load expression |
-| `rpe` | number/range text or blank | subjective/source-transcribed | source-preserving |
+| `rpe` | scalar/range text or blank | subjective/source-transcribed | source-preserving |
 | `fed_state` | category or blank | contextual / classified | closed vocabulary |
 | `execution_state` | category or blank | subjective / classified | closed vocabulary |
-| `equipment_context` | category or blank | contextual / classified | extensible `snake_case` vocabulary |
-| `context_tags` | semicolon list or blank | contextual / classified | extensible `snake_case` tags |
+| `equipment_context` | category or blank | contextual / classified | extensible `snake_case` |
+| `context_tags` | semicolon list or blank | contextual / classified | extensible `snake_case` |
 | `protocol_status` | category | contextual / classified | extensible governed vocabulary |
-| `source_ref` | text | provenance | required; canonical or accepted v1 legacy form |
+| `source_ref` | text | provenance | required; canonical or accepted v1 alias |
 
 ## `duration_min` — v1 Compatibility Semantics
 
-The name `duration_min` predates formal schema hardening and is misleading if interpreted as a strictly numeric column.
+The historical column name is misleading if treated as strictly numeric.
 
-For **v1**, its canonical meaning is now explicitly:
+For v1, canonical meaning is:
 
-> a source-preserving duration expression whose unit basis is minutes when a duration is numerically represented.
+> a source-preserving duration expression whose unit basis is minutes when a duration is represented numerically.
 
-Accepted forms are:
+Accepted forms include:
 
 ### Scalar minutes
 
@@ -285,30 +255,28 @@ Accepted forms are:
 59.8
 ```
 
-These may be interpreted numerically as minutes.
+Suitable for direct numeric minute analysis.
 
-### Bounded source range
+### Bounded range
 
 ```text
 30-45
 ```
 
-This means the source supports a bounded interval.
+Preserve as a range. Do not replace with a midpoint.
 
-Do not replace it with a midpoint.
-
-### Compound historical expression
+### Compound historical expressions
 
 ```text
 52 min + circuits
 30 min B1 + 35-45 strength
 ```
 
-These preserve historical mixed-session architecture and are **not** a single numeric minute value.
+These are not a single numeric minute value.
 
 ### Blank
 
-Blank is allowed when a source row represents an activity/session whose total duration was not resolved to a transferable value.
+Permitted when no reliable total duration is transferable.
 
 ## Numeric Analysis Rule
 
@@ -316,11 +284,9 @@ Consumers must not coerce `duration_min` blindly to numeric.
 
 Only scalar numeric values are directly suitable for arithmetic without a separately documented transformation.
 
-Ranges and compound expressions must remain nonnumeric unless an analysis defines a reproducible treatment.
+## Future Duration Split
 
-## Future v2 Duration Split
-
-A future `training_blocks_v2.csv` should split this field into:
+A future `training_blocks_v2.csv` may separate:
 
 ```text
 duration_min
@@ -329,7 +295,7 @@ duration_min_high
 duration_raw
 ```
 
-The v1 file is not silently rewritten because that would create unsupported precision for historical compound/range rows.
+The v1 file is not silently rewritten because doing so could invent unsupported precision.
 
 ## Closed Vocabularies
 
@@ -352,7 +318,7 @@ fasted
 fed
 ```
 
-Blank is permitted when not represented.
+Blank permitted.
 
 ### `execution_state`
 
@@ -362,18 +328,19 @@ completed
 ambient
 trait_like
 trait_level
+recreational
 ```
 
-Blank is permitted where the historical source did not support a classified execution state.
+Blank permitted when no classified state was transferable.
 
-## Extensible Vocabularies
+## Extensible Training Vocabularies
 
-`equipment_context`, `context_tags`, and `protocol_status` remain extensible because historical training architecture contains legitimate state transitions and one-off conditions.
+`equipment_context`, `context_tags`, and `protocol_status` remain extensible.
 
 New terms must:
 
 - use lower-case `snake_case`
-- be materially distinct from an existing term
+- be materially distinct from existing terms
 - not imply a stronger biological conclusion than the source supports
 
 ---
@@ -382,17 +349,9 @@ New terms must:
 
 ## Purpose
 
-This file is a **bounded event index**, not a complete diary of ordinary life.
+A bounded contextual event index, not a complete diary.
 
-An event row is created when preserved context is materially useful for interpreting:
-
-- training availability
-- measurement conditions
-- recovery behavior
-- protocol state
-- portability
-- model-error evaluation
-- source reconciliation
+An event row is created when preserved context materially improves interpretation of training availability, measurement conditions, recovery, protocol state, portability, model-error evaluation, or source reconciliation.
 
 Routine repetition does not require an event row.
 
@@ -408,13 +367,15 @@ Format:
 YYYY-MM-DD-##
 ```
 
-The date prefix must equal `start_date`.
+Date prefix must equal `start_date`.
+
+Current dataset: 42 bounded events, current event coverage through `2026-08-29`.
 
 ## Fields
 
 | Field | Type | Evidence class | Rule |
 |---|---|---|---|
-| `event_id` | text | index | unique; date-prefixed |
+| `event_id` | text | index | unique, date-prefixed |
 | `start_date` | ISO date | contextual/index | required |
 | `end_date` | ISO date | contextual/index | required; `end_date >= start_date` |
 | `event_type` | category | contextual / classified | closed vocabulary |
@@ -441,58 +402,46 @@ equipment_change
 other
 ```
 
-Use `other` only when the event is material but no existing category is semantically appropriate.
-
 ## Impact-Level Vocabulary
 
 ### `contextual`
-
-The event is useful for interpretation but did not materially change the recurring protocol architecture.
+Useful for interpretation but did not materially alter recurring protocol architecture.
 
 ### `material`
-
-The event meaningfully changed context, workload, timing, environment, or interpretation while leaving the core protocol decision boundary intact.
+Meaningfully changed context, workload, timing, environment, or interpretation while leaving the core protocol decision boundary intact.
 
 ### `protocol_altering`
+Directly changed, paused, reduced, withheld, replaced, or transitioned a governed protocol exposure.
 
-The event directly changed, paused, reduced, withheld, replaced, or transitioned a governed protocol exposure.
-
-Impact classification describes archive relevance.
-
-It does not imply harm.
+Impact describes archive relevance, not harm.
 
 ## Outcome-State Vocabulary
 
 ### `absorbed`
-
-The event occurred without a persistent observed loss of ordinary system function under the represented window.
+Event occurred without a persistent observed loss of ordinary function within the represented window.
 
 ### `resolved`
-
-A transient issue or bounded condition ended or returned to the ordinary operating state.
+Transient issue or bounded condition ended/returned to ordinary operating state.
 
 ### `transient_effect`
-
-A temporary effect was observed but did not warrant representation as a persistent unresolved state.
+Temporary effect observed without representation as a persistent unresolved state.
 
 These are retrospective descriptive classifications, not clinical outcomes.
 
-## Event-Classification Rules
+## Event Classification Rules
 
-1. Preserve the event only when it adds interpretive value beyond a routine daily tag.
-2. Prefer the most specific available `event_type`.
-3. Do not infer a causal mechanism from temporal association.
-4. Do not create an event solely to make a favorable portability or resilience claim.
-5. Natural ordinary-life variation may be indexed when it materially changes context.
-6. A protocol-altering event must state the actual protocol consequence in `protocol_impact`.
-7. Model-error cross-references must point to records that exist in the archive.
-8. Event dates must remain inside the represented public observation interval unless the schema is explicitly extended.
+1. Include an event only when it adds value beyond a routine tag.
+2. Prefer the most specific event type.
+3. Do not infer causal mechanism from temporal association.
+4. Do not create an event solely to manufacture a favorable resilience/portability claim.
+5. Natural ordinary-life variation may be indexed when materially relevant.
+6. A protocol-altering event must state its actual consequence in `protocol_impact`.
+7. Model-error cross-references must identify records that exist in the archive.
+8. Event dates must remain inside the represented public interval unless the schema is explicitly extended.
 
 ---
 
 # Cross-File Relationships
-
-The three datasets are related but not row-for-row equivalent.
 
 ```text
 daily_biomarkers_v1.csv
@@ -502,60 +451,45 @@ training_blocks_v1.csv
 zero-to-many sessions per day
 
 context_events_v1.csv
-zero-to-many bounded events per day or date interval
+zero-to-many bounded events per day/interval
 ```
 
 Required relationships:
 
-- every training date must exist inside the daily-biomarker represented interval
-- every event interval must overlap the daily-biomarker represented interval
-- every `related_model_error` ID must exist in the model-error archive
-- a daily `context_tags` value does not require a matching event row
-- an event row does not require a training session on every event date
+- training dates must fall within the daily-biomarker represented interval
+- event intervals must fall within the represented public interval
+- `related_model_error` IDs must exist in the model-error archive
+- daily/training tags do not require a matching event row
+- event rows do not require a training session on every event date
 
 ---
 
 # Validation
 
-Machine-readable semantic checks are implemented in:
+Machine-readable validation:
 
 ```text
 tools/validate_machine_readable.py
 ```
 
-The core repository validator remains:
+Core repository validation:
 
 ```text
 tools/validate_repository.py
 ```
 
-The machine-readable validator checks:
+The machine-readable validator checks headers, identifiers, dates, continuity, numeric syntax, controlled vocabularies, duration expressions, source-reference syntax, event intervals, model-error references, and cross-file relationships.
 
-- required headers
-- unique daily dates
-- unique session IDs
-- unique event IDs
-- ISO date parsing
-- daily continuity
-- numeric field syntax
-- controlled vocabularies
-- duration-expression syntax
-- source-reference syntax
-- event interval ordering
-- week/reference syntax
-- related model-error existence
-- cross-file date relationships
-
-Validation does not establish biological plausibility, causality, or clinical meaning.
+Validation does not establish biological plausibility, causality, measurement validity, or clinical meaning.
 
 ---
 
 # Versioning Boundary
 
-This document formalizes the existing v1 public data layer.
+This document formalizes the current public v1 layer.
 
-It does not retroactively claim that these schema rules governed the private source workbooks before public extraction.
+It does not claim these schema rules governed private source workbooks before public extraction.
 
-Breaking changes require a new dataset schema version under `VERSIONING.md`.
+Breaking field/semantic changes require a future dataset schema version under `VERSIONING.md`.
 
-Historical v1 source-preserving expressions remain valid even when a cleaner future schema is planned.
+Historical source-preserving v1 expressions remain valid even when a cleaner future schema is planned.
