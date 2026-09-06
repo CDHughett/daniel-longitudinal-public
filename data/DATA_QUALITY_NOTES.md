@@ -2,7 +2,7 @@
 
 **Status:** Active  
 **Created:** 2026-07-11  
-**Last updated:** 2026-07-22  
+**Last updated:** 2026-09-06  
 **Scope:** Known data-quality questions requiring source reconciliation or analytical restriction
 
 ---
@@ -1135,6 +1135,110 @@ The preliminary difference table does not authorize broad historical correction.
 
 ---
 
+# DQ-009 — August 17 Snapshot Morning-Weight Transcription Reconciliation
+
+## Status
+
+**Corrected**
+
+The discrepancy is resolved.
+
+---
+
+## Affected Date
+
+2026-08-17
+
+---
+
+## Affected Metric
+
+Morning bodyweight
+
+---
+
+## Conflicting Records
+
+The August snapshot collection-plan execution log recorded:
+
+```text
+235.1 lb
+```
+
+The canonical Daily Biomarkers dataset for 2026-08-17 records:
+
+```text
+234.1 lb
+```
+
+The Week 33 report already used the following daily sequence:
+
+```text
+234.1, 235.7, 235.8, 236.5, 235.5, 235.5, 234.4
+```
+
+which yields a mean of approximately:
+
+```text
+235.36 lb
+```
+
+and is reported as:
+
+```text
+235.4 lb
+```
+
+---
+
+## Source Reconciliation
+
+The canonical Daily Biomarkers entry is the contemporaneous structured source for the 2026-08-17 morning weight and therefore controls over the later manual transcription in the collection-plan execution log.
+
+The existing Week 33 daily-weight sequence independently corroborates that `234.1 lb` was already the value used in the weekly calculation.
+
+No correction to the canonical Daily Biomarkers dataset is required.
+
+The conflict is therefore classified as a downstream transcription error rather than a source-data error.
+
+---
+
+## Correction
+
+On 2026-09-06:
+
+- `methodology/2026-08-snapshot-collection-plan.md` was corrected from `235.1 lb` to `234.1 lb`
+- a source-reconciliation note was added to the execution log
+- the canonical Daily Biomarkers value remained unchanged
+- the Week 33 daily sequence remained unchanged
+- the Week 33 reported mean remained `235.4 lb`
+
+The correction does not alter any biological observation, trend estimate, model-error score, phase state, or snapshot interpretation.
+
+---
+
+## Downstream Cleanup Boundary
+
+Files that still describe the `234.1 lb` versus `235.1 lb` discrepancy as unresolved or the Week 33 `235.4 lb` mean as provisional should be updated separately to reflect this resolution.
+
+Those narrative cleanups do not authorize changing the underlying Week 33 daily values or weekly mean.
+
+---
+
+## Final Disposition
+
+```text
+Canonical 2026-08-17 morning weight: 234.1 lb
+Incorrect downstream transcription: 235.1 lb
+Canonical dataset modification required: no
+Collection-plan correction required: completed
+W33 daily sequence modification required: no
+W33 weekly mean modification required: no
+Status: corrected / resolved
+```
+
+---
+
 # Current Dataset Disposition
 
 No change to [`sleep_longitudinal_v1.csv`](./sleep_longitudinal_v1.csv) is authorized by this documentation commit.
@@ -1150,6 +1254,7 @@ Current disposition:
 - DQ-006 missing dates — preserved as unexplained source missingness
 - DQ-007 November 17 stage classification — restricted from stage analysis
 - DQ-008 broader curated-versus-export comparison — diagnostic only
+- DQ-009 August 17 morning weight — corrected; `234.1 lb` controls and the W33 `235.4 lb` mean is unchanged
 
 The curated rows remain:
 
@@ -1340,5 +1445,14 @@ The 2026-07-22 revision:
 - converts unresolved provider-export questions into issue-specific analytical restrictions
 - defers normalized wearable trackers until a concrete analytical requirement exists
 - confirms that no broad historical correction or canonical integration is authorized
+
+The 2026-09-06 revision:
+
+- adds DQ-009 for the 2026-08-17 morning-weight discrepancy
+- records `234.1 lb` as the controlling canonical Daily Biomarkers value
+- classifies `235.1 lb` in the August snapshot collection plan as a downstream transcription error
+- records that the collection-plan correction has been completed
+- confirms that the Week 33 daily sequence and `235.4 lb` weekly mean already used `234.1 lb` and therefore remain unchanged
+- identifies remaining downstream provisional-discrepancy language as narrative cleanup rather than a data correction
 
 No curated value was changed as part of this documentation commit.
