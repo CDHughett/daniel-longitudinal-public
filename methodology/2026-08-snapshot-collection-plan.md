@@ -976,7 +976,7 @@ For each day, complete the following when applicable.
 
 ```text
 Wake time: 05:15
-Morning weight: 235.1 lb
+Morning weight: 234.1 lb
 GI-clearance status: unknown
 Last meal time: 19:00 on 2026-08-16
 Fasting duration: 10 h 37 min at TruDiagnostic collection; 12 h 55 min at DEXA start; 13 h 10 min at VO₂ start
@@ -1003,6 +1003,7 @@ Supplement or medication deviation: none consumed before testing
 Hydration deviation: no morning fluid consumed; broader hydration state not independently established
 Illness or mechanical signal: none
 Source artifacts received: 2026-08-dexa-body-comp.jpg; 2026-08-dexa-summary.jpg; 2026-08-vo2-summary.pdf; TruDiagnostic sample collected with provider results pending
+Source reconciliation note: Morning weight corrected on 2026-09-06 from 235.1 lb to 234.1 lb after comparison with the canonical Daily Biomarkers dataset entry for 2026-08-17. This resolves a downstream transcription discrepancy only; the W33 weekly mean already used 234.1 lb and therefore does not change.
 Other material context: DEXA and VO₂ proceeded without unusual event. The 2026-08-16 Load Integration session was intentionally withheld specifically to preserve recovery before VO₂ testing. This was not provider-required and reduced normal protocol exposure relative to the preregistered representative-state objective; the deviation is retained rather than normalized.
 ```
 
