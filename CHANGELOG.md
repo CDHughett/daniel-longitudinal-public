@@ -14,6 +14,99 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 
 ### Added
 
+#### September 6 machine-readable data-layer expansion
+
+- Added three curated machine-readable datasets:
+  - `data/daily_biomarkers_v1.csv`
+  - `data/training_blocks_v1.csv`
+  - `data/context_events_v1.csv`
+
+- Initialized the new CSV layer from completed Daniel Dataset source files and retrospectively backfilled the available structured history through `Daniel_Dataset_v1.0`–`v1.28`.
+
+- Preserved source provenance through per-row `source_ref` fields rather than copying source-workbook narrative wholesale.
+
+- `data/daily_biomarkers_v1.csv` now contains:
+
+  ```text
+  Rows:
+  203
+
+  Coverage:
+  2026-02-09 through 2026-08-30
+  ```
+
+- The daily-biomarker layer preserves machine-readable daily fields including:
+  - morning bodyweight where available
+  - daily HRV
+  - resting heart rate
+  - daily average heart rate where available
+  - body temperature
+  - selected mood / energy / GI / pain / sweating state fields where supported
+  - bounded context tags
+  - source provenance
+
+- Erection-quality data is intentionally excluded from `data/daily_biomarkers_v1.csv`.
+
+- Verbose free-text source fields are not copied wholesale into the public daily-biomarker layer, preventing excluded private fields from being reintroduced indirectly through narrative text.
+
+- `data/training_blocks_v1.csv` now contains:
+
+  ```text
+  Session rows:
+  325
+  ```
+
+- The training-block layer preserves actual historical training architecture rather than forcing earlier phases into the current B1 + Load Integration vocabulary.
+
+- Historical block types therefore remain distinguishable where supported, including:
+  - legacy firmware blocks
+  - combined B1 + Load Integration blocks
+  - B1 + ground-integration blocks
+  - active-recovery blocks
+  - later discrete B1 blocks
+  - later discrete Load Integration blocks
+  - structured recreational exposures where they were explicitly recorded
+
+- True no-training days were not fabricated into training rows.
+
+- `data/context_events_v1.csv` now contains:
+
+  ```text
+  Curated events:
+  42
+  ```
+
+- Context-event inclusion is deliberately selective rather than exhaustive.
+
+- Events are included when they materially alter or contextualize:
+  - training availability or timing
+  - testing conditions
+  - travel
+  - meaningful ordinary-life workload
+  - equipment context
+  - mechanical signals
+  - environmental conditions
+  - recovery state
+  - other bounded events relevant to longitudinal interpretation
+
+- Presence in `context_events_v1.csv` does not imply that an event was adverse or caused a biological outcome.
+
+- The source Daniel Dataset files were not modified to support the new CSV layer.
+
+- The three CSVs are downstream structured projections of the existing source record and do not create a new operator logging requirement.
+
+- Missing or unsupported fields remain blank rather than being reconstructed from memory or neighboring observations.
+
+- This machine-readable expansion does not:
+  - change any biological source value
+  - alter canonical sleep data
+  - modify a model-error record
+  - modify UDI or concordance values
+  - change the B1 + Load Integration architecture
+  - declare Phase 2D
+  - activate Phase 3
+  - create a new formal release
+
 #### September 4 delayed Wednesday audit
 
 - Added `docs/audits/2026-09-04-late-wednesday-audit.md`.
@@ -2829,6 +2922,22 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   203 daily rows
   ```
 
+- Current machine-readable structured-data state:
+
+  ```text
+  Daily biomarkers:
+  203 rows
+  2026-02-09 through 2026-08-30
+
+  Training blocks:
+  325 session rows
+
+  Context events:
+  42 curated events
+  ```
+
+- These three layers are downstream structured projections of the existing source record and remain distinct from the canonical sleep dataset and provider-source export layer.
+
 - Current open prediction state:
 
   ```text
@@ -3025,6 +3134,16 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 ---
 
 ### Release status
+
+- No release-version increment was made for the September 6 machine-readable data-layer expansion.
+
+- The machine-readable expansion is limited to:
+  - three derived CSV layers
+  - retrospective structured backfill of existing source records
+  - source-provenance preservation
+  - bounded context classification
+
+- It introduces no new source biological observation, prediction outcome, protocol state, phase state, checksum change, or release artifact.
 
 - No release-version increment was made for the September 6 DQ-009 source-reconciliation batch.
 
