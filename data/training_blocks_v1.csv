@@ -1,4 +1,64 @@
 session_id,date,block_type,duration_min,intensity,hr_range_bpm,distance_mi,load_summary,rpe,fed_state,execution_state,equipment_context,context_tags,protocol_status,source_ref
+2026-02-09-LEGACY,2026-02-09,legacy_firmware_block,52 min + circuits,low-moderate,120-145,2.9,hv_ls,3-4,fed,controlled,legacy_firmware,pre_trudiagnostic;sauna_withheld_prior_day,testing_context,pdf:v1.0:TB:2026-02-09
+2026-02-10-LEGACY,2026-02-10,legacy_firmware_block,52 min + circuits,low-moderate,120-145,,hv_ls,3-4,fed,controlled,legacy_firmware,trudiagnostic_testing;barcode_failure;sympathetic_spike,testing_context,pdf:v1.0:TB:2026-02-10
+2026-02-11-LEGACY,2026-02-11,legacy_firmware_block,52 min + circuits,low-moderate,120-145,,hv_ls,3-4,fasted,controlled,legacy_firmware,trudiagnostic_collection_second_attempt,testing_context,pdf:v1.0:TB:2026-02-11
+2026-02-12-LEGACY,2026-02-12,legacy_firmware_block,52 min + circuits,low-moderate,120-145,,hv_ls,3-4,fasted,controlled,legacy_firmware,dexa_bodpod_testing,testing_context,pdf:v1.0:TB:2026-02-12
+2026-02-13-B1LI,2026-02-13,b1_load_integration,30 min B1 + 35-45 strength,low-moderate hybrid,120-140,1.6,tb;ss;pu,6-7,fed,controlled,phase2_load_integration,phase2_load_integration_initiation;b1_reduced_volume,protocol_transition,pdf:v1.0:TB:2026-02-13
+2026-02-14-B1LI,2026-02-14,b1_load_integration,30 min B1 + 35-45 strength,low-moderate hybrid,120-140,,tb3x5;ss3x5;pu4x3,6-7,fed,controlled,phase2_load_integration,load_integration_day2;grip_friction,as_prescribed,pdf:v1.0:TB:2026-02-14
+2026-02-15-B1,2026-02-15,b1,55,low-moderate,120-145,3,,3-4,fed,controlled,b1_standard,b1_restoration,as_prescribed,pdf:v1.0:TB:2026-02-15
+2026-02-16-B1LI,2026-02-16,b1_load_integration,90,10% / 3.3 mph + Moderate Strength,125-140,3.02,tb3x5;pu4x4;ss3x5,7,fed,controlled,phase2_load_integration,controlled_progression,as_prescribed,wb:v1.1:TB:2026-02-16:B1LI
+2026-02-17-B1LI,2026-02-17,b1_load_integration,80,10% / 3.3 mph + Technical Strength,120-135,3.02,tb3x3;pu3x3;ss2x5,6-7,fed,controlled,phase2_load_integration,,as_prescribed,wb:v1.1:TB:2026-02-17:B1LI
+2026-02-18-B1LI,2026-02-18,b1_load_integration,85,10% / 3.3 mph + Technical Strength,120-135,3.02,tb3x5;pu3x4;ss3x5,6-7,fed,controlled,phase2_load_integration,,as_prescribed,wb:v1.1:TB:2026-02-18:B1LI
+2026-02-19-B1LI,2026-02-19,b1_load_integration,90,10% / 3.3 mph + Moderate Strength,125-140,3.02,tb3x5;pu4x3;ss3x5,6-7,fed,controlled,phase2_load_integration,,as_prescribed,wb:v1.1:TB:2026-02-19:B1LI
+2026-02-20-B1LI,2026-02-20,b1_load_integration,90,10% / 3.3 mph + Moderate Strength,125-140,3.02,tb3x5;pu3x4;ss3x5,6-7,fed,controlled,phase2_load_integration,,as_prescribed,wb:v1.1:TB:2026-02-20:B1LI
+2026-02-21-B1LI,2026-02-21,b1_load_integration,90,10% / 3.3 mph + Moderate Strength,125-140,3.02,tb3x5;pu3x4;ss3x5,6-7,fed,controlled,phase2_load_integration,,as_prescribed,wb:v1.1:TB:2026-02-21:B1LI
+2026-02-22-B1LI,2026-02-22,b1_load_integration,90,10% / 3.3 mph + Moderate Strength,125-140,3.02,tb3x5;pu3x4;ss3x5,6-7,fed,controlled,phase2_load_integration,,as_prescribed,wb:v1.1:TB:2026-02-22:B1LI
+2026-02-23-B1LI,2026-02-23,b1_load_integration,90,10% / 3.3 mph + Technical Strength,120-135,3.02,tb3x5;pu3x4;ss3x6,6,fed,controlled,phase2_load_integration,,as_prescribed,wb:v1.2:TB:2026-02-23:B1LI
+2026-02-24-B1LI,2026-02-24,b1_load_integration,90,10% / 3.3 mph + Technical Strength,120-135,3.02,tb3x5;pu3x4;ss3x6,6,fed,controlled,phase2_load_integration,,as_prescribed,wb:v1.2:TB:2026-02-24:B1LI
+2026-02-25-B1LI,2026-02-25,b1_load_integration,90,10% / 3.3 mph + Technical Strength,120-135,3.02,tb3x5;pu3x4;ss3x6,6,fed,controlled,phase2_load_integration,automatic_execution_emerging,as_prescribed,wb:v1.2:TB:2026-02-25:B1LI
+2026-02-26-B1LI,2026-02-26,b1_load_integration,90,10% / 3.3 mph + Technical Strength,120-135,3.02,tb3x5;pu3x4;ss3x6,6,fed,controlled,phase2_load_integration,,as_prescribed,wb:v1.2:TB:2026-02-26:B1LI
+2026-02-27-B1LI,2026-02-27,b1_load_integration,95,10% / 3.3 mph + Technical Strength + Movement Fluency,120-135,3.02,tb3x5;pu3x4;ss3x6;dh2x30s;bear2x30s,6,fed,controlled,phase2_load_integration,phase2b_expansion,as_prescribed,wb:v1.2:TB:2026-02-27:B1LI
+2026-02-28-B1LI,2026-02-28,b1_load_integration,90,10% / 3.3 mph + Technical Strength + Movement Fluency,120-135,3.02,tb3x5;pu3x4;ss3x6;dh2x30s;bear2x30s,6,fed,controlled,phase2_load_integration,high_activity_output,as_prescribed,wb:v1.2:TB:2026-02-28:B1LI
+2026-03-01-B1LI,2026-03-01,b1_load_integration,90,10% / 3.3 mph + Technical Strength + Movement Fluency,120-135,3.02,tb3x5;pu3x4;ss3x6;dh2x30s;bear2x30s,6,fed,controlled,phase2_load_integration,,as_prescribed,wb:v1.2:TB:2026-03-01:B1LI
+2026-03-02-B1LI,2026-03-02,b1_load_integration,90,10% / 3.3 mph + Technical Strength + Mobility Integration,120-135,3.02,tb3x5;pu3x4;ss3x6;dh2x30s;bear2x30s;mob,8,fed,controlled,phase2_load_integration,,as_prescribed,wb:v1.3:TB:2026-03-02:B1LI
+2026-03-03-LI,2026-03-03,load_integration,60,Technical Strength + Mobility Integration,115-130,,tb3x5;pu3x4;ss3x6;dh2x30s;mob,6,fed,controlled,canonical,,as_prescribed,wb:v1.3:TB:2026-03-03:LI
+2026-03-04-B1G,2026-03-04,b1_ground_integration,90,10% / 3.3 mph + Movement Fluency + Mobility,120-135,3.02,dh2x30s;bear3x30s;mob;walk55,5,fed,controlled,ground_integration,,as_prescribed,wb:v1.3:TB:2026-03-04:B1G
+2026-03-05-B1,2026-03-05,b1,50,10% / 3.2 mph nasal breathing,115-125,2.67,Incline Walk only,4,fed,controlled,b1_standard,planned_recovery_variant,planned_recovery_variant,wb:v1.3:TB:2026-03-05:B1
+2026-03-06-LI,2026-03-06,load_integration,60,Technical Strength + Mobility Integration,115-130,,tb3x5;pu3x4;ss3x6;dh2x30s;mob,6,fed,controlled,canonical,,as_prescribed,wb:v1.3:TB:2026-03-06:LI
+2026-03-07-B1G,2026-03-07,b1_ground_integration,85,10% / 3.3 mph + Movement Fluency,120-135,3.02,dh2x30s;bear3x30s;walk55,5,fed,controlled,ground_integration,,as_prescribed,wb:v1.3:TB:2026-03-07:B1G
+2026-03-08-AR,2026-03-08,active_recovery,30-45,Mobility / Sauna,<100,,mob;sauna;light_walk,2,fed,controlled,recovery,sauna_cold_rinse,planned_recovery,wb:v1.3:TB:2026-03-08:AR
+2026-03-09-B1,2026-03-09,b1,55,10% / 3.3 mph nasal breathing,120-130,3.02,mob;walk55,5,fed,controlled,b1_standard,,as_prescribed,wb:v1.4:TB:2026-03-09:B1
+2026-03-10-LI,2026-03-10,load_integration,60,Technical Strength + Mobility Integration,115-130,,tb3x5;pu3x4;dh3x30s;mob;walk10,6,fed,controlled,canonical,,as_prescribed,wb:v1.4:TB:2026-03-10:LI
+2026-03-11-B1G,2026-03-11,b1_ground_integration,90,10% / 3.3 mph + Movement Fluency,120-135,3.02,bear3x30s;crab3x30s;mob;walk55,6,fed,controlled,ground_integration,,as_prescribed,wb:v1.4:TB:2026-03-11:B1G
+2026-03-12-B1,2026-03-12,b1,50,10% / 3.2 mph nasal breathing,115-125,2.75,Incline Walk only,4,fed,controlled,b1_standard,planned_recovery_variant,planned_recovery_variant,wb:v1.4:TB:2026-03-12:B1
+2026-03-13-LI,2026-03-13,load_integration,60,Technical Strength + Mobility Integration,115-130,,tb3x5;pu3x4;dh3x30s;mob;walk10,6,fed,controlled,canonical,,as_prescribed,wb:v1.4:TB:2026-03-13:LI
+2026-03-14-B1G,2026-03-14,b1_ground_integration,85,10% / 3.3 mph + Movement Fluency,120-135,3.02,bear3x30s;crab3x30s;mob;walk55,6,fed,controlled,ground_integration,,as_prescribed,wb:v1.4:TB:2026-03-14:B1G
+2026-03-15-AR,2026-03-15,active_recovery,30-45,Mobility + Sauna,<100,,mob;sauna;light_walk,2,fed,controlled,recovery,,planned_recovery,wb:v1.4:TB:2026-03-15:AR
+2026-03-16-B1,2026-03-16,b1,55,10% / 3.3 mph nasal breathing,120-130,3.02,walk55,5,fed,controlled,b1_standard,,as_prescribed,wb:v1.5:TB:2026-03-16:B1
+2026-03-17-LI,2026-03-17,load_integration,60,Technical Strength + Mobility Integration,115-130,,tb3x5;pu3x4;dh3x30s;mob;walk10,6,fed,controlled,canonical,,as_prescribed,wb:v1.5:TB:2026-03-17:LI
+2026-03-18-B1G,2026-03-18,b1_ground_integration,90,10% / 3.3 mph + Movement Fluency,120-135,3.02,bear3x30s;crab3x30s;mob;walk55,6,fed,controlled,ground_integration,,as_prescribed,wb:v1.5:TB:2026-03-18:B1G
+2026-03-19-B1,2026-03-19,b1,50,10% / 3.2 mph nasal breathing,115-125,2.75,mob,4,fed,controlled,b1_standard,planned_recovery_variant,planned_recovery_variant,wb:v1.5:TB:2026-03-19:B1
+2026-03-20-LI,2026-03-20,load_integration,60,Technical Strength + Mobility Integration,115-130,,tb3x5;pu3x4;dh3x30s;mob;walk10,6,fed,controlled,canonical,,as_prescribed,wb:v1.5:TB:2026-03-20:LI
+2026-03-21-B1G,2026-03-21,b1_ground_integration,90,10% / 3.3 mph + Movement Fluency,120-135,3.02,bear3x30s;crab3x30s;mob;walk55,6,fed,controlled,ground_integration,,as_prescribed,wb:v1.5:TB:2026-03-21:B1G
+2026-03-22-AR,2026-03-22,active_recovery,45,Mobility + Sauna,<110,2.33,mob;sauna;light_walk,2,fed,controlled,recovery,,planned_recovery,wb:v1.5:TB:2026-03-22:AR
+2026-03-23-B1,2026-03-23,b1,55,10% / 3.3 mph nasal,120-135,3.02,-,5,fed,controlled,b1_standard,thc_abstinence_transition;relationship_stressor,as_prescribed,wb:v1.6:TB:2026-03-23:B1
+2026-03-24-LI,2026-03-24,load_integration,60,Technical strength + mobility,115-130,,tb3x5;pu3x4;dh3x30s;mob;walk10,6,fed,controlled,canonical,thc_abstinence_transition,as_prescribed,wb:v1.6:TB:2026-03-24:LI
+2026-03-25-B1G,2026-03-25,b1_ground_integration,90,10% / 3.3 mph + movement fluency,120-135,3.02,bear3x30s;crab3x30s;mob,6,fed,controlled,ground_integration,thc_abstinence_transition;low_energy,as_prescribed,wb:v1.6:TB:2026-03-25:B1G
+2026-03-26-B1,2026-03-26,b1,50,5% / 3.1 mph nasal,<115,2.58,mob,4,fed,controlled,b1_standard,thc_abstinence_transition;low_energy;planned_recovery_variant,planned_recovery_variant,wb:v1.6:TB:2026-03-26:B1
+2026-03-27-LI,2026-03-27,load_integration,60,Technical strength + mobility.                  DOWNREGULATED,115-130,,tb3x5;pu3x4;dh3x30s;mob;walk10,6,fed,controlled,canonical,acute_gi_clearance;downregulated;structure_preserved,recovery_modified,wb:v1.6:TB:2026-03-27:LI
+2026-03-29-AR,2026-03-29,active_recovery,45,Mobility + sauna optional,<100,,mob;sauna;light_walk,2,fed,controlled,recovery,post_downregulation;active_recovery,planned_recovery,wb:v1.6:TB:2026-03-29:AR
+2026-03-30-B1,2026-03-30,b1,55,L (Z2),120-135,3.02,-,5,,controlled,b1_standard,,as_prescribed,wb:v1.7:TB:2026-03-30:B1
+2026-03-31-LI,2026-03-31,load_integration,60,L,115-130,,tb3x5;pu3x4;dh3x30s;mob;walk10,6,,controlled,canonical,emotional_disturbance_resolved,as_prescribed,wb:v1.7:TB:2026-03-31:LI
+2026-04-01-B1,2026-04-01,b1,55,L (Z2),120-135,3.02,-,4,fasted,controlled,b1_standard,fasted;low_friction,as_prescribed,wb:v1.7:TB:2026-04-01:B1
+2026-04-01-LI,2026-04-01,load_integration,60,L,115-130,,tb3x5;pu3x4;dh3x30s;mob;walk10,6,,controlled,canonical,stable_full_stack,as_prescribed,wb:v1.7:TB:2026-04-01:LI
+2026-04-02-B1,2026-04-02,b1,55,L (Z2),120-135,3.02,-,4,fasted,controlled,b1_standard,fasted,as_prescribed,wb:v1.7:TB:2026-04-02:B1
+2026-04-02-LI,2026-04-02,load_integration,60,L,115-130,,tb3x5;pu3x4;dh3x30s;mob;walk10,6,,controlled,canonical,localized_palm_sensitivity,as_prescribed,wb:v1.7:TB:2026-04-02:LI
+2026-04-03-B1,2026-04-03,b1,55,L (Z2),120-135,3.02,-,4,fasted,controlled,b1_standard,fasted;reduced_perceived_strain;time_compression,as_prescribed,wb:v1.7:TB:2026-04-03:B1
+2026-04-03-LI,2026-04-03,load_integration,60,L,115-130,,tb3x5;pu3x4;dh3x30s;mob;walk10,6,,controlled,canonical,grip_tolerance_improved;reduced_perceived_effort,as_prescribed,wb:v1.7:TB:2026-04-03:LI
+2026-04-04-B1,2026-04-04,b1,55,L (Z2),120-135,3.02,-,4,,controlled,b1_standard,lower_back_signal,as_prescribed,wb:v1.7:TB:2026-04-04:B1
+2026-04-04-LI,2026-04-04,load_integration,60,L,115-130,,tb3x5;pu3x4;dh3x30s;mob;walk10,6,,controlled,canonical,lower_back_signal_resolved;grip_improved,as_prescribed,wb:v1.7:TB:2026-04-04:LI
+2026-04-05-B1,2026-04-05,b1,55,L (Z2),120-135,3.02,-,4,,controlled,b1_standard,prolonged_standing_kneeling,as_prescribed,wb:v1.7:TB:2026-04-05:B1
+2026-04-05-LI,2026-04-05,load_integration,60,L,115-130,,tb3x5;pu3x4;dh3x30s;mob;walk10,6,,controlled,canonical,prolonged_standing_kneeling;grip_stability,as_prescribed,wb:v1.7:TB:2026-04-05:LI
 2026-04-06-B1,2026-04-06,b1,55,L (Z2),120-135,3.02,,4,fasted,controlled,b1_standard,,as_prescribed,wb:v1.8:TB:2026-04-06:B1
 2026-04-06-LI,2026-04-06,load_integration,60,L,115-130,,tb3x5;pu3x4;dh3x30;mob;walk10n,6,fed,controlled,canonical,trap_bar_load_probe,protocol_variation,wb:v1.8:TB:2026-04-06:LI
 2026-04-07-B1,2026-04-07,b1,55,L (Z2),120-135,3.02,,4,fasted,controlled,b1_standard,,as_prescribed,wb:v1.8:TB:2026-04-07:B1
