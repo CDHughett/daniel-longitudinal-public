@@ -2438,6 +2438,110 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 
 ### Fixed
 
+#### September 6 August 17 morning-weight source reconciliation
+
+- Resolved the source discrepancy for the `2026-08-17` morning bodyweight identified during the September 4 delayed Wednesday audit.
+
+- The canonical `Daily Biomarkers` dataset records:
+
+  ```text
+  2026-08-17 morning bodyweight:
+  234.1 lb
+  ```
+
+- The earlier `235.1 lb` value in `methodology/2026-08-snapshot-collection-plan.md` was confirmed as a downstream execution-log transcription error rather than a canonical dataset error.
+
+- Corrected the August snapshot collection-plan execution log from:
+
+  ```text
+  235.1 lb
+  →
+  234.1 lb
+  ```
+
+- Added a source-reconciliation note to the collection plan preserving:
+  - the prior transcribed value
+  - the controlling canonical value
+  - the reconciliation date
+  - the distinction between source correction and downstream documentation correction
+
+- Added `DQ-009` to `data/DATA_QUALITY_NOTES.md` with status:
+
+  ```text
+  Corrected / resolved
+  ```
+
+- DQ-009 records that:
+  - the canonical structured dataset already contained `234.1 lb`
+  - the Week 33 daily sequence already used `234.1 lb`
+  - no canonical dataset correction was required
+  - no biological value was reconstructed from neighboring observations
+  - no arithmetic inference was used to select the source value
+  - the Week 33 weekly mean was already correct
+
+- Preserved the Week 33 morning-weight sequence as:
+
+  ```text
+  234.1, 235.7, 235.8, 236.5, 235.5, 235.5, 234.4 lb
+  ```
+
+- Preserved the Week 33 arithmetic mean as:
+
+  ```text
+  235.36 lb
+  reported as 235.4 lb
+  ```
+
+- Updated `reports/2026-W33.md` to remove unresolved-discrepancy language and identify DQ-009 as the completed source-reconciliation record.
+
+- Updated `reports/2026-W34.md` and `reports/2026-W35.md` to remove inherited provisional Week 33 bodyweight caveats while preserving all weekly values and interpretations.
+
+- Updated `LATEST.md` to:
+  - treat `234.1 lb` as the reconciled canonical August 17 value
+  - treat the W33 `235.4 lb` mean as final rather than provisional
+  - remove the resolved discrepancy from current uncertainties and current work
+  - preserve DQ-009 provenance in the current executive state
+
+- Reformatted `reports/2026-W33.md` with improved Markdown hierarchy and scanability without altering numerical, biological, prediction, phase, or model-error content.
+
+- Historical September 4 audit language remains preserved as an accurate record that the discrepancy was unresolved at the time of that audit.
+
+- Classification:
+
+  ```text
+  Canonical dataset correction:
+  No
+
+  Downstream transcription correction:
+  Yes
+
+  Week 33 weekly-mean change:
+  No
+
+  Biological interpretation change:
+  No
+
+  Model-error scoring change:
+  No
+
+  Phase change:
+  No
+
+  Release-version change:
+  No
+  ```
+
+- The reconciliation does not:
+  - modify any source artifact checksum
+  - modify the canonical Daily Biomarkers value
+  - change record 043 status
+  - reopen or rescore records 041, 042, 044, 045, or 046
+  - change UDI or primary concordance values
+  - alter the B1 + Load Integration architecture
+  - declare Phase 2D
+  - activate Phase 3
+  - create a new formal release
+
 #### September 4 canonical sleep-tag and semantic-attribution remediation
 
 - Corrected one narrow canonical sleep-tag inconsistency identified during the `2026-09-04` delayed Wednesday audit.
@@ -2812,6 +2916,10 @@ Biological interpretation belongs in `/reports`. This file records repository, d
   committed before outcome access
   execution conditions recorded after collection
 
+  2026-08-17 morning bodyweight:
+  234.1 lb canonical
+  DQ-009 resolved
+
   Record 045:
   completed under its independent preregistered boundary
   registration provenance preserved
@@ -2917,6 +3025,16 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 ---
 
 ### Release status
+
+- No release-version increment was made for the September 6 DQ-009 source-reconciliation batch.
+
+- The September 6 correction is limited to:
+  - one downstream morning-weight transcription correction
+  - one resolved data-quality record
+  - downstream report and executive-state reconciliation
+  - Week 33 Markdown presentation cleanup
+
+- It introduces no new biological observation, model-error outcome, protocol state, phase state, checksum change, or release artifact.
 
 - No release-version increment was made for the September 4 delayed-audit remediation.
 
