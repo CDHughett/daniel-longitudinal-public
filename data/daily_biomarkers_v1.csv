@@ -1,0 +1,8 @@
+date,morning_weight_lb,daily_hrv_ms,resting_hr_bpm,daily_avg_hr_bpm,body_temp_f,mood_state,energy_state,gi_state,stomach_state,pain_state,sweating_state,context_tags,source_ref
+2026-08-24,235.6,60,54,64,96.58,calm,high,calm,calm,none,none,post_snapshot_recovery;nocturnal_autonomic_variability;function_preserved,private_workbook:Daniel_Dataset_v1.28:Daily Biomarkers:2026-08-24
+2026-08-25,235.3,63,48,63,96.37,calm,high,calm,calm,none,none,post_snapshot_recovery;strong_overnight_recovery,private_workbook:Daniel_Dataset_v1.28:Daily Biomarkers:2026-08-25
+2026-08-26,233.4,56,46,67,96.60,calm,high,calm,calm,none,none,post_snapshot_recovery;subjective_wearable_sleep_stage_discordance,private_workbook:Daniel_Dataset_v1.28:Daily Biomarkers:2026-08-26
+2026-08-27,233.1,59,46,67,96.55,calm,high,calm,calm,none,none,post_snapshot_recovery;yard_work;high_incidental_activity,private_workbook:Daniel_Dataset_v1.28:Daily Biomarkers:2026-08-27
+2026-08-28,232.2,58,48,68,95.77,calm,high,calm,calm,none,none,post_snapshot_recovery;nocturnal_autonomic_variability;late_night_rebound,private_workbook:Daniel_Dataset_v1.28:Daily Biomarkers:2026-08-28
+2026-08-29,232.8,53,53,67,96.51,calm,high,calm,calm,none,none,post_snapshot_recovery;nocturnal_autonomic_variability;schedule_displacement;function_preserved,private_workbook:Daniel_Dataset_v1.28:Daily Biomarkers:2026-08-29
+2026-08-30,234.1,65,52,62,96.39,calm,high,calm,calm,none,none,post_snapshot_recovery;strong_overnight_recovery;high_incidental_activity,private_workbook:Daniel_Dataset_v1.28:Daily Biomarkers:2026-08-30
