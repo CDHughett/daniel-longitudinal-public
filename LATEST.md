@@ -300,25 +300,17 @@ Mean:
 reported as 233.8 lb
 ```
 
-Current structured Week 33 morning average:
+Reconciled Week 33 morning average:
 
 ```text
 235.4 lb
 ```
 
-A source discrepancy remains for the 2026-08-17 Week 33 morning-bodyweight value:
+[DQ-009](data/DATA_QUALITY_NOTES.md) establishes `234.1 lb` as the canonical 2026-08-17 morning-bodyweight value. The earlier `235.1 lb` value in the August snapshot collection-plan execution log was a downstream transcription error.
 
-```text
-current structured dataset:
-234.1 lb
+The Week 33 daily sequence already used `234.1 lb`, so the `235.4 lb` Week 33 average remains unchanged and is no longer provisional.
 
-earlier Week 33 / August collection record:
-235.1 lb
-```
-
-The Week 33 `235.4 lb` average therefore remains provisional pending source reconciliation.
-
-Using the current structured Week 33 calculation, the Week 34 average was approximately 1.6 lb lower.
+Using the reconciled Week 33 average, the Week 34 average was approximately 1.6 lb lower.
 
 Lower caloric intake and increasing physique clarification were also reported.
 
@@ -869,7 +861,6 @@ Current uncertainties include:
 - local mechanical ownership across lower back, shoulders, elbows, hands, and forearms
 - bodyweight interpretation under fluid and GI-timing variation
 - cross-method DEXA and Bod Pod comparability limits
-- unresolved 2026-08-17 Week 33 morning-bodyweight source discrepancy
 
 **Primary risk:** allowing increasingly favorable behavioral evidence to trigger premature phase or protocol progression.
 
@@ -881,7 +872,7 @@ Current uncertainties include:
 
 **Prediction risk:** allowing later recovery to retrospectively repair record 046 or later adaptation to rescore record 042.
 
-**Current response:** preserve ordinary B1 + Load Integration, retain favorable and unfavorable observations, keep closed prediction boundaries fixed, await the pending molecular source domain, preserve the unresolved Week 33 weight discrepancy until source reconciliation, and continue retrospective interpretation without forced phase progression.
+**Current response:** preserve ordinary B1 + Load Integration, retain favorable and unfavorable observations, keep closed prediction boundaries fixed, await the pending molecular source domain, preserve DQ-009 source-reconciliation provenance, and continue retrospective interpretation without forced phase progression.
 
 ---
 
@@ -941,6 +932,7 @@ Completed:
 - record 045 closed / supported
 - record 046 closed / failed_autonomic_recompression
 - record 043 preserved open pending TruDiagnostic provider results
+- DQ-009 resolved the 2026-08-17 morning-weight discrepancy; `234.1 lb` controls and the W33 `235.4 lb` mean remains unchanged
 - Phase 2 preserved
 - consolidation / lock-in observation preserved
 - formal Phase 2D left undeclared
@@ -951,7 +943,6 @@ Current work:
 - continued observation of autonomic-function relationships
 - continued natural portability observation
 - continued bodyweight / intake observation
-- reconciliation of the 2026-08-17 Week 33 morning-bodyweight source discrepancy
 - awaiting August TruDiagnostic provider results
 - preservation and privacy review of future molecular source artifacts
 - structured transcription of molecular values only after source verification
