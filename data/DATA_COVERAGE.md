@@ -35,7 +35,7 @@ A provider export may improve provenance without becoming the canonical analytic
 | Daily biomarkers / subjective state | **Structured longitudinal** | `daily_biomarkers_v1.csv`; 210 continuous daily rows, 2026-02-09 through 2026-09-06 |
 | Training exposure | **Structured longitudinal** | `training_blocks_v1.csv`; 339 session rows through 2026-09-06 |
 | Context / perturbation events | **Structured event index** | `context_events_v1.csv`; 44 bounded events through 2026-09-03 |
-| Sleep | **Structured longitudinal + source-preserved historical coverage** | Canonical curated sleep has 203 continuous daily rows through 2026-08-30; broader RingConn episode export retained separately |
+| Sleep | **Structured longitudinal + source-preserved historical coverage** | Canonical curated sleep has 210 continuous daily rows through 2026-09-06; broader RingConn episode export retained separately |
 | Recovery / vital signs | **Structured + narrative + source-preserved** | HRV, resting HR, daily average HR, sleep HR, SpO₂ and related signals appear across curated data, reports, screenshots and direct exports |
 | Body composition | **Snapshot-based** | DEXA, Bod Pod and scale-weight measurements occur at discrete intervals using differing methods |
 | Blood biomarkers | **Snapshot-based** | Periodic laboratory panels; not every private health source is public |
@@ -318,8 +318,8 @@ Canonical sleep:
 Current public interval:
 
 ```text
-2026-02-09 through 2026-08-30
-203 continuous daily records
+2026-02-09 through 2026-09-06
+210 continuous daily records
 ```
 
 Known field-level quality restrictions remain documented in:
