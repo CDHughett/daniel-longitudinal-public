@@ -8,7 +8,7 @@ The repository uses two read-only Python validators.
 python tools/validate_repository.py
 ```
 
-Checks repository mechanics, links, CSV structure, checksum manifests, canonical sleep continuity, weekly-report continuity, protected model-error state, release metadata, and source-export integrity.
+Checks repository mechanics, links, CSV structure, checksum manifests, canonical sleep continuity, weekly-report continuity, current-state surface and live-coverage alignment, protected model-error state, release metadata, and source-export integrity.
 
 ## Machine-readable layer validator
 
@@ -46,6 +46,6 @@ A pass means the implemented mechanical/semantic checks passed. It does not esta
 
 ## CI
 
-`.github/workflows/validate.yml` runs both validators on pushes to `main` and on pull requests.
+`.github/workflows/validate.yml` runs both validators on pushes to `main`, on pull requests, and by manual workflow dispatch.
 
 The workflow is intentionally lightweight and read-only.

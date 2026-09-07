@@ -61,6 +61,9 @@ The local validator reviews:
 - canonical sleep continuity
 - governed sleep-data warnings
 - weekly-report continuity
+- exactly one active weekly report, with the latest report required to be active
+- current-state alignment across `LATEST.md`, `README.md`, and `INDEX.md`
+- live row-count and endpoint alignment between canonical datasets and `data/DATA_COVERAGE.md`
 - model-error continuity
 - protected open status of record 043
 - preserved closed/adjudicated state of records 041, 042, 044, 045, and 046

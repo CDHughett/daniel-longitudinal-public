@@ -1786,7 +1786,7 @@ It was created as a separate prediction rather than extending the already comple
 
 # Current Methodology State
 
-As of 2026-08-31:
+As of the 2026-09-07 W35 → W36 rollover:
 
 ```text
 Data collection:
@@ -1866,14 +1866,10 @@ Closed recent model-error records:
 046
 
 Canonical sleep:
-Current endpoint: see `../data/DATA_COVERAGE.md`
-203 daily rows
+Current row count and endpoint: see `../data/DATA_COVERAGE.md`
 
-Current weekly window:
-2026-W36
-
-Most recent closed weekly window:
-2026-W35
+Current weekly lifecycle:
+See `../LATEST.md`
 
 Canonical phase:
 Phase 2 — Load Integration
@@ -2098,6 +2094,19 @@ The 2026-08-31 revision:
 - leaves formal Phase 2D undeclared
 
 The 2026-08-31 revision is a live-state alignment only.
+
+On 2026-09-07, this guide was aligned after Week 35 closeout and Week 36 initialization.
+
+The 2026-09-07 revision:
+
+- advances the current methodology-state checkpoint through the W35 → W36 rollover
+- removes duplicated live sleep counts and weekly-window identifiers from this directory guide in favor of `data/DATA_COVERAGE.md` and `LATEST.md`
+- preserves record 043 as the sole open and unscored model-error record pending TruDiagnostic provider evidence
+- preserves records 041, 042, 044, 045, and 046 as closed historical outcomes
+- preserves Phase 2 — Load Integration and the consolidation / lock-in observation substate
+- preserves the underlying B1 + Load Integration architecture
+- leaves formal Phase 2D undeclared
+- does not alter prediction wording, scoring boundaries, biological values, protocol state, phase state, release metadata, or DOI
 
 It does not alter:
 

@@ -12,6 +12,43 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 
 ## [Unreleased]
 
+### Changed
+
+#### September 7 post-rollover verification hardening
+
+- Performed a live post-W35/W36 rollover semantic and verification audit.
+- Confirmed the W35 public arithmetic and the synchronized daily, sleep, training, context-event, report, model-error, provenance, snapshot, and current-state layers.
+- Removed stale duplicated live-state fields from `methodology/README.md` and redirected volatile weekly/coverage state to `LATEST.md` and `data/DATA_COVERAGE.md`.
+- Clarified that the preserved records 041–044 preregistration artifact remains governing for open record 043 and provenance for the closed companion records.
+- Hardened the core validator so exactly one weekly report must be active and the active report must be the latest report.
+- Added current-state synchronization checks for `LATEST.md`, `README.md`, `INDEX.md`, and the canonical coverage summary in `data/DATA_COVERAGE.md`.
+- Updated validation documentation to match the stronger checks.
+- Updated CI to current SHA-pinned `actions/checkout` and `actions/setup-python` v7 releases and enabled manual validation dispatch.
+- Added a selective post-rollover audit record under `docs/audits/`.
+
+Classification:
+
+```text
+Biological-value change:
+No
+
+Canonical dataset-value change:
+No
+
+Prediction wording or outcome change:
+No
+
+Phase or protocol change:
+No
+
+Release or DOI change:
+No
+
+Documentation / validation / CI hardening:
+Yes
+```
+
+
 
 ### Changed
 

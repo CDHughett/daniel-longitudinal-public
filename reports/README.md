@@ -266,7 +266,7 @@ Reports may not:
 
 Candidate evidence remains provisional until evaluated under the applicable methodology.
 
-Current rules for records 041–044 are documented in:
+The preserved preregistered plan for records 041–044 remains the governing artifact for open record 043 and the provenance artifact for closed records 041, 042, and 044:
 
 [`../methodology/open_prediction_evaluation_plan_041_044.md`](../methodology/open_prediction_evaluation_plan_041_044.md)
 

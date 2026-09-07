@@ -182,6 +182,7 @@ class Validator:
         self.check_checksum_manifests()
         self.check_canonical_sleep()
         self.check_weekly_reports()
+        self.check_current_state_surfaces()
         self.check_model_error_register()
         self.check_release_metadata()
         self.check_ringconn_source_exports()
@@ -972,22 +973,30 @@ class Validator:
             ):
                 active.append(path.name)
 
-        if len(active) > 1:
-            self.report.error(
-                check,
-                (
-                    "Multiple active weekly reports: "
-                    f"{', '.join(active)}"
-                ),
-            )
-        elif len(active) == 0:
-            self.report.warning(
-                check,
-                (
-                    "No weekly report is explicitly "
-                    "marked Active"
-                ),
-            )
+        if len(active) != 1:
+            if active:
+                self.report.error(
+                    check,
+                    (
+                        "Multiple active weekly reports: "
+                        f"{', '.join(active)}"
+                    ),
+                )
+            else:
+                self.report.error(
+                    check,
+                    "No weekly report is explicitly marked Active",
+                )
+        elif numbers:
+            expected_active = f"2026-W{max(numbers):02d}.md"
+            if active[0] != expected_active:
+                self.report.error(
+                    check,
+                    (
+                        "Latest weekly report must be Active: "
+                        f"expected {expected_active}, got {active[0]}"
+                    ),
+                )
 
         if not missing and weekly:
             active_text = (
@@ -1013,6 +1022,145 @@ class Validator:
         self.report.metrics[
             "active_weekly_reports"
         ] = active
+
+    def check_current_state_surfaces(self) -> None:
+        check = "current state surfaces"
+        failures = 0
+
+        report_dir = self.root / "reports"
+        weekly = sorted(
+            (
+                path
+                for path in report_dir.glob("2026-W*.md")
+                if WEEK_RE.match(path.name)
+            ),
+            key=lambda path: int(WEEK_RE.match(path.name).group(1)),
+        )
+
+        if len(weekly) < 2:
+            self.report.error(
+                check,
+                "At least two weekly reports are required for current/prior alignment",
+            )
+            return
+
+        latest_week = weekly[-1].stem
+        prior_week = weekly[-2].stem
+
+        surface_expectations = {
+            "LATEST.md": [
+                f"- **Active window:** {latest_week}",
+                f"- **Prior window:** {prior_week} closed",
+            ],
+            "README.md": [
+                f"Active weekly window:\n{latest_week}",
+                f"Most recent closed window:\n{prior_week}",
+            ],
+            "INDEX.md": [
+                f"Active weekly window:\n{latest_week}",
+                f"Most recent closed window:\n{prior_week}",
+            ],
+        }
+
+        for relative_path, expected_snippets in surface_expectations.items():
+            path = self.root / relative_path
+            if not path.is_file():
+                failures += 1
+                self.report.error(check, f"Missing current-state surface: {relative_path}")
+                continue
+            surface_text = path.read_text(encoding="utf-8-sig", errors="replace")
+            for snippet in expected_snippets:
+                if snippet not in surface_text:
+                    failures += 1
+                    self.report.error(
+                        check,
+                        f"{relative_path} is not aligned to {latest_week}/{prior_week}: missing {snippet!r}",
+                    )
+
+        def date_profile(relative_path: str, date_field: str) -> tuple[int, str, str]:
+            header, rows = read_csv(self.root / relative_path)
+            if date_field not in header:
+                raise ValueError(f"{relative_path}: missing {date_field}")
+            index = header.index(date_field)
+            dates = [
+                date.fromisoformat(row[index].strip())
+                for row in rows
+                if len(row) > index and row[index].strip()
+            ]
+            if not dates:
+                raise ValueError(f"{relative_path}: no represented dates")
+            return len(rows), min(dates).isoformat(), max(dates).isoformat()
+
+        try:
+            daily_rows, daily_start, daily_end = date_profile(
+                "data/daily_biomarkers_v1.csv", "date"
+            )
+            sleep_rows, _, sleep_end = date_profile(
+                "data/sleep_longitudinal_v1.csv", "date"
+            )
+            training_rows, _, training_end = date_profile(
+                "data/training_blocks_v1.csv", "date"
+            )
+            context_rows, _, context_end = date_profile(
+                "data/context_events_v1.csv", "end_date"
+            )
+        except (OSError, UnicodeError, csv.Error, ValueError) as exc:
+            self.report.error(check, f"Cannot derive live coverage profile: {exc}")
+            return
+
+        if not (daily_end == sleep_end == training_end):
+            failures += 1
+            self.report.error(
+                check,
+                (
+                    "Aligned daily/sleep/training endpoints diverge: "
+                    f"daily={daily_end}, sleep={sleep_end}, training={training_end}"
+                ),
+            )
+
+        coverage_path = self.root / "data/DATA_COVERAGE.md"
+        if not coverage_path.is_file():
+            failures += 1
+            self.report.error(check, "Missing data/DATA_COVERAGE.md")
+        else:
+            coverage = coverage_path.read_text(encoding="utf-8-sig", errors="replace")
+            expected_coverage = [
+                (
+                    "daily biomarkers",
+                    f"`daily_biomarkers_v1.csv`; {daily_rows} continuous daily rows, {daily_start} through {daily_end}",
+                ),
+                (
+                    "training",
+                    f"`training_blocks_v1.csv`; {training_rows} session rows through {training_end}",
+                ),
+                (
+                    "context events",
+                    f"`context_events_v1.csv`; {context_rows} bounded events through {context_end}",
+                ),
+                (
+                    "canonical sleep",
+                    f"Canonical curated sleep has {sleep_rows} continuous daily rows through {sleep_end}",
+                ),
+            ]
+            for label, snippet in expected_coverage:
+                if snippet not in coverage:
+                    failures += 1
+                    self.report.error(
+                        check,
+                        f"DATA_COVERAGE.md {label} summary is stale or missing: {snippet!r}",
+                    )
+
+        if failures == 0:
+            self.report.pass_(
+                check,
+                (
+                    f"{latest_week} active / {prior_week} prior; live coverage aligns at "
+                    f"daily={daily_rows}, sleep={sleep_rows}, training={training_rows}, context={context_rows}"
+                ),
+            )
+
+        self.report.metrics["current_active_week"] = latest_week
+        self.report.metrics["current_prior_week"] = prior_week
 
     def check_model_error_register(self) -> None:
         check = "model error"
