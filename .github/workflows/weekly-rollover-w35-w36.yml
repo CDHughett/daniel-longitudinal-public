@@ -40,6 +40,29 @@ jobs:
           PY
           python tools/_rollover_w35_to_w36_once.py
 
+      - name: Normalize generated Markdown whitespace
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import subprocess
+
+          changed = subprocess.check_output(
+              ["git", "diff", "--name-only", "--", "*.md"],
+              text=True,
+          ).splitlines()
+
+          for name in changed:
+              path = Path(name)
+              text = path.read_text(encoding="utf-8")
+              lines = text.splitlines()
+              cleaned = "\n".join(line.rstrip(" \t") for line in lines)
+              if text.endswith("\n"):
+                  cleaned += "\n"
+              if cleaned != text:
+                  path.write_text(cleaned, encoding="utf-8")
+          PY
+
       - name: Validate prepared repository
         shell: bash
         run: |
