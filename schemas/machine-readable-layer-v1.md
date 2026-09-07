@@ -80,18 +80,22 @@ private_workbook:Daniel_Dataset_v1.28:Training Blocks:2026-08-30:LI
 private_pdf:Daniel_Dataset_v1.0:Training Blocks:2026-02-09
 ```
 
-## Accepted Historical Training Aliases
+## Standardized Training Provenance
 
-The first training backfill used:
+All current live `training_blocks_v1.csv` rows use the canonical private-source forms above.
+
+Historical aliases created during the initial backfill, such as:
 
 ```text
 wb:v<version>:TB:<YYYY-MM-DD>[:<session_label>]
 pdf:v<version>:TB:<YYYY-MM-DD>[:<session_label>]
 ```
 
-These aliases remain valid for existing v1 rows and are deprecated for new rows.
+remain visible in Git history only.
 
-A future migration may normalize them only if it is deterministic and preserves traceability.
+They are not accepted in the current live v1 dataset or by the current machine-readable validator.
+
+The 2026-09-07 migration changed `source_ref` provenance locators only; non-`source_ref` training fields were preserved.
 
 ## File-Level Private Provenance
 
@@ -235,7 +239,7 @@ Current dataset: 325 session rows, `2026-02-09` through `2026-08-30`.
 | `equipment_context` | category or blank | contextual / classified | extensible `snake_case` |
 | `context_tags` | semicolon list or blank | contextual / classified | extensible `snake_case` |
 | `protocol_status` | category | contextual / classified | extensible governed vocabulary |
-| `source_ref` | text | provenance | required; canonical or accepted v1 alias |
+| `source_ref` | text | provenance | required; canonical private-source form |
 
 ## `duration_min` — v1 Compatibility Semantics
 

@@ -170,7 +170,7 @@ Current canonical private-source syntax is documented in:
 
 [`schemas/machine-readable-layer-v1.md`](./schemas/machine-readable-layer-v1.md)
 
-Historical training rows retain accepted v1 aliases such as `wb:v1.28:TB:...`; those aliases are deprecated for new rows but remain valid historical provenance.
+All 325 current training rows now use the canonical `private_workbook:` / `private_pdf:` source-reference grammar. Earlier `wb:v...` / `pdf:v...` aliases remain visible in Git history only.
 
 File-level private-source SHA-256 values are registered only when the exact private file was available. Missing hashes are left missing rather than reconstructed.
 

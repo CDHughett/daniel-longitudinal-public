@@ -1,9 +1,12 @@
 # Verification Guide
 
-This repository supports external verification at two distinct levels:
+This repository supports external verification at three complementary automated/mechanical levels:
 
 1. **artifact verification** — confirms the identity of registered files
-2. **repository validation** — checks the mechanical integrity and governed structure of the archive
+2. **repository validation** — checks the mechanical integrity and governance-protected structure of the archive
+3. **machine-readable semantic validation** — checks the current daily/training/event schema contract and cross-file relationships
+
+Human semantic review remains a separate layer after automated validation.
 
 Verification and temporal anchoring are related, but they are not the same layer.
 
@@ -80,6 +83,45 @@ It does not:
 - change prediction status
 - rewrite history
 - alter checksums
+
+---
+
+## Level 3 — Machine-Readable Semantic Validation
+
+The machine-readable validator checks the public daily/training/event layer defined in:
+
+```text
+schemas/machine-readable-layer-v1.md
+```
+
+Validator path:
+
+```text
+tools/validate_machine_readable.py
+```
+
+Current protected checks include:
+
+- exact required headers
+- 203 continuous daily-biomarker rows through 2026-08-30
+- unique daily dates
+- 325 protected v1 training-session rows
+- 325 unique training `session_id` values
+- canonical `private_workbook:` / `private_pdf:` `source_ref` syntax
+- date parsing and represented-interval bounds
+- numeric-field syntax
+- controlled vocabularies
+- `snake_case` extensible vocabularies
+- v1 `duration_min` expression semantics
+- 42 unique context-event IDs
+- event interval ordering
+- related-week syntax
+- model-error cross-reference existence
+- cross-file date relationships
+
+The protected 325-session count is intentional for the currently frozen v1 interval through 2026-08-30. A governed future extension must update the dataset and validator together.
+
+This validator is also read-only. It does not infer missing sessions, rewrite source references, classify biological meaning, or repair the archive.
 
 ---
 
@@ -218,9 +260,9 @@ JSON output includes:
 - validation metrics
 - individual findings
 
-This mode may support future local automation.
+Both validators support local command-line execution, and the repository validator supports `--json` structured output.
 
-It does not currently imply a GitHub Actions workflow.
+Repository validation is also executed automatically in GitHub Actions as described below.
 
 ---
 
@@ -1177,6 +1219,10 @@ Verification may establish that:
 - original registered prediction narratives remain preserved for records 041–046
 - release metadata agrees
 - a downloaded ZIP is mechanically safe and internally consistent
+- the current machine-readable daily/training/event layer satisfies its declared schema checks
+- all 325 protected v1 training sessions remain present and uniquely identified
+- current live training `source_ref` values use the canonical private-source grammar
+- registered private-source hashes match the exact private bytes when those bytes are independently available for comparison
 
 Verification does not independently establish:
 
@@ -1220,7 +1266,7 @@ That status should change only after direct provider confirmation.
 For a routine local verification cycle:
 
 1. pull or download the latest repository state
-2. run the local validator
+2. run both read-only validators (`tools/validate_repository.py` and `tools/validate_machine_readable.py`)
 3. review all errors
 4. review warnings against `data/DATA_QUALITY_NOTES.md`
 5. spot-check recently changed artifacts
@@ -1266,21 +1312,55 @@ These remain human audit responsibilities.
 
 # GitHub Actions Status
 
-Automated GitHub Actions validation is currently deferred.
+Lightweight automated validation is active through:
 
-The local validator should first demonstrate stability across repeated manual audit cycles.
+```text
+.github/workflows/validate.yml
+```
 
-Before remote automation is added, review:
+The workflow runs on:
 
-- false-positive rate
-- governed-warning behavior
-- operating-system consistency
-- ZIP-versus-directory consistency
-- maintenance burden
-- protected-data exposure
-- failure-notification behavior
+- pushes to `main`
+- pull requests
 
-Local read-only validation remains the current operating model.
+It uses read-only repository permissions:
+
+```text
+contents: read
+```
+
+and executes:
+
+```text
+python tools/validate_repository.py
+python tools/validate_machine_readable.py
+```
+
+The workflow is intentionally narrow. It does not edit files, commit corrections, publish releases, or replace human semantic review.
+
+Local execution remains available for audits, ZIP verification, and debugging.
+
+---
+
+# Private-Source Provenance Verification
+
+Private source-file identity, when an exact retained `Daniel_Dataset` source was available for hashing, is documented in:
+
+```text
+data/source_provenance/daniel_dataset_private_manifest.csv
+```
+
+The manifest separates row-level `source_ref` provenance from file-level SHA-256 identity.
+
+A blank private-source hash is deliberate when the exact immutable historical source file was not available during registration. No digest is reconstructed from a screenshot, later workbook, or public extract.
+
+AI-assisted maintenance is disclosed in:
+
+```text
+docs/AI_ASSISTANCE.md
+```
+
+AI assistance does not create a new evidence tier and does not override the repository source hierarchy.
 
 ---
 
@@ -1485,3 +1565,35 @@ The update does not alter:
 - any physical protocol exposure
 - any phase declaration
 - any release metadata
+
+---
+
+## 2026-09-07 Machine-Readable Hardening Closeout
+
+The September 7 closeout added the third validation layer and activated lightweight CI.
+
+The live training layer was standardized to 325 canonical private-source `source_ref` values. During the migration, an intermediate commit temporarily contained only 251 training rows. The full 325-row source set was immediately restored, the migration was rerun deterministically, and the validator was hardened with an explicit 325-row guard so that equivalent accidental row loss now fails validation.
+
+GitHub Actions run `34069047100` on commit `5e6801d0c08f506d7fc49ad3852a960d1558dbf3` completed successfully:
+
+```text
+core repository validator:
+PASS
+0 errors
+2 governed warnings
+9 passes
+
+machine-readable validator:
+PASS
+0 errors
+0 warnings
+203 daily rows
+325 training rows / 325 unique session IDs
+42 context events
+canonical source refs required
+```
+
+The two core-validator warnings remain the already governed canonical-sleep issues documented in `data/DATA_QUALITY_NOTES.md`.
+
+This hardening did not change biological measurements, canonical sleep values, registered prediction wording, adjudicated model-error outcomes, phase status, physical protocol state, release version, release date, or DOI.
+

@@ -12,6 +12,55 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 
 ## [Unreleased]
 
+### Changed
+
+#### September 7 machine-readable hardening closeout
+
+- Standardized all 325 live `data/training_blocks_v1.csv` `source_ref` values to the canonical `private_workbook:` / `private_pdf:` provenance grammar.
+- The finalized migration changes provenance locators only; the 325-session set and all non-`source_ref` training field values are preserved.
+- Updated `schemas/machine-readable-layer-v1.md`, `DATA_DICTIONARY.md`, `DATASET_OVERVIEW.md`, and `data/source_provenance/README.md` so current documentation no longer treats compact `wb:v...` / `pdf:v...` aliases as valid live-v1 values. Those aliases remain inspectable in Git history.
+- Hardened `tools/validate_machine_readable.py` to require the protected 325-session v1 training set and canonical source-reference syntax in addition to its existing identifier, date, vocabulary, numeric, duration, event-interval, cross-file, and model-error-reference checks.
+- Revised `VERIFICATION.md` to document three verification levels: artifact verification, core repository validation, and machine-readable semantic validation.
+- Confirmed lightweight read-only CI is active through `.github/workflows/validate.yml` on pushes to `main` and pull requests.
+- Recorded private `Daniel_Dataset` source-file hashes where exact immutable retained workbooks were available, while leaving unavailable historical hashes explicitly missing rather than reconstructing them.
+- Added `docs/AI_ASSISTANCE.md` and preserved AI assistance as a maintenance/analysis aid rather than a source-evidence class.
+- Added the future model-error schema design separating registration status from model-calibration scope while leaving current protected v1 records unchanged.
+- Canonicalized the current UDI expansion as **Unobstructed Delta Index** on current-facing documentation surfaces.
+
+Migration correction record:
+
+- Commit `aa7297fa6c5dff5f8db528773978ee2bd46ef592` was a transient intermediate source-ref migration state that unintentionally contained 251 rather than 325 training rows.
+- The existing validator correctly checked syntax and uniqueness but did not yet protect the expected session count, so that intermediate state passed CI.
+- Commit `7dff020bb7763edde880346d05ef7c955368f281` restored the full 325-row training source before migration.
+- Commit `5167b4afd743a7594f6cd3bebe490411d09db0a4` then canonicalized 325 source references across 325 rows and verified 325 unique session IDs before committing.
+- Commit `5e6801d0c08f506d7fc49ad3852a960d1558dbf3` added the explicit 325-row validator guard and canonical-only source-reference requirement.
+- GitHub Actions run `34069047100` on that hardened state completed successfully: core validator PASS with 0 errors, 2 governed sleep warnings, and 9 passes; machine-readable validator PASS with 0 errors and 0 warnings, reporting 203 daily rows, 325 training rows / 325 unique session IDs, and 42 context events.
+
+Classification:
+
+```text
+Biological-value change:
+No
+
+Canonical sleep change:
+No
+
+Training non-provenance field change:
+No
+
+Prediction wording or outcome change:
+No
+
+Phase or protocol change:
+No
+
+Release or DOI change:
+No
+
+Provenance/schema/validation hardening:
+Yes
+```
+
 ### Added
 
 #### September 6 machine-readable data-layer expansion

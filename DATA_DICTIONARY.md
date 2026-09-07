@@ -331,14 +331,9 @@ private_workbook:Daniel_Dataset_v<version>:<sheet>:<YYYY-MM-DD>[:label]
 private_pdf:Daniel_Dataset_v<version>:<sheet>:<YYYY-MM-DD>[:label]
 ```
 
-Historical training rows may retain accepted v1 aliases:
+All current live training rows use the canonical private-source forms above.
 
-```text
-wb:v<version>:TB:<YYYY-MM-DD>[:label]
-pdf:v<version>:TB:<YYYY-MM-DD>[:label]
-```
-
-Those aliases remain valid historical provenance but are deprecated for new rows.
+Legacy `wb:v...` and `pdf:v...` aliases remain visible in Git history as provenance of the initial backfill, but they are no longer valid in the live v1 dataset.
 
 File-level private-source SHA-256 values, where exact retained files were available, are recorded in:
 

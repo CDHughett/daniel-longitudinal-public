@@ -72,13 +72,15 @@ Public rows use a `source_ref` locator such as:
 private_workbook:Daniel_Dataset_v1.28:Daily Biomarkers:2026-08-30
 ```
 
-or the accepted historical training alias:
+Training rows use the same canonical locator family, for example:
 
 ```text
-wb:v1.28:TB:2026-08-30:LI
+private_workbook:Daniel_Dataset_v1.28:Training Blocks:2026-08-30:LI
 ```
 
-Those values locate the source version/tab/date.
+Earlier compact `wb:v...` / `pdf:v...` aliases remain in Git history but were standardized out of the live v1 training dataset on 2026-09-07.
+
+These values locate the source version/tab/date.
 
 They are not file hashes.
 
