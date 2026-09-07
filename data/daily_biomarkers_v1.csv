@@ -202,3 +202,10 @@ date,morning_weight_lb,daily_hrv_ms,resting_hr_bpm,daily_avg_hr_bpm,body_temp_f,
 2026-08-28,232.2,58,48,68,95.77,calm,high,calm,calm,none,none,post_snapshot_recovery;nocturnal_autonomic_variability;late_night_rebound,private_workbook:Daniel_Dataset_v1.28:Daily Biomarkers:2026-08-28
 2026-08-29,232.8,53,53,67,96.51,calm,high,calm,calm,none,none,post_snapshot_recovery;nocturnal_autonomic_variability;schedule_displacement;function_preserved,private_workbook:Daniel_Dataset_v1.28:Daily Biomarkers:2026-08-29
 2026-08-30,234.1,65,52,62,96.39,calm,high,calm,calm,none,none,post_snapshot_recovery;strong_overnight_recovery;high_incidental_activity,private_workbook:Daniel_Dataset_v1.28:Daily Biomarkers:2026-08-30
+2026-08-31,234.1,57,47,64,96.49,calm,high,calm,calm,none,none,post_snapshot_recovery;nocturnal_autonomic_variability;function_preserved,private_workbook:Daniel_Dataset_v1.29:Daily Biomarkers:2026-08-31
+2026-09-01,233.4,63,55,65,96.39,calm,high,calm,calm,none,none,post_snapshot_recovery;nocturnal_autonomic_variability;function_preserved,private_workbook:Daniel_Dataset_v1.29:Daily Biomarkers:2026-09-01
+2026-09-02,231.1,49,45,67,96.19,calm,high,calm,calm,none,none,post_snapshot_recovery;low_salience_execution;function_preserved,private_workbook:Daniel_Dataset_v1.29:Daily Biomarkers:2026-09-02
+2026-09-03,232.1,53,57,68,96.85,calm,high,calm,calm,none,none,post_snapshot_recovery;yard_work;high_incidental_activity;function_preserved,private_workbook:Daniel_Dataset_v1.29:Daily Biomarkers:2026-09-03
+2026-09-04,232.3,52,55,65,96.53,calm,high,calm,calm,none,none,post_snapshot_recovery;nocturnal_autonomic_variability;lower_intake_context;function_preserved,private_workbook:Daniel_Dataset_v1.29:Daily Biomarkers:2026-09-04
+2026-09-05,233.1,59,55,67,96.42,calm,high,calm,calm,none,none,post_snapshot_recovery;nocturnal_autonomic_variability;biomarker_function_dissociation;function_preserved,private_workbook:Daniel_Dataset_v1.29:Daily Biomarkers:2026-09-05
+2026-09-06,234.3,63,50,61,96.19,calm,high,calm,calm,none,none,post_snapshot_recovery;strong_overnight_recovery;function_preserved,private_workbook:Daniel_Dataset_v1.29:Daily Biomarkers:2026-09-06

@@ -15,7 +15,8 @@ from pathlib import Path
 DAILY_PATH = Path("data/daily_biomarkers_v1.csv")
 TRAINING_PATH = Path("data/training_blocks_v1.csv")
 EVENTS_PATH = Path("data/context_events_v1.csv")
-EXPECTED_TRAINING_ROWS = 325
+PROTECTED_TRAINING_PREFIX_END = date(2026, 8, 30)
+EXPECTED_PROTECTED_TRAINING_ROWS = 325
 MODEL_ERROR_PATHS = (
     Path("data/model_error/model_error_gap_v1.csv"),
     Path("data/model_error/historical/model_error_gap_reconstructed.csv"),
@@ -276,15 +277,14 @@ def validate(root: Path) -> Results:
 
     # Training blocks
     require_unique([row.get("session_id", "") for row in training], f"{TRAINING_PATH}.session_id", results)
-    if len(training) != EXPECTED_TRAINING_ROWS:
-        results.error(
-            f"{TRAINING_PATH}: expected {EXPECTED_TRAINING_ROWS} protected v1 session rows, found {len(training)}"
-        )
+    protected_training_rows = 0
     for index, row in enumerate(training, start=2):
         loc = f"{TRAINING_PATH}:{index}"
         session_id = row.get("session_id", "")
         parsed = parse_date(row.get("date", ""), f"{loc}.date", results)
         if parsed:
+            if parsed <= PROTECTED_TRAINING_PREFIX_END:
+                protected_training_rows += 1
             if not session_id.startswith(parsed.isoformat() + "-"):
                 results.error(f"{loc}.session_id: must begin with session date; got {session_id!r}")
             if daily_min and daily_max and not (daily_min <= parsed <= daily_max):
@@ -298,10 +298,18 @@ def validate(root: Path) -> Results:
         validate_snake(row.get("protocol_status", ""), f"{loc}.protocol_status", results, allow_blank=False)
         source_ref = row.get("source_ref", "")
         validate_source_ref(source_ref, f"{loc}.source_ref", results)
+    if protected_training_rows != EXPECTED_PROTECTED_TRAINING_ROWS:
+        results.error(
+            f"{TRAINING_PATH}: expected {EXPECTED_PROTECTED_TRAINING_ROWS} protected sessions "
+            f"through {PROTECTED_TRAINING_PREFIX_END.isoformat()}, found {protected_training_rows}"
+        )
     results.metrics["training_blocks"] = {
         "rows": len(training),
         "unique_session_ids": len({row.get("session_id", "") for row in training}),
-        "expected_rows": EXPECTED_TRAINING_ROWS,
+        "protected_prefix_end": PROTECTED_TRAINING_PREFIX_END.isoformat(),
+        "protected_prefix_rows": protected_training_rows,
+        "expected_protected_prefix_rows": EXPECTED_PROTECTED_TRAINING_ROWS,
+        "append_rows": len(training) - protected_training_rows,
         "canonical_source_refs_required": True,
     }
 

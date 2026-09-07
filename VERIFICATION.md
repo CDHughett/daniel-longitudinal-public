@@ -103,23 +103,23 @@ tools/validate_machine_readable.py
 Current protected checks include:
 
 - exact required headers
-- 203 continuous daily-biomarker rows through 2026-08-30
+- continuous daily-biomarker dates across the represented interval
 - unique daily dates
-- 325 protected v1 training-session rows
-- 325 unique training `session_id` values
+- the protected 325-session historical training prefix through 2026-08-30
+- unique training `session_id` values across the live appendable dataset
 - canonical `private_workbook:` / `private_pdf:` `source_ref` syntax
 - date parsing and represented-interval bounds
 - numeric-field syntax
 - controlled vocabularies
 - `snake_case` extensible vocabularies
 - v1 `duration_min` expression semantics
-- 42 unique context-event IDs
+- unique context-event IDs across the current event index
 - event interval ordering
 - related-week syntax
 - model-error cross-reference existence
 - cross-file date relationships
 
-The protected 325-session count is intentional for the currently frozen v1 interval through 2026-08-30. A governed future extension must update the dataset and validator together.
+The historical training prefix through 2026-08-30 remains protected at exactly 325 sessions. Governed rows after that boundary may append without changing the protected prefix; the validator reports both prefix and live-row counts.
 
 This validator is also read-only. It does not infer missing sessions, rewrite source references, classify biological meaning, or repair the archive.
 
@@ -1220,7 +1220,7 @@ Verification may establish that:
 - release metadata agrees
 - a downloaded ZIP is mechanically safe and internally consistent
 - the current machine-readable daily/training/event layer satisfies its declared schema checks
-- all 325 protected v1 training sessions remain present and uniquely identified
+- the protected 325-session training prefix remains present and live session identifiers remain unique
 - current live training `source_ref` values use the canonical private-source grammar
 - registered private-source hashes match the exact private bytes when those bytes are independently available for comparison
 
@@ -1596,4 +1596,3 @@ canonical source refs required
 The two core-validator warnings remain the already governed canonical-sleep issues documented in `data/DATA_QUALITY_NOTES.md`.
 
 This hardening did not change biological measurements, canonical sleep values, registered prediction wording, adjudicated model-error outcomes, phase status, physical protocol state, release version, release date, or DOI.
-

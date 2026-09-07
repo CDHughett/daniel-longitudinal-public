@@ -26,11 +26,7 @@ Canonical date format:
 YYYY-MM-DD
 ```
 
-Current shared represented interval:
-
-```text
-2026-02-09 through 2026-08-30
-```
+The represented machine-readable interval begins on `2026-02-09`. Current live row counts and endpoints are maintained in [`../data/DATA_COVERAGE.md`](../data/DATA_COVERAGE.md).
 
 A later data extension may advance the end date without changing the v1 field structure.
 
@@ -117,7 +113,7 @@ date
 
 Exactly one row per represented date.
 
-Current dataset: 203 continuous rows, `2026-02-09` through `2026-08-30`.
+Current row count and endpoint are maintained in [`../data/DATA_COVERAGE.md`](../data/DATA_COVERAGE.md).
 
 ## Fields
 
@@ -219,7 +215,7 @@ session_id
 
 Every session ID must be unique. Multiple sessions may occur on one date.
 
-Current dataset: 325 session rows, `2026-02-09` through `2026-08-30`.
+Current row count and endpoint are maintained in [`../data/DATA_COVERAGE.md`](../data/DATA_COVERAGE.md). The historical prefix through `2026-08-30` is protected at 325 sessions; later governed rows append without changing that prefix.
 
 ## Fields
 
@@ -373,7 +369,7 @@ YYYY-MM-DD-##
 
 Date prefix must equal `start_date`.
 
-Current dataset: 42 bounded events, current event coverage through `2026-08-29`.
+Current event count and endpoint are maintained in [`../data/DATA_COVERAGE.md`](../data/DATA_COVERAGE.md).
 
 ## Fields
 

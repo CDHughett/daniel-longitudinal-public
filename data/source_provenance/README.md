@@ -40,7 +40,7 @@ The manifest records:
 
 ## Hash Boundary
 
-A SHA-256 is registered only when the exact private source file was available as a retained file during the 2026-09-06 provenance pass.
+A SHA-256 is registered only when the exact private source file is available as retained bytes at the time of registration. The initial historical pass occurred on 2026-09-06; the exact retained v1.29 workbook was registered during the 2026-09-07 weekly closeout.
 
 No hash is reconstructed from:
 
@@ -105,6 +105,8 @@ Not every private source version necessarily contributes an event row.
 `context_events_v1.csv` contains only context that meets the event-classification boundary.
 
 The public files are curated extracts, not byte-identical transformations of the private workbook.
+
+Date-cell normalization is permitted when a retained workbook mixes Excel serial dates and day-of-month integer encodings. The public date index is normalized to the supported calendar date without altering the associated biological, sleep, or training value. This normalization is recorded in the manifest note for the affected source version.
 
 ---
 
