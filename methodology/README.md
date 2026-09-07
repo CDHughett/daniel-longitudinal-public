@@ -1866,14 +1866,14 @@ Closed recent model-error records:
 046
 
 Canonical sleep:
-Continuous through 2026-08-30
+Current endpoint: see `../data/DATA_COVERAGE.md`
 203 daily rows
 
 Current weekly window:
-2026-W35
+2026-W36
 
 Most recent closed weekly window:
-2026-W34
+2026-W35
 
 Canonical phase:
 Phase 2 — Load Integration

@@ -27,24 +27,19 @@ This is not a controlled clinical trial and does not establish population-level 
 
 The September 2026 structured-data expansion created an aligned daily/session/event layer from governed source material.
 
-| Dataset | Unit of observation | Current public coverage |
-|---|---|---|
-| [`data/daily_biomarkers_v1.csv`](./data/daily_biomarkers_v1.csv) | one row per represented day | 203 continuous rows, 2026-02-09 through 2026-08-30 |
-| [`data/sleep_longitudinal_v1.csv`](./data/sleep_longitudinal_v1.csv) | one canonical governed wake-date row | 203 continuous rows, 2026-02-09 through 2026-08-30 |
-| [`data/training_blocks_v1.csv`](./data/training_blocks_v1.csv) | one row per training/session block | 325 sessions, 2026-02-09 through 2026-08-30 |
-| [`data/context_events_v1.csv`](./data/context_events_v1.csv) | one row per bounded contextual event | 42 events, current event coverage through 2026-08-29 |
+| Dataset | Unit of observation |
+|---|---|
+| [`data/daily_biomarkers_v1.csv`](./data/daily_biomarkers_v1.csv) | one row per represented day |
+| [`data/sleep_longitudinal_v1.csv`](./data/sleep_longitudinal_v1.csv) | one canonical governed wake-date row |
+| [`data/training_blocks_v1.csv`](./data/training_blocks_v1.csv) | one row per training/session block |
+| [`data/context_events_v1.csv`](./data/context_events_v1.csv) | one row per bounded contextual event |
 
-The three newer datasets are curated public extracts derived primarily from private `Daniel_Dataset_v1.0`–`v1.28` source states and governed contemporaneous evidence.
+Current row counts and coverage endpoints are maintained in [`data/DATA_COVERAGE.md`](./data/DATA_COVERAGE.md), rather than duplicated across orientation documents.
 
-They are not raw provider exports.
+The newer datasets are curated public extracts derived primarily from private `Daniel_Dataset_v1.x` source states and governed contemporaneous evidence. They are not raw provider exports.
 
-Their schema contract is:
-
-[`schemas/machine-readable-layer-v1.md`](./schemas/machine-readable-layer-v1.md)
-
-Private-source file identity is documented, when the exact retained file was available for hashing, in:
-
-[`data/source_provenance/daniel_dataset_private_manifest.csv`](./data/source_provenance/daniel_dataset_private_manifest.csv)
+Schema contract: [`schemas/machine-readable-layer-v1.md`](./schemas/machine-readable-layer-v1.md)
+Private-source identity: [`data/source_provenance/daniel_dataset_private_manifest.csv`](./data/source_provenance/daniel_dataset_private_manifest.csv)
 
 ---
 
@@ -170,7 +165,7 @@ Current canonical private-source syntax is documented in:
 
 [`schemas/machine-readable-layer-v1.md`](./schemas/machine-readable-layer-v1.md)
 
-All 325 current training rows now use the canonical `private_workbook:` / `private_pdf:` source-reference grammar. Earlier `wb:v...` / `pdf:v...` aliases remain visible in Git history only.
+The protected historical training prefix contains 325 sessions through 2026-08-30. All live training rows use the canonical `private_workbook:` / `private_pdf:` source-reference grammar; later governed rows append without changing that protected prefix. Earlier `wb:v...` / `pdf:v...` aliases remain visible in Git history only.
 
 File-level private-source SHA-256 values are registered only when the exact private file was available. Missing hashes are left missing rather than reconstructed.
 
@@ -289,7 +284,7 @@ The appropriate framing is a governed longitudinal case archive and methodologic
 
 ## Archive Principle
 
-**Artifacts first.  
-Structured evidence second.  
-Interpretation third.  
+**Artifacts first.
+Structured evidence second.
+Interpretation third.
 Narrative last.**

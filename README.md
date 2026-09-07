@@ -38,10 +38,10 @@ Operating substate:
 Consolidation / lock-in observation
 
 Active weekly window:
-2026-W35
+2026-W36
 
 Most recent closed window:
-2026-W34
+2026-W35
 
 Open model-error record:
 043
@@ -77,26 +77,21 @@ For current biological, training, recovery, and report details, use [`LATEST.md`
 
 # Machine-Readable Core
 
-The public archive now contains an aligned daily/session/event layer:
+The public archive contains an aligned daily/session/event layer:
 
-| Dataset | Unit | Current public coverage |
-|---|---|---|
-| [`data/daily_biomarkers_v1.csv`](./data/daily_biomarkers_v1.csv) | one row per represented day | 203 continuous rows through 2026-08-30 |
-| [`data/sleep_longitudinal_v1.csv`](./data/sleep_longitudinal_v1.csv) | one canonical governed wake-date row | 203 continuous rows through 2026-08-30 |
-| [`data/training_blocks_v1.csv`](./data/training_blocks_v1.csv) | one row per training/session block | 325 sessions through 2026-08-30 |
-| [`data/context_events_v1.csv`](./data/context_events_v1.csv) | one row per bounded contextual event | 42 events through 2026-08-29 |
+| Dataset | Unit |
+|---|---|
+| [`data/daily_biomarkers_v1.csv`](./data/daily_biomarkers_v1.csv) | one row per represented day |
+| [`data/sleep_longitudinal_v1.csv`](./data/sleep_longitudinal_v1.csv) | one canonical governed wake-date row |
+| [`data/training_blocks_v1.csv`](./data/training_blocks_v1.csv) | one row per training/session block |
+| [`data/context_events_v1.csv`](./data/context_events_v1.csv) | one row per bounded contextual event |
 
-The newer daily/training/event datasets are curated public extracts derived primarily from governed private `Daniel_Dataset_v1.0`–`v1.28` source states.
+**Live row counts and coverage endpoints are maintained in one place:** [`data/DATA_COVERAGE.md`](./data/DATA_COVERAGE.md).
 
-They are not raw provider exports.
+The daily/training/event datasets are curated public extracts derived primarily from governed private `Daniel_Dataset_v1.x` source states. They are not raw provider exports.
 
-Schema:
-
-[`schemas/machine-readable-layer-v1.md`](./schemas/machine-readable-layer-v1.md)
-
-Private-source provenance:
-
-[`data/source_provenance/`](./data/source_provenance/)
+Schema: [`schemas/machine-readable-layer-v1.md`](./schemas/machine-readable-layer-v1.md)
+Private-source provenance: [`data/source_provenance/`](./data/source_provenance/)
 
 ---
 

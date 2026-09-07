@@ -43,7 +43,7 @@ The current machine-readable core includes:
 - [`../data/training_blocks_v1.csv`](../data/training_blocks_v1.csv)
 - [`../data/context_events_v1.csv`](../data/context_events_v1.csv)
 
-The current aligned interval includes 203 daily biomarker rows, 203 canonical sleep rows, 325 training-session rows, and 42 context-event rows.
+Current row counts and coverage endpoints are maintained in [`../data/DATA_COVERAGE.md`](../data/DATA_COVERAGE.md) rather than repeated here.
 
 ---
 
@@ -97,7 +97,7 @@ Look for unresolved findings, corrected findings, source conflicts, and restrict
 
 Start with:
 
-[`../reports/2026-W34.md`](../reports/2026-W34.md)
+[`../reports/2026-W35.md`](../reports/2026-W35.md)
 
 Then inspect the underlying structured rows for the same window.
 

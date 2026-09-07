@@ -42,7 +42,7 @@ Then inspect the core structured files:
 - [`../data/training_blocks_v1.csv`](../data/training_blocks_v1.csv)
 - [`../data/context_events_v1.csv`](../data/context_events_v1.csv)
 
-Current public coverage includes 203 aligned daily biomarker rows, 203 canonical sleep rows, 325 training-session rows, and 42 bounded context-event rows across the current represented interval.
+Use [`../data/DATA_COVERAGE.md`](../data/DATA_COVERAGE.md) for current row counts and endpoints; they are intentionally not duplicated here.
 
 Check whether:
 
@@ -73,7 +73,7 @@ The private-source manifest registers SHA-256 only when the exact retained priva
 
 Open the most recent closed report:
 
-[`../reports/2026-W34.md`](../reports/2026-W34.md)
+[`../reports/2026-W35.md`](../reports/2026-W35.md)
 
 Then compare its material values with the applicable structured datasets.
 

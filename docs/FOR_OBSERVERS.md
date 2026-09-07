@@ -35,16 +35,12 @@ source evidence
 
 The current public structured layer contains:
 
-| Layer | File | Current coverage |
-|---|---|---|
-| Daily biomarkers / subjective state | [`daily_biomarkers_v1.csv`](../data/daily_biomarkers_v1.csv) | 203 continuous daily rows through 2026-08-30 |
-| Canonical sleep | [`sleep_longitudinal_v1.csv`](../data/sleep_longitudinal_v1.csv) | 203 continuous daily rows through 2026-08-30 |
-| Training exposure | [`training_blocks_v1.csv`](../data/training_blocks_v1.csv) | 325 session rows through 2026-08-30 |
-| Context events | [`context_events_v1.csv`](../data/context_events_v1.csv) | 42 bounded events through 2026-08-29 |
+- [`daily_biomarkers_v1.csv`](../data/daily_biomarkers_v1.csv)
+- [`sleep_longitudinal_v1.csv`](../data/sleep_longitudinal_v1.csv)
+- [`training_blocks_v1.csv`](../data/training_blocks_v1.csv)
+- [`context_events_v1.csv`](../data/context_events_v1.csv)
 
-The schema is defined in:
-
-[`../schemas/machine-readable-layer-v1.md`](../schemas/machine-readable-layer-v1.md)
+Live row counts and coverage endpoints are maintained in [`../data/DATA_COVERAGE.md`](../data/DATA_COVERAGE.md). The schema is defined in [`../schemas/machine-readable-layer-v1.md`](../schemas/machine-readable-layer-v1.md).
 
 This materially improves machine readability, but it does not make the archive exhaustive or experimentally controlled.
 
@@ -394,13 +390,13 @@ For complete navigation, use [`../INDEX.md`](../INDEX.md).
 
 ## Status
 
-**Public archive:** Active  
-**Structured-data posture:** Daily/session/event machine-readable core active  
-**Interpretation model:** Retrospective and artifact-bound  
-**Prediction model:** Registered and isolated  
-**UDI canonical name:** Unobstructed Delta Index  
-**Environmental posture:** Defined protocol constraints with incomplete control  
-**Correction posture:** Source-backed and traceable  
-**AI-assistance posture:** Disclosed, subordinate to source evidence  
-**Phase posture:** Retrospectively declared  
+**Public archive:** Active
+**Structured-data posture:** Daily/session/event machine-readable core active
+**Interpretation model:** Retrospective and artifact-bound
+**Prediction model:** Registered and isolated
+**UDI canonical name:** Unobstructed Delta Index
+**Environmental posture:** Defined protocol constraints with incomplete control
+**Correction posture:** Source-backed and traceable
+**AI-assistance posture:** Disclosed, subordinate to source evidence
+**Phase posture:** Retrospectively declared
 **Validation posture:** Local read-only validation + lightweight CI + human semantic review

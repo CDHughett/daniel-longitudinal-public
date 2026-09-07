@@ -32,10 +32,10 @@ Operating substate:
 Consolidation / lock-in observation
 
 Active weekly window:
-2026-W35
+2026-W36
 
 Most recent closed window:
-2026-W34
+2026-W35
 
 Open model-error record:
 043
@@ -53,39 +53,26 @@ August TruDiagnostic provider results:
 pending
 ```
 
-Current state source:
-
-[`LATEST.md`](./LATEST.md)
+Current state source: [`LATEST.md`](./LATEST.md)
 
 ---
 
 # Machine-Readable Core
 
-The current structured public layer is:
+The structured public layer is:
 
-| Dataset | Role | Current public coverage |
-|---|---|---|
-| [`data/daily_biomarkers_v1.csv`](./data/daily_biomarkers_v1.csv) | daily physiology + bounded subjective state | 203 continuous daily rows through 2026-08-30 |
-| [`data/sleep_longitudinal_v1.csv`](./data/sleep_longitudinal_v1.csv) | canonical sleep | 203 continuous daily rows through 2026-08-30 |
-| [`data/training_blocks_v1.csv`](./data/training_blocks_v1.csv) | session-level training exposure | 325 sessions through 2026-08-30 |
-| [`data/context_events_v1.csv`](./data/context_events_v1.csv) | bounded contextual/perturbation events | 42 events through 2026-08-29 |
-| [`data/model_error/model_error_gap_v1.csv`](./data/model_error/model_error_gap_v1.csv) | prediction → outcome → error | governed forward-logged register |
+| Dataset | Role |
+|---|---|
+| [`data/daily_biomarkers_v1.csv`](./data/daily_biomarkers_v1.csv) | daily physiology + bounded subjective state |
+| [`data/sleep_longitudinal_v1.csv`](./data/sleep_longitudinal_v1.csv) | canonical sleep |
+| [`data/training_blocks_v1.csv`](./data/training_blocks_v1.csv) | session-level training exposure |
+| [`data/context_events_v1.csv`](./data/context_events_v1.csv) | bounded contextual/perturbation events |
+| [`data/model_error/model_error_gap_v1.csv`](./data/model_error/model_error_gap_v1.csv) | prediction → outcome → error |
 
-Schema:
-
-[`schemas/machine-readable-layer-v1.md`](./schemas/machine-readable-layer-v1.md)
-
-Definitions:
-
-[`DATA_DICTIONARY.md`](./DATA_DICTIONARY.md)
-
-Coverage:
-
-[`data/DATA_COVERAGE.md`](./data/DATA_COVERAGE.md)
-
-Quality notes:
-
-[`data/DATA_QUALITY_NOTES.md`](./data/DATA_QUALITY_NOTES.md)
+Live row counts/endpoints: [`data/DATA_COVERAGE.md`](./data/DATA_COVERAGE.md)
+Schema: [`schemas/machine-readable-layer-v1.md`](./schemas/machine-readable-layer-v1.md)
+Definitions: [`DATA_DICTIONARY.md`](./DATA_DICTIONARY.md)
+Quality notes: [`data/DATA_QUALITY_NOTES.md`](./data/DATA_QUALITY_NOTES.md)
 
 ---
 
@@ -124,8 +111,9 @@ Current August physical source artifacts are preserved under [`snapshots/2026-08
 # Reports
 
 - [`reports/README.md`](./reports/README.md) — report lifecycle
-- [`reports/2026-W35.md`](./reports/2026-W35.md) — current active report
-- [`reports/2026-W34.md`](./reports/2026-W34.md) — most recent closed report
+- [`reports/2026-W36.md`](./reports/2026-W36.md) — current active report
+- [`reports/2026-W35.md`](./reports/2026-W35.md) — most recent closed report
+- [`reports/2026-W34.md`](./reports/2026-W34.md) — prior ordinary continuity window
 - [`reports/2026-W33.md`](./reports/2026-W33.md) — August testing/reload window
 - [`reports/`](./reports/) — full weekly report series
 

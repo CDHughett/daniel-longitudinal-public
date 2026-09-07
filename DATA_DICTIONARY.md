@@ -148,14 +148,7 @@ context events
 model-error outcomes
 ```
 
-Current public coverage:
-
-| Dataset | Unit | Current coverage |
-|---|---|---|
-| `daily_biomarkers_v1.csv` | daily | 203 continuous rows, 2026-02-09 through 2026-08-30 |
-| `sleep_longitudinal_v1.csv` | governed wake date | 203 continuous rows, 2026-02-09 through 2026-08-30 |
-| `training_blocks_v1.csv` | session/block | 325 rows, 2026-02-09 through 2026-08-30 |
-| `context_events_v1.csv` | bounded event | 42 rows, current event coverage through 2026-08-29 |
+Current row counts and coverage endpoints are maintained in [`data/DATA_COVERAGE.md`](./data/DATA_COVERAGE.md).
 
 These files have different units of observation and are not row-for-row equivalent.
 

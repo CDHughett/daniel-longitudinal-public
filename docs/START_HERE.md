@@ -48,20 +48,15 @@ For the complete repository map, use [`INDEX.md`](../INDEX.md).
 
 The current aligned structured layer includes:
 
-| Dataset | Current public coverage |
-|---|---|
-| [`data/daily_biomarkers_v1.csv`](../data/daily_biomarkers_v1.csv) | 203 continuous daily rows through 2026-08-30 |
-| [`data/sleep_longitudinal_v1.csv`](../data/sleep_longitudinal_v1.csv) | 203 continuous daily rows through 2026-08-30 |
-| [`data/training_blocks_v1.csv`](../data/training_blocks_v1.csv) | 325 session rows through 2026-08-30 |
-| [`data/context_events_v1.csv`](../data/context_events_v1.csv) | 42 bounded contextual events through 2026-08-29 |
+- [`data/daily_biomarkers_v1.csv`](../data/daily_biomarkers_v1.csv)
+- [`data/sleep_longitudinal_v1.csv`](../data/sleep_longitudinal_v1.csv)
+- [`data/training_blocks_v1.csv`](../data/training_blocks_v1.csv)
+- [`data/context_events_v1.csv`](../data/context_events_v1.csv)
 
-The three daily/training/event files are governed by:
+Live row counts and coverage endpoints are maintained in [`data/DATA_COVERAGE.md`](../data/DATA_COVERAGE.md).
 
-[`schemas/machine-readable-layer-v1.md`](../schemas/machine-readable-layer-v1.md)
-
-Private `Daniel_Dataset_v1.x` source-file provenance is documented in:
-
-[`data/source_provenance/`](../data/source_provenance/)
+Schema: [`schemas/machine-readable-layer-v1.md`](../schemas/machine-readable-layer-v1.md)
+Private-source provenance: [`data/source_provenance/`](../data/source_provenance/)
 
 ---
 
@@ -128,9 +123,9 @@ Disclosure:
 
 ## Public Posture
 
-Traceable.  
-Conservative.  
-Machine-readable.  
-Auditable.  
-Longitudinal.  
+Traceable.
+Conservative.
+Machine-readable.
+Auditable.
+Longitudinal.
 Artifact-first.

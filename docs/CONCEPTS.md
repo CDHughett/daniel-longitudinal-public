@@ -443,21 +443,11 @@ Current open model-error record:
 Recently closed model-error records:
 041, 042, 044, 045, 046
 
-Daily biomarker coverage:
-203 continuous daily rows through 2026-08-30
-
-Canonical sleep coverage:
-203 continuous daily rows through 2026-08-30
-
-Training-block coverage:
-325 sessions through 2026-08-30
-
-Context-event coverage:
-42 bounded events through 2026-08-29
-
 UDI canonical name:
 Unobstructed Delta Index
 ```
+
+Current machine-readable row counts and endpoints are maintained in [`../data/DATA_COVERAGE.md`](../data/DATA_COVERAGE.md).
 
 Historical documents may retain terminology that was correct for their original date/state.
 
