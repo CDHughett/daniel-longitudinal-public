@@ -26,7 +26,19 @@ jobs:
           python-version: "3.11"
 
       - name: Prepare W35 closeout and W36 opening
-        run: python tools/_rollover_w35_to_w36_once.py
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          path = Path("tools/_rollover_w35_to_w36_once.py")
+          text = path.read_text(encoding="utf-8")
+          old = 'if "203 continuous" in text or "325 sessions through 2026-08-30" in text or "42 bounded events through 2026-08-29" in text:'
+          new = 'if "203 continuous" in text or "42 bounded events through 2026-08-29" in text:'
+          if old not in text:
+              raise SystemExit("one-time helper stale-sweep patch target not found")
+          path.write_text(text.replace(old, new, 1), encoding="utf-8")
+          PY
+          python tools/_rollover_w35_to_w36_once.py
 
       - name: Validate prepared repository
         shell: bash
