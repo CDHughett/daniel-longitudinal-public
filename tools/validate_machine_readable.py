@@ -15,6 +15,7 @@ from pathlib import Path
 DAILY_PATH = Path("data/daily_biomarkers_v1.csv")
 TRAINING_PATH = Path("data/training_blocks_v1.csv")
 EVENTS_PATH = Path("data/context_events_v1.csv")
+EXPECTED_TRAINING_ROWS = 325
 MODEL_ERROR_PATHS = (
     Path("data/model_error/model_error_gap_v1.csv"),
     Path("data/model_error/historical/model_error_gap_reconstructed.csv"),
@@ -91,9 +92,6 @@ CANONICAL_SOURCE_REF = re.compile(
     r"^(?:private_workbook|private_pdf):Daniel_Dataset_v\d+\.\d+:[^:;]+:"
     r"\d{4}-\d{2}-\d{2}(?::[^;]+)?$"
 )
-LEGACY_TRAINING_SOURCE_REF = re.compile(
-    r"^(?:wb|pdf):v\d+\.\d+:TB:\d{4}-\d{2}-\d{2}(?::[^;]+)?$"
-)
 
 
 class Results:
@@ -124,7 +122,7 @@ def read_csv(root: Path, relative: Path, expected_header: list[str], results: Re
             for row in reader:
                 rows.append({key: (value or "").strip() for key, value in row.items()})
             return rows
-    except Exception as exc:
+    except Exception as exc:  # mechanical parse failure
         results.error(f"{relative}: CSV read failed: {exc}")
         return []
 
@@ -176,16 +174,13 @@ def validate_tag_list(value: str, location: str, results: Results) -> None:
         validate_snake(tag, location, results, allow_blank=False)
 
 
-def validate_source_ref(value: str, location: str, results: Results, *, allow_legacy_training: bool) -> None:
+def validate_source_ref(value: str, location: str, results: Results) -> None:
     if not value:
         results.error(f"{location}: source_ref is required")
         return
     for ref in value.split(";"):
-        if CANONICAL_SOURCE_REF.fullmatch(ref):
-            continue
-        if allow_legacy_training and LEGACY_TRAINING_SOURCE_REF.fullmatch(ref):
-            continue
-        results.error(f"{location}: unsupported source_ref syntax {ref!r}")
+        if not CANONICAL_SOURCE_REF.fullmatch(ref):
+            results.error(f"{location}: unsupported canonical source_ref syntax {ref!r}")
 
 
 def validate_duration(value: str, location: str, results: Results) -> None:
@@ -243,6 +238,7 @@ def validate(root: Path) -> Results:
     training = read_csv(root, TRAINING_PATH, TRAINING_HEADER, results)
     events = read_csv(root, EVENTS_PATH, EVENTS_HEADER, results)
 
+    # Daily biomarkers
     daily_dates: list[date] = []
     require_unique([row.get("date", "") for row in daily], f"{DAILY_PATH}.date", results)
     for index, row in enumerate(daily, start=2):
@@ -257,7 +253,7 @@ def validate(root: Path) -> Results:
             validate_float(row.get(field, ""), f"{loc}.{field}", results)
         validate_vocab(row, DAILY_VOCABS, loc, results)
         validate_tag_list(row.get("context_tags", ""), f"{loc}.context_tags", results)
-        validate_source_ref(row.get("source_ref", ""), f"{loc}.source_ref", results, allow_legacy_training=False)
+        validate_source_ref(row.get("source_ref", ""), f"{loc}.source_ref", results)
 
     daily_min: date | None = min(daily_dates) if daily_dates else None
     daily_max: date | None = max(daily_dates) if daily_dates else None
@@ -278,8 +274,12 @@ def validate(root: Path) -> Results:
             "continuous": not missing,
         }
 
+    # Training blocks
     require_unique([row.get("session_id", "") for row in training], f"{TRAINING_PATH}.session_id", results)
-    legacy_source_refs = 0
+    if len(training) != EXPECTED_TRAINING_ROWS:
+        results.error(
+            f"{TRAINING_PATH}: expected {EXPECTED_TRAINING_ROWS} protected v1 session rows, found {len(training)}"
+        )
     for index, row in enumerate(training, start=2):
         loc = f"{TRAINING_PATH}:{index}"
         session_id = row.get("session_id", "")
@@ -297,16 +297,15 @@ def validate(root: Path) -> Results:
         validate_tag_list(row.get("context_tags", ""), f"{loc}.context_tags", results)
         validate_snake(row.get("protocol_status", ""), f"{loc}.protocol_status", results, allow_blank=False)
         source_ref = row.get("source_ref", "")
-        validate_source_ref(source_ref, f"{loc}.source_ref", results, allow_legacy_training=True)
-        legacy_source_refs += sum(
-            1 for ref in source_ref.split(";") if LEGACY_TRAINING_SOURCE_REF.fullmatch(ref)
-        )
+        validate_source_ref(source_ref, f"{loc}.source_ref", results)
     results.metrics["training_blocks"] = {
         "rows": len(training),
         "unique_session_ids": len({row.get("session_id", "") for row in training}),
-        "legacy_source_refs": legacy_source_refs,
+        "expected_rows": EXPECTED_TRAINING_ROWS,
+        "canonical_source_refs_required": True,
     }
 
+    # Context events
     known_model_ids = model_error_ids(root, results)
     require_unique([row.get("event_id", "") for row in events], f"{EVENTS_PATH}.event_id", results)
     for index, row in enumerate(events, start=2):
@@ -339,7 +338,7 @@ def validate(root: Path) -> Results:
                     results.error(f"{loc}.related_model_error: invalid record ID {raw!r}")
                 elif raw not in known_model_ids:
                     results.error(f"{loc}.related_model_error: record {raw} not found in model-error archive")
-        validate_source_ref(row.get("source_ref", ""), f"{loc}.source_ref", results, allow_legacy_training=False)
+        validate_source_ref(row.get("source_ref", ""), f"{loc}.source_ref", results)
     results.metrics["context_events"] = {
         "rows": len(events),
         "unique_event_ids": len({row.get("event_id", "") for row in events}),
