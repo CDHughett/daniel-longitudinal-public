@@ -1,0 +1,78 @@
+name: One-time training source-ref migration
+
+on:
+  push:
+    paths:
+      - .github/workflows/normalize-training-source-refs.yml
+
+permissions:
+  contents: write
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Canonicalize training source refs
+        shell: bash
+        run: |
+          python - <<'PY'
+          import csv
+          import re
+          from pathlib import Path
+
+          path = Path('data/training_blocks_v1.csv')
+          with path.open('r', encoding='utf-8-sig', newline='') as fh:
+              reader = csv.DictReader(fh)
+              fieldnames = reader.fieldnames
+              rows = list(reader)
+
+          if len(rows) != 325:
+              raise SystemExit(f'expected 325 training rows before migration, found {len(rows)}')
+
+          legacy = re.compile(r'^(wb|pdf):v(\d+\.\d+):TB:(\d{4}-\d{2}-\d{2})(?::(.+))?$')
+          canonical = re.compile(r'^(private_workbook|private_pdf):Daniel_Dataset_v\d+\.\d+:Training Blocks:\d{4}-\d{2}-\d{2}(?::.+)?$')
+
+          changed = 0
+          for row in rows:
+              refs = []
+              for ref in row['source_ref'].split(';'):
+                  m = legacy.fullmatch(ref)
+                  if m:
+                      kind, version, day, label = m.groups()
+                      prefix = 'private_workbook' if kind == 'wb' else 'private_pdf'
+                      ref = f'{prefix}:Daniel_Dataset_v{version}:Training Blocks:{day}' + (f':{label}' if label else '')
+                      changed += 1
+                  if not canonical.fullmatch(ref):
+                      raise SystemExit(f'noncanonical source_ref after migration: {ref}')
+                  refs.append(ref)
+              row['source_ref'] = ';'.join(refs)
+
+          if changed != 325:
+              raise SystemExit(f'expected to canonicalize 325 source_ref values, changed {changed}')
+
+          with path.open('w', encoding='utf-8', newline='') as fh:
+              writer = csv.DictWriter(fh, fieldnames=fieldnames, lineterminator='\n')
+              writer.writeheader()
+              writer.writerows(rows)
+
+          with path.open('r', encoding='utf-8', newline='') as fh:
+              check = list(csv.DictReader(fh))
+          if len(check) != 325 or len({r['session_id'] for r in check}) != 325:
+              raise SystemExit('post-migration training row/session-id integrity check failed')
+          print(f'canonicalized {changed} source_ref values across {len(check)} training rows')
+          PY
+
+      - name: Commit migration result
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/training_blocks_v1.csv
+          git diff --cached --quiet && exit 0
+          git commit -m "Canonicalize all training source_ref values"
+          git push
