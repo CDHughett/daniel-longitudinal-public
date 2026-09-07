@@ -115,7 +115,7 @@ jobs:
       - name: Remove one-time helper
         shell: bash
         run: |
-          git rm tools/_rollover_w35_to_w36_once.py .github/workflows/weekly-rollover-w35-w36.yml
+          git rm -f tools/_rollover_w35_to_w36_once.py .github/workflows/weekly-rollover-w35-w36.yml
           git commit -m "chore: remove one-time W35 rollover helper"
 
       - name: Push rollover commits
