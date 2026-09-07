@@ -1,4 +1,5 @@
 from pathlib import Path
+import re
 
 
 def replace_exact(path_str: str, old: str, new: str) -> None:
@@ -10,23 +11,18 @@ def replace_exact(path_str: str, old: str, new: str) -> None:
     path.write_text(text.replace(old, new), encoding="utf-8")
 
 
-replace_exact(
+def replace_regex(path_str: str, pattern: str, replacement: str) -> None:
+    path = Path(path_str)
+    text = path.read_text(encoding="utf-8")
+    updated, count = re.subn(pattern, replacement, text, flags=re.S)
+    if count != 1:
+        raise SystemExit(f"{path_str}: expected exactly one regex match, found {count}")
+    path.write_text(updated, encoding="utf-8")
+
+
+replace_regex(
     "schemas/machine-readable-layer-v1.md",
-    '''## Legacy Training Aliases
-
-`training_blocks_v1.csv` contains historical aliases created during the first backfill:
-
-```text
-wb:v<version>:TB:<YYYY-MM-DD>[:<session_label>]
-pdf:v<version>:TB:<YYYY-MM-DD>[:<session_label>]
-```
-
-These aliases remain valid for existing v1 rows and are not evidence defects.
-
-They are deprecated for new rows.
-
-A future schema migration may normalize them if the migration is deterministic and preserves source traceability.
-''',
+    r"## Accepted Historical Training Aliases\n.*?(?=\n## File-Level Private Provenance)",
     '''## Standardized Training Provenance
 
 All current live `training_blocks_v1.csv` rows use the canonical private-source forms above.
@@ -47,7 +43,7 @@ The 2026-09-07 migration changed `source_ref` provenance locators only; non-`sou
 )
 replace_exact(
     "schemas/machine-readable-layer-v1.md",
-    "| `source_ref` | text | provenance | required; canonical or accepted v1 legacy form |",
+    "| `source_ref` | text | provenance | required; canonical or accepted v1 alias |",
     "| `source_ref` | text | provenance | required; canonical private-source form |",
 )
 
