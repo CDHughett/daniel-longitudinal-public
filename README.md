@@ -2,8 +2,10 @@
 
 **A governed N-of-1 longitudinal research archive for studying how training, recovery, physiology, behavior, and context interact over time.**
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20815612.svg)](https://doi.org/10.5281/zenodo.20815612)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20815612.svg)](https://zenodo.org/doi/10.5281/zenodo.20815612)
 [![Repository validation](https://github.com/CDHughett/daniel-longitudinal-public/actions/workflows/validate.yml/badge.svg)](https://github.com/CDHughett/daniel-longitudinal-public/actions/workflows/validate.yml)
+
+**Archived release:** [Zenodo v1.0.0 — DOI 10.5281/zenodo.20815612](https://zenodo.org/doi/10.5281/zenodo.20815612)
 
 The Daniel Longitudinal Study follows one human system through repeated measurement, machine-readable data, contemporaneous observation, source-preserved testing, registered predictions, retrospective interpretation, correction history, and explicit archive governance.
 
@@ -375,6 +377,8 @@ Repeated measurement, source preservation, explicit correction, validation, and 
 # Release, Citation, and License
 
 The Zenodo DOI currently points to the archived **v1.0.0** release.
+
+**Zenodo archive:** [DOI 10.5281/zenodo.20815612](https://zenodo.org/doi/10.5281/zenodo.20815612)
 
 The live `main` branch contains later unreleased documentation, data, methodology, prediction, report, validation, and snapshot updates.
 
