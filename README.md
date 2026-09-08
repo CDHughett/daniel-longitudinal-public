@@ -376,7 +376,7 @@ See:
 
 - [`VERSIONING.md`](./VERSIONING.md)
 - [`CITATION.cff`](./CITATION.cff)
-- [`LICENSE`](./LICENSE)
+- [`LICENSE.md`](./LICENSE.md)
 
 ---
 
