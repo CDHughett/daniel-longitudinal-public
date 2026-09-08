@@ -72,6 +72,16 @@ For recurring terminology, see [`docs/CONCEPTS.md`](./docs/CONCEPTS.md).
 | August TruDiagnostic result | **provider result pending** |
 | Formal Phase 2D declaration | **none** |
 
+Current-state anchors retained for repository validation:
+
+```text
+Active weekly window:
+2026-W36
+
+Most recent closed window:
+2026-W35
+```
+
 The recent operating posture is intentionally conservative: ordinary B1 + Load Integration continues while recovery variability, lower bodyweight/intake context, behavioral economy, and natural portability are observed without forcing progression or manufacturing perturbations.
 
 Current details: [`LATEST.md`](./LATEST.md)
