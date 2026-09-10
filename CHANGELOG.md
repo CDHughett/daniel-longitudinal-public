@@ -27,6 +27,7 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 - Propagated the completed August source-artifact and Model Error 043 state through `LATEST.md`, `README.md`, `INDEX.md`, `SNAPSHOT_LOG.md`, the August Epoch, `EPOCH_INDEX.md`, `docs/CONCEPTS.md`, the active Week 36 report, and the current reports directory guide.
 - Consolidated `methodology/README.md` as a current-facing directory guide: removed duplicated historical/live-state prose, redirected volatile state to `LATEST.md` and `data/DATA_COVERAGE.md`, and left the actual preregistered methodology artifacts unchanged.
 - Historical weekly reports and audits whose pending/open language was accurate at the time were not retrospectively rewritten.
+- Pull-request validation passed after Batch 4 propagation: core repository validation and machine-readable semantic validation both completed successfully on the branch merge state.
 - No Phase 2D declaration, training-protocol change, release-version change, or DOI change was introduced.
 
 Classification:
