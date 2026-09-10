@@ -24,7 +24,7 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 - Added `data/model_error/record_043_closure.md` with the criterion-by-criterion adjudication and preserved favorable as well as adverse evidence.
 - Updated primary trajectory concordance to `2/4 = 0.50`; point/range UDI and state concordance remain unchanged.
 - Transitioned `tools/validate_repository.py` from protecting record 043 as open/unscored to protecting its committed closed outcome and error direction.
-- Propagated the completed August source-artifact and Model Error 043 state through `LATEST.md`, `README.md`, `INDEX.md`, `SNAPSHOT_LOG.md`, the August Epoch, `docs/CONCEPTS.md`, and the active Week 36 report.
+- Propagated the completed August source-artifact and Model Error 043 state through `LATEST.md`, `README.md`, `INDEX.md`, `SNAPSHOT_LOG.md`, the August Epoch, `EPOCH_INDEX.md`, `docs/CONCEPTS.md`, the active Week 36 report, and the current reports directory guide.
 - Consolidated `methodology/README.md` as a current-facing directory guide: removed duplicated historical/live-state prose, redirected volatile state to `LATEST.md` and `data/DATA_COVERAGE.md`, and left the actual preregistered methodology artifacts unchanged.
 - Historical weekly reports and audits whose pending/open language was accurate at the time were not retrospectively rewritten.
 - No Phase 2D declaration, training-protocol change, release-version change, or DOI change was introduced.
