@@ -2,7 +2,7 @@
 
 **Status:** Active  
 **Created:** 2026-07-11  
-**Last updated:** 2026-09-06  
+**Last updated:** 2026-09-10  
 **Scope:** Known data-quality questions requiring source reconciliation or analytical restriction
 
 ---
@@ -76,6 +76,7 @@ Source precedence must therefore be evaluated field by field.
 | Confirmed valid | The recorded value matches the applicable source |
 | Correction required | Applicable source evidence confirms that the curated value is incorrect and correction conditions are satisfied |
 | Corrected | The curated value has been updated with documented provenance |
+| Source-role reconciled | Competing metadata/source roles have been assigned explicitly without altering preserved measurements |
 | Analytical restriction | The source value remains preserved, but a defined use or interpretation is restricted |
 | Unresolvable | Available evidence is insufficient to determine the correct value |
 
@@ -1239,6 +1240,114 @@ Status: corrected / resolved
 
 ---
 
+# DQ-010 — August 2026 TruDiagnostic Source-Role Reconciliation
+
+## Status
+
+**Source-role reconciled**
+
+The metadata-role discrepancy is resolved without altering any biological measurement.
+
+---
+
+## Affected Snapshot
+
+August 2026 TruDiagnostic biological sample.
+
+---
+
+## Source States
+
+The contemporaneous repository collection record establishes the actual governed sample event as:
+
+```text
+Sample collection date: 2026-08-17
+Sample collection time: 05:37 local
+```
+
+The August TruDiagnostic provider-report headers display:
+
+```text
+Collected: 08/16/2026
+Fasted: Unknown
+```
+
+The provider-displayed fields are preserved as administrative metadata in the unchanged source PDFs.
+
+---
+
+## Source-Role Reconciliation
+
+The two records answer different questions and are not forced into a single metadata state.
+
+For this August snapshot:
+
+```text
+Contemporaneous repository collection record
+    -> canonical sample date/time and documented preparation/testing conditions
+
+TruDiagnostic provider reports
+    -> assay outputs, provider labels, and provider-displayed administrative metadata
+```
+
+Therefore:
+
+- `2026-08-17` remains the canonical molecular sample date in structured repository data
+- `05:37 local` remains the canonical recorded collection time
+- contemporaneously documented fasting and preparation conditions remain authoritative for the collection event
+- provider-displayed `08/16/2026` and `Fasted: Unknown` remain preserved but do not overwrite those contemporaneous fields
+- the source PDFs are not modified
+- no biological result is changed, corrected, shifted, or inferred from the metadata difference
+
+---
+
+## Public Source Artifacts
+
+- `snapshots/2026-08/2026-08-advanced-truage.pdf`
+- `snapshots/2026-08/2026-08-truage.pdf`
+- `snapshots/2026-08/2026-08-truhealth.pdf`
+
+SHA-256 values are registered in:
+
+- `snapshots/2026-08/checksums.txt`
+
+Full source-role record:
+
+[`source_provenance/2026-08-trudiagnostic-reconciliation.md`](./source_provenance/2026-08-trudiagnostic-reconciliation.md)
+
+---
+
+## Downstream Boundary
+
+This reconciliation governs structured August TruDiagnostic ingestion and later interpretation.
+
+It does not:
+
+- change the preregistered Model Error 043 thresholds
+- change the May 2026 comparison baseline
+- change any provider-reported biological value
+- alter DEXA, VO₂, or Bod Pod collection records
+- establish why any August molecular marker improved or worsened
+- authorize rewriting historical reports whose pending-status statements were accurate when written
+
+The issue is provenance/metadata-role reconciliation, not biological correction.
+
+---
+
+## Final Disposition
+
+```text
+Canonical sample date: 2026-08-17
+Canonical sample time: 05:37 local
+Canonical preparation conditions: contemporaneous repository collection record
+Provider header metadata: preserved unchanged
+Biological-value modification required: no
+Structured sample-date modification from provider header: no
+Status: source-role reconciled
+```
+
+---
+
 # Current Dataset Disposition
 
 No change to [`sleep_longitudinal_v1.csv`](./sleep_longitudinal_v1.csv) is authorized by this documentation commit.
@@ -1255,6 +1364,7 @@ Current disposition:
 - DQ-007 November 17 stage classification — restricted from stage analysis
 - DQ-008 broader curated-versus-export comparison — diagnostic only
 - DQ-009 August 17 morning weight — corrected; `234.1 lb` controls and the W33 `235.4 lb` mean is unchanged
+- DQ-010 August TruDiagnostic metadata roles — source-role reconciled; contemporaneous 2026-08-17 05:37 collection record controls date/time and preparation conditions while provider administrative metadata remain preserved
 
 The curated rows remain:
 
@@ -1423,6 +1533,7 @@ Their absence is not a current data-quality or coverage failure.
 - [`DATA_COVERAGE.md`](./DATA_COVERAGE.md)
 - [`source_exports/ringconn/2026-07-21/README.md`](./source_exports/ringconn/2026-07-21/README.md)
 - [`source_exports/ringconn/2026-07-21/checksums.txt`](./source_exports/ringconn/2026-07-21/checksums.txt)
+- [`source_provenance/2026-08-trudiagnostic-reconciliation.md`](./source_provenance/2026-08-trudiagnostic-reconciliation.md)
 
 ---
 
@@ -1455,4 +1566,14 @@ The 2026-09-06 revision:
 - confirms that the Week 33 daily sequence and `235.4 lb` weekly mean already used `234.1 lb` and therefore remain unchanged
 - identifies remaining downstream provisional-discrepancy language as narrative cleanup rather than a data correction
 
-No curated value was changed as part of this documentation commit.
+The 2026-09-10 revision:
+
+- adds DQ-010 for the August TruDiagnostic provider-header versus contemporaneous collection-record metadata difference
+- preserves `2026-08-17 05:37 local` as the canonical sample event from the contemporaneous repository record
+- preserves provider-displayed `Collected: 08/16/2026` and `Fasted: Unknown` as unchanged administrative metadata in the source reports
+- assigns collection date/time and preparation conditions to the contemporaneous repository source role
+- assigns assay values and provider labels/metadata to the TruDiagnostic report source role
+- confirms that no biological value is altered by the reconciliation
+- links the full source-role record in `data/source_provenance/2026-08-trudiagnostic-reconciliation.md`
+
+No curated sleep value was changed as part of this documentation commit.
