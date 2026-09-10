@@ -437,11 +437,14 @@ Consolidation / lock-in observation
 Phase 2D:
 undeclared
 
-Current open model-error record:
-043
+Current open model-error records:
+none in protected block 041–046
 
 Recently closed model-error records:
-041, 042, 044, 045, 046
+041, 042, 043, 044, 045, 046
+
+Record 043:
+closed / not supported — overall_improvement_not_met / over
 
 UDI canonical name:
 Unobstructed Delta Index
