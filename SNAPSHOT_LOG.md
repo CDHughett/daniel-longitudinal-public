@@ -138,23 +138,29 @@ Where present, an accompanying epoch file serves as the temporal anchor record f
 - DEXA summary artifact
 - Bod Pod / COSMED
 - VO2 summary
-- TruDiagnostic sample collection; provider-result artifacts pending
+- Advanced TruAge provider report
+- TruAge provider report
+- TruHealth provider report
 
 **Links:**
 - Epoch file: [`2026-08 Epoch.md`](./snapshots/2026-08/2026-08%20Epoch.md)
 - Collection plan: [`2026-08-snapshot-collection-plan.md`](./methodology/2026-08-snapshot-collection-plan.md)
+- TruDiagnostic source reconciliation: [`2026-08-trudiagnostic-reconciliation.md`](./data/source_provenance/2026-08-trudiagnostic-reconciliation.md)
+- Model Error 043 closure: [`record_043_closure.md`](./data/model_error/record_043_closure.md)
 
 **Notes:**
 - Primary physical collection window completed across 2026-08-17 and 2026-08-18
 - 2026-08-17 collection sequence was TruDiagnostic at 05:37, DEXA at 07:55, and VO2 at approximately 08:10
 - Bod Pod testing began at 08:26 on 2026-08-18
-- Physical source artifacts were privacy-reviewed, assigned stable filenames, and checksum-verified
+- Physical and molecular public source artifacts were privacy-reviewed, assigned stable filenames, and checksum-registered
+- The contemporaneous repository collection record controls the actual TruDiagnostic sample date/time and preparation conditions; provider-displayed administrative metadata remain preserved separately
 - The 2026-08-16 B1 session was completed; the corresponding Load Integration session was intentionally withheld to preserve recovery before VO2 testing
 - The testing-directed Load Integration omission is retained as a documented collection-condition deviation rather than normalized
 - Bod Pod thoracic gas volume was predicted rather than directly measured
-- TruDiagnostic provider results remain pending, so the molecular domain and complete August interpretation remain open
-- No August snapshot result independently changes phase status or closes Model Error 043
-- Interpretation remains deferred to report, structured-data, and model-error layers
+- August molecular values are represented in the current structured snapshot layers
+- Model Error 043 was adjudicated on 2026-09-10 under its preregistered rules and closed as not supported (`overall_improvement_not_met`, error direction `over`)
+- No August snapshot result independently changes phase status or declares Phase 2D
+- Interpretation remains in structured-data, report, and model-error layers rather than in this chronological log
 
 ---
 
