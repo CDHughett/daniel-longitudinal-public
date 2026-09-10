@@ -35,7 +35,7 @@ It provides:
 | 2025-11 | [`snapshots/2025-11/`](./snapshots/2025-11/) | [`2025-11 Epoch.md`](./snapshots/2025-11/2025-11%20Epoch.md) | Phase 1 completion baseline |
 | 2026-02 | [`snapshots/2026-02/`](./snapshots/2026-02/) | [`2026-02 Epoch.md`](./snapshots/2026-02/2026-02%20Epoch.md) | Phase 2 early load-integration window |
 | 2026-05 | [`snapshots/2026-05/`](./snapshots/2026-05/) | [`2026-05 Epoch.md`](./snapshots/2026-05/2026-05%20Epoch.md) | Phase 2 testing-window artifact capture |
-| 2026-08 | [`snapshots/2026-08/`](./snapshots/2026-08/) | [`2026-08 Epoch.md`](./snapshots/2026-08/2026-08%20Epoch.md) | Phase 2 consolidation / testing-window artifact capture |
+| 2026-08 | [`snapshots/2026-08/`](./snapshots/2026-08/) | [`2026-08 Epoch.md`](./snapshots/2026-08/2026-08%20Epoch.md) | Phase 2 consolidation / complete physical + molecular source-artifact capture |
 
 ---
 
@@ -67,4 +67,4 @@ Interpretation remains subordinate to artifacts and belongs in [`reports/`](./re
 
 ---
 
-_Last reviewed during August 2026 snapshot collection._
+_Last reviewed 2026-09-10 after August physical and molecular source-artifact completion._
