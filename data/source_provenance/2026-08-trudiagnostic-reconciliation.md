@@ -1,4 +1,4 @@
-# August 2026 TruDiagnostic Source Reconciliation
+# DQ-010 — August 2026 TruDiagnostic Source Reconciliation
 
 **Status:** Confirmed source-role reconciliation  
 **Recorded:** 2026-09-10  
