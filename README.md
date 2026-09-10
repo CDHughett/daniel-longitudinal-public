@@ -26,8 +26,8 @@ Current public structured coverage through **2026-09-06**:
 | Training exposure | **339 session/block rows** |
 | Context events | **44 bounded events** |
 | Weekly reporting | Continuous from **2026-W06** |
-| August physical snapshot | **DEXA + VO₂ + Bod Pod archived** |
-| Open recent prediction | **043 — provider evidence pending** |
+| August snapshot | **DEXA + VO₂ + Bod Pod + TruDiagnostic source artifacts archived** |
+| Recent prediction closure | **043 — closed / not supported / over** |
 
 Authoritative live counts and endpoints are maintained in [`data/DATA_COVERAGE.md`](./data/DATA_COVERAGE.md).
 
@@ -70,8 +70,9 @@ For recurring terminology, see [`docs/CONCEPTS.md`](./docs/CONCEPTS.md).
 | Active weekly window | **2026-W36** |
 | Most recent closed window | **2026-W35** |
 | Installed training architecture | **B1 + Load Integration** |
-| Open model-error record | **043 — biological translation** |
-| August TruDiagnostic result | **provider result pending** |
+| Open model-error records | **none in protected block 041–046** |
+| Record 043 | **closed / not supported — `overall_improvement_not_met` / over** |
+| August TruDiagnostic result | **provider artifacts archived, source-reconciled, and structured** |
 | Formal Phase 2D declaration | **none** |
 
 Current-state anchors retained for repository validation:
@@ -178,10 +179,15 @@ Primary structured/public layers include:
 Direct provider/device source preservation:
 
 - [`data/source_exports/`](./data/source_exports/)
+- [`snapshots/`](./snapshots/)
 
 Private-source provenance without publishing private workbooks:
 
 - [`data/source_provenance/`](./data/source_provenance/)
+
+August TruDiagnostic source-role reconciliation:
+
+- [`data/source_provenance/2026-08-trudiagnostic-reconciliation.md`](./data/source_provenance/2026-08-trudiagnostic-reconciliation.md)
 
 Coverage, field semantics, and limitations:
 
@@ -222,10 +228,12 @@ Recent prospective block:
 |---|---|---|---|
 | 041 | recovery_capacity | Closed | supported |
 | 042 | ambient_execution | Closed | not supported — continued adaptation |
-| 043 | biological_translation | **Open** | TruDiagnostic provider result pending |
+| 043 | biological_translation | **Closed** | not supported — `overall_improvement_not_met` / over |
 | 044 | protocol_governance | Closed | not supported — narrow snapshot-directed deviation |
 | 045 | autonomic_reconvergence | Closed | supported |
 | 046 | autonomic_unload_reload | Closed | failed_autonomic_recompression |
+
+Record 043’s full criterion-by-criterion adjudication is preserved in [`data/model_error/record_043_closure.md`](./data/model_error/record_043_closure.md).
 
 Wrong predictions remain visible. Fixed evidence windows remain fixed. Original registered prediction narratives remain distinguishable from later closure language.
 
@@ -244,6 +252,8 @@ UDI_range
 State_concordance
 Trajectory_concordance
 ```
+
+Following closure of primary trajectory record 043, the current primary trajectory concordance is 2/4 = 0.50. Point/range UDI and state concordance retain their separately governed values.
 
 Composite UDI remains withheld under predefined sample-size criteria. UDI is a model-error framework, **not a biological score**.
 
@@ -268,7 +278,7 @@ See [`docs/methodology/model_error_schema_v2.md`](./docs/methodology/model_error
 
 # August 2026 Snapshot
 
-Physical collection was completed across 2026-08-17 and 2026-08-18:
+Collection was completed across 2026-08-17 and 2026-08-18:
 
 ```text
 2026-08-17
@@ -278,9 +288,13 @@ TruDiagnostic → DEXA → VO₂ max
 Bod Pod
 ```
 
-Preserved DEXA, VO₂, and Bod Pod artifacts are available under [`snapshots/2026-08/`](./snapshots/2026-08/).
+Preserved DEXA, VO₂, Bod Pod, Advanced TruAge, TruAge, and TruHealth source artifacts are available under [`snapshots/2026-08/`](./snapshots/2026-08/), with SHA-256 registration in the folder checksum manifest.
 
-The TruDiagnostic sample was collected, but the provider-result evidence required for Model Error 043 remains pending. The archive therefore keeps 043 open/unscored rather than substituting physical or behavioral evidence for its registered primary domain.
+The contemporaneous repository collection record controls the actual TruDiagnostic sample event: **2026-08-17 at 05:37 local**, together with its recorded preparation conditions. Provider-displayed administrative metadata remain preserved in the original PDFs but do not overwrite that collection record. The source-role reconciliation is documented in [`data/source_provenance/2026-08-trudiagnostic-reconciliation.md`](./data/source_provenance/2026-08-trudiagnostic-reconciliation.md).
+
+August core aging anchors, system/organ ages, and currently represented TruHealth fields are integrated in [`data/biomarker_snapshot.csv`](./data/biomarker_snapshot.csv) and [`data/epigenetic_longitudinal.csv`](./data/epigenetic_longitudinal.csv).
+
+Model Error 043 was evaluated only after the required molecular source evidence was available and closed on 2026-09-10 as **not supported**, with `actual_value=overall_improvement_not_met` and `error_direction=over`. This outcome is evidence about the registered prediction; it does not by itself establish generalized biological deterioration or change phase status.
 
 ---
 
