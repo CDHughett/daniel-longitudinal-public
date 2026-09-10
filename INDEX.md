@@ -37,11 +37,14 @@ Active weekly window:
 Most recent closed window:
 2026-W35
 
-Open model-error record:
-043
+Open model-error records:
+none in protected block 041–046
 
 Recently closed:
-041, 042, 044, 045, 046
+041, 042, 043, 044, 045, 046
+
+Record 043:
+closed / not supported — overall_improvement_not_met / over
 
 Formal Phase 2D:
 undeclared
@@ -49,8 +52,11 @@ undeclared
 August physical snapshot:
 complete
 
-August TruDiagnostic provider results:
-pending
+August TruDiagnostic provider-result artifacts:
+complete and checksum-registered
+
+August structured molecular integration:
+complete for currently represented fields
 ```
 
 Current state source: [`LATEST.md`](./LATEST.md)
@@ -92,6 +98,12 @@ Quality notes: [`data/DATA_QUALITY_NOTES.md`](./data/DATA_QUALITY_NOTES.md)
 
 The manifest records exact-file SHA-256 only when the retained private source was actually available for hashing.
 
+## August TruDiagnostic Source Reconciliation
+
+- [`data/source_provenance/2026-08-trudiagnostic-reconciliation.md`](./data/source_provenance/2026-08-trudiagnostic-reconciliation.md)
+
+This record preserves the distinction between provider-displayed administrative metadata and the contemporaneous repository collection record that controls the actual 2026-08-17 sample event and preparation conditions.
+
 ---
 
 # Data and Biological Snapshot Layer
@@ -103,8 +115,10 @@ The manifest records exact-file SHA-256 only when the retained private source wa
 - [`EPOCH_INDEX.md`](./EPOCH_INDEX.md)
 - [`snapshots/2026-08/2026-08 Epoch.md`](./snapshots/2026-08/2026-08%20Epoch.md)
 - [`methodology/2026-08-snapshot-collection-plan.md`](./methodology/2026-08-snapshot-collection-plan.md)
+- [`data/source_provenance/2026-08-trudiagnostic-reconciliation.md`](./data/source_provenance/2026-08-trudiagnostic-reconciliation.md)
+- [`data/model_error/record_043_closure.md`](./data/model_error/record_043_closure.md)
 
-Current August physical source artifacts are preserved under [`snapshots/2026-08/`](./snapshots/2026-08/).
+Current August physical and molecular source artifacts are preserved under [`snapshots/2026-08/`](./snapshots/2026-08/), with SHA-256 registration in the folder manifest.
 
 ---
 
@@ -128,6 +142,7 @@ Primary files:
 - [`data/model_error/WHAT_THIS_LAYER_IS.md`](./data/model_error/WHAT_THIS_LAYER_IS.md)
 - [`data/model_error/README.md`](./data/model_error/README.md)
 - [`data/model_error/model_error_gap_v1.csv`](./data/model_error/model_error_gap_v1.csv)
+- [`data/model_error/record_043_closure.md`](./data/model_error/record_043_closure.md)
 - [`data/model_error/udi_by_type_tracker.csv`](./data/model_error/udi_by_type_tracker.csv)
 - [`data/model_error/calibration_events_log.md`](./data/model_error/calibration_events_log.md)
 - [`data/model_error/historical/`](./data/model_error/historical/)
@@ -143,6 +158,8 @@ Registered plans:
 - [`methodology/open_prediction_evaluation_plan_041_044.md`](./methodology/open_prediction_evaluation_plan_041_044.md)
 - [`methodology/open_prediction_evaluation_plan_045.md`](./methodology/open_prediction_evaluation_plan_045.md)
 - [`methodology/open_prediction_evaluation_plan_046.md`](./methodology/open_prediction_evaluation_plan_046.md)
+
+The protected 041–046 block is fully closed. Original prospective registration provenance and prediction narratives remain preserved.
 
 ---
 
