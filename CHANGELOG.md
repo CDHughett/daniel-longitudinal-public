@@ -14,6 +14,44 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 
 ### Changed
 
+#### September 10 August molecular snapshot integration and Model Error 043 closure
+
+- Added the three August TruDiagnostic provider-result PDFs to `snapshots/2026-08/` and registered their SHA-256 digests in the existing August checksum manifest.
+- Integrated source-backed August biological fields into `data/biomarker_snapshot.csv` and `data/epigenetic_longitudinal.csv` without modifying the provider reports.
+- Added `data/source_provenance/2026-08-trudiagnostic-reconciliation.md` and DQ-010 to `data/DATA_QUALITY_NOTES.md` to preserve the source-role distinction between provider-displayed administrative metadata and the contemporaneous collection record.
+- Preserved the contemporaneous repository record as canonical for the actual TruDiagnostic sample event: `2026-08-17` at `05:37 local`, including documented preparation conditions. Provider-displayed `Collected: 08/16/2026` and `Fasted: Unknown` remain preserved as administrative metadata and do not overwrite the canonical collection record.
+- Closed Model Error 043 under the preregistered records 041–044 evaluation plan as `actual_value=overall_improvement_not_met`, `status=closed`, `error_direction=over`, while preserving the original prospective prediction narrative and `calibration_state=pre` registration provenance.
+- Added `data/model_error/record_043_closure.md` with the criterion-by-criterion adjudication and preserved favorable as well as adverse evidence.
+- Updated primary trajectory concordance to `2/4 = 0.50`; point/range UDI and state concordance remain unchanged.
+- Transitioned `tools/validate_repository.py` from protecting record 043 as open/unscored to protecting its committed closed outcome and error direction.
+- Propagated the completed August source-artifact and Model Error 043 state through `LATEST.md`, `README.md`, `INDEX.md`, `SNAPSHOT_LOG.md`, the August Epoch, `docs/CONCEPTS.md`, and the active Week 36 report.
+- Historical weekly reports and audits whose pending/open language was accurate at the time were not retrospectively rewritten.
+- No Phase 2D declaration, training-protocol change, release-version change, or DOI change was introduced.
+
+Classification:
+
+```text
+Biological source-value alteration:
+No
+
+Structured source-backed snapshot integration:
+Yes
+
+Prediction outcome change:
+Yes — post-outcome adjudication under preregistered rules; original prediction wording unchanged
+
+Phase or protocol change:
+No
+
+Release or DOI change:
+No
+
+Documentation / provenance / validator propagation:
+Yes
+```
+
+### Changed
+
 #### September 7 post-rollover verification hardening
 
 - Performed a live post-W35/W36 rollover semantic and verification audit.
