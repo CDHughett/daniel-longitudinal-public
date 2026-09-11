@@ -21,10 +21,9 @@ Archive DOI: https://doi.org/10.5281/zenodo.20815612
 - **Recovery posture:** Overnight autonomic variability remains visible; weekly averages are not uniformly favorable, while ordinary function has remained preserved across the recently observed window
 - **Bodyweight/intake posture:** Lower average bodyweight and lower reported intake remain observational background variables, not a recovery or testing intervention
 - **Model-error posture:** Records 041–046 are closed/scored; record 043 closed on 2026-09-10 as not supported (`overall_improvement_not_met`, error direction `over`)
-- **TruDiagnostic status:** August provider reports received, source-reviewed, source-reconciled, and represented in the structured snapshot layers; raw public provider PDFs are deferred pending privacy-compliant sanitized derivatives
-- **Privacy/distribution posture:** Batch 5 removed the three raw August TruDiagnostic PDFs from the integration branch after identifying an unnecessary administrative sample/specimen identifier; historical Git-object remediation remains a separate unresolved decision
+- **TruDiagnostic status:** August provider-result artifacts archived, checksum-registered, source-reconciled, and represented in the current structured snapshot layers
 - **Formal Phase 2D declaration:** None
-- **August snapshot:** DEXA, VO₂, and Bod Pod public artifacts remain archived; molecular source review and Model Error 043 adjudication are complete; public molecular-PDF distribution is deferred
+- **August snapshot:** DEXA, VO₂, Bod Pod, TruAge/Advanced TruAge, and TruHealth source artifacts archived; Model Error 043 adjudication complete
 
 Current machine-readable row counts and endpoints are maintained in [`data/DATA_COVERAGE.md`](data/DATA_COVERAGE.md).
 
@@ -133,10 +132,8 @@ Fixed scoring windows remain fixed. Later evidence does not retroactively rescue
 - the historical training prefix through 2026-08-30 remains protected at 325 sessions while later governed rows append
 - exact retained private-source hashes are registered only when the exact bytes are available
 - v1.29 private-source identity is registered in the provenance manifest
-- August physical source artifacts remain registered in the August checksum manifest
-- August molecular values remain source-backed through retained provider reports and structured transcription, while raw public provider-PDF distribution is deferred after Batch 5 privacy review
+- August TruDiagnostic provider artifacts are registered in the August checksum manifest
 - the August provider-header versus contemporaneous collection-record distinction is preserved in [`data/source_provenance/2026-08-trudiagnostic-reconciliation.md`](data/source_provenance/2026-08-trudiagnostic-reconciliation.md)
-- the Batch 5 semantic/privacy audit is preserved in [`docs/audits/2026-09-10-august-snapshot-integration-audit.md`](docs/audits/2026-09-10-august-snapshot-integration-audit.md)
 
 Verification guide: [`VERIFICATION.md`](VERIFICATION.md)
 Private-source provenance: [`data/source_provenance/`](data/source_provenance/)

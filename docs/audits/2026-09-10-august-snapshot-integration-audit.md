@@ -1,10 +1,10 @@
 # August Snapshot Integration Audit — 2026-09-10
 
-**Audit type:** Batch 5 final semantic / diff / privacy / release-readiness review  
+**Audit type:** Batch 5 final semantic / diff / release-readiness review  
 **Repository:** `CDHughett/daniel-longitudinal-public`  
 **Branch:** `snapshot-2026-08-integration`  
 **Base branch:** `main`  
-**Scope:** August 2026 TruDiagnostic integration, Model Error 043 closure, current-state propagation, methodology-guide consolidation, and public-artifact privacy state
+**Scope:** August 2026 TruDiagnostic integration, Model Error 043 closure, current-state propagation, methodology-guide consolidation, and final branch coherence
 
 ---
 
@@ -12,12 +12,12 @@
 
 This audit reviews the complete August molecular-integration change surface after source-backed structured ingestion and Model Error 043 adjudication.
 
-The review is intended to answer four separate questions:
+The review asks four questions:
 
 1. Is the biological/model-error adjudication consistent with the preregistered rules?
 2. Are current-facing repository surfaces internally coherent?
 3. Did the large `methodology/README.md` consolidation remove governing methodology or only duplicated directory-guide content?
-4. Is the branch ready for public merge/release from a privacy and distribution standpoint?
+4. Is the branch mechanically and semantically ready for merge after final validation?
 
 ---
 
@@ -130,68 +130,47 @@ The consolidation primarily removes duplicated historical outcome detail and vol
 
 ---
 
-## Privacy Finding — F01
+## Batch 5 Source-Selection Correction
 
-**MERGE/RELEASE BLOCKER — raw August TruDiagnostic PDFs contained an unnecessary administrative sample/specimen identifier.**
+An initial Batch 5 privacy finding was withdrawn before merge.
 
-Repository privacy methodology intentionally permits the subject's public name and chronological age, but normally excludes unnecessary patient/specimen/account-style administrative identifiers from public artifacts.
+During the first privacy pass, the inspected PDFs were earlier raw chat-upload copies rather than the hash-registered public repository copies that had already been prepared and committed during the August artifact-ingestion workflow.
 
-Batch 5 inspection of all three August provider reports found such an identifier in the report header.
-
-No full date of birth, private telephone number, private email address, or subject street address was identified in the reviewed report text. Provider organizational contact information is not the subject's private contact information.
-
-The issue is therefore narrow but material under the repository's own public-artifact policy.
-
-### Current-branch remediation
-
-The three raw provider PDFs were removed from `snapshot-2026-08-integration`, and their entries were removed from the August checksum manifest.
-
-The current branch therefore no longer intentionally distributes those raw provider files.
-
-Structured August molecular values remain source-backed and unchanged. Their removal is a privacy/distribution action, not a biological-value correction.
-
-### Candidate sanitized derivatives
-
-As a technical verification exercise, candidate sanitized derivatives were created from retained user-provided copies of all three provider reports using true PDF redaction of the unnecessary administrative identifier.
-
-Verification showed:
-
-- the identifier was absent from extracted text after redaction
-- normalized extracted text was otherwise identical to each corresponding retained source copy
-- representative first, middle, and final pages rendered successfully
-- no biological value was intentionally altered
-
-Those candidate derivatives are **not adopted as the canonical public repository artifacts in this batch** because the retained user-provided source-file bytes differ from the previously published repository PDF blobs. A future adoption should either sanitize the exact retained canonical source or explicitly register the derivative/source relationship before checksum publication.
-
----
-
-## Historical-Distribution Boundary — F02
-
-**OPEN / EXPLICIT AUTHORIZATION REQUIRED.**
-
-Deleting the raw PDFs from the current integration branch does not remove earlier public Git objects from history.
-
-The repository's anonymization methodology distinguishes:
+The two source states are not byte-identical. The repository artifact hashes registered before Batch 5 are:
 
 ```text
-current-tree remediation
-active-ref remediation
-historical-object remediation
-provider-side object cleanup
+2026-08-advanced-truage.pdf
+9ac47a41bd82ea48db9c4f196350c150837f1d5f18d1102ac9844851166d316d
+
+2026-08-truage.pdf
+c0271c82a9d3ed62168909ddd4d9376a15d926f49b347a29c6d4c6975b2d8849
+
+2026-08-truhealth.pdf
+66f9313966c99a9dca51367c37c8d7c87f9360d7e2c65ccabc3429285fd03765
 ```
 
-Batch 5 performs branch current-tree remediation only.
+Those hashes differ from the earlier raw copies that triggered the mistaken finding.
 
-It does **not** perform a force rewrite of `main`, tags, or repository history. It also does not claim provider-cache or third-party clone removal.
+The subject also confirmed that the August repository PDFs had already undergone the intended identifier-removal step before ingestion.
 
-A history rewrite would change commit identities and may affect local clones, tags, open references, audit links, and external copies. It therefore requires a separate explicit decision rather than being performed incidentally inside this audit.
+Accordingly:
+
+- the prior claim that the committed August PDFs still contained the administrative identifier is withdrawn
+- the three repository PDFs are restored to the integration branch exactly as they existed at the Batch 4 checkpoint
+- their existing checksum-manifest entries are restored unchanged
+- the temporary current-tree PDF deletions are reversed
+- no Git-history rewrite is required by this corrected Batch 5 finding
+- no biological value, 043 score, source-role rule, or collection-condition record changes as a result
+
+The earlier raw chat uploads are not treated as substitutes for the repository publication copies.
 
 ---
 
 ## Current-State Coherence
 
-The August structured data and Model Error 043 state are internally coherent after Batch 4 propagation:
+After the repair, the August structured data, source-artifact inventory, and Model Error 043 state are internally coherent:
 
+- the three August TruDiagnostic repository PDFs are present and checksum-registered
 - record 043 is closed / not supported / `over`
 - original prediction wording remains preserved
 - `calibration_state=pre` remains registration provenance
@@ -199,100 +178,34 @@ The August structured data and Model Error 043 state are internally coherent aft
 - Phase 2 — Load Integration remains unchanged
 - Phase 2D remains undeclared
 - the underlying B1 + Load Integration architecture remains unchanged
-
-Current-facing snapshot documentation is updated in Batch 5 to distinguish:
-
-- complete molecular source review and structured integration
-- public raw-provider-PDF deferral for privacy
-- separate historical-distribution remediation
-
-Historical reports and audits whose earlier `043 open/pending` wording was accurate at the time remain unchanged.
-
-### DQ-010 distribution-state note
-
-`data/DATA_QUALITY_NOTES.md` DQ-010 remains authoritative for the **source-role reconciliation** itself. Its public-artifact inventory describes the initial ingestion state before the later Batch 5 privacy finding. For the current public-distribution state, this audit and `data/source_provenance/2026-08-trudiagnostic-reconciliation.md` supersede that narrow inventory paragraph: the raw PDFs are absent from the integration branch and their checksum entries have been removed.
-
-No biological or sample-date interpretation is changed by that distribution-state update.
+- historical reports and audits whose earlier `043 open/pending` wording was accurate at the time remain unchanged
 
 ---
 
 ## Release-Readiness Decision
 
-**NOT READY FOR MERGE/RELEASE AS A FULLY CLOSED PRIVACY REMEDIATION CYCLE.**
+**SEMANTICALLY READY FOR MERGE AFTER FINAL GREEN VALIDATION AND HUMAN APPROVAL.**
 
-Biological/model-error integration is semantically ready.
+The August biological/model-error integration is complete across its governed layers.
 
-Current-branch raw-PDF exposure is remediated by deletion.
+No privacy-history blocker is created by the corrected Batch 5 review.
 
-However, the earlier public Git-history exposure requires a separate decision before the repository should describe the August molecular artifact privacy cycle as fully resolved.
-
-The pull request should remain draft until that decision is made.
-
-No new Zenodo release should be created from this state.
+This audit does not itself create a new release or alter the existing DOI/version metadata. A future release remains a separate versioning decision.
 
 ---
 
-## Validation Outcome
+## Validation Requirement
 
-The post-remediation pull-request validation run completed successfully after the Batch 5 current-tree changes:
+Final acceptance of the repaired Batch 5 branch requires successful GitHub Actions execution of:
 
 ```text
-GitHub Actions run:
-34545953474
-
-Core repository validator:
-PASS
-0 errors
-2 governed canonical-sleep warnings
-10 passes
-
-Repository structure:
-238 files
-0 zero-byte files
-
-Markdown:
-146 files
-846 internal references
-PASS
-
-CSV structure:
-15 CSV files
-PASS
-
-Checksums:
-33 artifact entries across 11 manifests
-PASS
-
-Canonical sleep:
-210 continuous rows
-2026-02-09 through 2026-09-06
-
-Weekly reports:
-31 continuous reports
-active = 2026-W36
-
-Current-state surfaces:
-PASS
-
-daily = 210
-sleep = 210
-training = 339
-context = 44
-
-Model error:
-34 records continuous from 013 through 046
-041-046 closed/scored
-041-046 registration provenance preserved
-
-Machine-readable validator:
-PASS
-0 errors
-0 warnings
+python tools/validate_repository.py
+python tools/validate_machine_readable.py
 ```
 
-The two remaining core warnings are the pre-existing governed sleep-stage and DQ-001 sleep-field issues; they were not introduced by the August integration.
+Known governed canonical-sleep warnings may remain if unchanged from prior validated states.
 
-A mechanical PASS does not override the privacy/history boundary documented above.
+A mechanical PASS confirms only the implemented repository checks; it does not establish biological causality or clinical validity.
 
 ---
 
@@ -311,11 +224,11 @@ No
 Methodology preregistration artifact rewrite:
 No
 
-Current-branch public raw TruDiagnostic PDFs:
-Removed pending compliant sanitized derivatives
+August repository TruDiagnostic PDFs:
+Restored to the pre-Batch-5 hash-registered publication state
 
-Historical Git-object remediation:
-Not performed
+Erroneous privacy-history blocker:
+Withdrawn
 
 Protocol change:
 No
@@ -326,12 +239,6 @@ No
 Release / DOI change:
 No
 
-Mechanical validation:
-PASS
-
-Semantic integration:
-PASS
-
 Merge readiness:
-Blocked pending explicit privacy-history disposition
+Pending final green validation and human approval
 ```
