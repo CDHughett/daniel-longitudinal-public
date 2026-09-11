@@ -50,13 +50,16 @@ Formal Phase 2D:
 undeclared
 
 August physical snapshot:
-complete
+complete and publicly archived
 
-August TruDiagnostic provider-result artifacts:
-complete and checksum-registered
-
-August structured molecular integration:
+August TruDiagnostic source review / structured integration:
 complete for currently represented fields
+
+August raw molecular provider-PDF public inclusion:
+deferred pending privacy-compliant sanitized derivatives
+
+Historical raw-PDF Git-object remediation:
+unresolved / separate explicit decision
 ```
 
 Current state source: [`LATEST.md`](./LATEST.md)
@@ -104,6 +107,10 @@ The manifest records exact-file SHA-256 only when the retained private source wa
 
 This record preserves the distinction between provider-displayed administrative metadata and the contemporaneous repository collection record that controls the actual 2026-08-17 sample event and preparation conditions.
 
+Batch 5 additionally records the public-artifact privacy boundary in:
+
+- [`docs/audits/2026-09-10-august-snapshot-integration-audit.md`](./docs/audits/2026-09-10-august-snapshot-integration-audit.md)
+
 ---
 
 # Data and Biological Snapshot Layer
@@ -118,7 +125,9 @@ This record preserves the distinction between provider-displayed administrative 
 - [`data/source_provenance/2026-08-trudiagnostic-reconciliation.md`](./data/source_provenance/2026-08-trudiagnostic-reconciliation.md)
 - [`data/model_error/record_043_closure.md`](./data/model_error/record_043_closure.md)
 
-Current August physical and molecular source artifacts are preserved under [`snapshots/2026-08/`](./snapshots/2026-08/), with SHA-256 registration in the folder manifest.
+Current August public binary artifacts are the DEXA, Bod Pod, and VO₂ files under [`snapshots/2026-08/`](./snapshots/2026-08/), with SHA-256 registration in the folder manifest.
+
+The three August TruDiagnostic provider reports remain source evidence for structured molecular integration and 043 adjudication, but raw public repository copies are deferred pending compliant sanitized derivatives.
 
 ---
 
