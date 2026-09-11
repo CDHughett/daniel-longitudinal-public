@@ -14,6 +14,47 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 
 ### Changed
 
+#### September 10 August post-snapshot cleanup and validation hardening
+
+- Completed the August integrated Bod Pod fields in `data/biomarker_snapshot.csv` by direct transcription from `snapshots/2026-08/2026-08-bodpod-cosmed.jpg`: body fat 11.3%, fat mass 26.630 lb, fat-free mass 208.693 lb, body mass 235.323 lb, REE 2491 kcal/day, and TEE 4334 kcal/day.
+- Preserved the provider-reported Bod Pod thoracic-gas-volume model as `Predicted` and removed the prior structured missingness note only after direct source verification.
+- Updated `MEASUREMENT_SOURCES.md` to replace stale pre-test VO₂ language with the completed 2026-08-17 source-artifact state.
+- Explicitly classified the three August TruDiagnostic PDFs as public sanitized derivatives of verified provider-source reports while preserving their existing public filenames, bytes, and checksum registrations.
+- Clarified the August source-role chain across standing provenance documentation: verified provider-source reports control assay outputs/provider metadata, public sanitized derivatives provide externally inspectable public representations, and the contemporaneous repository record controls the canonical sample date/time and preparation conditions.
+- Added the reusable `epigenetic_longitudinal.csv` date rule to `DATA_DICTIONARY.md`: the governed biological sample-collection date controls when established, not provider report-release date.
+- Added `reports/2026-08-biological-snapshot.md` as a retrospective synthesis that separates the formally failed Record 043 prediction from broader February→May→August biological interpretation.
+- Preserved the retrospective charcoal/smoke context as post-outcome, non-preregistered, hypothesis-generating context only; it is not used to score or rescue Record 043 and is not treated as causal evidence.
+- Added `tools/validate_august_snapshot.py` to protect the completed August snapshot against silent cross-layer drift across the integrated snapshot table, epigenetic table, DQ-010 source reconciliation, Record 043 closure, checksum manifest, and all seven August source artifacts.
+- Added the August snapshot validator to `.github/workflows/validate.yml` alongside the core repository and machine-readable validators.
+- Updated `VERIFICATION.md` to document the new fourth snapshot-specific validation layer, its protected fields, its limitations, and its CI execution path.
+- Added a final post-snapshot cleanup audit under `docs/audits/` and retained PR #2 as the controlled merge surface pending final CI confirmation.
+- No August source artifact bytes or checksum registrations were altered.
+- No preregistered Model Error 043 wording, thresholds, May baseline, closed outcome, error direction, protocol state, phase state, release version, release date, or DOI was changed.
+
+Classification:
+
+```text
+Biological source-value alteration:
+No
+
+Source-backed structured completion:
+Yes — August Bod Pod supplemental fields only
+
+Prediction wording or outcome change:
+No
+
+Phase or protocol change:
+No
+
+Release or DOI change:
+No
+
+Documentation / provenance / validation hardening:
+Yes
+```
+
+### Changed
+
 #### September 10 August molecular snapshot integration and Model Error 043 closure
 
 - Added the three August TruDiagnostic provider-result PDFs to `snapshots/2026-08/` and registered their SHA-256 digests in the existing August checksum manifest.
