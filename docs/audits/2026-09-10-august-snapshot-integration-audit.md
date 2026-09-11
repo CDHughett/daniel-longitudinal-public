@@ -208,6 +208,12 @@ Current-facing snapshot documentation is updated in Batch 5 to distinguish:
 
 Historical reports and audits whose earlier `043 open/pending` wording was accurate at the time remain unchanged.
 
+### DQ-010 distribution-state note
+
+`data/DATA_QUALITY_NOTES.md` DQ-010 remains authoritative for the **source-role reconciliation** itself. Its public-artifact inventory describes the initial ingestion state before the later Batch 5 privacy finding. For the current public-distribution state, this audit and `data/source_provenance/2026-08-trudiagnostic-reconciliation.md` supersede that narrow inventory paragraph: the raw PDFs are absent from the integration branch and their checksum entries have been removed.
+
+No biological or sample-date interpretation is changed by that distribution-state update.
+
 ---
 
 ## Release-Readiness Decision
@@ -226,16 +232,65 @@ No new Zenodo release should be created from this state.
 
 ---
 
-## Validation Requirement
+## Validation Outcome
 
-Final acceptance of the Batch 5 branch requires successful GitHub Actions execution of:
+The post-remediation pull-request validation run completed successfully after the Batch 5 current-tree changes:
 
 ```text
-python tools/validate_repository.py
-python tools/validate_machine_readable.py
+GitHub Actions run:
+34545953474
+
+Core repository validator:
+PASS
+0 errors
+2 governed canonical-sleep warnings
+10 passes
+
+Repository structure:
+238 files
+0 zero-byte files
+
+Markdown:
+146 files
+846 internal references
+PASS
+
+CSV structure:
+15 CSV files
+PASS
+
+Checksums:
+33 artifact entries across 11 manifests
+PASS
+
+Canonical sleep:
+210 continuous rows
+2026-02-09 through 2026-09-06
+
+Weekly reports:
+31 continuous reports
+active = 2026-W36
+
+Current-state surfaces:
+PASS
+
+daily = 210
+sleep = 210
+training = 339
+context = 44
+
+Model error:
+34 records continuous from 013 through 046
+041-046 closed/scored
+041-046 registration provenance preserved
+
+Machine-readable validator:
+PASS
+0 errors
+0 warnings
 ```
 
-Known governed canonical-sleep warnings may remain if unchanged from prior validated states.
+The two remaining core warnings are the pre-existing governed sleep-stage and DQ-001 sleep-field issues; they were not introduced by the August integration.
 
 A mechanical PASS does not override the privacy/history boundary documented above.
 
@@ -270,6 +325,12 @@ No
 
 Release / DOI change:
 No
+
+Mechanical validation:
+PASS
+
+Semantic integration:
+PASS
 
 Merge readiness:
 Blocked pending explicit privacy-history disposition
