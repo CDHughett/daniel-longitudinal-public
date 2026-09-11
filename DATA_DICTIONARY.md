@@ -469,6 +469,8 @@ Common fields:
 - `source`
 - `notes`
 
+For `epigenetic_longitudinal.csv`, `date` represents the governed biological sample-collection date for the result set when that date is established by applicable source evidence. It is not the provider report-release date. When provider administrative metadata conflict with a governed contemporaneous collection record, the documented source-role reconciliation controls the structured date assignment.
+
 Relevant outputs may include OMICm age, DunedinPACE, Symphony organ/system ages, and TruHealth domains.
 
 Comparisons require attention to provider, assay family, algorithm version, source date, units, and preparation conditions.
