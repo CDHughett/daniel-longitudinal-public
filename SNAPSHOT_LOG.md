@@ -133,32 +133,39 @@ Where present, an accompanying epoch file serves as the temporal anchor record f
 ---
 
 ## [2026-08 — Phase 2 Consolidation / Testing Window Capture](./snapshots/2026-08/)
-**Artifacts:**
+**Current public artifacts:**
 - DEXA body-composition artifact
 - DEXA summary artifact
 - Bod Pod / COSMED
 - VO2 summary
-- Advanced TruAge provider report
-- TruAge provider report
-- TruHealth provider report
+
+**Molecular source state:**
+- Advanced TruAge provider report received and source-reviewed
+- TruAge provider report received and source-reviewed
+- TruHealth provider report received and source-reviewed
+- structured molecular transcription complete for currently represented fields
+- raw public provider-PDF inclusion deferred pending privacy-compliant sanitized derivatives
 
 **Links:**
 - Epoch file: [`2026-08 Epoch.md`](./snapshots/2026-08/2026-08%20Epoch.md)
 - Collection plan: [`2026-08-snapshot-collection-plan.md`](./methodology/2026-08-snapshot-collection-plan.md)
 - TruDiagnostic source reconciliation: [`2026-08-trudiagnostic-reconciliation.md`](./data/source_provenance/2026-08-trudiagnostic-reconciliation.md)
 - Model Error 043 closure: [`record_043_closure.md`](./data/model_error/record_043_closure.md)
+- Batch 5 integration audit: [`2026-09-10-august-snapshot-integration-audit.md`](./docs/audits/2026-09-10-august-snapshot-integration-audit.md)
 
 **Notes:**
 - Primary physical collection window completed across 2026-08-17 and 2026-08-18
 - 2026-08-17 collection sequence was TruDiagnostic at 05:37, DEXA at 07:55, and VO2 at approximately 08:10
 - Bod Pod testing began at 08:26 on 2026-08-18
-- Physical and molecular public source artifacts were privacy-reviewed, assigned stable filenames, and checksum-registered
-- The contemporaneous repository collection record controls the actual TruDiagnostic sample date/time and preparation conditions; provider-displayed administrative metadata remain preserved separately
+- Current public physical source artifacts remain privacy-reviewed, assigned stable filenames, and checksum-registered
+- The contemporaneous repository collection record controls the actual TruDiagnostic sample date/time and preparation conditions; provider-displayed date/fasting metadata remain preserved as source metadata and do not replace that record
+- Batch 5 privacy review identified an unnecessary administrative sample/specimen identifier in the raw molecular provider reports; those three public raw PDFs were therefore removed from the integration branch pending compliant sanitized derivatives
 - The 2026-08-16 B1 session was completed; the corresponding Load Integration session was intentionally withheld to preserve recovery before VO2 testing
 - The testing-directed Load Integration omission is retained as a documented collection-condition deviation rather than normalized
 - Bod Pod thoracic gas volume was predicted rather than directly measured
-- August molecular values are represented in the current structured snapshot layers
+- August molecular values remain represented in the current structured snapshot layers
 - Model Error 043 was adjudicated on 2026-09-10 under its preregistered rules and closed as not supported (`overall_improvement_not_met`, error direction `over`)
+- Historical Git-object exposure from earlier public raw-PDF commits is a separate privacy-remediation question and remains unresolved in this branch
 - No August snapshot result independently changes phase status or declares Phase 2D
 - Interpretation remains in structured-data, report, and model-error layers rather than in this chronological log
 
