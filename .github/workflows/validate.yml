@@ -27,3 +27,6 @@ jobs:
 
       - name: Run machine-readable layer validator
         run: python tools/validate_machine_readable.py
+
+      - name: Run August snapshot cross-layer validator
+        run: python tools/validate_august_snapshot.py

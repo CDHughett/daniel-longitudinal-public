@@ -127,6 +127,46 @@ This validator is also read-only. It does not infer missing sessions, rewrite so
 
 ---
 
+## Snapshot-Specific Cross-Layer Validation — August 2026
+
+A completed snapshot may receive a narrow additional validator when the same governed state is represented across multiple layers.
+
+The August 2026 validator is:
+
+```text
+tools/validate_august_snapshot.py
+```
+
+It protects the completed August snapshot across:
+
+- `data/biomarker_snapshot.csv`
+- `data/epigenetic_longitudinal.csv`
+- `data/source_provenance/2026-08-trudiagnostic-reconciliation.md`
+- `data/model_error/record_043_closure.md`
+- `snapshots/2026-08/checksums.txt`
+- all seven protected August source artifacts
+
+Current protected August state includes:
+
+- canonical TruDiagnostic event `2026-08-17` at `05:37 local`
+- DEXA date `2026-08-17`
+- Bod Pod date `2026-08-18`
+- three core aging outputs
+- all 11 system/organ ages
+- all 19 TruHealth domain scores
+- completed DEXA and Bod Pod numeric fields represented in the integrated snapshot
+- molecular agreement between the integrated snapshot and longitudinal epigenetic table
+- expected molecular source labels
+- DQ-010 source-role reconciliation
+- Record 043 endpoint/value/outcome alignment
+- fixed SHA-256 identities for all seven August artifacts
+
+The validator intentionally uses committed fixed expectations rather than learning expected values from the same mutable files it checks. A legitimate future source-backed correction to a protected August value therefore requires an explicit update to both the affected data/provenance layer and this validator expectation.
+
+It does not interpret the biological result, rescore Record 043, alter preregistered thresholds, regenerate checksums, change source artifacts, or declare a phase transition.
+
+---
+
 # Local Repository Validator
 
 Validator path:
@@ -168,6 +208,13 @@ A specific repository directory may also be supplied:
 python tools\validate_repository.py "C:\path\to\daniel-longitudinal-public"
 ```
 
+The two additional semantic/cross-layer validators may be run from the repository root with:
+
+```text
+python tools\validate_machine_readable.py
+python tools\validate_august_snapshot.py
+```
+
 ---
 
 ## Windows — PowerShell
@@ -184,6 +231,13 @@ A specific directory may also be supplied:
 python .\tools\validate_repository.py "C:\path\to\daniel-longitudinal-public"
 ```
 
+The additional validators may be run with:
+
+```text
+python .\tools\validate_machine_readable.py
+python .\tools\validate_august_snapshot.py
+```
+
 ---
 
 ## macOS or Linux
@@ -198,6 +252,13 @@ A specific directory may also be supplied:
 
 ```text
 python3 tools/validate_repository.py /path/to/daniel-longitudinal-public
+```
+
+The additional validators may be run with:
+
+```text
+python3 tools/validate_machine_readable.py
+python3 tools/validate_august_snapshot.py
 ```
 
 ---
@@ -262,7 +323,7 @@ JSON output includes:
 - validation metrics
 - individual findings
 
-Both validators support local command-line execution, and the repository validator supports `--json` structured output.
+The core and machine-readable validators support local command-line execution, and the repository validator supports `--json` structured output. The August snapshot validator also supports local command-line execution with human-readable pass/fail output.
 
 Repository validation is also executed automatically in GitHub Actions as described below.
 
@@ -302,6 +363,8 @@ Examples:
 - record 043 retains `actual_value=overall_improvement_not_met` and `error_direction=over`
 - records 041–046 retain `calibration_state=pre`
 - records 041–046 retain their original registered prediction narratives at the beginning of `notes`
+- August protected structured values agree across the integrated and longitudinal molecular layers
+- August protected artifacts retain their fixed registered identities
 
 ---
 
@@ -346,6 +409,8 @@ Examples include:
 - protected preregistered record changing `calibration_state` from `pre`
 - protected registered prediction narrative being removed, replaced, or altered
 - RingConn source bytes changed
+- August protected snapshot value or source identity drifting from its committed state
+- August structured molecular layers disagreeing with each other
 - unsafe ZIP path
 
 Errors require review before the repository should be treated as fully verified.
@@ -1049,6 +1114,8 @@ These artifacts have been:
 - incorporated into `snapshots/2026-08/checksums.txt`
 - registered with SHA-256 digests
 
+The three August TruDiagnostic PDFs are public sanitized derivatives of verified provider-source reports. Their registered public hashes identify those derivative copies rather than asserting byte identity with private originals.
+
 The August temporal anchor is:
 
 ```text
@@ -1070,6 +1137,9 @@ complete
 TruDiagnostic provider-result artifacts:
 complete and checksum-registered
 
+integrated DEXA / Bod Pod structured snapshot:
+complete for the represented fields
+
 structured core / organ / TruHealth integration:
 complete for the fields currently represented
 
@@ -1083,7 +1153,15 @@ The August TruDiagnostic source-role reconciliation is preserved in:
 data/source_provenance/2026-08-trudiagnostic-reconciliation.md
 ```
 
+The retrospective biological synthesis is preserved in:
+
+```text
+reports/2026-08-biological-snapshot.md
+```
+
 Artifact verification does not itself adjudicate Model Error 043. The formal 043 adjudication is preserved separately in `data/model_error/record_043_closure.md` and the committed outcome is protected by the repository validator.
+
+The dedicated August cross-layer validator additionally protects agreement between the structured snapshot, molecular longitudinal layer, DQ-010, Record 043 closure, checksum manifest, and fixed artifact identities.
 
 DEXA, VO₂ max, and Bod Pod remain supplemental to the registered 043 primary molecular domain.
 
@@ -1223,6 +1301,8 @@ Verification may establish that:
 - the protected 325-session training prefix remains present and live session identifiers remain unique
 - current live training `source_ref` values use the canonical private-source grammar
 - registered private-source hashes match the exact private bytes when those bytes are independently available for comparison
+- the completed August snapshot remains aligned across its designated structured/provenance/adjudication layers
+- the seven protected August artifacts remain byte-identical to their fixed registered identities
 
 Verification does not independently establish:
 
@@ -1266,7 +1346,7 @@ That status should change only after direct provider confirmation.
 For a routine local verification cycle:
 
 1. pull or download the latest repository state
-2. run both read-only validators (`tools/validate_repository.py` and `tools/validate_machine_readable.py`)
+2. run all applicable read-only validators (`tools/validate_repository.py`, `tools/validate_machine_readable.py`, and snapshot-specific validators such as `tools/validate_august_snapshot.py`)
 3. review all errors
 4. review warnings against `data/DATA_QUALITY_NOTES.md`
 5. spot-check recently changed artifacts
@@ -1323,6 +1403,7 @@ The workflow runs on:
 
 - pushes to `main`
 - pull requests
+- manual workflow dispatch
 
 It uses read-only repository permissions:
 
@@ -1335,6 +1416,7 @@ and executes:
 ```text
 python tools/validate_repository.py
 python tools/validate_machine_readable.py
+python tools/validate_august_snapshot.py
 ```
 
 The workflow is intentionally narrow. It does not edit files, commit corrections, publish releases, or replace human semantic review.
@@ -1382,6 +1464,7 @@ AI assistance does not create a new evidence tier and does not override the repo
 - Closing a prediction after its registered outcome boundary does not authorize extending that prediction with later evidence.
 - Later favorable evidence does not retrospectively rescue a failed fixed-window prediction.
 - A governance miss does not automatically establish a biological effect.
+- Snapshot-specific validators protect committed cross-layer state; they do not become source evidence or interpretation layers.
 - Interpretation belongs in reports, datasets, model-error evaluation, and designated synthesis layers.
 
 ---
@@ -1631,3 +1714,19 @@ The current protected 041–046 lifecycle state is therefore:
 045 closed / supported
 046 closed / failed_autonomic_recompression
 ```
+
+---
+
+## 2026-09-10 August Snapshot Cross-Layer Hardening
+
+The post-snapshot cleanup added:
+
+```text
+tools/validate_august_snapshot.py
+```
+
+The validator protects the completed August snapshot against silent divergence between source-artifact identity, the integrated snapshot table, the longitudinal molecular table, DQ-010 collection provenance, and the formal Record 043 closure.
+
+The existing read-only GitHub Actions workflow now executes all three validators on pull requests, pushes to `main`, and manual workflow dispatch.
+
+This hardening does not change any source artifact byte, checksum registration, biological value, registered prediction wording or threshold, adjudicated outcome, physical protocol exposure, phase state, release version, release date, or DOI.

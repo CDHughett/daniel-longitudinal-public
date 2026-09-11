@@ -12,6 +12,8 @@ This record preserves a source-metadata difference without altering the biologic
 
 The August TruDiagnostic provider reports and the contemporaneous repository collection record serve different evidentiary roles.
 
+The public repository copies of the three August TruDiagnostic reports are sanitized derivatives of verified provider-source reports. That public-artifact status is separate from the source-role reconciliation documented here.
+
 ---
 
 ## Canonical Collection Record
@@ -46,7 +48,7 @@ Collected: 08/16/2026
 Fasted: Unknown
 ```
 
-These fields are preserved as provider-displayed administrative metadata.
+These fields are preserved as provider-displayed administrative metadata in the public sanitized derivatives.
 
 They are not used to overwrite the governed contemporaneous collection record.
 
@@ -59,8 +61,11 @@ The repository does not assert from this difference alone that the provider head
 For this August 2026 snapshot:
 
 ```text
-TruDiagnostic provider reports
+Verified TruDiagnostic provider-source reports
     -> assay outputs, provider labels, provider-displayed result metadata
+
+Public sanitized derivatives
+    -> externally inspectable public representations of those result reports
 
 Contemporaneous repository collection record
     -> canonical sample date/time and preparation/testing conditions
@@ -71,14 +76,14 @@ Accordingly:
 - August molecular rows use `2026-08-17` as the canonical sample date.
 - The provider-displayed `08/16/2026` header date does not shift structured molecular values to August 16.
 - `Fasted: Unknown` in the provider report does not erase the contemporaneously documented fasting state.
-- The provider PDFs remain unchanged as source artifacts.
-- No biological measurement is corrected or altered by this reconciliation.
+- The public sanitized derivatives preserve the biological result content used by the archive while excluding administrative identifying content not required for interpretation.
+- No biological measurement is corrected or altered by this reconciliation or by the public-artifact sanitization status.
 
 ---
 
 ## Public Source Artifacts
 
-The applicable public source artifacts are:
+The applicable public sanitized derivatives are:
 
 - `snapshots/2026-08/2026-08-advanced-truage.pdf`
 - `snapshots/2026-08/2026-08-truage.pdf`
@@ -87,6 +92,8 @@ The applicable public source artifacts are:
 Their SHA-256 values are registered in:
 
 - `snapshots/2026-08/checksums.txt`
+
+Those hashes identify the public derivative copies and do not assert byte identity with the private provider-source reports.
 
 ---
 
@@ -98,7 +105,7 @@ It does not:
 
 - change the preregistered Model Error 043 thresholds
 - change the May 2026 comparison baseline
-- alter the source PDFs
+- alter the biological assay outputs
 - change DEXA, VO2, or Bod Pod collection records
 - establish a causal explanation for any favorable or unfavorable molecular result
 - authorize retrospective rewriting of historical reports

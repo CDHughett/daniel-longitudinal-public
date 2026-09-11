@@ -989,30 +989,36 @@ DexaFit
 VO2_DEXAFIT
 ```
 
-### Planned capture
+### August 2026 capture status
 
-2026-08-17
+Completed on 2026-08-17.
 
-No result is present at the time of this revision.
+Public source artifact:
+
+```text
+snapshots/2026-08/2026-08-vo2-summary.pdf
+```
+
+The provider result is preserved in the snapshot layer and should be interpreted from that source artifact and applicable retrospective reports rather than duplicated here as a new canonical value.
 
 ### Equipment
 
-Unknown until capture.
+Not currently structured in this source guide. Use the provider artifact when equipment detail is required.
 
 ### Software version
 
-Unknown until capture.
+Not currently structured in this source guide.
 
-### Source modes expected
+### Source modes
 
 - official provider report
 - test-stage or summary output
-- structured transcription
+- structured transcription when governed
 - snapshot interpretation
 
-### Required capture documentation
+### Capture documentation
 
-At the time of testing, record when available:
+For each testing event, record when available:
 
 - equipment model
 - protocol type
@@ -1027,7 +1033,7 @@ At the time of testing, record when available:
 - recent training
 - time of day
 
-The planned test does not become evidence until the result and source artifact exist.
+The 2026-08-17 result and source artifact are present. Event-specific collection conditions are preserved in the August snapshot records rather than inferred from this standing source guide.
 
 ---
 
@@ -1217,10 +1223,28 @@ May include:
 - provider report
 - portal output
 - screenshot
-- source artifact
+- public sanitized derivative
 - structured transcription
 - longitudinal epigenetic dataset
 - retrospective snapshot interpretation
+
+### August 2026 public artifact status
+
+The three public August TruDiagnostic reports are **sanitized derivatives of the verified provider-source reports**:
+
+```text
+snapshots/2026-08/2026-08-advanced-truage.pdf
+snapshots/2026-08/2026-08-truage.pdf
+snapshots/2026-08/2026-08-truhealth.pdf
+```
+
+The public derivatives were privacy-reviewed before ingestion. Administrative identifying content not required for interpretation was removed while the biological result content used by the archive was preserved. Their current SHA-256 values in `snapshots/2026-08/checksums.txt` identify the public derivative copies; those digests do not assert byte identity with the private provider originals.
+
+The governing source-role reconciliation is:
+
+[`data/source_provenance/2026-08-trudiagnostic-reconciliation.md`](data/source_provenance/2026-08-trudiagnostic-reconciliation.md)
+
+For the August 2026 result set, the provider reports control assay outputs and provider labels. The governed contemporaneous repository record controls the canonical sample date/time and preparation conditions: 2026-08-17 at 05:37 local. Provider-displayed administrative date/fasting metadata do not overwrite that collection record.
 
 ### Known considerations
 
@@ -1391,7 +1415,7 @@ Each major snapshot cycle should record, when relevant:
 
 General preferred conditions in this file do not substitute for event-specific documentation.
 
-The August 2026 snapshot should use a separately documented collection-condition plan before outcome review.
+The August 2026 snapshot uses the preregistered collection plan and contemporaneous August Epoch record for event-specific collection conditions.
 
 ---
 
@@ -1516,6 +1540,8 @@ The revision:
 - preserves unknown hardware, software, firmware, and assay information as unknown
 - defines source-state and correction boundaries
 - replaces universal capture assumptions with event-specific comparability requirements
+
+On 2026-09-10 the source guide was aligned with the completed August snapshot by replacing stale pre-test VO₂ language, explicitly classifying the three August TruDiagnostic PDFs as public sanitized derivatives, and linking their collection-date/source-role reconciliation. These changes alter no source measurement, biological result, prediction outcome, protocol exposure, or phase status.
 
 The revision does not alter:
 

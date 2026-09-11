@@ -48,10 +48,13 @@ Current reconciliation record:
 
 This record preserves the August 2026 distinction between:
 
-- TruDiagnostic provider reports as the source for assay outputs and provider-displayed result metadata
+- verified TruDiagnostic provider-source reports as the source for assay outputs and provider-displayed result metadata
+- public sanitized derivatives as the externally inspectable repository copies of those reports
 - the governed contemporaneous repository record as the canonical source for the sample collection date/time and preparation/testing conditions
 
-A reconciliation record does not rewrite the provider artifact or alter the biological result.
+The public August TruDiagnostic derivatives are checksum-registered under `snapshots/2026-08/`. Their public hashes identify the derivative copies rather than asserting byte identity with private provider originals.
+
+A reconciliation record does not change the biological result or rewrite the governed collection event.
 
 ---
 
