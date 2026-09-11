@@ -14,6 +14,47 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 
 ### Changed
 
+#### September 10 Batch 5 August snapshot privacy and release-readiness audit
+
+- Added `docs/audits/2026-09-10-august-snapshot-integration-audit.md` as the final semantic/diff/privacy review for the August molecular-integration branch.
+- Rechecked Model Error 043 against the preserved preregistered thresholds and confirmed the existing `closed / not supported / overall_improvement_not_met / over` adjudication without changing the original prediction narrative or `calibration_state=pre` provenance.
+- Reviewed the large `methodology/README.md` consolidation and confirmed that it removes duplicated directory-guide/history content rather than deleting or rewriting the actual standing or preregistered methodology artifacts.
+- Identified an unnecessary administrative sample/specimen identifier in each of the three raw August TruDiagnostic provider PDFs. Subject name and chronological age remain intentionally public under the standing anonymization policy; the administrative identifier does not.
+- Removed the three raw TruDiagnostic PDF copies from the integration branch and removed their entries from `snapshots/2026-08/checksums.txt`. This is current-branch privacy remediation only and does not alter any biological value or structured transcription.
+- Updated current-facing August snapshot, provenance, report, README, index, and dashboard language so molecular source review/structured integration remains complete while raw public molecular-PDF inclusion is explicitly deferred pending compliant sanitized derivatives.
+- Candidate sanitized derivatives were technically verified outside the repository by true redaction and extracted-text comparison, but were not adopted as canonical public artifacts because their retained source-file bytes differ from the previously published repository PDF blobs.
+- Historical Git-object exposure from the earlier public raw-PDF commits remains a separate unresolved remediation question. No force rewrite of `main`, tags, release history, or provider-side storage was performed.
+- The pull request remains draft and should not be represented as a fully closed privacy-remediation cycle until the historical-object disposition is explicitly decided.
+- No Phase 2D declaration, protocol change, release-version change, or DOI change was introduced.
+
+Classification:
+
+```text
+Biological source-value alteration:
+No
+
+Structured August molecular data:
+Preserved
+
+Model Error 043 outcome:
+Confirmed unchanged
+
+Current integration-branch raw molecular PDFs:
+Removed pending sanitized derivatives
+
+Historical Git-object remediation:
+Not performed
+
+Phase or protocol change:
+No
+
+Release or DOI change:
+No
+
+Merge/release readiness:
+Blocked pending explicit privacy-history disposition
+```
+
 #### September 10 August molecular snapshot integration and Model Error 043 closure
 
 - Added the three August TruDiagnostic provider-result PDFs to `snapshots/2026-08/` and registered their SHA-256 digests in the existing August checksum manifest.
