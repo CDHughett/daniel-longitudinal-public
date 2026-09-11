@@ -138,9 +138,9 @@ Where present, an accompanying epoch file serves as the temporal anchor record f
 - DEXA summary artifact
 - Bod Pod / COSMED
 - VO2 summary
-- Advanced TruAge provider report
-- TruAge provider report
-- TruHealth provider report
+- Advanced TruAge provider report — public sanitized derivative
+- TruAge provider report — public sanitized derivative
+- TruHealth provider report — public sanitized derivative
 
 **Links:**
 - Epoch file: [`2026-08 Epoch.md`](./snapshots/2026-08/2026-08%20Epoch.md)
@@ -153,6 +153,7 @@ Where present, an accompanying epoch file serves as the temporal anchor record f
 - 2026-08-17 collection sequence was TruDiagnostic at 05:37, DEXA at 07:55, and VO2 at approximately 08:10
 - Bod Pod testing began at 08:26 on 2026-08-18
 - Physical and molecular public source artifacts were privacy-reviewed, assigned stable filenames, and checksum-registered
+- The three August TruDiagnostic PDFs are public sanitized derivatives of verified provider-source reports; their public checksums identify those derivative copies
 - The contemporaneous repository collection record controls the actual TruDiagnostic sample date/time and preparation conditions; provider-displayed administrative metadata remain preserved separately
 - The 2026-08-16 B1 session was completed; the corresponding Load Integration session was intentionally withheld to preserve recovery before VO2 testing
 - The testing-directed Load Integration omission is retained as a documented collection-condition deviation rather than normalized
