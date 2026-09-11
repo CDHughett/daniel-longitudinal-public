@@ -145,6 +145,7 @@ Where present, an accompanying epoch file serves as the temporal anchor record f
 **Links:**
 - Epoch file: [`2026-08 Epoch.md`](./snapshots/2026-08/2026-08%20Epoch.md)
 - Collection plan: [`2026-08-snapshot-collection-plan.md`](./methodology/2026-08-snapshot-collection-plan.md)
+- Retrospective biological synthesis: [`2026-08-biological-snapshot.md`](./reports/2026-08-biological-snapshot.md)
 - TruDiagnostic source reconciliation: [`2026-08-trudiagnostic-reconciliation.md`](./data/source_provenance/2026-08-trudiagnostic-reconciliation.md)
 - Model Error 043 closure: [`record_043_closure.md`](./data/model_error/record_043_closure.md)
 
