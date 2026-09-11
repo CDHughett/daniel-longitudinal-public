@@ -32,7 +32,7 @@ Current recent state includes:
 ```text
 041 closed / supported
 042 closed / not supported — continued_adaptation
-043 open / unscored
+043 closed / not supported — overall_improvement_not_met (over)
 044 closed / not supported — narrow governance deviation
 045 closed / supported
 046 closed / failed_autonomic_recompression
@@ -284,9 +284,8 @@ AI output remains subordinate to source evidence and the registered evaluation b
 
 The repository validator protects selected recent records against accidental drift, including:
 
-- required open state of record 043
-- required closed state of 041, 042, 044, 045, and 046
-- protected actual values/error directions
+- required closed state of records 041–046
+- protected actual values and error directions, including record 043 `overall_improvement_not_met` / `over`
 - `calibration_state=pre` registration provenance for 041–046
 - preservation of original registered prediction narratives
 
@@ -297,6 +296,7 @@ The validator does not independently decide whether a scientific adjudication wa
 ## Related Documents
 
 - [`model_error_gap_v1.csv`](./model_error_gap_v1.csv)
+- [`record_043_closure.md`](./record_043_closure.md)
 - [`udi_by_type_tracker.csv`](./udi_by_type_tracker.csv)
 - [`WHAT_THIS_LAYER_IS.md`](./WHAT_THIS_LAYER_IS.md)
 - [`../../methodology/prediction_evaluation.md`](../../methodology/prediction_evaluation.md)

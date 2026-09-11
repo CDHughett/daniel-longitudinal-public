@@ -1546,12 +1546,8 @@ class Validator:
                     ),
                 )
 
-        # Records whose prospective evidence windows
-        # remain incomplete and whose outcome/error
-        # fields must therefore remain blank.
-        protected_open_ids = (
-            43,
-        )
+        # No records in the protected 041-046 block remain open.
+        protected_open_ids: tuple[int, ...] = ()
 
         for record_id in protected_open_ids:
             row = by_id.get(record_id)
@@ -1623,6 +1619,10 @@ class Validator:
             42: {
                 "actual": "continued_adaptation",
                 "error_direction": "under",
+            },
+            43: {
+                "actual": "overall_improvement_not_met",
+                "error_direction": "over",
             },
             44: {
                 "actual": "0",
@@ -1743,9 +1743,7 @@ class Validator:
                     f"{len(ids)} records continuous "
                     f"from {min(ids):03d} through "
                     f"{max(ids):03d}; "
-                    "041, 042, 044, 045, and 046 "
-                    "closed/scored; "
-                    "043 remains open and unscored; "
+                    "041-046 closed/scored; "
                     "041-046 registration "
                     "provenance preserved"
                 ),

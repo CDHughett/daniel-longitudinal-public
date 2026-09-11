@@ -51,8 +51,45 @@ Following DOI issuance, `v1.0.0` archival publication, post-DOI observer-pathway
 This block extends the post-calibration prediction ledger beyond artifact closure and into prospective observation of recovery capacity, ambient execution plateau behavior, August biological snapshot translation, and protocol-governance preservation through the next full snapshot cycle.
 
 **Notes:**  
-Records 041 through 044 are forward-logged and remain open until their defined observation windows close.
+Records 041 through 044 were forward-logged for their defined observation windows.
 
 This event does not represent a structural change to prediction methodology. It records a calibration-context transition from post-DOI archive stabilization into the next active prospective observation block.
 
 UDI handling remains governed by UDI v1.1. Closed eligible records may be incorporated into stratified UDI reporting only after closure criteria are met. Composite UDI remains intentionally withheld under documented release criteria.
+
+---
+
+## Event 004 — August 2026 Biological Translation Adjudication
+
+**Date:** 2026-09-10  
+**Type:** Post-outcome adjudication of a prospectively registered primary trajectory prediction  
+**Domains affected:** biological translation, trajectory concordance, source reconciliation  
+**Registration provenance:** record 043 remains `calibration_state=pre`
+
+**Description:**  
+After the August TruDiagnostic source reports were archived and their structured values were integrated, record 043 was evaluated against the criteria frozen in `methodology/open_prediction_evaluation_plan_041_044.md`.
+
+The preregistered overall-improvement rule was not met. DunedinPACE improved from 0.79 to 0.77, OMICm age delta moved slightly more favorable from -3.7 to -3.9 years but remained inside the registered stable band, and SymphonyAge increased from 37.8 to 46.1 years. The required two-of-three core-anchor improvement threshold was therefore not met. All 11 directly comparable system/organ ages were materially adverse under the registered threshold, and only 11 of 30 combined supporting metrics were stable or improved, below the required 60%.
+
+Record 043 closed as `overall_improvement_not_met` with error direction `over`, meaning the model overestimated the breadth of August biological improvement under the locked evaluation rule.
+
+**Notes:**  
+The record remains prospectively registered in provenance; closure does not change `calibration_state=pre` to `post`.
+
+Primary trajectory concordance updates from:
+
+```text
+2/3 = 0.67
+```
+
+to:
+
+```text
+2/4 = 0.50
+```
+
+Point and range UDI remain unchanged. State concordance remains unchanged. Secondary trajectory records remain excluded from the primary trajectory-concordance denominator.
+
+The August provider-header metadata difference is governed separately by `data/source_provenance/2026-08-trudiagnostic-reconciliation.md` and does not alter the biological values used for record 043.
+
+This event records calibration outcome only. It does not establish a causal explanation for the August provider-output changes, modify the physical protocol, or declare a phase transition.

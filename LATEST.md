@@ -20,11 +20,10 @@ Archive DOI: https://doi.org/10.5281/zenodo.20815612
 - **Behavioral posture:** Increasingly economical / low-salience execution under unchanged workload
 - **Recovery posture:** Overnight autonomic variability remains visible; weekly averages are not uniformly favorable, while ordinary function has remained preserved across the recently observed window
 - **Bodyweight/intake posture:** Lower average bodyweight and lower reported intake remain observational background variables, not a recovery or testing intervention
-- **Open model-error record:** 043 — August biological snapshot translation
-- **TruDiagnostic status:** Sample collected; provider result required for 043 remains pending
-- **Recently closed records:** 041, 042, 044, 045, 046
+- **Model-error posture:** Records 041–046 are closed/scored; record 043 closed on 2026-09-10 as not supported (`overall_improvement_not_met`, error direction `over`)
+- **TruDiagnostic status:** August provider-result artifacts archived, checksum-registered, source-reconciled, and represented in the current structured snapshot layers
 - **Formal Phase 2D declaration:** None
-- **August physical snapshot:** DEXA, VO₂, and Bod Pod collection complete and archived
+- **August snapshot:** DEXA, VO₂, Bod Pod, TruAge/Advanced TruAge, and TruHealth source artifacts archived; Model Error 043 adjudication complete
 
 Current machine-readable row counts and endpoints are maintained in [`data/DATA_COVERAGE.md`](data/DATA_COVERAGE.md).
 
@@ -101,7 +100,7 @@ Do not:
 - unload solely because of one wearable night
 - manufacture portability tests
 - convert short-window scale movement into a tissue-composition claim
-- score record 043 without required TruDiagnostic provider evidence
+- reopen or rescore record 043 from later favorable or unfavorable evidence
 - declare Phase 2D from isolated favorable sessions
 
 Active report: [`reports/2026-W36.md`](reports/2026-W36.md)
@@ -114,10 +113,12 @@ Active report: [`reports/2026-W36.md`](reports/2026-W36.md)
 |---|---|
 | 041 | Closed / supported |
 | 042 | Closed / not supported — continued adaptation |
-| 043 | **Open / unscored — provider evidence pending** |
+| 043 | **Closed / not supported — overall improvement not met / over** |
 | 044 | Closed / not supported — narrow snapshot-directed governance deviation |
 | 045 | Closed / supported |
 | 046 | Closed / failed_autonomic_recompression |
+
+Record 043’s criterion-level adjudication is preserved in [`data/model_error/record_043_closure.md`](data/model_error/record_043_closure.md).
 
 Fixed scoring windows remain fixed. Later evidence does not retroactively rescue a failed prediction or reopen a closed record.
 
@@ -131,6 +132,8 @@ Fixed scoring windows remain fixed. Later evidence does not retroactively rescue
 - the historical training prefix through 2026-08-30 remains protected at 325 sessions while later governed rows append
 - exact retained private-source hashes are registered only when the exact bytes are available
 - v1.29 private-source identity is registered in the provenance manifest
+- August TruDiagnostic provider artifacts are registered in the August checksum manifest
+- the August provider-header versus contemporaneous collection-record distinction is preserved in [`data/source_provenance/2026-08-trudiagnostic-reconciliation.md`](data/source_provenance/2026-08-trudiagnostic-reconciliation.md)
 
 Verification guide: [`VERIFICATION.md`](VERIFICATION.md)
 Private-source provenance: [`data/source_provenance/`](data/source_provenance/)

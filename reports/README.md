@@ -266,9 +266,15 @@ Reports may not:
 
 Candidate evidence remains provisional until evaluated under the applicable methodology.
 
-The preserved preregistered plan for records 041–044 remains the governing artifact for open record 043 and the provenance artifact for closed records 041, 042, and 044:
+The preserved preregistered plan for records 041–044 remains the provenance artifact for the fully adjudicated 041–044 block:
 
 [`../methodology/open_prediction_evaluation_plan_041_044.md`](../methodology/open_prediction_evaluation_plan_041_044.md)
+
+Record 043 is now closed / not supported under that preserved plan. Its criterion-level adjudication is recorded separately in:
+
+[`../data/model_error/record_043_closure.md`](../data/model_error/record_043_closure.md)
+
+Historical weekly reports that correctly described record 043 as open before the provider-result evidence arrived remain valid historical state records and should not be rewritten merely because 043 later closed.
 
 ---
 
@@ -374,6 +380,7 @@ All reports must:
 - avoid selective omission of unfavorable valid evidence
 - align with current governance and methodology
 - preserve the open status of unresolved predictions
+- preserve the closed status and fixed boundaries of adjudicated predictions
 - avoid unregistered forward claims
 
 Retrospective reports must additionally:
@@ -492,20 +499,15 @@ Nothing supersedes a verified source without documented evidence and a traceable
 - [`../methodology/data-collection.md`](../methodology/data-collection.md)
 - [`../methodology/prediction_evaluation.md`](../methodology/prediction_evaluation.md)
 - [`../methodology/open_prediction_evaluation_plan_041_044.md`](../methodology/open_prediction_evaluation_plan_041_044.md)
+- [`../data/model_error/record_043_closure.md`](../data/model_error/record_043_closure.md)
 - [`../PHASE_DECLARATION_CRITERIA.md`](../PHASE_DECLARATION_CRITERIA.md)
 
 ---
 
 ## Version Note
 
-This document was aligned on 2026-07-15 with the archive’s current:
+This document was aligned on 2026-07-15 with the archive’s active/retrospective report distinction, source-backed correction rules, registered prediction layer, candidate-evidence handling, incomplete environmental-control boundary, phase-declaration governance, and structured/narrative evidence hierarchy.
 
-- active and retrospective report distinction
-- source-backed correction rules
-- registered prediction layer
-- candidate-evidence handling
-- incomplete environmental-control boundary
-- phase-declaration governance
-- structured and narrative evidence hierarchy
+On 2026-09-10 it was aligned after Model Error 043 closure so the current-facing guide no longer describes 043 as open, while preserving historical weekly reports whose open/pending language was accurate when written.
 
-The revision does not alter any weekly observation, source value, prediction record, closed outcome, protocol exposure, or phase status.
+These directory-guide revisions do not alter any weekly observation, source value, registered prediction wording, protocol exposure, or phase status.

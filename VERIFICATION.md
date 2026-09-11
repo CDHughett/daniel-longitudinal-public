@@ -65,8 +65,7 @@ The local validator reviews:
 - current-state alignment across `LATEST.md`, `README.md`, and `INDEX.md`
 - live row-count and endpoint alignment between canonical datasets and `data/DATA_COVERAGE.md`
 - model-error continuity
-- protected open status of record 043
-- preserved closed/adjudicated state of records 041, 042, 044, 045, and 046
+- preserved closed/adjudicated state of records 041–046
 - selected protected actual values and error directions for those closed records
 - preserved prospective registration state for records 041–046
 - preservation of the original registered prediction narrative for records 041–046
@@ -298,9 +297,9 @@ Examples:
 - all CSVs parse
 - weekly reports are continuous
 - RingConn bytes match the registered source package
-- record 043 retains its protected open/unscored state
-- records 041, 042, 044, 045, and 046 retain their protected closed/adjudicated states
+- records 041–046 retain their protected closed/adjudicated states
 - protected closed-record actual values and error directions remain unchanged
+- record 043 retains `actual_value=overall_improvement_not_met` and `error_direction=over`
 - records 041–046 retain `calibration_state=pre`
 - records 041–046 retain their original registered prediction narratives at the beginning of `notes`
 
@@ -340,8 +339,6 @@ Examples include:
 - duplicate canonical sleep date
 - missing date inside the canonical sleep interval
 - release-metadata mismatch
-- protected open prediction record no longer open
-- protected open prediction record containing outcome data before scoring
 - protected closed prediction record reopened
 - protected closed prediction record losing its recorded actual outcome
 - protected closed prediction record drifting from its registered adjudicated actual value
@@ -542,15 +539,13 @@ The validator checks:
 - duplicate IDs
 - sequence continuity
 - continuity through record 046
-- presence of protected open record 043
-- open status of record 043
-- preservation of its registered prediction
-- blank protected actual and error fields for record 043
-- presence of protected closed records 041, 042, 044, 045, and 046
-- closed status of records 041, 042, 044, 045, and 046
+- presence of protected closed records 041–046
+- closed status of records 041–046
 - preservation of their registered predictions
 - preservation of their adjudicated actual values
 - preservation of their recorded error directions
+- preservation of record 043 `actual_value=overall_improvement_not_met`
+- preservation of record 043 `error_direction=over`
 - preservation of `calibration_state=pre` for records 041–046
 - preservation of the exact original registered prediction narrative for records 041–046
 
@@ -662,29 +657,9 @@ Otherwise, a corrupted row could become the validator's own new reference state.
 
 ## Protected Open Records
 
-The currently protected open-record set is explicitly defined as:
+No record in the currently protected 041–046 block remains open.
 
-```text
-043
-```
-
-This record is protected explicitly rather than inferred dynamically from whatever rows currently contain `status=open`.
-
-That preserves the governance check even if the protected row is accidentally changed from `open` to another state.
-
-Its outcome fields must remain blank until the applicable prospective evidence boundary is complete and retrospective scoring is authorized.
-
-For record 043, the validator protects:
-
-- presence
-- open status
-- registered prediction value
-- blank actual value
-- blank absolute error
-- blank error direction
-- blank percentage error
-- prospective registration state
-- original registered prediction narrative
+The validator retains an explicit empty protected-open set so that future prospective records can be added deliberately rather than inferred dynamically from current row contents.
 
 ---
 
@@ -695,6 +670,7 @@ The currently protected closed-record set is:
 ```text
 041
 042
+043
 044
 045
 046
@@ -710,6 +686,10 @@ error_direction = none
 042
 actual_value = continued_adaptation
 error_direction = under
+
+043
+actual_value = overall_improvement_not_met
+error_direction = over
 
 044
 actual_value = 0
@@ -753,7 +733,7 @@ The validator does **not** independently determine whether those adjudications w
 
 ## Records 041–044 Evaluation Boundary
 
-For records 041, 042, and 044, formal scoring was performed retrospectively against the preserved preregistered rules in:
+For records 041–044, formal scoring was performed retrospectively against the preserved preregistered rules in:
 
 ```text
 methodology/open_prediction_evaluation_plan_041_044.md
@@ -769,7 +749,8 @@ closed / supported
 closed / not supported — continued adaptation
 
 043:
-open / TruDiagnostic provider results pending
+closed / not supported — overall improvement not met
+error_direction = over
 
 044:
 closed / not supported — narrow snapshot-directed governance deviation
@@ -782,11 +763,18 @@ The validator does not independently:
 - reconstruct the July–August evidence set
 - determine whether record 041 crossed its recovery-capacity failure boundary
 - determine whether record 042 satisfied its repeated automaticity threshold
+- determine whether record 043 satisfied its biological-translation thresholds
 - determine whether the 2026-08-16 Load Integration omission constituted a governance failure
 - infer a biological consequence from record 044
-- score record 043
+- rescore any of records 041–044
 
 Those responsibilities belong to the preregistered evaluation artifact, source evidence, model-error ledger, and retrospective semantic review.
+
+Record 043's criterion-by-criterion adjudication is preserved in:
+
+```text
+data/model_error/record_043_closure.md
+```
 
 ---
 
@@ -1033,22 +1021,25 @@ The validator does not:
 
 ---
 
-# August 2026 Physical Artifact Verification State
+# August 2026 Snapshot Artifact Verification State
 
-The August physical collection window was completed across:
+The August collection window was completed across:
 
 ```text
 2026-08-17
 2026-08-18
 ```
 
-Current preserved physical source artifacts are:
+Current preserved source artifacts are:
 
 ```text
 snapshots/2026-08/2026-08-dexa-body-comp.jpg
 snapshots/2026-08/2026-08-dexa-summary.jpg
 snapshots/2026-08/2026-08-vo2-summary.pdf
 snapshots/2026-08/2026-08-bodpod-cosmed.jpg
+snapshots/2026-08/2026-08-advanced-truage.pdf
+snapshots/2026-08/2026-08-truage.pdf
+snapshots/2026-08/2026-08-truhealth.pdf
 ```
 
 These artifacts have been:
@@ -1056,7 +1047,7 @@ These artifacts have been:
 - privacy-reviewed
 - assigned stable public filenames
 - incorporated into `snapshots/2026-08/checksums.txt`
-- verified against the current checksum manifest
+- registered with SHA-256 digests
 
 The August temporal anchor is:
 
@@ -1064,7 +1055,7 @@ The August temporal anchor is:
 snapshots/2026-08/2026-08 Epoch.md
 ```
 
-Current August evidence state is:
+Current artifact-layer evidence state is:
 
 ```text
 physical collection:
@@ -1076,18 +1067,25 @@ complete
 TruDiagnostic sample collection:
 complete
 
-TruDiagnostic provider results:
-pending
+TruDiagnostic provider-result artifacts:
+complete and checksum-registered
 
-complete August biological interpretation:
-pending
+structured core / organ / TruHealth integration:
+complete for the fields currently represented
+
+Model Error 043:
+closed / not supported — overall_improvement_not_met
 ```
 
-Artifact verification does not close Model Error 043.
+The August TruDiagnostic source-role reconciliation is preserved in:
 
-The primary Model Error 043 domain remains the pending TruDiagnostic provider-result evidence.
+```text
+data/source_provenance/2026-08-trudiagnostic-reconciliation.md
+```
 
-DEXA, VO₂ max, and Bod Pod artifact validity cannot substitute for that primary domain.
+Artifact verification does not itself adjudicate Model Error 043. The formal 043 adjudication is preserved separately in `data/model_error/record_043_closure.md` and the committed outcome is protected by the repository validator.
+
+DEXA, VO₂ max, and Bod Pod remain supplemental to the registered 043 primary molecular domain.
 
 ---
 
@@ -1215,7 +1213,6 @@ Verification may establish that:
 - repository CSVs parse
 - internal Markdown links resolve
 - weekly reports are continuous
-- protected open prediction records remain open and unscored
 - protected closed prediction records retain their committed adjudicated states
 - selected protected actual values and error directions remain unchanged
 - prospective registration state remains preserved for records 041–046
@@ -1276,7 +1273,7 @@ For a routine local verification cycle:
 6. verify that protected prediction and phase boundaries remain intact
 7. verify that preregistered prediction records retain their original registration state and prediction narrative
 8. verify that scored predictions remain frozen after their registered outcome boundaries
-9. verify that record 043 remains unscored until its required primary evidence arrives
+9. verify that record 043 retains its closed adjudicated state and original prospective registration provenance
 10. download and validate a fresh GitHub ZIP after material changes
 11. record a formal audit only when the scheduled audit cadence or a material event requires it
 
@@ -1298,6 +1295,7 @@ The validator cannot fully evaluate:
 - whether preservation of the original prediction narrative is sufficient to establish fair adjudication
 - whether record 041 was substantively supported
 - whether record 042 satisfied its qualitative-transition threshold
+- whether record 043 was substantively adjudicated correctly
 - whether the record 044 deviation was correctly classified
 - whether the record 044 deviation materially affected a measured biological result
 - whether record 046 was substantively adjudicated correctly
@@ -1534,7 +1532,7 @@ The 2026-08-24 update:
 - introduced no phase declaration
 - introduced no release increment
 
-The 2026-08-24 update therefore advances the protected model-error lifecycle state to:
+The 2026-08-24 update therefore advanced the protected model-error lifecycle state to:
 
 ```text
 041:
@@ -1556,7 +1554,7 @@ closed / supported
 closed / failed_autonomic_recompression
 ```
 
-The update does not alter:
+The update did not alter:
 
 - any source artifact
 - any checksum
@@ -1564,7 +1562,7 @@ The update does not alter:
 - any registered prediction value
 - any registered prediction threshold
 - any prior adjudicated outcome
-- the pending record 043 outcome
+- the then-pending record 043 outcome
 - any physical protocol exposure
 - any phase declaration
 - any release metadata
@@ -1599,3 +1597,37 @@ canonical source refs required
 The two core-validator warnings remain the already governed canonical-sleep issues documented in `data/DATA_QUALITY_NOTES.md`.
 
 This hardening did not change biological measurements, canonical sleep values, registered prediction wording, adjudicated model-error outcomes, phase status, physical protocol state, release version, release date, or DOI.
+
+---
+
+## 2026-09-10 Record 043 Closure Protection
+
+The September 10 update advanced the protected Model Error 043 lifecycle after the August TruDiagnostic source reports were archived, integrated, source-reconciled, and evaluated under the preregistered record 043 rules.
+
+The update:
+
+- removed record 043 from the protected open-record set
+- left the protected open-record set empty for records 041–046
+- added record 043 to the protected closed-record set
+- preserved its original prospectively registered `Prediction:` narrative
+- preserved `calibration_state=pre`
+- protected `status=closed`
+- protected `actual_value=overall_improvement_not_met`
+- protected `error_direction=over`
+- preserved the full criterion-by-criterion adjudication in `data/model_error/record_043_closure.md`
+- updated primary trajectory concordance from 2/3 = 0.67 to 2/4 = 0.50
+- left point and range UDI unchanged
+- left state concordance unchanged
+- preserved the August TruDiagnostic source-role reconciliation without modifying the provider PDFs
+- did not alter the original 043 prediction wording, registered thresholds, May comparison baseline, physical protocol, phase state, release version, release date, or DOI
+
+The current protected 041–046 lifecycle state is therefore:
+
+```text
+041 closed / supported
+042 closed / not supported — continued_adaptation
+043 closed / not supported — overall_improvement_not_met / over
+044 closed / not supported — narrow snapshot-directed governance deviation
+045 closed / supported
+046 closed / failed_autonomic_recompression
+```

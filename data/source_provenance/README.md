@@ -1,8 +1,10 @@
-# Private Source Provenance
+# Source Provenance
 
 ## Purpose
 
-This directory records provenance for private `Daniel_Dataset_v1.x` sources that support public curated rows without publishing the private workbooks themselves.
+This directory records provenance for source states that support public curated rows without requiring every underlying source to be published in its original form.
+
+Its primary historical role is provenance for private `Daniel_Dataset_v1.x` workbooks. It may also contain narrow source-reconciliation records when two source states have different metadata roles that must remain explicit.
 
 The public structured layer may therefore distinguish:
 
@@ -20,7 +22,7 @@ from public distribution of the private source itself.
 
 ## Manifest
 
-Primary manifest:
+Primary private-source manifest:
 
 [`daniel_dataset_private_manifest.csv`](./daniel_dataset_private_manifest.csv)
 
@@ -35,6 +37,21 @@ The manifest records:
 - hash-registration status
 - public extraction targets
 - provenance notes
+
+---
+
+## Provider-Source Reconciliation Records
+
+Current reconciliation record:
+
+[`2026-08-trudiagnostic-reconciliation.md`](./2026-08-trudiagnostic-reconciliation.md)
+
+This record preserves the August 2026 distinction between:
+
+- TruDiagnostic provider reports as the source for assay outputs and provider-displayed result metadata
+- the governed contemporaneous repository record as the canonical source for the sample collection date/time and preparation/testing conditions
+
+A reconciliation record does not rewrite the provider artifact or alter the biological result.
 
 ---
 
