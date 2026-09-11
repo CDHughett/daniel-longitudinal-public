@@ -26,7 +26,7 @@ Current public structured coverage through **2026-09-06**:
 | Training exposure | **339 session/block rows** |
 | Context events | **44 bounded events** |
 | Weekly reporting | Continuous from **2026-W06** |
-| August snapshot | **DEXA + VO₂ + Bod Pod + TruDiagnostic source artifacts archived** |
+| August snapshot | **Physical artifacts archived; molecular source review + structured integration complete; raw molecular PDFs deferred for privacy sanitization** |
 | Recent prediction closure | **043 — closed / not supported / over** |
 
 Authoritative live counts and endpoints are maintained in [`data/DATA_COVERAGE.md`](./data/DATA_COVERAGE.md).
@@ -72,7 +72,8 @@ For recurring terminology, see [`docs/CONCEPTS.md`](./docs/CONCEPTS.md).
 | Installed training architecture | **B1 + Load Integration** |
 | Open model-error records | **none in protected block 041–046** |
 | Record 043 | **closed / not supported — `overall_improvement_not_met` / over** |
-| August TruDiagnostic result | **provider artifacts archived, source-reconciled, and structured** |
+| August TruDiagnostic result | **source-reviewed, source-reconciled, and structured; raw public provider PDFs deferred pending compliant sanitized derivatives** |
+| Privacy/distribution status | **integration branch current-tree raw-PDF copies removed; historical Git-object remediation unresolved** |
 | Formal Phase 2D declaration | **none** |
 
 Current-state anchors retained for repository validation:
@@ -189,6 +190,10 @@ August TruDiagnostic source-role reconciliation:
 
 - [`data/source_provenance/2026-08-trudiagnostic-reconciliation.md`](./data/source_provenance/2026-08-trudiagnostic-reconciliation.md)
 
+Batch 5 August integration/privacy audit:
+
+- [`docs/audits/2026-09-10-august-snapshot-integration-audit.md`](./docs/audits/2026-09-10-august-snapshot-integration-audit.md)
+
 Coverage, field semantics, and limitations:
 
 - [`data/DATA_COVERAGE.md`](./data/DATA_COVERAGE.md)
@@ -288,13 +293,17 @@ TruDiagnostic → DEXA → VO₂ max
 Bod Pod
 ```
 
-Preserved DEXA, VO₂, Bod Pod, Advanced TruAge, TruAge, and TruHealth source artifacts are available under [`snapshots/2026-08/`](./snapshots/2026-08/), with SHA-256 registration in the folder checksum manifest.
+The current public August snapshot directory retains the DEXA, VO₂, and Bod Pod source artifacts with SHA-256 registration in the folder checksum manifest.
 
-The contemporaneous repository collection record controls the actual TruDiagnostic sample event: **2026-08-17 at 05:37 local**, together with its recorded preparation conditions. Provider-displayed administrative metadata remain preserved in the original PDFs but do not overwrite that collection record. The source-role reconciliation is documented in [`data/source_provenance/2026-08-trudiagnostic-reconciliation.md`](./data/source_provenance/2026-08-trudiagnostic-reconciliation.md).
+The Advanced TruAge, TruAge, and TruHealth provider reports were received and source-reviewed for structured transcription and Model Error 043 adjudication. Batch 5 privacy review identified an unnecessary administrative sample/specimen identifier in the raw report headers, so the integration branch removes those raw public PDF copies and defers public molecular-PDF inclusion until compliant sanitized derivatives are adopted.
+
+The contemporaneous repository collection record controls the actual TruDiagnostic sample event: **2026-08-17 at 05:37 local**, together with its recorded preparation conditions. Provider-displayed date/fasting metadata remain source evidence but do not overwrite that collection record. The source-role reconciliation is documented in [`data/source_provenance/2026-08-trudiagnostic-reconciliation.md`](./data/source_provenance/2026-08-trudiagnostic-reconciliation.md).
 
 August core aging anchors, system/organ ages, and currently represented TruHealth fields are integrated in [`data/biomarker_snapshot.csv`](./data/biomarker_snapshot.csv) and [`data/epigenetic_longitudinal.csv`](./data/epigenetic_longitudinal.csv).
 
 Model Error 043 was evaluated only after the required molecular source evidence was available and closed on 2026-09-10 as **not supported**, with `actual_value=overall_improvement_not_met` and `error_direction=over`. This outcome is evidence about the registered prediction; it does not by itself establish generalized biological deterioration or change phase status.
+
+Deleting the raw PDFs from the integration branch is current-tree privacy remediation only. Earlier public Git objects require a separate explicit historical-remediation decision; see [`docs/audits/2026-09-10-august-snapshot-integration-audit.md`](./docs/audits/2026-09-10-august-snapshot-integration-audit.md).
 
 ---
 
@@ -353,7 +362,7 @@ Workflow: [`.github/workflows/validate.yml`](./.github/workflows/validate.yml)
 Verification guide: [`VERIFICATION.md`](./VERIFICATION.md)  
 Validation tools: [`tools/README.md`](./tools/README.md)
 
-A validation PASS confirms the implemented mechanical/governance checks. It does not establish biological causality, clinical validity, device accuracy, or correct scientific interpretation.
+A validation PASS confirms the implemented mechanical/governance checks. It does not establish biological causality, clinical validity, device accuracy, correct scientific interpretation, or completion of historical privacy remediation.
 
 ---
 
