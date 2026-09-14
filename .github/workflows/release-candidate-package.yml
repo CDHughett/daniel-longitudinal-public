@@ -1,0 +1,118 @@
+name: Release candidate package verification
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.11'
+
+      - name: Validate repository before packaging
+        run: |
+          python tools/validate_repository.py
+          python tools/validate_machine_readable.py
+          python tools/validate_august_snapshot.py
+
+      - name: Build and independently verify release archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          short_sha="${GITHUB_SHA::12}"
+          package_name="daniel-longitudinal-study-v1.1.0-${short_sha}.zip"
+          prefix="daniel-longitudinal-study-v1.1.0/"
+
+          mkdir -p release extracted
+          git archive --format=zip --prefix="$prefix" --output="release/$package_name" "$GITHUB_SHA"
+          sha256sum "release/$package_name" | tee release/SHA256SUMS.txt
+          unzip -q "release/$package_name" -d extracted
+          root="extracted/daniel-longitudinal-study-v1.1.0"
+
+          python "$root/tools/validate_repository.py"
+          python "$root/tools/validate_machine_readable.py"
+          python "$root/tools/validate_august_snapshot.py"
+
+          python - "$root" <<'PY'
+          import csv
+          import json
+          import pathlib
+          import sys
+
+          root = pathlib.Path(sys.argv[1])
+          failures = []
+          csv_count = 0
+          for path in sorted(root.rglob('*.csv')):
+              csv_count += 1
+              try:
+                  with path.open('r', encoding='utf-8-sig', newline='') as handle:
+                      rows = list(csv.reader(handle))
+              except (OSError, UnicodeError, csv.Error) as exc:
+                  failures.append(f'{path.relative_to(root)}: parse error: {exc}')
+                  continue
+              if not rows:
+                  failures.append(f'{path.relative_to(root)}: empty CSV')
+                  continue
+              width = len(rows[0])
+              bad = [i for i, row in enumerate(rows[1:], start=2) if len(row) != width]
+              if bad:
+                  failures.append(f'{path.relative_to(root)}: row-width mismatch at {bad[:10]}')
+
+          with (root / 'CODEMETA.json').open('r', encoding='utf-8-sig') as handle:
+              codemeta = json.load(handle)
+          if str(codemeta.get('version')) != '1.1.0':
+              failures.append('CODEMETA.json version is not 1.1.0')
+
+          citation = (root / 'CITATION.cff').read_text(encoding='utf-8-sig')
+          if 'version: "1.1.0"' not in citation:
+              failures.append('CITATION.cff version is not 1.1.0')
+          if 'date-released: "2026-09-14"' not in citation:
+              failures.append('CITATION.cff date is not 2026-09-14')
+
+          if failures:
+              print('Independent structured/package checks: FAIL')
+              for item in failures:
+                  print('  ERROR:', item)
+              raise SystemExit(1)
+
+          print(f'Independent structured/package checks: PASS ({csv_count} CSV files)')
+          PY
+
+          if find "$root" -type f \( -iname '*.xlsx' -o -iname '*.xlsm' -o -iname '*.xls' -o -iname '*.ods' \) -print -quit | grep -q .; then
+            echo 'Private/spreadsheet artifact screening: FAIL — spreadsheet file found in release archive'
+            find "$root" -type f \( -iname '*.xlsx' -o -iname '*.xlsm' -o -iname '*.xls' -o -iname '*.ods' \) -print
+            exit 1
+          fi
+
+          if find "$root" -type f -iname '*Daniel_Dataset*' -print -quit | grep -q .; then
+            echo 'Private-workbook filename screening: FAIL'
+            find "$root" -type f -iname '*Daniel_Dataset*' -print
+            exit 1
+          fi
+
+          echo 'Private/spreadsheet artifact screening: PASS'
+          find "$root" -type f | sed "s#^$root/##" | LC_ALL=C sort > release/inventory.txt
+          printf 'commit=%s\npackage=%s\nfiles=%s\n' "$GITHUB_SHA" "$package_name" "$(wc -l < release/inventory.txt | tr -d ' ')" > release/package-metadata.txt
+
+      - name: Upload verified release-candidate package
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: v1.1.0-release-candidate-${{ github.sha }}
+          path: release/
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 30
