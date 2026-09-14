@@ -23,6 +23,17 @@ The validator applies these rules:
 
 This distinction preserves the difference between **absence of a completed training session** and **missing daily representation**.
 
+## Implementation Boundary
+
+`tools/validate_repository.py` is the session-aware entry point. The pre-existing repository checks remain in `tools/validate_repository_core.py`; the entry point narrows only the legacy endpoint-equality assumption and otherwise delegates to the unchanged core validator.
+
+The session-aware entry point suppresses the legacy endpoint-divergence error only when:
+
+- daily biomarkers and canonical sleep end on the same represented date, and
+- the latest completed training-session date is on or before that daily endpoint.
+
+A daily/sleep endpoint mismatch remains an error. Training that extends beyond daily coverage remains an error.
+
 ## W36 Trigger
 
 The rule was clarified during the 2026-W36 closeout after ordinary travel produced a represented zero-session terminal day on 2026-09-13. Daily biomarkers and canonical sleep legitimately extend through 2026-09-13, while the latest completed formal training session occurred on 2026-09-12.
