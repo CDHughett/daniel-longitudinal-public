@@ -24,7 +24,7 @@ Read:
 
 [`../LATEST.md`](../LATEST.md)
 
-Check that current phase, active report, open predictions, pending snapshot evidence, and current data coverage are separated from historical results and future expectations.
+Check that current phase, immediate weekly operating posture, broader Phase 2 substate, active report, closed model-error state, current data-quality items, and completed August snapshot status are separated from historical results and future expectations.
 
 ---
 
@@ -73,7 +73,7 @@ The private-source manifest registers SHA-256 only when the exact retained priva
 
 Open the most recent closed report:
 
-[`../reports/2026-W35.md`](../reports/2026-W35.md)
+[`../reports/2026-W36.md`](../reports/2026-W36.md)
 
 Then compare its material values with the applicable structured datasets.
 
@@ -96,8 +96,11 @@ Use:
 - [`../SNAPSHOT_LOG.md`](../SNAPSHOT_LOG.md)
 - [`../EPOCH_INDEX.md`](../EPOCH_INDEX.md)
 - [`../methodology/2026-08-snapshot-collection-plan.md`](../methodology/2026-08-snapshot-collection-plan.md)
+- [`../reports/2026-08-biological-snapshot.md`](../reports/2026-08-biological-snapshot.md)
 
 Check source identity, timing, preparation conditions, checksum coverage, missingness, and whether interpretation remains distinct from artifact preservation.
+
+Earlier contemporaneous files may correctly retain then-current language such as provider results pending. Current completion state is controlled by `LATEST.md`, the August retrospective synthesis, source-provenance reconciliation, and the closed Model Error 043 record.
 
 ---
 
@@ -128,6 +131,8 @@ Read:
 
 Look for whether corrections, phase decisions, prediction closure, and source conflicts are handled under declared rules rather than outcome preference.
 
+When `LATEST.md` uses an immediate weekly posture such as re-entry while `PHASE_MAP.md` uses a broader consolidation / lock-in substate, treat the former as the current observation condition and the latter as the canonical broader Phase 2 interpretation unless a formal retrospective declaration states otherwise.
+
 ---
 
 ## 9. Run Validation
@@ -144,9 +149,21 @@ Machine-readable semantic validator:
 python tools/validate_machine_readable.py
 ```
 
+August snapshot cross-layer validator:
+
+```text
+python tools/validate_august_snapshot.py
+```
+
+Post-release coherence validator:
+
+```text
+python tools/validate_coherence.py
+```
+
 See [`../tools/README.md`](../tools/README.md).
 
-The GitHub Actions workflow runs both validators on pushes to `main` and pull requests.
+GitHub Actions runs the current validators on pushes to `main` and pull requests.
 
 A validator pass is not a biological-validity claim.
 
