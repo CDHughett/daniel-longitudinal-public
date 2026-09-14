@@ -1,6 +1,6 @@
 # Validation Tools
 
-The repository uses two read-only Python validators.
+The repository uses four read-only Python validators.
 
 ## Core repository validator
 
@@ -38,14 +38,40 @@ The extension checks:
 - related model-error existence
 - cross-file date relationships
 
-Both validators use only the Python standard library.
+## August snapshot cross-layer validator
 
-Neither validator edits the repository.
+```text
+python tools/validate_august_snapshot.py
+```
 
-A pass means the implemented mechanical/semantic checks passed. It does not establish biological plausibility, causal interpretation, measurement validity, or clinical meaning.
+Protects the completed August 2026 snapshot across integrated structured values, epigenetic longitudinal values, source/date reconciliation, Model Error 043 closure, protected source artifacts, and registered SHA-256 identities.
+
+## Post-release coherence validator
+
+```text
+python tools/validate_coherence.py
+```
+
+Protects a deliberately narrow set of live public-facing relationships that can drift even when lower-level repository checks remain green:
+
+- published `v1.1.0` identity
+- finalized version DOI and all-versions DOI across live orientation surfaces
+- `CITATION.cff` / `CODEMETA.json` release identity
+- current active-week and most-recent-closed-week pointers
+- observer/newcomer report pointers
+- completed August-state language on live orientation documents
+- distinction between the immediate weekly operating posture and the broader canonical Phase 2 substate
+
+The coherence validator does not rewrite historical documents merely because they correctly preserve an earlier then-current state.
+
+All validators use only the Python standard library.
+
+None of the validators edits the repository.
+
+A pass means the implemented mechanical/semantic/coherence checks passed. It does not establish biological plausibility, causal interpretation, measurement validity, or clinical meaning.
 
 ## CI
 
-`.github/workflows/validate.yml` runs both validators on pushes to `main`, on pull requests, and by manual workflow dispatch.
+`.github/workflows/validate.yml` runs all four validators on pushes to `main`, on pull requests, and by manual workflow dispatch.
 
 The workflow is intentionally lightweight and read-only.
