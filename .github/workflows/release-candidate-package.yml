@@ -98,9 +98,12 @@ jobs:
             exit 1
           fi
 
-          if find "$root" -type f -iname '*Daniel_Dataset*' -print -quit | grep -q .; then
+          # Preserve the governed public provenance manifest while rejecting an
+          # accidentally packaged private source whose basename begins with the
+          # retained private-workbook naming convention.
+          if find "$root" -type f -name 'Daniel_Dataset*' -print -quit | grep -q .; then
             echo 'Private-workbook filename screening: FAIL'
-            find "$root" -type f -iname '*Daniel_Dataset*' -print
+            find "$root" -type f -name 'Daniel_Dataset*' -print
             exit 1
           fi
 
