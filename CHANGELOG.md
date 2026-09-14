@@ -13,7 +13,14 @@ Biological interpretation belongs in `/reports`. This file records release-level
 
 ## [Unreleased]
 
-No post-v1.1.0-candidate changes are currently registered.
+### September 14 post-publication reconciliation
+
+- Reconciled `CITATION.cff` to the authoritative finalized v1.1.0 Zenodo version DOI `10.5281/zenodo.22759132` after external publication.
+- Recorded the Zenodo all-versions DOI `10.5281/zenodo.20815611` in release-facing metadata and documentation.
+- Recorded the published GitHub `v1.1.0` tag boundary at frozen commit `92126e1cc882c3822d9e03b30b11cfc1d30b4fbb` and release-package SHA-256 `f7bad6d466c28d85fc263128083fe37d9039cb116cff67fb1c8a35482d5ce0a9`.
+- Added the Batch 5B publication-reconciliation audit and updated the v1.1.0 release notes from candidate state to published state.
+- Disclosed the immutable intermediate Zenodo record labeled `v1.1.0` (`10.5281/zenodo.22759127`) while designating `10.5281/zenodo.22759132` as the finalized version-specific DOI for the frozen Batch 5A package.
+- Updated release-metadata validation semantics to accept the authoritative post-publication v1.1.0 DOI without changing canonical data, scientific interpretation, phase state, protocol state, or the frozen release tag.
 
 ---
 
