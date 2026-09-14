@@ -29,13 +29,13 @@ Active phase:
 Phase 2 — Load Integration
 
 Operating substate:
-Consolidation / lock-in observation
+Consolidation / re-entry observation
 
 Active weekly window:
-2026-W36
+2026-W37
 
 Most recent closed window:
-2026-W35
+2026-W36
 
 Open model-error records:
 none in protected block 041–046
@@ -57,6 +57,9 @@ complete and checksum-registered
 
 August structured molecular integration:
 complete for currently represented fields
+
+Current weekly posture:
+post-travel re-entry under unchanged B1 + Load Integration architecture; no compensatory make-up volume
 ```
 
 Current state source: [`LATEST.md`](./LATEST.md)
@@ -125,8 +128,9 @@ Current August physical and molecular source artifacts are preserved under [`sna
 # Reports
 
 - [`reports/README.md`](./reports/README.md) — report lifecycle
-- [`reports/2026-W36.md`](./reports/2026-W36.md) — current active report
-- [`reports/2026-W35.md`](./reports/2026-W35.md) — most recent closed report
+- [`reports/2026-W37.md`](./reports/2026-W37.md) — current active report
+- [`reports/2026-W36.md`](./reports/2026-W36.md) — most recent closed report
+- [`reports/2026-W35.md`](./reports/2026-W35.md) — prior complete ordinary-training window
 - [`reports/2026-W34.md`](./reports/2026-W34.md) — prior ordinary continuity window
 - [`reports/2026-W33.md`](./reports/2026-W33.md) — August testing/reload window
 - [`reports/`](./reports/) — full weekly report series
