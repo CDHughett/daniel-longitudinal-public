@@ -43,6 +43,7 @@ def main() -> int:
     readme = read("README.md")
     latest = read("LATEST.md")
     versioning = read("VERSIONING.md")
+    verification = read("VERIFICATION.md")
     observer = read("docs/OBSERVER_QUICKSTART.md")
     newcomer = read("docs/NEWCOMER_PATH.md")
     phase_map = read("PHASE_MAP.md")
@@ -50,13 +51,20 @@ def main() -> int:
     codemeta = json.loads(read("CODEMETA.json"))
 
     # Published release identity.
-    for label, text in (("README.md", readme), ("LATEST.md", latest), ("VERSIONING.md", versioning)):
+    for label, text in (
+        ("README.md", readme),
+        ("LATEST.md", latest),
+        ("VERSIONING.md", versioning),
+        ("VERIFICATION.md", verification),
+    ):
         require(errors, f"v{VERSION}" in text, f"{label}: current release v{VERSION} missing")
         require(errors, VERSION_DOI in text, f"{label}: version DOI {VERSION_DOI} missing")
         require(errors, ALL_VERSIONS_DOI in text, f"{label}: all-versions DOI {ALL_VERSIONS_DOI} missing")
 
     require(errors, "The current published release is:" in versioning, "VERSIONING.md: current-release declaration missing")
     require(errors, FROZEN_RELEASE_COMMIT in versioning, "VERSIONING.md: frozen v1.1.0 commit missing")
+    require(errors, "## Level 4 — Post-Release Coherence Validation" in verification, "VERIFICATION.md: coherence-validation section missing")
+    require(errors, "python tools/validate_coherence.py" in verification, "VERIFICATION.md: coherence-validator command missing")
     require(errors, f'doi: "{VERSION_DOI}"' in citation, "CITATION.cff: finalized version DOI drift")
     require(errors, str(codemeta.get("version", "")).strip() == VERSION, "CODEMETA.json: version drift")
     require(errors, str(codemeta.get("identifier", "")).strip() == f"https://doi.org/{VERSION_DOI}", "CODEMETA.json: version identifier drift")
