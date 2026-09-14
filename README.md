@@ -256,6 +256,6 @@ License: [`LICENSE.md`](./LICENSE.md)
 
 ---
 
-The pre-v1.1.0 long-form README is preserved at [`docs/archive/README_PRE_V1.1.0.md`](./docs/archive/README_PRE_V1.1.0.md).
+The pre-v1.1.0 long-form README is preserved byte-for-byte at [`docs/archive/README_PRE_V1.1.0.txt`](./docs/archive/README_PRE_V1.1.0.txt).
 
 _Public longitudinal archive initiated 2026._
