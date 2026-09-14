@@ -2,7 +2,7 @@
 
 **Status:** Active  
 **Created:** 2026-07-11  
-**Last updated:** 2026-09-10  
+**Last updated:** 2026-09-14
 **Scope:** Known data-quality questions requiring source reconciliation or analytical restriction
 
 ---
@@ -1348,6 +1348,62 @@ Status: source-role reconciled
 
 ---
 
+
+# DQ-011 — 2026-09-08 Daily Resting-Heart-Rate Source Verification
+
+## Status
+
+**Open — source verification required**
+
+## Dataset
+
+[`daily_biomarkers_v1.csv`](./daily_biomarkers_v1.csv)
+
+## Affected Date
+
+```text
+2026-09-08
+```
+
+## Affected Field
+
+```text
+resting_hr_bpm
+```
+
+## Recorded Value
+
+```text
+64 bpm
+```
+
+## Observation
+
+The retained `Daniel_Dataset_v1.30` Daily Biomarkers row records `64` for the daily resting-heart-rate field. The value is materially higher than the surrounding W36 daily resting-heart-rate values and differs from the same-date canonical sleep average heart rate of 49 bpm.
+
+That discrepancy is sufficient to require source verification. It is not sufficient to authorize a correction.
+
+The daily resting-heart-rate field and sleep average heart rate are different measurement fields and must not be substituted for one another.
+
+## Current Treatment
+
+- preserve `64` in `daily_biomarkers_v1.csv`
+- do not infer a replacement from neighboring dates
+- do not substitute sleep HR or another differently defined heart-rate field
+- keep the field-level uncertainty visible in W36 interpretation and release review
+- resolve only from the originating wearable/source evidence
+
+No other 2026-09-08 field is placed under restriction by this note.
+
+## Resolution Rule
+
+If originating source evidence verifies `64 bpm`, mark the value confirmed valid.
+
+If originating source evidence confirms a different daily resting-heart-rate value, correct only that field with documented provenance and review dependent weekly summaries or release-facing derived values for material impact.
+
+No correction should be made from plausibility alone.
+
+---
 # Current Dataset Disposition
 
 No change to [`sleep_longitudinal_v1.csv`](./sleep_longitudinal_v1.csv) is authorized by this documentation commit.
