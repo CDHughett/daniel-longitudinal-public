@@ -1,10 +1,11 @@
 # Verification Guide
 
-This repository supports external verification at three complementary automated/mechanical levels:
+This repository supports external verification at four complementary automated/mechanical levels:
 
 1. **artifact verification** — confirms the identity of registered files
 2. **repository validation** — checks the mechanical integrity and governance-protected structure of the archive
 3. **machine-readable semantic validation** — checks the current daily/training/event schema contract and cross-file relationships
+4. **post-release coherence validation** — checks selected live public-facing state relationships that can drift even when lower-level checks remain green
 
 Human semantic review remains a separate layer after automated validation.
 
@@ -167,6 +168,29 @@ It does not interpret the biological result, rescore Record 043, alter preregist
 
 ---
 
+## Level 4 — Post-Release Coherence Validation
+
+The post-release coherence validator is:
+
+```text
+tools/validate_coherence.py
+```
+
+It protects a deliberately narrow set of live orientation relationships exposed by the v1.1.0 post-release outsider audit:
+
+- published `v1.1.0` identity
+- finalized version DOI and all-versions DOI on live release surfaces
+- `CITATION.cff` / `CODEMETA.json` release identity
+- `VERSIONING.md` current-release declaration and frozen release commit
+- active-week and most-recent-closed-week pointers
+- observer/newcomer report pointers
+- selected stale pending-state phrases that should not return to current orientation surfaces
+- explicit distinction between the immediate weekly operating posture and the broader canonical Phase 2 substate
+
+The coherence validator intentionally does **not** scan every historical document for old DOI, pending, or open-state language. Dated reports, audits, preregistration files, and archived documents may correctly preserve the state that existed when they were written.
+
+---
+
 # Local Repository Validator
 
 Validator path:
@@ -208,11 +232,12 @@ A specific repository directory may also be supplied:
 python tools\validate_repository.py "C:\path\to\daniel-longitudinal-public"
 ```
 
-The two additional semantic/cross-layer validators may be run from the repository root with:
+The additional validators may be run from the repository root with:
 
 ```text
 python tools\validate_machine_readable.py
 python tools\validate_august_snapshot.py
+python tools\validate_coherence.py
 ```
 
 ---
@@ -236,6 +261,7 @@ The additional validators may be run with:
 ```text
 python .\tools\validate_machine_readable.py
 python .\tools\validate_august_snapshot.py
+python .\tools\validate_coherence.py
 ```
 
 ---
@@ -259,6 +285,7 @@ The additional validators may be run with:
 ```text
 python3 tools/validate_machine_readable.py
 python3 tools/validate_august_snapshot.py
+python3 tools/validate_coherence.py
 ```
 
 ---
@@ -323,7 +350,7 @@ JSON output includes:
 - validation metrics
 - individual findings
 
-The core and machine-readable validators support local command-line execution, and the repository validator supports `--json` structured output. The August snapshot validator also supports local command-line execution with human-readable pass/fail output.
+The core and machine-readable validators support local command-line execution, and the repository validator supports `--json` structured output. The August snapshot and post-release coherence validators also support local command-line execution with human-readable pass/fail output.
 
 Repository validation is also executed automatically in GitHub Actions as described below.
 
@@ -365,6 +392,7 @@ Examples:
 - records 041–046 retain their original registered prediction narratives at the beginning of `notes`
 - August protected structured values agree across the integrated and longitudinal molecular layers
 - August protected artifacts retain their fixed registered identities
+- live public-facing release identity and report pointers remain coherent
 
 ---
 
@@ -402,6 +430,9 @@ Examples include:
 - duplicate canonical sleep date
 - missing date inside the canonical sleep interval
 - release-metadata mismatch
+- live release/DOI identity drift
+- stale current report pointer on live observer/newcomer surfaces
+- weekly-posture / broader-substate coherence drift
 - protected closed prediction record reopened
 - protected closed prediction record losing its recorded actual outcome
 - protected closed prediction record drifting from its registered adjudicated actual value
@@ -1037,15 +1068,29 @@ It checks alignment of:
 - release date
 - DOI
 
-Current registered DOI:
+Current published release:
 
 ```text
-10.5281/zenodo.20815612
+v1.1.0
+```
+
+Current finalized version DOI:
+
+```text
+10.5281/zenodo.22759132
+```
+
+Current all-versions DOI:
+
+```text
+10.5281/zenodo.20815611
 ```
 
 The validator checks repository metadata.
 
 It does not query Zenodo or prove the current server-side deposit state.
+
+The separate post-release coherence validator protects selected release identity relationships across live orientation surfaces.
 
 ---
 
@@ -1296,6 +1341,7 @@ Verification may establish that:
 - prospective registration state remains preserved for records 041–046
 - original registered prediction narratives remain preserved for records 041–046
 - release metadata agrees
+- selected live release/current-state surfaces remain coherent
 - a downloaded ZIP is mechanically safe and internally consistent
 - the current machine-readable daily/training/event layer satisfies its declared schema checks
 - the protected 325-session training prefix remains present and live session identifiers remain unique
@@ -1346,7 +1392,7 @@ That status should change only after direct provider confirmation.
 For a routine local verification cycle:
 
 1. pull or download the latest repository state
-2. run all applicable read-only validators (`tools/validate_repository.py`, `tools/validate_machine_readable.py`, and snapshot-specific validators such as `tools/validate_august_snapshot.py`)
+2. run all applicable read-only validators (`tools/validate_repository.py`, `tools/validate_machine_readable.py`, `tools/validate_august_snapshot.py`, and `tools/validate_coherence.py`)
 3. review all errors
 4. review warnings against `data/DATA_QUALITY_NOTES.md`
 5. spot-check recently changed artifacts
@@ -1354,18 +1400,19 @@ For a routine local verification cycle:
 7. verify that preregistered prediction records retain their original registration state and prediction narrative
 8. verify that scored predictions remain frozen after their registered outcome boundaries
 9. verify that record 043 retains its closed adjudicated state and original prospective registration provenance
-10. download and validate a fresh GitHub ZIP after material changes
-11. record a formal audit only when the scheduled audit cadence or a material event requires it
+10. verify that live release identity and current report pointers agree across public-facing orientation surfaces
+11. download and validate a fresh GitHub ZIP after material changes
+12. record a formal audit only when the scheduled audit cadence or a material event requires it
 
-The validator reduces repetitive mechanical work.
+The validators reduce repetitive mechanical work.
 
-It does not replace human semantic review.
+They do not replace human semantic review.
 
 ---
 
 # Manual Review Still Required
 
-The validator cannot fully evaluate:
+The validators cannot fully evaluate:
 
 - whether interpretation exceeds evidence
 - whether a provider field is semantically equivalent to a curated field
@@ -1417,6 +1464,7 @@ and executes:
 python tools/validate_repository.py
 python tools/validate_machine_readable.py
 python tools/validate_august_snapshot.py
+python tools/validate_coherence.py
 ```
 
 The workflow is intentionally narrow. It does not edit files, commit corrections, publish releases, or replace human semantic review.
@@ -1465,6 +1513,7 @@ AI assistance does not create a new evidence tier and does not override the repo
 - Later favorable evidence does not retrospectively rescue a failed fixed-window prediction.
 - A governance miss does not automatically establish a biological effect.
 - Snapshot-specific validators protect committed cross-layer state; they do not become source evidence or interpretation layers.
+- Post-release coherence validation protects current-facing relationships; it does not rewrite historical state records.
 - Interpretation belongs in reports, datasets, model-error evaluation, and designated synthesis layers.
 
 ---
@@ -1727,6 +1776,35 @@ tools/validate_august_snapshot.py
 
 The validator protects the completed August snapshot against silent divergence between source-artifact identity, the integrated snapshot table, the longitudinal molecular table, DQ-010 collection provenance, and the formal Record 043 closure.
 
-The existing read-only GitHub Actions workflow now executes all three validators on pull requests, pushes to `main`, and manual workflow dispatch.
+The existing read-only GitHub Actions workflow then executed all three validators on pull requests, pushes to `main`, and manual workflow dispatch.
 
-This hardening does not change any source artifact byte, checksum registration, biological value, registered prediction wording or threshold, adjudicated outcome, physical protocol exposure, phase state, release version, release date, or DOI.
+This hardening did not change any source artifact byte, checksum registration, biological value, registered prediction wording or threshold, adjudicated outcome, physical protocol exposure, phase state, release version, release date, or DOI.
+
+---
+
+## 2026-09-14 Post-Release Coherence Hardening
+
+The v1.1.0 post-release outsider audit identified a narrower class of drift: current-facing orientation documents could lag the authoritative release/current-state layer even while the existing repository, machine-readable, and August validators remained green.
+
+The cleanup added:
+
+```text
+tools/validate_coherence.py
+```
+
+The fourth validator protects:
+
+- published v1.1.0 identity
+- finalized version DOI and all-versions DOI on live orientation surfaces
+- `CITATION.cff` / `CODEMETA.json` release identity
+- `VERSIONING.md` current-release identity and frozen release commit
+- active and most-recent-closed weekly pointers
+- observer/newcomer report pointers
+- selected stale pending-state phrases on current orientation surfaces
+- explicit separation of the immediate weekly operating posture from the broader canonical Phase 2 substate
+
+The cleanup also reconciled `LATEST.md`, `VERSIONING.md`, the observer path, the newcomer path, and this verification guide to the post-publication v1.1.0 state.
+
+Historical documents that correctly preserve earlier then-current states remain unchanged.
+
+The GitHub Actions workflow now executes all four validators.
