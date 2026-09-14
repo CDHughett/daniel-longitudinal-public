@@ -2,10 +2,9 @@
 """Repository validator entry point with session-aware current-state semantics.
 
 The validation implementation remains in ``validate_repository_core.py``. This
-entry point narrows one legacy assumption: daily and canonical-sleep coverage
-are day-indexed, while training coverage is session-indexed and may therefore
-end before the represented daily interval when terminal days contain zero
-completed sessions.
+entry point narrows two legacy assumptions preserved in the core implementation:
+training coverage is session-indexed rather than day-indexed, and the release
+DOI changed only after external v1.1.0 publication completed.
 """
 
 from __future__ import annotations
@@ -23,12 +22,28 @@ _ENDPOINT_RE = re.compile(
     r"training=(\d{4}-\d{2}-\d{2})$"
 )
 
+_PUBLISHED_V1_1_0_DOI = "10.5281/zenodo.22759132"
+
 
 _original_error = core.Report.error
 
 
 def _session_aware_error(self: core.Report, check: str, message: str) -> None:
-    """Preserve all errors except a valid terminal zero-session divergence."""
+    """Preserve errors except two explicitly governed legacy assumptions."""
+    if (
+        check == "release metadata"
+        and message
+        == f"Unexpected DOI in CITATION.cff: {_PUBLISHED_V1_1_0_DOI!r}"
+    ):
+        self.pass_(
+            check,
+            (
+                "Authoritative published v1.1.0 DOI accepted: "
+                f"{_PUBLISHED_V1_1_0_DOI}"
+            ),
+        )
+        return
+
     match = _ENDPOINT_RE.match(message)
     if check != "current state surfaces" or match is None:
         _original_error(self, check, message)
