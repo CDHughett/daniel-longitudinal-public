@@ -27,9 +27,9 @@ Frozen release commit:     92126e1cc882c3822d9e03b30b11cfc1d30b4fbb
 
 ## Drift found
 
-### 1. `LATEST.md` still exposed the prior v1.0 DOI
+### 1. Live DOI/version surfaces lagged the external publication boundary
 
-The executive live-state surface still displayed `10.5281/zenodo.20815612` as the archive DOI even though the v1.1.0 publication reconciliation had already established the current version-specific and all-versions DOI roles.
+`LATEST.md`, `VERSIONING.md`, and the release-metadata section of `VERIFICATION.md` still exposed prior-release wording after Batch 5B had established the authoritative v1.1.0 version DOI and all-versions DOI roles.
 
 ### 2. Observer/newcomer pointers lagged the weekly rollover
 
@@ -58,6 +58,18 @@ These are not competing phase declarations. The former is the active weekly obse
   - explicitly explains their relationship
   - lists the post-release coherence validator in the live verification stack
 
+- `VERSIONING.md`
+  - changes the current-release section from v1.0.0 to published v1.1.0
+  - records the finalized version DOI, all-versions DOI, and frozen release commit
+  - keeps the prior v1.0.0 DOI as historical release identity rather than current state
+  - clarifies that post-publication ordinary commits do not move or rewrite the frozen v1.1.0 tag/package
+
+- `VERIFICATION.md`
+  - updates the release-metadata section to the published v1.1.0 identities
+  - expands the verification architecture from three to four read-only layers
+  - documents the post-release coherence validator, local commands, CI execution, and current scope
+  - preserves older version-note entries as historical state rather than rewriting them
+
 - `docs/OBSERVER_QUICKSTART.md`
   - points to W36 as the most recent closed report
   - removes stale current-state language implying open/pending August work
@@ -73,9 +85,11 @@ These are not competing phase declarations. The former is the active weekly obse
   - adds the coherence validator to the validation path
 
 - `tools/validate_coherence.py`
-  - protects the published v1.1.0 identity on live orientation surfaces
+  - protects the published v1.1.0 identity across live release/orientation surfaces
   - protects version DOI and all-versions DOI relationships
   - protects `CITATION.cff` / `CODEMETA.json` release identity
+  - protects `VERSIONING.md` current-release identity and frozen release commit
+  - protects `VERIFICATION.md` current DOI identity and coherence-validator documentation
   - protects active-week and most-recent-closed-week pointers
   - prevents observer/newcomer regression to the stale W35 pointer
   - prevents reintroduction of selected stale pending-state phrases
@@ -96,6 +110,7 @@ This cleanup does **not**:
 - rewrite historical weekly reports
 - rewrite dated audits
 - rewrite the August preregistration/collection plan
+- rewrite historically accurate version-note entries in `VERIFICATION.md`
 - alter canonical CSV values
 - alter source artifacts or checksums
 - reopen or rescore Model Error records
@@ -116,7 +131,7 @@ The cleanup is acceptable only if:
 3. August snapshot cross-layer validation passes;
 4. post-release coherence validation passes;
 5. no canonical scientific-data or source-artifact file changes;
-6. the PR contains only live orientation, validation, and audit/changelog changes.
+6. the PR contains only live orientation, versioning/verification, validation, and audit/changelog changes.
 
 ---
 
