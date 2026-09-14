@@ -26,7 +26,7 @@ Read:
 
 [`../LATEST.md`](../LATEST.md)
 
-This establishes the active weekly window, current phase/substate, current open prediction, recent closed outcomes, and pending biological evidence.
+This establishes the active weekly window, current phase, immediate weekly operating posture, broader Phase 2 substate, closed model-error state, current data-quality items, and completed August snapshot status.
 
 ---
 
@@ -93,11 +93,11 @@ Look for unresolved findings, corrected findings, source conflicts, and restrict
 
 ---
 
-## Step 7 — Read a Closed Week
+## Step 7 — Read the Most Recent Closed Week
 
 Start with:
 
-[`../reports/2026-W35.md`](../reports/2026-W35.md)
+[`../reports/2026-W36.md`](../reports/2026-W36.md)
 
 Then inspect the underlying structured rows for the same window.
 
@@ -112,8 +112,12 @@ Read:
 - [`../methodology/2026-08-snapshot-collection-plan.md`](../methodology/2026-08-snapshot-collection-plan.md)
 - [`../snapshots/2026-08/2026-08 Epoch.md`](../snapshots/2026-08/2026-08%20Epoch.md)
 - [`../reports/2026-W33.md`](../reports/2026-W33.md)
+- [`../reports/2026-08-biological-snapshot.md`](../reports/2026-08-biological-snapshot.md)
+- [`../data/model_error/record_043_closure.md`](../data/model_error/record_043_closure.md)
 
-Review collection conditions, source artifacts, recorded deviations, and the distinction between physical snapshot completion and the still-pending TruDiagnostic domain for record 043.
+Review collection conditions, source artifacts, recorded deviations, completed TruDiagnostic integration, and the distinction between preserved source evidence, retrospective biological synthesis, and the fixed Record 043 adjudication.
+
+Earlier contemporaneous documents may correctly describe TruDiagnostic results as pending or Record 043 as open because those statements were true when written. Use the current synthesis and closure files above for the completed August state.
 
 ---
 
@@ -170,7 +174,8 @@ Read:
 Understand the distinction between:
 
 - candidate evidence
-- operating substate
+- immediate weekly operating posture
+- broader operating substate
 - formal retrospective declaration
 
 and why favorable execution does not automatically authorize progression.
@@ -199,9 +204,11 @@ The current read-only tools are:
 ```text
 tools/validate_repository.py
 tools/validate_machine_readable.py
+tools/validate_august_snapshot.py
+tools/validate_coherence.py
 ```
 
-GitHub Actions runs both on pushes to `main` and pull requests.
+GitHub Actions runs all current validators on pushes to `main` and pull requests.
 
 ---
 
@@ -227,6 +234,7 @@ You should be able to distinguish:
 - prediction registration from later outcome scoring
 - model error from biological deterioration
 - phase evidence from phase declaration
+- immediate weekly posture from broader phase-map state
 - AI assistance from source authority
 - mechanical validation from scientific validity
 
