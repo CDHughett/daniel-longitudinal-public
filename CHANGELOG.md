@@ -12,6 +12,19 @@ Biological interpretation belongs in `/reports`. This file records repository, d
 
 ## [Unreleased]
 
+
+### Changed
+
+#### September 14 W36 machine-readable extension
+
+- Extended daily biomarkers and canonical sleep by seven source-backed rows through 2026-09-13.
+- Appended the eleven completed W36 training sessions: six B1 and five Load Integration sessions, totaling 555 formal minutes; no synthetic zero-duration rows were created for travel omissions.
+- Added one bounded travel event covering the 2026-09-12 through 2026-09-13 logistics-directed training interruption.
+- Registered the exact retained `Daniel_Dataset_v1.30` private source in the provenance manifest with SHA-256 identity.
+- Advanced public structured coverage to 217 daily rows, 217 canonical sleep rows, 350 training/session rows, and 45 context events.
+- Added DQ-011 for the 2026-09-08 daily resting-heart-rate value of 64 bpm; the recorded value remains preserved pending originating-source verification.
+- No weekly-report lifecycle, phase, protocol, model-error, August snapshot, release-version, or DOI state was changed in this batch.
+
 ### Changed
 
 #### September 10 August post-snapshot cleanup and validation hardening
