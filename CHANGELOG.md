@@ -27,6 +27,7 @@ No post-v1.1.0-candidate changes are currently registered.
 - Added explicit private-source provenance registration for retained `Daniel_Dataset` source states when immutable files were available for hashing.
 - Added and maintained bounded data-quality records, including DQ-011 for the recorded 2026-09-08 resting-heart-rate value pending source verification.
 - Added post-snapshot, weekly-rollover, and v1.1.0 release-readiness audits.
+- Added a read-only release-candidate packaging workflow that creates an exact-commit ZIP, reruns all validators from the extracted package, reparses structured CSVs, screens for private spreadsheet/workbook filenames, inventories packaged files, computes SHA-256, and uploads the verified package as a temporary Actions artifact.
 
 ### Changed
 
