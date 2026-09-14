@@ -2,11 +2,13 @@
 
 **A governed N-of-1 longitudinal research archive for studying how training, recovery, physiology, behavior, and context interact over time.**
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20815612.svg)](https://zenodo.org/doi/10.5281/zenodo.20815612)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20815611.svg)](https://doi.org/10.5281/zenodo.20815611)
 [![Repository validation](https://github.com/CDHughett/daniel-longitudinal-public/actions/workflows/validate.yml/badge.svg)](https://github.com/CDHughett/daniel-longitudinal-public/actions/workflows/validate.yml)
 
-**Release candidate:** `v1.1.0` — prepared 2026-09-14  
-**Prior DOI-bearing release:** `v1.0.0` — DOI `10.5281/zenodo.20815612`
+**Current published release:** `v1.1.0` — 2026-09-14  
+**Version DOI:** `10.5281/zenodo.22759132`  
+**All-versions DOI:** `10.5281/zenodo.20815611`  
+**Frozen release commit:** `92126e1cc882c3822d9e03b30b11cfc1d30b4fbb`
 
 The Daniel Longitudinal Study follows one human system through repeated measurement, machine-readable data, contemporaneous observation, source-preserved testing, registered predictions, retrospective interpretation, correction history, and explicit archive governance.
 
@@ -30,6 +32,7 @@ The aim is not to prove a universal intervention. It is to preserve an inspectab
 | Inspect testing artifacts | [`snapshots/`](./snapshots/) |
 | Reproduce mechanical checks | [`VERIFICATION.md`](./VERIFICATION.md) |
 | Read v1.1.0 release notes | [`docs/releases/v1.1.0.md`](./docs/releases/v1.1.0.md) |
+| Read publication reconciliation | [`docs/audits/2026-09-14-v1.1.0-publication-reconciliation.md`](./docs/audits/2026-09-14-v1.1.0-publication-reconciliation.md) |
 | Navigate the repository | [`INDEX.md`](./INDEX.md) |
 
 ---
@@ -214,20 +217,25 @@ Disclosure: [`docs/AI_ASSISTANCE.md`](./docs/AI_ASSISTANCE.md)
 
 ---
 
-# v1.1.0 release-candidate boundary
+# v1.1.0 publication identity
 
-Repository release-facing metadata is aligned to:
+The externally published v1.1.0 release is fixed to:
 
 ```text
-version: 1.1.0
-candidate date: 2026-09-14
+GitHub tag:              v1.1.0
+Frozen release commit:  92126e1cc882c3822d9e03b30b11cfc1d30b4fbb
+Release archive:         daniel-longitudinal-study-v1.1.0-92126e1cc882.zip
+Release archive SHA-256: f7bad6d466c28d85fc263128083fe37d9039cb116cff67fb1c8a35482d5ce0a9
+Zenodo version DOI:      10.5281/zenodo.22759132
+Zenodo all-versions DOI: 10.5281/zenodo.20815611
 ```
 
-The existing DOI `10.5281/zenodo.20815612` remains the currently registered Zenodo identifier in repository metadata. Batch 5A does not invent a new version DOI or publish a Zenodo version. Concept-DOI versus version-DOI behavior must be verified during the external publication step.
+The GitHub `v1.1.0` tag remains fixed to the Batch 5A frozen commit. Post-publication DOI reconciliation occurs only on later `main`; it does not move the tag or mutate the published release archive.
 
-The final Git tag, GitHub release, Zenodo new-version publication, and authoritative version-DOI reconciliation remain outside Batch 5A.
+The Zenodo lineage contains an earlier immutable record labeled `v1.1.0` with DOI `10.5281/zenodo.22759127`. The finalized version-specific DOI for the frozen Batch 5A package is `10.5281/zenodo.22759132`. The all-versions DOI `10.5281/zenodo.20815611` remains the stable cross-version entry point.
 
 Release notes: [`docs/releases/v1.1.0.md`](./docs/releases/v1.1.0.md)  
+Publication reconciliation: [`docs/audits/2026-09-14-v1.1.0-publication-reconciliation.md`](./docs/audits/2026-09-14-v1.1.0-publication-reconciliation.md)  
 Versioning rules: [`VERSIONING.md`](./VERSIONING.md)  
 Citation metadata: [`CITATION.cff`](./CITATION.cff)  
 License: [`LICENSE.md`](./LICENSE.md)
