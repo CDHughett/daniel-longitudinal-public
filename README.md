@@ -17,14 +17,14 @@ The central aim is not to prove a universal intervention. It is to build a durab
 
 ## At a Glance
 
-Current public structured coverage through **2026-09-06**:
+Current public structured coverage through **2026-09-13**:
 
 | Layer | Current public state |
 |---|---:|
-| Daily biomarkers | **210 continuous daily rows** |
-| Canonical sleep | **210 continuous daily rows** |
-| Training exposure | **339 session/block rows** |
-| Context events | **44 bounded events** |
+| Daily biomarkers | **217 continuous daily rows** |
+| Canonical sleep | **217 continuous daily rows** |
+| Training exposure | **350 session/block rows through 2026-09-12** |
+| Context events | **45 bounded events** |
 | Weekly reporting | Continuous from **2026-W06** |
 | August snapshot | **DEXA + VO₂ + Bod Pod + TruDiagnostic source artifacts archived** |
 | Recent prediction closure | **043 — closed / not supported / over** |
@@ -97,10 +97,10 @@ The public archive now supports aligned daily, sleep, training, and event analys
 
 | Dataset | Unit of observation | Current coverage |
 |---|---|---|
-| [`data/daily_biomarkers_v1.csv`](./data/daily_biomarkers_v1.csv) | one row per represented day | 210 rows through 2026-09-06 |
-| [`data/sleep_longitudinal_v1.csv`](./data/sleep_longitudinal_v1.csv) | one canonical governed wake-date row | 210 rows through 2026-09-06 |
-| [`data/training_blocks_v1.csv`](./data/training_blocks_v1.csv) | one row per training/session block | 339 rows through 2026-09-06 |
-| [`data/context_events_v1.csv`](./data/context_events_v1.csv) | one row per bounded contextual event | 44 events through 2026-09-03 |
+| [`data/daily_biomarkers_v1.csv`](./data/daily_biomarkers_v1.csv) | one row per represented day | 217 rows through 2026-09-13 |
+| [`data/sleep_longitudinal_v1.csv`](./data/sleep_longitudinal_v1.csv) | one canonical governed wake-date row | 217 rows through 2026-09-13 |
+| [`data/training_blocks_v1.csv`](./data/training_blocks_v1.csv) | one row per training/session block | 350 rows through 2026-09-12 |
+| [`data/context_events_v1.csv`](./data/context_events_v1.csv) | one row per bounded contextual event | 45 events through 2026-09-13 |
 
 The daily/training/event datasets are curated public extracts derived primarily from governed private `Daniel_Dataset_v1.x` source states. They are **not raw provider exports**.
 
