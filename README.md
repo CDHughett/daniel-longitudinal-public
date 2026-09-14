@@ -66,9 +66,9 @@ For recurring terminology, see [`docs/CONCEPTS.md`](./docs/CONCEPTS.md).
 | Domain | Current state |
 |---|---|
 | Phase | **Phase 2 — Load Integration** |
-| Operating substate | **Consolidation / lock-in observation** |
-| Active weekly window | **2026-W36** |
-| Most recent closed window | **2026-W35** |
+| Operating substate | **Consolidation / re-entry observation** |
+| Active weekly window | **2026-W37** |
+| Most recent closed window | **2026-W36** |
 | Installed training architecture | **B1 + Load Integration** |
 | Open model-error records | **none in protected block 041–046** |
 | Record 043 | **closed / not supported — `overall_improvement_not_met` / over** |
@@ -79,13 +79,13 @@ Current-state anchors retained for repository validation:
 
 ```text
 Active weekly window:
-2026-W36
+2026-W37
 
 Most recent closed window:
-2026-W35
+2026-W36
 ```
 
-The recent operating posture is intentionally conservative: ordinary B1 + Load Integration continues while recovery variability, lower bodyweight/intake context, behavioral economy, and natural portability are observed without forcing progression or manufacturing perturbations.
+The current operating posture remains conservative: Week 36 closed after a natural travel interruption reduced exposure without a recovery-driven stop, and Week 37 now observes ordinary post-travel re-entry under the unchanged B1 + Load Integration architecture. Missed volume is not being replaced, short-window wearable variability is not treated as a stand-alone recovery verdict, and Phase 2D remains undeclared.
 
 Current details: [`LATEST.md`](./LATEST.md)
 
@@ -309,7 +309,7 @@ Phase 2 — Load Integration
 Current operating substate:
 
 ```text
-Consolidation / lock-in observation
+Consolidation / re-entry observation
 ```
 
 Formal Phase 2D declaration:
@@ -318,7 +318,7 @@ Formal Phase 2D declaration:
 none
 ```
 
-Current evidence includes repeated load compatibility, increasingly low-salience execution, automatic grip/movement organization, natural portability, preserved function across autonomic variability, and reduced operator-management cost.
+Current evidence includes repeated load compatibility, increasingly low-salience execution, automatic grip/movement organization, natural portability signals, preserved function across autonomic variability, and reduced operator-management cost.
 
 Those observations can accumulate as transition evidence without independently declaring a phase transition.
 
