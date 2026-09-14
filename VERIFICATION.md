@@ -64,7 +64,6 @@ The local validator reviews:
 - exactly one active weekly report, with the latest report required to be active
 - current-state alignment across `LATEST.md`, `README.md`, and `INDEX.md`
 - live row-count and endpoint alignment between canonical datasets and `data/DATA_COVERAGE.md`
-- session-aware endpoint semantics: daily biomarkers and canonical sleep must share the represented endpoint; completed training may end earlier on terminal zero-session days but may not extend beyond daily coverage
 - model-error continuity
 - preserved closed/adjudicated state of records 041–046
 - selected protected actual values and error directions for those closed records
@@ -73,8 +72,6 @@ The local validator reviews:
 - release-metadata alignment
 - RingConn source-export byte preservation
 
-The endpoint distinction is documented in [`docs/VALIDATION_ENDPOINT_SEMANTICS.md`](docs/VALIDATION_ENDPOINT_SEMANTICS.md).
-
 The validator is read-only.
 
 It does not:
@@ -82,7 +79,6 @@ It does not:
 - edit files
 - repair values
 - infer missing observations
-- synthesize zero-duration training rows to force endpoint equality
 - normalize provider exports
 - independently score predictions
 - recompute model-error outcomes
@@ -361,8 +357,6 @@ Examples:
 - all checksum entries match
 - all CSVs parse
 - weekly reports are continuous
-- daily biomarkers and canonical sleep share the represented endpoint
-- session-indexed training ends on or before the daily endpoint and may legitimately end earlier when terminal represented dates contain no completed session
 - RingConn bytes match the registered source package
 - records 041–046 retain their protected closed/adjudicated states
 - protected closed-record actual values and error directions remain unchanged
@@ -407,8 +401,6 @@ Examples include:
 - missing Markdown target
 - duplicate canonical sleep date
 - missing date inside the canonical sleep interval
-- daily-biomarker and canonical-sleep endpoint mismatch
-- training extending beyond the represented daily endpoint
 - release-metadata mismatch
 - protected closed prediction record reopened
 - protected closed prediction record losing its recorded actual outcome
@@ -588,35 +580,6 @@ data/sleep_longitudinal_v1.csv
 
 ---
 
-## Current-State Endpoint Alignment
-
-The repository validator derives live coverage from the canonical daily, sleep, training, and context-event datasets and compares those values with `data/DATA_COVERAGE.md`.
-
-Endpoint semantics are intentionally asymmetric because the datasets have different observation grains:
-
-```text
-daily_biomarkers_v1.csv:
-one row per represented day
-
-sleep_longitudinal_v1.csv:
-one row per represented day
-
-training_blocks_v1.csv:
-zero to many completed session rows per represented day
-```
-
-Therefore:
-
-- daily biomarkers and canonical sleep must end on the same represented day
-- training may end earlier if the later represented day or days contain zero completed sessions
-- training may not extend beyond the daily represented interval
-- `DATA_COVERAGE.md` must report the actual training row count and actual latest completed-session date
-- the validator does not create a placeholder session to erase a legitimate zero-session day
-
-See [`docs/VALIDATION_ENDPOINT_SEMANTICS.md`](docs/VALIDATION_ENDPOINT_SEMANTICS.md) for the compact governing rule.
-
----
-
 ## Weekly Reports
 
 The validator checks:
@@ -767,7 +730,7 @@ The validator retains an explicit empty protected-open set so that future prospe
 
 ## Protected Closed Records
 
-The protected closed set currently includes:
+The currently protected closed-record set is:
 
 ```text
 041
@@ -778,75 +741,659 @@ The protected closed set currently includes:
 046
 ```
 
-The validator requires these records to remain closed and protects selected adjudicated fields needed to prevent accidental outcome drift.
-
-Current protected outcomes include:
+The validator protects the following adjudicated state:
 
 ```text
-041:
-actual = stable
+041
+actual_value = stable
 error_direction = none
 
-042:
-actual = continued_adaptation
+042
+actual_value = continued_adaptation
 error_direction = under
 
-043:
-actual = overall_improvement_not_met
+043
+actual_value = overall_improvement_not_met
 error_direction = over
 
-044:
-actual = 0
+044
+actual_value = 0
 error_direction = under
 
-045:
-actual = partial_reconvergence
+045
+actual_value = partial_reconvergence
 error_direction = none
 
-046:
-actual = failed_autonomic_recompression
+046
+actual_value = failed_autonomic_recompression
 error_direction = over
 ```
 
-These checks protect the committed adjudicated state.
+The validator therefore protects more than closure status.
 
-They do not cause the validator to independently calculate or rescore the predictions.
+It also detects accidental drift in selected committed outcome fields.
+
+For these records it additionally requires:
+
+```text
+calibration_state = pre
+```
+
+and preservation of the original registered `Prediction:` narrative.
+
+This protection exists to prevent later repository edits from silently:
+
+- reopening a closed record
+- erasing an observed outcome
+- changing an adjudicated actual state
+- changing an error direction
+- converting a model miss into a concordant result
+- changing a concordant result into a miss
+- changing the historical registration state
+- replacing a forward prediction with a retrospective closure narrative
+
+The validator does **not** independently determine whether those adjudications were scientifically correct.
 
 ---
 
-# RingConn Source Export Protection
+## Records 041–044 Evaluation Boundary
 
-The repository contains three preserved RingConn provider exports under:
+For records 041–044, formal scoring was performed retrospectively against the preserved preregistered rules in:
+
+```text
+methodology/open_prediction_evaluation_plan_041_044.md
+```
+
+Current status under that original framework is:
+
+```text
+041:
+closed / supported
+
+042:
+closed / not supported — continued adaptation
+
+043:
+closed / not supported — overall improvement not met
+error_direction = over
+
+044:
+closed / not supported — narrow snapshot-directed governance deviation
+```
+
+The original preregistration artifact remains preserved.
+
+The validator does not independently:
+
+- reconstruct the July–August evidence set
+- determine whether record 041 crossed its recovery-capacity failure boundary
+- determine whether record 042 satisfied its repeated automaticity threshold
+- determine whether record 043 satisfied its biological-translation thresholds
+- determine whether the 2026-08-16 Load Integration omission constituted a governance failure
+- infer a biological consequence from record 044
+- rescore any of records 041–044
+
+Those responsibilities belong to the preregistered evaluation artifact, source evidence, model-error ledger, and retrospective semantic review.
+
+Record 043's criterion-by-criterion adjudication is preserved in:
+
+```text
+data/model_error/record_043_closure.md
+```
+
+---
+
+## Record 045 Evaluation Boundary
+
+For record 045, the preregistered scoring window closed on 2026-08-16.
+
+The repository records record 045 as closed after scoring under:
+
+```text
+methodology/open_prediction_evaluation_plan_045.md
+```
+
+The validator protects that historical state.
+
+It requires the row to retain:
+
+```text
+calibration_state = pre
+```
+
+because record 045 was prospectively registered on 2026-08-12.
+
+It also requires the original registered `Prediction:` narrative to remain at the beginning of the `notes` field.
+
+Closure language may follow that registered text.
+
+The validator does not:
+
+- recalculate the August 13–16 four-day means
+- compare those values with the preregistered thresholds
+- independently classify functional regression
+- independently classify whether a protocol change was recovery-driven
+- reinterpret the 2026-08-16 Load Integration omission
+- reopen the prediction
+- rescore the prediction
+
+The 2026-08-23 catch-up audit identified and authorized correction of a narrow provenance defect in which:
+
+```text
+calibration_state:
+pre
+→
+post
+```
+
+and the original prediction narrative had been replaced by closure text.
+
+The repair restored registration provenance only.
+
+It did not alter record 045's supported outcome.
+
+---
+
+## Record 046 Evaluation Boundary
+
+Record 046 was prospectively registered on:
+
+```text
+2026-08-17
+```
+
+under:
+
+```text
+methodology/open_prediction_evaluation_plan_046.md
+```
+
+Its evidence structure was fixed as:
+
+```text
+2026-08-17:
+registration context only
+
+2026-08-18 through 2026-08-19:
+descriptive unload / re-entry kinetics
+
+2026-08-20 through 2026-08-23:
+primary scoring window
+```
+
+The scoring window is complete.
+
+The registered four-day favorable thresholds were:
+
+```text
+daily HRV >= 59.7 ms
+sleep HRV >= 65.3 ms
+resting HR <= 49.2 bpm
+sleeping HR <= 53.7 bpm
+```
+
+The repository records the following four-day means:
+
+```text
+daily HRV:
+60.25 ms
+favorable
+
+sleep HRV:
+63.25 ms
+unfavorable
+
+resting HR:
+52.0 bpm
+unfavorable
+
+sleeping HR:
+54.0 bpm
+unfavorable
+```
+
+Threshold result:
+
+```text
+1 of 4 favorable
+```
+
+The registered support requirement was:
+
+```text
+at least 3 of 4 favorable thresholds
+
+AND
+
+no multi-session functional regression
+
+AND
+
+no recovery-driven protocol reduction after normal training resumed
+```
+
+The latter two conditions were satisfied.
+
+The quantitative autonomic condition was not.
+
+Record 046 is therefore preserved as:
+
+```text
+status = closed
+actual_value = failed_autonomic_recompression
+error_direction = over
+```
+
+The qualitative error direction is `over` because the model overestimated persistence of the favorable record 045 autonomic state through the immediate post-testing reload interval.
+
+The validator protects this committed state.
+
+It does not:
+
+- recalculate the August 20–23 means
+- independently determine whether 1 of 4 thresholds was favorable
+- reinterpret the post-VO₂ disturbance
+- determine whether later autonomic rebound should alter the score
+- reopen record 046
+- extend its evidence window
+- substitute Week 34 evidence
+- rescore record 045
+- score DEXA, VO₂-max, Bod Pod, TruDiagnostic, or other biological outcomes
+
+Late-window improvement remains part of retrospective interpretation.
+
+It does not change the fixed-window outcome.
+
+Record 046 remains historically prospectively registered and therefore must retain:
+
+```text
+calibration_state = pre
+```
+
+and the original registered `Prediction:` narrative at the beginning of `notes`.
+
+The validator's role across the model-error layer remains narrow:
+
+```text
+protect committed governance state
+and registration provenance
+from accidental repository drift
+```
+
+It does not replace prediction adjudication.
+
+---
+
+## Release Metadata
+
+The validator compares:
+
+- `CODEMETA.json`
+- `CITATION.cff`
+
+It checks alignment of:
+
+- release version
+- release date
+- DOI
+
+Current registered DOI:
+
+```text
+10.5281/zenodo.20815612
+```
+
+The validator checks repository metadata.
+
+It does not query Zenodo or prove the current server-side deposit state.
+
+---
+
+## RingConn Source Exports
+
+The validator checks the source package under:
 
 ```text
 data/source_exports/ringconn/2026-07-21/
 ```
 
-The validator protects:
+It verifies:
 
-- exact byte size
-- SHA-256 identity
-- CRLF line endings
-- provider header structure
-- row count
+- expected files
+- registered byte sizes
+- SHA-256 digests
+- original CRLF line endings
+- absence of bare-LF conversion
+- provider header preservation
+- expected source row counts
+- the `.gitattributes` preservation rule
 
-The repository `.gitattributes` file contains:
+Required Git rule:
 
-```text
+```gitattributes
 data/source_exports/**/*.csv -text
 ```
 
-This prevents Git from silently normalizing the source-export line endings.
+The RingConn source files remain provider-source evidence.
 
-The source export remains an artifact.
+The validator does not:
 
-It should not be rewritten merely to match a curated schema.
+- normalize them
+- correct provider anomalies
+- append them to curated sleep data
+- classify naps
+- invent timezone offsets
 
 ---
 
-# Automated GitHub Validation
+# August 2026 Snapshot Artifact Verification State
 
-Workflow path:
+The August collection window was completed across:
+
+```text
+2026-08-17
+2026-08-18
+```
+
+Current preserved source artifacts are:
+
+```text
+snapshots/2026-08/2026-08-dexa-body-comp.jpg
+snapshots/2026-08/2026-08-dexa-summary.jpg
+snapshots/2026-08/2026-08-vo2-summary.pdf
+snapshots/2026-08/2026-08-bodpod-cosmed.jpg
+snapshots/2026-08/2026-08-advanced-truage.pdf
+snapshots/2026-08/2026-08-truage.pdf
+snapshots/2026-08/2026-08-truhealth.pdf
+```
+
+These artifacts have been:
+
+- privacy-reviewed
+- assigned stable public filenames
+- incorporated into `snapshots/2026-08/checksums.txt`
+- registered with SHA-256 digests
+
+The three August TruDiagnostic PDFs are public sanitized derivatives of verified provider-source reports. Their registered public hashes identify those derivative copies rather than asserting byte identity with private originals.
+
+The August temporal anchor is:
+
+```text
+snapshots/2026-08/2026-08 Epoch.md
+```
+
+Current artifact-layer evidence state is:
+
+```text
+physical collection:
+complete
+
+physical source-artifact preservation:
+complete
+
+TruDiagnostic sample collection:
+complete
+
+TruDiagnostic provider-result artifacts:
+complete and checksum-registered
+
+integrated DEXA / Bod Pod structured snapshot:
+complete for the represented fields
+
+structured core / organ / TruHealth integration:
+complete for the fields currently represented
+
+Model Error 043:
+closed / not supported — overall_improvement_not_met
+```
+
+The August TruDiagnostic source-role reconciliation is preserved in:
+
+```text
+data/source_provenance/2026-08-trudiagnostic-reconciliation.md
+```
+
+The retrospective biological synthesis is preserved in:
+
+```text
+reports/2026-08-biological-snapshot.md
+```
+
+Artifact verification does not itself adjudicate Model Error 043. The formal 043 adjudication is preserved separately in `data/model_error/record_043_closure.md` and the committed outcome is protected by the repository validator.
+
+The dedicated August cross-layer validator additionally protects agreement between the structured snapshot, molecular longitudinal layer, DQ-010, Record 043 closure, checksum manifest, and fixed artifact identities.
+
+DEXA, VO₂ max, and Bod Pod remain supplemental to the registered 043 primary molecular domain.
+
+---
+
+# Artifact Verification With SHA-256
+
+Binary artifacts and provider-source exports are accompanied by SHA-256 manifests.
+
+The relevant manifest is normally stored in the same directory as the artifact:
+
+```text
+checksums.txt
+```
+
+---
+
+## Windows — Command Prompt
+
+For a single file:
+
+```text
+certutil -hashfile snapshots\YYYY-MM\filename.pdf SHA256
+```
+
+Compare the reported digest with:
+
+```text
+snapshots\YYYY-MM\checksums.txt
+```
+
+Example for a source export:
+
+```text
+certutil -hashfile data\source_exports\ringconn\2026-07-21\ringconn-sleep-export.csv SHA256
+```
+
+Compare it with:
+
+```text
+data\source_exports\ringconn\2026-07-21\checksums.txt
+```
+
+---
+
+## Windows — PowerShell
+
+For a single file:
+
+```text
+Get-FileHash "snapshots\YYYY-MM\filename.pdf" -Algorithm SHA256
+```
+
+For a RingConn source export:
+
+```text
+Get-FileHash "data\source_exports\ringconn\2026-07-21\ringconn-sleep-export.csv" -Algorithm SHA256
+```
+
+---
+
+## macOS
+
+```text
+shasum -a 256 snapshots/YYYY-MM/filename.pdf
+```
+
+For a RingConn source export:
+
+```text
+shasum -a 256 data/source_exports/ringconn/2026-07-21/ringconn-sleep-export.csv
+```
+
+---
+
+## Linux
+
+Either command may be available:
+
+```text
+sha256sum snapshots/YYYY-MM/filename.pdf
+```
+
+or:
+
+```text
+shasum -a 256 snapshots/YYYY-MM/filename.pdf
+```
+
+---
+
+# Temporal Anchor Relationship
+
+Many snapshot folders contain an epoch file such as:
+
+```text
+snapshots/YYYY-MM/YYYY-MM Epoch.md
+```
+
+The epoch file serves as the temporal anchor for the capture window.
+
+It may document:
+
+- when the snapshot belongs
+- the operating conditions
+- which artifacts belong to the window
+- public-versus-private artifact status
+- where interpretation belongs
+- how the snapshot connects to the broader archive
+
+Checksums verify file identity.
+
+Epoch files contextualize file placement.
+
+Reports and model-error records interpret longitudinal significance.
+
+These roles should remain separate.
+
+---
+
+# Verification Scope
+
+Verification may establish that:
+
+- a file matches its registered checksum
+- a source export retains registered bytes
+- repository CSVs parse
+- internal Markdown links resolve
+- weekly reports are continuous
+- protected closed prediction records retain their committed adjudicated states
+- selected protected actual values and error directions remain unchanged
+- prospective registration state remains preserved for records 041–046
+- original registered prediction narratives remain preserved for records 041–046
+- release metadata agrees
+- a downloaded ZIP is mechanically safe and internally consistent
+- the current machine-readable daily/training/event layer satisfies its declared schema checks
+- the protected 325-session training prefix remains present and live session identifiers remain unique
+- current live training `source_ref` values use the canonical private-source grammar
+- registered private-source hashes match the exact private bytes when those bytes are independently available for comparison
+- the completed August snapshot remains aligned across its designated structured/provenance/adjudication layers
+- the seven protected August artifacts remain byte-identical to their fixed registered identities
+
+Verification does not independently establish:
+
+- biological causality
+- clinical significance
+- measurement validity
+- device accuracy
+- phase transition
+- whether a recorded prediction outcome was scientifically correct
+- whether record 044 materially altered an August biological result
+- population generalizability
+- universal privacy erasure
+- provider-side deletion of unreachable Git or LFS objects
+- removal from prior uncontrolled downloads or mirrors
+
+---
+
+# Privacy Verification Boundary
+
+The local validator checks the current repository package.
+
+It cannot prove deletion from:
+
+- old local clones
+- prior downloads
+- third-party mirrors
+- browser caches
+- search-engine caches
+- GitHub provider-controlled unreachable objects
+- residual Git LFS storage
+- other uncontrolled copies
+
+Provider-side cleanup remains a separate verification state.
+
+That status should change only after direct provider confirmation.
+
+---
+
+# Recommended Audit Workflow
+
+For a routine local verification cycle:
+
+1. pull or download the latest repository state
+2. run all applicable read-only validators (`tools/validate_repository.py`, `tools/validate_machine_readable.py`, and snapshot-specific validators such as `tools/validate_august_snapshot.py`)
+3. review all errors
+4. review warnings against `data/DATA_QUALITY_NOTES.md`
+5. spot-check recently changed artifacts
+6. verify that protected prediction and phase boundaries remain intact
+7. verify that preregistered prediction records retain their original registration state and prediction narrative
+8. verify that scored predictions remain frozen after their registered outcome boundaries
+9. verify that record 043 retains its closed adjudicated state and original prospective registration provenance
+10. download and validate a fresh GitHub ZIP after material changes
+11. record a formal audit only when the scheduled audit cadence or a material event requires it
+
+The validator reduces repetitive mechanical work.
+
+It does not replace human semantic review.
+
+---
+
+# Manual Review Still Required
+
+The validator cannot fully evaluate:
+
+- whether interpretation exceeds evidence
+- whether a provider field is semantically equivalent to a curated field
+- whether a prediction was framed fairly
+- whether prediction scoring correctly followed its preregistered criteria
+- whether closure language accurately describes the evidence
+- whether preservation of the original prediction narrative is sufficient to establish fair adjudication
+- whether record 041 was substantively supported
+- whether record 042 satisfied its qualitative-transition threshold
+- whether record 043 was substantively adjudicated correctly
+- whether the record 044 deviation was correctly classified
+- whether the record 044 deviation materially affected a measured biological result
+- whether record 046 was substantively adjudicated correctly
+- whether a protocol deviation belongs to one governance category or another
+- whether a phase declaration is justified
+- whether a screenshot contains unexpected private information
+- whether a PDF redaction preserved all necessary context
+- whether a weekly narrative introduces unsupported causal claims
+- whether a new method creates excessive maintenance burden
+- whether a protocol change violates governance
+
+These remain human audit responsibilities.
+
+---
+
+# GitHub Actions Status
+
+Lightweight automated validation is active through:
 
 ```text
 .github/workflows/validate.yml
@@ -1183,19 +1730,3 @@ The validator protects the completed August snapshot against silent divergence b
 The existing read-only GitHub Actions workflow now executes all three validators on pull requests, pushes to `main`, and manual workflow dispatch.
 
 This hardening does not change any source artifact byte, checksum registration, biological value, registered prediction wording or threshold, adjudicated outcome, physical protocol exposure, phase state, release version, release date, or DOI.
-
----
-
-## 2026-09-14 Terminal Zero-Session Endpoint Semantics
-
-The Week 36 closeout exposed a legacy validator assumption that day-indexed daily/sleep coverage and session-indexed training coverage must always share the same latest date.
-
-The validation entry point was narrowed so that:
-
-- daily biomarkers and canonical sleep must still share the represented endpoint
-- training may end before that endpoint when terminal represented dates have no completed session
-- training still fails validation if it extends beyond daily coverage
-- no synthetic zero-duration training row is required to manufacture endpoint equality
-- all pre-existing repository checks remain active through the delegated core validator
-
-The change is validator/documentation infrastructure only. It does not append W36 data, alter historical training values, change protocol or phase state, change any model-error record, or change release metadata or DOI.
