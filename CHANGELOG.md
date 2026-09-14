@@ -13,6 +13,16 @@ Biological interpretation belongs in `/reports`. This file records release-level
 
 ## [Unreleased]
 
+### September 14 post-release coherence drift cleanup
+
+- Reconciled `LATEST.md` to the published v1.1.0 version DOI `10.5281/zenodo.22759132` and all-versions DOI `10.5281/zenodo.20815611` rather than the prior v1.0.0 DOI.
+- Separated the immediate **weekly operating posture** (`Consolidation / re-entry observation`) from the broader Phase 2 **consolidation / lock-in observation** substate so short-term travel re-entry language does not appear to conflict with the canonical phase map.
+- Updated observer and newcomer paths to use W36 as the most recent closed week and to describe the August TruDiagnostic / Record 043 state as complete rather than pending.
+- Preserved historically correct pending/open language in dated contemporaneous documents rather than rewriting history.
+- Added `tools/validate_coherence.py` to protect live release identity, DOI roles, weekly pointers, completed August orientation language, and weekly-versus-broader substate wording.
+- Added the coherence validator to GitHub Actions and documented it in `tools/README.md`.
+- Added `docs/audits/2026-09-14-post-release-coherence-drift-cleanup.md` documenting the repair scope and preservation boundary.
+
 ### September 14 post-publication reconciliation
 
 - Reconciled `CITATION.cff` to the authoritative finalized v1.1.0 Zenodo version DOI `10.5281/zenodo.22759132` after external publication.
