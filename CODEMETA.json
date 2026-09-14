@@ -22,7 +22,8 @@
     "recovery monitoring",
     "human performance"
   ],
-  "identifier": "daniel-longitudinal-public",
+  "identifier": "https://doi.org/10.5281/zenodo.22759132",
+  "sameAs": "https://doi.org/10.5281/zenodo.20815611",
   "dateCreated": "2026",
   "dateModified": "2026-09-14",
   "version": "1.1.0",
