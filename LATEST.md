@@ -3,7 +3,9 @@
 Daniel Longitudinal Study
 Public Archive Status Dashboard
 
-Archive DOI: https://doi.org/10.5281/zenodo.20815612
+Current published release: `v1.1.0`  
+Version DOI: https://doi.org/10.5281/zenodo.22759132  
+All-versions DOI: https://doi.org/10.5281/zenodo.20815611
 
 > Week labels follow the repository’s internal reporting index rather than strict ISO calendar weeks. See [`docs/WEEK_INDEXING.md`](docs/WEEK_INDEXING.md).
 
@@ -12,7 +14,8 @@ Archive DOI: https://doi.org/10.5281/zenodo.20815612
 ## Current State
 
 - **Phase:** Phase 2 — Load Integration
-- **Operating substate:** Consolidation / re-entry observation
+- **Weekly operating posture:** Consolidation / re-entry observation
+- **Broader Phase 2 substate:** Consolidation / lock-in observation
 - **Active window:** 2026-W37
 - **Prior window:** 2026-W36 closed
 - **Installed architecture:** B1 + Load Integration
@@ -24,6 +27,8 @@ Archive DOI: https://doi.org/10.5281/zenodo.20815612
 - **Data-quality posture:** DQ-011 remains open for source verification of the recorded 2026-09-08 daily resting-heart-rate value of 64 bpm
 - **Formal Phase 2D declaration:** None
 - **August snapshot:** DEXA, VO₂, Bod Pod, TruAge/Advanced TruAge, and TruHealth source artifacts archived; Model Error 043 adjudication complete
+
+The weekly operating posture describes the immediate observation condition for the active report. The broader Phase 2 substate is the canonical phase-map interpretation. A temporary re-entry posture after travel does not replace the broader consolidation / lock-in classification or declare a new phase.
 
 Current machine-readable row counts and endpoints are maintained in [`data/DATA_COVERAGE.md`](data/DATA_COVERAGE.md).
 
@@ -129,7 +134,9 @@ Fixed scoring windows remain fixed. Later evidence does not retroactively rescue
 
 - read-only core repository validator active
 - read-only machine-readable semantic validator active
-- GitHub Actions runs both on pushes to `main` and pull requests
+- read-only August snapshot cross-layer validator active
+- post-release coherence validator active
+- GitHub Actions runs all current validators on pushes to `main` and pull requests
 - the historical training prefix through 2026-08-30 remains protected at 325 sessions while later governed rows append
 - exact retained private-source hashes are registered only when the exact bytes are available
 - `Daniel_Dataset_v1.30` is registered in the private-source provenance manifest
