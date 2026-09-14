@@ -55,7 +55,7 @@ def main() -> int:
 
     require(errors, f'doi: "{VERSION_DOI}"' in citation, "CITATION.cff: finalized version DOI drift")
     require(errors, str(codemeta.get("version", "")).strip() == VERSION, "CODEMETA.json: version drift")
-    require(errors, str(codemeta.get("identifier", "")).strip() == VERSION_DOI, "CODEMETA.json: version identifier drift")
+    require(errors, str(codemeta.get("identifier", "")).strip() == f"https://doi.org/{VERSION_DOI}", "CODEMETA.json: version identifier drift")
     require(errors, str(codemeta.get("sameAs", "")).strip() == f"https://doi.org/{ALL_VERSIONS_DOI}", "CODEMETA.json: all-versions DOI drift")
 
     # Current report pointers.
