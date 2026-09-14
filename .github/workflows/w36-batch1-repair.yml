@@ -19,7 +19,7 @@ jobs:
           fetch-depth: 0
 
       - name: Apply bounded repairs
-        shell: python
+        shell: python {0}
         run: |
           from pathlib import Path
 
@@ -47,8 +47,47 @@ jobs:
               text = text.replace(old, new, 1)
           p.write_text(text, encoding='utf-8', newline='')
 
-          # Add DQ-011 to the existing canonical data-quality ledger rather
-          # than creating a second parallel quality-document family.
+          # The schema defines training as zero-to-many sessions per date. A
+          # complete daily/sleep interval may therefore end on a no-training
+          # day. Preserve daily==sleep alignment while allowing training to
+          # end earlier; training may never extend beyond the daily interval.
+          p = Path('tools/validate_repository.py')
+          text = p.read_text(encoding='utf-8')
+          old = '''        if not (daily_end == sleep_end == training_end):
+            failures += 1
+            self.report.error(
+                check,
+                (
+                    "Aligned daily/sleep/training endpoints diverge: "
+                    f"daily={daily_end}, sleep={sleep_end}, training={training_end}"
+                ),
+            )
+'''
+          new = '''        if daily_end != sleep_end:
+            failures += 1
+            self.report.error(
+                check,
+                (
+                    "Aligned daily/sleep endpoints diverge: "
+                    f"daily={daily_end}, sleep={sleep_end}"
+                ),
+            )
+
+        if training_end > daily_end:
+            failures += 1
+            self.report.error(
+                check,
+                (
+                    "Training extends beyond the represented daily interval: "
+                    f"daily={daily_end}, training={training_end}"
+                ),
+            )
+'''
+          assert text.count(old) == 1, 'Expected current-state endpoint validator block not found exactly once'
+          text = text.replace(old, new, 1)
+          p.write_text(text, encoding='utf-8', newline='')
+
+          # Add DQ-011 to the canonical data-quality ledger.
           p = Path('data/DATA_QUALITY_NOTES.md')
           text = p.read_text(encoding='utf-8')
           if '**Last updated:** 2026-09-10' in text:
@@ -116,14 +155,11 @@ No correction should be made from plausibility alone.
           text = text.replace(marker, '\n' + dq + marker.lstrip('\n'), 1)
           p.write_text(text, encoding='utf-8', newline='')
 
-          # Remove the temporary standalone DQ file now that DQ-011 is in the
-          # canonical ledger.
           standalone = Path('data/DQ-011-2026-09-08-resting-hr.md')
           if standalone.exists():
               standalone.unlink()
 
-          # Record this material structured-data extension once in the root
-          # changelog; the report lifecycle rollover remains Batch 2.
+          # Record this structured-data extension once; report rollover is Batch 2.
           p = Path('CHANGELOG.md')
           text = p.read_text(encoding='utf-8')
           heading = '#### September 14 W36 machine-readable extension'
@@ -142,6 +178,7 @@ No correction should be made from plausibility alone.
 - Registered the exact retained `Daniel_Dataset_v1.30` private source in the provenance manifest with SHA-256 identity.
 - Advanced public structured coverage to 217 daily rows, 217 canonical sleep rows, 350 training/session rows, and 45 context events.
 - Added DQ-011 for the 2026-09-08 daily resting-heart-rate value of 64 bpm; the recorded value remains preserved pending originating-source verification.
+- Hardened current-state validation so the canonical training layer may end before the daily/sleep endpoint when the terminal day has no completed session, while still prohibiting training dates beyond the represented daily interval.
 - No weekly-report lifecycle, phase, protocol, model-error, August snapshot, release-version, or DOI state was changed in this batch.
 '''
           text = text.replace(marker, marker + entry, 1)
@@ -154,10 +191,11 @@ No correction should be made from plausibility alone.
           python tools/validate_august_snapshot.py
           git diff --check
 
-      - name: Commit bounded repairs
+      - name: Commit bounded repairs and remove helper workflow
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/training_blocks_v1.csv data/DATA_QUALITY_NOTES.md data/DQ-011-2026-09-08-resting-hr.md CHANGELOG.md
+          rm .github/workflows/w36-batch1-repair.yml
+          git add -A
           git commit -m "[w36-batch1-repair-done] Harden W36 structured extension"
           git push origin HEAD:w36-batch1-machine-readable
