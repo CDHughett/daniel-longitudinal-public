@@ -4,7 +4,7 @@ All notable changes to the Daniel Longitudinal Study public archive are document
 
 Detailed historical entries preceding the v1.1.0 release-candidate freeze are preserved in:
 
-- [`docs/archive/CHANGELOG_PRE_V1.1.0.md`](docs/archive/CHANGELOG_PRE_V1.1.0.md)
+- [`docs/archive/CHANGELOG_PRE_V1.1.0.txt`](docs/archive/CHANGELOG_PRE_V1.1.0.txt)
 - [`docs/archive/CHANGELOG_ARCHIVE.md`](docs/archive/CHANGELOG_ARCHIVE.md)
 
 Biological interpretation belongs in `/reports`. This file records release-level repository, dataset, methodology, governance, privacy, validation, and archive-integrity changes.
@@ -52,6 +52,6 @@ Release notes: [`docs/releases/v1.1.0.md`](docs/releases/v1.1.0.md)
 
 ## Historical detail
 
-The full pre-v1.1.0 live changelog, including detailed commit-level and audit-level entries accumulated under `[Unreleased]`, is preserved byte-for-byte at [`docs/archive/CHANGELOG_PRE_V1.1.0.md`](docs/archive/CHANGELOG_PRE_V1.1.0.md).
+The full pre-v1.1.0 live changelog, including detailed commit-level and audit-level entries accumulated under `[Unreleased]`, is preserved byte-for-byte at [`docs/archive/CHANGELOG_PRE_V1.1.0.txt`](docs/archive/CHANGELOG_PRE_V1.1.0.txt).
 
 Earlier archived changelog history remains at [`docs/archive/CHANGELOG_ARCHIVE.md`](docs/archive/CHANGELOG_ARCHIVE.md).
