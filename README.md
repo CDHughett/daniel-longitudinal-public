@@ -5,63 +5,36 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20815612.svg)](https://zenodo.org/doi/10.5281/zenodo.20815612)
 [![Repository validation](https://github.com/CDHughett/daniel-longitudinal-public/actions/workflows/validate.yml/badge.svg)](https://github.com/CDHughett/daniel-longitudinal-public/actions/workflows/validate.yml)
 
-**Archived release:** [Zenodo v1.0.0 — DOI 10.5281/zenodo.20815612](https://zenodo.org/doi/10.5281/zenodo.20815612)
+**Release candidate:** `v1.1.0` — prepared 2026-09-14  
+**Prior DOI-bearing release:** `v1.0.0` — DOI `10.5281/zenodo.20815612`
 
 The Daniel Longitudinal Study follows one human system through repeated measurement, machine-readable data, contemporaneous observation, source-preserved testing, registered predictions, retrospective interpretation, correction history, and explicit archive governance.
 
-The central aim is not to prove a universal intervention. It is to build a durable record in which **what was measured, what was predicted, what happened, what changed, and what was corrected remain inspectable over time**.
+The aim is not to prove a universal intervention. It is to preserve an inspectable record of **what was measured, what was predicted, what happened, what changed, and what was corrected**.
 
 > **Scope:** single-subject, longitudinal, observational. This is not a clinical trial, coaching product, or generalized intervention protocol.
 
 ---
 
-## At a Glance
+## Start here
 
-Current public structured coverage through **2026-09-13**:
-
-| Layer | Current public state |
-|---|---:|
-| Daily biomarkers | **217 continuous daily rows** |
-| Canonical sleep | **217 continuous daily rows** |
-| Training exposure | **350 session/block rows through 2026-09-12** |
-| Context events | **45 bounded events** |
-| Weekly reporting | Continuous from **2026-W06** |
-| August snapshot | **DEXA + VO₂ + Bod Pod + TruDiagnostic source artifacts archived** |
-| Recent prediction closure | **043 — closed / not supported / over** |
-
-Authoritative live counts and endpoints are maintained in [`data/DATA_COVERAGE.md`](./data/DATA_COVERAGE.md).
-
-### What makes this archive different
-
-- **Evidence is preserved beneath interpretation.** Higher-level narratives do not replace source artifacts or structured rows.
-- **Wrong predictions stay visible.** Fixed scoring windows remain fixed, and later favorable evidence does not retrospectively rescue a miss.
-- **Corrections are traceable.** Source-backed discrepancies are corrected narrowly without silently rewriting unrelated historical evidence.
-- **Measured, subjective, contextual, and provenance fields are separated.** Machine readability does not erase evidence class.
-- **Private-source provenance is represented without publishing private workbooks.** Exact retained files are hashed when available; unavailable hashes remain explicitly missing.
-- **The repository validates itself mechanically.** Read-only validators run locally and in GitHub Actions.
-
----
-
-## Choose Your Entry Point
-
-| If you want to... | Start here |
+| Goal | Entry point |
 |---|---|
-| Understand the project in a few minutes | [`docs/START_HERE.md`](./docs/START_HERE.md) |
+| Understand the project quickly | [`docs/START_HERE.md`](./docs/START_HERE.md) |
 | See the current live state | [`LATEST.md`](./LATEST.md) |
-| Inspect the structured datasets | [`data/DATA_COVERAGE.md`](./data/DATA_COVERAGE.md) |
+| Inspect structured coverage | [`data/DATA_COVERAGE.md`](./data/DATA_COVERAGE.md) |
 | Understand the dataset as a research object | [`DATASET_OVERVIEW.md`](./DATASET_OVERVIEW.md) |
 | Audit the archive skeptically | [`docs/OBSERVER_QUICKSTART.md`](./docs/OBSERVER_QUICKSTART.md) |
 | Inspect prediction accountability | [`data/model_error/`](./data/model_error/) |
 | Inspect source provenance | [`data/source_provenance/`](./data/source_provenance/) |
 | Inspect testing artifacts | [`snapshots/`](./snapshots/) |
 | Reproduce mechanical checks | [`VERIFICATION.md`](./VERIFICATION.md) |
-| Navigate everything | [`INDEX.md`](./INDEX.md) |
-
-For recurring terminology, see [`docs/CONCEPTS.md`](./docs/CONCEPTS.md).
+| Read v1.1.0 release notes | [`docs/releases/v1.1.0.md`](./docs/releases/v1.1.0.md) |
+| Navigate the repository | [`INDEX.md`](./INDEX.md) |
 
 ---
 
-# Current Archive State
+# Current archive state
 
 | Domain | Current state |
 |---|---|
@@ -72,7 +45,7 @@ For recurring terminology, see [`docs/CONCEPTS.md`](./docs/CONCEPTS.md).
 | Installed training architecture | **B1 + Load Integration** |
 | Open model-error records | **none in protected block 041–046** |
 | Record 043 | **closed / not supported — `overall_improvement_not_met` / over** |
-| August TruDiagnostic result | **provider artifacts archived, source-reconciled, and structured** |
+| August snapshot | **source artifacts archived, reconciled, structured, checksum-protected** |
 | Formal Phase 2D declaration | **none** |
 
 Current-state anchors retained for repository validation:
@@ -85,55 +58,37 @@ Most recent closed window:
 2026-W36
 ```
 
-The current operating posture remains conservative: Week 36 closed after a natural travel interruption reduced exposure without a recovery-driven stop, and Week 37 now observes ordinary post-travel re-entry under the unchanged B1 + Load Integration architecture. Missed volume is not being replaced, short-window wearable variability is not treated as a stand-alone recovery verdict, and Phase 2D remains undeclared.
+Week 37 observes ordinary post-travel re-entry under the unchanged B1 + Load Integration architecture. Missed Week 36 volume is not being replaced, short-window wearable variability is not treated as a stand-alone recovery verdict, and Phase 2D remains undeclared.
 
-Current details: [`LATEST.md`](./LATEST.md)
+Authoritative current detail: [`LATEST.md`](./LATEST.md)
 
 ---
 
-# Machine-Readable Core
+# Machine-readable core
 
-The public archive now supports aligned daily, sleep, training, and event analysis.
+Current public structured coverage through 2026-09-13:
 
-| Dataset | Unit of observation | Current coverage |
+| Dataset | Unit | Coverage |
 |---|---|---|
-| [`data/daily_biomarkers_v1.csv`](./data/daily_biomarkers_v1.csv) | one row per represented day | 217 rows through 2026-09-13 |
-| [`data/sleep_longitudinal_v1.csv`](./data/sleep_longitudinal_v1.csv) | one canonical governed wake-date row | 217 rows through 2026-09-13 |
-| [`data/training_blocks_v1.csv`](./data/training_blocks_v1.csv) | one row per training/session block | 350 rows through 2026-09-12 |
-| [`data/context_events_v1.csv`](./data/context_events_v1.csv) | one row per bounded contextual event | 45 events through 2026-09-13 |
+| [`data/daily_biomarkers_v1.csv`](./data/daily_biomarkers_v1.csv) | one row per represented day | 217 continuous rows through 2026-09-13 |
+| [`data/sleep_longitudinal_v1.csv`](./data/sleep_longitudinal_v1.csv) | one governed wake-date row | 217 continuous rows through 2026-09-13 |
+| [`data/training_blocks_v1.csv`](./data/training_blocks_v1.csv) | one row per completed session/block | 350 rows through 2026-09-12 |
+| [`data/context_events_v1.csv`](./data/context_events_v1.csv) | one bounded context event | 45 rows through 2026-09-13 |
 
-The daily/training/event datasets are curated public extracts derived primarily from governed private `Daniel_Dataset_v1.x` source states. They are **not raw provider exports**.
+Training is session-indexed: a represented day with zero completed training sessions does not require a synthetic training row.
 
-Schema contract: [`schemas/machine-readable-layer-v1.md`](./schemas/machine-readable-layer-v1.md)  
-Data dictionary: [`DATA_DICTIONARY.md`](./DATA_DICTIONARY.md)  
-Private-source provenance: [`data/source_provenance/`](./data/source_provenance/)
+The daily/training/event layers are curated public extracts derived primarily from governed private `Daniel_Dataset_v1.x` source states. They are **not raw provider exports**.
 
-## Evidence classes
+Schema and provenance:
 
-The machine-readable layer explicitly distinguishes:
-
-- **measurement / source-transcribed** fields
-- **subjective** fields
-- **contextual / classified** fields
-- **provenance** fields
-
-Structured subjective data remain subjective. Context classification does not establish causality.
-
-### Historical duration compatibility
-
-`training_blocks_v1.csv` preserves historical training architecture rather than inventing false precision. Its v1 `duration_min` field may contain:
-
-- scalar minutes
-- bounded ranges
-- compound historical duration expressions
-
-Only scalar values are directly numeric without a separately documented transformation. See [`schemas/machine-readable-layer-v1.md`](./schemas/machine-readable-layer-v1.md).
+- [`schemas/machine-readable-layer-v1.md`](./schemas/machine-readable-layer-v1.md)
+- [`DATA_DICTIONARY.md`](./DATA_DICTIONARY.md)
+- [`data/source_provenance/`](./data/source_provenance/)
+- [`data/DATA_QUALITY_NOTES.md`](./data/DATA_QUALITY_NOTES.md)
 
 ---
 
-# Evidence Architecture
-
-The repository deliberately separates layers that are often collapsed together:
+# Evidence architecture
 
 ```text
 Source Artifacts
@@ -153,52 +108,11 @@ Model Correction
 
 A higher-level interpretation does not overwrite the evidence beneath it.
 
-The archive is designed to preserve disagreement as well as agreement. Examples include:
-
-- strong function alongside less-favorable recovery telemetry
-- favorable observations alongside failed predictions
-- broad governance discipline alongside a narrow governance failure
-- later recovery that does not retrospectively alter a failed fixed scoring window
-- increasing behavioral automaticity without premature phase declaration
+The repository is designed to preserve disagreement as well as agreement: favorable observations can coexist with failed predictions; recovery telemetry can diverge from demonstrated function; corrections can repair source transcription without repairing the narrative.
 
 ---
 
-# Data, Source Preservation, and Provenance
-
-Primary structured/public layers include:
-
-- [`data/daily_biomarkers_v1.csv`](./data/daily_biomarkers_v1.csv)
-- [`data/sleep_longitudinal_v1.csv`](./data/sleep_longitudinal_v1.csv)
-- [`data/training_blocks_v1.csv`](./data/training_blocks_v1.csv)
-- [`data/context_events_v1.csv`](./data/context_events_v1.csv)
-- [`data/biomarker_snapshot.csv`](./data/biomarker_snapshot.csv)
-- [`data/bloodwork_longitudinal.csv`](./data/bloodwork_longitudinal.csv)
-- [`data/epigenetic_longitudinal.csv`](./data/epigenetic_longitudinal.csv)
-- [`data/model_error/model_error_gap_v1.csv`](./data/model_error/model_error_gap_v1.csv)
-
-Direct provider/device source preservation:
-
-- [`data/source_exports/`](./data/source_exports/)
-- [`snapshots/`](./snapshots/)
-
-Private-source provenance without publishing private workbooks:
-
-- [`data/source_provenance/`](./data/source_provenance/)
-
-August TruDiagnostic source-role reconciliation:
-
-- [`data/source_provenance/2026-08-trudiagnostic-reconciliation.md`](./data/source_provenance/2026-08-trudiagnostic-reconciliation.md)
-
-Coverage, field semantics, and limitations:
-
-- [`data/DATA_COVERAGE.md`](./data/DATA_COVERAGE.md)
-- [`data/DATA_QUALITY_NOTES.md`](./data/DATA_QUALITY_NOTES.md)
-- [`DATA_DICTIONARY.md`](./DATA_DICTIONARY.md)
-- [`MEASUREMENT_SOURCES.md`](./MEASUREMENT_SOURCES.md)
-
----
-
-# Source Hierarchy and Correction
+# Source hierarchy and correction
 
 When records conflict, interpretation generally prioritizes:
 
@@ -210,75 +124,15 @@ When records conflict, interpretation generally prioritizes:
 6. later evidence-grounded synthesis
 7. unsupported memory
 
-The repository prohibits silent alteration, outcome-driven rewriting, deletion of unfavorable valid evidence, unsupported reconstruction, and retrospective prediction revision.
+Silent alteration, outcome-driven rewriting, unsupported reconstruction, and retrospective prediction revision are prohibited.
 
-Source-backed corrections must remain narrow, traceable, documented, and reviewed for downstream effects.
-
-This distinction is important: **a correction is allowed to repair the archive; it is not allowed to repair the story.**
+Source-backed corrections must remain narrow, traceable, and reviewed for downstream effects.
 
 ---
 
-# Prediction Accountability
+# August 2026 coordinated snapshot
 
-The model-error layer exists to evaluate prediction/model calibration rather than demonstrate foresight.
-
-Recent prospective block:
-
-| Record | Domain | Status | Outcome |
-|---|---|---|---|
-| 041 | recovery_capacity | Closed | supported |
-| 042 | ambient_execution | Closed | not supported — continued adaptation |
-| 043 | biological_translation | **Closed** | not supported — `overall_improvement_not_met` / over |
-| 044 | protocol_governance | Closed | not supported — narrow snapshot-directed deviation |
-| 045 | autonomic_reconvergence | Closed | supported |
-| 046 | autonomic_unload_reload | Closed | failed_autonomic_recompression |
-
-Record 043’s full criterion-by-criterion adjudication is preserved in [`data/model_error/record_043_closure.md`](./data/model_error/record_043_closure.md).
-
-Wrong predictions remain visible. Fixed evidence windows remain fixed. Original registered prediction narratives remain distinguishable from later closure language.
-
-Model-error layer: [`data/model_error/`](./data/model_error/)  
-Prediction criteria: [`docs/methodology/valid_prediction_criteria.md`](./docs/methodology/valid_prediction_criteria.md)
-
-## UDI
-
-UDI canonically means **Unobstructed Delta Index**.
-
-The current framework separates eligible magnitude error from state/trajectory concordance:
-
-```text
-UDI_point
-UDI_range
-State_concordance
-Trajectory_concordance
-```
-
-Following closure of primary trajectory record 043, the current primary trajectory concordance is 2/4 = 0.50. Point/range UDI and state concordance retain their separately governed values.
-
-Composite UDI remains withheld under predefined sample-size criteria. UDI is a model-error framework, **not a biological score**.
-
-Methodology: [`docs/methodology/UDI_framework_v1.md`](./docs/methodology/UDI_framework_v1.md)
-
-## Future model-error schema
-
-The historical v1 field `calibration_state` carries legacy semantic debt because prospective registration and subject-specific model calibration are separate concepts.
-
-Protected recent records 041–046 retain `calibration_state=pre` as historical registration provenance. Future design separates:
-
-```text
-registration_status
-model_calibration_scope
-```
-
-without rewriting current v1 records.
-
-See [`docs/methodology/model_error_schema_v2.md`](./docs/methodology/model_error_schema_v2.md).
-
----
-
-# August 2026 Snapshot
-
-Collection was completed across 2026-08-17 and 2026-08-18:
+Collection occurred across 2026-08-17 and 2026-08-18:
 
 ```text
 2026-08-17
@@ -288,136 +142,107 @@ TruDiagnostic → DEXA → VO₂ max
 Bod Pod
 ```
 
-Preserved DEXA, VO₂, Bod Pod, Advanced TruAge, TruAge, and TruHealth source artifacts are available under [`snapshots/2026-08/`](./snapshots/2026-08/), with SHA-256 registration in the folder checksum manifest.
+Preserved public artifacts under [`snapshots/2026-08/`](./snapshots/2026-08/) include DEXA, VO₂, Bod Pod/COSMED, TruAge, Advanced TruAge, and TruHealth outputs. Seven protected August artifacts are registered in the folder SHA-256 manifest.
 
-The contemporaneous repository collection record controls the actual TruDiagnostic sample event: **2026-08-17 at 05:37 local**, together with its recorded preparation conditions. Provider-displayed administrative metadata remain preserved in the original PDFs but do not overwrite that collection record. The source-role reconciliation is documented in [`data/source_provenance/2026-08-trudiagnostic-reconciliation.md`](./data/source_provenance/2026-08-trudiagnostic-reconciliation.md).
+The contemporaneous repository record controls the canonical TruDiagnostic sample event: **2026-08-17 at 05:37 local**. Provider-displayed administrative metadata remain preserved but do not overwrite that collection record. See [`data/source_provenance/2026-08-trudiagnostic-reconciliation.md`](./data/source_provenance/2026-08-trudiagnostic-reconciliation.md).
 
-August core aging anchors, system/organ ages, and currently represented TruHealth fields are integrated in [`data/biomarker_snapshot.csv`](./data/biomarker_snapshot.csv) and [`data/epigenetic_longitudinal.csv`](./data/epigenetic_longitudinal.csv).
+Integrated snapshot values are represented in:
 
-Model Error 043 was evaluated only after the required molecular source evidence was available and closed on 2026-09-10 as **not supported**, with `actual_value=overall_improvement_not_met` and `error_direction=over`. This outcome is evidence about the registered prediction; it does not by itself establish generalized biological deterioration or change phase status.
-
----
-
-# Phase Governance
-
-Current phase:
-
-```text
-Phase 2 — Load Integration
-```
-
-Current operating substate:
-
-```text
-Consolidation / re-entry observation
-```
-
-Formal Phase 2D declaration:
-
-```text
-none
-```
-
-Current evidence includes repeated load compatibility, increasingly low-salience execution, automatic grip/movement organization, natural portability signals, preserved function across autonomic variability, and reduced operator-management cost.
-
-Those observations can accumulate as transition evidence without independently declaring a phase transition.
-
-See:
-
-- [`PHASE_MAP.md`](./PHASE_MAP.md)
-- [`PHASE_DECLARATION_CRITERIA.md`](./PHASE_DECLARATION_CRITERIA.md)
+- [`data/biomarker_snapshot.csv`](./data/biomarker_snapshot.csv)
+- [`data/epigenetic_longitudinal.csv`](./data/epigenetic_longitudinal.csv)
 
 ---
 
-# Verification and Reproducibility
+# Prediction accountability
 
-Two read-only validators are maintained:
+Recent protected records:
+
+| Record | Domain | Outcome |
+|---|---|---|
+| 041 | recovery_capacity | supported |
+| 042 | ambient_execution | not supported — continued adaptation |
+| 043 | biological_translation | **not supported — `overall_improvement_not_met` / over** |
+| 044 | protocol_governance | not supported — narrow snapshot-directed deviation |
+| 045 | autonomic_reconvergence | supported |
+| 046 | autonomic_unload_reload | failed_autonomic_recompression |
+
+Record 043 remains fixed under its preregistered biological scoring boundary. Later favorable training or behavioral evidence does not reopen or rescue the outcome.
+
+Full adjudication: [`data/model_error/record_043_closure.md`](./data/model_error/record_043_closure.md)
+
+UDI is an error/calibration framework, not a biological score. See [`docs/methodology/UDI_framework_v1.md`](./docs/methodology/UDI_framework_v1.md).
+
+---
+
+# Known limitations
+
+This archive does not establish population-level causality, clinical efficacy, generalized intervention guidance, protocol safety for other people, or universal device/assay accuracy.
+
+Known bounded data-quality restrictions remain visible rather than silently repaired. Examples include historical sleep-field reconciliation notes and DQ-011 for the recorded 2026-09-08 resting-heart-rate value pending source verification.
+
+Some historical private source states also lack exact retained immutable files for SHA-256 registration. Those hashes remain explicitly unavailable rather than reconstructed.
+
+See [`data/DATA_QUALITY_NOTES.md`](./data/DATA_QUALITY_NOTES.md) and [`methodology/anonymization.md`](./methodology/anonymization.md).
+
+---
+
+# Verification
+
+Read-only validators:
 
 ```text
 python tools/validate_repository.py
 python tools/validate_machine_readable.py
+python tools/validate_august_snapshot.py
 ```
 
-The core validator checks repository structure, Markdown integrity, CSV structure, checksums, canonical sleep continuity, weekly-report continuity, protected model-error state, release metadata, and source-export preservation.
+GitHub Actions runs repository validation on pushes to `main` and pull requests.
 
-The machine-readable validator checks the daily/training/event schema contract, including identifiers, dates, vocabularies, source references, duration semantics, event intervals, and cross-file relationships.
+A validation PASS confirms implemented mechanical/governance checks. It does not establish biological causality, clinical validity, device accuracy, or correct scientific interpretation.
 
-GitHub Actions runs both validators on:
-
-```text
-push to main
-pull request
-```
-
-Workflow: [`.github/workflows/validate.yml`](./.github/workflows/validate.yml)  
-Verification guide: [`VERIFICATION.md`](./VERIFICATION.md)  
-Validation tools: [`tools/README.md`](./tools/README.md)
-
-A validation PASS confirms the implemented mechanical/governance checks. It does not establish biological causality, clinical validity, device accuracy, or correct scientific interpretation.
+See [`VERIFICATION.md`](./VERIFICATION.md).
 
 ---
 
-# AI Assistance
+# AI assistance
 
 AI/LLM systems may assist with source-backed structuring, drafting, calculation, analysis, audit review, validator code, and formally governed prediction generation.
 
-AI is **not** a source-evidence class.
-
-It may not invent missing observations, fabricate provenance, override stronger source evidence, rewrite registered predictions after outcome access, or strengthen claims beyond the evidence.
+AI is **not** a source-evidence class and may not invent observations, fabricate provenance, override stronger source evidence, or rewrite registered predictions after outcome access.
 
 Disclosure: [`docs/AI_ASSISTANCE.md`](./docs/AI_ASSISTANCE.md)
 
 ---
 
-# Scope and Limitations
+# v1.1.0 release-candidate boundary
 
-This repository documents one subject under defined protocol constraints and incomplete environmental control.
+Repository release-facing metadata is aligned to:
 
-It does **not** establish:
+```text
+version: 1.1.0
+candidate date: 2026-09-14
+```
 
-- population-level causality
-- clinical efficacy
-- generalized intervention guidance
-- protocol safety for other people
-- universal device/assay accuracy
-- certainty from prediction accuracy
+The existing DOI `10.5281/zenodo.20815612` remains the currently registered Zenodo identifier in repository metadata. Batch 5A does not invent a new version DOI or publish a Zenodo version. Concept-DOI versus version-DOI behavior must be verified during the external publication step.
 
-Additional limitations include provider-specific algorithms, consumer wearable measurement limits, manually transcribed fields, incomplete environmental control, concurrent inputs, and private source material that cannot always be independently inspected publicly.
+The final Git tag, GitHub release, Zenodo new-version publication, and authoritative version-DOI reconciliation remain outside Batch 5A.
 
-Repeated measurement, source preservation, explicit correction, validation, and governance improve interpretability. They do not remove the limitations of an observational N-of-1 system.
-
----
-
-# Release, Citation, and License
-
-The Zenodo DOI currently points to the archived **v1.0.0** release.
-
-**Zenodo archive:** [DOI 10.5281/zenodo.20815612](https://zenodo.org/doi/10.5281/zenodo.20815612)
-
-The live `main` branch contains later unreleased documentation, data, methodology, prediction, report, validation, and snapshot updates.
-
-**Citation**
-
-Hughett, C. D. (2026). *Daniel Longitudinal Study (v1.0.0)* [Data set]. Zenodo. https://doi.org/10.5281/zenodo.20815612
-
-See:
-
-- [`VERSIONING.md`](./VERSIONING.md)
-- [`CITATION.cff`](./CITATION.cff)
-- [`LICENSE.md`](./LICENSE.md)
+Release notes: [`docs/releases/v1.1.0.md`](./docs/releases/v1.1.0.md)  
+Versioning rules: [`VERSIONING.md`](./VERSIONING.md)  
+Citation metadata: [`CITATION.cff`](./CITATION.cff)  
+License: [`LICENSE.md`](./LICENSE.md)
 
 ---
 
-# Repository Map
+# Repository map
 
 - Current state → [`LATEST.md`](./LATEST.md)
-- First-contact guide → [`docs/START_HERE.md`](./docs/START_HERE.md)
-- Technical observer route → [`docs/OBSERVER_QUICKSTART.md`](./docs/OBSERVER_QUICKSTART.md)
+- Start guide → [`docs/START_HERE.md`](./docs/START_HERE.md)
+- Observer route → [`docs/OBSERVER_QUICKSTART.md`](./docs/OBSERVER_QUICKSTART.md)
 - Dataset overview → [`DATASET_OVERVIEW.md`](./DATASET_OVERVIEW.md)
 - Full index → [`INDEX.md`](./INDEX.md)
 - Data coverage → [`data/DATA_COVERAGE.md`](./data/DATA_COVERAGE.md)
 - Data dictionary → [`DATA_DICTIONARY.md`](./DATA_DICTIONARY.md)
-- Machine-readable schema → [`schemas/machine-readable-layer-v1.md`](./schemas/machine-readable-layer-v1.md)
 - Private-source provenance → [`data/source_provenance/`](./data/source_provenance/)
 - Source exports → [`data/source_exports/`](./data/source_exports/)
 - Weekly reports → [`reports/`](./reports/)
@@ -426,11 +251,11 @@ See:
 - Governance → [`GOVERNANCE.md`](./GOVERNANCE.md)
 - Methodology → [`METHODOLOGY_AND_CONTROLS.md`](./METHODOLOGY_AND_CONTROLS.md)
 - Verification → [`VERIFICATION.md`](./VERIFICATION.md)
-- Validation tools → [`tools/README.md`](./tools/README.md)
-- AI disclosure → [`docs/AI_ASSISTANCE.md`](./docs/AI_ASSISTANCE.md)
 - Audits → [`docs/audits/`](./docs/audits/)
 - Changelog → [`CHANGELOG.md`](./CHANGELOG.md)
 
 ---
+
+The pre-v1.1.0 long-form README is preserved byte-for-byte at [`docs/archive/README_PRE_V1.1.0.txt`](./docs/archive/README_PRE_V1.1.0.txt).
 
 _Public longitudinal archive initiated 2026._
