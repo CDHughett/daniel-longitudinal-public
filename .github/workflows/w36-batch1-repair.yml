@@ -1,0 +1,163 @@
+name: One-time W36 Batch 1 repair
+
+on:
+  push:
+    branches:
+      - w36-batch1-machine-readable
+
+permissions:
+  contents: write
+
+jobs:
+  repair:
+    if: ${{ !contains(github.event.head_commit.message, '[w36-batch1-repair-done]') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: w36-batch1-machine-readable
+          fetch-depth: 0
+
+      - name: Apply bounded repairs
+        shell: python
+        run: |
+          from pathlib import Path
+
+          # Restore the protected historical training prefix exactly where the
+          # initial append pass accidentally changed three pre-W36 fields.
+          p = Path('data/training_blocks_v1.csv')
+          text = p.read_text(encoding='utf-8')
+          replacements = [
+              (
+                  '2026-02-14-B1LI,2026-02-14,b1_load_integration,30 min B1 + 35-45 strength,low-moderate hybrid,120-140,,tb3x5;pu4x4;ss3x5,6-7,fed,controlled,phase2_load_integration,load_integration_day2;grip_friction,as_prescribed,private_pdf:Daniel_Dataset_v1.0:Training Blocks:2026-02-14',
+                  '2026-02-14-B1LI,2026-02-14,b1_load_integration,30 min B1 + 35-45 strength,low-moderate hybrid,120-140,,tb3x5;ss3x5;pu4x3,6-7,fed,controlled,phase2_load_integration,load_integration_day2;grip_friction,as_prescribed,private_pdf:Daniel_Dataset_v1.0:Training Blocks:2026-02-14',
+              ),
+              (
+                  '2026-04-13-B1,2026-04-13,b1,55,L (Z2),120-135,3.02,,4,fasted,ambient,b1_standard,,as_prescribed,private_workbook:Daniel_Dataset_v1.9:Training Blocks:2026-04-13:B1',
+                  '2026-04-13-B1,2026-04-13,b1,55,L (Z2),120-135,3.02,,4,fasted,controlled,b1_standard,,as_prescribed,private_workbook:Daniel_Dataset_v1.9:Training Blocks:2026-04-13:B1',
+              ),
+              (
+                  '2026-07-12-REC,2026-07-12,structured_recreation,60,L–M,65–100,,continuous_water_treading,4,fed,completed,pool,recreational_aquatic_load,supplemental_recreation,private_workbook:Daniel_Dataset_v1.21:Training Blocks:2026-07-12:REC',
+                  '2026-07-12-REC,2026-07-12,structured_recreation,60,L–M,,,continuous_water_treading,4,fed,completed,pool,recreational_aquatic_load,supplemental_recreation,private_workbook:Daniel_Dataset_v1.21:Training Blocks:2026-07-12:REC',
+              ),
+          ]
+          for old, new in replacements:
+              count = text.count(old)
+              assert count == 1, f'Expected exactly one training replacement, found {count}: {old[:50]}'
+              text = text.replace(old, new, 1)
+          p.write_text(text, encoding='utf-8', newline='')
+
+          # Add DQ-011 to the existing canonical data-quality ledger rather
+          # than creating a second parallel quality-document family.
+          p = Path('data/DATA_QUALITY_NOTES.md')
+          text = p.read_text(encoding='utf-8')
+          if '**Last updated:** 2026-09-10' in text:
+              text = text.replace('**Last updated:** 2026-09-10', '**Last updated:** 2026-09-14', 1)
+          assert '# DQ-011 — 2026-09-08 Daily Resting-Heart-Rate Source Verification' not in text
+          marker = '\n# Current Dataset Disposition\n'
+          assert marker in text, 'DATA_QUALITY_NOTES current-disposition marker not found'
+          dq = '''
+# DQ-011 — 2026-09-08 Daily Resting-Heart-Rate Source Verification
+
+## Status
+
+**Open — source verification required**
+
+## Dataset
+
+[`daily_biomarkers_v1.csv`](./daily_biomarkers_v1.csv)
+
+## Affected Date
+
+```text
+2026-09-08
+```
+
+## Affected Field
+
+```text
+resting_hr_bpm
+```
+
+## Recorded Value
+
+```text
+64 bpm
+```
+
+## Observation
+
+The retained `Daniel_Dataset_v1.30` Daily Biomarkers row records `64` for the daily resting-heart-rate field. The value is materially higher than the surrounding W36 daily resting-heart-rate values and differs from the same-date canonical sleep average heart rate of 49 bpm.
+
+That discrepancy is sufficient to require source verification. It is not sufficient to authorize a correction.
+
+The daily resting-heart-rate field and sleep average heart rate are different measurement fields and must not be substituted for one another.
+
+## Current Treatment
+
+- preserve `64` in `daily_biomarkers_v1.csv`
+- do not infer a replacement from neighboring dates
+- do not substitute sleep HR or another differently defined heart-rate field
+- keep the field-level uncertainty visible in W36 interpretation and release review
+- resolve only from the originating wearable/source evidence
+
+No other 2026-09-08 field is placed under restriction by this note.
+
+## Resolution Rule
+
+If originating source evidence verifies `64 bpm`, mark the value confirmed valid.
+
+If originating source evidence confirms a different daily resting-heart-rate value, correct only that field with documented provenance and review dependent weekly summaries or release-facing derived values for material impact.
+
+No correction should be made from plausibility alone.
+
+---
+'''
+          text = text.replace(marker, '\n' + dq + marker.lstrip('\n'), 1)
+          p.write_text(text, encoding='utf-8', newline='')
+
+          # Remove the temporary standalone DQ file now that DQ-011 is in the
+          # canonical ledger.
+          standalone = Path('data/DQ-011-2026-09-08-resting-hr.md')
+          if standalone.exists():
+              standalone.unlink()
+
+          # Record this material structured-data extension once in the root
+          # changelog; the report lifecycle rollover remains Batch 2.
+          p = Path('CHANGELOG.md')
+          text = p.read_text(encoding='utf-8')
+          heading = '#### September 14 W36 machine-readable extension'
+          assert heading not in text
+          marker = '## [Unreleased]\n'
+          assert marker in text
+          entry = '''
+
+### Changed
+
+#### September 14 W36 machine-readable extension
+
+- Extended daily biomarkers and canonical sleep by seven source-backed rows through 2026-09-13.
+- Appended the eleven completed W36 training sessions: six B1 and five Load Integration sessions, totaling 555 formal minutes; no synthetic zero-duration rows were created for travel omissions.
+- Added one bounded travel event covering the 2026-09-12 through 2026-09-13 logistics-directed training interruption.
+- Registered the exact retained `Daniel_Dataset_v1.30` private source in the provenance manifest with SHA-256 identity.
+- Advanced public structured coverage to 217 daily rows, 217 canonical sleep rows, 350 training/session rows, and 45 context events.
+- Added DQ-011 for the 2026-09-08 daily resting-heart-rate value of 64 bpm; the recorded value remains preserved pending originating-source verification.
+- No weekly-report lifecycle, phase, protocol, model-error, August snapshot, release-version, or DOI state was changed in this batch.
+'''
+          text = text.replace(marker, marker + entry, 1)
+          p.write_text(text, encoding='utf-8', newline='')
+
+      - name: Validate repository state
+        run: |
+          python tools/validate_repository.py
+          python tools/validate_machine_readable.py
+          python tools/validate_august_snapshot.py
+          git diff --check
+
+      - name: Commit bounded repairs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/training_blocks_v1.csv data/DATA_QUALITY_NOTES.md data/DQ-011-2026-09-08-resting-hr.md CHANGELOG.md
+          git commit -m "[w36-batch1-repair-done] Harden W36 structured extension"
+          git push origin HEAD:w36-batch1-machine-readable
