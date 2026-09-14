@@ -14,7 +14,7 @@
 
 ## Preservation note
 
-This is the current canonical closure record. The complete closure text as committed at adjudication is preserved at [`archive/record_043_closure_2026-09-10.md`](./archive/record_043_closure_2026-09-10.md).
+This is the current canonical closure record. The complete closure text as committed at adjudication is preserved byte-for-byte at [`archive/record_043_closure_2026-09-10.txt`](./archive/record_043_closure_2026-09-10.txt).
 
 A later source-backed cleanup completed the supplemental August Bod Pod structured fields. That post-closure completion does **not** reopen, rescore, or alter Record 043 because Bod Pod was supplemental under the registered biological-translation plan.
 
