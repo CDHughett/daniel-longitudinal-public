@@ -13,6 +13,18 @@ Biological interpretation belongs in `/reports`. This file records release-level
 
 ## [Unreleased]
 
+### September 14 post-release coherence drift cleanup
+
+- Reconciled `LATEST.md` to the published v1.1.0 version DOI `10.5281/zenodo.22759132` and all-versions DOI `10.5281/zenodo.20815611` rather than the prior v1.0.0 DOI.
+- Reconciled `VERSIONING.md` to the published v1.1.0 state, including the finalized version DOI, all-versions DOI, and frozen release commit, while retaining the prior v1.0.0 DOI as historical release identity.
+- Reconciled the current release-metadata and CI sections of `VERIFICATION.md` and documented the new fourth read-only coherence-validation layer without rewriting its dated historical version notes.
+- Separated the immediate **weekly operating posture** (`Consolidation / re-entry observation`) from the broader Phase 2 **consolidation / lock-in observation** substate so short-term travel re-entry language does not appear to conflict with the canonical phase map.
+- Updated observer and newcomer paths to use W36 as the most recent closed week and to describe the August TruDiagnostic / Record 043 state as complete rather than pending.
+- Preserved historically correct pending/open language in dated contemporaneous documents rather than rewriting history.
+- Added `tools/validate_coherence.py` to protect live release identity, DOI roles, weekly pointers, completed August orientation language, current versioning/verification surfaces, and weekly-versus-broader substate wording.
+- Added the coherence validator to GitHub Actions and documented it in `tools/README.md`.
+- Added `docs/audits/2026-09-14-post-release-coherence-drift-cleanup.md` documenting the repair scope and preservation boundary.
+
 ### September 14 post-publication reconciliation
 
 - Reconciled `CITATION.cff` to the authoritative finalized v1.1.0 Zenodo version DOI `10.5281/zenodo.22759132` after external publication.

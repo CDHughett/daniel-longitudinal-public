@@ -30,3 +30,6 @@ jobs:
 
       - name: Run August snapshot cross-layer validator
         run: python tools/validate_august_snapshot.py
+
+      - name: Run post-release coherence validator
+        run: python tools/validate_coherence.py

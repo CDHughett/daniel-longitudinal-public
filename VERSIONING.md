@@ -45,31 +45,51 @@ Metadata files record the numeric version without requiring the leading `v` unle
 
 ## Current Release State
 
-The first DOI-bearing public release is:
+The current published release is:
 
 ```text
-v1.0.0
+v1.1.0
 ```
 
 Release date:
 
 ```text
-2026-06-23
+2026-09-14
 ```
 
-Zenodo DOI:
+Finalized version DOI:
+
+```text
+10.5281/zenodo.22759132
+```
+
+All-versions DOI:
+
+```text
+10.5281/zenodo.20815611
+```
+
+Frozen release commit:
+
+```text
+92126e1cc882c3822d9e03b30b11cfc1d30b4fbb
+```
+
+The prior v1.0.0 version DOI remains part of the archive history:
 
 ```text
 10.5281/zenodo.20815612
 ```
 
-Repository work after that release remains under:
+Repository work after the frozen v1.1.0 tag remains under:
 
 ```text
 [Unreleased]
 ```
 
 until a later formal release is declared.
+
+The post-publication metadata reconciliation and later ordinary commits do not move or rewrite the published `v1.1.0` tag or release package.
 
 ---
 
