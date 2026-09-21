@@ -8,11 +8,13 @@ The goal is not to summarize everything. The goal is to test whether the archive
 
 ## 1. Establish Scope
 
-Read:
+If you arrived here through the README or START_HERE path, do not reread them.
 
-- [`../README.md`](../README.md)
-- [`START_HERE.md`](./START_HERE.md)
-- [`../ASSUMPTIONS_AND_BOUNDARIES.md`](../ASSUMPTIONS_AND_BOUNDARIES.md)
+If you landed here directly, skim [`START_HERE.md`](./START_HERE.md) first.
+
+Then read:
+
+[`../ASSUMPTIONS_AND_BOUNDARIES.md`](../ASSUMPTIONS_AND_BOUNDARIES.md)
 
 Confirm that the archive describes itself as a single-subject observational system under incomplete environmental control rather than a clinical trial or generalized intervention protocol.
 
@@ -181,23 +183,23 @@ AI can assist with structuring, analysis, drafting, code, and governed predictio
 
 ## Quick Audit Sequence
 
+This document is the audit route. Once scope is established, the shortest evidence-first sequence is:
+
 ```text
-README / START_HERE
-        ↓
 LATEST
-        ↓
+  ↓
 DATA_COVERAGE
-        ↓
+  ↓
 machine-readable schema + core CSVs
-        ↓
+  ↓
 source provenance / source exports
-        ↓
+  ↓
 one closed report + one snapshot
-        ↓
+  ↓
 model-error layer
-        ↓
+  ↓
 governance
-        ↓
+  ↓
 validators
 ```
 
@@ -220,4 +222,4 @@ narrative
 → search for supporting evidence
 ```
 
-For the broader observer path, see [`FOR_OBSERVERS.md`](./FOR_OBSERVERS.md). For complete navigation, use [`../INDEX.md`](../INDEX.md).
+Use [`FOR_OBSERVERS.md`](./FOR_OBSERVERS.md) as a reference/checklist when you need the governing distinctions behind this route. Use [`NEWCOMER_PATH.md`](./NEWCOMER_PATH.md) for an extended learning sequence, and [`../INDEX.md`](../INDEX.md) for complete navigation.
