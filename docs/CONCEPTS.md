@@ -246,7 +246,7 @@ Reserve may be suggested by controlled extra output, preserved movement quality,
 
 Reserve is not the same as maximal capacity, sustainable training dose, progression readiness, or a phase declaration. It becomes more decision-relevant when it replicates without degrading recovery, movement quality, or next-day function.
 
-The current W38 phrase `reserve-replication observation` therefore means the archive is asking whether the preliminary reserve seen at W37 closeout repeats before any governed escalation is considered.
+A weekly posture such as `reserve-replication observation` therefore means the archive is asking whether preliminary reserve evidence repeats before any governed escalation is considered.
 
 ## Ambient Execution
 
