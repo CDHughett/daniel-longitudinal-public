@@ -279,18 +279,25 @@ Disclosure:
 
 ## Validation
 
-Current read-only validators:
+The current read-only validation suite is:
 
 ```text
 tools/validate_repository.py
 tools/validate_machine_readable.py
+tools/validate_august_snapshot.py
+tools/validate_coherence.py
 ```
 
-The first checks repository mechanics and selected governance-protected state.
+At a high level:
 
-The second checks the machine-readable daily/training/event layer for identifier, date, vocabulary, duration-expression, source-reference, event-interval, and cross-file relationship rules.
+- `validate_repository.py` checks repository mechanics and selected governance-protected state.
+- `validate_machine_readable.py` checks the daily/training/event layer for identifier, date, vocabulary, duration-expression, source-reference, event-interval, and cross-file relationship rules.
+- `validate_august_snapshot.py` protects the completed August 2026 snapshot across its source, structured, provenance, and Model Error 043 layers.
+- `validate_coherence.py` protects selected live public-facing relationships that can drift after a release, including current weekly pointers, release identity, and the weekly-posture versus broader-substate distinction.
 
-GitHub Actions runs both on pushes to `main` and pull requests.
+GitHub Actions runs the current suite on pushes to `main` and pull requests.
+
+For the authoritative current inventory and execution details, see [`../tools/README.md`](../tools/README.md) and [`../VERIFICATION.md`](../VERIFICATION.md).
 
 A validator pass means the implemented checks passed. It does not establish biological plausibility, causality, or clinical validity.
 
