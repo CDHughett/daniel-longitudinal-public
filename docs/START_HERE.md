@@ -44,6 +44,37 @@ For the complete repository map, use [`INDEX.md`](../INDEX.md).
 
 ---
 
+## How The Current State Labels Fit Together
+
+The archive uses several state labels at different levels. They are not competing phase names.
+
+```text
+declared phase
+Phase 2 — Load Integration
+        ↓
+broader operating substate
+Consolidation / lock-in observation
+        ↓
+weekly operating posture
+Consolidation / reserve-replication observation
+        ↓
+session-level observations
+ambient / trait-like / trait-level execution, reserve evidence, etc.
+```
+
+In plain language:
+
+- the **phase** is the largest declared operating architecture
+- the **broader substate** describes how that phase is currently being expressed over a longer window
+- the **weekly operating posture** is the narrower question being watched right now
+- **session-level observations** describe what happened in particular sessions or contexts
+
+Evidence at a lower level does not automatically promote the level above it. For example, one reserve observation does not automatically change the weekly prescription, declare a new substate, or create a new phase.
+
+Recurring terms are defined in [`docs/CONCEPTS.md`](./CONCEPTS.md).
+
+---
+
 ## Machine-Readable Core
 
 The current aligned structured layer includes:
