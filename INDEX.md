@@ -28,8 +28,11 @@ Broader observer guidance:
 Active phase:
 Phase 2 — Load Integration
 
-Operating substate:
+Weekly operating posture:
 Consolidation / reserve-replication observation
+
+Broader Phase 2 substate:
+Consolidation / lock-in observation
 
 Active weekly window:
 2026-W38
