@@ -2,9 +2,10 @@
 """Read-only post-release coherence checks for live public-facing surfaces.
 
 This validator protects a narrow class of drift discovered after the v1.1.0
-publication: release/DOI identity, current report pointers, completed August
-state, and the distinction between immediate weekly posture and broader
-Phase 2 substate.
+publication and subsequent observer-legibility audit: release/DOI identity,
+current report pointers, completed August state, weekly-versus-broader state
+distinctions, current validation-documentation roles, and selected
+first-contact navigation/language boundaries.
 
 It does not edit files, query external services, or reinterpret scientific
 outcomes.
@@ -42,10 +43,18 @@ def main() -> int:
 
     readme = read("README.md")
     latest = read("LATEST.md")
-    versioning = read("VERSIONING.md")
-    verification = read("VERIFICATION.md")
+    index = read("INDEX.md")
+    start_here = read("docs/START_HERE.md")
     observer = read("docs/OBSERVER_QUICKSTART.md")
     newcomer = read("docs/NEWCOMER_PATH.md")
+    for_observers = read("docs/FOR_OBSERVERS.md")
+    concepts = read("docs/CONCEPTS.md")
+    dataset_overview = read("DATASET_OVERVIEW.md")
+    coverage = read("data/DATA_COVERAGE.md")
+    methodology_readme = read("methodology/README.md")
+    tools_readme = read("tools/README.md")
+    versioning = read("VERSIONING.md")
+    verification = read("VERIFICATION.md")
     phase_map = read("PHASE_MAP.md")
     citation = read("CITATION.cff")
     codemeta = json.loads(read("CODEMETA.json"))
@@ -96,6 +105,58 @@ def main() -> int:
     require(errors, "weekly operating posture" in observer.lower(), "Observer quickstart: weekly-vs-broader state distinction missing")
     require(errors, "weekly operating posture" in newcomer.lower(), "Newcomer path: weekly-vs-broader state distinction missing")
 
+    # Validation-documentation inventory should remain centralized rather than
+    # drifting back to stale two-validator descriptions on current-facing docs.
+    current_validation_docs = {
+        "docs/START_HERE.md": start_here,
+        "DATASET_OVERVIEW.md": dataset_overview,
+        "docs/FOR_OBSERVERS.md": for_observers,
+        "data/DATA_COVERAGE.md": coverage,
+        "methodology/README.md": methodology_readme,
+    }
+    for label, text in current_validation_docs.items():
+        lowered = text.lower()
+        require(errors, "runs both" not in lowered, f"{label}: stale two-validator 'runs both' language returned")
+        require(errors, "two read-only validators" not in lowered, f"{label}: stale two-validator inventory language returned")
+        require(errors, "tools/readme.md" in lowered, f"{label}: authoritative tools/README.md validation reference missing")
+        require(errors, "verification.md" in lowered, f"{label}: authoritative VERIFICATION.md reference missing")
+
+    # First-contact surfaces have distinct jobs. Protect the role separation
+    # discovered during the post-weekly-update cognitive-density audit.
+    require(errors, "These are alternatives, not a required reading sequence." in readme, "README.md: task-based first-contact framing drift")
+    require(errors, "you do not need to read the README again." in start_here, "START_HERE: circular README reread instruction returned")
+    require(errors, "not intended to be read sequentially as mandatory prerequisites." in start_here, "START_HERE: mandatory-chain language drift")
+    require(errors, "This document is the audit route." in observer, "Observer quickstart: short-audit route ownership drift")
+    require(errors, "README / START_HERE" not in observer, "Observer quickstart: stale chained front-door audit sequence returned")
+    require(errors, "optional extended learning path" in newcomer, "Newcomer path: optional-curriculum role drift")
+    require(errors, "skeptical-review reference and checklist" in for_observers, "FOR_OBSERVERS: reference/checklist role drift")
+    require(errors, "## Recommended Review Path" not in for_observers, "FOR_OBSERVERS: competing linear review path returned")
+    require(errors, "Choose by task rather than reading every orientation document in sequence:" in index, "INDEX.md: task-based first-contact framing drift")
+    require(errors, "orientation documents are alternatives with distinct jobs, not a mandatory chain." in index, "INDEX.md: mandatory orientation-chain drift")
+
+    # Live-facing state surfaces should lead with plain language while precise
+    # session-level vocabulary remains available one layer deeper.
+    for label, text in (("README.md", readme), ("LATEST.md", latest)):
+        require(errors, "**Plain-language summary:**" in text, f"{label}: plain-language current-state bridge missing")
+        lowered = text.lower()
+        for jargon in ("low-salience", "trait-like", "trait-level"):
+            require(errors, jargon not in lowered, f"{label}: stacked session-level jargon returned to first-contact surface: {jargon}")
+
+    required_concepts = (
+        "## Weekly Operating Posture",
+        "## Data-Quality Record (DQ)",
+        "## Capacity Versus Exposure",
+        "## Reserve (Capacity)",
+        "## Ambient Execution",
+        "## Trait-Like Execution",
+        "## Trait-Level Expression",
+    )
+    for heading in required_concepts:
+        require(errors, heading in concepts, f"docs/CONCEPTS.md: required terminology bridge missing: {heading}")
+
+    require(errors, "## How The Current State Labels Fit Together" in start_here, "START_HERE: state-label hierarchy bridge missing")
+    require(errors, "tools/validate_coherence.py" in tools_readme, "tools/README.md: coherence validator inventory missing")
+
     if errors:
         print("POST-RELEASE COHERENCE: FAIL")
         for item in errors:
@@ -111,6 +172,8 @@ def main() -> int:
     print(f"most_recent_closed={MOST_RECENT_CLOSED}")
     print(f"weekly_posture={WEEKLY_POSTURE}")
     print(f"broader_substate={BROADER_SUBSTATE}")
+    print("observer_legibility=protected")
+    print("validation_doc_roles=protected")
     return 0
 
 

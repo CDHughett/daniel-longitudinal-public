@@ -13,6 +13,54 @@ Biological interpretation belongs in `/reports`. This file records release-level
 
 ## [Unreleased]
 
+### September 21 observer-legibility hardening and simulation audit
+
+- Expanded `tools/validate_coherence.py` rather than creating a fifth validator, adding anti-drift checks for current-facing validation-documentation roles, task-based first-contact navigation, plain-language current-state bridges, and preservation of the deeper terminology layer.
+- Protected the distinct roles of README, START_HERE, OBSERVER_QUICKSTART, NEWCOMER_PATH, FOR_OBSERVERS, and INDEX so future edits do not silently recreate competing mandatory reading paths.
+- Added checks preventing stale two-validator wording from returning to the current-facing validation documents cleaned in Batch 1.
+- Added checks preventing stacked `low-salience`, `trait-like`, and `trait-level` session jargon from returning to README/LATEST while requiring the precise glossary definitions to remain available in `docs/CONCEPTS.md`.
+- Updated `tools/README.md` and `VERIFICATION.md` to document the expanded coherence boundary.
+- Added `docs/audits/2026-09-21-post-audit-legibility-observer-simulation.md` with casual-reader, skeptical-reviewer, and data-analyst simulations of the completed cleanup stack.
+- No scientific data, weekly report evidence, protocol, phase declaration, Model Error outcome, DQ status, release identity, Git tag, or DOI lineage is changed by this batch.
+
+
+### September 21 live-facing language simplification
+
+- Added a plain-language current-state summary to `README.md` and `LATEST.md` before the formal phase/substate/posture labels.
+- Replaced stacked front-surface execution descriptors such as `low-salience / ambient / trait-like / trait-level` with the parent phrase `low-overhead` where a first-contact reader does not need session-level classification detail.
+- Preserved the precise execution vocabulary in `docs/CONCEPTS.md`, closed/active weekly reports, and the structured training layer rather than flattening the underlying research record.
+- Added direct glossary routing from the live state surfaces for reserve, capacity versus exposure, weekly operating posture, B1, and Load Integration.
+- Kept the current W38 reserve-replication question, broader consolidation/lock-in substate, Phase 2 declaration, DQ-011 status, Model Error outcomes, release identity, tag, and DOI lineage unchanged.
+
+
+### September 21 first-contact navigation compression
+
+- Reduced the README first-contact table to five task-based entry points: understand the project, see current state, inspect structured evidence, audit claims, or browse the full index.
+- Removed circular orientation instructions that required readers arriving from README/START_HERE to reread the same front-door documents.
+- Established `docs/OBSERVER_QUICKSTART.md` as the single short ordered audit route.
+- Reframed `docs/NEWCOMER_PATH.md` as an optional extended learning curriculum rather than a prerequisite.
+- Reframed `docs/FOR_OBSERVERS.md` as a skeptical-review reference/checklist rather than a competing linear route.
+- Updated `INDEX.md` so first-contact navigation is task-based and the live validator inventory remains centralized in `tools/README.md`.
+- No scientific data, weekly report, current system state, protocol, phase declaration, Model Error outcome, DQ status, release identity, tag, or DOI lineage is changed by this batch.
+
+
+### September 21 terminology bridge and state-label compression
+
+- Expanded `docs/CONCEPTS.md` with plain-language definitions for weekly operating posture, Data-Quality (DQ) records, capacity versus exposure, and reserve as a capacity concept.
+- Expanded the B1 and Load Integration glossary entries with concrete current-implementation descriptions while keeping exact prescription details governed by the training record.
+- Added a compact state-label hierarchy to `docs/START_HERE.md` showing the relationship among declared phase, broader operating substate, weekly operating posture, and session-level observations.
+- Explicitly documented that lower-level evidence such as one reserve observation does not automatically change prescription, substate, or phase.
+- No dataset value, weekly report, protocol, phase declaration, Model Error outcome, DQ status, release identity, tag, or DOI lineage is changed by this batch.
+
+
+### September 21 post-weekly-update validation-documentation drift cleanup
+
+- Reconciled current-facing validation descriptions in `docs/START_HERE.md`, `DATASET_OVERVIEW.md`, `docs/FOR_OBSERVERS.md`, `data/DATA_COVERAGE.md`, and `methodology/README.md` with the live four-validator repository architecture.
+- Centralized the evolving full validator inventory in `tools/README.md` and `VERIFICATION.md` where duplication was not necessary.
+- Preserved more specific validator descriptions where they directly improve observer or dataset interpretation.
+- Historical audits, archived documents, release notes, scientific data, weekly reports, phase state, protocol state, Model Error outcomes, DOI/release identity, and DQ-011 are unchanged.
+
+
 ### September 21 W37 closeout and W38 rollover
 
 - Closed `reports/2026-W37.md` as the retrospective record for 2026-09-14 through 2026-09-20, preserving successful post-travel re-entry and the 2026-09-20 unofficial capacity probe as preliminary reserve evidence rather than an automatic progression trigger.

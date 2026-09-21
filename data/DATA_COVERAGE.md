@@ -420,15 +420,14 @@ The absence of these derived files is not a current coverage failure.
 
 # Validation Boundary
 
-The repository contains complementary read-only validators, including:
+The complete current read-only validator inventory is maintained in:
 
-```text
-tools/validate_repository.py
-tools/validate_machine_readable.py
-tools/validate_august_snapshot.py
-```
+- [`../tools/README.md`](../tools/README.md)
+- [`../VERIFICATION.md`](../VERIFICATION.md)
 
-The machine-readable validator checks the public daily/training/event datasets for syntax, identifiers, vocabularies, date relationships, source references and event/model-error relationships.
+For this coverage layer, the most directly relevant semantic check is `tools/validate_machine_readable.py`, which validates the public daily/training/event datasets for syntax, identifiers, vocabularies, date relationships, source references, and event/model-error relationships.
+
+Other repository validators protect broader repository mechanics, the completed August snapshot, and selected live post-release coherence relationships. This document does not duplicate that evolving inventory.
 
 Validation does not establish:
 

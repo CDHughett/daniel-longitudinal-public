@@ -199,14 +199,14 @@ A source-backed correction must remain narrow, traceable, and review downstream 
 
 ## Validation
 
-Two read-only validators are maintained:
+The current repository validation architecture is maintained in:
 
-```text
-tools/validate_repository.py
-tools/validate_machine_readable.py
-```
+- [`tools/README.md`](./tools/README.md) — current validator inventory and roles
+- [`VERIFICATION.md`](./VERIFICATION.md) — execution, scope, limitations, and audit guidance
 
-The machine-readable validator checks the new daily/training/event layer for:
+GitHub Actions runs the current read-only validation suite on pushes to `main` and on pull requests.
+
+For the structured daily/training/event layer specifically, `tools/validate_machine_readable.py` checks:
 
 - headers
 - unique identifiers
@@ -218,8 +218,6 @@ The machine-readable validator checks the new daily/training/event layer for:
 - event interval validity
 - model-error cross-references
 - cross-file date relationships
-
-GitHub Actions runs both validators on pushes to `main` and on pull requests.
 
 Validation confirms implemented structural/semantic checks; it does not establish biological causality or clinical validity.
 

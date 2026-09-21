@@ -356,13 +356,14 @@ Source artifacts preserve provider- or device-generated evidence. Methodology go
 
 ## Validation
 
-Read-only validation is documented in:
+Current read-only validation is documented centrally in:
 
-- [`../VERIFICATION.md`](../VERIFICATION.md)
-- [`../tools/validate_repository.py`](../tools/validate_repository.py)
-- [`../tools/validate_machine_readable.py`](../tools/validate_machine_readable.py)
+- [`../tools/README.md`](../tools/README.md) — current validator inventory and roles
+- [`../VERIFICATION.md`](../VERIFICATION.md) — execution, scope, limitations, and audit guidance
 
-The core validator now protects records 041–046 as closed/scored historical outcomes while preserving `calibration_state=pre` and the original registered `Prediction:` narratives. It does not independently adjudicate those outcomes.
+Methodology documents may refer to a specific validator when that validator directly protects the governed state being discussed, but this directory guide does not duplicate the evolving full validator inventory.
+
+The core validator protects records 041–046 as closed/scored historical outcomes while preserving `calibration_state=pre` and the original registered `Prediction:` narratives. It does not independently adjudicate those outcomes.
 
 ---
 

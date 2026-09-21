@@ -1,18 +1,22 @@
 # Newcomer Path
 
-This is the recommended first extended reading pass for someone who wants to understand the Daniel Longitudinal Study beyond the 5-minute orientation.
+This is an optional extended learning path for someone who already understands the five-minute orientation and wants to study the archive in depth.
 
-The sequence is designed to move from scope → current state → data → provenance → interpretation → prediction → governance.
+It is not required before using the observer audit route or inspecting the data.
+
+The sequence moves from scope → current state → data → provenance → interpretation → prediction → governance.
 
 ---
 
 ## Step 1 — Establish the Archive Boundary
 
-Read:
+If you arrived through the README and START_HERE path, do not reread those documents.
 
-- [`../README.md`](../README.md)
-- [`START_HERE.md`](./START_HERE.md)
-- [`../ASSUMPTIONS_AND_BOUNDARIES.md`](../ASSUMPTIONS_AND_BOUNDARIES.md)
+If you landed here directly, begin with [`START_HERE.md`](./START_HERE.md).
+
+Then read:
+
+[`../ASSUMPTIONS_AND_BOUNDARIES.md`](../ASSUMPTIONS_AND_BOUNDARIES.md)
 
 Understand first that this is a governed N-of-1 observational archive under incomplete real-world environmental control.
 

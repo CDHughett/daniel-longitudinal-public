@@ -13,14 +13,18 @@ All-versions DOI: https://doi.org/10.5281/zenodo.20815611
 
 ## Current State
 
+**Plain-language summary:** Training is stable and currently requires little active management. Week 38 is testing whether the extra capacity seen at the end of Week 37 appears again before any progression is considered.
+
+Formal archive labels and governance state:
+
 - **Phase:** Phase 2 — Load Integration
 - **Weekly operating posture:** Consolidation / reserve-replication observation
 - **Broader Phase 2 substate:** Consolidation / lock-in observation
 - **Active window:** 2026-W38
 - **Prior window:** 2026-W37 closed
 - **Installed architecture:** B1 + Load Integration
-- **System posture:** Preserve the current submaximal architecture and observe whether the reserve exposed at W37 closeout replicates before any governed escalation
-- **Behavioral posture:** Post-travel re-entry resolved without visible reacquisition cost; B1 and Load Integration remained repeatedly low-salience, ambient, trait-like, or trait-level across six consecutive complete days
+- **System posture:** Keep the current submaximal workload unchanged and observe whether the reserve seen at W37 closeout repeats before any governed escalation
+- **Behavioral posture:** Post-travel re-entry resolved without visible reacquisition cost; B1 and Load Integration remained repeatedly low-overhead across six consecutive complete days. Precise session-level labels remain preserved in the weekly report and structured training layer
 - **Recovery posture:** Recurrent short-window autonomic variability remains under observation; W37 again showed that overnight disturbance and next-day functional impairment were not interchangeable in the observed cases
 - **Bodyweight/intake posture:** Lower intake and bodyweight remain observational variables, not stand-alone progression or recovery-intervention triggers
 - **Model-error posture:** Records 041–046 are closed/scored; record 043 remains closed as not supported (`overall_improvement_not_met`, error direction `over`)
@@ -29,6 +33,8 @@ All-versions DOI: https://doi.org/10.5281/zenodo.20815611
 - **August snapshot:** DEXA, VO₂, Bod Pod, TruAge/Advanced TruAge, and TruHealth source artifacts archived; Model Error 043 adjudication complete
 
 The weekly operating posture describes the immediate observation condition for the active report. The broader Phase 2 substate remains the canonical phase-map interpretation. A reserve-replication observation does not itself declare progression or a new phase.
+
+Plain-language definitions for reserve, capacity versus exposure, weekly operating posture, B1, and Load Integration are maintained in [`docs/CONCEPTS.md`](docs/CONCEPTS.md).
 
 Current machine-readable row counts and endpoints are maintained in [`data/DATA_COVERAGE.md`](data/DATA_COVERAGE.md).
 
@@ -67,7 +73,7 @@ The week opened with a final travel/rest day on 2026-09-14. Normal B1 + Load Int
 The strongest qualitative additions were:
 
 - ordinary post-travel re-entry without visible reacquisition cost
-- repeated low-salience / trait-like execution after the interruption
+- repeated low-overhead execution after the interruption, with the precise session-level descriptors preserved in the closed W37 report
 - yard work absorbed between B1 and Load Integration on 2026-09-16 without protocol modification
 - a bounded 2026-09-18 pre-sleep stress exposure that produced an overnight autonomic response with preserved scheduled training afterward
 - an unofficial 2026-09-20 final-set probe of 8 pull-ups and 18 push-ups after programmed work with minimal reported degradation
@@ -94,7 +100,7 @@ Observe:
 - whether reserve above the current prescription reappears under ordinary conditions
 - whether repeat reserve preserves movement quality rather than merely increasing repetition count
 - whether apparent reserve coexists with stable recovery, bodyweight, subjective state, and next-day function
-- whether the low apparent attentional cost of the installed architecture remains intact
+- whether the installed architecture remains low-overhead while reserve is present
 - naturally occurring ordinary-life workload without manufacturing robustness tests
 
 Do not:

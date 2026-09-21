@@ -61,6 +61,10 @@ Protects a deliberately narrow set of live public-facing relationships that can 
 - observer/newcomer report pointers
 - completed August-state language on live orientation documents
 - distinction between the immediate weekly operating posture and the broader canonical Phase 2 substate
+- current-facing validation-documentation role consistency, including protection against stale two-validator wording
+- first-contact navigation-role separation across README, START_HERE, observer/newcomer guidance, and INDEX
+- presence of plain-language current-state bridges on README/LATEST without forcing session-level jargon onto first-contact surfaces
+- preservation of the deeper terminology bridge in `docs/CONCEPTS.md`
 
 The coherence validator does not rewrite historical documents merely because they correctly preserve an earlier then-current state.
 

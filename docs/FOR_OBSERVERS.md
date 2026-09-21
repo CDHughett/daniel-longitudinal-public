@@ -1,8 +1,10 @@
 # For Observers
 
-This is the broader skeptical and technical review path for the Daniel Longitudinal Study.
+This is the skeptical-review reference and checklist for the Daniel Longitudinal Study.
 
-For the shortest route, see [`OBSERVER_QUICKSTART.md`](./OBSERVER_QUICKSTART.md).
+It explains the distinctions an external reviewer should preserve while inspecting the archive. It is not a second linear reading route.
+
+For the actual short audit sequence, use [`OBSERVER_QUICKSTART.md`](./OBSERVER_QUICKSTART.md).
 
 ---
 
@@ -279,18 +281,25 @@ Disclosure:
 
 ## Validation
 
-Current read-only validators:
+The current read-only validation suite is:
 
 ```text
 tools/validate_repository.py
 tools/validate_machine_readable.py
+tools/validate_august_snapshot.py
+tools/validate_coherence.py
 ```
 
-The first checks repository mechanics and selected governance-protected state.
+At a high level:
 
-The second checks the machine-readable daily/training/event layer for identifier, date, vocabulary, duration-expression, source-reference, event-interval, and cross-file relationship rules.
+- `validate_repository.py` checks repository mechanics and selected governance-protected state.
+- `validate_machine_readable.py` checks the daily/training/event layer for identifier, date, vocabulary, duration-expression, source-reference, event-interval, and cross-file relationship rules.
+- `validate_august_snapshot.py` protects the completed August 2026 snapshot across its source, structured, provenance, and Model Error 043 layers.
+- `validate_coherence.py` protects selected live public-facing relationships that can drift after a release, including current weekly pointers, release identity, and the weekly-posture versus broader-substate distinction.
 
-GitHub Actions runs both on pushes to `main` and pull requests.
+GitHub Actions runs the current suite on pushes to `main` and pull requests.
+
+For the authoritative current inventory and execution details, see [`../tools/README.md`](../tools/README.md) and [`../VERIFICATION.md`](../VERIFICATION.md).
 
 A validator pass means the implemented checks passed. It does not establish biological plausibility, causality, or clinical validity.
 
@@ -360,31 +369,23 @@ Warning signs would include silent value changes, invented missing data, vague p
 
 ---
 
-## Recommended Review Path
+## How To Use This Reference
 
-```text
-README
-  ↓
-LATEST
-  ↓
-DATA_COVERAGE
-  ↓
-machine-readable schema + core CSVs
-  ↓
-source provenance / source exports
-  ↓
-DATA_QUALITY_NOTES
-  ↓
-one closed report + one snapshot
-  ↓
-model-error layer
-  ↓
-governance
-  ↓
-validators
-```
+Use [`OBSERVER_QUICKSTART.md`](./OBSERVER_QUICKSTART.md) for the ordered audit route.
 
-For complete navigation, use [`../INDEX.md`](../INDEX.md).
+Use this document when you need to check how the archive distinguishes:
+
+- source artifacts from curated data
+- measurements from subjective fields
+- context tags from bounded context events
+- observation from interpretation
+- planning from registered prediction
+- candidate evidence from outcome
+- correction from rewriting
+- mechanical validation from scientific validity
+- phase evidence from retrospective phase declaration
+
+For an extended learning sequence, use [`NEWCOMER_PATH.md`](./NEWCOMER_PATH.md). For complete navigation, use [`../INDEX.md`](../INDEX.md).
 
 ---
 
