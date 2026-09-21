@@ -42,9 +42,9 @@ The aim is not to prove a universal intervention. It is to preserve an inspectab
 | Domain | Current state |
 |---|---|
 | Phase | **Phase 2 — Load Integration** |
-| Operating substate | **Consolidation / re-entry observation** |
-| Active weekly window | **2026-W37** |
-| Most recent closed window | **2026-W36** |
+| Operating substate | **Consolidation / reserve-replication observation** |
+| Active weekly window | **2026-W38** |
+| Most recent closed window | **2026-W37** |
 | Installed training architecture | **B1 + Load Integration** |
 | Open model-error records | **none in protected block 041–046** |
 | Record 043 | **closed / not supported — `overall_improvement_not_met` / over** |
@@ -55,13 +55,13 @@ Current-state anchors retained for repository validation:
 
 ```text
 Active weekly window:
-2026-W37
+2026-W38
 
 Most recent closed window:
-2026-W36
+2026-W37
 ```
 
-Week 37 observes ordinary post-travel re-entry under the unchanged B1 + Load Integration architecture. Missed Week 36 volume is not being replaced, short-window wearable variability is not treated as a stand-alone recovery verdict, and Phase 2D remains undeclared.
+Week 38 preserves the unchanged B1 + Load Integration architecture while observing whether the preliminary reserve exposed at W37 closeout is reproducible. One favorable capacity probe is not treated as a progression authorization, short-window wearable variability remains distinct from demonstrated function, and Phase 2D remains undeclared.
 
 Authoritative current detail: [`LATEST.md`](./LATEST.md)
 
@@ -69,14 +69,14 @@ Authoritative current detail: [`LATEST.md`](./LATEST.md)
 
 # Machine-readable core
 
-Current public structured coverage through 2026-09-13:
+Current public structured coverage through 2026-09-20:
 
 | Dataset | Unit | Coverage |
 |---|---|---|
-| [`data/daily_biomarkers_v1.csv`](./data/daily_biomarkers_v1.csv) | one row per represented day | 217 continuous rows through 2026-09-13 |
-| [`data/sleep_longitudinal_v1.csv`](./data/sleep_longitudinal_v1.csv) | one governed wake-date row | 217 continuous rows through 2026-09-13 |
-| [`data/training_blocks_v1.csv`](./data/training_blocks_v1.csv) | one row per completed session/block | 350 rows through 2026-09-12 |
-| [`data/context_events_v1.csv`](./data/context_events_v1.csv) | one bounded context event | 45 rows through 2026-09-13 |
+| [`data/daily_biomarkers_v1.csv`](./data/daily_biomarkers_v1.csv) | one row per represented day | 224 continuous rows through 2026-09-20 |
+| [`data/sleep_longitudinal_v1.csv`](./data/sleep_longitudinal_v1.csv) | one governed wake-date row | 224 continuous rows through 2026-09-20 |
+| [`data/training_blocks_v1.csv`](./data/training_blocks_v1.csv) | one row per completed session/block | 362 rows through 2026-09-20 |
+| [`data/context_events_v1.csv`](./data/context_events_v1.csv) | one bounded context event | 49 rows through 2026-09-20 |
 
 Training is session-indexed: a represented day with zero completed training sessions does not require a synthetic training row.
 
@@ -197,6 +197,7 @@ Read-only validators:
 python tools/validate_repository.py
 python tools/validate_machine_readable.py
 python tools/validate_august_snapshot.py
+python tools/validate_coherence.py
 ```
 
 GitHub Actions runs repository validation on pushes to `main` and pull requests.
