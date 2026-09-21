@@ -42,7 +42,8 @@ The aim is not to prove a universal intervention. It is to preserve an inspectab
 | Domain | Current state |
 |---|---|
 | Phase | **Phase 2 — Load Integration** |
-| Operating substate | **Consolidation / reserve-replication observation** |
+| Weekly operating posture | **Consolidation / reserve-replication observation** |
+| Broader Phase 2 substate | **Consolidation / lock-in observation** |
 | Active weekly window | **2026-W38** |
 | Most recent closed window | **2026-W37** |
 | Installed training architecture | **B1 + Load Integration** |
