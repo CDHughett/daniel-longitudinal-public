@@ -13,6 +13,15 @@ Biological interpretation belongs in `/reports`. This file records release-level
 
 ## [Unreleased]
 
+### September 21 live-facing language simplification
+
+- Added a plain-language current-state summary to `README.md` and `LATEST.md` before the formal phase/substate/posture labels.
+- Replaced stacked front-surface execution descriptors such as `low-salience / ambient / trait-like / trait-level` with the parent phrase `low-overhead` where a first-contact reader does not need session-level classification detail.
+- Preserved the precise execution vocabulary in `docs/CONCEPTS.md`, closed/active weekly reports, and the structured training layer rather than flattening the underlying research record.
+- Added direct glossary routing from the live state surfaces for reserve, capacity versus exposure, weekly operating posture, B1, and Load Integration.
+- Kept the current W38 reserve-replication question, broader consolidation/lock-in substate, Phase 2 declaration, DQ-011 status, Model Error outcomes, release identity, tag, and DOI lineage unchanged.
+
+
 ### September 21 first-contact navigation compression
 
 - Reduced the README first-contact table to five task-based entry points: understand the project, see current state, inspect structured evidence, audit claims, or browse the full index.
