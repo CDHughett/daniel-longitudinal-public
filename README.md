@@ -20,20 +20,17 @@ The aim is not to prove a universal intervention. It is to preserve an inspectab
 
 ## Start here
 
+Choose the entry point that matches what you want to do. These are alternatives, not a required reading sequence.
+
 | Goal | Entry point |
 |---|---|
-| Understand the project quickly | [`docs/START_HERE.md`](./docs/START_HERE.md) |
-| See the current live state | [`LATEST.md`](./LATEST.md) |
-| Inspect structured coverage | [`data/DATA_COVERAGE.md`](./data/DATA_COVERAGE.md) |
-| Understand the dataset as a research object | [`DATASET_OVERVIEW.md`](./DATASET_OVERVIEW.md) |
-| Audit the archive skeptically | [`docs/OBSERVER_QUICKSTART.md`](./docs/OBSERVER_QUICKSTART.md) |
-| Inspect prediction accountability | [`data/model_error/`](./data/model_error/) |
-| Inspect source provenance | [`data/source_provenance/`](./data/source_provenance/) |
-| Inspect testing artifacts | [`snapshots/`](./snapshots/) |
-| Reproduce mechanical checks | [`VERIFICATION.md`](./VERIFICATION.md) |
-| Read v1.1.0 release notes | [`docs/releases/v1.1.0.md`](./docs/releases/v1.1.0.md) |
-| Read publication reconciliation | [`docs/audits/2026-09-14-v1.1.0-publication-reconciliation.md`](./docs/audits/2026-09-14-v1.1.0-publication-reconciliation.md) |
-| Navigate the repository | [`INDEX.md`](./INDEX.md) |
+| Understand the project in about five minutes | [`docs/START_HERE.md`](./docs/START_HERE.md) |
+| See what the archive currently says | [`LATEST.md`](./LATEST.md) |
+| Inspect the public structured evidence | [`data/DATA_COVERAGE.md`](./data/DATA_COVERAGE.md) |
+| Audit claims against evidence and provenance | [`docs/OBSERVER_QUICKSTART.md`](./docs/OBSERVER_QUICKSTART.md) |
+| Browse the complete repository map | [`INDEX.md`](./INDEX.md) |
+
+Specialized material such as model-error records, source provenance, testing artifacts, verification, and release documentation remains linked in the relevant sections below rather than competing for first-contact attention.
 
 ---
 
