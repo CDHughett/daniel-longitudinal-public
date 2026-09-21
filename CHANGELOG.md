@@ -13,6 +13,17 @@ Biological interpretation belongs in `/reports`. This file records release-level
 
 ## [Unreleased]
 
+### September 21 observer-legibility hardening and simulation audit
+
+- Expanded `tools/validate_coherence.py` rather than creating a fifth validator, adding anti-drift checks for current-facing validation-documentation roles, task-based first-contact navigation, plain-language current-state bridges, and preservation of the deeper terminology layer.
+- Protected the distinct roles of README, START_HERE, OBSERVER_QUICKSTART, NEWCOMER_PATH, FOR_OBSERVERS, and INDEX so future edits do not silently recreate competing mandatory reading paths.
+- Added checks preventing stale two-validator wording from returning to the current-facing validation documents cleaned in Batch 1.
+- Added checks preventing stacked `low-salience`, `trait-like`, and `trait-level` session jargon from returning to README/LATEST while requiring the precise glossary definitions to remain available in `docs/CONCEPTS.md`.
+- Updated `tools/README.md` and `VERIFICATION.md` to document the expanded coherence boundary.
+- Added `docs/audits/2026-09-21-post-audit-legibility-observer-simulation.md` with casual-reader, skeptical-reviewer, and data-analyst simulations of the completed cleanup stack.
+- No scientific data, weekly report evidence, protocol, phase declaration, Model Error outcome, DQ status, release identity, Git tag, or DOI lineage is changed by this batch.
+
+
 ### September 21 live-facing language simplification
 
 - Added a plain-language current-state summary to `README.md` and `LATEST.md` before the formal phase/substate/posture labels.
