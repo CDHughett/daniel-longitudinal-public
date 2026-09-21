@@ -13,6 +13,15 @@ Biological interpretation belongs in `/reports`. This file records release-level
 
 ## [Unreleased]
 
+### September 21 terminology bridge and state-label compression
+
+- Expanded `docs/CONCEPTS.md` with plain-language definitions for weekly operating posture, Data-Quality (DQ) records, capacity versus exposure, and reserve as a capacity concept.
+- Expanded the B1 and Load Integration glossary entries with concrete current-implementation descriptions while keeping exact prescription details governed by the training record.
+- Added a compact state-label hierarchy to `docs/START_HERE.md` showing the relationship among declared phase, broader operating substate, weekly operating posture, and session-level observations.
+- Explicitly documented that lower-level evidence such as one reserve observation does not automatically change prescription, substate, or phase.
+- No dataset value, weekly report, protocol, phase declaration, Model Error outcome, DQ status, release identity, tag, or DOI lineage is changed by this batch.
+
+
 ### September 21 post-weekly-update validation-documentation drift cleanup
 
 - Reconciled current-facing validation descriptions in `docs/START_HERE.md`, `DATASET_OVERVIEW.md`, `docs/FOR_OBSERVERS.md`, `data/DATA_COVERAGE.md`, and `methodology/README.md` with the live four-validator repository architecture.
