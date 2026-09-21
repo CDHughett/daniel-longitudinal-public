@@ -172,6 +172,14 @@ Correction preserves prior repository state through Git history and is not new b
 
 The process of comparing competing source states under the archive hierarchy and determining whether one controls, the conflict remains unresolved, or a narrow correction is justified.
 
+## Data-Quality Record (DQ)
+
+A numbered archive record in [`../data/DATA_QUALITY_NOTES.md`](../data/DATA_QUALITY_NOTES.md) used to preserve a known source, representation, completeness, or reconciliation issue.
+
+A DQ record may remain open while the questionable value is preserved. It does not automatically mean the underlying biology is abnormal, the entire dataset is invalid, or the value should be replaced by inference.
+
+Resolution requires the evidence and authority defined for that issue; absence of resolving evidence is not itself permission to clean the record.
+
 ---
 
 # Reporting and State Concepts
@@ -196,6 +204,14 @@ The presently declared archive/system posture, summarized in [`../LATEST.md`](..
 
 Current state should not be inferred from an old report or historical audit.
 
+## Weekly Operating Posture
+
+The short-horizon observation question or operating condition assigned to the active weekly report.
+
+It may change from week to week without changing the declared phase or the broader operating substate.
+
+A weekly operating posture organizes what the archive is currently watching; it does not by itself declare progression, a new substate, or a new phase.
+
 ---
 
 # Training and Behavioral Concepts
@@ -204,11 +220,33 @@ Current state should not be inferred from an old report or historical audit.
 
 The recurring aerobic anchor in the current Phase 2 architecture.
 
+In the current implementation, B1 is the established treadmill/incline aerobic session represented as `block_type=b1` in `data/training_blocks_v1.csv`. Exact session parameters remain governed by the training record rather than this glossary.
+
 ## Load Integration
 
 The recurring structured resistance/movement layer currently paired with B1.
 
-The public `training_blocks_v1.csv` now provides a machine-readable session layer for these and historical training blocks.
+In the current implementation, Load Integration includes trap-bar work, pull-ups, push-ups, dead hangs, mobility, and supporting incline walking. Exact prescription details remain governed by the training record rather than this glossary.
+
+The public `training_blocks_v1.csv` provides the machine-readable session layer for these and historical training blocks.
+
+## Capacity Versus Exposure
+
+**Capacity** is what the operator appears able to express under the observed conditions.
+
+**Exposure** is the workload the protocol actually asks the operator to perform, or the workload actually performed.
+
+The two should not be collapsed. Lower exposure does not automatically imply lower capacity, and visible capacity above the current exposure does not automatically justify increasing the prescription.
+
+## Reserve (Capacity)
+
+Observed evidence that available capacity exceeds the current prescribed exposure under a particular set of conditions.
+
+Reserve may be suggested by controlled extra output, preserved movement quality, or another bounded observation above the normal prescription.
+
+Reserve is not the same as maximal capacity, sustainable training dose, progression readiness, or a phase declaration. It becomes more decision-relevant when it replicates without degrading recovery, movement quality, or next-day function.
+
+The current W38 phrase `reserve-replication observation` therefore means the archive is asking whether the preliminary reserve seen at W37 closeout repeats before any governed escalation is considered.
 
 ## Ambient Execution
 
@@ -433,6 +471,9 @@ Phase 2 — Load Integration
 
 Operating substate:
 Consolidation / lock-in observation
+
+Weekly operating posture:
+Consolidation / reserve-replication observation
 
 Phase 2D:
 undeclared
