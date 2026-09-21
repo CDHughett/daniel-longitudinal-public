@@ -13,6 +13,18 @@ Biological interpretation belongs in `/reports`. This file records release-level
 
 ## [Unreleased]
 
+### September 21 W37 closeout and W38 rollover
+
+- Closed `reports/2026-W37.md` as the retrospective record for 2026-09-14 through 2026-09-20, preserving successful post-travel re-entry and the 2026-09-20 unofficial capacity probe as preliminary reserve evidence rather than an automatic progression trigger.
+- Opened `reports/2026-W38.md` for 2026-09-21 through 2026-09-27 with weekly operating posture `Consolidation / reserve-replication observation`.
+- Preserved the broader Phase 2 substate as `Consolidation / lock-in observation`; no Phase 2D declaration or protocol expansion was introduced.
+- Advanced current-state pointers in `LATEST.md`, `README.md`, `INDEX.md`, `docs/OBSERVER_QUICKSTART.md`, and `docs/NEWCOMER_PATH.md` to W38 active / W37 closed.
+- Synchronized README structured-coverage summaries with the governed W37 extension through 2026-09-20.
+- Advanced `tools/validate_coherence.py` to protect W38/W37 current-state pointers and the new weekly posture while retaining the published v1.1.0 release identity and broader canonical substate.
+- Corrected the live INDEX release orientation from the stale v1.0.0 label to the published v1.1.0 release without altering frozen release identity, tag, or DOI lineage.
+- Model Error records 041–046, DQ-011, August snapshot state, release version, Git tag, and DOI state remain unchanged.
+
+
 ### September 21 W37 machine-readable extension and provenance registration
 
 - Extended governed public daily-biomarker and canonical sleep coverage through `2026-09-20`, producing 224 continuous daily rows in each dataset.
