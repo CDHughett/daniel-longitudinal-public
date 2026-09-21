@@ -13,6 +13,14 @@ Biological interpretation belongs in `/reports`. This file records release-level
 
 ## [Unreleased]
 
+### September 21 post-weekly-update validation-documentation drift cleanup
+
+- Reconciled current-facing validation descriptions in `docs/START_HERE.md`, `DATASET_OVERVIEW.md`, `docs/FOR_OBSERVERS.md`, `data/DATA_COVERAGE.md`, and `methodology/README.md` with the live four-validator repository architecture.
+- Centralized the evolving full validator inventory in `tools/README.md` and `VERIFICATION.md` where duplication was not necessary.
+- Preserved more specific validator descriptions where they directly improve observer or dataset interpretation.
+- Historical audits, archived documents, release notes, scientific data, weekly reports, phase state, protocol state, Model Error outcomes, DOI/release identity, and DQ-011 are unchanged.
+
+
 ### September 21 W37 closeout and W38 rollover
 
 - Closed `reports/2026-W37.md` as the retrospective record for 2026-09-14 through 2026-09-20, preserving successful post-travel re-entry and the 2026-09-20 unofficial capacity probe as preliminary reserve evidence rather than an automatic progression trigger.
