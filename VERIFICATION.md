@@ -186,8 +186,11 @@ It protects a deliberately narrow set of live orientation relationships exposed 
 - observer/newcomer report pointers
 - selected stale pending-state phrases that should not return to current orientation surfaces
 - explicit distinction between the immediate weekly operating posture and the broader canonical Phase 2 substate
+- current-facing validation-documentation role consistency and protection against stale two-validator wording
+- first-contact navigation-role separation so README, START_HERE, OBSERVER_QUICKSTART, NEWCOMER_PATH, FOR_OBSERVERS, and INDEX do not collapse back into competing mandatory paths
+- plain-language current-state bridges on README/LATEST while precise session-level terminology remains preserved in `docs/CONCEPTS.md` and deeper evidence layers
 
-The coherence validator intentionally does **not** scan every historical document for old DOI, pending, or open-state language. Dated reports, audits, preregistration files, and archived documents may correctly preserve the state that existed when they were written.
+The coherence validator intentionally does **not** scan every historical document for old DOI, pending, open-state, or earlier navigation language. Dated reports, audits, preregistration files, and archived documents may correctly preserve the state that existed when they were written.
 
 ---
 
