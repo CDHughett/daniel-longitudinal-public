@@ -36,6 +36,10 @@ Specialized material such as model-error records, source provenance, testing art
 
 # Current archive state
 
+**Plain-language summary:** Training remains stable and low-overhead. Week 38 is watching whether the extra capacity seen at W37 closeout repeats before any progression is considered.
+
+The formal archive labels below preserve the precise phase/state vocabulary used by the reports and validators.
+
 | Domain | Current state |
 |---|---|
 | Phase | **Phase 2 — Load Integration** |
@@ -59,8 +63,9 @@ Most recent closed window:
 2026-W37
 ```
 
-Week 38 preserves the unchanged B1 + Load Integration architecture while observing whether the preliminary reserve exposed at W37 closeout is reproducible. One favorable capacity probe is not treated as a progression authorization, short-window wearable variability remains distinct from demonstrated function, and Phase 2D remains undeclared.
+In formal terms, Week 38 preserves the unchanged B1 + Load Integration architecture and uses a `reserve-replication` posture. One favorable capacity probe is not progression authorization; short-window wearable variability remains distinct from demonstrated function; Phase 2D remains undeclared.
 
+Term definitions: [`docs/CONCEPTS.md`](./docs/CONCEPTS.md)  
 Authoritative current detail: [`LATEST.md`](./LATEST.md)
 
 ---
