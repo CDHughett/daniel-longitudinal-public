@@ -88,16 +88,11 @@ Missingness remains visible. Unfavorable evidence remains visible. Source-backed
 
 ## Verification
 
-Read-only validation tools:
+The repository maintains a current read-only validation suite under [`tools/README.md`](../tools/README.md).
 
-```text
-tools/validate_repository.py
-tools/validate_machine_readable.py
-```
+GitHub Actions runs the current suite on pushes to `main` and on pull requests.
 
-GitHub Actions runs both on pushes to `main` and on pull requests.
-
-See [`tools/README.md`](../tools/README.md) and [`VERIFICATION.md`](../VERIFICATION.md).
+For validator roles, local execution, scope, and limitations, see [`VERIFICATION.md`](../VERIFICATION.md).
 
 ---
 
