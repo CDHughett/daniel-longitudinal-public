@@ -6,7 +6,7 @@
 **Pre-audit content head:** `f9724c6a44555507ea32c18213aeff8e3db0081c`  
 **Validation PR:** #15 — W37 closeout and W38 rollover  
 **Audit date:** 2026-09-21  
-**Verdict:** **GO, contingent on unchanged branch content and final green CI**
+**Verdict:** **GO**
 
 ---
 
@@ -287,7 +287,7 @@ All workflow validation steps passed:
 - August snapshot cross-layer validator
 - post-release coherence validator
 
-The audit artifact itself should also receive the same CI workflow after being committed. Final merge readiness therefore requires the branch head to remain unchanged after a green final run.
+The audit artifact is included in the final validation boundary. Merge readiness requires the audited branch head to remain unchanged after a green validation run.
 
 ---
 
@@ -311,7 +311,7 @@ No protected release artifact or model-error record appears in the changed-file 
 
 ## Audit Verdict
 
-**GO, contingent on final CI remaining green at the final branch head.**
+**GO.**
 
 The W37 closeout and W38 rollover are internally coherent across source provenance, structured evidence, report arithmetic, context classification, weekly lifecycle, current-state surfaces, release boundaries, data-quality governance, and privacy review.
 
@@ -326,4 +326,4 @@ The strongest integrity findings are:
 7. no new private artifact or direct identifying contact/location information was introduced
 8. the repository's own four-layer CI validation passed on the complete pre-audit rollover content
 
-If the final post-audit branch head remains unchanged and its CI run is green, the branch is suitable for merge into `main`.
+The branch is suitable for merge into `main` once the final audited head has a green repository-validation run. Any subsequent content change reopens that validation gate.
