@@ -2,7 +2,7 @@
 
 **Status:** Active  
 **Created:** 2026-07-11  
-**Last updated:** 2026-09-14
+**Last updated:** 2026-09-21
 **Scope:** Known data-quality questions requiring source reconciliation or analytical restriction
 
 ---
@@ -1404,9 +1404,39 @@ If originating source evidence confirms a different daily resting-heart-rate val
 No correction should be made from plausibility alone.
 
 ---
+# W37 v1.31 Source-Role Review — No New DQ Record
+
+## Scope
+
+The retained `Daniel_Dataset_v1.31` source contains two free-text B1 notes whose cited HRV values differ from the dedicated Daily Biomarkers HRV cells for the same dates:
+
+```text
+2026-09-15
+Daily Biomarkers HRV: 60 ms
+B1 free-text note:     67 ms
+
+2026-09-18
+Daily Biomarkers HRV: 53 ms
+B1 free-text note:     63 ms
+```
+
+The source does not establish that the free-text note values and the dedicated Daily Biomarkers field are semantically identical measurements. The note values may reflect a different RingConn view, timing basis, or day-level telemetry summary, but that cannot be established from the retained workbook alone.
+
+## Current Treatment
+
+- the public `daily_hrv_ms` field follows the dedicated Daily Biomarkers HRV cell
+- the free-text training-note values are not promoted into the canonical daily-HRV field
+- the private source notes are preserved unchanged
+- no inferred replacement or averaging is authorized
+- no new numbered DQ record is opened because the public structured field has an explicit controlling source location and the conflicting note values are not represented as the same canonical field
+
+This is a source-role preservation note, not a biological correction and not evidence that either free-text value is intrinsically invalid.
+
+---
+
 # Current Dataset Disposition
 
-No change to [`sleep_longitudinal_v1.csv`](./sleep_longitudinal_v1.csv) is authorized by this documentation commit.
+No data-quality correction to [`sleep_longitudinal_v1.csv`](./sleep_longitudinal_v1.csv) is authorized by this document. Routine governed weekly appends are separate from DQ correction authority.
 
 Current disposition:
 
@@ -1421,6 +1451,7 @@ Current disposition:
 - DQ-008 broader curated-versus-export comparison — diagnostic only
 - DQ-009 August 17 morning weight — corrected; `234.1 lb` controls and the W33 `235.4 lb` mean is unchanged
 - DQ-010 August TruDiagnostic metadata roles — source-role reconciled; contemporaneous 2026-08-17 05:37 collection record controls date/time and preparation conditions while provider administrative metadata remain preserved
+- DQ-011 2026-09-08 daily resting heart rate — open; recorded `64 bpm` remains preserved pending originating-source verification
 
 The curated rows remain:
 
@@ -1631,5 +1662,14 @@ The 2026-09-10 revision:
 - assigns assay values and provider labels/metadata to the TruDiagnostic report source role
 - confirms that no biological value is altered by the reconciliation
 - links the full source-role record in `data/source_provenance/2026-08-trudiagnostic-reconciliation.md`
+
+The 2026-09-21 revision:
+
+- records the W37 `Daniel_Dataset_v1.31` source-role review for two free-text HRV references that differ from the dedicated Daily Biomarkers HRV cells
+- preserves the dedicated Daily Biomarkers cells as the controlling public `daily_hrv_ms` source location
+- preserves the private free-text notes unchanged rather than silently reconciling them
+- opens no new numbered DQ record because the conflicting note values are not imported into the same canonical public field
+- adds the previously omitted DQ-011 line to the Current Dataset Disposition without changing DQ-011 status
+- confirms that the corrected 2026-09-18 body-temperature source cell is 96.31°F and requires no data-quality restriction
 
 No curated sleep value was changed as part of this documentation commit.

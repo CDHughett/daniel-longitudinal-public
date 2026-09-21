@@ -13,6 +13,32 @@ Biological interpretation belongs in `/reports`. This file records release-level
 
 ## [Unreleased]
 
+### September 21 W37 closeout and W38 rollover
+
+- Closed `reports/2026-W37.md` as the retrospective record for 2026-09-14 through 2026-09-20, preserving successful post-travel re-entry and the 2026-09-20 unofficial capacity probe as preliminary reserve evidence rather than an automatic progression trigger.
+- Opened `reports/2026-W38.md` for 2026-09-21 through 2026-09-27 with weekly operating posture `Consolidation / reserve-replication observation`.
+- Preserved the broader Phase 2 substate as `Consolidation / lock-in observation`; no Phase 2D declaration or protocol expansion was introduced.
+- Advanced current-state pointers in `LATEST.md`, `README.md`, `INDEX.md`, `docs/OBSERVER_QUICKSTART.md`, and `docs/NEWCOMER_PATH.md` to W38 active / W37 closed.
+- Synchronized README structured-coverage summaries with the governed W37 extension through 2026-09-20.
+- Advanced `tools/validate_coherence.py` to protect W38/W37 current-state pointers and the new weekly posture while retaining the published v1.1.0 release identity and broader canonical substate.
+- Corrected the live INDEX release orientation from the stale v1.0.0 label to the published v1.1.0 release without altering frozen release identity, tag, or DOI lineage.
+- Model Error records 041–046, DQ-011, August snapshot state, release version, Git tag, and DOI state remain unchanged.
+- Added `docs/audits/2026-09-21-post-weekly-rollover-audit.md` documenting append-only preservation, W37 arithmetic reproduction, lifecycle synchronization, privacy review, invariant checks, and the final CI gate.
+
+
+### September 21 W37 machine-readable extension and provenance registration
+
+- Extended governed public daily-biomarker and canonical sleep coverage through `2026-09-20`, producing 224 continuous daily rows in each dataset.
+- Added 12 completed W37 training-session rows for 2026-09-15 through 2026-09-20, advancing the training dataset to 362 sessions through `2026-09-20`; 2026-09-14 remains represented as a zero-session day without a synthetic training row.
+- Added four bounded W37 context events for the travel/rest continuation, yard-work workload, acute pre-sleep stress exposure, and unofficial end-of-week capacity probe, advancing the context index to 49 events.
+- Preserved the corrected `2026-09-18 body_temp_f=96.31` value from the closed v1.31 source.
+- Registered exact private-source provenance for `Daniel_Dataset_v1.31` (370,947 bytes; SHA-256 `58828f4a84900fa2cb0b6002539b8f5ae125b237c8c8f1e202427bc28142459a`) covering 2026-09-14 through 2026-09-20.
+- Updated `data/DATA_COVERAGE.md` to the new live structured counts and endpoints.
+- Reviewed two v1.31 free-text B1 HRV references that differ from the dedicated Daily Biomarkers HRV cells. The canonical public `daily_hrv_ms` extraction remains tied to the dedicated structured cells; private free-text notes remain unchanged and no inferred replacement was introduced.
+- Preserved DQ-011 as open for the recorded 2026-09-08 daily resting-heart-rate value; no W37 source evidence resolves that earlier question.
+- No weekly-report lifecycle, phase, protocol, model-error, August snapshot, published release, tag, or DOI state is changed by this batch.
+
+
 ### September 14 post-release coherence drift cleanup
 
 - Reconciled `LATEST.md` to the published v1.1.0 version DOI `10.5281/zenodo.22759132` and all-versions DOI `10.5281/zenodo.20815611` rather than the prior v1.0.0 DOI.

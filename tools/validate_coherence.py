@@ -22,9 +22,9 @@ VERSION = "1.1.0"
 VERSION_DOI = "10.5281/zenodo.22759132"
 ALL_VERSIONS_DOI = "10.5281/zenodo.20815611"
 FROZEN_RELEASE_COMMIT = "92126e1cc882c3822d9e03b30b11cfc1d30b4fbb"
-ACTIVE_WEEK = "2026-W37"
-MOST_RECENT_CLOSED = "2026-W36"
-WEEKLY_POSTURE = "Consolidation / re-entry observation"
+ACTIVE_WEEK = "2026-W38"
+MOST_RECENT_CLOSED = "2026-W37"
+WEEKLY_POSTURE = "Consolidation / reserve-replication observation"
 BROADER_SUBSTATE = "Consolidation / lock-in observation"
 
 
@@ -77,7 +77,7 @@ def main() -> int:
 
     for label, text in (("docs/OBSERVER_QUICKSTART.md", observer), ("docs/NEWCOMER_PATH.md", newcomer)):
         require(errors, f"reports/{MOST_RECENT_CLOSED}.md" in text, f"{label}: most recent closed report pointer drift")
-        require(errors, "reports/2026-W35.md" not in text, f"{label}: stale W35 closed-report pointer remains")
+        require(errors, "reports/2026-W36.md" not in text, f"{label}: stale W36 closed-report pointer remains")
 
     # August completion language should not regress on live orientation surfaces.
     forbidden_current_phrases = {

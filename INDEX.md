@@ -28,14 +28,17 @@ Broader observer guidance:
 Active phase:
 Phase 2 — Load Integration
 
-Operating substate:
-Consolidation / re-entry observation
+Weekly operating posture:
+Consolidation / reserve-replication observation
+
+Broader Phase 2 substate:
+Consolidation / lock-in observation
 
 Active weekly window:
-2026-W37
+2026-W38
 
 Most recent closed window:
-2026-W36
+2026-W37
 
 Open model-error records:
 none in protected block 041–046
@@ -59,7 +62,7 @@ August structured molecular integration:
 complete for currently represented fields
 
 Current weekly posture:
-post-travel re-entry under unchanged B1 + Load Integration architecture; no compensatory make-up volume
+preserve the unchanged B1 + Load Integration architecture while observing whether preliminary reserve replicates before any governed escalation
 ```
 
 Current state source: [`LATEST.md`](./LATEST.md)
@@ -128,9 +131,9 @@ Current August physical and molecular source artifacts are preserved under [`sna
 # Reports
 
 - [`reports/README.md`](./reports/README.md) — report lifecycle
-- [`reports/2026-W37.md`](./reports/2026-W37.md) — current active report
-- [`reports/2026-W36.md`](./reports/2026-W36.md) — most recent closed report
-- [`reports/2026-W35.md`](./reports/2026-W35.md) — prior complete ordinary-training window
+- [`reports/2026-W38.md`](./reports/2026-W38.md) — current active report
+- [`reports/2026-W37.md`](./reports/2026-W37.md) — most recent closed report
+- [`reports/2026-W36.md`](./reports/2026-W36.md) — prior natural-interruption window
 - [`reports/2026-W34.md`](./reports/2026-W34.md) — prior ordinary continuity window
 - [`reports/2026-W33.md`](./reports/2026-W33.md) — August testing/reload window
 - [`reports/`](./reports/) — full weekly report series
@@ -248,11 +251,19 @@ Machine-readable validator:
 
 [`tools/validate_machine_readable.py`](./tools/validate_machine_readable.py)
 
+August snapshot cross-layer validator:
+
+[`tools/validate_august_snapshot.py`](./tools/validate_august_snapshot.py)
+
+Post-release coherence validator:
+
+[`tools/validate_coherence.py`](./tools/validate_coherence.py)
+
 GitHub Actions workflow:
 
 [`.github/workflows/validate.yml`](./.github/workflows/validate.yml)
 
-Both validators run on pushes to `main` and on pull requests.
+All current validators run on pushes to `main` and on pull requests.
 
 Broader verification documentation:
 
@@ -304,7 +315,7 @@ Derived views compress lower-level evidence and cannot strengthen claims beyond 
 Current DOI-bearing release:
 
 ```text
-v1.0.0
+v1.1.0
 ```
 
 Live `main` contains later unreleased work.

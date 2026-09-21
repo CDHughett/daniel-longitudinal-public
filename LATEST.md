@@ -1,6 +1,6 @@
 # LATEST — Executive System State
 
-Daniel Longitudinal Study
+Daniel Longitudinal Study  
 Public Archive Status Dashboard
 
 Current published release: `v1.1.0`  
@@ -14,102 +14,100 @@ All-versions DOI: https://doi.org/10.5281/zenodo.20815611
 ## Current State
 
 - **Phase:** Phase 2 — Load Integration
-- **Weekly operating posture:** Consolidation / re-entry observation
+- **Weekly operating posture:** Consolidation / reserve-replication observation
 - **Broader Phase 2 substate:** Consolidation / lock-in observation
-- **Active window:** 2026-W37
-- **Prior window:** 2026-W36 closed
+- **Active window:** 2026-W38
+- **Prior window:** 2026-W37 closed
 - **Installed architecture:** B1 + Load Integration
-- **System posture:** Preserve the installed architecture after an ordinary-life travel interruption; observe whether cadence returns without compensation or protective unloading
-- **Behavioral posture:** Trait-like / ambient execution remained repeatedly present when training occurred in W36; W37 now tests ordinary re-entry rather than manufactured portability
-- **Recovery posture:** Recurrent early-night autonomic variability remains visible, while next-day function has repeatedly remained more stable than the nocturnal signal alone would imply
-- **Bodyweight/intake posture:** Lower intake and bodyweight remain observational variables, not progression or recovery-intervention triggers
-- **Model-error posture:** Records 041–046 are closed/scored; record 043 closed on 2026-09-10 as not supported (`overall_improvement_not_met`, error direction `over`)
-- **Data-quality posture:** DQ-011 remains open for source verification of the recorded 2026-09-08 daily resting-heart-rate value of 64 bpm
+- **System posture:** Preserve the current submaximal architecture and observe whether the reserve exposed at W37 closeout replicates before any governed escalation
+- **Behavioral posture:** Post-travel re-entry resolved without visible reacquisition cost; B1 and Load Integration remained repeatedly low-salience, ambient, trait-like, or trait-level across six consecutive complete days
+- **Recovery posture:** Recurrent short-window autonomic variability remains under observation; W37 again showed that overnight disturbance and next-day functional impairment were not interchangeable in the observed cases
+- **Bodyweight/intake posture:** Lower intake and bodyweight remain observational variables, not stand-alone progression or recovery-intervention triggers
+- **Model-error posture:** Records 041–046 are closed/scored; record 043 remains closed as not supported (`overall_improvement_not_met`, error direction `over`)
+- **Data-quality posture:** DQ-011 remains open for source verification of the recorded 2026-09-08 daily resting-heart-rate value of 64 bpm; v1.31 HRV note/field differences are source-role documented without inferred correction
 - **Formal Phase 2D declaration:** None
 - **August snapshot:** DEXA, VO₂, Bod Pod, TruAge/Advanced TruAge, and TruHealth source artifacts archived; Model Error 043 adjudication complete
 
-The weekly operating posture describes the immediate observation condition for the active report. The broader Phase 2 substate is the canonical phase-map interpretation. A temporary re-entry posture after travel does not replace the broader consolidation / lock-in classification or declare a new phase.
+The weekly operating posture describes the immediate observation condition for the active report. The broader Phase 2 substate remains the canonical phase-map interpretation. A reserve-replication observation does not itself declare progression or a new phase.
 
 Current machine-readable row counts and endpoints are maintained in [`data/DATA_COVERAGE.md`](data/DATA_COVERAGE.md).
 
 ---
 
-## Week 36 Closeout
+## Week 37 Closeout
 
 Observation window:
-
-```text
-2026-09-07 through 2026-09-13
-```
-
-Completed formal training:
-
-- 6 B1 sessions / 330 minutes
-- 5 Load Integration sessions / 225 minutes
-- 555 total formal training minutes
-
-Structured weekly metrics:
-
-| Marker | W36 |
-|---|---:|
-| Morning bodyweight | 233.5 lb |
-| Daily biomarker HRV | 61.0 ms |
-| Resting heart rate | 48.9 bpm* |
-| Daily average heart rate | 63.1 bpm |
-| Sleep HRV | 67.0 ms |
-| Sleep average heart rate | 56.3 bpm |
-| Total sleep | 7h33m |
-| Deep sleep | approximately 1h05m |
-| REM sleep | approximately 1h17m |
-
-\*The weekly RHR mean uses the recorded 2026-09-08 value of 64 bpm. DQ-011 keeps that source value intact while its originating field is verified.
-
-W36 did not reproduce the prior two weeks' complete 700-minute architecture because ordinary-life travel removed LI on 2026-09-12 and both B1 and LI on 2026-09-13. The reduction was contextual rather than recovery-directed.
-
-The strongest qualitative additions were:
-
-- five consecutive full B1 + LI days from 2026-09-07 through 2026-09-11 with preserved execution quality
-- repeated ambient / trait-like Load Integration execution, described as owned by 2026-09-11
-- a recorded 2026-09-09 pull-up set showing controlled bottom, midpoint, and top positional ownership
-- an unsolicited external-observer point on 2026-09-09 when an unfamiliar gym-goer initiated a conversation about the recurring treadmill routine
-- recurrent early-night HR excursions with later-night normalization and no clear multi-domain next-day functional collapse
-- a natural travel interruption that separated actual exposure from apparent capacity without triggering compensatory training
-
-Week 36 is therefore best summarized as **consolidation with a natural interruption**. It supports preserved system state under reduced exposure, but it does not independently prove full travel portability because the installed architecture was not executed in the travel environment on 2026-09-13.
-
-Full retrospective record: [`reports/2026-W36.md`](reports/2026-W36.md)
-
----
-
-## Week 37 Operating Posture
-
-Active window:
 
 ```text
 2026-09-14 through 2026-09-20
 ```
 
-Week 37 preserves the same B1 + Load Integration architecture and treats post-travel return as a natural re-entry observation.
+Completed formal training:
+
+- 6 B1 sessions / 330 minutes / 18.12 miles
+- 6 Load Integration sessions / 270 minutes
+- 600 total formal training minutes
+
+Structured weekly metrics:
+
+| Marker | W37 |
+|---|---:|
+| Morning bodyweight | 232.6 lb |
+| Daily biomarker HRV | 63.4 ms |
+| Resting heart rate | 48.3 bpm |
+| Daily average heart rate | 63.1 bpm |
+| Sleep HRV | 70.6 ms |
+| Sleep average heart rate | 56.6 bpm |
+| Total sleep | 7h52m |
+| Deep sleep | approximately 1h12m |
+| REM sleep | approximately 1h07m |
+
+The week opened with a final travel/rest day on 2026-09-14. Normal B1 + Load Integration operation resumed on 2026-09-15 and remained intact for six consecutive days without make-up volume, a reduced re-entry session, or recovery-directed unloading.
+
+The strongest qualitative additions were:
+
+- ordinary post-travel re-entry without visible reacquisition cost
+- repeated low-salience / trait-like execution after the interruption
+- yard work absorbed between B1 and Load Integration on 2026-09-16 without protocol modification
+- a bounded 2026-09-18 pre-sleep stress exposure that produced an overnight autonomic response with preserved scheduled training afterward
+- an unofficial 2026-09-20 final-set probe of 8 pull-ups and 18 push-ups after programmed work with minimal reported degradation
+- explicit preservation of that probe as preliminary reserve evidence rather than a progression authorization
+
+Week 37 is therefore best summarized as **successful ordinary re-entry with preliminary reserve evidence**.
+
+Full retrospective record: [`reports/2026-W37.md`](reports/2026-W37.md)
+
+---
+
+## Week 38 Operating Posture
+
+Active window:
+
+```text
+2026-09-21 through 2026-09-27
+```
+
+Week 38 preserves the same B1 + Load Integration architecture and treats reserve replication as the immediate observation target.
 
 Observe:
 
-- whether ordinary cadence returns without make-up volume
-- whether B1 and LI immediately retain their prior ambient / trait-like quality
-- overnight HR/HRV morphology relative to actual next-day function
-- lower-intake/bodyweight compatibility across performance, appetite, GI state, mood, and ordinary activity
-- naturally occurring portability/context changes without manufacturing tests
+- whether reserve above the current prescription reappears under ordinary conditions
+- whether repeat reserve preserves movement quality rather than merely increasing repetition count
+- whether apparent reserve coexists with stable recovery, bodyweight, subjective state, and next-day function
+- whether the low apparent attentional cost of the installed architecture remains intact
+- naturally occurring ordinary-life workload without manufacturing robustness tests
 
 Do not:
 
-- compensate for missed W36 volume
-- increase workload solely because reserve capacity is visible
+- add routine workload because of one favorable capacity probe
+- turn every session into a test
+- progress solely because subjective execution feels easy
 - unload solely because of one less-favorable wearable night
-- manufacture portability tests
-- replace the DQ-011 source value by inference
+- replace unresolved source values by inference
 - reopen or rescore closed Model Error records
-- declare Phase 2D from isolated favorable sessions
+- declare Phase 2D from reserve evidence alone
 
-Active report: [`reports/2026-W37.md`](reports/2026-W37.md)
+Active report: [`reports/2026-W38.md`](reports/2026-W38.md)
 
 ---
 
@@ -137,14 +135,17 @@ Fixed scoring windows remain fixed. Later evidence does not retroactively rescue
 - read-only August snapshot cross-layer validator active
 - post-release coherence validator active
 - GitHub Actions runs all current validators on pushes to `main` and pull requests
-- the historical training prefix through 2026-08-30 remains protected at 325 sessions while later governed rows append
+- historical training prefix through 2026-08-30 remains protected at 325 sessions while later governed rows append
 - exact retained private-source hashes are registered only when the exact bytes are available
-- `Daniel_Dataset_v1.30` is registered in the private-source provenance manifest
-- August TruDiagnostic provider artifacts are registered in the August checksum manifest
-- the August provider-header versus contemporaneous collection-record distinction is preserved in [`data/source_provenance/2026-08-trudiagnostic-reconciliation.md`](data/source_provenance/2026-08-trudiagnostic-reconciliation.md)
+- `Daniel_Dataset_v1.31` is registered in the private-source provenance manifest
+- public daily biomarkers and canonical sleep contain 224 continuous rows through 2026-09-20
+- public training contains 362 completed-session rows through 2026-09-20
+- public context index contains 49 bounded events through 2026-09-20
+- August TruDiagnostic provider artifacts remain registered in the August checksum manifest
+- the August provider-header versus contemporaneous collection-record distinction remains preserved in [`data/source_provenance/2026-08-trudiagnostic-reconciliation.md`](data/source_provenance/2026-08-trudiagnostic-reconciliation.md)
 
-Verification guide: [`VERIFICATION.md`](VERIFICATION.md)
-Private-source provenance: [`data/source_provenance/`](data/source_provenance/)
+Verification guide: [`VERIFICATION.md`](VERIFICATION.md)  
+Private-source provenance: [`data/source_provenance/`](data/source_provenance/)  
 Current coverage: [`data/DATA_COVERAGE.md`](data/DATA_COVERAGE.md)
 
 ---
@@ -153,8 +154,8 @@ Current coverage: [`data/DATA_COVERAGE.md`](data/DATA_COVERAGE.md)
 
 - [`README.md`](README.md) — archive overview
 - [`docs/START_HERE.md`](docs/START_HERE.md) — first-contact orientation
-- [`reports/2026-W37.md`](reports/2026-W37.md) — active week
-- [`reports/2026-W36.md`](reports/2026-W36.md) — most recent closed week
+- [`reports/2026-W38.md`](reports/2026-W38.md) — active week
+- [`reports/2026-W37.md`](reports/2026-W37.md) — most recent closed week
 - [`INDEX.md`](INDEX.md) — complete repository map
 
-The current governing posture is ordinary re-entry under an unchanged architecture, with capacity and exposure kept analytically separate.
+The current governing posture is preservation with replication: reserve may be observed, but escalation must be earned by repeat evidence rather than inferred from one favorable session.
