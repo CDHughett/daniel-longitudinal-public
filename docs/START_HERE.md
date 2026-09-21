@@ -31,16 +31,19 @@ This is a governed, DOI-preserved, single-subject longitudinal observational arc
 
 ---
 
-## What To Read First
+## What To Read Next
 
-1. [`README.md`](../README.md) — repository overview and current archive posture
-2. [`LATEST.md`](../LATEST.md) — current system state
-3. [`data/DATA_COVERAGE.md`](../data/DATA_COVERAGE.md) — what is and is not publicly structured
-4. [`docs/OBSERVER_QUICKSTART.md`](./OBSERVER_QUICKSTART.md) — compact technical inspection route
-5. [`docs/FOR_OBSERVERS.md`](./FOR_OBSERVERS.md) — broader skeptical-review path
-6. [`docs/CONCEPTS.md`](./CONCEPTS.md) — recurring archive terminology
+If you arrived here from the repository README, you do not need to read the README again.
 
-For the complete repository map, use [`INDEX.md`](../INDEX.md).
+Use the next document according to your goal:
+
+1. [`LATEST.md`](../LATEST.md) — current system state
+2. [`data/DATA_COVERAGE.md`](../data/DATA_COVERAGE.md) — what is and is not publicly structured
+3. [`docs/OBSERVER_QUICKSTART.md`](./OBSERVER_QUICKSTART.md) — short skeptical inspection route
+4. [`docs/CONCEPTS.md`](./CONCEPTS.md) — terminology when a label is unfamiliar
+5. [`INDEX.md`](../INDEX.md) — complete repository map
+
+If you landed on this file directly and want the broader repository overview first, use [`README.md`](../README.md).
 
 ---
 
@@ -137,13 +140,16 @@ Disclosure:
 
 ---
 
-## Recommended Navigation By Depth
+## Deeper Paths
 
-- [`docs/START_HERE.md`](./START_HERE.md) — first 5 minutes
-- [`docs/OBSERVER_QUICKSTART.md`](./OBSERVER_QUICKSTART.md) — compact technical audit route
-- [`docs/NEWCOMER_PATH.md`](./NEWCOMER_PATH.md) — extended first reading pass
-- [`docs/FOR_OBSERVERS.md`](./FOR_OBSERVERS.md) — skeptical/technical evaluation guidance
-- [`INDEX.md`](../INDEX.md) — complete repository map
+The first five-minute orientation ends here. Choose a deeper route only if it matches your goal:
+
+- [`docs/OBSERVER_QUICKSTART.md`](./OBSERVER_QUICKSTART.md) — shortest technical audit route
+- [`docs/NEWCOMER_PATH.md`](./NEWCOMER_PATH.md) — optional extended learning path
+- [`docs/FOR_OBSERVERS.md`](./FOR_OBSERVERS.md) — skeptical-review reference and checklist
+- [`INDEX.md`](../INDEX.md) — exhaustive navigation
+
+These documents have different jobs; they are not intended to be read sequentially as mandatory prerequisites.
 
 ---
 
