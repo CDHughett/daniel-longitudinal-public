@@ -8,17 +8,20 @@ The repository separates evidence, structured data, interpretation, prediction, 
 
 # Tier 1 — First Contact
 
-- [`README.md`](./README.md) — archive scope, current state, and machine-readable orientation
-- [`docs/START_HERE.md`](./docs/START_HERE.md) — first five minutes
-- [`LATEST.md`](./LATEST.md) — current executive system state
-- [`docs/OBSERVER_QUICKSTART.md`](./docs/OBSERVER_QUICKSTART.md) — compact technical inspection route
-- [`data/DATA_COVERAGE.md`](./data/DATA_COVERAGE.md) — public evidence coverage
+Choose by task rather than reading every orientation document in sequence:
+
+- [`README.md`](./README.md) — public front door and repository overview
+- [`docs/START_HERE.md`](./docs/START_HERE.md) — five-minute conceptual orientation
+- [`LATEST.md`](./LATEST.md) — volatile current state
+- [`data/DATA_COVERAGE.md`](./data/DATA_COVERAGE.md) — public structured-evidence coverage
+- [`docs/OBSERVER_QUICKSTART.md`](./docs/OBSERVER_QUICKSTART.md) — short skeptical audit route
+- [`INDEX.md`](./INDEX.md) — exhaustive navigation
+
+Optional deeper references:
+
 - [`docs/CONCEPTS.md`](./docs/CONCEPTS.md) — terminology
-
-Broader observer guidance:
-
-- [`docs/FOR_OBSERVERS.md`](./docs/FOR_OBSERVERS.md)
-- [`docs/NEWCOMER_PATH.md`](./docs/NEWCOMER_PATH.md)
+- [`docs/NEWCOMER_PATH.md`](./docs/NEWCOMER_PATH.md) — extended learning curriculum
+- [`docs/FOR_OBSERVERS.md`](./docs/FOR_OBSERVERS.md) — skeptical-review distinctions and checklist
 
 ---
 
@@ -328,11 +331,12 @@ Live `main` contains later unreleased work.
 
 ```text
 README
-→ START_HERE
-→ LATEST
-→ DATA_COVERAGE
-→ OBSERVER_QUICKSTART
+  ↓
+choose one next step by goal:
+START_HERE | LATEST | DATA_COVERAGE | OBSERVER_QUICKSTART | INDEX
 ```
+
+The orientation documents are alternatives with distinct jobs, not a mandatory chain.
 
 ## Data Inspection
 
@@ -358,13 +362,15 @@ model_error_gap_v1.csv
 ## Verification
 
 ```text
-validate_repository.py
-+
-validate_machine_readable.py
-→ governed warnings / errors
+tools/README.md
+→ VERIFICATION.md
+→ run the current applicable validators
+→ review warnings / errors
 → human semantic review
 → formal audit when required
 ```
+
+The full live validator inventory is maintained in `tools/README.md` rather than duplicated in this navigation flow.
 
 ---
 
