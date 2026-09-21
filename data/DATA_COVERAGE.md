@@ -32,10 +32,10 @@ A provider export may improve provenance without becoming the canonical analytic
 
 | Domain | Current coverage | Notes |
 |---|---|---|
-| Daily biomarkers / subjective state | **Structured longitudinal** | `daily_biomarkers_v1.csv`; 217 continuous daily rows, 2026-02-09 through 2026-09-13 |
-| Training exposure | **Structured longitudinal** | `training_blocks_v1.csv`; 350 session rows through 2026-09-12 |
-| Context / perturbation events | **Structured event index** | `context_events_v1.csv`; 45 bounded events through 2026-09-13 |
-| Sleep | **Structured longitudinal + source-preserved historical coverage** | Canonical curated sleep has 217 continuous daily rows through 2026-09-13; broader RingConn episode export retained separately |
+| Daily biomarkers / subjective state | **Structured longitudinal** | `daily_biomarkers_v1.csv`; 224 continuous daily rows, 2026-02-09 through 2026-09-20 |
+| Training exposure | **Structured longitudinal** | `training_blocks_v1.csv`; 362 session rows through 2026-09-20 |
+| Context / perturbation events | **Structured event index** | `context_events_v1.csv`; 49 bounded events through 2026-09-20 |
+| Sleep | **Structured longitudinal + source-preserved historical coverage** | Canonical curated sleep has 224 continuous daily rows through 2026-09-20; broader RingConn episode export retained separately |
 | Recovery / vital signs | **Structured + narrative + source-preserved** | HRV, resting HR, daily average HR, sleep HR, SpO₂ and related signals appear across curated data, reports, screenshots and direct exports |
 | Body composition | **Snapshot-based** | DEXA, Bod Pod and scale-weight measurements occur at discrete intervals using differing methods |
 | Blood biomarkers | **Snapshot-based** | Periodic laboratory panels; not every private health source is public |
@@ -60,8 +60,8 @@ File:
 Current coverage:
 
 ```text
-2026-02-09 through 2026-09-13
-217 continuous daily rows
+2026-02-09 through 2026-09-20
+224 continuous daily rows
 ```
 
 The dataset includes source-transcribed measurements such as bodyweight and cardiovascular telemetry plus bounded subjective-state fields and compact context tags.
@@ -81,8 +81,8 @@ File:
 Current coverage:
 
 ```text
-2026-02-09 through 2026-09-12
-350 session rows
+2026-02-09 through 2026-09-20
+362 session rows
 ```
 
 Multiple sessions may occur on one date. A date with no completed session may therefore be represented in the aligned daily layer without a training row.
@@ -102,9 +102,9 @@ File:
 Current coverage:
 
 ```text
-45 bounded event rows
+49 bounded event rows
 represented interval begins 2026-02-09
-latest current event ends 2026-09-13
+latest current event ends 2026-09-20
 ```
 
 This is an event index, not a complete diary.
@@ -190,13 +190,13 @@ The aligned daily machine-readable interval currently begins at:
 The current public daily/sleep structured layer is populated through:
 
 ```text
-2026-09-13
+2026-09-20
 ```
 
 The latest completed training session is represented on:
 
 ```text
-2026-09-12
+2026-09-20
 ```
 
 Different datasets may have different row counts because their unit of observation differs.
@@ -212,7 +212,7 @@ context events: zero-to-many bounded event rows per date/interval
 
 # Private Daniel Dataset Provenance
 
-The current daily/training/event layer was retrospectively backfilled from completed private `Daniel_Dataset_v1.0` through `v1.30` source states and then preserved publicly as curated CSVs.
+The current daily/training/event layer was retrospectively backfilled from completed private `Daniel_Dataset_v1.0` through `v1.31` source states and then preserved publicly as curated CSVs.
 
 Row-level provenance is retained through `source_ref`.
 
@@ -324,8 +324,8 @@ Canonical sleep:
 Current public interval:
 
 ```text
-2026-02-09 through 2026-09-13
-217 continuous daily records
+2026-02-09 through 2026-09-20
+224 continuous daily records
 ```
 
 Known field-level quality restrictions remain documented in:
