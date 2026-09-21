@@ -23,6 +23,7 @@ Biological interpretation belongs in `/reports`. This file records release-level
 - Advanced `tools/validate_coherence.py` to protect W38/W37 current-state pointers and the new weekly posture while retaining the published v1.1.0 release identity and broader canonical substate.
 - Corrected the live INDEX release orientation from the stale v1.0.0 label to the published v1.1.0 release without altering frozen release identity, tag, or DOI lineage.
 - Model Error records 041–046, DQ-011, August snapshot state, release version, Git tag, and DOI state remain unchanged.
+- Added `docs/audits/2026-09-21-post-weekly-rollover-audit.md` documenting append-only preservation, W37 arithmetic reproduction, lifecycle synchronization, privacy review, invariant checks, and the final CI gate.
 
 
 ### September 21 W37 machine-readable extension and provenance registration
