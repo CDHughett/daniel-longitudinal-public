@@ -13,6 +13,17 @@ Biological interpretation belongs in `/reports`. This file records release-level
 
 ## [Unreleased]
 
+### September 21 first-contact navigation compression
+
+- Reduced the README first-contact table to five task-based entry points: understand the project, see current state, inspect structured evidence, audit claims, or browse the full index.
+- Removed circular orientation instructions that required readers arriving from README/START_HERE to reread the same front-door documents.
+- Established `docs/OBSERVER_QUICKSTART.md` as the single short ordered audit route.
+- Reframed `docs/NEWCOMER_PATH.md` as an optional extended learning curriculum rather than a prerequisite.
+- Reframed `docs/FOR_OBSERVERS.md` as a skeptical-review reference/checklist rather than a competing linear route.
+- Updated `INDEX.md` so first-contact navigation is task-based and the live validator inventory remains centralized in `tools/README.md`.
+- No scientific data, weekly report, current system state, protocol, phase declaration, Model Error outcome, DQ status, release identity, tag, or DOI lineage is changed by this batch.
+
+
 ### September 21 terminology bridge and state-label compression
 
 - Expanded `docs/CONCEPTS.md` with plain-language definitions for weekly operating posture, Data-Quality (DQ) records, capacity versus exposure, and reserve as a capacity concept.
