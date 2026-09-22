@@ -290,6 +290,8 @@ Formal audits:
 
 # Protocol and Experiment History
 
+- [`protocols/supplementation-architecture-2026-09-18.md`](./protocols/supplementation-architecture-2026-09-18.md) — active supplementation protocol-context boundary; effective 2026-09-18, disclosed 2026-09-22
+- [`protocols/hybrid-expansion-phase-v2.md`](./protocols/hybrid-expansion-phase-v2.md) — historical / superseded expansion proposal
 - [`protocols/`](./protocols/)
 - [`experiments/`](./experiments/)
 
