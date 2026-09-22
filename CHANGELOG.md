@@ -13,6 +13,16 @@ Biological interpretation belongs in `/reports`. This file records release-level
 
 ## [Unreleased]
 
+### September 22 supplementation-architecture disclosure
+
+- Added `protocols/supplementation-architecture-2026-09-18.md` to preserve a material supplementation transition effective 2026-09-18 and first disclosed to the public archive on 2026-09-22.
+- Preserved the distinction between effective exposure date and documentation date; the change was not represented as contemporaneous evidence in the completed `Daniel_Dataset_v1.31` source.
+- Added an explicitly labeled post-closeout disclosure to `reports/2026-W37.md` without changing its quantitative values, closeout decision, reserve interpretation, Model Error state, phase state, or DQ-011.
+- Added the supplementation transition as active protocol context in `reports/2026-W38.md` and `LATEST.md`, with possible sleep/resting-HR observations retained as hypothesis-generating rather than causal.
+- Added direct protocol discoverability in `INDEX.md`.
+- Did **not** create a new `data/context_events_v1.csv` row because the current v1 schema requires canonical private-source provenance and the transition was not preserved in v1.31; no source locator was fabricated to manufacture structured completeness.
+- No B1 or Load Integration prescription, phase declaration, Model Error outcome, DQ status, August snapshot interpretation, published release identity, Git tag, or DOI lineage is changed by this batch.
+
 ### September 21 observer-legibility hardening and simulation audit
 
 - Expanded `tools/validate_coherence.py` rather than creating a fifth validator, adding anti-drift checks for current-facing validation-documentation roles, task-based first-contact navigation, plain-language current-state bridges, and preservation of the deeper terminology layer.

@@ -23,6 +23,7 @@ Formal archive labels and governance state:
 - **Active window:** 2026-W38
 - **Prior window:** 2026-W37 closed
 - **Installed architecture:** B1 + Load Integration
+- **Supplementation context:** Material simplification effective 2026-09-18; the prior broad multi-compound baseline was replaced with a reduced evidence-weighted architecture. This is a documented protocol-context boundary, not a causal explanation for current sleep, autonomic, performance, or biological observations. See [`protocols/supplementation-architecture-2026-09-18.md`](protocols/supplementation-architecture-2026-09-18.md)
 - **System posture:** Keep the current submaximal workload unchanged and observe whether the reserve seen at W37 closeout repeats before any governed escalation
 - **Behavioral posture:** Post-travel re-entry resolved without visible reacquisition cost; B1 and Load Integration remained repeatedly low-overhead across six consecutive complete days. Precise session-level labels remain preserved in the weekly report and structured training layer
 - **Recovery posture:** Recurrent short-window autonomic variability remains under observation; W37 again showed that overnight disturbance and next-day functional impairment were not interchangeable in the observed cases
