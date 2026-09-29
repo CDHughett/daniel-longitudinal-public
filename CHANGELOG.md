@@ -13,6 +13,19 @@ Biological interpretation belongs in `/reports`. This file records release-level
 
 ## [Unreleased]
 
+### September 29 W38 machine-readable extension and provenance registration
+
+- Extended governed public daily-biomarker and canonical sleep coverage through `2026-09-27`, producing 231 continuous daily rows in each dataset.
+- Added 11 completed W38 training-session rows through `2026-09-26`, advancing the training dataset to 373 sessions; 2026-09-27 remains represented as a zero-session day without a synthetic training row.
+- Added one bounded W38 travel/context event covering the 2026-09-26 through 2026-09-27 portion of an out-of-town travel period, advancing the context index to 50 events while preserving that the travel interval continued beyond the W38 report window.
+- Registered exact source provenance for `Daniel_Dataset_v1.32` (368,070 bytes; SHA-256 `a9f03dde03a8b71846ede5fdec3214fe9009b93fca27c54f4bf587107a38a870`) covering 2026-09-21 through 2026-09-27.
+- Preserved mixed source-date encoding through controlled ISO date-index normalization without changing associated biological, sleep, or training values.
+- Preserved explicit Sleep Log awake totals rather than deriving `awake_min` from time-in-bed minus total sleep.
+- Kept the W38 travel representation privacy-minimized and limited to analytically relevant context.
+- Updated `data/DATA_COVERAGE.md` to the new live structured counts and endpoints.
+- No W38 report lifecycle, phase, protocol, Model Error, DQ, August snapshot, published release, Git tag, or DOI state is changed by this batch.
+
+
 ### September 22 supplementation-architecture disclosure
 
 - Added `protocols/supplementation-architecture-2026-09-18.md` to preserve a material supplementation transition effective 2026-09-18 and first disclosed to the public archive on 2026-09-22.
