@@ -384,11 +384,11 @@ A scan of all newly added diff lines found no:
 - Social Security number pattern
 - local Unix/container absolute path
 - Windows user/local path
-- `.xlsx` filename
+- private spreadsheet filename or extension
 - private family names screened during source lock
 - named retailer
 - lodging brand
-- cemetery / grave detail
+- unnecessary memorial-site or deceased-family detail
 - exact travel destination
 - intimate sexual detail
 
