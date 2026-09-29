@@ -13,6 +13,17 @@ Biological interpretation belongs in `/reports`. This file records release-level
 
 ## [Unreleased]
 
+### September 29 W38 closeout and W39 initialization
+
+- Closed `reports/2026-W38.md` as the retrospective record for 2026-09-21 through 2026-09-27.
+- Preserved the Week 38 reserve-replication question as unresolved because no second interpretable capacity probe occurred; repeated subjective ease was not converted into a progression claim.
+- Recorded Week 38's primary retrospective finding as governed consolidation: repeated ease did not trigger escalation, and travel-directed omissions did not trigger compensatory workload or training debt.
+- Opened `reports/2026-W39.md` for 2026-09-28 through 2026-10-04 with weekly operating posture `Consolidation / post-travel return observation`.
+- Carried forward the lower observed bodyweight state, the unresolved reserve/progression question, the 2026-09-18 supplementation-context boundary, DQ-011, and undeclared Phase 2D status without strengthening any of them beyond the source evidence.
+- Preserved Model Error records 041–046 as closed and introduced no new formal prediction, protocol expansion, recovery intervention, release identity, Git tag, or DOI change.
+- Current-facing pointer synchronization is handled in the companion rollover batch before this draft PR becomes merge-ready.
+
+
 ### September 29 W38 machine-readable extension and provenance registration
 
 - Extended governed public daily-biomarker and canonical sleep coverage through `2026-09-27`, producing 231 continuous daily rows in each dataset.
