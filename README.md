@@ -36,17 +36,17 @@ Specialized material such as model-error records, source provenance, testing art
 
 # Current archive state
 
-**Plain-language summary:** Training remains stable and low-overhead. Week 38 is watching whether the extra capacity seen at W37 closeout repeats before any progression is considered.
+**Plain-language summary:** Training remains stable and low-overhead. Week 38 closed with repeated ease preserved without forced progression, and Week 39 is watching whether normal B1 + Load Integration operation returns cleanly after travel before progression is reconsidered.
 
 The formal archive labels below preserve the precise phase/state vocabulary used by the reports and validators.
 
 | Domain | Current state |
 |---|---|
 | Phase | **Phase 2 — Load Integration** |
-| Weekly operating posture | **Consolidation / reserve-replication observation** |
+| Weekly operating posture | **Consolidation / post-travel return observation** |
 | Broader Phase 2 substate | **Consolidation / lock-in observation** |
-| Active weekly window | **2026-W38** |
-| Most recent closed window | **2026-W37** |
+| Active weekly window | **2026-W39** |
+| Most recent closed window | **2026-W38** |
 | Installed training architecture | **B1 + Load Integration** |
 | Open model-error records | **none in protected block 041–046** |
 | Record 043 | **closed / not supported — `overall_improvement_not_met` / over** |
@@ -57,13 +57,13 @@ Current-state anchors retained for repository validation:
 
 ```text
 Active weekly window:
-2026-W38
+2026-W39
 
 Most recent closed window:
-2026-W37
+2026-W38
 ```
 
-In formal terms, Week 38 preserves the unchanged B1 + Load Integration architecture and uses a `reserve-replication` posture. One favorable capacity probe is not progression authorization; short-window wearable variability remains distinct from demonstrated function; Phase 2D remains undeclared.
+In formal terms, Week 39 preserves the unchanged B1 + Load Integration architecture and uses a `post-travel return` posture. Travel-directed omissions are not training debt, a successful return is not automatic progression authorization, and Phase 2D remains undeclared.
 
 Term definitions: [`docs/CONCEPTS.md`](./docs/CONCEPTS.md)  
 Authoritative current detail: [`LATEST.md`](./LATEST.md)
@@ -72,14 +72,14 @@ Authoritative current detail: [`LATEST.md`](./LATEST.md)
 
 # Machine-readable core
 
-Current public structured coverage through 2026-09-20:
+Current public structured coverage through 2026-09-27, with the session-indexed training endpoint at 2026-09-26:
 
 | Dataset | Unit | Coverage |
 |---|---|---|
-| [`data/daily_biomarkers_v1.csv`](./data/daily_biomarkers_v1.csv) | one row per represented day | 224 continuous rows through 2026-09-20 |
-| [`data/sleep_longitudinal_v1.csv`](./data/sleep_longitudinal_v1.csv) | one governed wake-date row | 224 continuous rows through 2026-09-20 |
-| [`data/training_blocks_v1.csv`](./data/training_blocks_v1.csv) | one row per completed session/block | 362 rows through 2026-09-20 |
-| [`data/context_events_v1.csv`](./data/context_events_v1.csv) | one bounded context event | 49 rows through 2026-09-20 |
+| [`data/daily_biomarkers_v1.csv`](./data/daily_biomarkers_v1.csv) | one row per represented day | 231 continuous rows through 2026-09-27 |
+| [`data/sleep_longitudinal_v1.csv`](./data/sleep_longitudinal_v1.csv) | one governed wake-date row | 231 continuous rows through 2026-09-27 |
+| [`data/training_blocks_v1.csv`](./data/training_blocks_v1.csv) | one row per completed session/block | 373 rows through 2026-09-26 |
+| [`data/context_events_v1.csv`](./data/context_events_v1.csv) | one bounded context event | 50 rows through 2026-09-27 |
 
 Training is session-indexed: a represented day with zero completed training sessions does not require a synthetic training row.
 
