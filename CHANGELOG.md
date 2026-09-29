@@ -13,6 +13,17 @@ Biological interpretation belongs in `/reports`. This file records release-level
 
 ## [Unreleased]
 
+### September 29 W38/W39 post-rollover audit
+
+- Added `docs/audits/2026-09-29-post-weekly-rollover-audit.md` covering source identity, exact historical-prefix preservation, W38 arithmetic reproduction, canonical sleep semantics, training/context representation, weekly lifecycle, current-state synchronization, privacy, release/phase/model-error invariants, and CI.
+- The audit reproduced W38 from the public structured layer: 230.2 lb morning bodyweight, 67.1 ms daily HRV, 44.9 bpm resting HR, 60.4 bpm daily average HR, 73.7 ms sleep HRV, 50.7 bpm sleep HR, 7h29m total sleep, 1h16m deep sleep, 58m REM, and 556 formal training minutes.
+- Corrected one narrow derived W38 bodyweight-comparison sentence: the difference between the unrounded W37 and W38 six-measurement means is approximately 2.3 lb. The prior 2.4-lb wording resulted from subtracting separately rounded display means; no underlying daily weight or reported weekly mean changed.
+- Confirmed exact append-only preservation of the five governed public/provenance files and retained the 2026-09-27 zero-session day without a synthetic training row.
+- Confirmed W39 active / W38 closed lifecycle, `Consolidation / post-travel return observation` weekly posture, unresolved reserve replication, undeclared Phase 2D status, closed Model Error 041–046 state, unresolved DQ-011, and fixed v1.1.0 release/DOI identity.
+- Privacy review found no newly introduced direct contact/location identifiers, private names screened during source lock, private binary artifact, or unnecessary travel/family detail.
+- The corrected pre-audit content head passed all four repository validation layers. Final merge readiness remains contingent on a green validation run including this audit artifact and changelog entry.
+
+
 ### September 29 W39 current-state synchronization
 
 - Advanced `LATEST.md`, `README.md`, and `INDEX.md` to W39 active / W38 closed while preserving the broader Phase 2 `Consolidation / lock-in observation` substate.
