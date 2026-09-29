@@ -13,6 +13,16 @@ Biological interpretation belongs in `/reports`. This file records release-level
 
 ## [Unreleased]
 
+### September 29 W39 current-state synchronization
+
+- Advanced `LATEST.md`, `README.md`, and `INDEX.md` to W39 active / W38 closed while preserving the broader Phase 2 `Consolidation / lock-in observation` substate.
+- Reframed the immediate weekly posture as `Consolidation / post-travel return observation`: travel-directed omissions are not training debt, ordinary return is observed before progression, and the unresolved reserve question remains secondary until normal conditions are restored.
+- Updated README and LATEST machine-readable summaries to the governed W38 extension: 231 daily rows through 2026-09-27, 231 canonical sleep rows through 2026-09-27, 373 completed training sessions through 2026-09-26, and 50 bounded context events through 2026-09-27.
+- Advanced `docs/OBSERVER_QUICKSTART.md` and `docs/NEWCOMER_PATH.md` so the most recent closed report is W38 and the weekly-versus-broader state distinction reflects the W39 posture.
+- Advanced `tools/validate_coherence.py` to protect W39 active / W38 closed pointers and the post-travel return posture while retaining the published v1.1.0 release identity and canonical broader substate.
+- No scientific data, phase declaration, training prescription, Model Error outcome, DQ status, August snapshot interpretation, published release identity, Git tag, or DOI lineage is changed by this synchronization batch.
+
+
 ### September 29 W38 closeout and W39 initialization
 
 - Closed `reports/2026-W38.md` as the retrospective record for 2026-09-21 through 2026-09-27.
