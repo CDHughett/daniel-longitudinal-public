@@ -32,16 +32,16 @@ Active phase:
 Phase 2 — Load Integration
 
 Weekly operating posture:
-Consolidation / reserve-replication observation
+Consolidation / post-travel return observation
 
 Broader Phase 2 substate:
 Consolidation / lock-in observation
 
 Active weekly window:
-2026-W38
+2026-W39
 
 Most recent closed window:
-2026-W37
+2026-W38
 
 Open model-error records:
 none in protected block 041–046
@@ -65,7 +65,7 @@ August structured molecular integration:
 complete for currently represented fields
 
 Current weekly posture:
-preserve the unchanged B1 + Load Integration architecture while observing whether preliminary reserve replicates before any governed escalation
+finish the travel interval without repayment behavior, restore the unchanged B1 + Load Integration architecture under ordinary conditions, and only then revisit whether a governed progression probe is justified
 ```
 
 Current state source: [`LATEST.md`](./LATEST.md)
@@ -134,8 +134,9 @@ Current August physical and molecular source artifacts are preserved under [`sna
 # Reports
 
 - [`reports/README.md`](./reports/README.md) — report lifecycle
-- [`reports/2026-W38.md`](./reports/2026-W38.md) — current active report
-- [`reports/2026-W37.md`](./reports/2026-W37.md) — most recent closed report
+- [`reports/2026-W39.md`](./reports/2026-W39.md) — current active report
+- [`reports/2026-W38.md`](./reports/2026-W38.md) — most recent closed report
+- [`reports/2026-W37.md`](./reports/2026-W37.md) — prior successful-re-entry / preliminary-reserve window
 - [`reports/2026-W36.md`](./reports/2026-W36.md) — prior natural-interruption window
 - [`reports/2026-W34.md`](./reports/2026-W34.md) — prior ordinary continuity window
 - [`reports/2026-W33.md`](./reports/2026-W33.md) — August testing/reload window
