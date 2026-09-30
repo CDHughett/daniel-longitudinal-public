@@ -255,6 +255,10 @@ Machine-readable validator:
 
 [`tools/validate_machine_readable.py`](./tools/validate_machine_readable.py)
 
+Latest weekly rollover validator:
+
+[`tools/validate_weekly_rollover.py`](./tools/validate_weekly_rollover.py)
+
 August snapshot cross-layer validator:
 
 [`tools/validate_august_snapshot.py`](./tools/validate_august_snapshot.py)
