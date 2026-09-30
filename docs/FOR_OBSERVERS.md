@@ -286,6 +286,7 @@ The current read-only validation suite is:
 ```text
 tools/validate_repository.py
 tools/validate_machine_readable.py
+tools/validate_weekly_rollover.py
 tools/validate_august_snapshot.py
 tools/validate_coherence.py
 ```
@@ -294,6 +295,7 @@ At a high level:
 
 - `validate_repository.py` checks repository mechanics and selected governance-protected state.
 - `validate_machine_readable.py` checks the daily/training/event layer for identifier, date, vocabulary, duration-expression, source-reference, event-interval, and cross-file relationship rules.
+- `validate_weekly_rollover.py` recomputes the newest closed weekly report from committed daily/sleep/training data and verifies the active/closed report boundary plus exact closed-window private-source registration.
 - `validate_august_snapshot.py` protects the completed August 2026 snapshot across its source, structured, provenance, and Model Error 043 layers.
 - `validate_coherence.py` protects selected live public-facing relationships that can drift after a release, including current weekly pointers, release identity, and the weekly-posture versus broader-substate distinction.
 
