@@ -13,6 +13,17 @@ Biological interpretation belongs in `/reports`. This file records release-level
 
 ## [Unreleased]
 
+### September 29 weekly-rollover and temperature-semantics hardening
+
+- Clarified the legacy v1 `body_temp_f` field across `DATA_DICTIONARY.md`, `schemas/machine-readable-layer-v1.md`, and `MEASUREMENT_SOURCES.md`: RingConn-derived Daily Biomarkers values represent wearable skin temperature, not clinical/core body temperature.
+- Preserved the existing `body_temp_f` column and all historical values for v1 backward compatibility; no data rewrite or inferred temperature correction was introduced.
+- Added `tools/validate_weekly_rollover.py`, a read-only validator that dynamically identifies the newest active and immediately preceding closed weekly reports, verifies contiguous seven-day windows, recomputes the latest closed report's structured weekly metrics from committed daily/sleep/training data, checks B1/Load Integration exposure notes, and requires an exact registered private-source manifest entry for the closed observation window.
+- Added the latest weekly rollover validator to the normal pull-request/push validation workflow and to current observer/verification documentation.
+- Hardened `tools/validate_coherence.py` so the weekly-rollover validator cannot silently disappear from current validation documentation or observer navigation.
+- Expanded release-candidate package verification to run the complete current validator suite both before packaging and again from the extracted immutable archive, including the previously omitted post-release coherence validator.
+- No scientific data row, weekly report result, phase declaration, training prescription, Model Error outcome, DQ status, August snapshot interpretation, published release identity, Git tag, or DOI lineage is changed by this hardening batch.
+
+
 ### September 29 W38/W39 post-rollover audit
 
 - Added `docs/audits/2026-09-29-post-weekly-rollover-audit.md` covering source identity, exact historical-prefix preservation, W38 arithmetic reproduction, canonical sleep semantics, training/context representation, weekly lifecycle, current-state synchronization, privacy, release/phase/model-error invariants, and CI.
