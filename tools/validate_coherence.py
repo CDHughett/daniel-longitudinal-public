@@ -72,7 +72,8 @@ def main() -> int:
 
     require(errors, "The current published release is:" in versioning, "VERSIONING.md: current-release declaration missing")
     require(errors, FROZEN_RELEASE_COMMIT in versioning, "VERSIONING.md: frozen v1.1.0 commit missing")
-    require(errors, "## Level 4 — Post-Release Coherence Validation" in verification, "VERIFICATION.md: coherence-validation section missing")
+    require(errors, "## Level 6 — Post-Release Coherence Validation" in verification, "VERIFICATION.md: coherence-validation section missing")
+    require(errors, "python tools/validate_weekly_rollover.py" in verification, "VERIFICATION.md: weekly-rollover-validator command missing")
     require(errors, "python tools/validate_coherence.py" in verification, "VERIFICATION.md: coherence-validator command missing")
     require(errors, f'doi: "{VERSION_DOI}"' in citation, "CITATION.cff: finalized version DOI drift")
     require(errors, str(codemeta.get("version", "")).strip() == VERSION, "CODEMETA.json: version drift")
@@ -155,7 +156,12 @@ def main() -> int:
         require(errors, heading in concepts, f"docs/CONCEPTS.md: required terminology bridge missing: {heading}")
 
     require(errors, "## How The Current State Labels Fit Together" in start_here, "START_HERE: state-label hierarchy bridge missing")
+    require(errors, "tools/validate_weekly_rollover.py" in tools_readme, "tools/README.md: weekly rollover validator inventory missing")
     require(errors, "tools/validate_coherence.py" in tools_readme, "tools/README.md: coherence validator inventory missing")
+    require(errors, "tools/validate_weekly_rollover.py" in observer, "Observer quickstart: weekly rollover validator missing")
+    require(errors, "tools/validate_weekly_rollover.py" in for_observers, "FOR_OBSERVERS: weekly rollover validator missing")
+    require(errors, "tools/validate_weekly_rollover.py" in index, "INDEX.md: weekly rollover validator missing")
+    require(errors, "latest weekly rollover validator active" in latest, "LATEST.md: weekly rollover validator state missing")
 
     if errors:
         print("POST-RELEASE COHERENCE: FAIL")

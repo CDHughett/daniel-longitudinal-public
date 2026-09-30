@@ -1,6 +1,6 @@
 # Validation Tools
 
-The repository uses four read-only Python validators.
+The repository uses five read-only Python validators.
 
 ## Core repository validator
 
@@ -37,6 +37,26 @@ The extension checks:
 - related-week syntax
 - related model-error existence
 - cross-file date relationships
+
+## Latest weekly rollover validator
+
+```text
+python tools/validate_weekly_rollover.py
+```
+
+Checks the newest completed weekly closeout against the committed public structured layer.
+
+The validator dynamically derives the latest active report and immediately preceding closed report, then checks:
+
+- standardized Active/Closed lifecycle state
+- contiguous seven-day observation windows
+- seven daily-biomarker rows and seven canonical sleep rows for the closed window
+- the closed report's `Structured Weekly Metrics` arithmetic for bodyweight, HRV, heart-rate, sleep, and completed training
+- B1 / Load Integration session counts and reported exposure notes
+- the absence of completed training rows beyond the latest closed observation window
+- an exact registered private-source manifest entry for the closed observation window
+
+It is intentionally a closeout-arithmetic and lifecycle guard. It does not infer missing data, interpret biological significance, score predictions, or decide whether progression/phase changes are warranted.
 
 ## August snapshot cross-layer validator
 
@@ -76,6 +96,6 @@ A pass means the implemented mechanical/semantic/coherence checks passed. It doe
 
 ## CI
 
-`.github/workflows/validate.yml` runs all four validators on pushes to `main`, on pull requests, and by manual workflow dispatch.
+`.github/workflows/validate.yml` runs all five validators on pushes to `main`, on pull requests, and by manual workflow dispatch.
 
 The workflow is intentionally lightweight and read-only.

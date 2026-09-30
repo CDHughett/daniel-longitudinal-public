@@ -124,7 +124,7 @@ Current row count and endpoint are maintained in [`../data/DATA_COVERAGE.md`](..
 | `daily_hrv_ms` | number or blank | measurement / source-transcribed | milliseconds |
 | `resting_hr_bpm` | number or blank | measurement / source-transcribed | bpm |
 | `daily_avg_hr_bpm` | number or blank | measurement / source-transcribed | bpm |
-| `body_temp_f` | number or blank | measurement / source-transcribed | °F |
+| `body_temp_f` | number or blank | measurement / source-transcribed | °F; legacy v1 name. RingConn-derived Daily Biomarkers values represent wearable skin temperature, not clinical/core body temperature |
 | `mood_state` | category or blank | subjective | closed vocabulary |
 | `energy_state` | category or blank | subjective | closed vocabulary |
 | `gi_state` | category or blank | subjective | closed vocabulary |
@@ -133,6 +133,22 @@ Current row count and endpoint are maintained in [`../data/DATA_COVERAGE.md`](..
 | `sweating_state` | category or blank | subjective | closed vocabulary |
 | `context_tags` | semicolon list or blank | contextual / classified | extensible `snake_case` |
 | `source_ref` | text | provenance | required; canonical private-source form |
+
+## Legacy temperature-field semantics
+
+The v1 column name `body_temp_f` is preserved for backward compatibility with the existing public dataset.
+
+It is a source-transcribed temperature field, not a claim that every represented value is core body temperature. For Daily Biomarkers rows whose controlling measurement is RingConn-derived, the value represents wearable skin temperature.
+
+Do not:
+
+- reinterpret RingConn-derived values as clinical/core body temperature
+- overwrite historical values merely to normalize the label
+- infer a new temperature construct from neighboring dates
+
+Historical rows remain governed by their source provenance. A future schema version may introduce a clearer field name such as `wearable_skin_temp_f`; that would be a schema evolution, not a silent v1 rewrite.
+
+---
 
 ## Closed Vocabularies
 

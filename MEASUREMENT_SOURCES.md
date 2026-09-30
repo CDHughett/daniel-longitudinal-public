@@ -488,6 +488,32 @@ This is not interchangeable with:
 
 ---
 
+### Wearable skin temperature
+
+Some curated Daily Biomarkers temperature values are transcribed from RingConn wearable measurements.
+
+The current v1 public field is:
+
+```text
+body_temp_f
+```
+
+That name is a legacy archive label retained for backward compatibility. When the controlling source is RingConn-derived, the represented measurement is **wearable skin temperature**, not clinical/core body temperature.
+
+Accordingly, a RingConn-derived value in `body_temp_f` must not be interpreted as:
+
+- oral temperature
+- tympanic temperature
+- rectal temperature
+- ingestible/core temperature
+- a clinical fever measurement
+
+Historical rows remain source-transcribed and should be interpreted through their row-level provenance. The archive does not silently rewrite historical values or field names to create a stronger physiological claim than the source supports.
+
+A future schema version may introduce a clearer name such as `wearable_skin_temp_f`. Such a rename would require explicit schema/version documentation and would not alter the original v1 source-transcribed values.
+
+---
+
 ### Daily SpO₂ summaries
 
 Current provider fields:

@@ -1,11 +1,13 @@
 # Verification Guide
 
-This repository supports external verification at four complementary automated/mechanical levels:
+This repository supports external verification at six complementary automated/mechanical levels:
 
 1. **artifact verification** — confirms the identity of registered files
 2. **repository validation** — checks the mechanical integrity and governance-protected structure of the archive
 3. **machine-readable semantic validation** — checks the current daily/training/event schema contract and cross-file relationships
-4. **post-release coherence validation** — checks selected live public-facing state relationships that can drift even when lower-level checks remain green
+4. **latest weekly rollover validation** — recomputes the newest closed weekly report from committed structured evidence and checks the closeout lifecycle/provenance boundary
+5. **snapshot-specific cross-layer validation** — protects committed coordinated snapshot state where a dedicated cross-layer validator exists
+6. **post-release coherence validation** — checks selected live public-facing state relationships that can drift even when lower-level checks remain green
 
 Human semantic review remains a separate layer after automated validation.
 
@@ -128,7 +130,34 @@ This validator is also read-only. It does not infer missing sessions, rewrite so
 
 ---
 
-## Snapshot-Specific Cross-Layer Validation — August 2026
+## Level 4 — Latest Weekly Rollover Validation
+
+The latest weekly rollover validator is:
+
+```text
+tools/validate_weekly_rollover.py
+```
+
+It dynamically identifies the newest active weekly report and the immediately preceding closed weekly report.
+
+For that newest closed window, it checks:
+
+- standardized `Active` / `Closed` lifecycle state
+- contiguous seven-day observation windows
+- complete seven-row daily-biomarker and canonical-sleep coverage
+- the closed report's `Structured Weekly Metrics` arithmetic
+- B1 and Load Integration session counts, minutes, and B1 distance notes
+- total completed-session count and formal training minutes
+- the absence of completed training rows beyond the latest closed-week endpoint
+- an exact registered private-source manifest entry covering the closed observation window
+
+The validator derives the report arithmetic from the committed public structured layer. It does not learn expected values from the weekly report itself.
+
+It is read-only and does not infer missing data, decide whether a training omission should have occurred, score predictions, interpret biological meaning, or determine whether progression or a phase transition is warranted.
+
+---
+
+## Level 5 — Snapshot-Specific Cross-Layer Validation — August 2026
 
 A completed snapshot may receive a narrow additional validator when the same governed state is represented across multiple layers.
 
@@ -168,7 +197,7 @@ It does not interpret the biological result, rescore Record 043, alter preregist
 
 ---
 
-## Level 4 — Post-Release Coherence Validation
+## Level 6 — Post-Release Coherence Validation
 
 The post-release coherence validator is:
 
@@ -239,6 +268,7 @@ The additional validators may be run from the repository root with:
 
 ```text
 python tools\validate_machine_readable.py
+python tools\validate_weekly_rollover.py
 python tools\validate_august_snapshot.py
 python tools\validate_coherence.py
 ```
@@ -263,6 +293,7 @@ The additional validators may be run with:
 
 ```text
 python .\tools\validate_machine_readable.py
+python .\tools\validate_weekly_rollover.py
 python .\tools\validate_august_snapshot.py
 python .\tools\validate_coherence.py
 ```
@@ -287,6 +318,7 @@ The additional validators may be run with:
 
 ```text
 python3 tools/validate_machine_readable.py
+python3 tools/validate_weekly_rollover.py
 python3 tools/validate_august_snapshot.py
 python3 tools/validate_coherence.py
 ```
@@ -353,7 +385,7 @@ JSON output includes:
 - validation metrics
 - individual findings
 
-The core and machine-readable validators support local command-line execution, and the repository validator supports `--json` structured output. The August snapshot and post-release coherence validators also support local command-line execution with human-readable pass/fail output.
+The core and machine-readable validators support local command-line execution, and the repository validator supports `--json` structured output. The weekly rollover, August snapshot, and post-release coherence validators also support local command-line execution with human-readable pass/fail output.
 
 Repository validation is also executed automatically in GitHub Actions as described below.
 
@@ -1395,7 +1427,7 @@ That status should change only after direct provider confirmation.
 For a routine local verification cycle:
 
 1. pull or download the latest repository state
-2. run all applicable read-only validators (`tools/validate_repository.py`, `tools/validate_machine_readable.py`, `tools/validate_august_snapshot.py`, and `tools/validate_coherence.py`)
+2. run all applicable read-only validators (`tools/validate_repository.py`, `tools/validate_machine_readable.py`, `tools/validate_weekly_rollover.py`, `tools/validate_august_snapshot.py`, and `tools/validate_coherence.py`)
 3. review all errors
 4. review warnings against `data/DATA_QUALITY_NOTES.md`
 5. spot-check recently changed artifacts
@@ -1466,6 +1498,7 @@ and executes:
 ```text
 python tools/validate_repository.py
 python tools/validate_machine_readable.py
+python tools/validate_weekly_rollover.py
 python tools/validate_august_snapshot.py
 python tools/validate_coherence.py
 ```
