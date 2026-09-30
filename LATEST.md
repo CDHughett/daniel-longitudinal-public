@@ -143,6 +143,7 @@ Fixed scoring windows remain fixed. Later evidence does not retroactively rescue
 
 - read-only core repository validator active
 - read-only machine-readable semantic validator active
+- latest weekly rollover validator active
 - read-only August snapshot cross-layer validator active
 - post-release coherence validator active
 - GitHub Actions runs all current validators on pushes to `main` and pull requests
