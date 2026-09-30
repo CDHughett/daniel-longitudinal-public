@@ -205,7 +205,7 @@ Fields:
 | `daily_hrv_ms` | daily HRV metric in milliseconds |
 | `resting_hr_bpm` | resting heart rate |
 | `daily_avg_hr_bpm` | daily average heart rate |
-| `body_temp_f` | body temperature in °F |
+| `body_temp_f` | legacy v1 temperature field in °F; for RingConn-derived Daily Biomarkers rows this represents wearable skin temperature, not clinical/core body temperature |
 | `mood_state` | structured subjective mood state |
 | `energy_state` | structured subjective energy state |
 | `gi_state` | structured GI state |
@@ -214,6 +214,8 @@ Fields:
 | `sweating_state` | structured sweating state |
 | `context_tags` | semicolon-separated descriptive context tags |
 | `source_ref` | row-level provenance locator |
+
+The `body_temp_f` name is retained for v1 backward compatibility. It must not be interpreted as a universal core-body-temperature field. When the controlling source is RingConn-derived, the value is wearable skin temperature. Historical rows remain source-transcribed and should be interpreted through their provenance rather than silently relabeled. A future schema version may adopt a clearer field name such as `wearable_skin_temp_f` without rewriting the v1 history.
 
 The controlled vocabularies are defined in the machine-readable schema.
 
