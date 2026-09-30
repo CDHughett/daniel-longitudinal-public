@@ -13,6 +13,51 @@ Biological interpretation belongs in `/reports`. This file records release-level
 
 ## [Unreleased]
 
+### September 29 W38/W39 post-rollover audit
+
+- Added `docs/audits/2026-09-29-post-weekly-rollover-audit.md` covering source identity, exact historical-prefix preservation, W38 arithmetic reproduction, canonical sleep semantics, training/context representation, weekly lifecycle, current-state synchronization, privacy, release/phase/model-error invariants, and CI.
+- The audit reproduced W38 from the public structured layer: 230.2 lb morning bodyweight, 67.1 ms daily HRV, 44.9 bpm resting HR, 60.4 bpm daily average HR, 73.7 ms sleep HRV, 50.7 bpm sleep HR, 7h29m total sleep, 1h16m deep sleep, 58m REM, and 556 formal training minutes.
+- Corrected one narrow derived W38 bodyweight-comparison sentence: the difference between the unrounded W37 and W38 six-measurement means is approximately 2.3 lb. The prior 2.4-lb wording resulted from subtracting separately rounded display means; no underlying daily weight or reported weekly mean changed.
+- Confirmed exact append-only preservation of the five governed public/provenance files and retained the 2026-09-27 zero-session day without a synthetic training row.
+- Confirmed W39 active / W38 closed lifecycle, `Consolidation / post-travel return observation` weekly posture, unresolved reserve replication, undeclared Phase 2D status, closed Model Error 041–046 state, unresolved DQ-011, and fixed v1.1.0 release/DOI identity.
+- Privacy review found no newly introduced direct contact/location identifiers, private names screened during source lock, private binary artifact, or unnecessary travel/family detail.
+- The corrected pre-audit content head passed all four repository validation layers. Final merge readiness remains contingent on a green validation run including this audit artifact and changelog entry.
+
+
+### September 29 W39 current-state synchronization
+
+- Advanced `LATEST.md`, `README.md`, and `INDEX.md` to W39 active / W38 closed while preserving the broader Phase 2 `Consolidation / lock-in observation` substate.
+- Reframed the immediate weekly posture as `Consolidation / post-travel return observation`: travel-directed omissions are not training debt, ordinary return is observed before progression, and the unresolved reserve question remains secondary until normal conditions are restored.
+- Updated README and LATEST machine-readable summaries to the governed W38 extension: 231 daily rows through 2026-09-27, 231 canonical sleep rows through 2026-09-27, 373 completed training sessions through 2026-09-26, and 50 bounded context events through 2026-09-27.
+- Advanced `docs/OBSERVER_QUICKSTART.md` and `docs/NEWCOMER_PATH.md` so the most recent closed report is W38 and the weekly-versus-broader state distinction reflects the W39 posture.
+- Advanced `tools/validate_coherence.py` to protect W39 active / W38 closed pointers and the post-travel return posture while retaining the published v1.1.0 release identity and canonical broader substate.
+- No scientific data, phase declaration, training prescription, Model Error outcome, DQ status, August snapshot interpretation, published release identity, Git tag, or DOI lineage is changed by this synchronization batch.
+
+
+### September 29 W38 closeout and W39 initialization
+
+- Closed `reports/2026-W38.md` as the retrospective record for 2026-09-21 through 2026-09-27.
+- Preserved the Week 38 reserve-replication question as unresolved because no second interpretable capacity probe occurred; repeated subjective ease was not converted into a progression claim.
+- Recorded Week 38's primary retrospective finding as governed consolidation: repeated ease did not trigger escalation, and travel-directed omissions did not trigger compensatory workload or training debt.
+- Opened `reports/2026-W39.md` for 2026-09-28 through 2026-10-04 with weekly operating posture `Consolidation / post-travel return observation`.
+- Carried forward the lower observed bodyweight state, the unresolved reserve/progression question, the 2026-09-18 supplementation-context boundary, DQ-011, and undeclared Phase 2D status without strengthening any of them beyond the source evidence.
+- Preserved Model Error records 041–046 as closed and introduced no new formal prediction, protocol expansion, recovery intervention, release identity, Git tag, or DOI change.
+- Current-facing pointer synchronization is handled in the companion rollover batch before this draft PR becomes merge-ready.
+
+
+### September 29 W38 machine-readable extension and provenance registration
+
+- Extended governed public daily-biomarker and canonical sleep coverage through `2026-09-27`, producing 231 continuous daily rows in each dataset.
+- Added 11 completed W38 training-session rows through `2026-09-26`, advancing the training dataset to 373 sessions; 2026-09-27 remains represented as a zero-session day without a synthetic training row.
+- Added one bounded W38 travel/context event covering the 2026-09-26 through 2026-09-27 portion of an out-of-town travel period, advancing the context index to 50 events while preserving that the travel interval continued beyond the W38 report window.
+- Registered exact source provenance for `Daniel_Dataset_v1.32` (368,070 bytes; SHA-256 `a9f03dde03a8b71846ede5fdec3214fe9009b93fca27c54f4bf587107a38a870`) covering 2026-09-21 through 2026-09-27.
+- Preserved mixed source-date encoding through controlled ISO date-index normalization without changing associated biological, sleep, or training values.
+- Preserved explicit Sleep Log awake totals rather than deriving `awake_min` from time-in-bed minus total sleep.
+- Kept the W38 travel representation privacy-minimized and limited to analytically relevant context.
+- Updated `data/DATA_COVERAGE.md` to the new live structured counts and endpoints.
+- No W38 report lifecycle, phase, protocol, Model Error, DQ, August snapshot, published release, Git tag, or DOI state is changed by this batch.
+
+
 ### September 22 supplementation-architecture disclosure
 
 - Added `protocols/supplementation-architecture-2026-09-18.md` to preserve a material supplementation transition effective 2026-09-18 and first disclosed to the public archive on 2026-09-22.
