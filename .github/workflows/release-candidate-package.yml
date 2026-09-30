@@ -27,7 +27,9 @@ jobs:
         run: |
           python tools/validate_repository.py
           python tools/validate_machine_readable.py
+          python tools/validate_weekly_rollover.py
           python tools/validate_august_snapshot.py
+          python tools/validate_coherence.py
 
       - name: Build and independently verify release archive
         shell: bash
@@ -54,7 +56,9 @@ jobs:
 
           python "$root/tools/validate_repository.py"
           python "$root/tools/validate_machine_readable.py"
+          python "$root/tools/validate_weekly_rollover.py"
           python "$root/tools/validate_august_snapshot.py"
+          python "$root/tools/validate_coherence.py"
 
           python - "$root" <<'PY'
           import csv
