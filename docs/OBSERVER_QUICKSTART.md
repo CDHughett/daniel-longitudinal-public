@@ -151,6 +151,12 @@ Machine-readable semantic validator:
 python tools/validate_machine_readable.py
 ```
 
+Latest weekly rollover validator:
+
+```text
+python tools/validate_weekly_rollover.py
+```
+
 August snapshot cross-layer validator:
 
 ```text
