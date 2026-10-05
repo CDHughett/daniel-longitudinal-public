@@ -13,6 +13,21 @@ Biological interpretation belongs in `/reports`. This file records release-level
 
 ## [Unreleased]
 
+### October 5 W39/W40 rollover and integrated coherence audit
+
+- Extended the governed public machine-readable layer through closed W39: 238 daily-biomarker rows and 238 canonical sleep rows through 2026-10-04, 383 completed training sessions through 2026-10-04, and 51 bounded context events through 2026-09-29.
+- Registered exact private-source provenance for `Daniel_Dataset_v1.33` covering 2026-09-28 through 2026-10-04 (366,510 bytes; SHA-256 `c49f1806b140d49cfb956b8bd2f083c9e18c20455f1126ce6b5f39e28c76444c`).
+- Closed `reports/2026-W39.md` as a short-interruption retention observation and opened `reports/2026-W40.md` with weekly posture `Consolidation / full-home baseline observation`; no progression, Phase 2D declaration, new Model Error record, or recovery intervention was introduced.
+- W39 public metrics reproduce from committed structured data as 228.7 lb morning bodyweight, 65.6 ms daily HRV, 45.0 bpm resting HR, 60.7 bpm daily average HR, 71.3 ms sleep HRV, 50.7 bpm sleep HR, 7h20m total sleep, 1h20m deep sleep, 58m REM, 5 B1 sessions / 275 minutes / 15.10 miles, 5 Load Integration sessions / 225 minutes, and 500 formal training minutes across 10 sessions.
+- Advanced README, LATEST, INDEX, observer/newcomer guidance, START_HERE, and CONCEPTS to W40 active / W39 closed while preserving the broader Phase 2 `Consolidation / lock-in observation` substate.
+- The integrated coherence/drift pass found stale current-posture state in START_HERE and CONCEPTS that the previous validator did not protect; both live surfaces were corrected without rewriting historical documents or conceptual examples.
+- Hardened `tools/validate_coherence.py` so active week, most-recent-closed week, and current weekly posture are derived dynamically from the live weekly-report lifecycle rather than weekly hard-coded constants.
+- Added direct coherence protection for current weekly posture across README/LATEST/INDEX/START_HERE/CONCEPTS and for README/LATEST structured-data row-count/endpoints derived from the committed CSVs.
+- Added `docs/audits/2026-10-05-post-weekly-rollover-audit.md` covering source identity, append-only preservation, W39 arithmetic, sleep/training/context semantics, lifecycle, current-state synchronization, drift findings, privacy, scientific/release invariants, and the final CI gate.
+- Model Error records 041–046 remain closed, Record 043 remains not supported / `overall_improvement_not_met` / over, DQ-011 remains unresolved, Phase 2D remains undeclared, and published v1.1.0/tag/DOI identity remains unchanged.
+- Final merge readiness requires a green five-validator pull-request run on the audited branch head; any later content mutation reopens that gate.
+
+
 ### September 29 validation-hardening audit
 
 - Added `docs/audits/2026-09-29-validation-hardening-audit.md` covering the legacy temperature-field semantic boundary, the new latest-weekly-rollover validator, validator-inventory anti-drift, release-candidate package coverage, change boundaries, and preserved scientific/release invariants.
