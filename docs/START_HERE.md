@@ -59,7 +59,7 @@ broader operating substate
 Consolidation / lock-in observation
         ↓
 weekly operating posture
-Consolidation / reserve-replication observation
+Consolidation / full-home baseline observation
         ↓
 session-level observations
 ambient / trait-like / trait-level execution, reserve evidence, etc.

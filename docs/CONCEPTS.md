@@ -463,7 +463,7 @@ AI disclosure:
 
 # Current Terminology State
 
-As of the current September 2026 archive state:
+As of the current October 2026 archive state:
 
 ```text
 Active phase:
@@ -473,7 +473,7 @@ Operating substate:
 Consolidation / lock-in observation
 
 Weekly operating posture:
-Consolidation / reserve-replication observation
+Consolidation / full-home baseline observation
 
 Phase 2D:
 undeclared

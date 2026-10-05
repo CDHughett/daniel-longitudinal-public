@@ -75,7 +75,7 @@ The private-source manifest registers SHA-256 only when the exact retained priva
 
 Open the most recent closed report:
 
-[`../reports/2026-W38.md`](../reports/2026-W38.md)
+[`../reports/2026-W39.md`](../reports/2026-W39.md)
 
 Then compare its material values with the applicable structured datasets.
 
@@ -133,7 +133,7 @@ Read:
 
 Look for whether corrections, phase decisions, prediction closure, and source conflicts are handled under declared rules rather than outcome preference.
 
-When `LATEST.md` uses an immediate weekly operating posture such as post-travel return observation while `PHASE_MAP.md` uses the broader consolidation / lock-in substate, treat the former as the current observation condition and the latter as the canonical broader Phase 2 interpretation unless a formal retrospective declaration states otherwise.
+When `LATEST.md` uses the immediate weekly operating posture `Consolidation / full-home baseline observation` while `PHASE_MAP.md` uses the broader `Consolidation / lock-in observation` substate, treat the former as the current observation condition and the latter as the canonical broader Phase 2 interpretation unless a formal retrospective declaration states otherwise.
 
 ---
 

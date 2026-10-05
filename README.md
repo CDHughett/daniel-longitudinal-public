@@ -36,17 +36,17 @@ Specialized material such as model-error records, source provenance, testing art
 
 # Current archive state
 
-**Plain-language summary:** Training remains stable and low-overhead. Week 38 closed with repeated ease preserved without forced progression, and Week 39 is watching whether normal B1 + Load Integration operation returns cleanly after travel before progression is reconsidered.
+**Plain-language summary:** Training remains stable and low-overhead. Week 39 closed with the normal B1 + Load Integration architecture returning immediately after travel and remaining fully available across five consecutive home training days. Week 40 is observing a complete ordinary home week under the unchanged prescription before any progression decision is reconsidered.
 
 The formal archive labels below preserve the precise phase/state vocabulary used by the reports and validators.
 
 | Domain | Current state |
 |---|---|
 | Phase | **Phase 2 — Load Integration** |
-| Weekly operating posture | **Consolidation / post-travel return observation** |
+| Weekly operating posture | **Consolidation / full-home baseline observation** |
 | Broader Phase 2 substate | **Consolidation / lock-in observation** |
-| Active weekly window | **2026-W39** |
-| Most recent closed window | **2026-W38** |
+| Active weekly window | **2026-W40** |
+| Most recent closed window | **2026-W39** |
 | Installed training architecture | **B1 + Load Integration** |
 | Open model-error records | **none in protected block 041–046** |
 | Record 043 | **closed / not supported — `overall_improvement_not_met` / over** |
@@ -57,13 +57,13 @@ Current-state anchors retained for repository validation:
 
 ```text
 Active weekly window:
-2026-W39
+2026-W40
 
 Most recent closed window:
-2026-W38
+2026-W39
 ```
 
-In formal terms, Week 39 preserves the unchanged B1 + Load Integration architecture and uses a `post-travel return` posture. Travel-directed omissions are not training debt, a successful return is not automatic progression authorization, and Phase 2D remains undeclared.
+In formal terms, Week 39 demonstrated short-interruption retention: travel ended without repayment behavior, and normal B1 + Load Integration returned without a staged rebuilding period. Week 40 preserves the unchanged architecture for a complete ordinary home week before the separate reserve/progression question is reviewed. Phase 2D remains undeclared.
 
 Term definitions: [`docs/CONCEPTS.md`](./docs/CONCEPTS.md)  
 Authoritative current detail: [`LATEST.md`](./LATEST.md)
@@ -72,16 +72,16 @@ Authoritative current detail: [`LATEST.md`](./LATEST.md)
 
 # Machine-readable core
 
-Current public structured coverage through 2026-09-27, with the session-indexed training endpoint at 2026-09-26:
+Current public daily, sleep, and completed-training coverage extends through 2026-10-04. The bounded context-event index currently ends on 2026-09-29 because no later W39 observation required a separate event row.
 
 | Dataset | Unit | Coverage |
 |---|---|---|
-| [`data/daily_biomarkers_v1.csv`](./data/daily_biomarkers_v1.csv) | one row per represented day | 231 continuous rows through 2026-09-27 |
-| [`data/sleep_longitudinal_v1.csv`](./data/sleep_longitudinal_v1.csv) | one governed wake-date row | 231 continuous rows through 2026-09-27 |
-| [`data/training_blocks_v1.csv`](./data/training_blocks_v1.csv) | one row per completed session/block | 373 rows through 2026-09-26 |
-| [`data/context_events_v1.csv`](./data/context_events_v1.csv) | one bounded context event | 50 rows through 2026-09-27 |
+| [`data/daily_biomarkers_v1.csv`](./data/daily_biomarkers_v1.csv) | one row per represented day | 238 continuous rows through 2026-10-04 |
+| [`data/sleep_longitudinal_v1.csv`](./data/sleep_longitudinal_v1.csv) | one governed wake-date row | 238 continuous rows through 2026-10-04 |
+| [`data/training_blocks_v1.csv`](./data/training_blocks_v1.csv) | one row per completed session/block | 383 rows through 2026-10-04 |
+| [`data/context_events_v1.csv`](./data/context_events_v1.csv) | one bounded context event | 51 rows through 2026-09-29 |
 
-Training is session-indexed: a represented day with zero completed training sessions does not require a synthetic training row.
+Training is session-indexed:Training is session-indexed: a represented day with zero completed training sessions does not require a synthetic training row.
 
 The daily/training/event layers are curated public extracts derived primarily from governed private `Daniel_Dataset_v1.x` source states. They are **not raw provider exports**.
 
@@ -199,6 +199,7 @@ Read-only validators:
 ```text
 python tools/validate_repository.py
 python tools/validate_machine_readable.py
+python tools/validate_weekly_rollover.py
 python tools/validate_august_snapshot.py
 python tools/validate_coherence.py
 ```

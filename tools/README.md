@@ -77,8 +77,10 @@ Protects a deliberately narrow set of live public-facing relationships that can 
 - published `v1.1.0` identity
 - finalized version DOI and all-versions DOI across live orientation surfaces
 - `CITATION.cff` / `CODEMETA.json` release identity
-- current active-week and most-recent-closed-week pointers
-- observer/newcomer report pointers
+- active-week, most-recent-closed-week, and active weekly-posture state derived dynamically from the live weekly-report lifecycle
+- exact synchronization of that current state across README, LATEST, INDEX, START_HERE, and CONCEPTS
+- observer/newcomer most-recent-closed report pointers
+- live README/LATEST structured-data row-count and endpoint summaries derived from the committed CSVs
 - completed August-state language on live orientation documents
 - distinction between the immediate weekly operating posture and the broader canonical Phase 2 substate
 - current-facing validation-documentation role consistency, including protection against stale two-validator wording

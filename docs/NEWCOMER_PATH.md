@@ -101,7 +101,7 @@ Look for unresolved findings, corrected findings, source conflicts, and restrict
 
 Start with:
 
-[`../reports/2026-W38.md`](../reports/2026-W38.md)
+[`../reports/2026-W39.md`](../reports/2026-W39.md)
 
 Then inspect the underlying structured rows for the same window.
 

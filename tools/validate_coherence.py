@@ -2,10 +2,15 @@
 """Read-only post-release coherence checks for live public-facing surfaces.
 
 This validator protects a narrow class of drift discovered after the v1.1.0
-publication and subsequent observer-legibility audit: release/DOI identity,
-current report pointers, completed August state, weekly-versus-broader state
-distinctions, current validation-documentation roles, and selected
-first-contact navigation/language boundaries.
+publication and subsequent observer-legibility audits: release/DOI identity,
+current report pointers, weekly-versus-broader state distinctions, live
+structured-count summaries, current validation-documentation roles, and
+selected first-contact navigation/language boundaries.
+
+Current week, prior closed week, and immediate weekly posture are derived from
+the live weekly-report lifecycle rather than hard-coded into this validator.
+That keeps the validator capable of detecting stale orientation surfaces after
+a weekly rollover without requiring its own weekly constant update.
 
 It does not edit files, query external services, or reinterpret scientific
 outcomes.
@@ -13,7 +18,9 @@ outcomes.
 
 from __future__ import annotations
 
+import csv
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -23,10 +30,11 @@ VERSION = "1.1.0"
 VERSION_DOI = "10.5281/zenodo.22759132"
 ALL_VERSIONS_DOI = "10.5281/zenodo.20815611"
 FROZEN_RELEASE_COMMIT = "92126e1cc882c3822d9e03b30b11cfc1d30b4fbb"
-ACTIVE_WEEK = "2026-W39"
-MOST_RECENT_CLOSED = "2026-W38"
-WEEKLY_POSTURE = "Consolidation / post-travel return observation"
 BROADER_SUBSTATE = "Consolidation / lock-in observation"
+
+WEEK_RE = re.compile(r"^(\d{4})-W(\d{2})\.md$")
+STATUS_RE = re.compile(r"^\*\*Status:\*\*\s*(Active|Closed)\s*$", re.MULTILINE)
+POSTURE_RE = re.compile(r"^\*\*Weekly posture:\*\*\s*(.+?)\s*$", re.MULTILINE)
 
 
 def read(path: str) -> str:
@@ -36,6 +44,86 @@ def read(path: str) -> str:
 def require(errors: list[str], condition: bool, message: str) -> None:
     if not condition:
         errors.append(message)
+
+
+def current_weekly_state(errors: list[str]) -> tuple[str, str, str]:
+    """Derive active/prior report IDs and the active weekly posture."""
+
+    report_dir = ROOT / "reports"
+    weekly: list[tuple[int, int, Path]] = []
+
+    for path in report_dir.glob("2026-W*.md"):
+        match = WEEK_RE.match(path.name)
+        if match:
+            weekly.append((int(match.group(1)), int(match.group(2)), path))
+
+    weekly.sort()
+
+    if len(weekly) < 2:
+        errors.append("weekly lifecycle: fewer than two standardized weekly reports found")
+        return "", "", ""
+
+    active_path = weekly[-1][2]
+    closed_path = weekly[-2][2]
+    active_text = active_path.read_text(encoding="utf-8-sig")
+    closed_text = closed_path.read_text(encoding="utf-8-sig")
+
+    active_status = STATUS_RE.search(active_text)
+    closed_status = STATUS_RE.search(closed_text)
+    posture_match = POSTURE_RE.search(active_text)
+
+    require(
+        errors,
+        bool(active_status and active_status.group(1) == "Active"),
+        f"{active_path.as_posix()}: newest weekly report is not standardized Active",
+    )
+    require(
+        errors,
+        bool(closed_status and closed_status.group(1) == "Closed"),
+        f"{closed_path.as_posix()}: immediately prior weekly report is not standardized Closed",
+    )
+    require(
+        errors,
+        posture_match is not None,
+        f"{active_path.as_posix()}: active Weekly posture line missing",
+    )
+
+    return (
+        active_path.stem,
+        closed_path.stem,
+        posture_match.group(1).strip() if posture_match else "",
+    )
+
+
+def csv_profile(
+    relative_path: str,
+    date_field: str,
+    errors: list[str],
+) -> tuple[int, str]:
+    """Return CSV data-row count and latest represented ISO-date string."""
+
+    path = ROOT / relative_path
+    try:
+        with path.open("r", encoding="utf-8-sig", newline="") as handle:
+            rows = list(csv.DictReader(handle))
+    except (OSError, UnicodeError, csv.Error) as exc:
+        errors.append(f"{relative_path}: unable to parse live CSV profile: {exc}")
+        return 0, ""
+
+    if not rows:
+        errors.append(f"{relative_path}: no data rows available for live profile")
+        return 0, ""
+
+    if date_field not in rows[0]:
+        errors.append(f"{relative_path}: required live-profile field {date_field!r} missing")
+        return len(rows), ""
+
+    dates = [row.get(date_field, "").strip() for row in rows if row.get(date_field, "").strip()]
+    if not dates:
+        errors.append(f"{relative_path}: no represented {date_field} values")
+        return len(rows), ""
+
+    return len(rows), max(dates)
 
 
 def main() -> int:
@@ -59,6 +147,29 @@ def main() -> int:
     citation = read("CITATION.cff")
     codemeta = json.loads(read("CODEMETA.json"))
 
+    active_week, most_recent_closed, weekly_posture = current_weekly_state(errors)
+
+    daily_rows, daily_end = csv_profile(
+        "data/daily_biomarkers_v1.csv",
+        "date",
+        errors,
+    )
+    sleep_rows, sleep_end = csv_profile(
+        "data/sleep_longitudinal_v1.csv",
+        "date",
+        errors,
+    )
+    training_rows, training_end = csv_profile(
+        "data/training_blocks_v1.csv",
+        "date",
+        errors,
+    )
+    context_rows, context_end = csv_profile(
+        "data/context_events_v1.csv",
+        "end_date",
+        errors,
+    )
+
     # Published release identity.
     for label, text in (
         ("README.md", readme),
@@ -80,14 +191,63 @@ def main() -> int:
     require(errors, str(codemeta.get("identifier", "")).strip() == f"https://doi.org/{VERSION_DOI}", "CODEMETA.json: version identifier drift")
     require(errors, str(codemeta.get("sameAs", "")).strip() == f"https://doi.org/{ALL_VERSIONS_DOI}", "CODEMETA.json: all-versions DOI drift")
 
-    # Current report pointers.
-    for label, text in (("README.md", readme), ("LATEST.md", latest)):
-        require(errors, ACTIVE_WEEK in text, f"{label}: active week {ACTIVE_WEEK} missing")
-        require(errors, MOST_RECENT_CLOSED in text, f"{label}: most recent closed week {MOST_RECENT_CLOSED} missing")
+    # Current report pointers are derived from the live report lifecycle.
+    if active_week and most_recent_closed:
+        exact_pointer_expectations = {
+            "README.md": (
+                readme,
+                f"Active weekly window:\n{active_week}",
+                f"Most recent closed window:\n{most_recent_closed}",
+            ),
+            "LATEST.md": (
+                latest,
+                f"- **Active window:** {active_week}",
+                f"- **Prior window:** {most_recent_closed} closed",
+            ),
+            "INDEX.md": (
+                index,
+                f"Active weekly window:\n{active_week}",
+                f"Most recent closed window:\n{most_recent_closed}",
+            ),
+        }
+        for label, (text, active_marker, closed_marker) in exact_pointer_expectations.items():
+            require(errors, active_marker in text, f"{label}: active-week pointer drift; expected {active_week}")
+            require(
+                errors,
+                closed_marker in text,
+                f"{label}: most-recent-closed pointer drift; expected {most_recent_closed}",
+            )
 
-    for label, text in (("docs/OBSERVER_QUICKSTART.md", observer), ("docs/NEWCOMER_PATH.md", newcomer)):
-        require(errors, f"reports/{MOST_RECENT_CLOSED}.md" in text, f"{label}: most recent closed report pointer drift")
-        require(errors, "reports/2026-W37.md" not in text, f"{label}: stale W37 closed-report pointer remains")
+        require(
+            errors,
+            f"reports/{active_week}.md" in latest,
+            f"LATEST.md: active report pointer drift; expected reports/{active_week}.md",
+        )
+        require(
+            errors,
+            f"reports/{most_recent_closed}.md" in latest,
+            f"LATEST.md: closed report pointer drift; expected reports/{most_recent_closed}.md",
+        )
+        require(
+            errors,
+            f"reports/{active_week}.md" in index,
+            f"INDEX.md: active report pointer drift; expected reports/{active_week}.md",
+        )
+        require(
+            errors,
+            f"reports/{most_recent_closed}.md" in index,
+            f"INDEX.md: closed report pointer drift; expected reports/{most_recent_closed}.md",
+        )
+
+        for label, text in (
+            ("docs/OBSERVER_QUICKSTART.md", observer),
+            ("docs/NEWCOMER_PATH.md", newcomer),
+        ):
+            require(
+                errors,
+                f"reports/{most_recent_closed}.md" in text,
+                f"{label}: most recent closed report pointer drift; expected {most_recent_closed}",
+            )
 
     # August completion language should not regress on live orientation surfaces.
     forbidden_current_phrases = {
@@ -99,12 +259,85 @@ def main() -> int:
         for phrase in phrases:
             require(errors, phrase not in text, f"{label}: stale current-state phrase remains: {phrase!r}")
 
-    # Immediate weekly posture and broader canonical substate must be explicit.
-    require(errors, f"**Weekly operating posture:** {WEEKLY_POSTURE}" in latest, "LATEST.md: weekly operating posture missing or drifted")
+    # Immediate weekly posture is derived from the active report and must agree
+    # across every live surface that exposes a current posture. This closes the
+    # START_HERE/CONCEPTS drift class found during the W39->W40 rollover audit.
+    if weekly_posture:
+        posture_expectations = {
+            "README.md": (
+                readme,
+                f"| Weekly operating posture | **{weekly_posture}** |",
+            ),
+            "LATEST.md": (
+                latest,
+                f"- **Weekly operating posture:** {weekly_posture}",
+            ),
+            "INDEX.md": (
+                index,
+                f"Weekly operating posture:\n{weekly_posture}",
+            ),
+            "docs/START_HERE.md": (
+                start_here,
+                f"weekly operating posture\n{weekly_posture}",
+            ),
+            "docs/CONCEPTS.md": (
+                concepts,
+                f"Weekly operating posture:\n{weekly_posture}",
+            ),
+        }
+        for label, (text, marker) in posture_expectations.items():
+            require(
+                errors,
+                marker in text,
+                f"{label}: current weekly posture drift; expected {weekly_posture!r}",
+            )
+
     require(errors, f"**Broader Phase 2 substate:** {BROADER_SUBSTATE}" in latest, "LATEST.md: broader Phase 2 substate missing or drifted")
     require(errors, BROADER_SUBSTATE in phase_map, "PHASE_MAP.md: canonical broader Phase 2 substate drift")
     require(errors, "weekly operating posture" in observer.lower(), "Observer quickstart: weekly-vs-broader state distinction missing")
     require(errors, "weekly operating posture" in newcomer.lower(), "Newcomer path: weekly-vs-broader state distinction missing")
+
+    # README and LATEST duplicate a small amount of volatile structured-coverage
+    # state for usability. Protect those summaries against silent lag by deriving
+    # counts/endpoints directly from the committed CSVs.
+    if all((daily_end, sleep_end, training_end, context_end)):
+        readme_coverage_expectations = (
+            (
+                f"| [`data/daily_biomarkers_v1.csv`](./data/daily_biomarkers_v1.csv) | "
+                f"one row per represented day | {daily_rows} continuous rows through {daily_end} |"
+            ),
+            (
+                f"| [`data/sleep_longitudinal_v1.csv`](./data/sleep_longitudinal_v1.csv) | "
+                f"one governed wake-date row | {sleep_rows} continuous rows through {sleep_end} |"
+            ),
+            (
+                f"| [`data/training_blocks_v1.csv`](./data/training_blocks_v1.csv) | "
+                f"one row per completed session/block | {training_rows} rows through {training_end} |"
+            ),
+            (
+                f"| [`data/context_events_v1.csv`](./data/context_events_v1.csv) | "
+                f"one bounded context event | {context_rows} rows through {context_end} |"
+            ),
+        )
+        for marker in readme_coverage_expectations:
+            require(errors, marker in readme, f"README.md: live structured-coverage summary drift: {marker!r}")
+
+        latest_coverage_expectations = (
+            f"- public daily biomarkers and canonical sleep contain {daily_rows} continuous rows through {daily_end}",
+            f"- public training contains {training_rows} completed-session rows through {training_end}",
+            f"- public context index contains {context_rows} bounded events through {context_end}",
+        )
+        for marker in latest_coverage_expectations:
+            require(errors, marker in latest, f"LATEST.md: live structured-coverage summary drift: {marker!r}")
+
+        require(
+            errors,
+            daily_rows == sleep_rows and daily_end == sleep_end,
+            (
+                "live structured coverage: daily/sleep alignment drift; "
+                f"daily={daily_rows}@{daily_end}, sleep={sleep_rows}@{sleep_end}"
+            ),
+        )
 
     # Validation-documentation inventory should remain centralized rather than
     # drifting back to stale two-validator descriptions on current-facing docs.
@@ -174,11 +407,17 @@ def main() -> int:
     print(f"version_doi={VERSION_DOI}")
     print(f"all_versions_doi={ALL_VERSIONS_DOI}")
     print(f"frozen_release_commit={FROZEN_RELEASE_COMMIT}")
-    print(f"active_week={ACTIVE_WEEK}")
-    print(f"most_recent_closed={MOST_RECENT_CLOSED}")
-    print(f"weekly_posture={WEEKLY_POSTURE}")
+    print(f"active_week={active_week}")
+    print(f"most_recent_closed={most_recent_closed}")
+    print(f"weekly_posture={weekly_posture}")
     print(f"broader_substate={BROADER_SUBSTATE}")
+    print(f"daily_profile={daily_rows}@{daily_end}")
+    print(f"sleep_profile={sleep_rows}@{sleep_end}")
+    print(f"training_profile={training_rows}@{training_end}")
+    print(f"context_profile={context_rows}@{context_end}")
     print("observer_legibility=protected")
+    print("live_state_alignment=protected")
+    print("live_coverage_summaries=protected")
     print("validation_doc_roles=protected")
     return 0
 
