@@ -211,8 +211,10 @@ It protects a deliberately narrow set of live orientation relationships exposed 
 - finalized version DOI and all-versions DOI on live release surfaces
 - `CITATION.cff` / `CODEMETA.json` release identity
 - `VERSIONING.md` current-release declaration and frozen release commit
-- active-week and most-recent-closed-week pointers
-- observer/newcomer report pointers
+- active-week, most-recent-closed-week, and active weekly-posture state derived from the live weekly-report lifecycle rather than hard-coded weekly constants
+- exact current-state synchronization across README, LATEST, INDEX, START_HERE, and CONCEPTS
+- observer/newcomer most-recent-closed report pointers
+- README/LATEST live structured-data row-count and endpoint summaries derived directly from the committed daily, sleep, training, and context CSVs
 - selected stale pending-state phrases that should not return to current orientation surfaces
 - explicit distinction between the immediate weekly operating posture and the broader canonical Phase 2 substate
 - current-facing validation-documentation role consistency and protection against stale two-validator wording
