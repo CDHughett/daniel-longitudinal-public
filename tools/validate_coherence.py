@@ -210,7 +210,7 @@ def main() -> int:
                 f"Most recent closed window:\n{most_recent_closed}",
             ),
         }
-        for label, text, active_marker, closed_marker in exact_pointer_expectations.values():
+        for label, (text, active_marker, closed_marker) in exact_pointer_expectations.items():
             require(errors, active_marker in text, f"{label}: active-week pointer drift; expected {active_week}")
             require(
                 errors,
