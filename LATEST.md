@@ -108,7 +108,7 @@ Do not:
 - substitute isolated HRV or low RPE for repeated-dose evidence
 - fill recovery sessions with unregistered work merely because additional capacity exists
 - convert missed work into repayment, or infer tissue loss from acute scale changes
-- reopen Model Error outcomes, retrospectively register forward claims, or declare Phase 2D from trait-level descriptions alone
+- reopen Model Error outcomes, retrospectively register forward claims, or declare Phase 2D from subjective ease alone
 
 Active report: [`reports/2026-W41.md`](reports/2026-W41.md)
 
