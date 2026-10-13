@@ -13,28 +13,28 @@ All-versions DOI: https://doi.org/10.5281/zenodo.20815611
 
 ## Current State
 
-**Plain-language summary:** Training remains stable and low-overhead. Week 39 closed with the established B1 + Load Integration architecture returning immediately after a short travel interruption and remaining available across five consecutive complete home training days. Week 40 now observes a complete ordinary home week under the unchanged prescription before the separate progression question is reconsidered.
+**Plain-language summary:** Week 40 closed with seven B1 and six Load Integration sessions in a complete ordinary home week. Two defined LI progression variants were completed once each at low reported overall effort, while standard, reduced-load, and scheduled rest boundaries remained intact. Week 41 now observes whether the additional dose remains low-cost and recovery-compatible when repeated.
 
 Formal archive labels and governance state:
 
 - **Phase:** Phase 2 — Load Integration
-- **Weekly operating posture:** Consolidation / full-home baseline observation
+- **Weekly operating posture:** Structured LI progression / repeatability observation
 - **Broader Phase 2 substate:** Consolidation / lock-in observation
-- **Active window:** 2026-W40
-- **Prior window:** 2026-W39 closed
-- **Installed architecture:** B1 + Load Integration
-- **Supplementation context:** Material simplification effective 2026-09-18 remains documented background protocol context, not a causal explanation for current sleep, autonomic, performance, bodyweight, or biological observations. See [`protocols/supplementation-architecture-2026-09-18.md`](protocols/supplementation-architecture-2026-09-18.md)
-- **System posture:** Preserve the unchanged architecture through a complete ordinary home week, observe whether the low operating cost remains stable, and only then review whether a small governed progression experiment is justified
-- **Behavioral posture:** Week 39 ended the travel interruption without repayment behavior and restored five consecutive complete B1 + Load Integration days without a staged rebuilding period
-- **Recovery posture:** Two unusual early-night cardiovascular episodes during W39 later normalized substantially and were followed by preserved next-day function; recurrence remains an observation target rather than an automatic training veto
-- **Bodyweight/intake posture:** Five scale-available W39 mornings averaged 228.7 lb; the lower observed range remains real as a scale observation while composition, mechanism, and sustainable rate remain unresolved
-- **Reserve/progression posture:** The Week 37 reserve observation remains preliminary because neither W38 nor W39 contained a second interpretable capacity probe; Week 40 first establishes a clean full-home baseline before progression is reconsidered
+- **Active window:** 2026-W41
+- **Prior window:** 2026-W40 closed
+- **Installed architecture:** B1 + Load Integration, with bounded LI progression variants
+- **Supplementation context:** The material simplification effective 2026-09-18 remains documented background protocol context, not a causal explanation for subsequent sleep, autonomic, performance or bodyweight changes. See [`protocols/supplementation-architecture-2026-09-18.md`](protocols/supplementation-architecture-2026-09-18.md)
+- **System posture:** Observe whether the already completed LI progression prescriptions remain mechanically controlled, behaviorally low-overhead and recovery-compatible when repeated; preserve standard, reduced-load and rest boundaries
+- **Behavioral posture:** W39 retention preceded W40 controlled expansion; neither first-exposure success nor unused capacity requires immediate additional training volume
+- **Recovery posture:** W40 overnight sleep averaged 7h11m, with three nights below seven hours; Daily Biomarkers HRV averaged 72.4 ms and distinct Sleep Log HRV averaged 82.6 ms. Favorable first-exposure results do not establish cumulative recovery cost
+- **Bodyweight/intake posture:** Seven W40 waking measurements averaged 227.0 lb, versus 228.7 lb from five W39 scale-available mornings; composition, mechanism, sustainable trajectory and nutritional sufficiency under repeat progression remain unresolved
+- **Reserve/progression posture:** W40's pull/press and hinge/grip prescriptions were completed once each, not repeatedly validated; no maximal test, clean one-variable dose-response, or prospectively registered public protocol is claimed
 - **Model-error posture:** Records 041–046 are closed/scored; record 043 remains closed as not supported (`overall_improvement_not_met`, error direction `over`)
-- **Data-quality posture:** DQ-011 remains open for source verification of the recorded 2026-09-08 daily resting-heart-rate value of 64 bpm; the earlier v1.31 HRV note/field differences remain source-role documented without inferred correction
+- **Data-quality posture:** DQ-011 remains open for source verification of the recorded 2026-09-08 daily resting-heart-rate value of 64 bpm; earlier v1.31 HRV note/field differences remain source-role documented without inferred correction
 - **Formal Phase 2D declaration:** None
 - **August snapshot:** DEXA, VO₂, Bod Pod, TruAge/Advanced TruAge, and TruHealth source artifacts archived; Model Error 043 adjudication complete
 
-The weekly operating posture describes the immediate observation condition for the active report. The broader Phase 2 substate remains the canonical phase-map interpretation. Retention, repeated ease, favorable recovery, or one reserve observation does not itself declare progression or a new phase.
+The weekly operating posture describes the immediate observation question, whereas the broader Phase 2 substate remains the canonical phase-map interpretation. Controlled expansion is the retrospective W40 descriptor, not a formal phase declaration.
 
 Plain-language definitions for reserve, capacity versus exposure, weekly operating posture, B1, and Load Integration are maintained in [`docs/CONCEPTS.md`](docs/CONCEPTS.md).
 
@@ -42,86 +42,75 @@ Current machine-readable row counts and endpoints are maintained in [`data/DATA_
 
 ---
 
-## Week 39 Closeout
+## Week 40 Closeout
 
 Observation window:
-
-```text
-2026-09-28 through 2026-10-04
-```
-
-Completed formal training:
-
-- 5 B1 sessions / 275 minutes / 15.10 miles
-- 5 Load Integration sessions / 225 minutes
-- 500 total formal training minutes across 10 completed sessions
-
-Structured weekly metrics:
-
-| Marker | W39 |
-|---|---:|
-| Morning bodyweight | 228.7 lb |
-| Daily biomarker HRV | 65.6 ms |
-| Resting heart rate | 45.0 bpm |
-| Daily average heart rate | 60.7 bpm |
-| Sleep HRV | 71.3 ms |
-| Sleep average heart rate | 50.7 bpm |
-| Total sleep | 7h20m |
-| Deep sleep | approximately 1h20m |
-| REM sleep | approximately 58m |
-
-Travel remained active on 2026-09-28 and 2026-09-29, and no formal training was performed on either day. No make-up volume was introduced.
-
-Normal home B1 + Load Integration resumed on 2026-09-30. Five consecutive complete two-session days then followed through 2026-10-04 without protective unloading, a staged re-entry, or a documented performance loss.
-
-The strongest W39 additions were:
-
-- immediate restoration of the unchanged architecture after travel
-- mild first-return stiffness that did not alter the prescribed work and resolved without intervention
-- return of automatic movement setup during Load Integration
-- two unusual early-night cardiovascular episodes with substantial later normalization and preserved next-day function
-- a lower observed bodyweight range without a demonstrated tissue-composition mechanism
-- one brief B1 heart-rate excursion above the nominal target without documented sustained strain or protocol change
-- continued restraint: no repeat reserve probe, compensatory volume, or automatic progression was introduced
-
-Week 39 is therefore best summarized as **short-interruption retention under preserved governance**.
-
-Full retrospective record: [`reports/2026-W39.md`](reports/2026-W39.md)
-
----
-
-## Week 40 Operating Posture
-
-Active window:
 
 ```text
 2026-10-05 through 2026-10-11
 ```
 
-Week 40 preserves the same B1 + Load Integration architecture and treats a complete ordinary home week as the immediate observation target.
+Completed formal training:
+
+- 7 B1 sessions / 385 minutes / 21.14 miles
+- 6 Load Integration sessions / 275 minutes
+- 660 total formal training minutes across 13 completed sessions; October 11 LI rest was not counted as a training session
+
+Structured weekly metrics:
+
+| Marker | W40 |
+|---|---:|
+| Morning bodyweight | 227.0 lb |
+| Daily biomarker HRV | 72.4 ms |
+| Resting heart rate | 43.9 bpm |
+| Daily average heart rate | 59.9 bpm |
+| Sleep HRV | 82.6 ms |
+| Sleep average heart rate | 45.6 bpm |
+| Total overnight sleep | 7h11m |
+| Deep sleep (wearable estimate) | 1h36m |
+| REM sleep (wearable estimate) | 59m |
+
+The original W40 plan called for an unchanged full-home baseline. Within the week, the operator introduced two defined LI progression variants. The closed report preserves the opening intention and the later execution without backdating a prospective public registration.
+
+- October 7: strict pull-ups 5×4, push-ups 3×12 and supported rows 2×10 (using a plate-loaded T-bar row); row plate mass is not calibrated effective machine resistance
+- October 10: trap bar 4×5 at existing load and dead hangs 3×45s, with baseline pulling and pressing
+- Standard LI, the October 9 technique/reduced-load session and the October 11 scheduled LI rest were preserved
+- Neither progression dose was repeated within W40; favorable immediate tolerance does not prove delayed recovery, nutrition adequacy or sustainable reserve
+
+Week 40 is retrospectively summarized as **controlled expansion under retained governance**.
+
+Full retrospective record: [`reports/2026-W40.md`](reports/2026-W40.md)  
+Completed progression reference: [`protocols/load-integration-progression-exposures-2026-W40.md`](protocols/load-integration-progression-exposures-2026-W40.md)
+
+---
+
+## Week 41 Operating Posture
+
+Active window:
+
+```text
+2026-10-12 through 2026-10-18
+```
+
+**Immediate question:** Does the newly increased LI workload remain mechanically controlled, behaviorally inexpensive and recovery-compatible when repeated?
 
 Observe:
 
-- whether the unchanged architecture remains fully available across the complete home week
-- whether low-overhead execution remains stable without travel-transition effects
-- whether morning bodyweight stabilizes, rebounds, or continues in the current lower range under normal home conditions
-- whether unusual early-night cardiovascular behavior recurs and, if so, whether it again normalizes later and remains dissociated from next-day function
-- whether brief B1 heart-rate excursions above the nominal target remain isolated
-- whether Load Integration remains inexpensive without subjective ease becoming an automatic progression trigger
-- whether the full-home baseline becomes strong enough to justify a later single-variable progression experiment
+- repeatability of the W40 pull/press and hinge/grip prescriptions when actual context and readiness permit
+- actual completed workload, tempo, session RPE, movement quality and 24–48-hour soreness/recovery cost
+- stable B1 alongside separate standard, reduced-load and scheduled LI rest exposures
+- overnight sleep quantity, cardiovascular signals, morning subjective state and ordinary activity
+- measured waking bodyweight, GI timing and potential fueling demands without attributing mechanisms
 
 Do not:
 
-- repay the completed travel interruption
-- progress solely because post-travel return was successful
-- unload solely because an isolated wearable night is unfavorable
-- use favorable wearable values as automatic progression permission
-- turn each session into a reserve test
-- replace unresolved source values by inference
-- reopen or rescore closed Model Error records
-- declare Phase 2D from retention, ease, or reserve evidence alone
+- convert one favorable progression week into automatic permission to raise volume or load again
+- substitute isolated HRV or low RPE for repeated-dose evidence
+- fill recovery sessions with unregistered work merely because additional capacity exists
+- convert missed work into repayment, or infer tissue loss from acute scale changes
+- reopen Model Error outcomes, retrospectively register forward claims, or declare Phase 2D from trait-level descriptions alone
 
-Active report: [`reports/2026-W40.md`](reports/2026-W40.md)
+Active report: [`reports/2026-W41.md`](reports/2026-W41.md)
 
 ---
 
@@ -152,10 +141,10 @@ Fixed scoring windows remain fixed. Later evidence does not retroactively rescue
 - GitHub Actions runs all current validators on pushes to `main` and pull requests
 - historical training prefix through 2026-08-30 remains protected at 325 sessions while later governed rows append
 - exact retained private-source hashes are registered only when the exact bytes are available
-- `Daniel_Dataset_v1.33` is registered in the private-source provenance manifest
-- public daily biomarkers and canonical sleep contain 238 continuous rows through 2026-10-04
-- public training contains 383 completed-session rows through 2026-10-04
-- public context index contains 51 bounded events through 2026-09-29
+- `Daniel_Dataset_v1.34` is registered in the private-source provenance manifest with exact retained-file identity
+- public daily biomarkers and canonical sleep contain 245 continuous rows through 2026-10-11
+- public training contains 396 completed-session rows through 2026-10-11
+- public context index contains 52 bounded events through 2026-10-10
 - August TruDiagnostic provider artifacts remain registered in the August checksum manifest
 - the August provider-header versus contemporaneous collection-record distinction remains preserved in [`data/source_provenance/2026-08-trudiagnostic-reconciliation.md`](data/source_provenance/2026-08-trudiagnostic-reconciliation.md)
 
@@ -169,8 +158,8 @@ Current coverage: [`data/DATA_COVERAGE.md`](data/DATA_COVERAGE.md)
 
 - [`README.md`](README.md) — archive overview
 - [`docs/START_HERE.md`](docs/START_HERE.md) — first-contact orientation
-- [`reports/2026-W40.md`](reports/2026-W40.md) — active week
-- [`reports/2026-W39.md`](reports/2026-W39.md) — most recent closed week
+- [`reports/2026-W41.md`](reports/2026-W41.md) — active week
+- [`reports/2026-W40.md`](reports/2026-W40.md) — most recent closed week
 - [`INDEX.md`](INDEX.md) — complete repository map
 
-The current governing posture is baseline before escalation: preserve ordinary home operation long enough to determine whether the progression question is ready for a small, registered, interpretable test.
+The current governing posture is replication before further escalation: preserve the aerobic anchor and distinct LI workloads while observing whether the first W40 progression doses remain inexpensive when repeated. Phase 2D remains undeclared.
