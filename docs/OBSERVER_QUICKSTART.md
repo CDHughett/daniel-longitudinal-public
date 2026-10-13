@@ -75,9 +75,9 @@ The private-source manifest registers SHA-256 only when the exact retained priva
 
 Open the most recent closed report:
 
-[`../reports/2026-W39.md`](../reports/2026-W39.md)
+[`../reports/2026-W40.md`](../reports/2026-W40.md)
 
-Then compare its material values with the applicable structured datasets.
+Then compare its material values with the applicable structured datasets. For W40, inspect the original unchanged-baseline opening plan versus the two later executed progression exposures, and distinguish first-exposure tolerance from repeated-dose recovery.
 
 Ask whether the report:
 
@@ -133,7 +133,7 @@ Read:
 
 Look for whether corrections, phase decisions, prediction closure, and source conflicts are handled under declared rules rather than outcome preference.
 
-When `LATEST.md` uses the immediate weekly operating posture `Consolidation / full-home baseline observation` while `PHASE_MAP.md` uses the broader `Consolidation / lock-in observation` substate, treat the former as the current observation condition and the latter as the canonical broader Phase 2 interpretation unless a formal retrospective declaration states otherwise.
+When `LATEST.md` uses the immediate weekly operating posture `Structured LI progression / repeatability observation` while `PHASE_MAP.md` uses the broader `Consolidation / lock-in observation` substate, treat the former as the current observation question and the latter as the canonical broader Phase 2 interpretation. The W40 first progression exposures do not themselves constitute a formal Phase 2D declaration.
 
 ---
 

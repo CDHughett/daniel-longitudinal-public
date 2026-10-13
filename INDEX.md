@@ -32,16 +32,16 @@ Active phase:
 Phase 2 — Load Integration
 
 Weekly operating posture:
-Consolidation / full-home baseline observation
+Structured LI progression / repeatability observation
 
 Broader Phase 2 substate:
 Consolidation / lock-in observation
 
 Active weekly window:
-2026-W40
+2026-W41
 
 Most recent closed window:
-2026-W39
+2026-W40
 
 Open model-error records:
 none in protected block 041–046
@@ -65,7 +65,7 @@ August structured molecular integration:
 complete for currently represented fields
 
 Current weekly posture:
-preserve the unchanged B1 + Load Integration architecture across a complete ordinary home week, characterize the retained low-overhead baseline, and only then review whether a small governed progression experiment is justified
+preserve the B1 anchor and differentiated LI schedule while observing whether the W40 pull/press and hinge/grip progression doses remain repeatable and recovery-compatible; no automatic further escalation or formal Phase 2D declaration
 ```
 
 Current state source: [`LATEST.md`](./LATEST.md)
@@ -134,8 +134,10 @@ Current August physical and molecular source artifacts are preserved under [`sna
 # Reports
 
 - [`reports/README.md`](./reports/README.md) — report lifecycle
-- [`reports/2026-W40.md`](./reports/2026-W40.md) — current active report
-- [`reports/2026-W39.md`](./reports/2026-W39.md) — most recent closed report
+- [`reports/2026-W41.md`](./reports/2026-W41.md) — current active report
+- [`reports/2026-W40.md`](./reports/2026-W40.md) — most recent closed report
+- [`protocols/load-integration-progression-exposures-2026-W40.md`](./protocols/load-integration-progression-exposures-2026-W40.md) — retrospective LI progression exposure reference
+- [`reports/2026-W39.md`](./reports/2026-W39.md) — prior retention observation
 - [`reports/2026-W37.md`](./reports/2026-W37.md) — prior successful-re-entry / preliminary-reserve window
 - [`reports/2026-W36.md`](./reports/2026-W36.md) — prior natural-interruption window
 - [`reports/2026-W34.md`](./reports/2026-W34.md) — prior ordinary continuity window

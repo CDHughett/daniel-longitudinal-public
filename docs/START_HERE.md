@@ -59,10 +59,10 @@ broader operating substate
 Consolidation / lock-in observation
         ↓
 weekly operating posture
-Consolidation / full-home baseline observation
+Structured LI progression / repeatability observation
         ↓
 session-level observations
-ambient / trait-like / trait-level execution, reserve evidence, etc.
+standard and progression doses, recorded effort, recovery and trait-level execution
 ```
 
 In plain language:
@@ -72,7 +72,7 @@ In plain language:
 - the **weekly operating posture** is the narrower question being watched right now
 - **session-level observations** describe what happened in particular sessions or contexts
 
-Evidence at a lower level does not automatically promote the level above it. For example, one reserve observation does not automatically change the weekly prescription, declare a new substate, or create a new phase.
+Evidence at a lower level does not automatically promote the level above it. Week 40 recorded controlled first-exposure LI progression without declaring Phase 2D; Week 41 now observes repeatability rather than presuming another increase.
 
 Recurring terms are defined in [`docs/CONCEPTS.md`](./CONCEPTS.md).
 

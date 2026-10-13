@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - 'w*-rollover' # Validate weekly rollover branches before PR review
   pull_request:
   workflow_dispatch:
 
