@@ -212,6 +212,8 @@ It may change from week to week without changing the declared phase or the broad
 
 A weekly operating posture organizes what the archive is currently watching; it does not by itself declare progression, a new substate, or a new phase.
 
+In W41, *repeatability observation* means comparing later completed sessions with the two documented first-exposure LI variants from W40. One tolerated progression session is evidence of completion at that dose, not proof of a repeatedly recoverable dose or a formally declared phase.
+
 ---
 
 # Training and Behavioral Concepts
@@ -473,7 +475,7 @@ Operating substate:
 Consolidation / lock-in observation
 
 Weekly operating posture:
-Consolidation / full-home baseline observation
+Structured LI progression / repeatability observation
 
 Phase 2D:
 undeclared
