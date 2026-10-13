@@ -36,17 +36,17 @@ Specialized material such as model-error records, source provenance, testing art
 
 # Current archive state
 
-**Plain-language summary:** Training remains stable and low-overhead. Week 39 closed with the normal B1 + Load Integration architecture returning immediately after travel and remaining fully available across five consecutive home training days. Week 40 is observing a complete ordinary home week under the unchanged prescription before any progression decision is reconsidered.
+**Plain-language summary:** Week 40 closed with seven B1 sessions and six Load Integration sessions under ordinary home conditions. Two defined LI progression variants were completed at low reported overall effort while the reduced-load session and scheduled LI rest day remained intact. Week 41 now observes whether the added workload stays mechanically controlled and recoverable when repeated; Phase 2D remains undeclared.
 
 The formal archive labels below preserve the precise phase/state vocabulary used by the reports and validators.
 
 | Domain | Current state |
 |---|---|
 | Phase | **Phase 2 — Load Integration** |
-| Weekly operating posture | **Consolidation / full-home baseline observation** |
+| Weekly operating posture | **Structured LI progression / repeatability observation** |
 | Broader Phase 2 substate | **Consolidation / lock-in observation** |
-| Active weekly window | **2026-W40** |
-| Most recent closed window | **2026-W39** |
+| Active weekly window | **2026-W41** |
+| Most recent closed window | **2026-W40** |
 | Installed training architecture | **B1 + Load Integration** |
 | Open model-error records | **none in protected block 041–046** |
 | Record 043 | **closed / not supported — `overall_improvement_not_met` / over** |
@@ -57,13 +57,13 @@ Current-state anchors retained for repository validation:
 
 ```text
 Active weekly window:
-2026-W40
+2026-W41
 
 Most recent closed window:
-2026-W39
+2026-W40
 ```
 
-In formal terms, Week 39 demonstrated short-interruption retention: travel ended without repayment behavior, and normal B1 + Load Integration returned without a staged rebuilding period. Week 40 preserves the unchanged architecture for a complete ordinary home week before the separate reserve/progression question is reviewed. Phase 2D remains undeclared.
+In formal terms, Week 40 documented controlled expansion: specified pull/press and hinge/grip increases were completed once each within a still-governed LI structure. The original unchanged-baseline opening plan and the actual within-week change are distinguished in the closed report. First-exposure tolerance does not establish repeatability or trigger a formal Phase 2D declaration.
 
 Term definitions: [`docs/CONCEPTS.md`](./docs/CONCEPTS.md)  
 Authoritative current detail: [`LATEST.md`](./LATEST.md)
@@ -72,16 +72,16 @@ Authoritative current detail: [`LATEST.md`](./LATEST.md)
 
 # Machine-readable core
 
-Current public daily, sleep, and completed-training coverage extends through 2026-10-04. The bounded context-event index currently ends on 2026-09-29 because no later W39 observation required a separate event row.
+Current public daily, sleep, and completed-training coverage extends through 2026-10-11. The bounded context-event index ends on 2026-10-10 because W40's two LI progression exposures are represented as one material event, not a daily activity diary.
 
 | Dataset | Unit | Coverage |
 |---|---|---|
-| [`data/daily_biomarkers_v1.csv`](./data/daily_biomarkers_v1.csv) | one row per represented day | 238 continuous rows through 2026-10-04 |
-| [`data/sleep_longitudinal_v1.csv`](./data/sleep_longitudinal_v1.csv) | one governed wake-date row | 238 continuous rows through 2026-10-04 |
-| [`data/training_blocks_v1.csv`](./data/training_blocks_v1.csv) | one row per completed session/block | 383 rows through 2026-10-04 |
-| [`data/context_events_v1.csv`](./data/context_events_v1.csv) | one bounded context event | 51 rows through 2026-09-29 |
+| [`data/daily_biomarkers_v1.csv`](./data/daily_biomarkers_v1.csv) | one row per represented day | 245 continuous rows through 2026-10-11 |
+| [`data/sleep_longitudinal_v1.csv`](./data/sleep_longitudinal_v1.csv) | one governed wake-date row | 245 continuous rows through 2026-10-11 |
+| [`data/training_blocks_v1.csv`](./data/training_blocks_v1.csv) | one row per completed session/block | 396 rows through 2026-10-11 |
+| [`data/context_events_v1.csv`](./data/context_events_v1.csv) | one bounded context event | 52 rows through 2026-10-10 |
 
-Training is session-indexed:Training is session-indexed: a represented day with zero completed training sessions does not require a synthetic training row.
+Training is session-indexed: a represented day with zero completed training sessions does not require a synthetic training row.
 
 The daily/training/event layers are curated public extracts derived primarily from governed private `Daniel_Dataset_v1.x` source states. They are **not raw provider exports**.
 
