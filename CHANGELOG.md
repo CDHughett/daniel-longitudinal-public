@@ -13,6 +13,16 @@ Biological interpretation belongs in `/reports`. This file records release-level
 
 ## [Unreleased]
 
+### October 12 W40/W41 rollover — data, reports and live-state synchronization (audit pending)
+
+- Appended W40 public structured data from exact retained `Daniel_Dataset_v1.34`: daily biomarkers and canonical sleep now contain 245 continuous rows through 2026-10-11, completed training contains 396 session rows through 2026-10-11, and the bounded context index contains 52 events with latest end date 2026-10-10.
+- Registered v1.34 private-source identity for 2026-10-05 through 2026-10-11 (369,524 bytes; SHA-256 `dc2171850bade2a929108dc39bdadaac0672209b784c6341664004b46ab54ff7`); private workbook bytes are not published, and historical curated CSV prefixes were preserved.
+- Closed `reports/2026-W40.md` with retrospective descriptor **controlled expansion**: 7 B1 sessions / 385 minutes / 21.14 miles, 6 Load Integration sessions / 275 minutes, and 660 formal training minutes across 13 completed sessions. Reproduced weekly averages from public structured data: 227.0 lb waking bodyweight, 72.4 ms daily HRV, 43.9 bpm resting HR, 59.9 bpm daily average HR, 82.6 ms sleep HRV, 45.6 bpm sleeping HR, 7h11m overnight sleep, 1h36m estimated deep sleep and 59m estimated REM.
+- Recorded October 7 pull/press and October 10 hinge/grip changes as **completed first exposures**, while preserving the difference between the original W40 unchanged-baseline opening plan and the actual within-week schedule. Added `protocols/load-integration-progression-exposures-2026-W40.md` as retrospective exposure documentation, **not** a backdated prospective registration or new phase declaration.
+- Opened `reports/2026-W41.md` for 2026-10-12 through 2026-10-18 with posture `Structured LI progression / repeatability observation`; repeated-dose recovery, mechanical control, normal-life compatibility and nutritional adequacy remain questions rather than predetermined results.
+- Synchronized README, LATEST, INDEX, START_HERE, CONCEPTS, observer/newcomer guidance and DATA_COVERAGE to W41 active / W40 closed, including current data counts and endpoints. Preserved the broader Phase 2 `Consolidation / lock-in observation` substate, protected Model Error decisions, unresolved DQ-011 and fixed v1.1.0 release/DOI identity.
+- Current-document consistency checks belong to Batch 3; the integrated rollover audit, final five-validator gate, CI verification and merge review remain **pending**.
+
 ### October 5 W39/W40 rollover and integrated coherence audit
 
 - Extended the governed public machine-readable layer through closed W39: 238 daily-biomarker rows and 238 canonical sleep rows through 2026-10-04, 383 completed training sessions through 2026-10-04, and 51 bounded context events through 2026-09-29.
