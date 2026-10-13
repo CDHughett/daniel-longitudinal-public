@@ -101,9 +101,9 @@ Look for unresolved findings, corrected findings, source conflicts, and restrict
 
 Start with:
 
-[`../reports/2026-W39.md`](../reports/2026-W39.md)
+[`../reports/2026-W40.md`](../reports/2026-W40.md)
 
-Then inspect the underlying structured rows for the same window.
+Then inspect the underlying structured rows for the same window. W40 is especially useful for seeing how an original unchanged-training intention is distinguished from two later executed progression variants, without upgrading favorable first-exposure tolerance to a permanent dose or a new phase.
 
 The point is to see how the archive moves from recorded values and observations toward bounded retrospective interpretation.
 
