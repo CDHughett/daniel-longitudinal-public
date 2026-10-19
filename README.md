@@ -36,17 +36,17 @@ Specialized material such as model-error records, source provenance, testing art
 
 # Current archive state
 
-**Plain-language summary:** Week 40 closed with seven B1 sessions and six Load Integration sessions under ordinary home conditions. Two defined LI progression variants were completed at low reported overall effort while the reduced-load session and scheduled LI rest day remained intact. Week 41 now observes whether the added workload stays mechanically controlled and recoverable when repeated; Phase 2D remains undeclared.
+**Plain-language summary:** Week 41 closed with seven aerobic and six Load Integration sessions, a further prescribed pull-up increase, and another exposure to the expanded hinge/grip workload. Ordinary activity and training remained available by report, while selected overnight recovery readings were less favorable. Week 42 now observes whether the additional workload remains manageable across further sessions; Phase 2D remains undeclared.
 
 The formal archive labels below preserve the precise phase/state vocabulary used by the reports and validators.
 
 | Domain | Current state |
 |---|---|
 | Phase | **Phase 2 — Load Integration** |
-| Weekly operating posture | **Structured LI progression / repeatability observation** |
+| Weekly operating posture | **Continued LI progression / recovery-cost and dose-repeatability observation** |
 | Broader Phase 2 substate | **Consolidation / lock-in observation** |
-| Active weekly window | **2026-W41** |
-| Most recent closed window | **2026-W40** |
+| Active weekly window | **2026-W42** |
+| Most recent closed window | **2026-W41** |
 | Installed training architecture | **B1 + Load Integration** |
 | Open model-error records | **none in protected block 041–046** |
 | Record 043 | **closed / not supported — `overall_improvement_not_met` / over** |
@@ -57,13 +57,13 @@ Current-state anchors retained for repository validation:
 
 ```text
 Active weekly window:
-2026-W41
+2026-W42
 
 Most recent closed window:
-2026-W40
+2026-W41
 ```
 
-In formal terms, Week 40 documented controlled expansion: specified pull/press and hinge/grip increases were completed once each within a still-governed LI structure. The original unchanged-baseline opening plan and the actual within-week change are distinguished in the closed report. First-exposure tolerance does not establish repeatability or trigger a formal Phase 2D declaration.
+In formal terms, Week 41 documented **conditional repeatability**: pull-ups advanced to 5×5 on the progression day and the expanded hinge/grip prescription was repeated. Standard, reduced-load and rest boundaries were preserved. The pull-up increase is distinguished from W41's original repeatability-only question. Reported ease does not establish zero cumulative recovery cost or declare Phase 2D.
 
 Term definitions: [`docs/CONCEPTS.md`](./docs/CONCEPTS.md)  
 Authoritative current detail: [`LATEST.md`](./LATEST.md)
@@ -72,14 +72,14 @@ Authoritative current detail: [`LATEST.md`](./LATEST.md)
 
 # Machine-readable core
 
-Current public daily, sleep, and completed-training coverage extends through 2026-10-11. The bounded context-event index ends on 2026-10-10 because W40's two LI progression exposures are represented as one material event, not a daily activity diary.
+Current public daily, sleep, and completed-training coverage extends through 2026-10-18. The bounded context-event index ends on 2026-10-14 with a single event for the further pull-up increase; it is not a complete daily-activity diary.
 
 | Dataset | Unit | Coverage |
 |---|---|---|
-| [`data/daily_biomarkers_v1.csv`](./data/daily_biomarkers_v1.csv) | one row per represented day | 245 continuous rows through 2026-10-11 |
-| [`data/sleep_longitudinal_v1.csv`](./data/sleep_longitudinal_v1.csv) | one governed wake-date row | 245 continuous rows through 2026-10-11 |
-| [`data/training_blocks_v1.csv`](./data/training_blocks_v1.csv) | one row per completed session/block | 396 rows through 2026-10-11 |
-| [`data/context_events_v1.csv`](./data/context_events_v1.csv) | one bounded context event | 52 rows through 2026-10-10 |
+| [`data/daily_biomarkers_v1.csv`](./data/daily_biomarkers_v1.csv) | one row per represented day | 252 continuous rows through 2026-10-18 |
+| [`data/sleep_longitudinal_v1.csv`](./data/sleep_longitudinal_v1.csv) | one governed wake-date row | 252 continuous rows through 2026-10-18 |
+| [`data/training_blocks_v1.csv`](./data/training_blocks_v1.csv) | one row per completed session/block | 409 rows through 2026-10-18 |
+| [`data/context_events_v1.csv`](./data/context_events_v1.csv) | one bounded context event | 53 rows through 2026-10-14 |
 
 Training is session-indexed: a represented day with zero completed training sessions does not require a synthetic training row.
 

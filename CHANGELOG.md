@@ -13,6 +13,16 @@ Biological interpretation belongs in `/reports`. This file records release-level
 
 ## [Unreleased]
 
+### October 19 W41/W42 rollover — live-state synchronization (audit pending)
+
+- Appended W41 governed data from exact retained private `Daniel_Dataset_v1.35`: daily biomarkers and canonical sleep now contain **252 continuous rows each through 2026-10-18**, training **409 completed-session rows through 2026-10-18**, and context index **53 bounded events through 2026-10-14**. Historical CSV content remains an unchanged prefix.
+- Registered exact v1.35 private source identity for 2026-10-12 through 2026-10-18 (373,951 bytes; SHA-256 `65dcaa2a2f2e6fb6acfc116dd9290a3d5834de27c26071807e6d05fab6dd61a1`); private workbook and operator narrative were not published.
+- Closed `reports/2026-W41.md` as **conditional repeatability**, documenting seven B1 sessions / 385 minutes / 21.14 miles and six LI sessions / 285 minutes, totaling **670 minutes across 13 completed sessions**. Weekly public averages: 226.4 lb waking weight, 70.6 ms daily HRV, 44.6 bpm resting HR, 61.4 bpm daily average HR, 75.7 ms sleep HRV, 51.6 bpm sleeping HR, 7h17m overnight sleep, 1h18m estimated deep sleep and 49m estimated REM.
+- Preserved W41's opening question while recording October 14's increase to **5×5 pull-ups** above W40's 5×4 first exposure, and October 17's repeated expanded hinge/grip dose. One bounded context event indexes the later progression without claiming public preregistration or proven cumulative recovery compatibility.
+- Opened `reports/2026-W42.md` for October 19–25 with weekly posture `Continued LI progression / recovery-cost and dose-repeatability observation`. No W42 outcome, automatic increase, new Model Error prediction or Phase 2D declaration is asserted.
+- Synchronized README, LATEST, INDEX, START_HERE, CONCEPTS, observer/newcomer routes and DATA_COVERAGE to **W42 Active / W41 Closed**, retaining the broader Phase 2 `Consolidation / lock-in observation` substate, protected Model Error outcomes, DQ-011 and frozen v1.1.0 release and DOI identity.
+- Added [`docs/audits/2026-10-19-post-weekly-rollover-audit.md`](docs/audits/2026-10-19-post-weekly-rollover-audit.md) to document source identity, independent arithmetic, exact append-only preservation, progression and recovery inference limits, privacy and governance boundaries, and the pre-audit five-validator PASS. The audited final-head five-validator CI run remains a separate mandatory gate before PR review or merge; no publication to `main` is claimed.
+
 ### October 12 W40/W41 rollover — data, reports and live-state synchronization (audit pending)
 
 - Appended W40 public structured data from exact retained `Daniel_Dataset_v1.34`: daily biomarkers and canonical sleep now contain 245 continuous rows through 2026-10-11, completed training contains 396 session rows through 2026-10-11, and the bounded context index contains 52 events with latest end date 2026-10-10.

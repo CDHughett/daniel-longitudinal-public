@@ -75,9 +75,9 @@ The private-source manifest registers SHA-256 only when the exact retained priva
 
 Open the most recent closed report:
 
-[`../reports/2026-W40.md`](../reports/2026-W40.md)
+[`../reports/2026-W41.md`](../reports/2026-W41.md)
 
-Then compare its material values with the applicable structured datasets. For W40, inspect the original unchanged-baseline opening plan versus the two later executed progression exposures, and distinguish first-exposure tolerance from repeated-dose recovery.
+Then compare its values with the governed structured datasets. For W41, distinguish the initial repeatability question from the later 5×5 pull-up increase; separate reported execution from independent mechanical verification and longer-term recovery. Compare with [W40's first-exposure report](../reports/2026-W40.md).
 
 Ask whether the report:
 
@@ -133,7 +133,7 @@ Read:
 
 Look for whether corrections, phase decisions, prediction closure, and source conflicts are handled under declared rules rather than outcome preference.
 
-When `LATEST.md` uses the immediate weekly operating posture `Structured LI progression / repeatability observation` while `PHASE_MAP.md` uses the broader `Consolidation / lock-in observation` substate, treat the former as the current observation question and the latter as the canonical broader Phase 2 interpretation. The W40 first progression exposures do not themselves constitute a formal Phase 2D declaration.
+When `LATEST.md` uses the immediate weekly operating posture `Continued LI progression / recovery-cost and dose-repeatability observation` while `PHASE_MAP.md` retains the broader `Consolidation / lock-in observation` substate, treat the former as the active W42 question and the latter as the canonical Phase 2 interpretation. W41 conditional repeatability does not independently declare Phase 2D.
 
 ---
 
