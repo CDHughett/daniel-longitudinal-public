@@ -59,7 +59,7 @@ broader operating substate
 Consolidation / lock-in observation
         ↓
 weekly operating posture
-Structured LI progression / repeatability observation
+Continued LI progression / recovery-cost and dose-repeatability observation
         ↓
 session-level observations
 standard and progression doses, recorded effort, recovery and trait-level execution
@@ -72,7 +72,7 @@ In plain language:
 - the **weekly operating posture** is the narrower question being watched right now
 - **session-level observations** describe what happened in particular sessions or contexts
 
-Evidence at a lower level does not automatically promote the level above it. Week 40 recorded controlled first-exposure LI progression without declaring Phase 2D; Week 41 now observes repeatability rather than presuming another increase.
+Evidence at a lower level does not automatically promote the level above it. Week 40 documented initial controlled LI expansion; Week 41 reported conditional repeatability with unresolved recovery cost. Week 42 asks a further observation question without presuming progression or Phase 2D.
 
 Recurring terms are defined in [`docs/CONCEPTS.md`](./CONCEPTS.md).
 
