@@ -229,9 +229,13 @@ Candidate evidence must not automatically:
 - justify a phase declaration
 - justify proof-seeking protocol changes
 
-Evaluation rules for the current open prediction block are documented in:
+Evaluation rules for the **current OPEN November 2026 records 047–050** are prospectively fixed in:
 
-[`methodology/open_prediction_evaluation_plan_041_044.md`](./methodology/open_prediction_evaluation_plan_041_044.md)
+[`methodology/open_prediction_evaluation_plan_047_050.md`](./methodology/open_prediction_evaluation_plan_047_050.md)
+
+Collection, preparation, source and missingness governance is separately recorded in [`methodology/2026-11-snapshot-collection-plan.md`](./methodology/2026-11-snapshot-collection-plan.md).
+
+The earlier [041–044 evaluation plan](./methodology/open_prediction_evaluation_plan_041_044.md), as well as 045 and 046, remains historical and protected after closure. The 047–050 forecasts are not observed or scored; a future adjudication must preserve their registration fields, original narratives and source-locked thresholds.
 
 Prediction accuracy is not treated as proof of certainty.
 

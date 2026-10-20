@@ -44,7 +44,7 @@ Most recent closed window:
 2026-W41
 
 Open model-error records:
-none in protected block 041–046
+047, 048, 049, 050 (prospective November 16 forecasts; no outcomes available)
 
 Recently closed:
 041, 042, 043, 044, 045, 046
@@ -172,8 +172,10 @@ Registered plans:
 - [`methodology/open_prediction_evaluation_plan_041_044.md`](./methodology/open_prediction_evaluation_plan_041_044.md)
 - [`methodology/open_prediction_evaluation_plan_045.md`](./methodology/open_prediction_evaluation_plan_045.md)
 - [`methodology/open_prediction_evaluation_plan_046.md`](./methodology/open_prediction_evaluation_plan_046.md)
+- [`methodology/2026-11-snapshot-collection-plan.md`](./methodology/2026-11-snapshot-collection-plan.md) — pre-outcome November collection rules
+- [`methodology/open_prediction_evaluation_plan_047_050.md`](./methodology/open_prediction_evaluation_plan_047_050.md) — four locked prospective November forecasts
 
-The protected 041–046 block is fully closed. Original prospective registration provenance and prediction narratives remain preserved.
+The protected 041–046 block remains fully closed with original registrations and outcomes preserved. **047–050 are four newly open, primary forecasts** for November 2026: DunedinPACE 0.76, SymphonyAge 40.0–44.0 years, DEXA fat ≤36.0 lb and lean ≥183.0 lb, and formal relative VO₂max ≥52.0 mL/kg/min. No November outcomes or new UDI calculations have been recorded.
 
 ---
 

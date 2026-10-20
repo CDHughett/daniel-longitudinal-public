@@ -29,7 +29,7 @@ Formal archive labels and governance state:
 - **Recovery posture:** W41 sleep averaged 7h17m, with two nights below seven hours. Daily Biomarkers HRV averaged 70.6 ms and separate overnight HRV averaged 75.7 ms. Sleeping heart rate rose on selected nights without reported loss of training function
 - **Bodyweight/intake posture:** Seven W41 waking measurements averaged 226.4 lb versus W40's 227.0 lb; composition and nutritional adequacy are not established
 - **Reserve/progression posture:** The W41 pull/press prescription increased to 5×5 pull-ups, while expanded hinge/grip work repeated; favorable reported execution does not establish absent cumulative recovery cost
-- **Model-error posture:** Records 041–046 are closed/scored; Record 043 remains closed as not supported (`overall_improvement_not_met`, error direction `over`)
+- **Model-error posture:** Records 041–046 closed/scored (including 043 not supported / `overall_improvement_not_met` / `over`); **047–050 prospectively registered and Open** for the November 16 snapshot, with no outcomes yet available
 - **Data-quality posture:** DQ-011 remains open for source verification of the 2026-09-08 resting-heart-rate value of 64 bpm; earlier HRV field/note differences remain documented without inferred correction
 - **Formal Phase 2D declaration:** None
 - **August snapshot:** DEXA, VO₂, Bod Pod, TruAge/Advanced TruAge and TruHealth source artifacts archived; Model Error 043 adjudication complete
@@ -108,6 +108,12 @@ Active report: [`reports/2026-W42.md`](reports/2026-W42.md).
 | 044 | Closed / not supported — narrow snapshot-directed governance deviation |
 | 045 | Closed / supported |
 | 046 | Closed / failed_autonomic_recompression |
+| 047 | **Open** — DunedinPACE 0.76 (point) |
+| 048 | **Open** — SymphonyAge 40.0–44.0 years (range) |
+| 049 | **Open** — DEXA fat ≤36.0 lb **and** lean ≥183.0 lb (conjunctive state) |
+| 050 | **Open** — formal relative VO₂max ≥52.0 mL/kg/min (state) |
+
+The four November forecasts were registered **2026-10-19 before outcome access**. All 047–050 actual/error fields are blank. Their [collection-governance plan](methodology/2026-11-snapshot-collection-plan.md) and [prospectively locked evaluation plan](methodology/open_prediction_evaluation_plan_047_050.md) govern source comparability, failure and missingness; planned collection does not imply test completion. UDI/concordance results are unchanged because no new forecast has been adjudicated.
 
 Record 043’s criterion-level adjudication is preserved in [`data/model_error/record_043_closure.md`](data/model_error/record_043_closure.md).
 

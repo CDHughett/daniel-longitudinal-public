@@ -188,6 +188,27 @@ Later evidence does not reopen or extend record 046.
 
 ---
 
+# November 2026 Prospective Snapshot and Model Errors 047–050
+
+## [`2026-11-snapshot-collection-plan.md`](2026-11-snapshot-collection-plan.md)
+
+Collection conditions, November 16–17 scheduling, source hierarchy, representative-state preparation, provider validity, privacy handling and missingness were recorded **before** November testing and before the atomic prediction registration.
+
+## [`open_prediction_evaluation_plan_047_050.md`](open_prediction_evaluation_plan_047_050.md)
+
+On **2026-10-19**, four prospective **primary, open** predictions were registered in the v1 model-error file, alongside this fixed evaluation companion:
+
+| Record | Prediction type | Locked forecast |
+|---|---|---|
+| 047 | point | DunedinPACE 0.76 |
+| 048 | range | SymphonyAge 40.0–44.0 years |
+| 049 | state | DEXA fat ≤36.0 lb AND lean ≥183.0 lb |
+| 050 | state | Relative VO₂max ≥52.0 mL/kg/min |
+
+These are individually evaluated forecasts, **not** outcomes or proof of a Phase 2D transition. Records 041–046 stay closed. Original source precision, admissibility and evidence sufficiency govern future closure. See [`../data/model_error/README.md`](../data/model_error/README.md) for the registry's current state. No UDI/concordance update occurs until applicable future outcomes are formally adjudicated.
+
+---
+
 # August 2026 Snapshot Collection Plan
 
 ## [`2026-08-snapshot-collection-plan.md`](2026-08-snapshot-collection-plan.md)

@@ -13,6 +13,14 @@ Biological interpretation belongs in `/reports`. This file records release-level
 
 ## [Unreleased]
 
+### October 19 Model Error 047–050 prospective November registration — staged branch, audit pending
+
+- Created prospective November 16–17 collection governance in [methodology/2026-11-snapshot-collection-plan.md](methodology/2026-11-snapshot-collection-plan.md), preserving source hierarchy, representative-state preparation, missing/invalid outcomes, assay/protocol comparability and privacy boundaries before the November measurements.
+- Atomically appended primary Model Error records **047–050** (registration date 2026-10-19, all **OPEN**, model gpt6-subject-calibrated, calibration_state=pre), increasing the v1 registry from 34 to **38 records** with all 34 historical rows unchanged. Locked forecasts: **047 DunedinPACE 0.76 (point)**; **048 SymphonyAge 40.0–44.0 modeled years (range)**; **049 DEXA fat mass ≤36.0 lb AND lean mass ≥183.0 lb (state)**; **050 formal relative VO₂max ≥52.0 mL/kg/min (state)**.
+- The complete prospective evaluation companion [methodology/open_prediction_evaluation_plan_047_050.md](methodology/open_prediction_evaluation_plan_047_050.md) fixes scoring precision, provider/source hierarchy, validation and missingness rules independently for each forecast. Validator protections lock the original narrative, date, domain, model/version, type and predicted value; all outcome/error columns remain blank. The prospective companion is guarded by an exact Git-blob identity check.
+- Kept records **041–046 closed and unchanged**; Record 043 remains not supported/overall_improvement_not_met/over. No change to completed-record UDI/concordance results, historical snapshots, Phase 2 — Load Integration or undeclared Phase 2D, W41 Closed/W42 Active, DQ-011 or immutable published v1.1.0/tag/DOI identity.
+- Updated current-facing README/LATEST/INDEX, Model Error guidance, methodology navigation, governance and observer/newcomer paths to discover the **four open November predictions** without representing them as observed, scored or merged to main. **Batch 4 integrated registration audit, final-head CI, PR review and merge are pending.** This entry is part of staged branch preparation; no new release is claimed.
+
 ### October 19 W41/W42 rollover — live-state synchronization (audit pending)
 
 - Appended W41 governed data from exact retained private `Daniel_Dataset_v1.35`: daily biomarkers and canonical sleep now contain **252 continuous rows each through 2026-10-18**, training **409 completed-session rows through 2026-10-18**, and context index **53 bounded events through 2026-10-14**. Historical CSV content remains an unchanged prefix.
