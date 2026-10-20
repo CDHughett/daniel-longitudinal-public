@@ -48,7 +48,7 @@ The formal archive labels below preserve the precise phase/state vocabulary used
 | Active weekly window | **2026-W42** |
 | Most recent closed window | **2026-W41** |
 | Installed training architecture | **B1 + Load Integration** |
-| Open model-error records | **none in protected block 041–046** |
+| Open model-error records | **047–050: four prospective November predictions**; 041–046 closed |
 | Record 043 | **closed / not supported — `overall_improvement_not_met` / over** |
 | August snapshot | **source artifacts archived, reconciled, structured, checksum-protected** |
 | Formal Phase 2D declaration | **none** |
@@ -173,6 +173,17 @@ Recent protected records:
 | 046 | autonomic_unload_reload | failed_autonomic_recompression |
 
 Record 043 remains fixed under its preregistered biological scoring boundary. Later favorable training or behavioral evidence does not reopen or rescue the outcome.
+
+**Four November 2026 predictions are now prospectively registered and open, not scored:**
+
+| Record | Forecast locked on 2026-10-19 | Type | Status |
+|---|---|---|---|
+| 047 | DunedinPACE = 0.76 | point | **Open** |
+| 048 | SymphonyAge 40.0–44.0 years inclusive | range | **Open** |
+| 049 | DEXA fat ≤36.0 lb **and** lean ≥183.0 lb | state (two conditions) | **Open** |
+| 050 | Provider-measured relative VO₂max ≥52.0 mL/kg/min | state | **Open** |
+
+The open records contain **no November outcomes**. Collection rules: [`methodology/2026-11-snapshot-collection-plan.md`](./methodology/2026-11-snapshot-collection-plan.md). Locked forecasts and scoring rules: [`methodology/open_prediction_evaluation_plan_047_050.md`](./methodology/open_prediction_evaluation_plan_047_050.md). The complete registry is [`data/model_error/model_error_gap_v1.csv`](./data/model_error/model_error_gap_v1.csv). Numerical thresholds do not authorize training changes or a Phase 2D declaration.
 
 Full adjudication: [`data/model_error/record_043_closure.md`](./data/model_error/record_043_closure.md)
 

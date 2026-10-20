@@ -131,6 +131,8 @@ Read:
 
 - [`../data/model_error/WHAT_THIS_LAYER_IS.md`](../data/model_error/WHAT_THIS_LAYER_IS.md)
 - [`../data/model_error/README.md`](../data/model_error/README.md)
+- [`../methodology/2026-11-snapshot-collection-plan.md`](../methodology/2026-11-snapshot-collection-plan.md)
+- [`../methodology/open_prediction_evaluation_plan_047_050.md`](../methodology/open_prediction_evaluation_plan_047_050.md)
 - [`../docs/methodology/valid_prediction_criteria.md`](./methodology/valid_prediction_criteria.md)
 - [`../docs/methodology/UDI_framework_v1.md`](./methodology/UDI_framework_v1.md)
 
@@ -138,7 +140,7 @@ UDI canonically means **Unobstructed Delta Index**.
 
 It is an experimental directional prediction-error framework for eligible magnitude-based records. State and trajectory predictions are evaluated separately through concordance rather than forced into magnitude UDI.
 
-The prediction layer exists for calibration, not authority.
+The prediction layer exists for calibration, not authority. The current register has **four open November forecasts (047–050)** with no November results, alongside closed historical records 041–046. The 2026-10-19 prospective plan fixes DunedinPACE, SymphonyAge, DEXA and relative VO₂max scoring; this is registration, not proof of improvement or Phase 2D eligibility.
 
 ---
 

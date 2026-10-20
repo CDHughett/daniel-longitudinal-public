@@ -1497,6 +1497,40 @@ class Validator:
             ),
         }
 
+        # Registered November forecasts; retain original text after closure.
+        protected_registration_records.update({
+            47: (
+                "Prediction: The November 16, 2026 TruAge collection will yield a"
+                " provider-reported DunedinPACE value of 0.76 (ratio), compared w"
+                "ith the August 17, 2026 baseline of 0.77. This is a numeric poin"
+                "t forecast, not a binary improvement guarantee; only the registe"
+                "red DunedinPACE field is admissible."
+            ),
+            48: (
+                "Prediction: The November 16, 2026 Advanced TruAge result will re"
+                "port SymphonyAge between 40.0 and 44.0 years inclusive, compared"
+                " with the August 17, 2026 baseline of 46.1 years. The range test"
+                "s partial reversal of the August rebound; neither a different ag"
+                "e clock nor a proxy result may satisfy it."
+            ),
+            49: (
+                "Prediction: The November 16, 2026 DEXA provider report will show"
+                " total fat mass at or below 36.0 lb AND provider-defined lean ma"
+                "ss at or above 183.0 lb, compared with August 17, 2026 DEXA valu"
+                "es of 40.0 lb and 185.3 lb respectively. Both components must ho"
+                "ld in a valid comparable DEXA assessment; Tanita and Bod Pod are"
+                " excluded."
+            ),
+            50: (
+                "Prediction: The November 16, 2026 valid formal metabolic-test re"
+                "port will show relative VO2max of at least 52.0 mL/kg/min, compa"
+                "red with the August 17, 2026 provider-app displayed value of 50 "
+                "mL/kg/min. Source-reported precision and method comparability co"
+                "ntrol scoring; a wearable estimate or absolute VO2 cannot substi"
+                "tute."
+            ),
+        })
+
         for (
             record_id,
             registered_prediction_note,
@@ -1546,8 +1580,8 @@ class Validator:
                     ),
                 )
 
-        # No records in the protected 041-046 block remain open.
-        protected_open_ids: tuple[int, ...] = ()
+        # Newly registered 047-050 require a separate documented closure.
+        protected_open_ids: tuple[int, ...] = (47, 48, 49, 50)
 
         for record_id in protected_open_ids:
             row = by_id.get(record_id)
@@ -1604,6 +1638,97 @@ class Validator:
                             f"remain blank: {field}"
                         ),
                     )
+
+        # Immutable prospective registration fields for 047-050.
+        locked_november_fields = {
+            47: {
+                "date": "2026-10-19",
+                "domain": "epigenetic_pace",
+                "model_version": "gpt6-subject-calibrated",
+                "prediction_value": "0.76",
+                "model_type": "subject_calibrated",
+                "calibration_state": "pre",
+                "flag": "primary",
+                "prediction_type": "point",
+            },
+            48: {
+                "date": "2026-10-19",
+                "domain": "epigenetic_symphony_age",
+                "model_version": "gpt6-subject-calibrated",
+                "prediction_value": "40.0-44.0",
+                "model_type": "subject_calibrated",
+                "calibration_state": "pre",
+                "flag": "primary",
+                "prediction_type": "range",
+            },
+            49: {
+                "date": "2026-10-19",
+                "domain": "dexa_body_composition",
+                "model_version": "gpt6-subject-calibrated",
+                "prediction_value": "1",
+                "model_type": "subject_calibrated",
+                "calibration_state": "pre",
+                "flag": "primary",
+                "prediction_type": "state",
+            },
+            50: {
+                "date": "2026-10-19",
+                "domain": "vo2max_relative",
+                "model_version": "gpt6-subject-calibrated",
+                "prediction_value": "1",
+                "model_type": "subject_calibrated",
+                "calibration_state": "pre",
+                "flag": "primary",
+                "prediction_type": "state",
+            },
+        }
+
+        for record_id, expected_fields in locked_november_fields.items():
+            row = by_id.get(record_id)
+            if row is None:
+                self.report.error(check, f"Missing registered November prediction {record_id:03d}")
+                continue
+            for field_name, expected_value in expected_fields.items():
+                if row.get(field_name, "").strip() != expected_value:
+                    self.report.error(
+                        check,
+                        (
+                            f"Record {record_id:03d} locked field drift "
+                            f"{field_name}: expected {expected_value!r}, "
+                            f"got {row.get(field_name, '')!r}"
+                        ),
+                    )
+            # At registration, open notes must be an exact forecast, not commentary.
+            # A separately governed closure may append notes but not rewrite this prefix.
+            if row.get(status_col, "").strip().lower() == "open":
+                expected_note = protected_registration_records[record_id]
+                if row.get(notes_col, "").strip() != expected_note:
+                    self.report.error(
+                        check,
+                        f"Record {record_id:03d} open prediction notes drift",
+                    )
+
+        # Entire companion is byte-frozen using its Git-blob SHA-1 identity.
+        # A later amendment must be expressly governed and separately committed.
+        november_plan_path = self.root / "methodology/open_prediction_evaluation_plan_047_050.md"
+        november_plan_blob_sha = "8513ec37bd145f8b5304483bb71bb5219947efee"
+        if not november_plan_path.is_file():
+            self.report.error(check, "Missing locked November 047-050 evaluation companion")
+        else:
+            november_plan_bytes = november_plan_path.read_bytes()
+            november_plan_git_sha = hashlib.sha1(
+                b"blob " + str(len(november_plan_bytes)).encode("ascii")
+                + b"\x00" + november_plan_bytes
+            ).hexdigest()
+            if november_plan_git_sha != november_plan_blob_sha:
+                self.report.error(
+                    check,
+                    (
+                        "Locked November evaluation companion changed: "
+                        f"expected Git blob {november_plan_blob_sha}, "
+                        f"got {november_plan_git_sha}"
+                    ),
+                )
 
         # Closed records whose adjudicated state is now
         # part of protected repository history.
@@ -1744,8 +1869,8 @@ class Validator:
                     f"from {min(ids):03d} through "
                     f"{max(ids):03d}; "
                     "041-046 closed/scored; "
-                    "041-046 registration "
-                    "provenance preserved"
+                    "047-050 open, forecast-locked; "
+                    "041-050 registration provenance preserved"
                 ),
             )
 

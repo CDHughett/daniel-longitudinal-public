@@ -113,8 +113,10 @@ Read:
 - [`../data/model_error/WHAT_THIS_LAYER_IS.md`](../data/model_error/WHAT_THIS_LAYER_IS.md)
 - [`../data/model_error/model_error_gap_v1.csv`](../data/model_error/model_error_gap_v1.csv)
 - [`../docs/methodology/valid_prediction_criteria.md`](../docs/methodology/valid_prediction_criteria.md)
+- [`../methodology/2026-11-snapshot-collection-plan.md`](../methodology/2026-11-snapshot-collection-plan.md)
+- [`../methodology/open_prediction_evaluation_plan_047_050.md`](../methodology/open_prediction_evaluation_plan_047_050.md)
 
-Check whether predictions were logged before their relevant outcomes, remained bounded and falsifiable, and stayed visible when wrong.
+Check whether predictions were logged before their relevant outcomes, remained bounded and falsifiable, and stayed visible when wrong. **041–046 are closed; 047–050 are open November 2026 forecasts** with no November outcomes yet. Verify their 2026-10-19 registration, source/precision rules, blank outcome/error fields and frozen thresholds. Do not count them in UDI or state concordance until formal closure.
 
 For future model-error schema semantics, see:
 
