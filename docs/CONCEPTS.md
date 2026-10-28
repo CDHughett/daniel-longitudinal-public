@@ -212,7 +212,7 @@ It may change from week to week without changing the declared phase or the broad
 
 A weekly operating posture organizes what the archive is currently watching; it does not by itself declare progression, a new substate, or a new phase.
 
-In W42, *recovery-cost and dose-repeatability observation* means examining whether expanded LI doses remain manageable across further completed work, delayed recovery and ordinary-life demands. W41's pull-up dose increased to 5×5 from W40's 5×4; favorable reported execution is not proof of zero cumulative cost or a new phase.
+In W43, *post-travel return / lumbar movement-tolerance observation* means examining comfortable movement, controlled hinge execution and retained exercise-specific availability after interruption. The closed W42 report describes **selective continuity**: completed progression exposures and maintained aerobic availability during some days, followed by planned resistance rest and travel omissions. That does not establish post-travel mechanical retention, clinical recovery or a new phase.
 
 ---
 
@@ -475,13 +475,13 @@ Operating substate:
 Consolidation / lock-in observation
 
 Weekly operating posture:
-Continued LI progression / recovery-cost and dose-repeatability observation
+Post-travel return / lumbar movement-tolerance observation
 
 Phase 2D:
 undeclared
 
 Current open model-error records:
-none in protected block 041–046
+047, 048, 049, 050 (prospective November forecasts; outcomes not yet observed)
 
 Recently closed model-error records:
 041, 042, 043, 044, 045, 046

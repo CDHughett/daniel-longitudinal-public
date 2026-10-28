@@ -101,9 +101,9 @@ Look for unresolved findings, corrected findings, source conflicts, and restrict
 
 Start with:
 
-[`../reports/2026-W41.md`](../reports/2026-W41.md)
+[`../reports/2026-W42.md`](../reports/2026-W42.md)
 
-Then examine the supporting structured rows for the same interval. W41 preserves the original repeatability question, documents a later 5×5 pull-up increase and a repeated hinge/grip prescription, and retains mixed recovery observations. Compare against [W40's first-exposure report](../reports/2026-W40.md). Neither result proves unlimited capacity or a new phase.
+Then examine the supporting structured rows for October 19–25. W42 preserves its original repeatability question but closes as **selective continuity**: new weighted pull/press and higher prescribed trap-bar loading were completed by report before rest and travel reduced formal exposure. Observe the missing final waking weight, ten completed sessions and sleep outlier rather than equating fewer minutes with lost capacity. Compare with [W41's conditional-repeatability report](../reports/2026-W41.md) and [W40's initial progression report](../reports/2026-W40.md). W43's later movement restriction is a new active-window observation, not a W42 result or formal phase change.
 
 The point is to see how the archive moves from recorded values and observations toward bounded retrospective interpretation.
 

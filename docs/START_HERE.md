@@ -59,10 +59,10 @@ broader operating substate
 Consolidation / lock-in observation
         ↓
 weekly operating posture
-Continued LI progression / recovery-cost and dose-repeatability observation
+Post-travel return / lumbar movement-tolerance observation
         ↓
 session-level observations
-standard and progression doses, recorded effort, recovery and trait-level execution
+actual movement, comfort, exercise-specific effort and post-travel availability
 ```
 
 In plain language:
@@ -72,7 +72,7 @@ In plain language:
 - the **weekly operating posture** is the narrower question being watched right now
 - **session-level observations** describe what happened in particular sessions or contexts
 
-Evidence at a lower level does not automatically promote the level above it. Week 40 documented initial controlled LI expansion; Week 41 reported conditional repeatability with unresolved recovery cost. Week 42 asks a further observation question without presuming progression or Phase 2D.
+Evidence at a lower level does not automatically promote the level above it. Week 40 documented controlled expansion and Week 41 conditional repeatability. Week 42 closed as **selective continuity**: completed progression exposures preceded planned recovery and a travel interruption, without a post-travel performance test. Week 43 examines comfortable movement and lumbar tolerance after travel; no formal Phase 2D transition is declared.
 
 Recurring terms are defined in [`docs/CONCEPTS.md`](./CONCEPTS.md).
 
