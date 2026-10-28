@@ -251,3 +251,10 @@ date,morning_weight_lb,daily_hrv_ms,resting_hr_bpm,daily_avg_hr_bpm,body_temp_f,
 2026-10-16,225.9,72,44,65,96.35,calm,high,calm,calm,none,none,technique_reduced_load_li;elevated_sleeping_hr;function_preserved,private_workbook:Daniel_Dataset_v1.35:Daily Biomarkers:2026-10-16
 2026-10-17,226.5,65,44,61,96.21,calm,high,calm,calm,none,none,hinge_grip_progression_repeat;function_preserved,private_workbook:Daniel_Dataset_v1.35:Daily Biomarkers:2026-10-17
 2026-10-18,226.8,84,52,56,97.14,calm,high,calm,calm,none,none,scheduled_li_rest_day;home_mobility;elevated_sleeping_hr;function_preserved,private_workbook:Daniel_Dataset_v1.35:Daily Biomarkers:2026-10-18
+2026-10-19,225.7,78,41,61,96.08,calm,high,calm,calm,none,none,pull_press_intensity;weighted_pullups_prescribed;reported_execution_preserved,private_workbook:Daniel_Dataset_v1.36:Daily Biomarkers:2026-10-19
+2026-10-20,226.7,79,46,63,95.67,calm,high,calm,calm,none,none,standard_li;trait_level_execution;transient_elevated_sleeping_hr,private_workbook:Daniel_Dataset_v1.36:Daily Biomarkers:2026-10-20
+2026-10-21,225.3,65,45,61,96.57,calm,high,calm,calm,none,none,technique_reduced_load_li;controlled_repetitions;trait_level_execution,private_workbook:Daniel_Dataset_v1.36:Daily Biomarkers:2026-10-21
+2026-10-22,226,71,44,59,96.24,calm,high,calm,calm,none,none,higher_load_li_progression;grip_automaticity;trap_bar_numeric_load_unverified,private_workbook:Daniel_Dataset_v1.36:Daily Biomarkers:2026-10-22
+2026-10-23,227,74,45,57,96.19,calm,high,calm,calm,none,none,scheduled_li_rest_day;trait_level_b1;ordinary_activity_preserved,private_workbook:Daniel_Dataset_v1.36:Daily Biomarkers:2026-10-23
+2026-10-24,227,63,45,59,95.59,calm,high,calm,calm,none,none,airbnb_travel;li_logistics_omission;trait_level_b1,private_workbook:Daniel_Dataset_v1.36:Daily Biomarkers:2026-10-24
+2026-10-25,,93,46,49,96.42,calm,moderate_high,calm,calm,none,none,airbnb_travel;environmental_sleep_disruption;no_scale;no_formal_training,private_workbook:Daniel_Dataset_v1.36:Daily Biomarkers:2026-10-25

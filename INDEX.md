@@ -32,16 +32,16 @@ Active phase:
 Phase 2 — Load Integration
 
 Weekly operating posture:
-Continued LI progression / recovery-cost and dose-repeatability observation
+Post-travel return / lumbar movement-tolerance observation
 
 Broader Phase 2 substate:
 Consolidation / lock-in observation
 
 Active weekly window:
-2026-W42
+2026-W43
 
 Most recent closed window:
-2026-W41
+2026-W42
 
 Open model-error records:
 047, 048, 049, 050 (prospective November 16 forecasts; no outcomes available)
@@ -65,7 +65,7 @@ August structured molecular integration:
 complete for currently represented fields
 
 Current weekly posture:
-preserve B1 as the aerobic comparator and distinct LI workloads while assessing completed output, delayed recovery and ordinary-life function; no automatic escalation or formal Phase 2D declaration
+observe comfortable post-travel movement and lumbar hinge tolerance before higher-load decisions, preserving B1 where comfortable and distinct LI/rest roles; no training debt, automatic escalation or Phase 2D declaration
 ```
 
 Current state source: [`LATEST.md`](./LATEST.md)
@@ -134,8 +134,9 @@ Current August physical and molecular source artifacts are preserved under [`sna
 # Reports
 
 - [`reports/README.md`](./reports/README.md) — report lifecycle
-- [`reports/2026-W42.md`](./reports/2026-W42.md) — current active report
-- [`reports/2026-W41.md`](./reports/2026-W41.md) — most recent closed report
+- [`reports/2026-W43.md`](./reports/2026-W43.md) — current active report
+- [`reports/2026-W42.md`](./reports/2026-W42.md) — most recent closed report
+- [`reports/2026-W41.md`](./reports/2026-W41.md) — preceding conditional-repeatability closeout
 - [`reports/2026-W40.md`](./reports/2026-W40.md) — first progression exposures
 - [`protocols/load-integration-progression-exposures-2026-W40.md`](./protocols/load-integration-progression-exposures-2026-W40.md) — retrospective LI progression exposure reference
 - [`reports/2026-W39.md`](./reports/2026-W39.md) — prior retention observation

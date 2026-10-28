@@ -75,9 +75,9 @@ The private-source manifest registers SHA-256 only when the exact retained priva
 
 Open the most recent closed report:
 
-[`../reports/2026-W41.md`](../reports/2026-W41.md)
+[`../reports/2026-W42.md`](../reports/2026-W42.md)
 
-Then compare its values with the governed structured datasets. For W41, distinguish the initial repeatability question from the later 5×5 pull-up increase; separate reported execution from independent mechanical verification and longer-term recovery. Compare with [W40's first-exposure report](../reports/2026-W40.md).
+Then compare its values with the governed structured datasets. For W42, distinguish the original dose-repeatability question from the retrospective **selective continuity** outcome: four completed LI exposures, six B1 sessions, scheduled resistance rest and travel omission. Audit prescribed versus verified working loads, missing October 25 waking weight, 10 completed sessions rather than synthetic rest/travel rows, and the fragmented 10h16m sleep outlier. Compare with [W41's conditional-repeatability report](../reports/2026-W41.md) and [W40's first-exposure report](../reports/2026-W40.md).
 
 Ask whether the report:
 
@@ -135,7 +135,7 @@ Read:
 
 Look for whether corrections, phase decisions, prediction closure, and source conflicts are handled under declared rules rather than outcome preference.
 
-When `LATEST.md` uses the immediate weekly operating posture `Continued LI progression / recovery-cost and dose-repeatability observation` while `PHASE_MAP.md` retains the broader `Consolidation / lock-in observation` substate, treat the former as the active W42 question and the latter as the canonical Phase 2 interpretation. W41 conditional repeatability does not independently declare Phase 2D.
+When `LATEST.md` uses the immediate weekly operating posture `Post-travel return / lumbar movement-tolerance observation` while `PHASE_MAP.md` retains the broader `Consolidation / lock-in observation` substate, treat the former as the active W43 question and the latter as the canonical Phase 2 interpretation. W42 selective continuity neither verifies post-travel mechanical retention nor independently declares Phase 2D. October 26–27 lumbar symptoms are W43 observations, not retroactive W42 outcomes.
 
 ---
 
