@@ -101,9 +101,9 @@ Look for unresolved findings, corrected findings, source conflicts, and restrict
 
 Start with:
 
-[`../reports/2026-W42.md`](../reports/2026-W42.md)
+[`../reports/2026-W43.md`](../reports/2026-W43.md)
 
-Then examine the supporting structured rows for October 19–25. W42 preserves its original repeatability question but closes as **selective continuity**: new weighted pull/press and higher prescribed trap-bar loading were completed by report before rest and travel reduced formal exposure. Observe the missing final waking weight, ten completed sessions and sleep outlier rather than equating fewer minutes with lost capacity. Compare with [W41's conditional-repeatability report](../reports/2026-W41.md) and [W40's initial progression report](../reports/2026-W40.md). W43's later movement restriction is a new active-window observation, not a W42 result or formal phase change.
+Then examine the supporting structured rows for October 26–November 1. W43 retains its original movement-tolerance question and closes as **conditional restoration** after restricted post-travel hinging, three symptom-directed days without formal training, and a graded return. Inspect missing October 26 waking weight, six completed training sessions, distinct HRV measurement windows and the two-day trap-bar load progression (each day's chosen plates used for all three sets). Compare with [W42's selective-continuity closeout](../reports/2026-W42.md) and [W44's prospective repeatability question](../reports/2026-W44.md).
 
 The point is to see how the archive moves from recorded values and observations toward bounded retrospective interpretation.
 

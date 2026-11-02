@@ -32,10 +32,10 @@ A provider export may improve provenance without becoming the canonical analytic
 
 | Domain | Current coverage | Notes |
 |---|---|---|
-| Daily biomarkers / subjective state | **Structured longitudinal** | `daily_biomarkers_v1.csv`; 259 continuous daily rows, 2026-02-09 through 2026-10-25 |
-| Training exposure | **Structured longitudinal** | `training_blocks_v1.csv`; 419 session rows through 2026-10-24 |
-| Context / perturbation events | **Structured event index** | `context_events_v1.csv`; 55 bounded events through 2026-10-25 |
-| Sleep | **Structured longitudinal + source-preserved historical coverage** | Canonical curated sleep has 259 continuous daily rows through 2026-10-25; broader RingConn episode export retained separately |
+| Daily biomarkers / subjective state | **Structured longitudinal** | `daily_biomarkers_v1.csv`; 266 continuous daily rows, 2026-02-09 through 2026-11-01 |
+| Training exposure | **Structured longitudinal** | `training_blocks_v1.csv`; 425 session rows through 2026-11-01 |
+| Context / perturbation events | **Structured event index** | `context_events_v1.csv`; 56 bounded events through 2026-11-01 |
+| Sleep | **Structured longitudinal + source-preserved historical coverage** | Canonical curated sleep has 266 continuous daily rows through 2026-11-01; broader RingConn episode export retained separately |
 | Recovery / vital signs | **Structured + narrative + source-preserved** | HRV, resting HR, daily average HR, sleep HR, SpO₂ and related signals appear across curated data, reports, screenshots and direct exports |
 | Body composition | **Snapshot-based** | DEXA, Bod Pod and scale-weight measurements occur at discrete intervals using differing methods |
 | Blood biomarkers | **Snapshot-based** | Periodic laboratory panels; not every private health source is public |
@@ -60,8 +60,8 @@ File:
 Current coverage:
 
 ```text
-2026-02-09 through 2026-10-25
-259 continuous daily rows
+2026-02-09 through 2026-11-01
+266 continuous daily rows
 ```
 
 The dataset includes source-transcribed measurements such as bodyweight and cardiovascular telemetry plus bounded subjective-state fields and compact context tags.
@@ -81,11 +81,11 @@ File:
 Current coverage:
 
 ```text
-2026-02-09 through 2026-10-24
-419 session rows
+2026-02-09 through 2026-11-01
+425 session rows
 ```
 
-Multiple sessions may occur on one date. A date with no completed session may therefore be represented in the aligned daily layer without a training row. In W42, October 23 scheduled LI rest, October 24 travel-related LI omission and October 25 complete travel interruption do not create artificial completed LI/B1 session records. The last completed B1 is October 24; W42 includes 6 B1 and 4 LI sessions.
+Multiple sessions may occur on one date. A date without a completed session can be represented in the daily layer without a training row. W43 contains three B1 and three LI completed sessions, ending November 1. October 26 travel and October 28–30 deliberate lumbar remediation do not produce synthetic completed-session records; W42's historical rest/travel omissions remain unchanged.
 
 The dataset preserves historical protocol transitions, B1, Load Integration, recovery variants and structured recreation where source-supported.
 
@@ -102,12 +102,12 @@ File:
 Current coverage:
 
 ```text
-55 bounded event rows
+56 bounded event rows
 represented interval begins 2026-02-09
-latest current event ends 2026-10-25
+latest current event ends 2026-11-01
 ```
 
-This is an event index, not a complete diary. The W42 entries capture the new differentiated resistance-training progression and the material Airbnb training interruption; scheduled LI rest and routine sleep variation do not require synthetic event rows.
+This is an event index, not a complete diary. W43 event `2026-10-26-01` captures post-travel localized lumbar restriction, three remediation days without normal structured training, and graded Oct 31–Nov 1 return. Earlier W42 progression/travel events remain. Routine rest and sleep variation do not require synthetic event rows.
 
 It captures context that materially improves interpretation of training availability, measurement conditions, recovery, protocol state, portability, model-error evaluation or source reconciliation.
 
@@ -190,13 +190,13 @@ The aligned daily machine-readable interval currently begins at:
 The current public daily/sleep structured layer is populated through:
 
 ```text
-2026-10-25
+2026-11-01
 ```
 
 The latest completed training session is represented on:
 
 ```text
-2026-10-24
+2026-11-01
 ```
 
 Different datasets may have different row counts because their unit of observation differs.
@@ -212,7 +212,7 @@ context events: zero-to-many bounded event rows per date/interval
 
 # Private Daniel Dataset Provenance
 
-The historical daily/training/event layer was retrospectively backfilled from completed private `Daniel_Dataset_v1.0` through `v1.33` source states. W40 appended from exact retained `Daniel_Dataset_v1.34`, W41 from `v1.35`, and W42 from `v1.36`, preserving all earlier governed rows. The v1.36 source covers October 19–25, 2026, with an exact retained-file identity registered in the private manifest.
+The historical daily/training/event layer was retrospectively backfilled from private `Daniel_Dataset_v1.0` through `v1.33` source states. W40 appended from exact retained `Daniel_Dataset_v1.34`, W41 from `v1.35`, W42 from `v1.36` and W43 from `v1.37`, preserving earlier governed rows. Exact v1.37 covers October 26–November 1, 2026 (378,166 bytes; SHA-256 `b6a989538909086d267c2dc99fa2488fe6dbf9576066ae5672f7fa9297510620`), registered in the private manifest. The retained workbook remains private and unchanged; the operator's Nov 1 trap-bar loading terminology clarification is separately documented.
 
 Row-level provenance is retained through `source_ref`.
 
@@ -324,8 +324,8 @@ Canonical sleep:
 Current public interval:
 
 ```text
-2026-02-09 through 2026-10-25
-259 continuous daily records
+2026-02-09 through 2026-11-01
+266 continuous daily records
 ```
 
 Known field-level quality restrictions remain documented in:

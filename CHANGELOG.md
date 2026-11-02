@@ -13,6 +13,15 @@ Biological interpretation belongs in `/reports`. This file records release-level
 
 ## [Unreleased]
 
+### November 2 W43/W44 rollover — Batches 1–3 committed; integrated audit and CI/PR pending
+
+- Registered exact retained private `Daniel_Dataset_v1.37` (378,166 bytes; SHA-256 `b6a989538909086d267c2dc99fa2488fe6dbf9576066ae5672f7fa9297510620`) covering October 26–November 1. The private workbook and long-form operator narrative remain unpublished.
+- Appended **7 daily biomarker**, **7 canonical sleep**, **6 completed training** and **1 bounded mechanical context** record with historical structured prefixes unchanged. Public totals reached **266 daily**, **266 sleep**, **425 training** and **56 context** records through November 1. Omitted training during travel/remediation is not represented by synthetic completed sessions.
+- Closed `reports/2026-W43.md` as **conditional restoration**, preserving its original temporal observation boundary: three B1 sessions (165 minutes / 8.89 miles), three LI sessions (140 minutes), **305 logged minutes across six sessions**. The initially restricted loaded hinge, three deliberate no-training days and favorable staged return are reported without claiming full recovery, causal mechanism or repeatable unrestricted loading.
+- Documented the operator's Nov 2 clarification: Oct 31 trap bar 3×5 at 45 lb plates per side for **all sets**; Nov 1 3×5 at 45+25 lb plates per side for **all sets**, with the normal heaviest loading level withheld. Trap-bar mass unverified. The private source remains unchanged; an inconsistent VA collection-date reference is unresolved.
+- Opened `reports/2026-W44.md` November 2–8 under **Lumbar tolerance consolidation / repeatable normal-execution observation**, with no assigned outcome. Updated nine current-facing surfaces to **W44 Active / W43 Closed**, preserving Phase 2 consolidation, undeclared Phase 2D, prospectively locked open Model Errors 047–050, closed historical outcomes, DQ-011, v1.1.0 release/tag/DOI identity and source boundaries.
+- **Validation status:** Batches 1–3 committed; independent five-validator run, integrated audit, exact-head CI, PR review, merge and post-merge checks remain pending and must not be described as passed.
+
 ### October 28 W42/W43 rollover — integrated audit recorded; final-head CI/PR review pending
 
 - Appended W42 governed data from exact retained `Daniel_Dataset_v1.36`: **259 daily biomarkers** and **259 canonical sleep** records through **2026-10-25**, **419 completed training** rows through **2026-10-24**, and **55 bounded context-event** rows through **2026-10-25**. Batch 1 appended exactly 7 daily, 7 sleep, 10 genuine completed sessions and 2 materially relevant context events, without deleting or rewriting earlier rows; scheduled resistance rest and travel omissions are not counted as completed sessions.
