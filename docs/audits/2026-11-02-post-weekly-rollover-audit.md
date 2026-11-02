@@ -1,11 +1,11 @@
 # 2026-11-02 W43/W44 Post-Weekly-Rollover Integrated Integrity Audit
 
-**Repository:** \`CDHughett/daniel-longitudinal-public\`  
-**Baseline production \`main\`:** \`b6a708de46b04d6af350cc8a3ff9522ff22ee960\`  
-**Working branch:** \`w43-closeout-w44-rollover\`  
-**Batch 1 governed data/provenance commit:** \`39f51a883bc73ccfe70e39a851f4e64653712639\`  
-**Batch 2 report-lifecycle commit:** \`ef9545b1b0c237185fdb22adbd278db93d86f7f9\`  
-**Batch 3 / Batch 4 independently validated head:** \`b81c449e64dcd42a311711e9f161ff5d921df03f\`  
+**Repository:** `CDHughett/daniel-longitudinal-public`  
+**Baseline production `main`:** `b6a708de46b04d6af350cc8a3ff9522ff22ee960`  
+**Working branch:** `w43-closeout-w44-rollover`  
+**Batch 1 governed data/provenance commit:** `39f51a883bc73ccfe70e39a851f4e64653712639`  
+**Batch 2 report-lifecycle commit:** `ef9545b1b0c237185fdb22adbd278db93d86f7f9`  
+**Batch 3 / Batch 4 independently validated head:** `b81c449e64dcd42a311711e9f161ff5d921df03f`  
 **Pre-audit GitHub Actions run:** [41485871108](https://github.com/CDHughett/daniel-longitudinal-public/actions/runs/41485871108)  
 **Audit date:** 2026-11-02  
 **Pre-audit determination:** **INTEGRITY PASS / CONDITIONAL GO** for the exact Batch 3 head. Five unchanged official validators completed successfully with zero errors; two inherited historical warnings remain. **This new audit commit requires a separate exact-head CI success before PR review or merge.**
@@ -18,8 +18,8 @@ This is a **selective, credibility-relevant integrity checkpoint**, not a daily 
 
 Audit scope:
 
-- exact identification and privacy status of the retained private \`Daniel_Dataset_v1.37\` source;
-- append-only checks against the pre-rollover production \`main\`;
+- exact identification and privacy status of the retained private `Daniel_Dataset_v1.37` source;
+- append-only checks against the pre-rollover production `main`;
 - Batch 4's independently recorded **90/90** source-value comparison checks and separate data-shape/chronology tests;
 - reproducibility of 12 structured W43 metrics and the intentional separation of daily and overnight HRV;
 - real completed-session records, intentionally missing days, and November 1 trap-bar **loading-level** interpretation;
@@ -36,9 +36,9 @@ Audit scope:
 
 ## 1. Exact controlling private source and source boundary
 
-The source was supplied as the retained private workbook and registered in \`data/source_provenance/daniel_dataset_private_manifest.csv\`:
+The source was supplied as the retained private workbook and registered in `data/source_provenance/daniel_dataset_private_manifest.csv`:
 
-\`\`\`text
+```text
 Source version:         v1.37
 Private source name:    Daniel_Dataset_v1.37
 Source type:            private_workbook
@@ -47,31 +47,31 @@ Exact retained bytes:   378166
 SHA-256:                b6a989538909086d267c2dc99fa2488fe6dbf9576066ae5672f7fa9297510620
 Manifest status:        registered
 Manifest count:         37 -> 38 entries
-\`\`\`
+```
 
 The filename, byte count and hash refer to the **actual retained source**, not a recreated spreadsheet or a hash inferred from an old GitHub entry. The public manifest records its identity while the workbook and full private operator narrative remain outside the repository.
 
 Mixed date representation in the source (including Excel serials/day-of-month entries) was normalized to ISO dates in curated rows. This was a date-index conversion, not permission to supply missing measurements. One waking-weight value on October 26 remains blank because a scale was unavailable. No November 2 data were added. Source locators identify the retained workbook's relevant daily, sleep and training sections; they do not make the raw source public.
 
-The internal archive identifier \`2026-W43\` refers to **October 26–November 1**, equivalent to **ISO 2026-W44**. The established internal convention is retained, and \`2026-W44\` opens on November 2. Automated external week joins must not silently equate the internal and ISO labels.
+The internal archive identifier `2026-W43` refers to **October 26–November 1**, equivalent to **ISO 2026-W44**. The established internal convention is retained, and `2026-W44` opens on November 2. Automated external week joins must not silently equate the internal and ISO labels.
 
 ---
 
 ## 2. Historical preservation and exact governed append
 
-The audit compared the five governed CSV/manifest files on the verified pre-rollover \`main\` with the Batch 3 head. **Each complete historical file was an unchanged, byte-for-byte prefix of its new version**, including CSV headers and all pre-existing rows. Only the intended new records were appended.
+The audit compared the five governed CSV/manifest files on the verified pre-rollover `main` with the Batch 3 head. **Each complete historical file was an unchanged, byte-for-byte prefix of its new version**, including CSV headers and all pre-existing rows. Only the intended new records were appended.
 
 | Governed file | Historical rows | Appended | Verified total | Current represented endpoint |
 |---|---:|---:|---:|---|
-| \`data/daily_biomarkers_v1.csv\` | 259 | 7 | **266** | 2026-11-01 |
-| \`data/sleep_longitudinal_v1.csv\` | 259 | 7 | **266** | 2026-11-01 |
-| \`data/training_blocks_v1.csv\` | 419 | 6 | **425** | 2026-11-01 |
-| \`data/context_events_v1.csv\` | 55 | 1 | **56** | Context interval ends 2026-11-01 |
-| \`data/source_provenance/daniel_dataset_private_manifest.csv\` | 37 | 1 | **38** | v1.37 |
+| `data/daily_biomarkers_v1.csv` | 259 | 7 | **266** | 2026-11-01 |
+| `data/sleep_longitudinal_v1.csv` | 259 | 7 | **266** | 2026-11-01 |
+| `data/training_blocks_v1.csv` | 419 | 6 | **425** | 2026-11-01 |
+| `data/context_events_v1.csv` | 55 | 1 | **56** | Context interval ends 2026-11-01 |
+| `data/source_provenance/daniel_dataset_private_manifest.csv` | 37 | 1 | **38** | v1.37 |
 
 **22 new governed records; zero historical deletions or historical row revisions.** All seven daily and seven canonical sleep dates are present in order (2026-10-26 through 2026-11-01). All 425 training session identifiers remain unique and the 56 context-event identifiers remain unique. The independent machine-readable validator additionally preserved the separately protected historical 325-session training prefix through August 30.
 
-The three B1 and three LI session records are genuine reported completions on **October 27, October 31 and November 1**. October 26's travel interruption and October 28–30's deliberate lumbar remediation did not create synthetic completed-session entries. The bounded context record \`2026-10-26-01\` describes the material mechanical interruption and graded return; it is **not** a seven-day symptom diary.
+The three B1 and three LI session records are genuine reported completions on **October 27, October 31 and November 1**. October 26's travel interruption and October 28–30's deliberate lumbar remediation did not create synthetic completed-session entries. The bounded context record `2026-10-26-01` describes the material mechanical interruption and graded return; it is **not** a seven-day symptom diary.
 
 ---
 
@@ -144,38 +144,38 @@ The causal roles of travel, unfamiliar sleep arrangements, road sitting, trainin
 
 ## 6. Report lifecycle and nine-current-surface alignment
 
-The closed report is [\`reports/2026-W43.md\`](../../reports/2026-W43.md):
+The closed report is [`reports/2026-W43.md`](../../reports/2026-W43.md):
 
-\`\`\`text
+```text
 Status:             Closed
 Descriptor:         conditional restoration
 Observation window: 2026-10-26 through 2026-11-01
-\`\`\`
+```
 
 The report retains its **original October 28 opening question**, which was authored *after* October 26–27 were already reported; those initial facts are correctly identified as historical starting context, **not prospectively preregistered outcomes**. Subsequent W43 observations and outcome interpretation occur in a separate retrospective closeout section.
 
-The next report is [\`reports/2026-W44.md\`](../../reports/2026-W44.md):
+The next report is [`reports/2026-W44.md`](../../reports/2026-W44.md):
 
-\`\`\`text
+```text
 Status:             Active
 Posture:            Lumbar tolerance consolidation / repeatable normal-execution observation
 Observation window: 2026-11-02 through 2026-11-08
 Assigned outcome:   none
-\`\`\`
+```
 
 W44 is an **observation question**, not an automatic exercise progression order or a registered forecast predicting functional recovery.
 
 Nine current-facing files were synchronized:
 
-1. \`README.md\`
-2. \`LATEST.md\`
-3. \`INDEX.md\`
-4. \`docs/START_HERE.md\`
-5. \`docs/CONCEPTS.md\`
-6. \`docs/OBSERVER_QUICKSTART.md\`
-7. \`docs/NEWCOMER_PATH.md\`
-8. \`data/DATA_COVERAGE.md\`
-9. \`CHANGELOG.md\`
+1. `README.md`
+2. `LATEST.md`
+3. `INDEX.md`
+4. `docs/START_HERE.md`
+5. `docs/CONCEPTS.md`
+6. `docs/OBSERVER_QUICKSTART.md`
+7. `docs/NEWCOMER_PATH.md`
+8. `data/DATA_COVERAGE.md`
+9. `CHANGELOG.md`
 
 The current-state surfaces show **W44 Active / W43 Closed**, the identical W44 posture, the Phase 2 consolidation state and covered record counts (**266 daily / 266 sleep / 425 training / 56 context**). Observer and newcomer entry points route to W43 as the most recent closed report rather than the old W42 closeout; W42 remains available as historical evidence. The glossary and start page distinguish immediate weekly posture from the broader Phase 2 substate.
 
@@ -184,18 +184,18 @@ The current-state surfaces show **W44 Active / W43 Closed**, the identical W44 p
 ## 7. Exact pre-audit CI: five official validators, unchanged
 
 **Verified GitHub Actions run:** [41485871108](https://github.com/CDHughett/daniel-longitudinal-public/actions/runs/41485871108)  
-**Head SHA:** \`b81c449e64dcd42a311711e9f161ff5d921df03f\`  
-**Job ID:** \`125415939997\`  
-**Job:** \`validate\`; **status \`completed\` / conclusion \`success\`**  
+**Head SHA:** `b81c449e64dcd42a311711e9f161ff5d921df03f`  
+**Job ID:** `125415939997`  
+**Job:** `validate`; **status `completed` / conclusion `success`**  
 **Run date:** 2026-11-02; Python 3.11.17
 
-| Unmodified command from \`.github/workflows/validate.yml\` | Observed step result |
+| Unmodified command from `.github/workflows/validate.yml` | Observed step result |
 |---|---|
-| \`python tools/validate_repository.py\` | **PASS** — 10 passes, 0 errors, 2 inherited warnings |
-| \`python tools/validate_machine_readable.py\` | **PASS** — 0 errors, 0 warnings |
-| \`python tools/validate_weekly_rollover.py\` | **PASS** — 12 W43 structured markers reproduced |
-| \`python tools/validate_august_snapshot.py\` | **PASS** — protected snapshot/adjudication alignment |
-| \`python tools/validate_coherence.py\` | **PASS** — W44 Active/W43 Closed, data endpoints, posture and published release aligned |
+| `python tools/validate_repository.py` | **PASS** — 10 passes, 0 errors, 2 inherited warnings |
+| `python tools/validate_machine_readable.py` | **PASS** — 0 errors, 0 warnings |
+| `python tools/validate_weekly_rollover.py` | **PASS** — 12 W43 structured markers reproduced |
+| `python tools/validate_august_snapshot.py` | **PASS** — protected snapshot/adjudication alignment |
+| `python tools/validate_coherence.py` | **PASS** — W44 Active/W43 Closed, data endpoints, posture and published release aligned |
 
 GitHub Actions logs for the exact job confirm all five named steps succeeded. The core repository validator additionally reported:
 
@@ -209,7 +209,7 @@ GitHub Actions logs for the exact job confirm all five named steps succeeded. Th
 - canonical v1.1.0 release DOI accepted;
 - preserved registered RingConn source-export identities.
 
-The exact validator and workflow **blob SHAs on the audit's pre-audit head equal those on baseline \`main\`**. No test, warning threshold or enforcement rule was weakened to pass. Earlier Batch 1 and 2 intermediate CI runs had failed while the weekly lifecycle and current navigation were incomplete; the completed Batch 3 head successfully passed.
+The exact validator and workflow **blob SHAs on the audit's pre-audit head equal those on baseline `main`**. No test, warning threshold or enforcement rule was weakened to pass. Earlier Batch 1 and 2 intermediate CI runs had failed while the weekly lifecycle and current navigation were incomplete; the completed Batch 3 head successfully passed.
 
 **This audit document is a new Markdown file. Therefore the pre-audit counts of 282 files, 176 Markdown files and 951 references must not be treated as post-audit counts. The new head requires its own exact-SHA run.**
 
@@ -217,7 +217,7 @@ The exact validator and workflow **blob SHAs on the audit's pre-audit head equal
 
 ## 8. Inherited warnings, unresolved quality items and limitations
 
-Two **pre-existing core-validator warnings**, reproduced in the pre-rollover \`main\` CI run and in run 41485871108, remain intentionally visible:
+Two **pre-existing core-validator warnings**, reproduced in the pre-rollover `main` CI run and in run 41485871108, remain intentionally visible:
 
 1. **Canonical sleep-stage reconciliation:** 2026-03-31 **+16 minutes** and 2026-04-02 **+14 minutes** are historical governed differences. No W43 source row caused or resolved these observations.
 2. **DQ-001:** historical awake/awakening duplication remains on **14 dates**. This issue predates the W43 append and should not be suppressed or presented as a new W43 failure.
@@ -242,14 +242,14 @@ These issues are **tracked evidence boundaries**, not grounds to silently rewrit
 
 The baseline-to-pre-audit compare contains **16 expected changed paths**: five governed append-only data/provenance paths, two weekly reports and nine current-facing surfaces. It contains **no modified validator, GitHub Actions workflow, snapshot/source-export, model-error, methodology, phase-map, prediction or release-governance file**.
 
-The original five Python validator blob identities and \`.github/workflows/validate.yml\` are identical on baseline \`main\` and the verified pre-audit head.
+The original five Python validator blob identities and `.github/workflows/validate.yml` are identical on baseline `main` and the verified pre-audit head.
 
 Protected states:
 
 - **Phase:** Phase 2 — Load Integration; broader substate **Consolidation / lock-in observation**; **Phase 2D undeclared**.
 - **Predictions:** historical 041–046 closed/scored; prospective November Model Errors **047–050 open, forecast-locked and unscored**. The 2026-10-19 scoring registration remains unchanged.
-- **August:** protected molecular outputs, source documents, body-composition measurements and closed Model Error 043 (\`overall_improvement_not_met\` / \`over\`) passed the cross-layer validator.
-- **Release:** frozen published **v1.1.0** tag remains at \`92126e1cc882c3822d9e03b30b11cfc1d30b4fbb\`; version DOI **10.5281/zenodo.22759132**, all-versions DOI **10.5281/zenodo.20815611**. No new release or DOI is authorized.
+- **August:** protected molecular outputs, source documents, body-composition measurements and closed Model Error 043 (`overall_improvement_not_met` / `over`) passed the cross-layer validator.
+- **Release:** frozen published **v1.1.0** tag remains at `92126e1cc882c3822d9e03b30b11cfc1d30b4fbb`; version DOI **10.5281/zenodo.22759132**, all-versions DOI **10.5281/zenodo.20815611**. No new release or DOI is authorized.
 - **Private boundary:** the retained v1.37 workbook and long-form operator narrative are not public artifacts; public records contain scoped curated evidence and source identity rather than full private content.
 
 Prior completed reports, source corrections, prediction hypotheses and admissibility rules are not retrospectively redefined by this rollover.
@@ -260,17 +260,17 @@ Prior completed reports, source corrections, prediction hypotheses and admissibi
 
 **Batch 4 determination:** **INTEGRITY PASS**, with two inherited official warnings and explicit scientific/source limitations.
 
-**Batch 5 audit artifact:** This file is to be committed **alone** to \`docs/audits/2026-11-02-post-weekly-rollover-audit.md\`; it does **not** revise \`CHANGELOG.md\` or any earlier file. GitHub \`main\` remains at the unchanged baseline until an independently reviewed PR is merged.
+**Batch 5 audit artifact:** This file is to be committed **alone** to `docs/audits/2026-11-02-post-weekly-rollover-audit.md`; it does **not** revise `CHANGELOG.md` or any earlier file. GitHub `main` remains at the unchanged baseline until an independently reviewed PR is merged.
 
 **Publication decision:** **CONDITIONAL GO to exact-audit-head CI and subsequent PR review, but no permission to merge from the pre-audit CI result alone.**
 
 Required sequence after this document is committed:
 
-1. Read the **new audit commit SHA** and confirm this audit is its **sole changed file** versus \`b81c449e64dcd42a311711e9f161ff5d921df03f\`.
+1. Read the **new audit commit SHA** and confirm this audit is its **sole changed file** versus `b81c449e64dcd42a311711e9f161ff5d921df03f`.
 2. Obtain and inspect the GitHub Actions run for **that exact new SHA**, not a prior branch run. Confirm the same **five unchanged official validators** completed successfully. Record any warnings and new Markdown/reference counts accurately.
-3. Compare the final branch against baseline production \`main\`: the previously approved **16 rollover paths plus this one audit file**, no unexpected changes or protected artifact modifications.
+3. Compare the final branch against baseline production `main`: the previously approved **16 rollover paths plus this one audit file**, no unexpected changes or protected artifact modifications.
 4. Verify W43 Closed / W44 Active, the row endpoints, locked Model Errors 047–050, undeclared Phase 2D, source provenance, DQ status and frozen v1.1.0 identity.
-5. Permit Batch 6 PR review/merge only **after** exact-head CI and all integrity/provenance gates are verified. Following merge, independently verify production \`main\` and its separate post-merge CI.
+5. Permit Batch 6 PR review/merge only **after** exact-head CI and all integrity/provenance gates are verified. Following merge, independently verify production `main` and its separate post-merge CI.
 6. Do **not** create a new version tag/Zenodo DOI, rescore forecasts, infer future W44 observations or declare full lumbar recovery.
 
 At authoring time, **run 41485871108 validates the pre-audit head only**. A successful new audit-commit CI result must be observed independently; it is not pre-claimed by this document.
