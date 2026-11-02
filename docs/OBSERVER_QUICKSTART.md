@@ -75,9 +75,9 @@ The private-source manifest registers SHA-256 only when the exact retained priva
 
 Open the most recent closed report:
 
-[`../reports/2026-W42.md`](../reports/2026-W42.md)
+[`../reports/2026-W43.md`](../reports/2026-W43.md)
 
-Then compare its values with the governed structured datasets. For W42, distinguish the original dose-repeatability question from the retrospective **selective continuity** outcome: four completed LI exposures, six B1 sessions, scheduled resistance rest and travel omission. Audit prescribed versus verified working loads, missing October 25 waking weight, 10 completed sessions rather than synthetic rest/travel rows, and the fragmented 10h16m sleep outlier. Compare with [W41's conditional-repeatability report](../reports/2026-W41.md) and [W40's first-exposure report](../reports/2026-W40.md).
+Then compare its values with the governed structured datasets. For W43, separate the originally open post-travel movement question from the retrospective **conditional restoration** conclusion. Audit three B1 sessions (165 minutes / 8.89 miles), three LI sessions (140 minutes), the three-day structured-training suspension, missing October 26 waking weight, and separate daily/overnight HRV. Check the operator-clarified Oct 31 and Nov 1 trap-bar loading levels, each applied for **all three sets**, without treating immediate success as verified delayed/full-load tolerance. Compare with [W42's selective continuity](../reports/2026-W42.md) and [W44's prospective observation](../reports/2026-W44.md).
 
 Ask whether the report:
 

@@ -212,7 +212,7 @@ It may change from week to week without changing the declared phase or the broad
 
 A weekly operating posture organizes what the archive is currently watching; it does not by itself declare progression, a new substate, or a new phase.
 
-In W43, *post-travel return / lumbar movement-tolerance observation* means examining comfortable movement, controlled hinge execution and retained exercise-specific availability after interruption. The closed W42 report describes **selective continuity**: completed progression exposures and maintained aerobic availability during some days, followed by planned resistance rest and travel omissions. That does not establish post-travel mechanical retention, clinical recovery or a new phase.
+In W44, *lumbar tolerance consolidation / repeatable normal-execution observation* means examining whether comfortable B1 and controlled loaded-hinge execution can recur after graded lumbar re-entry, including delayed symptoms and accurately documented plate levels. The closed W43 report describes **conditional restoration** after travel-associated restriction, deliberate remediation and favorable immediate return. This does not establish unrestricted lumbar recovery, sustainable full loading or a phase transition.
 
 ---
 
@@ -465,7 +465,7 @@ AI disclosure:
 
 # Current Terminology State
 
-As of the current October 2026 archive state:
+As of the current November 2026 archive state:
 
 ```text
 Active phase:
@@ -475,7 +475,7 @@ Operating substate:
 Consolidation / lock-in observation
 
 Weekly operating posture:
-Post-travel return / lumbar movement-tolerance observation
+Lumbar tolerance consolidation / repeatable normal-execution observation
 
 Phase 2D:
 undeclared
