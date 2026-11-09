@@ -32,10 +32,10 @@ A provider export may improve provenance without becoming the canonical analytic
 
 | Domain | Current coverage | Notes |
 |---|---|---|
-| Daily biomarkers / subjective state | **Structured longitudinal** | `daily_biomarkers_v1.csv`; 266 continuous daily rows, 2026-02-09 through 2026-11-01 |
-| Training exposure | **Structured longitudinal** | `training_blocks_v1.csv`; 425 session rows through 2026-11-01 |
+| Daily biomarkers / subjective state | **Structured longitudinal** | `daily_biomarkers_v1.csv`; 273 continuous daily rows, 2026-02-09 through 2026-11-08 |
+| Training exposure | **Structured longitudinal** | `training_blocks_v1.csv`; 439 session rows through 2026-11-08 |
 | Context / perturbation events | **Structured event index** | `context_events_v1.csv`; 56 bounded events through 2026-11-01 |
-| Sleep | **Structured longitudinal + source-preserved historical coverage** | Canonical curated sleep has 266 continuous daily rows through 2026-11-01; broader RingConn episode export retained separately |
+| Sleep | **Structured longitudinal + source-preserved historical coverage** | Canonical curated sleep has 273 continuous daily rows through 2026-11-08; broader RingConn episode export retained separately |
 | Recovery / vital signs | **Structured + narrative + source-preserved** | HRV, resting HR, daily average HR, sleep HR, SpO₂ and related signals appear across curated data, reports, screenshots and direct exports |
 | Body composition | **Snapshot-based** | DEXA, Bod Pod and scale-weight measurements occur at discrete intervals using differing methods |
 | Blood biomarkers | **Snapshot-based** | Periodic laboratory panels; not every private health source is public |
@@ -60,8 +60,8 @@ File:
 Current coverage:
 
 ```text
-2026-02-09 through 2026-11-01
-266 continuous daily rows
+2026-02-09 through 2026-11-08
+273 continuous daily rows
 ```
 
 The dataset includes source-transcribed measurements such as bodyweight and cardiovascular telemetry plus bounded subjective-state fields and compact context tags.
@@ -81,11 +81,11 @@ File:
 Current coverage:
 
 ```text
-2026-02-09 through 2026-11-01
-425 session rows
+2026-02-09 through 2026-11-08
+439 session rows
 ```
 
-Multiple sessions may occur on one date. A date without a completed session can be represented in the daily layer without a training row. W43 contains three B1 and three LI completed sessions, ending November 1. October 26 travel and October 28–30 deliberate lumbar remediation do not produce synthetic completed-session records; W42's historical rest/travel omissions remain unchanged.
+Multiple sessions may occur on one date. W44 recorded seven B1 and seven LI completed sessions (November 2–8), bringing training to 439 records. The earlier W43 travel/remediation interruptions remain source-grounded **zero-session** days rather than synthetic completed sessions; a nominal session distance or standard load is not independently verified mechanical dose.
 
 The dataset preserves historical protocol transitions, B1, Load Integration, recovery variants and structured recreation where source-supported.
 
@@ -107,7 +107,7 @@ represented interval begins 2026-02-09
 latest current event ends 2026-11-01
 ```
 
-This is an event index, not a complete diary. W43 event `2026-10-26-01` captures post-travel localized lumbar restriction, three remediation days without normal structured training, and graded Oct 31–Nov 1 return. Earlier W42 progression/travel events remain. Routine rest and sleep variation do not require synthetic event rows.
+This is an event index, not a complete diary. The latest bounded W43 event `2026-10-26-01` captures post-travel lumbar restriction, three remediation days without normal loading, and controlled return on October 31–November 1. W44's routine standard reintegration is in daily/training rows and the retrospective report, without inventing a new material context event. Earlier W42 events remain unchanged.
 
 It captures context that materially improves interpretation of training availability, measurement conditions, recovery, protocol state, portability, model-error evaluation or source reconciliation.
 
@@ -190,13 +190,13 @@ The aligned daily machine-readable interval currently begins at:
 The current public daily/sleep structured layer is populated through:
 
 ```text
-2026-11-01
+2026-11-08
 ```
 
 The latest completed training session is represented on:
 
 ```text
-2026-11-01
+2026-11-08
 ```
 
 Different datasets may have different row counts because their unit of observation differs.
@@ -212,7 +212,7 @@ context events: zero-to-many bounded event rows per date/interval
 
 # Private Daniel Dataset Provenance
 
-The historical daily/training/event layer was retrospectively backfilled from private `Daniel_Dataset_v1.0` through `v1.33` source states. W40 appended from exact retained `Daniel_Dataset_v1.34`, W41 from `v1.35`, W42 from `v1.36` and W43 from `v1.37`, preserving earlier governed rows. Exact v1.37 covers October 26–November 1, 2026 (378,166 bytes; SHA-256 `b6a989538909086d267c2dc99fa2488fe6dbf9576066ae5672f7fa9297510620`), registered in the private manifest. The retained workbook remains private and unchanged; the operator's Nov 1 trap-bar loading terminology clarification is separately documented.
+The historical daily/training/event layer was retrospectively backfilled from private `Daniel_Dataset_v1.0` through `v1.33` states. Exact retained W40–W44 versions v1.34–v1.38 were appended under source governance with earlier records preserved. The latest private `Daniel_Dataset_v1.38` covers November 2–8, 2026 (371,260 bytes; SHA-256 `4a852beee7ea74895dd4c37a454e14deb32f9cb2667f927abde70d893cdfa85f`). Prior v1.37 remains registered for October 26–November 1 with its independent November 1 operator loading clarification. The original workbooks and full operator narratives remain private.
 
 Row-level provenance is retained through `source_ref`.
 
@@ -324,8 +324,8 @@ Canonical sleep:
 Current public interval:
 
 ```text
-2026-02-09 through 2026-11-01
-266 continuous daily records
+2026-02-09 through 2026-11-08
+273 continuous daily records
 ```
 
 Known field-level quality restrictions remain documented in:

@@ -13,6 +13,15 @@ Biological interpretation belongs in `/reports`. This file records release-level
 
 ## [Unreleased]
 
+### November 9 W44/W45 rollover — Batches 1–3 committed; independent audit and exact-final-head CI/PR pending
+
+- Registered retained private `Daniel_Dataset_v1.38` (371,260 bytes; SHA-256 `4a852beee7ea74895dd4c37a454e14deb32f9cb2667f927abde70d893cdfa85f`) for November 2–8. The original workbook and private operator narrative are not public.
+- Appended **7 daily biomarker**, **7 canonical sleep** and **14 reported completed training** rows, with **0 new bounded context events**, preserving earlier exact historical CSV prefixes. Current endpoints are **273 daily**, **273 sleep**, **439 training** through November 8, plus **56 context events** most recently ending November 1; no W45 data are inferred.
+- Closed W44 as **consolidated reintegration** while preserving its original prospective opening. Seven paired B1/LI days contributed **385 B1 min / 21.14 recorded mi** and **315 LI min**, or **700 logged minutes across 14 sessions**. Waking weight averaged 226.5 lb, daily HRV 63.4 ms, separate overnight HRV 67.3 ms and sleep 7h21m; no full lumbar clearance, causal recovery mechanism or comprehensively verified expanded-load repeatability is claimed.
+- Opened W45 November 9–15 as **Active** under `Pre-snapshot continuity / lumbar-tolerance monitoring` without presuming a training or testing outcome. Existing November 16–17 provider preparation, Tanita comparability, locked forecast registration and Phase 2 governance remain separate.
+- Synchronized nine current-facing navigation/coverage/terminology/changelog files to **W45 Active / W44 Closed**, correct live row counts and source identities, preserving original W43/W44 chronology, unresolved DQ-011, Model Errors 047–050 open/locked/unscored, undeclared Phase 2D and frozen published v1.1.0 tag/DOI.
+- **Validation:** Batch 1 source/append and Batch 2 report lifecycle checks completed; Batch 3 is a scoped documentation synchronization. **Independent full five-validator testing, integrated audit, final exact-head CI, PR review and production merge/post-merge verification remain pending**, not pre-claimed as passed.
+
 ### November 2 W43/W44 rollover — Batches 1–3 committed; integrated audit and CI/PR pending
 
 - Registered exact retained private `Daniel_Dataset_v1.37` (378,166 bytes; SHA-256 `b6a989538909086d267c2dc99fa2488fe6dbf9576066ae5672f7fa9297510620`) covering October 26–November 1. The private workbook and long-form operator narrative remain unpublished.

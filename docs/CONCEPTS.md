@@ -212,7 +212,7 @@ It may change from week to week without changing the declared phase or the broad
 
 A weekly operating posture organizes what the archive is currently watching; it does not by itself declare progression, a new substate, or a new phase.
 
-In W44, *lumbar tolerance consolidation / repeatable normal-execution observation* means examining whether comfortable B1 and controlled loaded-hinge execution can recur after graded lumbar re-entry, including delayed symptoms and accurately documented plate levels. The closed W43 report describes **conditional restoration** after travel-associated restriction, deliberate remediation and favorable immediate return. This does not establish unrestricted lumbar recovery, sustainable full loading or a phase transition.
+In active W45, *pre-snapshot continuity / lumbar-tolerance monitoring* means observing familiar standard B1/LI, lumbar response, recovery indicators and actual provider test preparation without predetermining results. Closed W44 describes **consolidated reintegration** after seven paired reported standard sessions; W43 documents earlier **conditional restoration**. None of these states independently establishes unrestricted lumbar reserve, Phase 2D or a scored November prediction.
 
 ---
 
@@ -475,7 +475,7 @@ Operating substate:
 Consolidation / lock-in observation
 
 Weekly operating posture:
-Lumbar tolerance consolidation / repeatable normal-execution observation
+Pre-snapshot continuity / lumbar-tolerance monitoring
 
 Phase 2D:
 undeclared
