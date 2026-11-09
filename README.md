@@ -36,7 +36,7 @@ Specialized material such as model-error records, source provenance, testing art
 
 # Current archive state
 
-**Plain-language summary:** W44 closed as **consolidated reintegration** after seven paired days of familiar standard B1 and LI following W43's graded lumbar re-entry. Training was reported as comfortably trait-like, while weekly HRV means declined and average sleep shortened relative to W43. W45 observes standard continuity and November 16–17 provider-governed testing preparation without declaring unrestricted lumbar recovery, new adaptation, Phase 2D or prediction outcomes.
+**Plain-language summary:** W44 closed as **consolidated reintegration** after seven paired days of familiar standard B1 and LI following W43's graded lumbar re-entry. Training was repeatedly reported as comfortable and familiar, while weekly HRV means declined and average sleep shortened relative to W43. W45 observes standard continuity and November 16–17 provider-governed testing preparation without declaring unrestricted lumbar recovery, new adaptation, Phase 2D or prediction outcomes.
 
 The formal archive labels below preserve the precise phase/state vocabulary used by reports and validators.
 

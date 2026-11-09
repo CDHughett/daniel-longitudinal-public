@@ -13,7 +13,7 @@ All-versions DOI: https://doi.org/10.5281/zenodo.20815611
 
 ## Current State
 
-**Plain-language summary:** W44 closed as **consolidated reintegration** following seven consecutive paired B1/LI days under familiar standard prescriptions after W43's graded lumbar return. Repeated execution was reported as comfortable and trait-like, while HRV and sleep duration moved less favorably than W43. W45 observes ongoing standard execution, lumbar response and provider-governed November 16–17 preparation; neither unrestricted recovery nor testing outcomes are presumed.
+**Plain-language summary:** W44 closed as **consolidated reintegration** following seven consecutive paired B1/LI days under familiar standard prescriptions after W43's graded lumbar return. Repeated execution was reported as comfortable and familiar, while HRV and sleep duration moved less favorably than W43. W45 observes ongoing standard execution, lumbar response and provider-governed November 16–17 preparation; neither unrestricted recovery nor testing outcomes are presumed.
 
 Formal archive labels and governance state:
 
