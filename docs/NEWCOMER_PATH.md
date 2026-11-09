@@ -101,9 +101,9 @@ Look for unresolved findings, corrected findings, source conflicts, and restrict
 
 Start with:
 
-[`../reports/2026-W43.md`](../reports/2026-W43.md)
+[`../reports/2026-W44.md`](../reports/2026-W44.md)
 
-Then examine the supporting structured rows for October 26–November 1. W43 retains its original movement-tolerance question and closes as **conditional restoration** after restricted post-travel hinging, three symptom-directed days without formal training, and a graded return. Inspect missing October 26 waking weight, six completed training sessions, distinct HRV measurement windows and the two-day trap-bar load progression (each day's chosen plates used for all three sets). Compare with [W42's selective-continuity closeout](../reports/2026-W42.md) and [W44's prospective repeatability question](../reports/2026-W44.md).
+Examine November 2–8's seven daily rows, seven canonical sleep rows and fourteen completed training-session rows. W44 preserves its original prospective question and closes retrospectively as **consolidated reintegration**: seven paired standard B1/LI days totaling 700 logged minutes with reported familiar execution, while daily HRV (63.4 ms) and separate overnight HRV (67.3 ms) both averaged lower than W43. Sleep averaged 7h21m. Distinguish nominal exercise dose from independently verified mechanics and avoid interpreting repeated ease as complete lumbar tissue recovery. Compare [W43's conditional-restoration closeout](../reports/2026-W43.md) and [W45's still-Active pre-snapshot question](../reports/2026-W45.md).
 
 The point is to see how the archive moves from recorded values and observations toward bounded retrospective interpretation.
 

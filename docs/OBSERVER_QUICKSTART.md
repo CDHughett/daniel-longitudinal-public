@@ -75,9 +75,9 @@ The private-source manifest registers SHA-256 only when the exact retained priva
 
 Open the most recent closed report:
 
-[`../reports/2026-W43.md`](../reports/2026-W43.md)
+[`../reports/2026-W44.md`](../reports/2026-W44.md)
 
-Then compare its values with the governed structured datasets. For W43, separate the originally open post-travel movement question from the retrospective **conditional restoration** conclusion. Audit three B1 sessions (165 minutes / 8.89 miles), three LI sessions (140 minutes), the three-day structured-training suspension, missing October 26 waking weight, and separate daily/overnight HRV. Check the operator-clarified Oct 31 and Nov 1 trap-bar loading levels, each applied for **all three sets**, without treating immediate success as verified delayed/full-load tolerance. Compare with [W42's selective continuity](../reports/2026-W42.md) and [W44's prospective observation](../reports/2026-W44.md).
+Check the original Active question separately from W44's retrospective **consolidated reintegration** closeout. Audit seven B1 (385 min / 21.14 *logged* miles), seven LI (315 min), **700 formal minutes**, seven waking weights (226.5 lb mean), distinct Daily Biomarkers HRV (63.4 ms) and overnight Sleep Log HRV (67.3 ms), and mean overnight sleep (7h21m). Do not confuse operator-reported standard-load ease with verified per-set loads or unrestricted lumbar recovery. Contrast [W43's conditional restoration](../reports/2026-W43.md) with [W45's still-Active prospective question](../reports/2026-W45.md); no November test result is known.
 
 Ask whether the report:
 
@@ -135,7 +135,7 @@ Read:
 
 Look for whether corrections, phase decisions, prediction closure, and source conflicts are handled under declared rules rather than outcome preference.
 
-When `LATEST.md` uses the immediate weekly operating posture `Post-travel return / lumbar movement-tolerance observation` while `PHASE_MAP.md` retains the broader `Consolidation / lock-in observation` substate, treat the former as the active W43 question and the latter as the canonical Phase 2 interpretation. W42 selective continuity neither verifies post-travel mechanical retention nor independently declares Phase 2D. October 26–27 lumbar symptoms are W43 observations, not retroactive W42 outcomes.
+When `LATEST.md` uses the immediate weekly operating posture `Pre-snapshot continuity / lumbar-tolerance monitoring` while `PHASE_MAP.md` retains the broader `Consolidation / lock-in observation` substate, treat the former as the open W45 question and the latter as the unchanged Phase 2 interpretation. W44 consolidated reintegration is retrospective functional evidence, not full lumbar clearance, a November testing result or independent Phase 2D declaration. W43 post-travel lumbar symptoms remain W43 observations rather than retroactive W42 outcomes.
 
 ---
 

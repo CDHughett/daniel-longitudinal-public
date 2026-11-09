@@ -32,16 +32,16 @@ Active phase:
 Phase 2 — Load Integration
 
 Weekly operating posture:
-Lumbar tolerance consolidation / repeatable normal-execution observation
+Pre-snapshot continuity / lumbar-tolerance monitoring
 
 Broader Phase 2 substate:
 Consolidation / lock-in observation
 
 Active weekly window:
-2026-W44
+2026-W45
 
 Most recent closed window:
-2026-W43
+2026-W44
 
 Open model-error records:
 047, 048, 049, 050 (prospective November 16 forecasts; no outcomes available)
@@ -134,9 +134,10 @@ Current August physical and molecular source artifacts are preserved under [`sna
 # Reports
 
 - [`reports/README.md`](./reports/README.md) — report lifecycle
-- [`reports/2026-W44.md`](./reports/2026-W44.md) — current active report
-- [`reports/2026-W43.md`](./reports/2026-W43.md) — most recent closed report / conditional restoration
-- [`reports/2026-W42.md`](./reports/2026-W42.md) — preceding selective-continuity report
+- [`reports/2026-W45.md`](./reports/2026-W45.md) — current active report / pre-snapshot continuity and lumbar-tolerance monitoring
+- [`reports/2026-W44.md`](./reports/2026-W44.md) — most recent closed report / consolidated reintegration
+- [`reports/2026-W43.md`](./reports/2026-W43.md) — preceding conditional-restoration report
+- [`reports/2026-W42.md`](./reports/2026-W42.md) — earlier selective-continuity report
 - [`reports/2026-W41.md`](./reports/2026-W41.md) — preceding conditional-repeatability closeout
 - [`reports/2026-W40.md`](./reports/2026-W40.md) — first progression exposures
 - [`protocols/load-integration-progression-exposures-2026-W40.md`](./protocols/load-integration-progression-exposures-2026-W40.md) — retrospective LI progression exposure reference

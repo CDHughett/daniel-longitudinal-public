@@ -59,10 +59,10 @@ broader operating substate
 Consolidation / lock-in observation
         ↓
 weekly operating posture
-Lumbar tolerance consolidation / repeatable normal-execution observation
+Pre-snapshot continuity / lumbar-tolerance monitoring
         ↓
 session-level observations
-actual lumbar comfort, B1 and loaded-hinge control, exercise-specific effort and delayed symptom response
+actual standard B1/LI execution, lumbar response, sleep/autonomic context and provider-governed preparation requirements
 ```
 
 In plain language:
@@ -72,7 +72,7 @@ In plain language:
 - the **weekly operating posture** is the narrower question being watched right now
 - **session-level observations** describe what happened in particular sessions or contexts
 
-Evidence at a lower level does not automatically promote the level above it. Week 40 documented controlled expansion, Week 41 conditional repeatability and Week 42 selective continuity. Week 43 closed as **conditional restoration**: post-travel mechanical restriction prompted three days of formal training suspension, then a graded return. Week 44 examines repeatability without presuming unrestricted recovery or declaring Phase 2D.
+Evidence at a lower level does not automatically promote the level above it. Week 40 demonstrated controlled expansion, Week 41 conditional repeatability, Week 42 selective continuity and Week 43 conditional restoration after travel-associated lumbar restriction. Week 44 closed as **consolidated reintegration** following seven paired days of reported comfortable standard B1/LI with mixed HRV and sleep-duration readings. Active Week 45 observes continuity and November 16–17 test preparation, without unrestricted lumbar clearance, new November outcomes or Phase 2D.
 
 Recurring terms are defined in [`docs/CONCEPTS.md`](./CONCEPTS.md).
 
