@@ -13,6 +13,16 @@ Biological interpretation belongs in `/reports`. This file records release-level
 
 ## [Unreleased]
 
+### November 17 W45/W46 rollover — Batches 1–3 on isolated branch; independent audit / PR pending
+
+- Registered exact retained private `Daniel_Dataset_v1.39` (November 9–15; 371,613 bytes; SHA-256 `66272d40a250a674e3cd78bf7ee23ac40b3520ab9562fba371cf9cbd2a28622c`) while keeping its bytes and full private operator narrative outside public GitHub.
+- Appended seven Daily Biomarkers, seven canonical sleep, twelve completed B1/LI, one material November 14–15 schedule-shift event and one manifest row. Historic CSV byte prefixes are retained. New public totals: **280 daily / 280 sleep through Nov 15, 451 completed training through Nov 14, and 57 context events through Nov 15**. Planned Nov 15 rest is not a completed session.
+- W45's original prospective opening remains; the appended retrospective closes as **controlled restraint**, with five familiar paired days, one reduced pair and one planned rest, **330 B1 + 260 LI = 590 formal minutes**, 226.5 lb mean waking weight, distinct daily HRV 69.6 ms / overnight HRV 68.3 ms and 7h18m mean sleep. Mechanical reserve, delayed lumbar response, wearable sleep-stage accuracy and causal physiology remain bounded.
+- W46 opened **Active — November measurement intake / recovery and mechanical continuity**, with **no November testing result or scored 047–050 prediction** in this rollover. Tanita is supplemental, not method-equivalent to Bod Pod or DEXA.
+- Synchronized README, LATEST, INDEX, START_HERE, CONCEPTS, OBSERVER_QUICKSTART, NEWCOMER_PATH, DATA_COVERAGE and CHANGELOG. Kept the structured-versus-note discrepancies on November 11, 12, 13 and 15 as annotated rather than changing measurements.
+- Governance preserved: Phase 2 — Load Integration / Consolidation / lock-in observation; Phase 2D undeclared; Model Errors 041–046 closed, 047–050 open/forecast-locked/unscored; DQ-011 and historical sleep warnings unresolved; published v1.1.0 tag, protected historical artifacts, DOI lineage, validators and workflow unchanged. **Unreleased** maintenance.
+- **Validation:** independent Batch 4 audit, final exact-head CI gate, PR review and post-merge production verification remain separate. This entry does not preclaim approval or release.
+
 ### November 9 W44/W45 rollover — Batches 1–3 committed; independent audit and exact-final-head CI/PR pending
 
 - Registered retained private `Daniel_Dataset_v1.38` (371,260 bytes; SHA-256 `4a852beee7ea74895dd4c37a454e14deb32f9cb2667f927abde70d893cdfa85f`) for November 2–8. The original workbook and private operator narrative are not public.

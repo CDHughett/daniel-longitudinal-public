@@ -212,7 +212,7 @@ It may change from week to week without changing the declared phase or the broad
 
 A weekly operating posture organizes what the archive is currently watching; it does not by itself declare progression, a new substate, or a new phase.
 
-In active W45, *pre-snapshot continuity / lumbar-tolerance monitoring* means observing familiar standard B1/LI, lumbar response, recovery indicators and actual provider test preparation without predetermining results. Closed W44 describes **consolidated reintegration** after seven paired reported standard sessions; W43 documents earlier **conditional restoration**. None of these states independently establishes unrestricted lumbar reserve, Phase 2D or a scored November prediction.
+In active W46, *November measurement intake / recovery and mechanical continuity* means observing actual source-backed collection conditions and recovery without inventing outcomes. Closed W45 documents **controlled restraint** following familiar standard execution, deliberate reduction and planned rest; W44 **consolidated reintegration** and W43 **conditional restoration** remain earlier observations. None establishes unrestricted lumbar reserve, Phase 2D or a scored November prediction.
 
 ---
 
@@ -475,13 +475,13 @@ Operating substate:
 Consolidation / lock-in observation
 
 Weekly operating posture:
-Pre-snapshot continuity / lumbar-tolerance monitoring
+November measurement intake / recovery and mechanical continuity
 
 Phase 2D:
 undeclared
 
 Current open model-error records:
-047, 048, 049, 050 (prospective November forecasts; outcomes not yet observed)
+047, 048, 049, 050 (prospective November forecasts; no results integrated or scored)
 
 Recently closed model-error records:
 041, 042, 043, 044, 045, 046

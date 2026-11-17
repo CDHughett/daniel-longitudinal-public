@@ -36,17 +36,17 @@ Specialized material such as model-error records, source provenance, testing art
 
 # Current archive state
 
-**Plain-language summary:** W44 closed as **consolidated reintegration** after seven paired days of familiar standard B1 and LI following W43's graded lumbar re-entry. Training was repeatedly reported as comfortable and familiar, while weekly HRV means declined and average sleep shortened relative to W43. W45 observes standard continuity and November 16–17 provider-governed testing preparation without declaring unrestricted lumbar recovery, new adaptation, Phase 2D or prediction outcomes.
+**Plain-language summary:** W45 closed as **controlled restraint** after five familiar standard B1/LI pairs, one deliberately reduced paired day and November 15 planned rest. Reported easy execution supports bounded functional continuity, not unrestricted lumbar clearance or verified adaptation. W46 observes source-verified November measurement intake and subsequent recovery; **no November test result or prediction score is integrated in this rollover**.
 
 The formal archive labels below preserve the precise phase/state vocabulary used by reports and validators.
 
 | Domain | Current state |
 |---|---|
 | Phase | **Phase 2 — Load Integration** |
-| Weekly operating posture | **Pre-snapshot continuity / lumbar-tolerance monitoring** |
+| Weekly operating posture | **November measurement intake / recovery and mechanical continuity** |
 | Broader Phase 2 substate | **Consolidation / lock-in observation** |
-| Active weekly window | **2026-W45** |
-| Most recent closed window | **2026-W44** |
+| Active weekly window | **2026-W46** |
+| Most recent closed window | **2026-W45** |
 | Installed training architecture | **B1 + Load Integration** |
 | Open model-error records | **047–050: four prospective November predictions**; 041–046 closed |
 | Record 043 | **closed / not supported — `overall_improvement_not_met` / over** |
@@ -57,13 +57,13 @@ Current-state anchors retained for repository validation:
 
 ```text
 Active weekly window:
-2026-W45
+2026-W46
 
 Most recent closed window:
-2026-W44
+2026-W45
 ```
 
-W44 demonstrated reported repeatable **standard** B1/LI execution across seven paired days after W43's conditional lumbar restoration. Normal-dose subjective ease did not independently verify exact per-set loading, unrestricted lumbar recovery, or repeatability of the earlier expanded resistance prescriptions. W45 monitors continued mechanical tolerance and snapshot preparation; the W43 corrected October 31/November 1 plate-level history remains in its closed report.
+W45 demonstrated favorable reported standard execution through five paired days, deliberate reduced loading on November 14, and planned no-session rest on November 15. The week totaled 590 formal minutes. Exact per-set loads, delayed lumbar tolerance and unrestricted expanded resistance remain unverified. W43 and W44 remain independently documented historical recovery steps; W46 is an outcome-free active observation window.
 
 Term definitions: [`docs/CONCEPTS.md`](./docs/CONCEPTS.md)  
 Authoritative current detail: [`LATEST.md`](./LATEST.md)
@@ -73,14 +73,14 @@ Authoritative current detail: [`LATEST.md`](./LATEST.md)
 
 # Machine-readable core
 
-Current public daily and canonical sleep coverage extends through 2026-11-08 (273 continuous records each). Completed-training coverage ends 2026-11-08 (439 sessions), while the bounded context index remains at 56 events through 2026-11-01. W44's fourteen reported B1/LI completions do not imply a new context event; no W45 results are inferred.
+Public daily biomarkers and canonical sleep now cover 280 continuous records each through November 15, 2026. Completed-training coverage ends November 14 with 451 sessions because November 15 was a planned no-session day; context events total 57 through November 15, including the bounded voluntary reduced-load/rest event. The private v1.39 workbook and any November testing outcomes remain outside the public repository.
 
 | Dataset | Unit | Coverage |
 |---|---|---|
-| [`data/daily_biomarkers_v1.csv`](./data/daily_biomarkers_v1.csv) | one row per represented day | 273 continuous rows through 2026-11-08 |
-| [`data/sleep_longitudinal_v1.csv`](./data/sleep_longitudinal_v1.csv) | one governed wake-date row | 273 continuous rows through 2026-11-08 |
-| [`data/training_blocks_v1.csv`](./data/training_blocks_v1.csv) | one row per completed session/block | 439 rows through 2026-11-08 |
-| [`data/context_events_v1.csv`](./data/context_events_v1.csv) | one bounded context event | 56 rows through 2026-11-01 |
+| [`data/daily_biomarkers_v1.csv`](./data/daily_biomarkers_v1.csv) | one row per represented day | 280 continuous rows through 2026-11-15 |
+| [`data/sleep_longitudinal_v1.csv`](./data/sleep_longitudinal_v1.csv) | one governed wake-date row | 280 continuous rows through 2026-11-15 |
+| [`data/training_blocks_v1.csv`](./data/training_blocks_v1.csv) | one row per completed session/block | 451 rows through 2026-11-14 |
+| [`data/context_events_v1.csv`](./data/context_events_v1.csv) | one bounded context event | 57 rows through 2026-11-15 |
 
 Training is session-indexed: a represented day with zero completed training sessions does not require a synthetic training row.
 
