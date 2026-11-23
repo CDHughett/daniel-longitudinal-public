@@ -166,6 +166,29 @@ Where present, an accompanying epoch file serves as the temporal anchor record f
 
 ---
 
+## [2026-11 — Phase 2 Consolidation / Partial Physical Snapshot Intake](./snapshots/2026-11/)
+**Artifacts currently archived:**
+- DEXA body-composition image (`2026-11-dexa-body-comp.jpg`)
+- DEXA summary image (`2026-11-dexa-summary.jpg`)
+- Supplemental Tanita body-composition image (`2026-11-tanita.jpg`)
+- Formal VO₂ test summary PDF (`2026-11-vo2-summary.pdf`)
+
+**Links:**
+- Epoch file: [`2026-11 Epoch.md`](./snapshots/2026-11/2026-11%20Epoch.md)
+- Checksums: [`checksums.txt`](./snapshots/2026-11/checksums.txt)
+- Prospective collection plan: [`2026-11-snapshot-collection-plan.md`](./methodology/2026-11-snapshot-collection-plan.md)
+- Locked predictions: [`open_prediction_evaluation_plan_047_050.md`](./methodology/open_prediction_evaluation_plan_047_050.md)
+
+**Notes:**
+- The prospective collection window was 2026-11-16 through 2026-11-17; appointment times in the governing plan are not verified actual procedure timestamps.
+- The four currently available physical files were archived on 2026-11-23 and are registered in the folder's SHA-256 checksum manifest. The checksums establish file identity, not measurement validity or privacy clearance.
+- Tanita is supplemental after the planned Bod Pod assessment was unavailable; it is not interchangeable with Bod Pod or DEXA.
+- No November TruAge, Advanced TruAge, or TruHealth provider-result documents are present in the snapshot folder; molecular evidence remains pending.
+- Physical outcomes have not been transcribed into the structured November snapshot layers or adjudicated against registered Model Errors 049–050. Records 047–048 also remain open and unscored.
+- This is a partial, artifact-first archive intake, not a completed November biological synthesis, phase transition, or validation of report contents.
+
+---
+
 ## Future
 
 Future snapshots will be appended chronologically.

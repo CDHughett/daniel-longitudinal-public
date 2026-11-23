@@ -123,11 +123,14 @@ This record preserves the distinction between provider-displayed administrative 
 - [`SNAPSHOT_LOG.md`](./SNAPSHOT_LOG.md)
 - [`EPOCH_INDEX.md`](./EPOCH_INDEX.md)
 - [`snapshots/2026-08/2026-08 Epoch.md`](./snapshots/2026-08/2026-08%20Epoch.md)
+- [`snapshots/2026-11/2026-11 Epoch.md`](./snapshots/2026-11/2026-11%20Epoch.md) — partial physical artifact intake; molecular reports pending
 - [`methodology/2026-08-snapshot-collection-plan.md`](./methodology/2026-08-snapshot-collection-plan.md)
 - [`data/source_provenance/2026-08-trudiagnostic-reconciliation.md`](./data/source_provenance/2026-08-trudiagnostic-reconciliation.md)
 - [`data/model_error/record_043_closure.md`](./data/model_error/record_043_closure.md)
 
 Current August physical and molecular source artifacts are preserved under [`snapshots/2026-08/`](./snapshots/2026-08/), with SHA-256 registration in the folder manifest.
+
+November's four physical measurement files are archived under [`snapshots/2026-11/`](./snapshots/2026-11/) with a four-entry [`checksums.txt`](./snapshots/2026-11/checksums.txt). The November epoch is a partial artifact record: full source admissibility, molecular results, structured result transcription, and Model Error 047–050 scoring remain separate pending work.
 
 ---
 
