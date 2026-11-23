@@ -212,7 +212,7 @@ It may change from week to week without changing the declared phase or the broad
 
 A weekly operating posture organizes what the archive is currently watching; it does not by itself declare progression, a new substate, or a new phase.
 
-In active W46, *November measurement intake / recovery and mechanical continuity* means observing actual source-backed collection conditions and recovery without inventing outcomes. Closed W45 documents **controlled restraint** following familiar standard execution, deliberate reduction and planned rest; W44 **consolidated reintegration** and W43 **conditional restoration** remain earlier observations. None establishes unrestricted lumbar reserve, Phase 2D or a scored November prediction.
+In active W47, *post-assessment continuity / supplemental running-tolerance observation* means recording familiar B1/LI and new post-B1 running as separable exposures, including delayed mechanical/autonomic observations without assuming benefit. Closed W46 documents **controlled re-entry with selective expansion**, W45 **controlled restraint**, W44 **consolidated reintegration** and W43 **conditional restoration**. None establishes unrestricted lumbar reserve, formal Phase 2D or a scored November prediction.
 
 ---
 
@@ -475,7 +475,7 @@ Operating substate:
 Consolidation / lock-in observation
 
 Weekly operating posture:
-November measurement intake / recovery and mechanical continuity
+Post-assessment continuity / supplemental running-tolerance observation
 
 Phase 2D:
 undeclared

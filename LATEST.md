@@ -13,79 +13,79 @@ All-versions DOI: https://doi.org/10.5281/zenodo.20815611
 
 ## Current State
 
-**Plain-language summary:** W45 closed as **controlled restraint** after five familiar standard B1/LI pairs, one deliberately reduced paired day and November 15 planned rest. Reported easy execution supports bounded functional continuity, not unrestricted lumbar clearance or verified adaptation. W46 observes source-verified November measurement intake and subsequent recovery; **no November test result or prediction score is integrated in this rollover**.
+**Plain-language summary:** W46 closed as **controlled re-entry with selective expansion** after two assessment days without formal training and five familiar paired B1/LI days. The 507 recorded formal minutes include seven new post-B1 running minutes *already inside* B1. W47 is Active for November 23–29 to observe familiar baseline continuity and novel running tolerance without assuming verified VO₂ improvement, unrestricted mechanical recovery or a November prediction outcome.
 
 Formal archive labels and governance state:
 
 - **Phase:** Phase 2 — Load Integration
-- **Weekly operating posture:** November measurement intake / recovery and mechanical continuity
+- **Weekly operating posture:** Post-assessment continuity / supplemental running-tolerance observation
 - **Broader Phase 2 substate:** Consolidation / lock-in observation
-- **Active window:** 2026-W46
-- **Prior window:** 2026-W45 closed
+- **Active window:** 2026-W47
+- **Prior window:** 2026-W46 closed
 - **Installed architecture:** B1 + Load Integration, with progression, standard, reduced-load and rest roles kept distinct
 - **Supplementation context:** The 2026-09-18 simplification remains background without causal attribution. See [`protocols/supplementation-architecture-2026-09-18.md`](protocols/supplementation-architecture-2026-09-18.md)
-- **System posture:** Document actual November measurement collection conditions and recovery/return-to-training exposure when source-backed; honor provider instructions and lumbar tolerance without compensatory loading or forced escalation
-- **Behavioral posture:** W45 controlled restraint followed W44 consolidated reintegration: five standard paired B1/LI days, one reduced pair and one planned formal rest day preserved continuity without maximum exposure
-- **Recovery posture:** W45 mean sleep 7h18m; Daily Biomarkers HRV 69.6 ms, separate overnight Sleep Log HRV 68.3 ms, sleeping HR 47.1 bpm and daily resting HR 47.6 bpm; individual variability and wearable-stage limitations preclude causal inference or clinical mechanical clearance
-- **Bodyweight/intake posture:** Seven W45 waking weights averaged 226.5 lb; acute post-B1/post-GI observations and DEXA/Tanita methods are not interchangeable. Body-composition change and dietary adequacy remain unverified in this rollover
-- **Reserve/progression posture:** W45 familiar standard LI was followed by deliberate reduction/rest; exact trap-bar loads, delayed lumbar response and unrestricted expanded pull/press variants remain unverified. No automatic progression is authorized
+- **System posture:** Observe actual W47 familiar B1/LI exposure, separately identified supplemental running, next-day and delayed local response, sleep and recovery without forced progression; actual provider guidance and symptom state govern
+- **Behavioral posture:** W46 resumed five paired training days after Nov 16–17 assessment pauses, with brief running within B1 Nov 18 and 20; ten completed formal sessions and no added catch-up sessions
+- **Recovery posture:** W46 mean canonical sleep 7h17m (five nights below 460 min), structured Daily Biomarkers HRV 64.6 ms, separate overnight HRV 64.4 ms, daily resting HR 47.3 bpm and sleeping HR 47.3 bpm; all seven REM-confidence labels Low. No causal running/autonomic or mechanical-clearance inference follows
+- **Bodyweight/intake posture:** Seven W46 waking weights averaged 227.0 lb (225.9–227.8 lb); acute post-B1 and pre-/post-GI measurements are not comparable to standardized waking weight or DEXA/Tanita. Tissue change and energy balance remain unverified in this weekly rollover
+- **Reserve/progression posture:** W46 familiar LI remained subjectively easy. The two short running exposures differed in grade, speed and duration; verified segment HR/RPE, impact adaptation, delayed lumbar response and unrestricted loading reserve remain unavailable. No automatic running progression is authorized
 - **Model-error posture:** Records 041–046 remain closed/scored (043 not supported / `overall_improvement_not_met` / `over`); **047–050 registered, open, forecast-locked and unscored**, with no November results integrated
 - **Data-quality posture:** DQ-011 still open on the 2026-09-08 resting-heart-rate source; other source differences not silently corrected
 - **Formal Phase 2D declaration:** None
 - **August snapshot:** Physical and molecular sources archived/reconciled; Model Error 043 adjudication complete
 
-The weekly operating posture reflects **W46 Active**, not a phase change or test result. **Controlled restraint** describes W45's intentional exposure reduction after familiar standard execution, not proof of complete lumbar recovery or unrestricted expanded resistance capacity. Broader Phase 2 remains **Consolidation / lock-in observation**.
+The weekly operating posture reflects **W47 Active**, not a phase transition or November test result. **Controlled re-entry with selective expansion** describes W46's bounded functional sequence, not proof of durable impact adaptation, biological improvement or unrestricted lumbar capacity. Broader Phase 2 remains **Consolidation / lock-in observation**.
 
 Definitions: [`docs/CONCEPTS.md`](docs/CONCEPTS.md). Coverage: [`data/DATA_COVERAGE.md`](data/DATA_COVERAGE.md).
 
 ---
 
 
-## Week 45 Closeout
+## Week 46 Closeout
 
 Observation window:
-
-```text
-2026-11-09 through 2026-11-15
-```
-
-Completed formal training:
-
-- **6 B1 sessions / 330 formal minutes / 17.85 logged miles**
-- **6 Load Integration sessions / 260 formal minutes**
-- **590 formal minutes across 12 reported completed sessions**. Five standard paired days were followed by one deliberate reduced-load pair November 14 and planned zero-session rest November 15; a 110-minute reduction versus W44 is a change of exposure, not verified capacity loss.
-
-| Marker | W45 |
-|---|---:|
-| Morning bodyweight | 226.5 lb (seven mornings) |
-| Daily biomarker HRV | 69.6 ms |
-| Resting heart rate | 47.6 bpm |
-| Daily average heart rate | 59.0 bpm |
-| Sleep HRV | 68.3 ms |
-| Sleep average heart rate | 47.1 bpm |
-| Total overnight sleep | 7h18m |
-| Deep sleep (wearable estimate) | 1h41m |
-| REM sleep (wearable estimate) | 44m |
-
-W45 closed as **controlled restraint**. Morning lumbar symptoms did not reportedly recur during standard execution or the planned reduction, but exact loads, delayed mechanics, sleep-stage validity and causal autonomic recovery remain unverified. Structured daily versus narrative HRV/HR disagreements remain annotated, not overwritten. No November testing result is integrated into this closeout.
-
-Closed report: [`reports/2026-W45.md`](reports/2026-W45.md). Earlier recovery records: [W44](reports/2026-W44.md), [W43](reports/2026-W43.md).
-
----
-
-## Week 46 Operating Posture
-
-Active window:
 
 ```text
 2026-11-16 through 2026-11-22
 ```
 
-**Open question:** What actual November collection conditions and subsequent recovery/return-to-training observations can be substantiated without presuming test completion, attributing changes to training, or scoring locked predictions prematurely?
+Completed formal training:
 
-Capture actual procedure timing, method, source identity, fasting/hydration/provider-directed restrictions and recovery as separately verified evidence. Scheduled appointments are not proof of valid collection or a result. Model Errors 047–050 remain open, forecast-locked and unscored; Phase 2D remains undeclared. Tanita is supplemental, not Bod Pod/DEXA-equivalent. A future source-reviewed integration will address November results separately.
+- **5 B1 sessions / 282 formal minutes / 15.86 approximate logged miles**. The familiar 275-minute walking anchor plus **7 supplemental running minutes** were all recorded inside five B1 sessions.
+- **5 Load Integration sessions / 225 formal minutes**
+- **507 formal minutes across 10 reported completed sessions**. November 16–17 assessment days recorded no completed B1/LI. Familiar paired training resumed November 18–22.
 
-Active report: [`reports/2026-W46.md`](reports/2026-W46.md).
+| Marker | W46 |
+|---|---:|
+| Morning bodyweight | 227.0 lb (seven mornings) |
+| Daily biomarker HRV | 64.6 ms |
+| Resting heart rate | 47.3 bpm |
+| Daily average heart rate | 60.3 bpm |
+| Sleep HRV | 64.4 ms |
+| Sleep average heart rate | 47.3 bpm |
+| Total overnight sleep | 7h17m |
+| Deep sleep (wearable estimate) | 1h24m |
+| REM sleep (wearable estimate) | 1h00m |
+
+W46 closed as **controlled re-entry with selective expansion**. Subjectively easy execution and the two novel running exposures do not establish their segment-level physiological dose, delayed lumbar recovery, impact adaptation or a causal autonomic response. Daily and overnight HRV are distinct source streams. All seven REM-confidence labels were Low; structured daily HRV and source-note discrepancies remain annotated. No November biological result or prediction score was integrated in the weekly report.
+
+Closed report: [`reports/2026-W46.md`](reports/2026-W46.md). Earlier evidence: [W45](reports/2026-W45.md), [W44](reports/2026-W44.md), [W43](reports/2026-W43.md).
+
+---
+
+## Week 47 Operating Posture
+
+Active window:
+
+```text
+2026-11-23 through 2026-11-29
+```
+
+**Open question:** Can familiar standard B1/LI remain low-cost while separately documented post-B1 running exposures are observed for actual dose, next-day/delayed lumbar response and recovery, without preassuming a weekly outcome, formal VO₂max improvement or an automatic training progression?
+
+Document actual treadmill/running duration, speed, grade, source-measured versus prescribed HR and RPE if available; retain LI execution, delayed mechanics, distinct daily and overnight HRV, canonical sleep and waking mass. The proposed M/W/F running idea is not a mandated schedule. November provider-result integration, privacy admissibility and molecular reports remain independently governed. Model Errors 047–050 remain open, forecast-locked and unscored; Phase 2D undeclared.
+
+Active report: [`reports/2026-W47.md`](reports/2026-W47.md). Four physical November files are archived under [the partial November epoch](snapshots/2026-11/2026-11%20Epoch.md), with [registered checksums](snapshots/2026-11/checksums.txt), but no weekly source-outcome scoring.
 
 ---
 
@@ -122,11 +122,12 @@ Fixed scoring windows remain fixed. Later evidence does not retroactively rescue
 - GitHub Actions runs all current validators on pushes to `main` and pull requests
 - historical training prefix through 2026-08-30 remains protected at 325 sessions while later governed rows append
 - exact retained private-source hashes are registered only when the exact bytes are available
-- `Daniel_Dataset_v1.39` is registered in the private-source manifest with exact retained identity (371,613 bytes; SHA-256 `66272d40a250a674e3cd78bf7ee23ac40b3520ab9562fba371cf9cbd2a28622c`); prior v1.38/v1.37 registrations remain and private workbooks/operator narratives are not published
-- public daily biomarkers and canonical sleep contain 280 continuous rows through 2026-11-15
-- public training contains 451 completed-session rows through 2026-11-14
-- public context index contains 57 bounded events through 2026-11-15
+- `Daniel_Dataset_v1.40` is registered in the private-source manifest with exact retained identity (367,540 bytes; SHA-256 `dd10f20a62df5bf18712f880059ca1b69f75fc64a5711c3a3db26cd733169e23`); prior v1.39/v1.38/v1.37 registrations remain and private workbooks/operator narratives are not published
+- public daily biomarkers and canonical sleep contain 287 continuous rows through 2026-11-22
+- public training contains 461 completed-session rows through 2026-11-22
+- public context index contains 59 bounded events through 2026-11-20
 - August TruDiagnostic provider artifacts remain registered in the August checksum manifest
+- four November physical artifacts remain archived under a separate SHA-256 manifest; public-content/privacy admissibility, structured result transcription, molecular intake and prediction scoring remain pending
 - the August provider-header versus contemporaneous collection-record distinction remains preserved in [`data/source_provenance/2026-08-trudiagnostic-reconciliation.md`](data/source_provenance/2026-08-trudiagnostic-reconciliation.md)
 
 Verification guide: [`VERIFICATION.md`](VERIFICATION.md)  
@@ -139,9 +140,9 @@ Current coverage: [`data/DATA_COVERAGE.md`](data/DATA_COVERAGE.md)
 
 - [`README.md`](README.md) — archive overview
 - [`docs/START_HERE.md`](docs/START_HERE.md) — first-contact orientation
-- [`reports/2026-W46.md`](reports/2026-W46.md) — active week
-- [`reports/2026-W45.md`](reports/2026-W45.md) — most recent closed week
-- [`reports/2026-W44.md`](reports/2026-W44.md) — preceding closed week
+- [`reports/2026-W47.md`](reports/2026-W47.md) — active week
+- [`reports/2026-W46.md`](reports/2026-W46.md) — most recent closed week
+- [`reports/2026-W45.md`](reports/2026-W45.md) — preceding closed week
 - [`INDEX.md`](INDEX.md) — complete repository map
 
-The current governing posture is actual measurement intake, bounded recovery and lumbar observation, not automatic progression, assumed test completion or pre-scored forecasting. Phase 2D remains undeclared.
+The current governing posture is baseline B1/LI continuity with separately tracked supplemental running and bounded delayed recovery/mechanical observation, not automatic load escalation, inferred November test outcomes or pre-scored forecasting. Phase 2D remains undeclared.

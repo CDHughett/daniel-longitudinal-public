@@ -59,10 +59,10 @@ broader operating substate
 Consolidation / lock-in observation
         ↓
 weekly operating posture
-November measurement intake / recovery and mechanical continuity
+Post-assessment continuity / supplemental running-tolerance observation
         ↓
 session-level observations
-source-backed collection conditions, recovery/training availability, lumbar response and provider-governed measurement context
+actual familiar B1/LI, separable post-B1 running, next-day recovery and lumbar response
 ```
 
 In plain language:
@@ -72,7 +72,7 @@ In plain language:
 - the **weekly operating posture** is the narrower question being watched right now
 - **session-level observations** describe what happened in particular sessions or contexts
 
-Evidence at a lower level does not automatically promote the level above it. W40 documented controlled expansion, W41–W42 conditional repeatability and selective continuity, W43 conditional restoration, and W44 consolidated reintegration. W45 closed as **controlled restraint**: five familiar standard paired days, one reduced pair and planned rest. Active W46 observes November measurement intake and recovery without inventing results, unrestricted lumbar clearance or Phase 2D.
+Evidence at a lower level does not automatically promote the level above it. W40 documented controlled expansion, W41–W42 conditional repeatability and selective continuity, W43 conditional restoration, and W44 consolidated reintegration. W45 closed as **controlled restraint**. W46 closed as **controlled re-entry with selective expansion**: two assessment days without formal training followed by five familiar paired days and seven running minutes already included in B1. Active W47 observes repeatability and delayed running/mechanical response without inventing results, unrestricted lumbar clearance, Model Error scoring or Phase 2D.
 
 Recurring terms are defined in [`docs/CONCEPTS.md`](./CONCEPTS.md).
 

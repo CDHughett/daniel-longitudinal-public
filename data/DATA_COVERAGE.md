@@ -32,10 +32,10 @@ A provider export may improve provenance without becoming the canonical analytic
 
 | Domain | Current coverage | Notes |
 |---|---|---|
-| Daily biomarkers / subjective state | **Structured longitudinal** | `daily_biomarkers_v1.csv`; 280 continuous daily rows, 2026-02-09 through 2026-11-15 |
-| Training exposure | **Structured longitudinal** | `training_blocks_v1.csv`; 451 session rows through 2026-11-14 |
-| Context / perturbation events | **Structured event index** | `context_events_v1.csv`; 57 bounded events through 2026-11-15 |
-| Sleep | **Structured longitudinal + source-preserved historical coverage** | Canonical curated sleep has 280 continuous daily rows through 2026-11-15; broader RingConn episode export retained separately |
+| Daily biomarkers / subjective state | **Structured longitudinal** | `daily_biomarkers_v1.csv`; 287 continuous daily rows, 2026-02-09 through 2026-11-22 |
+| Training exposure | **Structured longitudinal** | `training_blocks_v1.csv`; 461 session rows through 2026-11-22 |
+| Context / perturbation events | **Structured event index** | `context_events_v1.csv`; 59 bounded events through 2026-11-20 |
+| Sleep | **Structured longitudinal + source-preserved historical coverage** | Canonical curated sleep has 287 continuous daily rows through 2026-11-22; broader RingConn episode export retained separately |
 | Recovery / vital signs | **Structured + narrative + source-preserved** | HRV, resting HR, daily average HR, sleep HR, SpO₂ and related signals appear across curated data, reports, screenshots and direct exports |
 | Body composition | **Snapshot-based** | DEXA, Bod Pod and scale-weight measurements occur at discrete intervals using differing methods |
 | Blood biomarkers | **Snapshot-based** | Periodic laboratory panels; not every private health source is public |
@@ -60,8 +60,8 @@ File:
 Current coverage:
 
 ```text
-2026-02-09 through 2026-11-15
-280 continuous daily rows
+2026-02-09 through 2026-11-22
+287 continuous daily rows
 ```
 
 The dataset includes source-transcribed measurements such as bodyweight and cardiovascular telemetry plus bounded subjective-state fields and compact context tags.
@@ -81,11 +81,11 @@ File:
 Current coverage:
 
 ```text
-2026-02-09 through 2026-11-14
-451 session rows
+2026-02-09 through 2026-11-22
+461 session rows
 ```
 
-Multiple sessions may occur on one date. W45 recorded six B1 and six LI sessions November 9–14, bringing completed-session coverage to 451 records. November 15 was planned zero-session rest, not missing or synthetic training; earlier W43 remediation/rest and W44 familiar reintegration remain historically unchanged. Nominal session distance and load do not independently verify mechanical dose.
+Multiple sessions may occur on one date. W46 recorded five B1 and five LI sessions November 18–22, bringing completed-session coverage to 461 records. November 16–17 assessment placeholders generated no completed exercise sessions. November 18 B1 included 55 min familiar walking plus 2 min running; November 20 B1 included 55 min walking plus 5 min running. The seven running minutes are already included in the 282 B1 minutes, not separately counted. W45's Nov 15 rest and W43–W44 reintegration remain historical records. Mileage and load are not independently verified physiological dose.
 
 The dataset preserves historical protocol transitions, B1, Load Integration, recovery variants and structured recreation where source-supported.
 
@@ -102,12 +102,12 @@ File:
 Current coverage:
 
 ```text
-57 bounded event rows
+59 bounded event rows
 represented interval begins 2026-02-09
-latest current event ends 2026-11-15
+latest current event ends 2026-11-20
 ```
 
-This is an event index, not a complete diary. The latest bounded W45 event `2026-11-14-01` records the material voluntary reduced-load and planned-rest schedule shift without implying a provider mandate or testing benefit. Earlier W43 `2026-10-26-01` preserves the travel-related lumbar episode and graded return; routine W44 reintegration did not warrant a distinct event.
+This is an event index, not a complete diary. W46 adds `2026-11-16-01` for the assessment-day training interruption and `2026-11-18-01` for supplemental running within existing B1 sessions through November 20. Neither establishes provider/test validity or adaptation. The W45 `2026-11-14-01` voluntary reduction/rest and W43 `2026-10-26-01` lumbar remediation remain distinct prior events.
 
 It captures context that materially improves interpretation of training availability, measurement conditions, recovery, protocol state, portability, model-error evaluation or source reconciliation.
 
@@ -190,13 +190,13 @@ The aligned daily machine-readable interval currently begins at:
 The current public daily/sleep structured layer is populated through:
 
 ```text
-2026-11-15
+2026-11-22
 ```
 
 The latest completed training session is represented on:
 
 ```text
-2026-11-14
+2026-11-22
 ```
 
 Different datasets may have different row counts because their unit of observation differs.
@@ -212,7 +212,7 @@ context events: zero-to-many bounded event rows per date/interval
 
 # Private Daniel Dataset Provenance
 
-The historical daily/training/event layer was retrospectively backfilled from private `Daniel_Dataset_v1.0` through `v1.33`. Exact retained v1.34–v1.39 sources for internal W40–W45 were appended under source governance with earlier records preserved. The latest private `Daniel_Dataset_v1.39` covers November 9–15, 2026 (371,613 bytes; SHA-256 `66272d40a250a674e3cd78bf7ee23ac40b3520ab9562fba371cf9cbd2a28622c`). Earlier v1.38 and v1.37 identities, including the November 1 loading clarification, remain registered. Private workbooks and full operator narratives remain outside public GitHub.
+The historical daily/training/event layer was retrospectively backfilled from private `Daniel_Dataset_v1.0` through `v1.33`. Exact retained v1.34–v1.40 sources for internal W40–W46 were appended under source governance with earlier records preserved. The latest private `Daniel_Dataset_v1.40` covers November 16–22, 2026 (367,540 bytes; SHA-256 `dd10f20a62df5bf18712f880059ca1b69f75fc64a5711c3a3db26cd733169e23`). Earlier v1.39/v1.38/v1.37 identities, source-quality differences and the November 1 loading clarification remain registered. Private workbooks and complete operator narratives remain outside public GitHub.
 
 Row-level provenance is retained through `source_ref`.
 
@@ -324,8 +324,8 @@ Canonical sleep:
 Current public interval:
 
 ```text
-2026-02-09 through 2026-11-15
-280 continuous daily records
+2026-02-09 through 2026-11-22
+287 continuous daily records
 ```
 
 Known field-level quality restrictions remain documented in:
@@ -352,6 +352,8 @@ Low-frequency biological and performance domains include:
 These measurements are discrete observations rather than daily time series.
 
 Different methods must not be treated as interchangeable merely because they describe a similar construct.
+
+Four November physical report artifacts (two DEXA images, a supplemental Tanita image and formal VO₂ PDF) are archived and checksum-registered in the [November epoch](../snapshots/2026-11/2026-11%20Epoch.md). This is partial source intake, not structured numerical integration, provider privacy/admissibility certification, receipt of molecular reports or closure of open prediction records 047–050. August completed snapshot integration remains a separate historical state.
 
 ---
 
