@@ -101,9 +101,9 @@ Look for unresolved findings, corrected findings, source conflicts, and restrict
 
 Start with:
 
-[`../reports/2026-W45.md`](../reports/2026-W45.md)
+[`../reports/2026-W46.md`](../reports/2026-W46.md)
 
-Examine November 9–15's seven daily biomarker rows, seven canonical sleep rows and twelve completed training-session rows. W45 retains its prospective question and closes as **controlled restraint**: five standard paired B1/LI days, one reduced pair and one planned zero-session rest, totaling **590 formal minutes**. Daily HRV averaged 69.6 ms, separate overnight HRV 68.3 ms and sleep 7h18m. Nominal exercise dose and reported ease do not independently verify mechanical clearance. Compare [W44's consolidated-reintegration closeout](../reports/2026-W44.md) and [W46's outcome-free Active question](../reports/2026-W46.md).
+Examine November 16–22's seven daily biomarker rows, seven canonical sleep records and ten completed training-session records. W46 preserves the original Active question and closes as **controlled re-entry with selective expansion** after two assessment-day training omissions and five familiar paired B1/LI days. Seven running minutes were recorded *within* two B1 sessions; the week totals **507 formal minutes**. Daily HRV averaged **64.6 ms**, separate overnight HRV **64.4 ms**, and sleep **7h17m**. The novel exposure and subjectively easy execution do not establish biological improvement or full mechanical clearance. Compare [W45 controlled restraint](../reports/2026-W45.md) with [W47's outcome-free Active question](../reports/2026-W47.md).
 
 The point is to see how the archive moves from recorded values and observations toward bounded retrospective interpretation.
 
@@ -121,7 +121,7 @@ Read:
 
 Review collection conditions, source artifacts, recorded deviations, completed TruDiagnostic integration, and the distinction between preserved source evidence, retrospective biological synthesis, and the fixed Record 043 adjudication.
 
-Earlier contemporaneous documents may correctly describe TruDiagnostic results as pending or Record 043 as open because those statements were true when written. Use the current synthesis and closure files above for the completed August state.
+Earlier contemporaneous documents may correctly describe TruDiagnostic results as pending or Record 043 as open because those statements were true when written. Use the current synthesis and closure files above for the completed August state. The separate [November partial epoch](../snapshots/2026-11/2026-11%20Epoch.md) holds four physical checksum-registered source artifacts; numerical integration, molecular reports and Model Error scoring remain separate pending work.
 
 ---
 
@@ -140,7 +140,7 @@ UDI canonically means **Unobstructed Delta Index**.
 
 It is an experimental directional prediction-error framework for eligible magnitude-based records. State and trajectory predictions are evaluated separately through concordance rather than forced into magnitude UDI.
 
-The prediction layer exists for calibration, not authority. The current register has **four open November forecasts (047–050)** with no November results, alongside closed historical records 041–046. The 2026-10-19 prospective plan fixes DunedinPACE, SymphonyAge, DEXA and relative VO₂max scoring; this is registration, not proof of improvement or Phase 2D eligibility.
+The prediction layer exists for calibration, not authority. The current register has **four open November forecasts (047–050)** with no adjudicated November outcomes, alongside closed historical records 041–046. The November physical artifact archive is not a scored result. The 2026-10-19 prospective plan fixes DunedinPACE, SymphonyAge, DEXA and relative VO₂max scoring; mere source-file presence or familiar training does not prove improvement or Phase 2D eligibility.
 
 ---
 

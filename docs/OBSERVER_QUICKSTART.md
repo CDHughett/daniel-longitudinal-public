@@ -75,9 +75,9 @@ The private-source manifest registers SHA-256 only when the exact retained priva
 
 Open the most recent closed report:
 
-[`../reports/2026-W45.md`](../reports/2026-W45.md)
+[`../reports/2026-W46.md`](../reports/2026-W46.md)
 
-Check W45's original Active question separately from its **controlled-restraint** closeout. Audit six B1 (330 min / 17.85 *logged* miles), six LI (260 min), **590 formal minutes**, waking mass (226.5 lb mean), distinct Daily Biomarkers HRV (69.6 ms), overnight Sleep Log HRV (68.3 ms), and mean sleep (7h18m). Verify five standard paired days, November 14 reduced-load pair and November 15 zero-session planned rest. Reported familiar execution does not independently verify lifting mechanics or unrestricted lumbar recovery. Compare [W44's consolidated reintegration](../reports/2026-W44.md) with [W46's outcome-free Active question](../reports/2026-W46.md). No November test result is integrated or scored here.
+Check W46's original Active question separately from its **controlled re-entry with selective expansion** closeout. Audit five B1 (282 formal min / 15.86 approximate logged mi), five LI (225 formal min), **507 formal min / 10 sessions**, waking mass (227.0 lb), distinct Daily Biomarkers HRV (64.6 ms), overnight Sleep Log HRV (64.4 ms) and mean sleep (7h17m). Verify November 16–17 assessment placeholders create **no completed training**, and November 18/20 running minutes are already inside B1 duration. Compare [W45's controlled-restraint closeout](../reports/2026-W45.md) with [W47's outcome-free Active question](../reports/2026-W47.md). No November biological source result is evaluated in this weekly closeout.
 
 Ask whether the report:
 
@@ -99,8 +99,9 @@ Use:
 - [`../EPOCH_INDEX.md`](../EPOCH_INDEX.md)
 - [`../methodology/2026-08-snapshot-collection-plan.md`](../methodology/2026-08-snapshot-collection-plan.md)
 - [`../reports/2026-08-biological-snapshot.md`](../reports/2026-08-biological-snapshot.md)
+- [`../snapshots/2026-11/2026-11 Epoch.md`](../snapshots/2026-11/2026-11%20Epoch.md) — partial November physical intake, not a complete biological integration
 
-Check source identity, timing, preparation conditions, checksum coverage, missingness, and whether interpretation remains distinct from artifact preservation.
+Check source identity, timing, preparation conditions, checksum coverage, missingness, and whether interpretation remains distinct from artifact preservation. August has completed biological integration; November's four physical files remain archived without completed source-content/privacy admissibility or numerical/Molecular scoring.
 
 Earlier contemporaneous files may correctly retain then-current language such as provider results pending. Current completion state is controlled by `LATEST.md`, the August retrospective synthesis, source-provenance reconciliation, and the closed Model Error 043 record.
 
@@ -116,7 +117,7 @@ Read:
 - [`../methodology/2026-11-snapshot-collection-plan.md`](../methodology/2026-11-snapshot-collection-plan.md)
 - [`../methodology/open_prediction_evaluation_plan_047_050.md`](../methodology/open_prediction_evaluation_plan_047_050.md)
 
-Check whether predictions were logged before their relevant outcomes, remained bounded and falsifiable, and stayed visible when wrong. **041–046 are closed; 047–050 are open November 2026 forecasts** with no November outcomes yet. Verify their 2026-10-19 registration, source/precision rules, blank outcome/error fields and frozen thresholds. Do not count them in UDI or state concordance until formal closure.
+Check whether predictions were registered before outcomes, remained bounded and falsifiable, and stayed visible when wrong. **041–046 are closed; 047–050 are open November 2026 forecasts**, with no provider-admissible outcome transcribed or scored in the registry. Four November physical source artifacts are archived, not equivalent to scored outcomes. Verify the 2026-10-19 registration, source/precision rules, blank outcome/error fields and frozen thresholds. Do not add 047–050 to UDI or concordance until formal closure.
 
 For future model-error schema semantics, see:
 
@@ -135,7 +136,7 @@ Read:
 
 Look for whether corrections, phase decisions, prediction closure, and source conflicts are handled under declared rules rather than outcome preference.
 
-When `LATEST.md` uses the immediate weekly operating posture `November measurement intake / recovery and mechanical continuity` while `PHASE_MAP.md` retains the broader `Consolidation / lock-in observation` substate, treat the former as W46's open observation question and the latter as unchanged Phase 2 governance. W45 controlled restraint is retrospective functional evidence, not objective test verification, unrestricted lumbar clearance or a Phase 2D declaration. W44/W43 remain independent historical recovery observations.
+When `LATEST.md` uses the weekly operating posture `Post-assessment continuity / supplemental running-tolerance observation` while `PHASE_MAP.md` retains the broader `Consolidation / lock-in observation` substate, treat the former as W47's open question and the latter as unchanged Phase 2 governance. W46's controlled re-entry with selective expansion and W45's controlled restraint are bounded historical functional evidence, not proof of improved VO₂max, durable running adaptation, unrestricted lumbar clearance or formal Phase 2D. W44/W43 remain earlier recovery records.
 
 ---
 

@@ -13,6 +13,15 @@ Biological interpretation belongs in `/reports`. This file records release-level
 
 ## [Unreleased]
 
+### November 23 W46/W47 rollover — Batches 1–3 committed on isolated branch; independent audit pending
+
+- Registered exact retained private `Daniel_Dataset_v1.40` (November 16–22; 367,540 bytes; SHA-256 `dd10f20a62df5bf18712f880059ca1b69f75fc64a5711c3a3db26cd733169e23`) without publishing the source workbook or complete Week 41 Operator Narrative. Mixed source dates and structured-versus-note HRV/step disagreements are retained as evidence-quality boundaries.
+- Appended **7 daily biomarkers, 7 canonical sleep, 10 completed B1/LI, 2 bounded testing/running context events** and one private-source manifest entry with historical CSV byte prefixes preserved. Proposed live totals: **287 daily and sleep rows through Nov 22, 461 training sessions through Nov 22, 59 material context events most recently ending Nov 20**. Assessment-day placeholders were not counted as training sessions.
+- Closed W46 as **controlled re-entry with selective expansion**, preserving the original prospective opening. After two assessment days, five paired training days provided **282 B1 treadmill minutes / 15.86 approximate logged miles** (275 familiar walking minutes plus seven running minutes *already inside B1*), **225 LI minutes**, and **507 formal minutes / 10 sessions**. Waking mass **227.0 lb**, structured daily HRV **64.6 ms**, separate overnight HRV **64.4 ms**, canonical sleep **7h17m**. Source discrepancies, wearable sleep-stage accuracy, training-load precision and delayed impact adaptation remain bounded.
+- Opened W47 **Active** November 23–29 with `Post-assessment continuity / supplemental running-tolerance observation`, without prepopulating outcomes or requiring load progression. Synchronized README, LATEST, INDEX, START_HERE, CONCEPTS, OBSERVER_QUICKSTART, NEWCOMER_PATH, DATA_COVERAGE and CHANGELOG to the new weekly lifecycle and public coverage endpoints.
+- Preserved the previously merged [November partial physical snapshot archive](snapshots/2026-11/2026-11%20Epoch.md); neither this weekly rollover nor checksum verification integrates November physical numerical values, unavailable molecular provider results, or prediction adjudication. Prior 041–046 Model Error closures remain protected; 047–050 remain open/locked/unscored. Phase 2 consolidation and undeclared 2D, DQ-011, historic sleep warnings and frozen published `v1.1.0` tag/release commit/DOIs remain unchanged. **Unreleased** maintenance only.
+- **Validation:** independent Batch 4 audit, final exact-head CI, PR review and post-merge verification remain separate gates; this entry does not preclaim final audit success or production merge.
+
 ### November 17 W45/W46 rollover — Batches 1–3 on isolated branch; independent audit / PR pending
 
 - Registered exact retained private `Daniel_Dataset_v1.39` (November 9–15; 371,613 bytes; SHA-256 `66272d40a250a674e3cd78bf7ee23ac40b3520ab9562fba371cf9cbd2a28622c`) while keeping its bytes and full private operator narrative outside public GitHub.

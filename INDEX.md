@@ -32,16 +32,16 @@ Active phase:
 Phase 2 — Load Integration
 
 Weekly operating posture:
-November measurement intake / recovery and mechanical continuity
+Post-assessment continuity / supplemental running-tolerance observation
 
 Broader Phase 2 substate:
 Consolidation / lock-in observation
 
 Active weekly window:
-2026-W46
+2026-W47
 
 Most recent closed window:
-2026-W45
+2026-W46
 
 Open model-error records:
 047, 048, 049, 050 (prospectively locked November forecasts; no outcomes integrated or scored)
@@ -65,7 +65,7 @@ August structured molecular integration:
 complete for currently represented fields
 
 Current weekly posture:
-source-verified November measurement collection context, recovery and lumbar/training availability, with no compensatory loading, presumed test outcome or Phase 2D declaration
+source-backed familiar B1/LI continuity with separately documented supplemental running, delayed lumbar/recovery observation and no presumed provider results, forced loading or Phase 2D declaration
 ```
 
 Current state source: [`LATEST.md`](./LATEST.md)
@@ -137,9 +137,10 @@ November's four physical measurement files are archived under [`snapshots/2026-1
 # Reports
 
 - [`reports/README.md`](./reports/README.md) — report lifecycle
-- [`reports/2026-W46.md`](./reports/2026-W46.md) — current active report / November measurement intake and recovery observation
-- [`reports/2026-W45.md`](./reports/2026-W45.md) — most recent closed report / controlled restraint
-- [`reports/2026-W44.md`](./reports/2026-W44.md) — preceding consolidated-reintegration report
+- [`reports/2026-W47.md`](./reports/2026-W47.md) — current active report / post-assessment continuity and running tolerance
+- [`reports/2026-W46.md`](./reports/2026-W46.md) — most recent closed report / controlled re-entry with selective expansion
+- [`reports/2026-W45.md`](./reports/2026-W45.md) — preceding controlled-restraint closeout
+- [`reports/2026-W44.md`](./reports/2026-W44.md) — earlier consolidated-reintegration report
 - [`reports/2026-W43.md`](./reports/2026-W43.md) — earlier conditional-restoration context
 - [`reports/2026-W42.md`](./reports/2026-W42.md) — earlier selective-continuity report
 - [`reports/2026-W41.md`](./reports/2026-W41.md) — preceding conditional-repeatability closeout

@@ -36,17 +36,17 @@ Specialized material such as model-error records, source provenance, testing art
 
 # Current archive state
 
-**Plain-language summary:** W45 closed as **controlled restraint** after five familiar standard B1/LI pairs, one deliberately reduced paired day and November 15 planned rest. Reported easy execution supports bounded functional continuity, not unrestricted lumbar clearance or verified adaptation. W46 observes source-verified November measurement intake and subsequent recovery; **no November test result or prediction score is integrated in this rollover**.
+**Plain-language summary:** W46 closed as **controlled re-entry with selective expansion**: two November assessment days without completed training were followed by five familiar B1/LI pairs. The week recorded 282 B1 treadmill minutes (including seven new running minutes *within* existing B1), 225 LI minutes and 507 formal minutes in total. W47 observes post-assessment continuity and running tolerance; no durable adaptation, unrestricted lumbar clearance, provider-result adjudication or Phase 2D declaration is implied.
 
 The formal archive labels below preserve the precise phase/state vocabulary used by reports and validators.
 
 | Domain | Current state |
 |---|---|
 | Phase | **Phase 2 — Load Integration** |
-| Weekly operating posture | **November measurement intake / recovery and mechanical continuity** |
+| Weekly operating posture | **Post-assessment continuity / supplemental running-tolerance observation** |
 | Broader Phase 2 substate | **Consolidation / lock-in observation** |
-| Active weekly window | **2026-W46** |
-| Most recent closed window | **2026-W45** |
+| Active weekly window | **2026-W47** |
+| Most recent closed window | **2026-W46** |
 | Installed training architecture | **B1 + Load Integration** |
 | Open model-error records | **047–050: four prospective November predictions**; 041–046 closed |
 | Record 043 | **closed / not supported — `overall_improvement_not_met` / over** |
@@ -57,13 +57,13 @@ Current-state anchors retained for repository validation:
 
 ```text
 Active weekly window:
-2026-W46
+2026-W47
 
 Most recent closed window:
-2026-W45
+2026-W46
 ```
 
-W45 demonstrated favorable reported standard execution through five paired days, deliberate reduced loading on November 14, and planned no-session rest on November 15. The week totaled 590 formal minutes. Exact per-set loads, delayed lumbar tolerance and unrestricted expanded resistance remain unverified. W43 and W44 remain independently documented historical recovery steps; W46 is an outcome-free active observation window.
+W46 demonstrated reported re-entry into familiar paired training after two scheduled assessment days, with two brief post-B1 running exposures. The week totaled 507 formal minutes across ten completed sessions; the seven running minutes are included within B1, not counted twice. Actual resistance loads, segment-level physiological dose and delayed running/lumbar response remain incompletely verified. W43–W45 are preserved as historical observations; W47 is prospectively Active with no assigned result.
 
 Term definitions: [`docs/CONCEPTS.md`](./docs/CONCEPTS.md)  
 Authoritative current detail: [`LATEST.md`](./LATEST.md)
@@ -73,14 +73,14 @@ Authoritative current detail: [`LATEST.md`](./LATEST.md)
 
 # Machine-readable core
 
-Public daily biomarkers and canonical sleep now cover 280 continuous records each through November 15, 2026. Completed-training coverage ends November 14 with 451 sessions because November 15 was a planned no-session day; context events total 57 through November 15, including the bounded voluntary reduced-load/rest event. The private v1.39 workbook and any November testing outcomes remain outside the public repository.
+Public daily biomarkers and canonical sleep now cover 287 continuous records each through November 22, 2026. Training comprises 461 completed sessions through November 22, including ten W46 blocks; assessment-day placeholders on November 16–17 are not completed sessions. The context index totals 59 bounded events, most recently ending November 20. The exact retained private v1.40 workbook is registered by hash but remains unpublished. Four November physical report artifacts are separately checksum-registered; numerical results, molecular reports and Model Error scoring are not integrated by the weekly rollover.
 
 | Dataset | Unit | Coverage |
 |---|---|---|
-| [`data/daily_biomarkers_v1.csv`](./data/daily_biomarkers_v1.csv) | one row per represented day | 280 continuous rows through 2026-11-15 |
-| [`data/sleep_longitudinal_v1.csv`](./data/sleep_longitudinal_v1.csv) | one governed wake-date row | 280 continuous rows through 2026-11-15 |
-| [`data/training_blocks_v1.csv`](./data/training_blocks_v1.csv) | one row per completed session/block | 451 rows through 2026-11-14 |
-| [`data/context_events_v1.csv`](./data/context_events_v1.csv) | one bounded context event | 57 rows through 2026-11-15 |
+| [`data/daily_biomarkers_v1.csv`](./data/daily_biomarkers_v1.csv) | one row per represented day | 287 continuous rows through 2026-11-22 |
+| [`data/sleep_longitudinal_v1.csv`](./data/sleep_longitudinal_v1.csv) | one governed wake-date row | 287 continuous rows through 2026-11-22 |
+| [`data/training_blocks_v1.csv`](./data/training_blocks_v1.csv) | one row per completed session/block | 461 rows through 2026-11-22 |
+| [`data/context_events_v1.csv`](./data/context_events_v1.csv) | one bounded context event | 59 rows through 2026-11-20 |
 
 Training is session-indexed: a represented day with zero completed training sessions does not require a synthetic training row.
 
@@ -157,6 +157,8 @@ Integrated snapshot values are represented in:
 
 - [`data/biomarker_snapshot.csv`](./data/biomarker_snapshot.csv)
 - [`data/epigenetic_longitudinal.csv`](./data/epigenetic_longitudinal.csv)
+
+Four November physical files are archived under the [partial November epoch](./snapshots/2026-11/2026-11%20Epoch.md) and registered in its [checksum manifest](./snapshots/2026-11/checksums.txt): two DEXA images, one supplemental Tanita image and one formal VO₂ PDF. Their archive presence is not numerical integration, provider-content admissibility, a completed privacy review or Model Error scoring; November molecular provider-result documents remain absent.
 
 ---
 
