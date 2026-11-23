@@ -37,6 +37,8 @@ It provides:
 | 2026-05 | [`snapshots/2026-05/`](./snapshots/2026-05/) | [`2026-05 Epoch.md`](./snapshots/2026-05/2026-05%20Epoch.md) | Phase 2 testing-window artifact capture |
 | 2026-08 | [`snapshots/2026-08/`](./snapshots/2026-08/) | [`2026-08 Epoch.md`](./snapshots/2026-08/2026-08%20Epoch.md) | Phase 2 consolidation / complete physical + molecular source-artifact capture |
 
+| 2026-11 | [`snapshots/2026-11/`](./snapshots/2026-11/) | [`2026-11 Epoch.md`](./snapshots/2026-11/2026-11%20Epoch.md) | Phase 2 consolidation / partial physical artifact intake; molecular reports pending |
+
 ---
 
 ## Structural Role
@@ -67,4 +69,4 @@ Interpretation remains subordinate to artifacts and belongs in [`reports/`](./re
 
 ---
 
-_Last reviewed 2026-09-10 after August physical and molecular source-artifact completion._
+_Last updated 2026-11-23 to index the partial November physical artifact intake; August physical and molecular source-artifact completion remains unchanged._
