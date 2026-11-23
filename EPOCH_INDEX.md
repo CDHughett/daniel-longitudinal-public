@@ -36,7 +36,6 @@ It provides:
 | 2026-02 | [`snapshots/2026-02/`](./snapshots/2026-02/) | [`2026-02 Epoch.md`](./snapshots/2026-02/2026-02%20Epoch.md) | Phase 2 early load-integration window |
 | 2026-05 | [`snapshots/2026-05/`](./snapshots/2026-05/) | [`2026-05 Epoch.md`](./snapshots/2026-05/2026-05%20Epoch.md) | Phase 2 testing-window artifact capture |
 | 2026-08 | [`snapshots/2026-08/`](./snapshots/2026-08/) | [`2026-08 Epoch.md`](./snapshots/2026-08/2026-08%20Epoch.md) | Phase 2 consolidation / complete physical + molecular source-artifact capture |
-
 | 2026-11 | [`snapshots/2026-11/`](./snapshots/2026-11/) | [`2026-11 Epoch.md`](./snapshots/2026-11/2026-11%20Epoch.md) | Phase 2 consolidation / partial physical artifact intake; molecular reports pending |
 
 ---
