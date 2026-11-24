@@ -1,4 +1,4 @@
-name: Release candidate package verification
+name: Unreleased commit package verification
 
 on:
   push:
@@ -31,13 +31,15 @@ jobs:
           python tools/validate_august_snapshot.py
           python tools/validate_coherence.py
 
-      - name: Build and independently verify release archive
+      - name: Build and independently verify unreleased commit archive
         shell: bash
         run: |
           set -euo pipefail
+          # This is a validated working-tree snapshot, not the frozen
+          # September 2026 published v1.1.0 release package.
           short_sha="${GITHUB_SHA::12}"
-          package_name="daniel-longitudinal-study-v1.1.0-${short_sha}.zip"
-          prefix="daniel-longitudinal-study-v1.1.0/"
+          package_name="daniel-longitudinal-study-unreleased-${short_sha}.zip"
+          prefix="daniel-longitudinal-study-unreleased-${short_sha}/"
 
           mkdir -p release extracted
           git archive --format=zip --prefix="$prefix" --output="release/$package_name" "$GITHUB_SHA"
@@ -49,10 +51,10 @@ jobs:
             | grep -v '/$' \
             | sed "s#^$prefix##" \
             | LC_ALL=C sort > release/inventory.txt
-          printf 'commit=%s\npackage=%s\nfiles=%s\n' "$GITHUB_SHA" "$package_name" "$(wc -l < release/inventory.txt | tr -d ' ')" > release/package-metadata.txt
+          printf 'archive_state=unreleased\nsource_ref=%s\ncommit=%s\npackage=%s\nfiles=%s\n' "$GITHUB_REF" "$GITHUB_SHA" "$package_name" "$(wc -l < release/inventory.txt | tr -d ' ')" > release/package-metadata.txt
 
           unzip -q "release/$package_name" -d extracted
-          root="extracted/daniel-longitudinal-study-v1.1.0"
+          root="extracted/${prefix%/}"
 
           python "$root/tools/validate_repository.py"
           python "$root/tools/validate_machine_readable.py"
@@ -122,10 +124,10 @@ jobs:
 
           echo 'Private/spreadsheet artifact screening: PASS'
 
-      - name: Upload verified release-candidate package
+      - name: Upload verified unreleased commit package
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
-          name: v1.1.0-release-candidate-${{ github.sha }}
+          name: unreleased-commit-${{ github.sha }}
           path: release/
           if-no-files-found: error
           compression-level: 0
