@@ -160,6 +160,7 @@ Keep daily and sleep metrics distinct.
 - **Daily biomarker HRV:** [Value or weekly average]
 - **Sleep HRV:** [Value or weekly average]
 - **Resting heart rate:** [Value or weekly average]
+- **Daily average heart rate:** [Value or weekly average]
 - **Sleep average heart rate:** [Value or weekly average]
 - **Total sleep:** [Value or weekly average]
 - **Deep sleep:** [Value or weekly average]
@@ -181,12 +182,18 @@ Complete only from verified structured or source-supported values.
 | Daily biomarker HRV | [ ] | [ ] | [ ] |
 | Sleep HRV | [ ] | [ ] | [ ] |
 | Resting heart rate | [ ] | [ ] | [ ] |
+| Daily average heart rate | [ ] | [ ] | [ ] |
 | Sleep average heart rate | [ ] | [ ] | [ ] |
 | Total sleep | [ ] | [ ] | [ ] |
 | Deep sleep | [ ] | [ ] | [ ] |
 | REM sleep | [ ] | [ ] | [ ] |
 | B1 sessions | [ ] | [ ] | [ ] |
 | Load Integration sessions | [ ] | [ ] | [ ] |
+| Total formal training | [ ] | [ ] | [ ] |
+
+**Closed-week validator contract:** Reproduce the twelve required rows from the committed Daily Biomarkers, canonical Sleep Log, and completed Training Blocks records for the seven-day window. Keep daily-average and overnight heart-rate series distinct. Use the repository's established one-decimal format for bodyweight, HRV and heart-rate averages; format mean sleep/stage minutes as `HhMMm` (for example, `7h17m`); use the completed-session count for each block; and report total formal training as a whole-minute value ending in ` min`.
+
+The closed-week validator also checks the **Notes** column of three rows: `B1 sessions` must contain `<B1 minutes> formal minutes / <B1 miles to 2 decimal places> miles`; `Load Integration sessions` must contain `<LI minutes> formal minutes`; and `Total formal training` must contain `<number of completed sessions> completed sessions`. Use the exact source-derived numbers rather than treating these as planned-session targets. A component of an existing B1 session (such as supplemental running) must not be counted again as a new session or extra minutes.
 
 Use `NA` when a metric is unavailable or not comparable.
 
